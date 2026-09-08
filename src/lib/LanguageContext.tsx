@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { content, Lang, RTL_LANGS } from "./content";
 
 type LanguageContextType = {
@@ -14,46 +15,29 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 const SUPPORTED_LANGS: Lang[] = ["fr", "en", "es", "pt", "ar", "zh", "id", "de"];
 
-function detectLanguageFromBrowser(): Lang {
-  if (typeof window === "undefined") return "fr";
-
-  const saved = localStorage.getItem("preferredLanguage") as Lang | null;
-  if (saved && SUPPORTED_LANGS.includes(saved)) {
-    return saved;
-  }
-
-  const browserLang = navigator.language || navigator.languages?.[0] || "fr";
-  const lang = browserLang.split("-")[0].toLowerCase();
-
-  const langMap: Record<string, Lang> = {
-    fr: "fr",
-    en: "en",
-    es: "es",
-    pt: "pt",
-    ar: "ar",
-    zh: "zh",
-    id: "id",
-    de: "de",
-  };
-
-  return langMap[lang] || "fr";
+function getLanguageFromPathname(pathname: string): Lang {
+  // Extract language from /[lang]/* pattern
+  const match = pathname.match(/^\/([a-z]{2})/);
+  const lang = match?.[1] as Lang | undefined;
+  return lang && SUPPORTED_LANGS.includes(lang) ? lang : "en";
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Lang>("fr");
+  const pathname = usePathname();
+  const [language, setLanguage] = useState<Lang>("en");
   const [mounted, setMounted] = useState(false);
   const isRtl = RTL_LANGS.includes(language);
 
   useEffect(() => {
-    const detected = detectLanguageFromBrowser();
-    setLanguage(detected);
+    // Get language from URL pathname
+    const urlLang = getLanguageFromPathname(pathname);
+    setLanguage(urlLang);
     setMounted(true);
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     document.documentElement.dir = isRtl ? "rtl" : "ltr";
     document.documentElement.lang = language;
-    localStorage.setItem("preferredLanguage", language);
   }, [language, isRtl]);
 
   return (

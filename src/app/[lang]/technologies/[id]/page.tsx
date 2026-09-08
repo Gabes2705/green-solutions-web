@@ -30,7 +30,7 @@ type Params = { params: Promise<{ lang: string; id: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { id, lang } = await params;
-  const langKey = (lang === "en" || lang === "es" ? lang : "fr") as keyof typeof content;
+  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de"].includes(lang) ? lang : "fr") as keyof typeof content;
   const item = content[langKey].products.items.find((p) => p.id === id);
   if (!item) return {};
 
@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 export default async function Page({ params }: Params) {
   const { id, lang } = await params;
-  const langKey = (lang === "en" || lang === "es" ? lang : "fr") as keyof typeof content;
+  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de"].includes(lang) ? lang : "fr") as keyof typeof content;
   const item = content[langKey].products.items.find((p) => p.id === id);
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 

@@ -1,9 +1,6 @@
-"use client";
-
 import type { Metadata } from "next";
 import { Fraunces, Manrope, Bricolage_Grotesque } from "next/font/google";
 import { LanguageProvider } from "@/lib/LanguageContext";
-import { useParams } from "next/navigation";
 
 const fraunces = Fraunces({
   variable: "--font-display",
@@ -69,9 +66,10 @@ const translations = {
   },
 };
 
-export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
-  const lang = (params.lang as keyof typeof translations) || "fr";
-  const t = translations[lang] || translations.fr;
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const langKey = (lang as keyof typeof translations) || "fr";
+  const t = translations[langKey] || translations.fr;
   const canonical = `${SITE_URL}/${lang}/`;
 
   return {
@@ -115,14 +113,14 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
   };
 }
 
-export default function LangLayout({
+export default async function LangLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
-  const lang = params.lang as any;
+  const { lang } = await params;
   const isRtl = lang === "ar";
 
   return (
