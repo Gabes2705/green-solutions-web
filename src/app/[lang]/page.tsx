@@ -2,6 +2,7 @@ import Contact from "@/components/Contact";
 import CountryStudies from "@/components/CountryStudies";
 import Essais from "@/components/Essais";
 import CtaBand from "@/components/CtaBand";
+import FloatingVideo from "@/components/FloatingVideo";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Objections from "@/components/Objections";
@@ -35,6 +36,7 @@ export default function Home() {
   return (
     <main>
       <SmoothAnchors />
+      <FloatingVideo />
       <Hero />
       <Reseau />
       <CountryStudies />
