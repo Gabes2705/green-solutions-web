@@ -660,16 +660,20 @@ body {
   }
 }
 
-/* No motion: the lift comes from depth alone. A tight contact shadow, a
-   wide soft one for the cast, a faint rim to separate the frame from the
-   dark foliage, and a low green bounce picked up from the background. */
+/* No motion: the lift comes from depth alone. Kept to three layers with
+   modest blur radii - a playing video sits under this, and very large blurs
+   make the browser recompose the shadow on every frame, which showed up as
+   dropped frames rather than as a slow page. */
 .film-screen {
   box-shadow:
     0 2px 6px rgba(0, 0, 0, 0.5),
-    0 18px 36px -12px rgba(0, 0, 0, 0.62),
-    0 52px 90px -28px rgba(0, 0, 0, 0.8),
-    0 0 0 1px rgba(255, 255, 255, 0.08),
-    0 0 80px rgba(150, 220, 130, 0.12);
+    0 20px 40px -14px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+/* Clip on the video itself rather than with overflow on the parent: clipping
+   a moving image through an ancestor drops it off the fast compositing path. */
+.film-screen video {
+  border-radius: 0.75rem;
 }
 
 /* From lg up the cover carries the clip on the left and the water drop on

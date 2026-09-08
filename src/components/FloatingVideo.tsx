@@ -18,7 +18,7 @@ export default function FloatingVideo() {
     <div className="film-anchor group hidden lg:block">
       {/* Screen-like frame. The clip is square, so the frame is too. */}
       <div
-        className="film-screen relative rounded-2xl overflow-hidden bg-black border-4 border-gray-800"
+        className="film-screen relative rounded-2xl bg-black border-4 border-gray-800"
         style={{ width: "min(33vw, 560px)" }}
       >
         <video
@@ -32,9 +32,6 @@ export default function FloatingVideo() {
         >
           <source src="/videos/croissance-tomates.mp4" type="video/mp4" />
         </video>
-
-        {/* Glass reflection, purely decorative */}
-        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none" />
 
         <button
           type="button"
