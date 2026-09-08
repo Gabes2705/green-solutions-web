@@ -5,6 +5,7 @@ import FloatingVideo from "./FloatingVideo";
 import HeroBadge3D from "./HeroBadge3D";
 import HeroParallax from "./HeroParallax";
 import Nav from "./Nav";
+import VideoDiagnostic from "./VideoDiagnostic";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Hero() {
@@ -43,6 +44,7 @@ export default function Hero() {
       </HeroParallax>
 
       <FloatingVideo />
+      <VideoDiagnostic />
     </div>
   );
 }
