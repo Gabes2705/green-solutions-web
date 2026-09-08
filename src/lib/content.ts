@@ -1,4 +1,4 @@
-export type Lang = "fr" | "en" | "es" | "pt" | "ar" | "zh" | "id" | "de";
+export type Lang = "fr" | "en" | "es" | "pt" | "ar" | "zh" | "id" | "de" | "it";
 
 export const RTL_LANGS: Lang[] = ["ar"];
 
