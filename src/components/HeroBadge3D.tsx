@@ -23,12 +23,18 @@ export default function HeroBadge3D() {
     const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
     camera.position.set(0, 0, 6.4);
 
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
     const renderer = new THREE.WebGLRenderer({
       canvas,
       alpha: true,
-      antialias: true,
+      // On a high-density screen the extra samples are not visible at this
+      // size, and multisampling is not free.
+      antialias: dpr < 2,
     });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 3));
+    // Capped at 2: past that the badge costs several times the fill for no
+    // visible gain, and it shares the frame budget with the cover video.
+    renderer.setPixelRatio(dpr);
     renderer.setClearColor(0x000000, 0);
     renderer.outputColorSpace = THREE.SRGBColorSpace;
 
@@ -143,9 +149,37 @@ export default function HeroBadge3D() {
     const startTime = performance.now();
     let raf = 0;
 
+    // The badge shares the frame budget with the cover video, which decodes
+    // and composites on the same thread. Rendering it on every display frame
+    // starved the video and showed up as stutter, so it is capped at 30fps
+    // and stopped outright whenever it is not on screen.
+    const FRAME_MS = 1000 / 30;
+    let lastDraw = 0;
+    let onScreen = true;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        onScreen = entry.isIntersecting;
+      },
+      { threshold: 0 }
+    );
+    observer.observe(stage);
+
+    const onVisibility = () => {
+      if (document.hidden) return;
+      lastDraw = 0;
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+
     function animate() {
       raf = requestAnimationFrame(animate);
-      const t = (performance.now() - startTime) / 1000;
+
+      const now = performance.now();
+      if (!onScreen || document.hidden) return;
+      if (now - lastDraw < FRAME_MS) return;
+      lastDraw = now;
+
+      const t = (now - startTime) / 1000;
 
       if (!reduceMotion) {
         autoRot += 0.0035;
@@ -165,6 +199,8 @@ export default function HeroBadge3D() {
 
     return () => {
       cancelAnimationFrame(raf);
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", onVisibility);
       window.removeEventListener("pointermove", onPointerMove);
       window.removeEventListener("resize", fitRenderer);
       faceGeo.dispose();
