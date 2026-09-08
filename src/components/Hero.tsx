@@ -2,6 +2,7 @@
 
 import Atmosphere from "./Atmosphere";
 import FloatingVideo from "./FloatingVideo";
+import HeroBadge3D from "./HeroBadge3D";
 import HeroParallax from "./HeroParallax";
 import Nav from "./Nav";
 import { useLanguage } from "@/lib/LanguageContext";
@@ -26,6 +27,8 @@ export default function Hero() {
       <Nav />
 
       <HeroParallax>
+        <HeroBadge3D />
+
         <h1 className="hero-claim">
           <span className="hero-claim-line">{c.hero.slogan1}</span>
           <span className="hero-claim-line">{c.hero.slogan2}</span>

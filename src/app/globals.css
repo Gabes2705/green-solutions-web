@@ -565,6 +565,7 @@ body {
   position: relative;
   width: min(40vw, 26vh, 250px);
   aspect-ratio: 1 / 1;
+  margin-inline: auto;
   margin-bottom: clamp(0.2rem, 1vh, 0.8rem);
   animation: hero-in 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
@@ -640,6 +641,48 @@ body {
   text-wrap: balance;
 }
 
+/* The clip should read as a screen hovering over the cover rather than a
+   flat panel pasted onto it: stacked shadows give it height, the rim keeps
+   its edge legible against the dark foliage, and a slow drift sells the lift
+   without pulling the eye off the claim. */
+.film-anchor {
+  position: absolute;
+  left: 2vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+/* Only nudge it clear of the left edge once there is room; below this the
+   claim would be crowded against the frame. */
+@media (min-width: 1366px) {
+  .film-anchor {
+    left: 4vw;
+  }
+}
+
+.film-screen {
+  animation: film-float 7s ease-in-out infinite;
+  box-shadow:
+    0 45px 80px -24px rgba(0, 0, 0, 0.78),
+    0 22px 40px -18px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.07),
+    0 0 70px rgba(150, 220, 130, 0.13);
+}
+@keyframes film-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .film-screen {
+    animation: none;
+  }
+}
+
 /* From lg up the cover carries the clip on the left and the water drop on
    the right. Keep the claim inside the free band between the two. */
 @media (min-width: 1024px) {
@@ -649,6 +692,9 @@ body {
   .hero-claim {
     max-width: min(34vw, 520px);
     font-size: clamp(2.2rem, 3.4vw, 3.9rem);
+  }
+  .badge-stage {
+    width: min(14vw, 16vh, 150px);
   }
 }
 
