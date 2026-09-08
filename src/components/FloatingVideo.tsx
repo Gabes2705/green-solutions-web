@@ -27,7 +27,10 @@ export default function FloatingVideo() {
           muted
           loop
           playsInline
-          preload="metadata"
+          // auto, not metadata: the clip loops every four seconds, and with
+          // only metadata loaded the browser was still fetching during
+          // playback, which stalled it at each restart.
+          preload="auto"
           aria-label="Croissance de plants de tomates"
         >
           <source src="/videos/croissance-tomates.mp4" type="video/mp4" />
