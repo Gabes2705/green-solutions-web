@@ -19,12 +19,12 @@ function getLanguageFromPathname(pathname: string): Lang {
   // Extract language from /[lang]/* pattern
   const match = pathname.match(/^\/([a-z]{2})/);
   const lang = match?.[1] as Lang | undefined;
-  return lang && SUPPORTED_LANGS.includes(lang) ? lang : "en";
+  return lang && SUPPORTED_LANGS.includes(lang) ? lang : "fr";
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [language, setLanguage] = useState<Lang>("en");
+  const [language, setLanguage] = useState<Lang>("fr");
   const [mounted, setMounted] = useState(false);
   const isRtl = RTL_LANGS.includes(language);
 

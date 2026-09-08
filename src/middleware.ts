@@ -1,13 +1,42 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const LANGUAGES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de"];
-const DEFAULT_LANGUAGE = "en";
+const LANGUAGES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de"] as const;
+const DEFAULT_LANGUAGE = "fr";
+
+// Maps the base part of a locale tag to one of our languages, so that
+// "pt-BR" resolves to "pt" and "zh-Hans-CN" to "zh".
+function matchLanguage(tag: string): string | null {
+  const base = tag.toLowerCase().split("-")[0];
+  return (LANGUAGES as readonly string[]).includes(base) ? base : null;
+}
+
+// Picks the best supported language from an Accept-Language header,
+// honouring the q-values the browser sends.
+function detectLanguage(header: string | null): string {
+  if (!header) return DEFAULT_LANGUAGE;
+
+  const ranked = header
+    .split(",")
+    .map((part) => {
+      const [tag, ...params] = part.trim().split(";");
+      const q = params.find((p) => p.trim().startsWith("q="));
+      const quality = q ? parseFloat(q.split("=")[1]) : 1;
+      return { tag: tag.trim(), quality: Number.isNaN(quality) ? 0 : quality };
+    })
+    .filter((entry) => entry.tag && entry.quality > 0)
+    .sort((a, b) => b.quality - a.quality);
+
+  for (const { tag } of ranked) {
+    const match = matchLanguage(tag);
+    if (match) return match;
+  }
+  return DEFAULT_LANGUAGE;
+}
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Check if pathname already has a language prefix
   const pathnameHasLanguage = LANGUAGES.some(
     (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`
   );
@@ -16,15 +45,14 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Redirect root to default language
-  if (pathname === "/") {
-    return NextResponse.redirect(new URL(`/${DEFAULT_LANGUAGE}/`, request.url));
-  }
+  const language = detectLanguage(request.headers.get("accept-language"));
+  const target = pathname === "/" ? `/${language}/` : `/${language}${pathname}`;
 
-  // Redirect other paths to language-prefixed version
-  return NextResponse.redirect(
-    new URL(`/${DEFAULT_LANGUAGE}${pathname}`, request.url)
-  );
+  const response = NextResponse.redirect(new URL(target, request.url));
+  // The redirect target depends on the request headers, so it must not be
+  // cached and replayed to visitors with a different language preference.
+  response.headers.set("Vary", "Accept-Language");
+  return response;
 }
 
 export const config = {
