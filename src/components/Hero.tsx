@@ -1,6 +1,7 @@
 "use client";
 
 import Atmosphere from "./Atmosphere";
+import FloatingVideo from "./FloatingVideo";
 import HeroBadge3D from "./HeroBadge3D";
 import HeroParallax from "./HeroParallax";
 import Nav from "./Nav";
@@ -40,6 +41,8 @@ export default function Hero() {
           </a>
         </div>
       </HeroParallax>
+
+      <FloatingVideo />
 
       <a href="#approche" className="where-to-go">
         <span>

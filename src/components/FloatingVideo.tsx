@@ -7,7 +7,6 @@ const PLAYBACK_RATE = 0.75;
 export default function FloatingVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [dismissed, setDismissed] = useState(false);
-  const [onCover, setOnCover] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -30,37 +29,13 @@ export default function FloatingVideo() {
     };
   }, []);
 
-  // The clip belongs to the cover: once the hero has scrolled away it must
-  // not follow the reader down the rest of the page. A scroll listener is
-  // used rather than IntersectionObserver because it keeps firing even when
-  // the page is not being composited.
-  useEffect(() => {
-    const update = () => {
-      const hero = document.querySelector<HTMLElement>(".stage");
-      const coverHeight = hero?.offsetHeight || window.innerHeight;
-      // Hide a little before the cover fully leaves, so it does not linger
-      // over the section that follows.
-      setOnCover(window.scrollY < coverHeight * 0.75);
-    };
-
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", update);
-      window.removeEventListener("resize", update);
-    };
-  }, []);
-
   if (dismissed) return null;
 
+  // Anchored to the cover rather than the viewport: it holds its place while
+  // the cover is on screen and is carried away as the page scrolls past it.
   return (
-    <div
-      className={`group fixed bottom-10 left-10 z-40 hidden sm:block transition-opacity duration-500
-                  ${onCover ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-      aria-hidden={!onCover}
-    >
-      {/* Screen-like frame. Caps at the viewport width so a narrow window
+    <div className="group absolute bottom-10 left-10 z-20 hidden sm:block">
+      {/* Screen-like frame. Capped at the viewport width so a narrow window
           shrinks it instead of pushing it off-screen. */}
       <div
         className="relative rounded-lg overflow-hidden shadow-2xl bg-black border-4 border-gray-800"
