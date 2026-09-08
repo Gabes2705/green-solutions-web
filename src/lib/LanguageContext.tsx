@@ -41,7 +41,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }, [language, isRtl]);
 
   // Fallback to English for Italian if not available
-  const contentLang = language in content ? language : language === "it" ? "en" : language;
+  const contentLang = language === "it" ? "en" : language;
 
   return (
     <LanguageContext.Provider
