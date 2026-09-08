@@ -689,6 +689,18 @@ body {
   .badge-stage {
     width: min(14vw, 16vh, 150px);
   }
+  /* The slow zoom rescales a full-viewport layer on every frame, right
+     behind a playing video. The cover already has motion from the clip, so
+     it is dropped wherever the clip is shown. */
+  .hero-photo-img {
+    animation: none;
+    transform: scale(1.04);
+  }
+  /* Same reasoning: the sheen sweeps a gradient across the badge forever. */
+  .badge-stage::after {
+    animation: none;
+    opacity: 0;
+  }
 }
 
 .hero-claim-line {

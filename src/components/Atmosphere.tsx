@@ -16,7 +16,10 @@ export default function Atmosphere() {
     ).matches;
     if (reduceMotion) return;
 
-    const n = window.innerWidth < 640 ? 8 : 16;
+    // Each spore animates on its own layer, competing with the cover video
+    // for compositing time; they are faint enough that halving the count on
+    // desktop is not noticeable.
+    const n = window.innerWidth < 640 ? 6 : 8;
     const nodes: HTMLDivElement[] = [];
 
     for (let i = 0; i < n; i++) {
