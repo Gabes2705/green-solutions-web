@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const PLAYBACK_RATE = 0.75;
+const PLAYBACK_RATE = 0.5;
 
 export default function FloatingVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -18,15 +18,8 @@ export default function FloatingVideo() {
     };
     applyRate();
 
-    // Freeze on the last frame instead of looping or going black.
-    const freeze = () => video.pause();
-
     video.addEventListener("loadedmetadata", applyRate);
-    video.addEventListener("ended", freeze);
-    return () => {
-      video.removeEventListener("loadedmetadata", applyRate);
-      video.removeEventListener("ended", freeze);
-    };
+    return () => video.removeEventListener("loadedmetadata", applyRate);
   }, []);
 
   if (dismissed) return null;
@@ -46,6 +39,7 @@ export default function FloatingVideo() {
           className="w-full h-auto block"
           autoPlay
           muted
+          loop
           playsInline
           preload="metadata"
           aria-label="Croissance de plants de tomates"
