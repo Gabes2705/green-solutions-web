@@ -13,7 +13,6 @@ const LANGS: { code: Lang; label: string; name: string }[] = [
   { code: "zh", label: "中文", name: "简体中文" },
   { code: "id", label: "ID", name: "Bahasa Indonesia" },
   { code: "de", label: "DE", name: "Deutsch" },
-  { code: "it", label: "IT", name: "Italiano" },
 ];
 
 export default function LanguageSwitcher() {

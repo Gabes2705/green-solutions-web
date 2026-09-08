@@ -12,16 +12,14 @@ export default function Hero() {
   return (
     <div className="stage">
       <div className="hero-photo">
-        <video
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           className="hero-photo-img"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/images/hero-plant.jpg"
-        >
-          <source src="/videos/green-solutions-hero.mp4" type="video/mp4" />
-        </video>
+          src="/images/hero-plant.jpg"
+          alt=""
+          fetchPriority="high"
+          decoding="async"
+        />
       </div>
       <Atmosphere />
 
