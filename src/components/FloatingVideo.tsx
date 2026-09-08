@@ -1,30 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-
-// The clip is already slowed and motion-interpolated to 60fps at source, so
-// this only fine-tunes the pace; at 0.8 it still lands around 48fps.
-const PLAYBACK_RATE = 0.8;
+import { useState } from "react";
 
 export default function FloatingVideo() {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [dismissed, setDismissed] = useState(false);
 
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    // playbackRate resets whenever a new source is loaded, so re-apply it.
-    const applyRate = () => {
-      video.playbackRate = PLAYBACK_RATE;
-    };
-    applyRate();
-
-    video.addEventListener("loadedmetadata", applyRate);
-    return () => video.removeEventListener("loadedmetadata", applyRate);
-  }, []);
-
   if (dismissed) return null;
+
+  // The clip runs at its own speed: it was re-timed and encoded at 12s/60fps
+  // so the growth advances evenly. Slowing it with playbackRate would only
+  // cut the frame rate back down and bring the stutter back.
 
   // Anchored to the cover rather than the viewport: it holds its place while
   // the cover is on screen and is carried away as the page scrolls past it.
@@ -37,7 +22,6 @@ export default function FloatingVideo() {
         style={{ width: "min(33vw, 560px)" }}
       >
         <video
-          ref={videoRef}
           className="w-full h-auto block"
           autoPlay
           muted
