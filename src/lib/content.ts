@@ -3901,7 +3901,4 @@ export const content = {
   },
 };
 
-// Assign Italian content after declaration to avoid circular reference
-content.it = content.en;
-
 export type Content = typeof content.fr;
