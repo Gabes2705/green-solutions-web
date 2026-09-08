@@ -102,6 +102,7 @@ export default function RootLayout({
     <html
       lang="fr"
       className={`${fraunces.variable} ${manrope.variable} ${bricolage.variable}`}
+      suppressHydrationWarning
     >
       <head>
         <link
