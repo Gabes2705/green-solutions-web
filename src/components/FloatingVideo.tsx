@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const PLAYBACK_RATE = 0.5;
+// The clip is already slowed and motion-interpolated to 60fps at source, so
+// this only fine-tunes the pace; at 0.8 it still lands around 48fps.
+const PLAYBACK_RATE = 0.8;
 
 export default function FloatingVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
