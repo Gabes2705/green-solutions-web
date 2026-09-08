@@ -33,13 +33,16 @@ export default function FloatingVideo() {
 
   // Anchored to the cover rather than the viewport: it holds its place while
   // the cover is on screen and is carried away as the page scrolls past it.
+  // Sits on the left, vertically centred, matching the cover artwork.
   return (
-    <div className="group absolute bottom-10 left-10 z-20 hidden sm:block">
-      {/* Screen-like frame. Capped at the viewport width so a narrow window
-          shrinks it instead of pushing it off-screen. */}
+    <div
+      className="group absolute z-20 hidden lg:block"
+      style={{ left: "2vw", top: "50%", transform: "translateY(-50%)" }}
+    >
+      {/* Screen-like frame. The clip is square, so the frame is too. */}
       <div
-        className="relative rounded-lg overflow-hidden shadow-2xl bg-black border-4 border-gray-800"
-        style={{ width: "min(28rem, calc(100vw - 5rem))" }}
+        className="relative rounded-2xl overflow-hidden shadow-2xl bg-black border-4 border-gray-800"
+        style={{ width: "min(33vw, 560px)" }}
       >
         <video
           ref={videoRef}

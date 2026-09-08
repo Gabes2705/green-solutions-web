@@ -164,6 +164,15 @@ body {
   }
 }
 
+/* The cover artwork is landscape and puts its subject on the right. A
+   portrait viewport cropped to the centre would show only blurred green,
+   so pull the framing across to the water drop. */
+@media (max-width: 1023px) {
+  .hero-photo-img {
+    object-position: 74% 42%;
+  }
+}
+
 .atmosphere {
   position: absolute;
   inset: 0;
@@ -631,6 +640,18 @@ body {
   text-wrap: balance;
 }
 
+/* From lg up the cover carries the clip on the left and the water drop on
+   the right. Keep the claim inside the free band between the two. */
+@media (min-width: 1024px) {
+  .stage {
+    padding-left: 12vw;
+  }
+  .hero-claim {
+    max-width: min(34vw, 520px);
+    font-size: clamp(2.2rem, 3.4vw, 3.9rem);
+  }
+}
+
 .hero-claim-line {
   display: block;
   opacity: 0;
@@ -756,6 +777,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.9em;
+  margin-top: 2.6em;
   margin-bottom: 1.8em;
   animation: hero-in 0.85s cubic-bezier(0.2, 0.8, 0.2, 1) 0.68s both;
 }

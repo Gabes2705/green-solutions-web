@@ -2,7 +2,6 @@
 
 import Atmosphere from "./Atmosphere";
 import FloatingVideo from "./FloatingVideo";
-import HeroBadge3D from "./HeroBadge3D";
 import HeroParallax from "./HeroParallax";
 import Nav from "./Nav";
 import { useLanguage } from "@/lib/LanguageContext";
@@ -16,7 +15,7 @@ export default function Hero() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="hero-photo-img"
-          src="/images/hero-plant.jpg"
+          src="/images/hero-cover.jpg"
           alt=""
           fetchPriority="high"
           decoding="async"
@@ -27,8 +26,6 @@ export default function Hero() {
       <Nav />
 
       <HeroParallax>
-        <HeroBadge3D />
-
         <h1 className="hero-claim">
           <span className="hero-claim-line">{c.hero.slogan1}</span>
           <span className="hero-claim-line">{c.hero.slogan2}</span>
@@ -43,14 +40,6 @@ export default function Hero() {
       </HeroParallax>
 
       <FloatingVideo />
-
-      <a href="#approche" className="where-to-go">
-        <span>
-          {c.hero.whereTo1}
-          <br />
-          {c.hero.whereTo2}
-        </span>
-      </a>
     </div>
   );
 }
