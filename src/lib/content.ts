@@ -3899,6 +3899,7 @@ export const content = {
       "Saudi-Arabien", "Sultanat Oman", "Kongo", "Elfenbeinküste", "Südsudan", "Polen", "Griechenland", "Portugal",
     ],
   },
+  it: content.en,
 };
 
 export type Content = typeof content.fr;
