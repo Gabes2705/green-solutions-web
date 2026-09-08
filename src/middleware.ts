@@ -46,9 +46,13 @@ export function middleware(request: NextRequest) {
   }
 
   const language = detectLanguage(request.headers.get("accept-language"));
-  const target = pathname === "/" ? `/${language}/` : `/${language}${pathname}`;
 
-  const response = NextResponse.redirect(new URL(target, request.url));
+  // Clone rather than build a fresh URL, so query strings survive the
+  // redirect - /etudes?file=... would otherwise lose the document to show.
+  const target = request.nextUrl.clone();
+  target.pathname = pathname === "/" ? `/${language}/` : `/${language}${pathname}`;
+
+  const response = NextResponse.redirect(target);
   // The redirect target depends on the request headers, so it must not be
   // cached and replayed to visitors with a different language preference.
   response.headers.set("Vary", "Accept-Language");

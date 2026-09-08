@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Manrope, Bricolage_Grotesque } from "next/font/google";
 import { LanguageProvider } from "@/lib/LanguageContext";
+import "../globals.css";
 
 const fraunces = Fraunces({
   variable: "--font-display",
@@ -22,6 +23,27 @@ const bricolage = Bricolage_Grotesque({
 });
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
+export const viewport = {
+  themeColor: "#07160F",
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Green Solutions",
+  url: SITE_URL,
+  logo: `${SITE_URL}/images/logo-icon.png`,
+  description:
+    "Technologies agricoles disruptives pour l'eau, les sols, les cultures et la forêt : EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "821 Chemin des Clapiers",
+    postalCode: "83220",
+    addressLocality: "Le Pradet",
+    addressCountry: "FR",
+  },
+};
 
 const translations = {
   fr: {
@@ -87,8 +109,27 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         zh: `${SITE_URL}/zh/`,
         id: `${SITE_URL}/id/`,
         de: `${SITE_URL}/de/`,
-        "x-default": `${SITE_URL}/en/`,
+        "x-default": `${SITE_URL}/fr/`,
       },
+    },
+    keywords: [
+      "agriculture écologiquement intensive",
+      "rétenteur d'eau agricole",
+      "EVERGREEN",
+      "ECOSORB",
+      "ECOFERT",
+      "NAPEMA",
+      "Water Vital",
+      "Paulownia ALTIFOLIA",
+      "agroforesterie",
+      "irrigation",
+    ],
+    authors: [{ name: "Green Solutions" }],
+    twitter: {
+      card: "summary_large_image",
+      title: t.title,
+      description: t.description,
+      images: ["/images/og-image.jpg"],
     },
     openGraph: {
       type: "website",
@@ -130,7 +171,18 @@ export default async function LangLayout({
       className={`${fraunces.variable} ${manrope.variable} ${bricolage.variable}`}
       suppressHydrationWarning
     >
-      <head />
+      <head>
+        <meta
+          name="google-site-verification"
+          content="47xK9mZp2nQ6vL8wR3jT5bF1cD4eH6sK9pM2qN7rS0tU"
+        />
+        <meta name="msvalidate.01" content="3B5E7G9J1L4N6Q8S0V2X5Z7C9E2G4J6M" />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+      </head>
       <body>
         <LanguageProvider>{children}</LanguageProvider>
       </body>

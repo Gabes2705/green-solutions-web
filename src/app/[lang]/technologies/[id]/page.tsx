@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { content } from "@/lib/content";
-import TechnologyPageClient from "../../../technologies/[id]/TechnologyPageClient";
+import TechnologyPageClient from "@/components/TechnologyPageClient";
 
 const TECH_IDS = [
   "retention-eau",
