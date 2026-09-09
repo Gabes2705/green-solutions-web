@@ -16,6 +16,11 @@ export default function Footer() {
         <a href="#ressources">{c.nav.resources}</a>
       </div>
       <p>{c.footer.address}</p>
+      <p className="footer-legal">
+        <a href="/fr/mentions-legales">Mentions légales</a>
+        <span aria-hidden="true"> · </span>
+        <a href="/fr/confidentialite">Politique de confidentialité</a>
+      </p>
       <p className="photo-credit">
         {c.footer.photoCreditPrefix}{" "}
         <a

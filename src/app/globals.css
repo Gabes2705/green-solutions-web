@@ -694,6 +694,69 @@ body {
 }
 /* Deliberately no border-radius on the video: see FloatingVideo. */
 
+/* Legal pages: plain reading column, no cover, no decoration. */
+.legal {
+  max-width: 68ch;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 5rem;
+  color: var(--ink);
+}
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.6em 1.2em;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--bg-deep);
+  margin-bottom: 2.5rem;
+}
+.legal h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  line-height: 1.15;
+  margin: 0 0 0.4rem;
+}
+.legal h2 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin: 2.4rem 0 0.6rem;
+}
+.legal p,
+.legal li {
+  line-height: 1.7;
+  margin: 0 0 0.9rem;
+}
+.legal ul {
+  margin: 0 0 1.1rem;
+  padding-left: 1.3rem;
+}
+.legal a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+.legal-updated {
+  opacity: 0.65;
+  font-size: 0.88rem;
+  margin-bottom: 2rem;
+}
+.legal-lede {
+  font-size: 1.05rem;
+  border-left: 3px solid var(--leaf, #a8d14a);
+  padding-left: 1.1rem;
+  margin-bottom: 2rem;
+}
+/* Marks what still has to be supplied before publishing. */
+.legal mark {
+  background: rgba(255, 190, 60, 0.28);
+  color: inherit;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-style: italic;
+}
+
 /* Phone typography and call to action. At the desktop minimum the claim
    broke "Avec moins d'eau" across two lines and left 45px margins; sized to
    vw here so each line holds, and the button is made a real thumb target

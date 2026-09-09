@@ -37,5 +37,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // Legal pages. Written in French only, so listed once rather than per
+  // language: the same text under eight URLs would be eight duplicates.
+  ["mentions-legales", "confidentialite"].forEach((slug) => {
+    urls.push({
+      url: `${SITE_URL}/fr/${slug}`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.2,
+    });
+  });
+
   return urls;
 }

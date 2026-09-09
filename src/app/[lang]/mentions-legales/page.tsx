@@ -1,0 +1,84 @@
+import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Mentions légales | Green Solutions",
+  description:
+    "Éditeur, directeur de la publication, hébergeur et propriété intellectuelle du site Green Solutions.",
+  alternates: { canonical: `${SITE_URL}/fr/mentions-legales` },
+};
+
+export default function MentionsLegales() {
+  return (
+    <main className="legal">
+      <a href="/fr/" className="legal-back btn-3d btn-3d-light">
+        ← Retour au site
+      </a>
+
+      <h1>Mentions légales</h1>
+      <p className="legal-updated">Dernière mise à jour : 9 septembre 2026</p>
+
+      <h2>Éditeur du site</h2>
+      <p>
+        <strong>Green Solutions</strong>
+        <br />
+        821 Chemin des Clapiers, 83220 Le Pradet, France
+        <br />
+        SIRET : 420 728 545 00021
+        <br />
+        Forme juridique : <mark>à compléter</mark>
+        <br />
+        Capital social : <mark>à compléter</mark>
+        <br />
+        RCS : <mark>à compléter (ville d&apos;immatriculation et numéro)</mark>
+        <br />
+        Numéro de TVA intracommunautaire : <mark>à compléter</mark>
+        <br />
+        Courriel :{" "}
+        <a href="mailto:contact@evergreen-ecosorb.com">
+          contact@evergreen-ecosorb.com
+        </a>
+      </p>
+
+      <h2>Directeur de la publication</h2>
+      <p>Michel-Paul Correa, en sa qualité de dirigeant.</p>
+
+      <h2>Hébergeur</h2>
+      <p>
+        Le site est hébergé par <strong>Vercel Inc.</strong>, société de droit
+        américain, dont le site est accessible à l&apos;adresse{" "}
+        <a href="https://vercel.com" target="_blank" rel="noreferrer">
+          vercel.com
+        </a>
+        .
+        <br />
+        Adresse postale : <mark>à confirmer auprès de Vercel</mark>
+      </p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>
+        L&apos;ensemble des contenus de ce site — textes, images, schémas,
+        marques et logos — est protégé au titre du droit de la propriété
+        intellectuelle. Les marques EVERGREEN®, ECOSORB®, ECOFERT®, NAPEMA®,
+        Water Vital® et Paulownia ALTIFOLIA® sont des marques déposées.
+      </p>
+      <p>
+        Toute reproduction ou représentation, totale ou partielle, sans
+        autorisation écrite préalable est interdite.
+      </p>
+
+      <h2>Crédits photographiques</h2>
+      <p>
+        Photographies de Paulownia : Zeynel Cebeci et Codex, publiées sur
+        Wikimedia Commons sous licence CC BY-SA 4.0.
+      </p>
+
+      <h2>Données personnelles</h2>
+      <p>
+        Le traitement des données transmises via le formulaire de contact est
+        décrit dans la{" "}
+        <a href="/fr/confidentialite">politique de confidentialité</a>.
+      </p>
+    </main>
+  );
+}
