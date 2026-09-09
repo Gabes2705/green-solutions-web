@@ -45,14 +45,15 @@ export default function MentionsLegales() {
 
       <h2>Hébergeur</h2>
       <p>
-        Le site est hébergé par <strong>Vercel Inc.</strong>, société de droit
-        américain, dont le site est accessible à l&apos;adresse{" "}
+        <strong>Vercel Inc.</strong>
+        <br />
+        440 N Barranca Avenue #4133
+        <br />
+        Covina, CA 91723, États-Unis
+        <br />
         <a href="https://vercel.com" target="_blank" rel="noreferrer">
           vercel.com
         </a>
-        .
-        <br />
-        Adresse postale : <mark>à confirmer auprès de Vercel</mark>
       </p>
 
       <h2>Propriété intellectuelle</h2>
