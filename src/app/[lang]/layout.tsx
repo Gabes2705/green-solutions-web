@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Manrope, Bricolage_Grotesque } from "next/font/google";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import "../globals.css";
+import { SITE_URL } from "@/lib/site";
 
 const fraunces = Fraunces({
   variable: "--font-display",
@@ -21,8 +22,6 @@ const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   weight: ["600", "700", "800"],
 });
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const viewport = {
   themeColor: "#07160F",

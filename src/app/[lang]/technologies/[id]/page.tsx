@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { content } from "@/lib/content";
 import TechnologyPageClient from "@/components/TechnologyPageClient";
+import { SITE_URL } from "@/lib/site";
 
 const TECH_IDS = [
   "retention-eau",
@@ -34,7 +35,6 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const item = content[langKey].products.items.find((p) => p.id === id);
   if (!item) return {};
 
-  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
   const url = `${SITE_URL}/${lang}/technologies/${id}`;
   const title = `${item.title} — ${item.kicker} | Green Solutions`;
   const description = item.text;
@@ -79,7 +79,6 @@ export default async function Page({ params }: Params) {
   const { id, lang } = await params;
   const langKey = (["en", "es", "pt", "ar", "zh", "id", "de"].includes(lang) ? lang : "fr") as keyof typeof content;
   const item = content[langKey].products.items.find((p) => p.id === id);
-  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
   const jsonLd = item
     ? {
