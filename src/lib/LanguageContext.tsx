@@ -24,15 +24,17 @@ function getLanguageFromPathname(pathname: string): Lang {
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const [language, setLanguage] = useState<Lang>("fr");
-  const [mounted, setMounted] = useState(false);
+  // Seeded from the URL rather than defaulting to French and correcting in an
+  // effect: an effect only runs in the browser, so the server was sending the
+  // French body for every locale. Search engines were reading a German title
+  // over French copy on /de, and the same on the six other translations.
+  const [language, setLanguage] = useState<Lang>(() =>
+    getLanguageFromPathname(pathname)
+  );
   const isRtl = RTL_LANGS.includes(language);
 
   useEffect(() => {
-    // Get language from URL pathname
-    const urlLang = getLanguageFromPathname(pathname);
-    setLanguage(urlLang);
-    setMounted(true);
+    setLanguage(getLanguageFromPathname(pathname));
   }, [pathname]);
 
   useEffect(() => {
