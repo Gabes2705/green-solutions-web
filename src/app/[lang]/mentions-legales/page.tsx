@@ -20,19 +20,20 @@ export default function MentionsLegales() {
 
       <h2>Éditeur du site</h2>
       <p>
-        <strong>Green Solutions</strong>
+        <strong>GREEN SOLUTIONS SAS</strong>
         <br />
         821 Chemin des Clapiers, 83220 Le Pradet, France
         <br />
-        SIRET : 420 728 545 00021
+        Société par actions simplifiée au capital de{" "}
+        <mark>à compléter</mark>
         <br />
-        Forme juridique : <mark>à compléter</mark>
+        RCS Toulon 420 728 545 — SIRET 420 728 545 00021
         <br />
-        Capital social : <mark>à compléter</mark>
+        Code NAF : 4778C
         <br />
-        RCS : <mark>à compléter (ville d&apos;immatriculation et numéro)</mark>
+        TVA intracommunautaire : FR16420728545
         <br />
-        Numéro de TVA intracommunautaire : <mark>à compléter</mark>
+        Téléphone : +33 6 44 83 55 09
         <br />
         Courriel :{" "}
         <a href="mailto:contact@evergreen-ecosorb.com">

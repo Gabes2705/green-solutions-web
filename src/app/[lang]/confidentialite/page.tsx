@@ -27,9 +27,9 @@ export default function Confidentialite() {
 
       <h2>Qui est responsable de ces données</h2>
       <p>
-        Green Solutions, 821 Chemin des Clapiers, 83220 Le Pradet, France.
+        GREEN SOLUTIONS SAS, 821 Chemin des Clapiers, 83220 Le Pradet, France.
         <br />
-        SIRET : 420 728 545 00021.
+        RCS Toulon 420 728 545 — SIRET 420 728 545 00021.
         <br />
         Contact :{" "}
         <a href="mailto:contact@evergreen-ecosorb.com">
