@@ -645,11 +645,15 @@ body {
    flat panel pasted onto it: stacked shadows give it height, the rim keeps
    its edge legible against the dark foliage, and a slow drift sells the lift
    without pulling the eye off the claim. */
+/* Centred with flex rather than translateY(-50%): a transform on an
+   ancestor of a video is, like rounding it, one of the things that drops it
+   from the compositor's overlay path onto the slow one. */
 .film-anchor {
   position: absolute;
   left: 2vw;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  bottom: 0;
+  align-items: center;
   z-index: 20;
 }
 /* Only nudge it clear of the left edge once there is room; below this the
@@ -670,11 +674,7 @@ body {
     0 20px 40px -14px rgba(0, 0, 0, 0.7),
     0 0 0 1px rgba(255, 255, 255, 0.08);
 }
-/* Clip on the video itself rather than with overflow on the parent: clipping
-   a moving image through an ancestor drops it off the fast compositing path. */
-.film-screen video {
-  border-radius: 0.75rem;
-}
+/* Deliberately no border-radius on the video: see FloatingVideo. */
 
 /* From lg up the cover carries the clip on the left and the water drop on
    the right. Keep the claim inside the free band between the two. */

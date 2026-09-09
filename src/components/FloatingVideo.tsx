@@ -15,10 +15,11 @@ export default function FloatingVideo() {
   // the cover is on screen and is carried away as the page scrolls past it.
   // Sits on the left, vertically centred, matching the cover artwork.
   return (
-    <div className="film-anchor group hidden lg:block">
-      {/* Screen-like frame. The clip is square, so the frame is too. */}
+    <div className="film-anchor group hidden lg:flex">
+      {/* Square corners on purpose: rounding a video makes the browser mask
+          every frame, which takes it off the hardware overlay path. */}
       <div
-        className="film-screen relative rounded-2xl bg-black border-4 border-gray-800"
+        className="film-screen relative bg-black border-4 border-gray-800"
         style={{ width: "min(33vw, 560px)" }}
       >
         <video
