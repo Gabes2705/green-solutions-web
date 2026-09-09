@@ -173,6 +173,24 @@ body {
   }
 }
 
+/* Phone cover. The claim sits over the brightest part of the drop, so it
+   needs its own scrim rather than dimming the whole picture. */
+@media (max-width: 640px) {
+  .hero-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom,
+      rgba(4, 20, 13, 0.15) 0%,
+      rgba(4, 20, 13, 0.62) 38%,
+      rgba(4, 20, 13, 0.62) 72%,
+      rgba(4, 20, 13, 0.2) 100%
+    );
+  }
+}
+
 .atmosphere {
   position: absolute;
   inset: 0;
@@ -675,6 +693,28 @@ body {
     0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 /* Deliberately no border-radius on the video: see FloatingVideo. */
+
+/* Phone typography and call to action. At the desktop minimum the claim
+   broke "Avec moins d'eau" across two lines and left 45px margins; sized to
+   vw here so each line holds, and the button is made a real thumb target
+   instead of a 104px pill. */
+@media (max-width: 640px) {
+  .hero-claim {
+    max-width: none;
+    font-size: clamp(1.75rem, 8.2vw, 2.6rem);
+    margin-bottom: 1.1em;
+  }
+  .hero-cta {
+    margin-top: 1.6em;
+    width: 100%;
+  }
+  .hero-cta a {
+    width: 100%;
+    max-width: 320px;
+    min-height: 56px;
+    font-size: 1rem;
+  }
+}
 
 /* From lg up the cover carries the clip on the left and the water drop on
    the right. Keep the claim inside the free band between the two. */
