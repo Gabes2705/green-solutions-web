@@ -4,12 +4,14 @@ import { useLanguage } from "@/lib/LanguageContext";
 import { doorsFor } from "@/lib/doors";
 
 /**
- * The row of five links along the foot of the cover.
+ * The row of five buttons along the foot of the cover.
  *
- * There is no rule across the top of the row: the water drop in the cover
- * artwork reaches down to 81% of the image height, and a full-width line drew
- * straight through it. The columns are separated by short vertical hairlines
- * instead, and the whole row sits in the band of soil below the drop.
+ * The row sits in the band of soil below the water drop, which reaches 81% of
+ * the artwork's height - anything spanning higher than that cut through it.
+ *
+ * The numbers that used to precede each label are gone: these five are not a
+ * sequence, so numbering them stated something untrue and took room from the
+ * words that carry the meaning.
  */
 export default function CoverDoors() {
   const { language } = useLanguage();
@@ -17,9 +19,8 @@ export default function CoverDoors() {
 
   return (
     <nav className="cover-doors" aria-label="Nos domaines">
-      {doors.map((d, i) => (
+      {doors.map((d) => (
         <a key={d.id} href={`/${language}/technologies/${d.id}`}>
-          <span className="cover-doors-num">{String(i + 1).padStart(2, "0")}</span>
           <span className="cover-doors-label">{d.label}</span>
         </a>
       ))}

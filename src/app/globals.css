@@ -707,38 +707,46 @@ body {
   z-index: 3;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding: 0 clamp(1rem, 4vw, 3.5rem) clamp(1rem, 3.5vh, 2.6rem);
+  gap: clamp(0.4rem, 0.9vw, 0.85rem);
+  padding: 0 clamp(1rem, 4vw, 3.5rem) clamp(1rem, 3.2vh, 2.4rem);
 }
+/* Solid enough to read against a photograph: a dark glass panel with a light
+   edge, rather than text laid straight on the image. The corner radius is
+   deliberately squarer than the pills in the menu above, so the two rows do
+   not read as the same control repeated. */
 .cover-doors a {
   display: flex;
-  flex-direction: column;
-  gap: 0.35em;
-  min-width: 0;
-  padding: 0 clamp(0.4rem, 1vw, 1rem);
-  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 52px;
+  padding: 0.7em clamp(0.5rem, 1vw, 1rem);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 10px;
+  background: rgba(7, 24, 16, 0.62);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 6px 22px -10px rgba(0, 0, 0, 0.75);
   text-decoration: none;
-  color: #eaf2ec;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
-}
-.cover-doors a:first-child {
-  border-left: none;
-}
-.cover-doors-num {
-  font-size: clamp(0.5rem, 0.78vw, 0.66rem);
-  letter-spacing: 0.09em;
-  color: var(--leaf, #a8d14a);
-  font-weight: 700;
+  color: #f0f6f1;
+  transition: background-color 0.18s ease, border-color 0.18s ease,
+    color 0.18s ease;
 }
 .cover-doors-label {
   font-weight: 700;
-  font-size: clamp(0.62rem, 1.05vw, 0.9rem);
+  font-size: clamp(0.7rem, 1.08vw, 0.95rem);
   line-height: 1.25;
   text-wrap: balance;
 }
-.cover-doors a:hover .cover-doors-label,
-.cover-doors a:focus-visible .cover-doors-label {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.cover-doors a:hover,
+.cover-doors a:focus-visible {
+  background: var(--leaf, #a8d14a);
+  border-color: var(--leaf, #a8d14a);
+  color: var(--bg-deep, #07160f);
+}
+.cover-doors a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 /* Five columns cannot hold their words on a phone: the row becomes a strip
@@ -746,7 +754,6 @@ body {
 @media (max-width: 900px) {
   .cover-doors {
     display: flex;
-    gap: 0.5rem;
     overflow-x: auto;
     scrollbar-width: none;
     padding-bottom: 1.2rem;
@@ -755,15 +762,10 @@ body {
     display: none;
   }
   .cover-doors a {
-    border-left: none;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 999px;
-    padding: 0.5em 0.95em;
+    flex: 0 0 auto;
+    min-height: 46px;
+    padding: 0.6em 1.05em;
     white-space: nowrap;
-    background: rgba(8, 26, 18, 0.42);
-  }
-  .cover-doors-num {
-    display: none;
   }
 }
 
