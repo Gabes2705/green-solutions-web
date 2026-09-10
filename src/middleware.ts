@@ -60,5 +60,8 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next|.*\\..*).*)"],
+  // "api" has to be excluded alongside _next and static files. Without it the
+  // contact form's POST to /api/contact was redirected to /fr/api/contact,
+  // where no route exists, so every enquiry sent from the site ended in a 404.
+  matcher: ["/((?!api|_next|.*\\..*).*)"],
 };

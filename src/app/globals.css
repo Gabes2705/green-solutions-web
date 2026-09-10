@@ -759,6 +759,15 @@ body {
 }
 /* Deliberately no border-radius on the video: see FloatingVideo. */
 
+/* Both of these render at 38px, under the 44px a fingertip needs. Raised on
+   touch-sized screens only, so the desktop proportions are untouched. */
+@media (max-width: 900px) {
+  .ta-answer-link,
+  .lang-current {
+    min-height: 44px;
+  }
+}
+
 /* The count in a section title, set in a serif face as an accent. Times runs
    small and light beside the display face, so it is nudged up in size and
    given a little tracking to hold its own. */
