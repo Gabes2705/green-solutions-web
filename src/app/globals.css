@@ -694,6 +694,79 @@ body {
 }
 /* Deliberately no border-radius on the video: see FloatingVideo. */
 
+/* --- The five entry points along the foot of the cover ------------------
+   No rule across the top: the water drop reaches 81% of the artwork's height
+   and a full-width line cut straight through it. Separation comes from short
+   vertical hairlines between the columns, and the row sits in the band of
+   soil below the drop. */
+.cover-doors {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0 clamp(1rem, 4vw, 3.5rem) clamp(1rem, 3.5vh, 2.6rem);
+}
+.cover-doors a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  min-width: 0;
+  padding: 0 clamp(0.4rem, 1vw, 1rem);
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  text-decoration: none;
+  color: #eaf2ec;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+.cover-doors a:first-child {
+  border-left: none;
+}
+.cover-doors-num {
+  font-size: clamp(0.5rem, 0.78vw, 0.66rem);
+  letter-spacing: 0.09em;
+  color: var(--leaf, #a8d14a);
+  font-weight: 700;
+}
+.cover-doors-label {
+  font-weight: 700;
+  font-size: clamp(0.62rem, 1.05vw, 0.9rem);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.cover-doors a:hover .cover-doors-label,
+.cover-doors a:focus-visible .cover-doors-label {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Five columns cannot hold their words on a phone: the row becomes a strip
+   that scrolls sideways, keeping every label whole. */
+@media (max-width: 900px) {
+  .cover-doors {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 1.2rem;
+  }
+  .cover-doors::-webkit-scrollbar {
+    display: none;
+  }
+  .cover-doors a {
+    border-left: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    padding: 0.5em 0.95em;
+    white-space: nowrap;
+    background: rgba(8, 26, 18, 0.42);
+  }
+  .cover-doors-num {
+    display: none;
+  }
+}
+
 /* Legal pages: plain reading column, no cover, no decoration. */
 .legal {
   max-width: 68ch;

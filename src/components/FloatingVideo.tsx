@@ -17,10 +17,12 @@ export default function FloatingVideo() {
   return (
     <div className="film-anchor group hidden lg:flex">
       {/* Square corners on purpose: rounding a video makes the browser mask
-          every frame, which takes it off the hardware overlay path. */}
+          every frame, which takes it off the hardware overlay path.
+          58vh caps the square on a short window, so it cannot reach down into
+          the row of links along the foot of the cover. */}
       <div
         className="film-screen relative bg-black border-4 border-gray-800"
-        style={{ width: "min(33vw, 560px)" }}
+        style={{ width: "min(33vw, 560px, 58vh)" }}
       >
         <video
           className="w-full h-auto block"

@@ -1,6 +1,7 @@
 "use client";
 
 import Atmosphere from "./Atmosphere";
+import CoverDoors from "./CoverDoors";
 import FloatingVideo from "./FloatingVideo";
 import HeroBadge3D from "./HeroBadge3D";
 import HeroParallax from "./HeroParallax";
@@ -44,6 +45,7 @@ export default function Hero() {
       </HeroParallax>
 
       <FloatingVideo />
+      <CoverDoors />
       <VideoDiagnostic />
     </div>
   );
