@@ -75,6 +75,19 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       </g>
     </>
   ),
+  "soudan-sud": () => (
+    <>
+      <rect width="30" height="5.5" fill="#000" />
+      <rect y="5.5" width="30" height="0.7" fill="#fff" />
+      <rect y="6.2" width="30" height="7.6" fill="#DA121A" />
+      <rect y="13.8" width="30" height="0.7" fill="#fff" />
+      <rect y="14.5" width="30" height="5.5" fill="#078930" />
+      <polygon points="0,0 0,20 13,10" fill="#0F47AF" />
+      <g transform="translate(4.3 10)">
+        <Star fill="#FCDD09" />
+      </g>
+    </>
+  ),
 };
 
 export default function CountryFlag({ id }: { id: string }) {
