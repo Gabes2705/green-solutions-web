@@ -759,6 +759,17 @@ body {
 }
 /* Deliberately no border-radius on the video: see FloatingVideo. */
 
+/* The count in a section title, set in a serif face as an accent. Times runs
+   small and light beside the display face, so it is nudged up in size and
+   given a little tracking to hold its own. */
+.figure-serif {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.14em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-variant-numeric: lining-nums;
+}
+
 /* --- The five entry points along the foot of the cover ------------------
    No rule across the top: the water drop reaches 81% of the artwork's height
    and a full-width line cut straight through it. Separation comes from short

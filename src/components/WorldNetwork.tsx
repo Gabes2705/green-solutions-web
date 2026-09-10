@@ -106,8 +106,19 @@ export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
       // the arrowhead waits for its own line to reach it
       gsap.set(arrows, { opacity: 0, scale: 0.4, transformOrigin: "0px 0px" });
 
+      // Loops: the routes draw themselves, hold, then draw again. repeatDelay
+      // leaves the finished map on screen instead of restarting the moment it
+      // lands, and toggleActions stops it once the section scrolls away -
+      // this animates strokeDashoffset, which repaints every frame rather
+      // than riding the compositor, so it should not keep running out of view.
       const tl = gsap.timeline({
-        scrollTrigger: { trigger: svg, start: "top 75%" },
+        repeat: -1,
+        repeatDelay: 3.2,
+        scrollTrigger: {
+          trigger: svg,
+          start: "top 75%",
+          toggleActions: "play pause resume pause",
+        },
       });
 
       tl.to(paths, {
