@@ -673,6 +673,15 @@ body {
   bottom: 0;
   align-items: center;
   z-index: 20;
+  /* The anchor spans the full height of the cover in order to centre the clip
+     without a transform, which would cost the clip its hardware overlay. That
+     leaves a tall invisible column sitting above the buttons at the foot of
+     the cover and swallowing their clicks, so the column itself takes no
+     pointer events and the frame inside it takes them back. */
+  pointer-events: none;
+}
+.film-screen {
+  pointer-events: auto;
 }
 /* Only nudge it clear of the left edge once there is room; below this the
    claim would be crowded against the frame. */
