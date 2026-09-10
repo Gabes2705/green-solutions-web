@@ -404,6 +404,7 @@ export const content = {
         { country: "Oman", href: "/documents/countries/oman.pdf" },
         { country: "Sénégal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunisie", href: "/documents/countries/tunisie.pdf" },
+        { country: "Soudan du Sud", href: "/documents/countries/soudan-sud.pdf" },
       ],
     },
     team: {
@@ -891,6 +892,7 @@ export const content = {
         { country: "Oman", href: "/documents/countries/oman.pdf" },
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunisia", href: "/documents/countries/tunisie.pdf" },
+        { country: "South Sudan", href: "/documents/countries/soudan-sud.pdf" },
       ],
     },
     team: {
@@ -1378,6 +1380,7 @@ export const content = {
         { country: "Omán", href: "/documents/countries/oman.pdf" },
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Túnez", href: "/documents/countries/tunisie.pdf" },
+        { country: "Sudán del Sur", href: "/documents/countries/soudan-sud.pdf" },
       ],
     },
     team: {
@@ -1865,6 +1868,7 @@ export const content = {
         { country: "Omã", href: "/documents/countries/oman.pdf" },
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunísia", href: "/documents/countries/tunisie.pdf" },
+        { country: "Sudão do Sul", href: "/documents/countries/soudan-sud.pdf" },
       ],
     },
     team: {
@@ -2352,6 +2356,7 @@ export const content = {
         { country: "عُمان", href: "/documents/countries/oman.pdf" },
         { country: "السنغال", href: "/documents/countries/senegal.pdf" },
         { country: "تونس", href: "/documents/countries/tunisie.pdf" },
+        { country: "جنوب السودان", href: "/documents/countries/soudan-sud.pdf" },
       ],
     },
     team: {
@@ -2839,6 +2844,7 @@ export const content = {
         { country: "阿曼", href: "/documents/countries/oman.pdf" },
         { country: "塞内加尔", href: "/documents/countries/senegal.pdf" },
         { country: "突尼斯", href: "/documents/countries/tunisie.pdf" },
+        { country: "南苏丹", href: "/documents/countries/soudan-sud.pdf" },
       ],
     },
     team: {
@@ -3326,6 +3332,7 @@ export const content = {
         { country: "Oman", href: "/documents/countries/oman.pdf" },
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunisia", href: "/documents/countries/tunisie.pdf" },
+        { country: "Sudan Selatan", href: "/documents/countries/soudan-sud.pdf" },
       ],
     },
     team: {
@@ -3813,6 +3820,7 @@ export const content = {
         { country: "Oman", href: "/documents/countries/oman.pdf" },
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunesien", href: "/documents/countries/tunisie.pdf" },
+        { country: "Südsudan", href: "/documents/countries/soudan-sud.pdf" },
       ],
     },
     team: {
