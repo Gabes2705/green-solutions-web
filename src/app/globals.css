@@ -131,6 +131,62 @@ body {
     transform: scale(1.09);
   }
 }
+/* --- A slow glint on the water inside the drop -------------------------
+   The drop is painted into the photograph, so nothing here moves the image
+   itself: this is a soft light that drifts across the pool at its foot, the
+   way light plays on a liquid.
+
+   Only transform and opacity are animated, which the compositor handles on
+   its own without repainting anything - the same budget as the drifting
+   spores, and far below the full-viewport rescale that was removed from this
+   cover to cure the stutter. No blur filter and no blend mode, both of which
+   would cost a pass per frame.
+
+   Placed by percentage, so it drifts a few percent against the drop as the
+   window changes shape; the light is wide and soft enough that the drift
+   does not read. Shown only from 1024px up, where the framing it was
+   measured against holds. */
+.water-glint {
+  position: absolute;
+  left: 68%;
+  top: 56%;
+  width: 22%;
+  height: 20%;
+  z-index: 2;
+  display: none;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(214, 244, 255, 0.3) 0%,
+    rgba(196, 236, 255, 0.16) 42%,
+    rgba(190, 232, 255, 0) 72%
+  );
+  pointer-events: none;
+  will-change: transform, opacity;
+  animation: water-glint 11s ease-in-out infinite alternate;
+}
+@media (min-width: 1024px) {
+  .water-glint {
+    display: block;
+  }
+}
+@keyframes water-glint {
+  from {
+    transform: translate3d(-7%, 2%, 0) scale(0.94);
+    opacity: 0.5;
+  }
+  to {
+    transform: translate3d(9%, -3%, 0) scale(1.14);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .water-glint {
+    animation: none;
+    opacity: 0.7;
+  }
+}
+
 .hero-photo::before {
   content: "";
   position: absolute;

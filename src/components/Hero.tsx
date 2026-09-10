@@ -23,6 +23,7 @@ export default function Hero() {
           fetchPriority="high"
           decoding="async"
         />
+        <div className="water-glint" aria-hidden="true" />
       </div>
       <Atmosphere />
 
