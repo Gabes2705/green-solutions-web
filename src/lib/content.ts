@@ -26,7 +26,7 @@ export const content = {
     proofBar: [
       { figure: "+30 à +100 %", label: "de rendement, en quantité comme en qualité" },
       { figure: "−50 à −70 %", label: "de besoin en eau d'irrigation" },
-      { figure: "12", label: "essais pilotes en cours en 2026" },
+      { figure: "13", label: "essais pilotes en cours en 2026" },
       { figure: "SOHISCERT", label: "et EU Bio, certifications réelles" },
     ],
     presentation: {
@@ -36,7 +36,7 @@ export const content = {
       title3: "La croissance et la qualité",
       lede: "Green Solutions développe et distribue des technologies agricoles disruptives, conçues pour augmenter la productivité tout en préservant, et même en régénérant, les ressources naturelles dont cette productivité dépend. Des réponses concrètes, éprouvées au champ, au stress hydrique, à l'épuisement des sols, à la rentabilité et à la sécurité alimentaire.",
       stats: [
-        { num: "29", label: "partenaires" },
+        { num: "30", label: "partenaires" },
         { num: "24", label: "pays" },
         { num: "4", label: "technologies de marque" },
       ],
@@ -304,7 +304,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Ce qui tourne en ce moment",
-      title: "Douze essais pilotes en cours",
+      title: "Treize essais pilotes en cours",
       lede: "Des groupes agro-industriels, des coopératives et deux universités américaines conduisent actuellement des essais sur nos technologies, sur leurs propres parcelles et sur leurs propres cultures. Voici lesquels, en septembre 2026.",
       pilots: [
         { org: "Groupe CAMPARI", place: "Italie · Martinique", crop: "Canne à sucre, rhum Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -319,6 +319,7 @@ export const content = {
         { org: "AGRO COMPLEX", place: "Pologne", crop: "Maïs et pommes de terre", tech: ["EVERGREEN®"] },
         { org: "Institut CEHPAPE", place: "Haïti", crop: "Maraîchage / banane plantain / riz", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Gazon Phenix", tech: ["EVERGREEN®"] },
+        { org: "Green Dream", place: "Chichaoua, Maroc", crop: "Clémentines bio (variété Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
       ],
     },
     objections: {
@@ -514,7 +515,7 @@ export const content = {
     proofBar: [
       { figure: "+30 to +100%", label: "yield increase, in quantity and quality" },
       { figure: "−50 to −70%", label: "reduction in irrigation water needs" },
-      { figure: "12", label: "pilot trials underway in 2026" },
+      { figure: "13", label: "pilot trials underway in 2026" },
       { figure: "SOHISCERT", label: "and EU Bio, real certifications" },
     ],
     presentation: {
@@ -524,7 +525,7 @@ export const content = {
       title3: "Growth and quality",
       lede: "Green Solutions develops and distributes disruptive agricultural technologies designed to increase productivity while preserving, and even regenerating, the natural resources that productivity depends on. Concrete, field-tested answers to water stress, soil depletion, profitability and food security.",
       stats: [
-        { num: "29", label: "partners" },
+        { num: "30", label: "partners" },
         { num: "24", label: "countries" },
         { num: "4", label: "branded technologies" },
       ],
@@ -792,7 +793,7 @@ export const content = {
     },
     essais: {
       eyebrow: "What's running right now",
-      title: "Twelve pilot trials under way",
+      title: "Thirteen pilot trials under way",
       lede: "Agro-industrial groups, cooperatives and two American universities are currently running trials on our technologies, on their own plots and their own crops. Here they are, in September 2026.",
       pilots: [
         { org: "CAMPARI Group", place: "Italy · Martinique", crop: "Sugarcane, Trois Rivières rum", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -807,6 +808,7 @@ export const content = {
         { org: "AGRO COMPLEX", place: "Poland", crop: "Corn and potatoes", tech: ["EVERGREEN®"] },
         { org: "CEHPAPE Institute", place: "Haiti", crop: "Market gardening / plantain banana / rice", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Phenix turf", tech: ["EVERGREEN®"] },
+        { org: "Green Dream", place: "Chichaoua, Morocco", crop: "Organic clementines (Afourer variety), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
       ],
     },
     objections: {
@@ -1002,7 +1004,7 @@ export const content = {
     proofBar: [
       { figure: "+30 a +100 %", label: "de rendimiento, en cantidad y calidad" },
       { figure: "−50 a −70 %", label: "de necesidad de agua de riego" },
-      { figure: "12", label: "ensayos piloto en curso en 2026" },
+      { figure: "13", label: "ensayos piloto en curso en 2026" },
       { figure: "SOHISCERT", label: "y EU Bio, certificaciones reales" },
     ],
     presentation: {
@@ -1012,7 +1014,7 @@ export const content = {
       title3: "El crecimiento y la calidad",
       lede: "Green Solutions desarrolla y distribuye tecnologías agrícolas disruptivas, diseñadas para aumentar la productividad preservando, e incluso regenerando, los recursos naturales de los que depende esa productividad. Respuestas concretas, probadas en el campo, frente al estrés hídrico, el agotamiento de los suelos, la rentabilidad y la seguridad alimentaria.",
       stats: [
-        { num: "29", label: "socios" },
+        { num: "30", label: "socios" },
         { num: "24", label: "países" },
         { num: "4", label: "tecnologías de marca" },
       ],
@@ -1280,7 +1282,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Lo que está en marcha ahora mismo",
-      title: "Doce ensayos piloto en curso",
+      title: "Trece ensayos piloto en curso",
       lede: "Grupos agroindustriales, cooperativas y dos universidades estadounidenses realizan actualmente ensayos con nuestras tecnologías, en sus propias parcelas y sus propios cultivos. Estos son, en septiembre de 2026.",
       pilots: [
         { org: "Grupo CAMPARI", place: "Italia · Martinica", crop: "Caña de azúcar, ron Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1295,6 +1297,7 @@ export const content = {
         { org: "AGRO COMPLEX", place: "Polonia", crop: "Maíz y patatas", tech: ["EVERGREEN®"] },
         { org: "Instituto CEHPAPE", place: "Haití", crop: "Horticultura / plátano macho / arroz", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Césped Phenix", tech: ["EVERGREEN®"] },
+        { org: "Green Dream", place: "Chichaoua, Marruecos", crop: "Clementinas ecológicas (variedad Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
       ],
     },
     objections: {
@@ -1490,7 +1493,7 @@ export const content = {
     proofBar: [
       { figure: "+30 a +100 %", label: "de rendimento, em quantidade e qualidade" },
       { figure: "−50 a −70 %", label: "de necessidade de água de irrigação" },
-      { figure: "12", label: "ensaios piloto em curso em 2026" },
+      { figure: "13", label: "ensaios piloto em curso em 2026" },
       { figure: "SOHISCERT", label: "e EU Bio, certificações reais" },
     ],
     presentation: {
@@ -1500,7 +1503,7 @@ export const content = {
       title3: "O crescimento e a qualidade",
       lede: "A Green Solutions desenvolve e distribui tecnologias agrícolas disruptivas, concebidas para aumentar a produtividade preservando, e até regenerando, os recursos naturais dos quais essa produtividade depende. Respostas concretas, testadas no campo, ao estresse hídrico, ao esgotamento dos solos, à rentabilidade e à segurança alimentar.",
       stats: [
-        { num: "29", label: "parceiros" },
+        { num: "30", label: "parceiros" },
         { num: "24", label: "países" },
         { num: "4", label: "tecnologias de marca" },
       ],
@@ -1768,7 +1771,7 @@ export const content = {
     },
     essais: {
       eyebrow: "O que está em curso neste momento",
-      title: "Doze ensaios piloto em curso",
+      title: "Treze ensaios piloto em curso",
       lede: "Grupos agroindustriais, cooperativas e duas universidades americanas conduzem atualmente ensaios com as nossas tecnologias, nas suas próprias parcelas e nas suas próprias culturas. Eis quais, em setembro de 2026.",
       pilots: [
         { org: "Grupo CAMPARI", place: "Itália · Martinica", crop: "Cana-de-açúcar, rum Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1783,6 +1786,7 @@ export const content = {
         { org: "AGRO COMPLEX", place: "Polónia", crop: "Milho e batatas", tech: ["EVERGREEN®"] },
         { org: "Instituto CEHPAPE", place: "Haiti", crop: "Horticultura / banana-da-terra / arroz", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Relva Phenix", tech: ["EVERGREEN®"] },
+        { org: "Green Dream", place: "Chichaoua, Marrocos", crop: "Clementinas biológicas (variedade Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
       ],
     },
     objections: {
@@ -1978,7 +1982,7 @@ export const content = {
     proofBar: [
       { figure: "+30 إلى +100%", label: "زيادة في الإنتاجية، كمًا ونوعًا" },
       { figure: "−50 إلى −70%", label: "تخفيض في احتياجات مياه الري" },
-      { figure: "12", label: "تجربة رائدة قيد التنفيذ في 2026" },
+      { figure: "13", label: "تجربة رائدة قيد التنفيذ في 2026" },
       { figure: "SOHISCERT", label: "وشهادة EU Bio، اعتمادات حقيقية" },
     ],
     presentation: {
@@ -1988,7 +1992,7 @@ export const content = {
       title3: "النمو والجودة",
       lede: "تطوّر شركة Green Solutions وتوزّع تقنيات زراعية مبتكرة، مصمَّمة لزيادة الإنتاجية مع الحفاظ على الموارد الطبيعية التي تعتمد عليها هذه الإنتاجية، بل وتجديدها. حلول ملموسة، مُختبرة ميدانيًا، لمواجهة الإجهاد المائي، واستنزاف التربة، والربحية، والأمن الغذائي.",
       stats: [
-        { num: "29", label: "شريك" },
+        { num: "30", label: "شريك" },
         { num: "24", label: "دولة" },
         { num: "4", label: "تقنيات حصرية" },
       ],
@@ -2256,7 +2260,7 @@ export const content = {
     },
     essais: {
       eyebrow: "ما يجري حاليًا",
-      title: "اثنتا عشرة تجربة رائدة قيد التنفيذ",
+      title: "ثلاث عشرة تجربة رائدة قيد التنفيذ",
       lede: "تُجري مجموعات زراعية صناعية وتعاونيات وجامعتان أمريكيتان حاليًا تجارب على تقنياتنا، في أراضيها ومحاصيلها الخاصة. إليكم القائمة، في سبتمبر 2026.",
       pilots: [
         { org: "مجموعة CAMPARI", place: "إيطاليا · مارتينيك", crop: "قصب السكر، رم Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -2271,6 +2275,7 @@ export const content = {
         { org: "AGRO COMPLEX", place: "بولندا", crop: "الذرة والبطاطس", tech: ["EVERGREEN®"] },
         { org: "معهد CEHPAPE", place: "هايتي", crop: "الزراعة البستانية / موز الجنة / الأرز", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "البرتغال", crop: "عشب Phenix", tech: ["EVERGREEN®"] },
+        { org: "Green Dream", place: "شيشاوة، المغرب", crop: "يوسفي عضوي (صنف أفوري)، الباولونيا", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
       ],
     },
     objections: {
@@ -2466,7 +2471,7 @@ export const content = {
     proofBar: [
       { figure: "+30 至 +100%", label: "产量提升，量与质兼顾" },
       { figure: "−50 至 −70%", label: "灌溉用水需求" },
-      { figure: "12", label: "2026年正在进行的试点项目" },
+      { figure: "13", label: "2026年正在进行的试点项目" },
       { figure: "SOHISCERT", label: "及欧盟有机认证，真实认证" },
     ],
     presentation: {
@@ -2476,7 +2481,7 @@ export const content = {
       title3: "增产与提质",
       lede: "Green Solutions 研发并推广颠覆性农业技术，旨在提高生产力的同时保护乃至再生这种生产力所依赖的自然资源。这些是经过田间验证的具体解决方案，应对水分胁迫、土壤退化、盈利能力与粮食安全等挑战。",
       stats: [
-        { num: "29", label: "合作伙伴" },
+        { num: "30", label: "合作伙伴" },
         { num: "24", label: "国家" },
         { num: "4", label: "品牌技术" },
       ],
@@ -2744,7 +2749,7 @@ export const content = {
     },
     essais: {
       eyebrow: "当前正在进行的项目",
-      title: "十二项正在进行的试点试验",
+      title: "十三项正在进行的试点试验",
       lede: "多家农工业集团、合作社以及两所美国大学目前正在自己的地块和作物上，对我们的技术开展试验。以下是截至2026年9月的清单。",
       pilots: [
         { org: "Groupe CAMPARI", place: "意大利·马提尼克", crop: "甘蔗，Trois Rivières朗姆酒", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -2759,6 +2764,7 @@ export const content = {
         { org: "AGRO COMPLEX", place: "波兰", crop: "玉米与马铃薯", tech: ["EVERGREEN®"] },
         { org: "CEHPAPE研究所", place: "海地", crop: "蔬菜种植 / 大蕉 / 水稻", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "葡萄牙", crop: "Phenix草坪", tech: ["EVERGREEN®"] },
+        { org: "Green Dream", place: "摩洛哥希沙瓦", crop: "有机小柑橘（Afourer品种）、泡桐", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
       ],
     },
     objections: {
@@ -2954,7 +2960,7 @@ export const content = {
     proofBar: [
       { figure: "+30 hingga +100%", label: "peningkatan hasil, dari segi jumlah maupun kualitas" },
       { figure: "−50 hingga −70%", label: "kebutuhan air irigasi" },
-      { figure: "12", label: "uji coba percontohan yang sedang berjalan pada 2026" },
+      { figure: "13", label: "uji coba percontohan yang sedang berjalan pada 2026" },
       { figure: "SOHISCERT", label: "dan EU Bio, sertifikasi nyata" },
     ],
     presentation: {
@@ -2964,7 +2970,7 @@ export const content = {
       title3: "Pertumbuhan dan Kualitas",
       lede: "Green Solutions mengembangkan dan mendistribusikan teknologi pertanian yang disruptif, dirancang untuk meningkatkan produktivitas sekaligus menjaga, bahkan meregenerasi, sumber daya alam yang menjadi dasar produktivitas tersebut. Solusi konkret, teruji di lapangan, untuk mengatasi tekanan air, kelelahan tanah, profitabilitas, dan ketahanan pangan.",
       stats: [
-        { num: "29", label: "mitra" },
+        { num: "30", label: "mitra" },
         { num: "24", label: "negara" },
         { num: "4", label: "teknologi bermerek" },
       ],
@@ -3232,7 +3238,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Yang sedang berjalan saat ini",
-      title: "Dua Belas Uji Coba Percontohan yang Sedang Berlangsung",
+      title: "Tiga Belas Uji Coba Percontohan yang Sedang Berlangsung",
       lede: "Kelompok agroindustri, koperasi, dan dua universitas Amerika saat ini sedang melakukan uji coba teknologi kami, di lahan dan tanaman mereka sendiri. Berikut daftarnya, per September 2026.",
       pilots: [
         { org: "Groupe CAMPARI", place: "Italia · Martinik", crop: "Tebu, rum Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -3247,6 +3253,7 @@ export const content = {
         { org: "AGRO COMPLEX", place: "Polandia", crop: "Jagung dan kentang", tech: ["EVERGREEN®"] },
         { org: "Institut CEHPAPE", place: "Haiti", crop: "Budi daya sayuran / pisang plantain / padi", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rumput Phenix", tech: ["EVERGREEN®"] },
+        { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Klementin organik (varietas Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
       ],
     },
     objections: {
@@ -3442,7 +3449,7 @@ export const content = {
     proofBar: [
       { figure: "+30 bis +100 %", label: "Ertragssteigerung, in Menge und Qualität" },
       { figure: "−50 bis −70 %", label: "weniger Bewässerungsbedarf" },
-      { figure: "12", label: "laufende Pilotversuche im Jahr 2026" },
+      { figure: "13", label: "laufende Pilotversuche im Jahr 2026" },
       { figure: "SOHISCERT", label: "und EU-Bio, echte Zertifizierungen" },
     ],
     presentation: {
@@ -3452,7 +3459,7 @@ export const content = {
       title3: "Wachstum und Qualität",
       lede: "Green Solutions entwickelt und vertreibt disruptive Agrartechnologien, die darauf ausgelegt sind, die Produktivität zu steigern und gleichzeitig die natürlichen Ressourcen, von denen diese Produktivität abhängt, zu erhalten und sogar zu regenerieren. Konkrete, im Feld erprobte Antworten auf Wasserstress, Bodenerschöpfung, Rentabilität und Ernährungssicherheit.",
       stats: [
-        { num: "29", label: "Partner" },
+        { num: "30", label: "Partner" },
         { num: "24", label: "Länder" },
         { num: "4", label: "Markentechnologien" },
       ],
@@ -3720,7 +3727,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Was gerade läuft",
-      title: "Zwölf laufende Pilotversuche",
+      title: "Dreizehn laufende Pilotversuche",
       lede: "Agrarindustrielle Gruppen, Genossenschaften und zwei amerikanische Universitäten führen derzeit Versuche mit unseren Technologien auf ihren eigenen Parzellen und mit ihren eigenen Kulturen durch. Hier die Liste, Stand September 2026.",
       pilots: [
         { org: "Groupe CAMPARI", place: "Italien · Martinique", crop: "Zuckerrohr, Rhum Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -3735,6 +3742,7 @@ export const content = {
         { org: "AGRO COMPLEX", place: "Polen", crop: "Mais und Kartoffeln", tech: ["EVERGREEN®"] },
         { org: "Institut CEHPAPE", place: "Haiti", crop: "Gemüseanbau / Kochbananen / Reis", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rasen Phenix", tech: ["EVERGREEN®"] },
+        { org: "Green Dream", place: "Chichaoua, Marokko", crop: "Bio-Clementinen (Sorte Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
       ],
     },
     objections: {
