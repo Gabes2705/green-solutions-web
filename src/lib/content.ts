@@ -38,7 +38,7 @@ export const content = {
       lede: "Green Solutions développe et distribue des technologies agricoles disruptives, conçues pour augmenter la productivité tout en préservant, et même en régénérant, les ressources naturelles dont cette productivité dépend. Des réponses concrètes, éprouvées au champ, au stress hydrique, à l'épuisement des sols, à la rentabilité et à la sécurité alimentaire.",
       stats: [
         { num: "30", label: "partenaires" },
-        { num: "24", label: "pays" },
+        { num: "29", label: "pays" },
         { num: "4", label: "technologies de marque" },
       ],
       distinguish: [
@@ -388,9 +388,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Ils travaillent avec nous",
-      title: "Un réseau dans 24 pays",
+      title: "Un réseau dans 29 pays",
       lede: "Producteurs, coopératives, spécialistes du traitement de l'eau, universités et instituts de recherche, présents sur cinq continents.",
-      mapAriaLabel: "Carte du réseau Green Solutions dans 24 pays",
+      mapAriaLabel: "Carte du réseau Green Solutions dans 29 pays",
     },
     countryStudies: {
       eyebrow: "Approche pays",
@@ -510,6 +510,7 @@ export const content = {
       "France", "Afrique du Sud", "Tunisie", "Italie", "Royaume-Uni", "Canada", "Espagne", "Mali",
       "Caraïbes", "États-Unis", "Cameroun", "Guinée", "Sénégal", "Maroc", "Guinée-Bissau", "Brésil",
       "Arabie saoudite", "Sultanat d'Oman", "Congo", "Côte d'Ivoire", "Soudan du Sud", "Pologne", "Grèce", "Portugal",
+      "Émirats arabes unis", "Mexique", "Turquie", "Indonésie", "Chine",
     ],
   },
   en: {
@@ -547,7 +548,7 @@ export const content = {
       lede: "Green Solutions develops and distributes disruptive agricultural technologies designed to increase productivity while preserving, and even regenerating, the natural resources that productivity depends on. Concrete, field-tested answers to water stress, soil depletion, profitability and food security.",
       stats: [
         { num: "30", label: "partners" },
-        { num: "24", label: "countries" },
+        { num: "29", label: "countries" },
         { num: "4", label: "branded technologies" },
       ],
       distinguish: [
@@ -897,9 +898,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "They work with us",
-      title: "A network across 24 countries",
+      title: "A network across 29 countries",
       lede: "Producers, cooperatives, water-treatment specialists, universities and research institutes, present across five continents.",
-      mapAriaLabel: "Map of the Green Solutions network across 24 countries",
+      mapAriaLabel: "Map of the Green Solutions network across 29 countries",
     },
     countryStudies: {
       eyebrow: "Country approach",
@@ -1019,6 +1020,7 @@ export const content = {
       "France", "South Africa", "Tunisia", "Italy", "United Kingdom", "Canada", "Spain", "Mali",
       "Caribbean", "United States", "Cameroon", "Guinea", "Senegal", "Morocco", "Guinea-Bissau", "Brazil",
       "Saudi Arabia", "Sultanate of Oman", "Congo", "Ivory Coast", "South Sudan", "Poland", "Greece", "Portugal",
+      "United Arab Emirates", "Mexico", "Turkey", "Indonesia", "China",
     ],
   },
   es: {
@@ -1056,7 +1058,7 @@ export const content = {
       lede: "Green Solutions desarrolla y distribuye tecnologías agrícolas disruptivas, diseñadas para aumentar la productividad preservando, e incluso regenerando, los recursos naturales de los que depende esa productividad. Respuestas concretas, probadas en el campo, frente al estrés hídrico, el agotamiento de los suelos, la rentabilidad y la seguridad alimentaria.",
       stats: [
         { num: "30", label: "socios" },
-        { num: "24", label: "países" },
+        { num: "29", label: "países" },
         { num: "4", label: "tecnologías de marca" },
       ],
       distinguish: [
@@ -1406,9 +1408,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabajan con nosotros",
-      title: "Una red en 24 países",
+      title: "Una red en 29 países",
       lede: "Productores, cooperativas, especialistas en tratamiento de agua, universidades e institutos de investigación, presentes en cinco continentes.",
-      mapAriaLabel: "Mapa de la red Green Solutions en 24 países",
+      mapAriaLabel: "Mapa de la red Green Solutions en 29 países",
     },
     countryStudies: {
       eyebrow: "Enfoque por país",
@@ -1528,6 +1530,7 @@ export const content = {
       "Francia", "Sudáfrica", "Túnez", "Italia", "Reino Unido", "Canadá", "España", "Malí",
       "Caribe", "Estados Unidos", "Camerún", "Guinea", "Senegal", "Marruecos", "Guinea-Bisáu", "Brasil",
       "Arabia Saudita", "Sultanato de Omán", "Congo", "Costa de Marfil", "Sudán del Sur", "Polonia", "Grecia", "Portugal",
+      "Emiratos Árabes Unidos", "México", "Turquía", "Indonesia", "China",
     ],
   },
   pt: {
@@ -1565,7 +1568,7 @@ export const content = {
       lede: "A Green Solutions desenvolve e distribui tecnologias agrícolas disruptivas, concebidas para aumentar a produtividade preservando, e até regenerando, os recursos naturais dos quais essa produtividade depende. Respostas concretas, testadas no campo, ao estresse hídrico, ao esgotamento dos solos, à rentabilidade e à segurança alimentar.",
       stats: [
         { num: "30", label: "parceiros" },
-        { num: "24", label: "países" },
+        { num: "29", label: "países" },
         { num: "4", label: "tecnologias de marca" },
       ],
       distinguish: [
@@ -1915,9 +1918,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabalham connosco",
-      title: "Uma rede em 24 países",
+      title: "Uma rede em 29 países",
       lede: "Produtores, cooperativas, especialistas em tratamento de água, universidades e institutos de investigação, presentes em cinco continentes.",
-      mapAriaLabel: "Mapa da rede Green Solutions em 24 países",
+      mapAriaLabel: "Mapa da rede Green Solutions em 29 países",
     },
     countryStudies: {
       eyebrow: "Abordagem por país",
@@ -2037,6 +2040,7 @@ export const content = {
       "França", "África do Sul", "Tunísia", "Itália", "Reino Unido", "Canadá", "Espanha", "Mali",
       "Caraíbas", "Estados Unidos", "Camarões", "Guiné", "Senegal", "Marrocos", "Guiné-Bissau", "Brasil",
       "Arábia Saudita", "Sultanato de Omã", "Congo", "Costa do Marfim", "Sudão do Sul", "Polónia", "Grécia", "Portugal",
+      "Emirados Árabes Unidos", "México", "Turquia", "Indonésia", "China",
     ],
   },
   ar: {
@@ -2074,7 +2078,7 @@ export const content = {
       lede: "تطوّر شركة Green Solutions وتوزّع تقنيات زراعية مبتكرة، مصمَّمة لزيادة الإنتاجية مع الحفاظ على الموارد الطبيعية التي تعتمد عليها هذه الإنتاجية، بل وتجديدها. حلول ملموسة، مُختبرة ميدانيًا، لمواجهة الإجهاد المائي، واستنزاف التربة، والربحية، والأمن الغذائي.",
       stats: [
         { num: "30", label: "شريك" },
-        { num: "24", label: "دولة" },
+        { num: "29", label: "دولة" },
         { num: "4", label: "تقنيات حصرية" },
       ],
       distinguish: [
@@ -2424,9 +2428,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "يعملون معنا",
-      title: "شبكة في 24 دولة",
+      title: "شبكة في 29 دولة",
       lede: "منتجون وتعاونيات ومتخصصون في معالجة المياه وجامعات ومعاهد بحثية، حاضرون في خمس قارات.",
-      mapAriaLabel: "خريطة شبكة Green Solutions في 24 دولة",
+      mapAriaLabel: "خريطة شبكة Green Solutions في 29 دولة",
     },
     countryStudies: {
       eyebrow: "النهج القطري",
@@ -2546,6 +2550,7 @@ export const content = {
       "فرنسا", "جنوب أفريقيا", "تونس", "إيطاليا", "المملكة المتحدة", "كندا", "إسبانيا", "مالي",
       "الكاريبي", "الولايات المتحدة", "الكاميرون", "غينيا", "السنغال", "المغرب", "غينيا بيساو", "البرازيل",
       "السعودية", "سلطنة عُمان", "الكونغو", "ساحل العاج", "جنوب السودان", "بولندا", "اليونان", "البرتغال",
+      "الإمارات العربية المتحدة", "المكسيك", "تركيا", "إندونيسيا", "الصين",
     ],
   },
   zh: {
@@ -2583,7 +2588,7 @@ export const content = {
       lede: "Green Solutions 研发并推广颠覆性农业技术，旨在提高生产力的同时保护乃至再生这种生产力所依赖的自然资源。这些是经过田间验证的具体解决方案，应对水分胁迫、土壤退化、盈利能力与粮食安全等挑战。",
       stats: [
         { num: "30", label: "合作伙伴" },
-        { num: "24", label: "国家" },
+        { num: "29", label: "国家" },
         { num: "4", label: "品牌技术" },
       ],
       distinguish: [
@@ -2933,9 +2938,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "与我们合作的伙伴",
-      title: "覆盖24个国家的网络",
+      title: "覆盖29个国家的网络",
       lede: "生产者、合作社、水处理专家、高校及科研机构，遍布五大洲。",
-      mapAriaLabel: "Green Solutions覆盖24个国家的网络地图",
+      mapAriaLabel: "Green Solutions覆盖29个国家的网络地图",
     },
     countryStudies: {
       eyebrow: "国别方案",
@@ -3055,6 +3060,7 @@ export const content = {
       "法国", "南非", "突尼斯", "意大利", "英国", "加拿大", "西班牙", "马里",
       "加勒比地区", "美国", "喀麦隆", "几内亚", "塞内加尔", "摩洛哥", "几内亚比绍", "巴西",
       "沙特阿拉伯", "阿曼苏丹国", "刚果", "科特迪瓦", "南苏丹", "波兰", "希腊", "葡萄牙",
+      "阿拉伯联合酋长国", "墨西哥", "土耳其", "印度尼西亚", "中国",
     ],
   },
   id: {
@@ -3092,7 +3098,7 @@ export const content = {
       lede: "Green Solutions mengembangkan dan mendistribusikan teknologi pertanian yang disruptif, dirancang untuk meningkatkan produktivitas sekaligus menjaga, bahkan meregenerasi, sumber daya alam yang menjadi dasar produktivitas tersebut. Solusi konkret, teruji di lapangan, untuk mengatasi tekanan air, kelelahan tanah, profitabilitas, dan ketahanan pangan.",
       stats: [
         { num: "30", label: "mitra" },
-        { num: "24", label: "negara" },
+        { num: "29", label: "negara" },
         { num: "4", label: "teknologi bermerek" },
       ],
       distinguish: [
@@ -3442,9 +3448,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Mereka bekerja sama dengan kami",
-      title: "Jaringan di 24 Negara",
+      title: "Jaringan di 29 Negara",
       lede: "Produsen, koperasi, spesialis pengolahan air, universitas, dan lembaga penelitian, hadir di lima benua.",
-      mapAriaLabel: "Peta jaringan Green Solutions di 24 negara",
+      mapAriaLabel: "Peta jaringan Green Solutions di 29 negara",
     },
     countryStudies: {
       eyebrow: "Pendekatan per Negara",
@@ -3564,6 +3570,7 @@ export const content = {
       "Prancis", "Afrika Selatan", "Tunisia", "Italia", "Britania Raya", "Kanada", "Spanyol", "Mali",
       "Karibia", "Amerika Serikat", "Kamerun", "Guinea", "Senegal", "Maroko", "Guinea-Bissau", "Brasil",
       "Arab Saudi", "Kesultanan Oman", "Kongo", "Pantai Gading", "Sudan Selatan", "Polandia", "Yunani", "Portugal",
+      "Uni Emirat Arab", "Meksiko", "Turki", "Indonesia", "Tiongkok",
     ],
   },
   de: {
@@ -3601,7 +3608,7 @@ export const content = {
       lede: "Green Solutions entwickelt und vertreibt disruptive Agrartechnologien, die darauf ausgelegt sind, die Produktivität zu steigern und gleichzeitig die natürlichen Ressourcen, von denen diese Produktivität abhängt, zu erhalten und sogar zu regenerieren. Konkrete, im Feld erprobte Antworten auf Wasserstress, Bodenerschöpfung, Rentabilität und Ernährungssicherheit.",
       stats: [
         { num: "30", label: "Partner" },
-        { num: "24", label: "Länder" },
+        { num: "29", label: "Länder" },
         { num: "4", label: "Markentechnologien" },
       ],
       distinguish: [
@@ -3951,9 +3958,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Sie arbeiten mit uns",
-      title: "Ein Netzwerk in 24 Ländern",
+      title: "Ein Netzwerk in 29 Ländern",
       lede: "Erzeuger, Genossenschaften, Wasseraufbereitungsspezialisten, Universitäten und Forschungsinstitute, vertreten auf fünf Kontinenten.",
-      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 24 Ländern",
+      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 29 Ländern",
     },
     countryStudies: {
       eyebrow: "Länderansatz",
@@ -4073,6 +4080,7 @@ export const content = {
       "Frankreich", "Südafrika", "Tunesien", "Italien", "Vereinigtes Königreich", "Kanada", "Spanien", "Mali",
       "Karibik", "Vereinigte Staaten", "Kamerun", "Guinea", "Senegal", "Marokko", "Guinea-Bissau", "Brasilien",
       "Saudi-Arabien", "Sultanat Oman", "Kongo", "Elfenbeinküste", "Südsudan", "Polen", "Griechenland", "Portugal",
+      "Vereinigte Arabische Emirate", "Mexiko", "Türkei", "Indonesien", "China",
     ],
   },
 };
