@@ -1668,6 +1668,16 @@ body {
   line-height: 1.45;
   color: rgba(236, 245, 236, 0.72);
 }
+.doc-flag {
+  flex: none;
+  margin-left: auto;
+  width: 34px;
+  height: 34px;
+}
+.doc-flag .flag-square {
+  width: 34px;
+  height: 34px;
+}
 
 .field-tests-cta {
   display: inline-block;

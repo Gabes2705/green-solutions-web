@@ -3,6 +3,7 @@
 import { useLanguage } from "@/lib/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Reveal from "@/components/Reveal";
+import CountryFlag from "@/components/CountryFlag";
 
 export default function FieldTestsPageClient() {
   const { c } = useLanguage();
@@ -37,6 +38,9 @@ export default function FieldTestsPageClient() {
               <span className="doc-body">
                 <span className="doc-title">{item.title}</span>
                 <span className="doc-meta">{item.meta}</span>
+              </span>
+              <span className="doc-flag">
+                <CountryFlag id={item.country} />
               </span>
             </a>
           ))}
