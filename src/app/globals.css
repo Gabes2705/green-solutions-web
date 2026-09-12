@@ -424,16 +424,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
+  gap: 0.35em;
 }
 .nav-links a:not(.nav-cta) {
   color: var(--ink);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 0.68em 1.05em;
+  white-space: nowrap;
+  padding: 0.62em 0.85em;
   border-radius: 999px;
   border: 1px solid rgba(168, 209, 74, 0.3);
   background: linear-gradient(
@@ -557,7 +558,7 @@ body {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .nav-links {
     display: none;
   }
