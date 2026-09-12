@@ -2739,6 +2739,52 @@ body {
 .field-tests-list {
   margin-top: 0.6em;
 }
+.partners-body {
+  max-width: 1080px;
+}
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.4em;
+  margin-top: 0.6em;
+}
+.partner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em;
+  padding: 1em;
+  border-radius: 12px;
+  background: rgba(236, 245, 236, 0.05);
+  border: 1px solid var(--hairline);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.partner-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(168, 209, 74, 0.45);
+}
+.partner-logo {
+  width: 100%;
+  aspect-ratio: 12 / 7;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partner-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.partner-name {
+  margin: 0;
+  font-size: 0.82rem;
+  text-align: center;
+  color: rgba(236, 245, 236, 0.78);
+  line-height: 1.3;
+}
 .tech-facts {
   list-style: none;
   margin: 0 0 3em;

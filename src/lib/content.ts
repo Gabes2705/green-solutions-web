@@ -12,6 +12,7 @@ export const content = {
       network: "Réseau",
       resources: "Ressources",
       fieldTests: "Tests terrain",
+      partners: "Partenaires",
       contact: "Nous écrire",
       openMenu: "Ouvrir le menu",
       closeMenu: "Fermer le menu",
@@ -428,6 +429,11 @@ export const content = {
         { title: "Coton — stress hydrique, Turquie", meta: "Essai de terrain", href: "/documents/field-tests/coton-stress-hydrique-turquie.pdf", country: "turquie" },
       ],
     },
+    partnersPage: {
+      eyebrow: "Écosystème",
+      title: "Nos partenaires",
+      lede: "Producteurs, instituts de recherche, distributeurs et organisations qui construisent ce réseau avec nous.",
+    },
     team: {
       eyebrow: "L'entreprise",
       title: "Direction",
@@ -522,6 +528,7 @@ export const content = {
       network: "Network",
       resources: "Resources",
       fieldTests: "Field tests",
+      partners: "Partners",
       contact: "Contact us",
       openMenu: "Open menu",
       closeMenu: "Close menu",
@@ -938,6 +945,11 @@ export const content = {
         { title: "Cotton — water-stress trial, Turkey", meta: "Field trial", href: "/documents/field-tests/coton-stress-hydrique-turquie.pdf", country: "turquie" },
       ],
     },
+    partnersPage: {
+      eyebrow: "Ecosystem",
+      title: "Our partners",
+      lede: "Producers, research institutes, distributors and organizations building this network with us.",
+    },
     team: {
       eyebrow: "The company",
       title: "Leadership",
@@ -1032,6 +1044,7 @@ export const content = {
       network: "Red",
       resources: "Recursos",
       fieldTests: "Ensayos de campo",
+      partners: "Socios",
       contact: "Escríbanos",
       openMenu: "Abrir el menú",
       closeMenu: "Cerrar el menú",
@@ -1448,6 +1461,11 @@ export const content = {
         { title: "Algodón — ensayo de estrés hídrico, Turquía", meta: "Ensayo de campo", href: "/documents/field-tests/coton-stress-hydrique-turquie.pdf", country: "turquie" },
       ],
     },
+    partnersPage: {
+      eyebrow: "Ecosistema",
+      title: "Nuestros socios",
+      lede: "Productores, institutos de investigación, distribuidores y organizaciones que construyen esta red con nosotros.",
+    },
     team: {
       eyebrow: "La empresa",
       title: "Dirección",
@@ -1542,6 +1560,7 @@ export const content = {
       network: "Rede",
       resources: "Recursos",
       fieldTests: "Ensaios de campo",
+      partners: "Parceiros",
       contact: "Fale connosco",
       openMenu: "Abrir o menu",
       closeMenu: "Fechar o menu",
@@ -1958,6 +1977,11 @@ export const content = {
         { title: "Algodão — ensaio de estresse hídrico, Turquia", meta: "Ensaio de campo", href: "/documents/field-tests/coton-stress-hydrique-turquie.pdf", country: "turquie" },
       ],
     },
+    partnersPage: {
+      eyebrow: "Ecossistema",
+      title: "Os nossos parceiros",
+      lede: "Produtores, institutos de investigação, distribuidores e organizações que constroem esta rede connosco.",
+    },
     team: {
       eyebrow: "A empresa",
       title: "Direção",
@@ -2052,6 +2076,7 @@ export const content = {
       network: "الشبكة",
       resources: "الموارد",
       fieldTests: "التجارب الميدانية",
+      partners: "شركاؤنا",
       contact: "راسلونا",
       openMenu: "فتح القائمة",
       closeMenu: "إغلاق القائمة",
@@ -2468,6 +2493,11 @@ export const content = {
         { title: "القطن — تجربة الإجهاد المائي، تركيا", meta: "تجربة ميدانية", href: "/documents/field-tests/coton-stress-hydrique-turquie.pdf", country: "turquie" },
       ],
     },
+    partnersPage: {
+      eyebrow: "المنظومة",
+      title: "شركاؤنا",
+      lede: "منتجون، معاهد بحثية، موزعون ومنظمات تبني هذه الشبكة معنا.",
+    },
     team: {
       eyebrow: "الشركة",
       title: "الإدارة",
@@ -2562,6 +2592,7 @@ export const content = {
       network: "网络",
       resources: "资源",
       fieldTests: "田间试验",
+      partners: "合作伙伴",
       contact: "联系我们",
       openMenu: "打开菜单",
       closeMenu: "关闭菜单",
@@ -2978,6 +3009,11 @@ export const content = {
         { title: "棉花 — 土耳其水分胁迫试验", meta: "田间试验", href: "/documents/field-tests/coton-stress-hydrique-turquie.pdf", country: "turquie" },
       ],
     },
+    partnersPage: {
+      eyebrow: "生态系统",
+      title: "我们的合作伙伴",
+      lede: "与我们共同构建这一网络的生产者、研究机构、经销商和组织。",
+    },
     team: {
       eyebrow: "企业",
       title: "管理团队",
@@ -3072,6 +3108,7 @@ export const content = {
       network: "Jaringan",
       resources: "Sumber Daya",
       fieldTests: "Uji Lapangan",
+      partners: "Mitra Kami",
       contact: "Hubungi Kami",
       openMenu: "Buka menu",
       closeMenu: "Tutup menu",
@@ -3488,6 +3525,11 @@ export const content = {
         { title: "Kapas — uji coba stres air, Turki", meta: "Uji lapangan", href: "/documents/field-tests/coton-stress-hydrique-turquie.pdf", country: "turquie" },
       ],
     },
+    partnersPage: {
+      eyebrow: "Ekosistem",
+      title: "Mitra Kami",
+      lede: "Produsen, lembaga penelitian, distributor, dan organisasi yang membangun jaringan ini bersama kami.",
+    },
     team: {
       eyebrow: "Perusahaan",
       title: "Manajemen",
@@ -3582,6 +3624,7 @@ export const content = {
       network: "Netzwerk",
       resources: "Ressourcen",
       fieldTests: "Feldversuche",
+      partners: "Unsere Partner",
       contact: "Kontaktieren Sie uns",
       openMenu: "Menü öffnen",
       closeMenu: "Menü schließen",
@@ -3997,6 +4040,11 @@ export const content = {
         { title: "Kartoffel — Südafrika", meta: "2025", href: "/documents/field-tests/pomme-de-terre-afrique-du-sud-2025.pdf", country: "afrique-du-sud" },
         { title: "Baumwolle — Wasserstressversuch, Türkei", meta: "Feldversuch", href: "/documents/field-tests/coton-stress-hydrique-turquie.pdf", country: "turquie" },
       ],
+    },
+    partnersPage: {
+      eyebrow: "Ökosystem",
+      title: "Unsere Partner",
+      lede: "Erzeuger, Forschungsinstitute, Vertriebspartner und Organisationen, die dieses Netzwerk gemeinsam mit uns aufbauen.",
     },
     team: {
       eyebrow: "Das Unternehmen",
