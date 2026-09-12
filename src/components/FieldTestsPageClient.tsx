@@ -30,9 +30,7 @@ export default function FieldTestsPageClient() {
             <a
               className="doc-row"
               key={item.href}
-              href={item.href}
-              target="_blank"
-              rel="noreferrer"
+              href={`/etudes?file=${encodeURIComponent(item.href)}&name=${encodeURIComponent(item.title)}`}
             >
               <span className="doc-tag">PDF</span>
               <span className="doc-body">
