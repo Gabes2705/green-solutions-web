@@ -16,6 +16,7 @@ export default function Nav() {
     { href: "#objections", label: c.nav.proofs },
     { href: "#reseau", label: c.nav.network },
     { href: "#ressources", label: c.nav.resources },
+    { href: "/tests-et-rapports", label: c.nav.fieldTests },
   ];
 
   useEffect(() => {

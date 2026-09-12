@@ -68,7 +68,7 @@ export default function Resources() {
 
         <Reveal>
           <a href="/tests-et-rapports" className="field-tests-cta">
-            {r.fieldTestsLink} →
+            {c.nav.fieldTests} →
           </a>
         </Reveal>
       </div>
