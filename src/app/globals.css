@@ -2271,8 +2271,8 @@ body {
 }
 .person-initials {
   flex: none;
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2280,8 +2280,19 @@ body {
   background: linear-gradient(135deg, var(--teal), var(--leaf-deep));
   color: var(--ink);
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 600;
+}
+.person-photo {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow:
+    0 10px 18px -8px rgba(0, 0, 0, 0.55),
+    0 3px 6px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 2px rgba(236, 245, 236, 0.1);
 }
 .person-name {
   margin: 0;
