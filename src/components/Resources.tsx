@@ -65,6 +65,12 @@ export default function Resources() {
             </a>
           ))}
         </Reveal>
+
+        <Reveal>
+          <a href="/tests-et-rapports" className="field-tests-cta">
+            {r.fieldTestsLink} →
+          </a>
+        </Reveal>
       </div>
     </section>
   );

@@ -1669,6 +1669,18 @@ body {
   color: rgba(236, 245, 236, 0.72);
 }
 
+.field-tests-cta {
+  display: inline-block;
+  margin-top: 1.4em;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--leaf-light);
+  text-decoration: none;
+}
+.field-tests-cta:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   .doc-row {
     align-items: flex-start;
@@ -2700,6 +2712,22 @@ body {
   max-width: 780px;
   margin: 0 auto;
   padding: 3.2em 6vw 6em;
+}
+.field-tests-hero {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3.6em 6vw 0;
+}
+.field-tests-hero h1 {
+  margin: 0 0 0.5em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.9rem, 4.4vw, 2.8rem);
+  line-height: 1.1;
+  color: #fff;
+}
+.field-tests-list {
+  margin-top: 0.6em;
 }
 .tech-facts {
   list-style: none;
