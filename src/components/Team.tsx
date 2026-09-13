@@ -76,6 +76,7 @@ export default function Team() {
         <Reveal>
           <p className="eyebrow">{t.eyebrow}</p>
           <h2 className="section-title">{t.title}</h2>
+          <p className="tagline-banner">{t.tagline}</p>
         </Reveal>
 
         <Reveal stagger=".person-card" className="person-grid">

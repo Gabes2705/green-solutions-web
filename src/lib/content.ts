@@ -440,6 +440,7 @@ export const content = {
     team: {
       eyebrow: "L'entreprise",
       title: "Direction",
+      tagline: "L'alliance de l'expérience & de la compétence !",
       expertsEyebrow: "Experts & référents",
       direction: [
         { name: "Michel-Paul Correa", role: "Directeur général" },
@@ -960,6 +961,7 @@ export const content = {
     team: {
       eyebrow: "The company",
       title: "Leadership",
+      tagline: "Where experience meets expertise!",
       expertsEyebrow: "Experts & advisors",
       direction: [
         { name: "Michel-Paul Correa", role: "Chief Executive Officer" },
@@ -1480,6 +1482,7 @@ export const content = {
     team: {
       eyebrow: "La empresa",
       title: "Dirección",
+      tagline: "¡La alianza entre la experiencia y la competencia!",
       expertsEyebrow: "Expertos y referentes",
       direction: [
         { name: "Michel-Paul Correa", role: "Director general" },
@@ -2000,6 +2003,7 @@ export const content = {
     team: {
       eyebrow: "A empresa",
       title: "Direção",
+      tagline: "A aliança entre a experiência e a competência!",
       expertsEyebrow: "Especialistas e referências",
       direction: [
         { name: "Michel-Paul Correa", role: "Diretor-geral" },
@@ -2520,6 +2524,7 @@ export const content = {
     team: {
       eyebrow: "الشركة",
       title: "الإدارة",
+      tagline: "تحالف الخبرة والكفاءة!",
       expertsEyebrow: "الخبراء والمستشارون",
       direction: [
         { name: "Michel-Paul Correa", role: "المدير العام" },
@@ -3040,6 +3045,7 @@ export const content = {
     team: {
       eyebrow: "企业",
       title: "管理团队",
+      tagline: "经验与专业的完美结合！",
       expertsEyebrow: "专家与联系人",
       direction: [
         { name: "Michel-Paul Correa", role: "总经理" },
@@ -3560,6 +3566,7 @@ export const content = {
     team: {
       eyebrow: "Perusahaan",
       title: "Manajemen",
+      tagline: "Perpaduan pengalaman & keahlian!",
       expertsEyebrow: "Pakar & Kontak",
       direction: [
         { name: "Michel-Paul Correa", role: "Direktur Utama" },
@@ -4080,6 +4087,7 @@ export const content = {
     team: {
       eyebrow: "Das Unternehmen",
       title: "Geschäftsführung",
+      tagline: "Die Verbindung von Erfahrung & Kompetenz!",
       expertsEyebrow: "Experten & Ansprechpartner",
       direction: [
         { name: "Michel-Paul Correa", role: "Generaldirektor" },
