@@ -2764,6 +2764,13 @@ body {
   transform: translateY(-3px);
   border-color: rgba(168, 209, 74, 0.45);
 }
+.partner-card-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.partner-card-link:hover {
+  box-shadow: 0 10px 22px -10px rgba(0, 0, 0, 0.55);
+}
 .partner-logo {
   width: 100%;
   aspect-ratio: 12 / 7;

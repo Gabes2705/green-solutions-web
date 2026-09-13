@@ -5,40 +5,42 @@ import { useLanguage } from "@/lib/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Reveal from "@/components/Reveal";
 
-const PARTNERS = [
+type Partner = { slug: string; name: string; url?: string };
+
+const PARTNERS: Partner[] = [
   { slug: "ecole-maraichage-urbain", name: "École de Maraîchage Urbain" },
-  { slug: "afrinest-moringa-farm", name: "AfriNest Moringa Farm" },
-  { slug: "kortasgreen", name: "KortasGreen" },
+  { slug: "afrinest-moringa-farm", name: "AfriNest Moringa Farm", url: "https://afrinestfarm.co.za/" },
+  { slug: "kortasgreen", name: "KortasGreen", url: "https://kortasgreen.lovable.app/" },
   { slug: "adnp", name: "ADNP" },
-  { slug: "campari-group", name: "Campari Group" },
-  { slug: "axe-capital-forest", name: "AXE Capital Forest" },
+  { slug: "campari-group", name: "Campari Group", url: "https://www.camparigroup.com" },
+  { slug: "axe-capital-forest", name: "AXE Capital Forest", url: "https://oxygen-park.com/fr" },
   { slug: "dual-axis", name: "Dual Axis" },
-  { slug: "institut-international-cafeologie", name: "Institut International de Caféologie" },
-  { slug: "up2green", name: "Up2Green" },
-  { slug: "ziha-fresh", name: "Ziha Fresh" },
+  { slug: "institut-international-cafeologie", name: "Institut International de Caféologie", url: "https://institut-cafeologie.com" },
+  { slug: "up2green", name: "Up2Green", url: "https://up2green.com/" },
+  { slug: "ziha-fresh", name: "Zina Fresh", url: "https://zinafresh.com/" },
   { slug: "eterna", name: "Eterna" },
   { slug: "ems-services", name: "EMS Services" },
-  { slug: "cehpape", name: "CEHPAPE" },
-  { slug: "university-florida-ifas", name: "University of Florida IFAS" },
-  { slug: "saic-industries", name: "SAIC Industries" },
-  { slug: "oregon-state-university", name: "Oregon State University" },
+  { slug: "cehpape", name: "CEHPAPE", url: "https://www.helloasso.com/associations/centre-haitien-de-la-promotion-de-l-agriculture-et-la-protection-de-l-environnement-cehpape" },
+  { slug: "university-florida-ifas", name: "University of Florida IFAS", url: "https://ifas.ufl.edu" },
+  { slug: "saic-industries", name: "SAIC Industries", url: "https://saicindustries.cm/" },
+  { slug: "oregon-state-university", name: "Oregon State University", url: "https://oregonstate.edu" },
   { slug: "been-agro-business", name: "Been Agro Business" },
   { slug: "racine", name: "Racine" },
   { slug: "gfa-greenfield-advisors", name: "GFA Greenfield Advisors" },
-  { slug: "green-legacy", name: "Green Legacy" },
+  { slug: "green-legacy", name: "Green Legacy", url: "https://www.greenlegacy.at" },
   { slug: "alma-green", name: "Alma Green" },
-  { slug: "intograss", name: "Intograss" },
-  { slug: "bluecells-synergy", name: "BlueCells Synergy" },
-  { slug: "fondation-adrienne-souindele", name: "Fondation Adrienne Souindélé" },
+  { slug: "intograss", name: "Intograss", url: "https://intograss.com/" },
+  { slug: "bluecells-synergy", name: "BlueCells Synergy", url: "https://bluecells-synergy.com/fr" },
+  { slug: "fondation-adrienne-souindele", name: "Fondation Adrienne Souindélé", url: "https://fondationadriennesoundele.org/" },
   { slug: "aquajet", name: "AquaJet" },
-  { slug: "lenoda", name: "Lenoda" },
-  { slug: "natur-ethique", name: "Natur'Éthique" },
+  { slug: "lenoda", name: "Lenoda", url: "https://lenoda-services.com/agriculture" },
+  { slug: "natur-ethique", name: "Natur'Éthique", url: "https://www.naturethique.com/en/company/" },
   { slug: "wasser-arame", name: "Wasser Arame" },
-  { slug: "mcfi", name: "MCFI" },
-  { slug: "ete-europeenne-traitement-eaux", name: "ETE - Européenne de Traitement des Eaux" },
-  { slug: "green-dream", name: "Green Dream" },
-  { slug: "green-solutions", name: "Green Solutions" },
-  { slug: "globe-sdg-emblem", name: "Objectifs de développement durable" },
+  { slug: "mcfi", name: "MCFI Ingenia", url: "https://ingenia.mu/" },
+  { slug: "ete-europeenne-traitement-eaux", name: "ETE - Européenne de Traitement des Eaux", url: "https://www.etefrance.com/la-societe/" },
+  { slug: "green-dream", name: "Green Dream", url: "https://www.greendream.bio/" },
+  { slug: "green-solutions", name: "Green Solutions", url: "/" },
+  { slug: "globe-sdg-emblem", name: "Objectifs de développement durable", url: "https://sdgs.un.org" },
 ];
 
 export default function PartnersPageClient() {
@@ -62,19 +64,36 @@ export default function PartnersPageClient() {
 
       <div className="tech-body partners-body">
         <Reveal stagger=".partner-card" className="partners-grid">
-          {PARTNERS.map((partner) => (
-            <div className="partner-card" key={partner.slug}>
-              <div className="partner-logo">
-                <Image
-                  src={`/images/partners/${partner.slug}.jpg`}
-                  alt={partner.name}
-                  width={300}
-                  height={175}
-                />
+          {PARTNERS.map((partner) => {
+            const logo = (
+              <>
+                <div className="partner-logo">
+                  <Image
+                    src={`/images/partners/${partner.slug}.jpg`}
+                    alt={partner.name}
+                    width={300}
+                    height={175}
+                  />
+                </div>
+                <p className="partner-name">{partner.name}</p>
+              </>
+            );
+            return partner.url ? (
+              <a
+                className="partner-card partner-card-link"
+                key={partner.slug}
+                href={partner.url}
+                target={partner.url.startsWith("/") ? undefined : "_blank"}
+                rel={partner.url.startsWith("/") ? undefined : "noreferrer"}
+              >
+                {logo}
+              </a>
+            ) : (
+              <div className="partner-card" key={partner.slug}>
+                {logo}
               </div>
-              <p className="partner-name">{partner.name}</p>
-            </div>
-          ))}
+            );
+          })}
         </Reveal>
       </div>
     </div>
