@@ -2926,23 +2926,17 @@ body {
 
 .tech-video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.4rem;
   margin-top: 1em;
 }
 .tech-video {
   display: block;
   width: 100%;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
+  height: auto;
   border-radius: 14px;
   background: #000;
   box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 640px) {
-  .tech-video-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .tech-cta {
