@@ -72,6 +72,34 @@ const LABELS: Record<Lang, readonly [string, string, string, string, string]> = 
     "Pflanzenmedizin",
     "Paulownia-Baum",
   ],
+  it: [
+    "Risparmio idrico",
+    "Rivitalizzazione dell'acqua",
+    "Crescita moltiplicata",
+    "Medicina per le piante",
+    "Albero di Paulownia",
+  ],
+  el: [
+    "Εξοικονόμηση νερού",
+    "Αναζωογόνηση του νερού",
+    "Πολλαπλασιασμένη ανάπτυξη",
+    "Φάρμακο για τα φυτά",
+    "Δέντρο Paulownia",
+  ],
+  tr: [
+    "Su tasarrufu",
+    "Suyun canlandırılması",
+    "Katlanan büyüme",
+    "Bitkiler için ilaç",
+    "Paulownia ağacı",
+  ],
+  pl: [
+    "Oszczędność wody",
+    "Rewitalizacja wody",
+    "Wielokrotny wzrost",
+    "Lek dla roślin",
+    "Drzewo Paulownia",
+  ],
 };
 
 export function doorsFor(lang: Lang): Door[] {

@@ -85,6 +85,26 @@ const translations = {
     description: "Disruptive Agrartechnologien für Wasser, Böden, Kulturen und Wälder: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® und Paulownia ALTIFOLIA®.",
     locale: "de_DE",
   },
+  it: {
+    title: "Green Solutions · Agricoltura Ecologicamente Intensiva",
+    description: "Tecnologie agricole dirompenti per acqua, suoli, colture e foreste: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    locale: "it_IT",
+  },
+  el: {
+    title: "Green Solutions · Οικολογικά Εντατική Γεωργία",
+    description: "Ανατρεπτικές γεωργικές τεχνολογίες για το νερό, τα εδάφη, τις καλλιέργειες και τα δάση: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    locale: "el_GR",
+  },
+  tr: {
+    title: "Green Solutions · Ekolojik Yoğun Tarım",
+    description: "Su, toprak, ürün ve ormanlar için yıkıcı tarım teknolojileri: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    locale: "tr_TR",
+  },
+  pl: {
+    title: "Green Solutions · Ekologicznie Intensywne Rolnictwo",
+    description: "Przełomowe technologie rolnicze dla wody, gleb, upraw i lasów: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    locale: "pl_PL",
+  },
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -108,6 +128,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         zh: `${SITE_URL}/zh/`,
         id: `${SITE_URL}/id/`,
         de: `${SITE_URL}/de/`,
+        it: `${SITE_URL}/it/`,
+        el: `${SITE_URL}/el/`,
+        tr: `${SITE_URL}/tr/`,
+        pl: `${SITE_URL}/pl/`,
         "x-default": `${SITE_URL}/fr/`,
       },
     },

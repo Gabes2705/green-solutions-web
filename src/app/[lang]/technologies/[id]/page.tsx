@@ -23,7 +23,7 @@ const TECH_HERO: Record<string, string> = {
 
 export function generateStaticParams() {
   return TECH_IDS.flatMap((id) =>
-    ["fr", "en", "es", "pt", "ar", "zh", "id", "de"].map((lang) => ({ lang, id }))
+    ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].map((lang) => ({ lang, id }))
   );
 }
 
@@ -31,7 +31,7 @@ type Params = { params: Promise<{ lang: string; id: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { id, lang } = await params;
-  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de"].includes(lang) ? lang : "fr") as keyof typeof content;
+  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].includes(lang) ? lang : "fr") as keyof typeof content;
   const item = content[langKey].products.items.find((p) => p.id === id);
   if (!item) return {};
 
@@ -54,6 +54,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
         zh: `${SITE_URL}/zh/technologies/${id}`,
         id: `${SITE_URL}/id/technologies/${id}`,
         de: `${SITE_URL}/de/technologies/${id}`,
+        it: `${SITE_URL}/it/technologies/${id}`,
+        el: `${SITE_URL}/el/technologies/${id}`,
+        tr: `${SITE_URL}/tr/technologies/${id}`,
+        pl: `${SITE_URL}/pl/technologies/${id}`,
       },
     },
     openGraph: {
@@ -77,7 +81,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 export default async function Page({ params }: Params) {
   const { id, lang } = await params;
-  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de"].includes(lang) ? lang : "fr") as keyof typeof content;
+  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].includes(lang) ? lang : "fr") as keyof typeof content;
   const item = content[langKey].products.items.find((p) => p.id === id);
 
   const jsonLd = item

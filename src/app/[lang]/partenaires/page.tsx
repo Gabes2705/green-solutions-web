@@ -4,14 +4,14 @@ import PartnersPageClient from "@/components/PartnersPageClient";
 import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
-  return ["fr", "en", "es", "pt", "ar", "zh", "id", "de"].map((lang) => ({ lang }));
+  return ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].map((lang) => ({ lang }));
 }
 
 type Params = { params: Promise<{ lang: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { lang } = await params;
-  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de"].includes(lang) ? lang : "fr") as keyof typeof content;
+  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].includes(lang) ? lang : "fr") as keyof typeof content;
   const p = content[langKey].partnersPage;
 
   const url = `${SITE_URL}/${lang}/partenaires`;

@@ -28,6 +28,10 @@ export function generateStaticParams() {
     { lang: "zh" },
     { lang: "id" },
     { lang: "de" },
+    { lang: "it" },
+    { lang: "el" },
+    { lang: "tr" },
+    { lang: "pl" },
   ];
 }
 
