@@ -309,7 +309,7 @@ export const content = {
       title: "Treize essais pilotes en cours",
       lede: "Des groupes agro-industriels, des coopératives et deux universités américaines conduisent actuellement des essais sur nos technologies, sur leurs propres parcelles et sur leurs propres cultures. Voici lesquels, en septembre 2026.",
       pilots: [
-        { org: "Groupe CAMPARI", place: "Italie · Martinique", crop: "Canne à sucre, rhum Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
+        { org: "Trois Rivières", place: "Martinique", crop: "Canne à sucre", tech: ["EVERGREEN®", "Water Vital®"] },
         { org: "Université de Gainesville", place: "Floride, États-Unis", crop: "Plantation d'érables rouges", tech: ["EVERGREEN®"] },
         { org: "Université de Portland", place: "Oregon, États-Unis", crop: "Plantation de pins Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Royaume-Uni · Tolède, Espagne", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
@@ -825,7 +825,7 @@ export const content = {
       title: "Thirteen pilot trials under way",
       lede: "Agro-industrial groups, cooperatives and two American universities are currently running trials on our technologies, on their own plots and their own crops. Here they are, in September 2026.",
       pilots: [
-        { org: "CAMPARI Group", place: "Italy · Martinique", crop: "Sugarcane, Trois Rivières rum", tech: ["EVERGREEN®", "Water Vital®"] },
+        { org: "Trois Rivières", place: "Martinique", crop: "Sugarcane", tech: ["EVERGREEN®", "Water Vital®"] },
         { org: "University of Gainesville", place: "Florida, USA", crop: "Red maple plantation", tech: ["EVERGREEN®"] },
         { org: "University of Portland", place: "Oregon, USA", crop: "Douglas fir plantation", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "United Kingdom · Toledo, Spain", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
@@ -1341,7 +1341,7 @@ export const content = {
       title: "Trece ensayos piloto en curso",
       lede: "Grupos agroindustriales, cooperativas y dos universidades estadounidenses realizan actualmente ensayos con nuestras tecnologías, en sus propias parcelas y sus propios cultivos. Estos son, en septiembre de 2026.",
       pilots: [
-        { org: "Grupo CAMPARI", place: "Italia · Martinica", crop: "Caña de azúcar, ron Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
+        { org: "Trois Rivières", place: "Martinica", crop: "Caña de azúcar", tech: ["EVERGREEN®", "Water Vital®"] },
         { org: "Universidad de Gainesville", place: "Florida, Estados Unidos", crop: "Plantación de arces rojos", tech: ["EVERGREEN®"] },
         { org: "Universidad de Portland", place: "Oregón, Estados Unidos", crop: "Plantación de pinos Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Reino Unido · Toledo, España", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
@@ -1857,7 +1857,7 @@ export const content = {
       title: "Treze ensaios piloto em curso",
       lede: "Grupos agroindustriais, cooperativas e duas universidades americanas conduzem atualmente ensaios com as nossas tecnologias, nas suas próprias parcelas e nas suas próprias culturas. Eis quais, em setembro de 2026.",
       pilots: [
-        { org: "Grupo CAMPARI", place: "Itália · Martinica", crop: "Cana-de-açúcar, rum Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
+        { org: "Trois Rivières", place: "Martinica", crop: "Cana-de-açúcar", tech: ["EVERGREEN®", "Water Vital®"] },
         { org: "Universidade de Gainesville", place: "Flórida, Estados Unidos", crop: "Plantação de bordos vermelhos", tech: ["EVERGREEN®"] },
         { org: "Universidade de Portland", place: "Oregon, Estados Unidos", crop: "Plantação de pinheiros Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Reino Unido · Toledo, Espanha", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
@@ -2373,7 +2373,7 @@ export const content = {
       title: "ثلاث عشرة تجربة رائدة قيد التنفيذ",
       lede: "تُجري مجموعات زراعية صناعية وتعاونيات وجامعتان أمريكيتان حاليًا تجارب على تقنياتنا، في أراضيها ومحاصيلها الخاصة. إليكم القائمة، في سبتمبر 2026.",
       pilots: [
-        { org: "مجموعة CAMPARI", place: "إيطاليا · مارتينيك", crop: "قصب السكر، رم Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
+        { org: "Trois Rivières", place: "مارتينيك", crop: "قصب السكر", tech: ["EVERGREEN®", "Water Vital®"] },
         { org: "جامعة Gainesville", place: "فلوريدا، الولايات المتحدة", crop: "مزرعة القيقب الأحمر", tech: ["EVERGREEN®"] },
         { org: "جامعة Portland", place: "أوريغون، الولايات المتحدة", crop: "مزرعة صنوبر Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "المملكة المتحدة · توليدو، إسبانيا", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
@@ -2889,7 +2889,7 @@ export const content = {
       title: "十三项正在进行的试点试验",
       lede: "多家农工业集团、合作社以及两所美国大学目前正在自己的地块和作物上，对我们的技术开展试验。以下是截至2026年9月的清单。",
       pilots: [
-        { org: "Groupe CAMPARI", place: "意大利·马提尼克", crop: "甘蔗，Trois Rivières朗姆酒", tech: ["EVERGREEN®", "Water Vital®"] },
+        { org: "Trois Rivières", place: "马提尼克", crop: "甘蔗", tech: ["EVERGREEN®", "Water Vital®"] },
         { org: "盖恩斯维尔大学", place: "美国佛罗里达州", crop: "红枫种植园", tech: ["EVERGREEN®"] },
         { org: "波特兰大学", place: "美国俄勒冈州", crop: "花旗松种植园", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "英国·西班牙托莱多", crop: "泡桐Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
@@ -3405,7 +3405,7 @@ export const content = {
       title: "Tiga Belas Uji Coba Percontohan yang Sedang Berlangsung",
       lede: "Kelompok agroindustri, koperasi, dan dua universitas Amerika saat ini sedang melakukan uji coba teknologi kami, di lahan dan tanaman mereka sendiri. Berikut daftarnya, per September 2026.",
       pilots: [
-        { org: "Groupe CAMPARI", place: "Italia · Martinik", crop: "Tebu, rum Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
+        { org: "Trois Rivières", place: "Martinik", crop: "Tebu", tech: ["EVERGREEN®", "Water Vital®"] },
         { org: "Universitas Gainesville", place: "Florida, Amerika Serikat", crop: "Perkebunan maple merah", tech: ["EVERGREEN®"] },
         { org: "Universitas Portland", place: "Oregon, Amerika Serikat", crop: "Perkebunan pinus Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Britania Raya · Toledo, Spanyol", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
@@ -3921,7 +3921,7 @@ export const content = {
       title: "Dreizehn laufende Pilotversuche",
       lede: "Agrarindustrielle Gruppen, Genossenschaften und zwei amerikanische Universitäten führen derzeit Versuche mit unseren Technologien auf ihren eigenen Parzellen und mit ihren eigenen Kulturen durch. Hier die Liste, Stand September 2026.",
       pilots: [
-        { org: "Groupe CAMPARI", place: "Italien · Martinique", crop: "Zuckerrohr, Rhum Trois Rivières", tech: ["EVERGREEN®", "Water Vital®"] },
+        { org: "Trois Rivières", place: "Martinique", crop: "Zuckerrohr", tech: ["EVERGREEN®", "Water Vital®"] },
         { org: "Universität Gainesville", place: "Florida, USA", crop: "Rotahorn-Plantage", tech: ["EVERGREEN®"] },
         { org: "Universität Portland", place: "Oregon, USA", crop: "Douglasien-Plantage", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Vereinigtes Königreich · Toledo, Spanien", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },

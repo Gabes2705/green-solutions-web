@@ -12,7 +12,6 @@ const PARTNERS: Partner[] = [
   { slug: "afrinest-moringa-farm", name: "AfriNest Moringa Farm", url: "https://afrinestfarm.co.za/" },
   { slug: "kortasgreen", name: "KortasGreen", url: "https://kortasgreen.lovable.app/" },
   { slug: "adnp", name: "ADNP" },
-  { slug: "campari-group", name: "Campari Group", url: "https://www.camparigroup.com" },
   { slug: "axe-capital-forest", name: "AXE Capital Forest", url: "https://oxygen-park.com/fr" },
   { slug: "dual-axis", name: "Dual Axis" },
   { slug: "institut-international-cafeologie", name: "Institut International de Caféologie", url: "https://institut-cafeologie.com" },
