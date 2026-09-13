@@ -93,6 +93,7 @@ export const content = {
       lede: "Cinq technologies de marque, et le programme d'agroforesterie qui les combine sur les terres à reconquérir.",
       moreInfo: "Plus de renseignements",
       videosHeading: "En vidéo",
+      watchVideo: "Vidéo",
       readMore: "En savoir plus",
       readLess: "Voir moins",
       items: [
@@ -615,6 +616,7 @@ export const content = {
       lede: "Five branded technologies, and the agroforestry program that combines them on land to be reclaimed.",
       moreInfo: "More information",
       videosHeading: "In video",
+      watchVideo: "Video",
       readMore: "Learn more",
       readLess: "Show less",
       items: [
@@ -1137,6 +1139,7 @@ export const content = {
       lede: "Cinco tecnologías de marca, y el programa de agrosilvicultura que las combina en las tierras por recuperar.",
       moreInfo: "Más información",
       videosHeading: "En vídeo",
+      watchVideo: "Vídeo",
       readMore: "Saber más",
       readLess: "Ver menos",
       items: [
@@ -1659,6 +1662,7 @@ export const content = {
       lede: "Cinco tecnologias de marca, e o programa de agrossilvicultura que as combina nas terras a recuperar.",
       moreInfo: "Mais informações",
       videosHeading: "Em vídeo",
+      watchVideo: "Vídeo",
       readMore: "Saber mais",
       readLess: "Ver menos",
       items: [
@@ -2181,6 +2185,7 @@ export const content = {
       lede: "خمس تقنيات حصرية، وبرنامج الزراعة الحرجية الذي يجمعها في الأراضي المراد استصلاحها.",
       moreInfo: "مزيد من المعلومات",
       videosHeading: "بالفيديو",
+      watchVideo: "فيديو",
       readMore: "اعرف المزيد",
       readLess: "عرض أقل",
       items: [
@@ -2703,6 +2708,7 @@ export const content = {
       lede: "五项品牌技术，以及将它们结合起来用于复垦土地的混农林业项目。",
       moreInfo: "获取更多信息",
       videosHeading: "视频展示",
+      watchVideo: "视频",
       readMore: "了解更多",
       readLess: "收起",
       items: [
@@ -3225,6 +3231,7 @@ export const content = {
       lede: "Lima teknologi bermerek, dan program agroforestri yang menggabungkannya di lahan yang perlu dipulihkan.",
       moreInfo: "Informasi lebih lanjut",
       videosHeading: "Dalam Video",
+      watchVideo: "Video",
       readMore: "Pelajari lebih lanjut",
       readLess: "Tampilkan lebih sedikit",
       items: [
@@ -3747,6 +3754,7 @@ export const content = {
       lede: "Fünf Markentechnologien, und das Agroforstprogramm, das sie auf zurückzugewinnenden Flächen kombiniert.",
       moreInfo: "Weitere Informationen",
       videosHeading: "Im Video",
+      watchVideo: "Video",
       readMore: "Mehr erfahren",
       readLess: "Weniger anzeigen",
       items: [

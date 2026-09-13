@@ -2625,9 +2625,15 @@ body {
 }
 /* ---------- colored 3D "En savoir plus" buttons on product cards ---------- */
 
+.p-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9em;
+  margin-top: auto;
+}
 .p-learn {
   align-self: flex-start;
-  margin-top: auto;
   display: inline-flex;
   align-items: center;
   gap: 0.5em;

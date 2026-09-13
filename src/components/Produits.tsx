@@ -13,6 +13,8 @@ const IMAGES: Record<string, string> = {
   agroforesterie: "/images/card-agroforesterie.jpg",
 };
 
+const ITEMS_WITH_VIDEO = ["retention-eau", "eau-restructuree"];
+
 const BUTTON_COLORS: Record<string, string> = {
   "retention-eau": "tech-blue",
   paulownia: "tech-amber",
@@ -57,12 +59,22 @@ export default function Produits() {
                     ))}
                   </ul>
 
-                  <Link
-                    href={`/technologies/${item.id}`}
-                    className={`p-learn btn-3d ${BUTTON_COLORS[item.id]}`}
-                  >
-                    {p.readMore}
-                  </Link>
+                  <div className="p-cta-row">
+                    <Link
+                      href={`/technologies/${item.id}`}
+                      className={`p-learn btn-3d ${BUTTON_COLORS[item.id]}`}
+                    >
+                      {p.readMore}
+                    </Link>
+                    {ITEMS_WITH_VIDEO.includes(item.id) && (
+                      <Link
+                        href={`/technologies/${item.id}#video`}
+                        className={`p-learn btn-3d ${BUTTON_COLORS[item.id]}`}
+                      >
+                        {p.watchVideo}
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </article>
             </Reveal>

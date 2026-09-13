@@ -146,7 +146,7 @@ export default function TechnologyPageClient() {
 
         {videos && videos.length > 0 && (
           <Reveal>
-            <section className="tech-section">
+            <section id="video" className="tech-section">
               <h2>{c.products.videosHeading}</h2>
               <div className="tech-video-grid">
                 {videos.map((src) => (
