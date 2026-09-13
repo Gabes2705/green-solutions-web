@@ -2813,6 +2813,12 @@ body {
 .field-tests-list {
   margin-top: 0.6em;
 }
+.partners-hint {
+  margin-top: 0.8em;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--leaf-light);
+}
 .partners-body {
   max-width: 1080px;
 }

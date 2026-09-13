@@ -438,6 +438,7 @@ export const content = {
       eyebrow: "Écosystème",
       title: "Nos partenaires",
       lede: "Producteurs, instituts de recherche, distributeurs et organisations qui construisent ce réseau avec nous.",
+      hint: "Cliquez sur les logos pour voir le site internet.",
     },
     team: {
       eyebrow: "L'entreprise",
@@ -961,6 +962,7 @@ export const content = {
       eyebrow: "Ecosystem",
       title: "Our partners",
       lede: "Producers, research institutes, distributors and organizations building this network with us.",
+      hint: "Click a logo to see its website.",
     },
     team: {
       eyebrow: "The company",
@@ -1484,6 +1486,7 @@ export const content = {
       eyebrow: "Ecosistema",
       title: "Nuestros socios",
       lede: "Productores, institutos de investigación, distribuidores y organizaciones que construyen esta red con nosotros.",
+      hint: "Haz clic en un logo para ver su sitio web.",
     },
     team: {
       eyebrow: "La empresa",
@@ -2007,6 +2010,7 @@ export const content = {
       eyebrow: "Ecossistema",
       title: "Os nossos parceiros",
       lede: "Produtores, institutos de investigação, distribuidores e organizações que constroem esta rede connosco.",
+      hint: "Clique num logótipo para ver o site.",
     },
     team: {
       eyebrow: "A empresa",
@@ -2530,6 +2534,7 @@ export const content = {
       eyebrow: "المنظومة",
       title: "شركاؤنا",
       lede: "منتجون، معاهد بحثية، موزعون ومنظمات تبني هذه الشبكة معنا.",
+      hint: "انقر على أحد الشعارات لمشاهدة موقعه الإلكتروني.",
     },
     team: {
       eyebrow: "الشركة",
@@ -3053,6 +3058,7 @@ export const content = {
       eyebrow: "生态系统",
       title: "我们的合作伙伴",
       lede: "与我们共同构建这一网络的生产者、研究机构、经销商和组织。",
+      hint: "点击标志即可查看其官网。",
     },
     team: {
       eyebrow: "企业",
@@ -3576,6 +3582,7 @@ export const content = {
       eyebrow: "Ekosistem",
       title: "Mitra Kami",
       lede: "Produsen, lembaga penelitian, distributor, dan organisasi yang membangun jaringan ini bersama kami.",
+      hint: "Klik logo untuk melihat situs webnya.",
     },
     team: {
       eyebrow: "Perusahaan",
@@ -4099,6 +4106,7 @@ export const content = {
       eyebrow: "Ökosystem",
       title: "Unsere Partner",
       lede: "Erzeuger, Forschungsinstitute, Vertriebspartner und Organisationen, die dieses Netzwerk gemeinsam mit uns aufbauen.",
+      hint: "Klicken Sie auf ein Logo, um die Website zu sehen.",
     },
     team: {
       eyebrow: "Das Unternehmen",

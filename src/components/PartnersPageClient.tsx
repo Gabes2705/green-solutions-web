@@ -8,7 +8,7 @@ import Reveal from "@/components/Reveal";
 type Partner = { slug: string; name: string; url?: string };
 
 const PARTNERS: Partner[] = [
-  { slug: "ecole-maraichage-urbain", name: "École de Maraîchage Urbain" },
+  { slug: "ecole-maraichage-urbain", name: "École de Maraîchage Urbain", url: "https://moreau-daverne.fr/" },
   { slug: "afrinest-moringa-farm", name: "AfriNest Moringa Farm", url: "https://afrinestfarm.co.za/" },
   { slug: "kortasgreen", name: "KortasGreen", url: "https://kortasgreen.lovable.app/" },
   { slug: "adnp", name: "ADNP" },
@@ -33,7 +33,7 @@ const PARTNERS: Partner[] = [
   { slug: "fondation-adrienne-souindele", name: "Fondation Adrienne Souindélé", url: "https://fondationadriennesoundele.org/" },
   { slug: "aquajet", name: "AquaJet" },
   { slug: "lenoda", name: "Lenoda", url: "https://lenoda-services.com/agriculture" },
-  { slug: "natur-ethique", name: "Natur'Éthique", url: "https://www.naturethique.com/en/company/" },
+  { slug: "natur-ethique", name: "Natur'Éthique", url: "https://www.youtube.com/watch?v=42mQt857yDo" },
   { slug: "wasser-arame", name: "Wasser Arame" },
   { slug: "mcfi", name: "MCFI Ingenia", url: "https://ingenia.mu/" },
   { slug: "ete-europeenne-traitement-eaux", name: "ETE - Européenne de Traitement des Eaux", url: "https://www.etefrance.com/la-societe/" },
@@ -59,6 +59,7 @@ export default function PartnersPageClient() {
         <p className="eyebrow">{p.eyebrow}</p>
         <h1>{p.title}</h1>
         <p className="lede">{p.lede}</p>
+        <p className="partners-hint">{p.hint}</p>
       </header>
 
       <div className="tech-body partners-body">
