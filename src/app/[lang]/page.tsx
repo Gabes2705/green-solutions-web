@@ -47,10 +47,10 @@ export default function Home() {
       <Presentation />
       <TenirAvancer />
       <Produits />
+      <WaterCalculator />
       <Essais />
       <Objections />
       <TechChain />
-      <WaterCalculator />
       <CtaBand />
       <Team />
       <Resources />

@@ -66,6 +66,14 @@ export default function CountryStudies() {
               </span>
             </a>
           ))}
+          <a href="#contact" className="country-cta-card">
+            <span className="country-cta-card-title">{cs.notCoveredTitle}</span>
+            <span className="country-cta-card-body">{cs.notCoveredBody}</span>
+            <span className="country-cta-card-link">
+              {c.nav.contact}
+              <span aria-hidden="true">→</span>
+            </span>
+          </a>
         </Reveal>
       </div>
     </section>

@@ -45,7 +45,7 @@ export const content = {
     proofBar: [
       { figure: "+30 à +100 %", label: "de rendement, en quantité comme en qualité" },
       { figure: "−50 à −70 %", label: "de besoin en eau d'irrigation" },
-      { figure: "13", label: "essais pilotes en cours en 2026" },
+      { figure: "14", label: "essais pilotes en cours en 2026" },
       { figure: "SOHISCERT", label: "et EU Bio, certifications réelles" },
     ],
     presentation: {
@@ -326,7 +326,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Ce qui tourne en ce moment",
-      title: "Treize essais pilotes en cours",
+      title: "Quatorze essais pilotes en cours",
       lede: "Des groupes agro-industriels, des coopératives et deux universités américaines conduisent actuellement des essais sur nos technologies, sur leurs propres parcelles et sur leurs propres cultures. Voici lesquels, en septembre 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Canne à sucre", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -342,6 +342,7 @@ export const content = {
         { org: "Institut CEHPAPE", place: "Haïti", crop: "Maraîchage / banane plantain / riz", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Gazon Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroc", crop: "Clémentines bio (variété Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Égypte", crop: "Maïs / Trèfle / Olivier", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -420,6 +421,8 @@ export const content = {
       lede: "Économie agricole, filières, potentiel de rendement : nos équipes préparent une étude dédiée pour chaque pays où nous nous implantons.",
       backToSite: "Retour au site",
       callout: "Voir l'étude : appuyez sur le bouton sous le drapeau",
+      notCoveredTitle: "Votre pays n'est pas encore couvert ?",
+      notCoveredBody: "Nous cherchons des partenaires de distribution sur plusieurs zones. Un cadre clair, un accompagnement technique et une gamme déjà éprouvée dans plus de soixante pays.",
       items: [
         { country: "Côte d'Ivoire", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Congo", href: "/documents/countries/congo.pdf" },
@@ -588,7 +591,7 @@ export const content = {
     proofBar: [
       { figure: "+30 to +100%", label: "yield increase, in quantity and quality" },
       { figure: "−50 to −70%", label: "reduction in irrigation water needs" },
-      { figure: "13", label: "pilot trials underway in 2026" },
+      { figure: "14", label: "pilot trials underway in 2026" },
       { figure: "SOHISCERT", label: "and EU Bio, real certifications" },
     ],
     presentation: {
@@ -869,7 +872,7 @@ export const content = {
     },
     essais: {
       eyebrow: "What's running right now",
-      title: "Thirteen pilot trials under way",
+      title: "Fourteen pilot trials under way",
       lede: "Agro-industrial groups, cooperatives and two American universities are currently running trials on our technologies, on their own plots and their own crops. Here they are, in September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Sugarcane", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -885,6 +888,7 @@ export const content = {
         { org: "CEHPAPE Institute", place: "Haiti", crop: "Market gardening / plantain banana / rice", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Phenix turf", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Morocco", crop: "Organic clementines (Afourer variety), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Egypt", crop: "Corn / Clover / Olive tree", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -963,6 +967,8 @@ export const content = {
       lede: "Agricultural economics, sectors, yield potential: our teams prepare a dedicated study for every country where we set up.",
       backToSite: "Back to the site",
       callout: "View the study: press the button under the flag",
+      notCoveredTitle: "Your country isn't covered yet?",
+      notCoveredBody: "We're looking for distribution partners across several regions. A clear framework, technical support, and a range already proven in more than sixty countries.",
       items: [
         { country: "Côte d'Ivoire", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Congo", href: "/documents/countries/congo.pdf" },
@@ -1131,7 +1137,7 @@ export const content = {
     proofBar: [
       { figure: "+30 a +100 %", label: "de rendimiento, en cantidad y calidad" },
       { figure: "−50 a −70 %", label: "de necesidad de agua de riego" },
-      { figure: "13", label: "ensayos piloto en curso en 2026" },
+      { figure: "14", label: "ensayos piloto en curso en 2026" },
       { figure: "SOHISCERT", label: "y EU Bio, certificaciones reales" },
     ],
     presentation: {
@@ -1412,7 +1418,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Lo que está en marcha ahora mismo",
-      title: "Trece ensayos piloto en curso",
+      title: "Catorce ensayos piloto en curso",
       lede: "Grupos agroindustriales, cooperativas y dos universidades estadounidenses realizan actualmente ensayos con nuestras tecnologías, en sus propias parcelas y sus propios cultivos. Estos son, en septiembre de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Caña de azúcar", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1428,6 +1434,7 @@ export const content = {
         { org: "Instituto CEHPAPE", place: "Haití", crop: "Horticultura / plátano macho / arroz", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Césped Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marruecos", crop: "Clementinas ecológicas (variedad Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Egipto", crop: "Maíz / Trébol / Olivo", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -1506,6 +1513,8 @@ export const content = {
       lede: "Economía agrícola, sectores, potencial de rendimiento: nuestros equipos preparan un estudio dedicado para cada país en el que nos implantamos.",
       backToSite: "Volver al sitio",
       callout: "Ver el estudio: pulsa el botón bajo la bandera",
+      notCoveredTitle: "¿Su país aún no está cubierto?",
+      notCoveredBody: "Buscamos socios de distribución en varias zonas. Un marco claro, acompañamiento técnico y una gama ya probada en más de sesenta países.",
       items: [
         { country: "Costa de Marfil", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Congo", href: "/documents/countries/congo.pdf" },
@@ -1674,7 +1683,7 @@ export const content = {
     proofBar: [
       { figure: "+30 a +100 %", label: "de rendimento, em quantidade e qualidade" },
       { figure: "−50 a −70 %", label: "de necessidade de água de irrigação" },
-      { figure: "13", label: "ensaios piloto em curso em 2026" },
+      { figure: "14", label: "ensaios piloto em curso em 2026" },
       { figure: "SOHISCERT", label: "e EU Bio, certificações reais" },
     ],
     presentation: {
@@ -1955,7 +1964,7 @@ export const content = {
     },
     essais: {
       eyebrow: "O que está em curso neste momento",
-      title: "Treze ensaios piloto em curso",
+      title: "Catorze ensaios piloto em curso",
       lede: "Grupos agroindustriais, cooperativas e duas universidades americanas conduzem atualmente ensaios com as nossas tecnologias, nas suas próprias parcelas e nas suas próprias culturas. Eis quais, em setembro de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Cana-de-açúcar", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1971,6 +1980,7 @@ export const content = {
         { org: "Instituto CEHPAPE", place: "Haiti", crop: "Horticultura / banana-da-terra / arroz", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Relva Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marrocos", crop: "Clementinas biológicas (variedade Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Egito", crop: "Milho / Trevo / Oliveira", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -2049,6 +2059,8 @@ export const content = {
       lede: "Economia agrícola, setores, potencial de rendimento: as nossas equipas preparam um estudo dedicado para cada país onde nos implantamos.",
       backToSite: "Voltar ao site",
       callout: "Ver o estudo: prima o botão sob a bandeira",
+      notCoveredTitle: "O seu país ainda não está coberto?",
+      notCoveredBody: "Procuramos parceiros de distribuição em várias zonas. Um quadro claro, acompanhamento técnico e uma gama já comprovada em mais de sessenta países.",
       items: [
         { country: "Costa do Marfim", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Congo", href: "/documents/countries/congo.pdf" },
@@ -2217,7 +2229,7 @@ export const content = {
     proofBar: [
       { figure: "+30 إلى +100%", label: "زيادة في الإنتاجية، كمًا ونوعًا" },
       { figure: "−50 إلى −70%", label: "تخفيض في احتياجات مياه الري" },
-      { figure: "13", label: "تجربة رائدة قيد التنفيذ في 2026" },
+      { figure: "14", label: "تجربة رائدة قيد التنفيذ في 2026" },
       { figure: "SOHISCERT", label: "وشهادة EU Bio، اعتمادات حقيقية" },
     ],
     presentation: {
@@ -2498,7 +2510,7 @@ export const content = {
     },
     essais: {
       eyebrow: "ما يجري حاليًا",
-      title: "ثلاث عشرة تجربة رائدة قيد التنفيذ",
+      title: "أربع عشرة تجربة رائدة قيد التنفيذ",
       lede: "تُجري مجموعات زراعية صناعية وتعاونيات وجامعتان أمريكيتان حاليًا تجارب على تقنياتنا، في أراضيها ومحاصيلها الخاصة. إليكم القائمة، في سبتمبر 2026.",
       pilots: [
         { org: "Trois Rivières", place: "مارتينيك", crop: "قصب السكر", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -2514,6 +2526,7 @@ export const content = {
         { org: "معهد CEHPAPE", place: "هايتي", crop: "الزراعة البستانية / موز الجنة / الأرز", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "البرتغال", crop: "عشب Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "شيشاوة، المغرب", crop: "يوسفي عضوي (صنف أفوري)، الباولونيا", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "مصر", crop: "الذرة / البرسيم / الزيتون", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -2592,6 +2605,8 @@ export const content = {
       lede: "الاقتصاد الزراعي، القطاعات، إمكانات الإنتاجية: تُعد فرقنا دراسة مخصصة لكل دولة نستقر فيها.",
       backToSite: "العودة إلى الموقع",
       callout: "لمشاهدة الدراسة: اضغط على الزر أسفل العلم",
+      notCoveredTitle: "بلدكم غير مُغطى بعد؟",
+      notCoveredBody: "نبحث عن شركاء توزيع في عدة مناطق. إطار عمل واضح، مرافقة تقنية، وتشكيلة مُثبتة الجدوى في أكثر من ستين بلدًا.",
       items: [
         { country: "ساحل العاج", href: "/documents/countries/cote-divoire.pdf" },
         { country: "الكونغو", href: "/documents/countries/congo.pdf" },
@@ -2760,7 +2775,7 @@ export const content = {
     proofBar: [
       { figure: "+30 至 +100%", label: "产量提升，量与质兼顾" },
       { figure: "−50 至 −70%", label: "灌溉用水需求" },
-      { figure: "13", label: "2026年正在进行的试点项目" },
+      { figure: "14", label: "2026年正在进行的试点项目" },
       { figure: "SOHISCERT", label: "及欧盟有机认证，真实认证" },
     ],
     presentation: {
@@ -3041,7 +3056,7 @@ export const content = {
     },
     essais: {
       eyebrow: "当前正在进行的项目",
-      title: "十三项正在进行的试点试验",
+      title: "十四项正在进行的试点试验",
       lede: "多家农工业集团、合作社以及两所美国大学目前正在自己的地块和作物上，对我们的技术开展试验。以下是截至2026年9月的清单。",
       pilots: [
         { org: "Trois Rivières", place: "马提尼克", crop: "甘蔗", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -3057,6 +3072,7 @@ export const content = {
         { org: "CEHPAPE研究所", place: "海地", crop: "蔬菜种植 / 大蕉 / 水稻", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "葡萄牙", crop: "Phenix草坪", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "摩洛哥希沙瓦", crop: "有机小柑橘（Afourer品种）、泡桐", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "埃及", crop: "玉米 / 三叶草 / 橄榄树", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -3135,6 +3151,8 @@ export const content = {
       lede: "农业经济、产业链、增产潜力：我们的团队为每一个进驻的国家准备专门的研究报告。",
       backToSite: "返回网站",
       callout: "查看研究报告：点击国旗下方的按钮",
+      notCoveredTitle: "您的国家尚未覆盖？",
+      notCoveredBody: "我们正在多个地区寻找经销合作伙伴：清晰的合作框架、技术支持，以及已在六十多个国家验证的产品系列。",
       items: [
         { country: "科特迪瓦", href: "/documents/countries/cote-divoire.pdf" },
         { country: "刚果", href: "/documents/countries/congo.pdf" },
@@ -3303,7 +3321,7 @@ export const content = {
     proofBar: [
       { figure: "+30 hingga +100%", label: "peningkatan hasil, dari segi jumlah maupun kualitas" },
       { figure: "−50 hingga −70%", label: "kebutuhan air irigasi" },
-      { figure: "13", label: "uji coba percontohan yang sedang berjalan pada 2026" },
+      { figure: "14", label: "uji coba percontohan yang sedang berjalan pada 2026" },
       { figure: "SOHISCERT", label: "dan EU Bio, sertifikasi nyata" },
     ],
     presentation: {
@@ -3584,7 +3602,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Yang sedang berjalan saat ini",
-      title: "Tiga Belas Uji Coba Percontohan yang Sedang Berlangsung",
+      title: "Empat Belas Uji Coba Percontohan yang Sedang Berlangsung",
       lede: "Kelompok agroindustri, koperasi, dan dua universitas Amerika saat ini sedang melakukan uji coba teknologi kami, di lahan dan tanaman mereka sendiri. Berikut daftarnya, per September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Tebu", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -3600,6 +3618,7 @@ export const content = {
         { org: "Institut CEHPAPE", place: "Haiti", crop: "Budi daya sayuran / pisang plantain / padi", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rumput Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Klementin organik (varietas Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Mesir", crop: "Jagung / Semanggi / Zaitun", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -3678,6 +3697,8 @@ export const content = {
       lede: "Ekonomi pertanian, rantai pasok, potensi hasil panen: tim kami menyiapkan studi khusus untuk setiap negara tempat kami beroperasi.",
       backToSite: "Kembali ke situs",
       callout: "Lihat studinya: tekan tombol di bawah bendera",
+      notCoveredTitle: "Negara Anda belum tercakup?",
+      notCoveredBody: "Kami sedang mencari mitra distribusi di berbagai kawasan. Kerangka kerja yang jelas, pendampingan teknis, dan rangkaian produk yang telah terbukti di lebih dari enam puluh negara.",
       items: [
         { country: "Pantai Gading", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Kongo", href: "/documents/countries/congo.pdf" },
@@ -3846,7 +3867,7 @@ export const content = {
     proofBar: [
       { figure: "+30 bis +100 %", label: "Ertragssteigerung, in Menge und Qualität" },
       { figure: "−50 bis −70 %", label: "weniger Bewässerungsbedarf" },
-      { figure: "13", label: "laufende Pilotversuche im Jahr 2026" },
+      { figure: "14", label: "laufende Pilotversuche im Jahr 2026" },
       { figure: "SOHISCERT", label: "und EU-Bio, echte Zertifizierungen" },
     ],
     presentation: {
@@ -4127,7 +4148,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Was gerade läuft",
-      title: "Dreizehn laufende Pilotversuche",
+      title: "Vierzehn laufende Pilotversuche",
       lede: "Agrarindustrielle Gruppen, Genossenschaften und zwei amerikanische Universitäten führen derzeit Versuche mit unseren Technologien auf ihren eigenen Parzellen und mit ihren eigenen Kulturen durch. Hier die Liste, Stand September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Zuckerrohr", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -4143,6 +4164,7 @@ export const content = {
         { org: "Institut CEHPAPE", place: "Haiti", crop: "Gemüseanbau / Kochbananen / Reis", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rasen Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marokko", crop: "Bio-Clementinen (Sorte Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Ägypten", crop: "Mais / Klee / Olivenbaum", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -4221,6 +4243,8 @@ export const content = {
       lede: "Agrarwirtschaft, Wertschöpfungsketten, Ertragspotenzial: Unsere Teams erstellen für jedes Land, in dem wir uns niederlassen, eine eigene Studie.",
       backToSite: "Zurück zur Website",
       callout: "Studie ansehen: Knopf unter der Flagge drücken",
+      notCoveredTitle: "Ihr Land ist noch nicht abgedeckt?",
+      notCoveredBody: "Wir suchen Vertriebspartner in mehreren Regionen. Ein klarer Rahmen, technische Begleitung und eine Produktreihe, die sich bereits in mehr als sechzig Ländern bewährt hat.",
       items: [
         { country: "Elfenbeinküste", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Kongo", href: "/documents/countries/congo.pdf" },
@@ -4389,7 +4413,7 @@ export const content = {
     proofBar: [
       { figure: "+30 / +100 %", label: "di resa, in quantità e qualità" },
       { figure: "−50 / −70 %", label: "di fabbisogno idrico per l'irrigazione" },
-      { figure: "13", label: "sperimentazioni pilota in corso nel 2026" },
+      { figure: "14", label: "sperimentazioni pilota in corso nel 2026" },
       { figure: "SOHISCERT", label: "e UE Bio, certificazioni reali" },
     ],
     presentation: {
@@ -4670,7 +4694,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Cosa sta succedendo in questo momento",
-      title: "Tredici sperimentazioni pilota in corso",
+      title: "Quattordici sperimentazioni pilota in corso",
       lede: "Gruppi agroindustriali, cooperative e due università americane conducono attualmente sperimentazioni sulle nostre tecnologie, sui propri terreni e sulle proprie colture. Eccole, a settembre 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Canna da zucchero", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -4686,6 +4710,7 @@ export const content = {
         { org: "Istituto CEHPAPE", place: "Haiti", crop: "Orticoltura / banana plantain / riso", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portogallo", crop: "Tappeto erboso Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marocco", crop: "Clementine bio (varietà Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Egitto", crop: "Mais / Trifoglio / Olivo", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -4764,6 +4789,8 @@ export const content = {
       lede: "Economia agricola, filiere, potenziale di resa: i nostri team preparano uno studio dedicato per ogni paese in cui ci insediamo.",
       backToSite: "Torna al sito",
       callout: "Vedi lo studio: premi il pulsante sotto la bandiera",
+      notCoveredTitle: "Il tuo Paese non è ancora coperto?",
+      notCoveredBody: "Cerchiamo partner di distribuzione in diverse aree. Un quadro chiaro, un accompagnamento tecnico e una gamma già collaudata in oltre sessanta Paesi.",
       items: [
         { country: "Costa d'Avorio", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Congo", href: "/documents/countries/congo.pdf" },
@@ -4932,7 +4959,7 @@ export const content = {
     proofBar: [
       { figure: "+30 έως +100 %", label: "στην απόδοση, σε ποσότητα και ποιότητα" },
       { figure: "−50 έως −70 %", label: "στις ανάγκες άρδευσης" },
-      { figure: "13", label: "πιλοτικές δοκιμές σε εξέλιξη το 2026" },
+      { figure: "14", label: "πιλοτικές δοκιμές σε εξέλιξη το 2026" },
       { figure: "SOHISCERT", label: "και EU Bio, πραγματικές πιστοποιήσεις" },
     ],
     presentation: {
@@ -5213,7 +5240,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Τι συμβαίνει αυτή τη στιγμή",
-      title: "Δεκατρείς πιλοτικές δοκιμές σε εξέλιξη",
+      title: "Δεκατέσσερις πιλοτικές δοκιμές σε εξέλιξη",
       lede: "Αγροβιομηχανικοί όμιλοι, συνεταιρισμοί και δύο αμερικανικά πανεπιστήμια διεξάγουν επί του παρόντος δοκιμές στις τεχνολογίες μας, στα δικά τους αγροτεμάχια και στις δικές τους καλλιέργειες. Ιδού ποιες, τον Σεπτέμβριο του 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Μαρτινίκα", crop: "Ζαχαροκάλαμο", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -5229,6 +5256,7 @@ export const content = {
         { org: "Institut CEHPAPE", place: "Αϊτή", crop: "Λαχανοκομία / μπανάνα plantain / ρύζι", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Πορτογαλία", crop: "Χλοοτάπητας Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Μαρόκο", crop: "Βιολογικά κλημεντίνια (ποικιλία Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Αίγυπτος", crop: "Καλαμπόκι / Τριφύλλι / Ελιά", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -5307,6 +5335,8 @@ export const content = {
       lede: "Γεωργική οικονομία, κλάδοι, δυναμικό απόδοσης: οι ομάδες μας προετοιμάζουν μια αφιερωμένη μελέτη για κάθε χώρα όπου εγκαθιστάμεθα.",
       backToSite: "Επιστροφή στον ιστότοπο",
       callout: "Δείτε τη μελέτη: πατήστε το κουμπί κάτω από τη σημαία",
+      notCoveredTitle: "Η χώρα σας δεν καλύπτεται ακόμα;",
+      notCoveredBody: "Αναζητούμε συνεργάτες διανομής σε πολλές περιοχές. Ένα σαφές πλαίσιο, τεχνική υποστήριξη και μια γκάμα ήδη δοκιμασμένη σε περισσότερες από εξήντα χώρες.",
       items: [
         { country: "Ακτή Ελεφαντοστού", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Κονγκό", href: "/documents/countries/congo.pdf" },
@@ -5475,7 +5505,7 @@ export const content = {
     proofBar: [
       { figure: "+%30 ila +%100", label: "verimde, hem miktar hem kalite açısından" },
       { figure: "−%50 ila −%70", label: "sulama suyu ihtiyacında" },
-      { figure: "13", label: "2026'da devam eden pilot deneme" },
+      { figure: "14", label: "2026'da devam eden pilot deneme" },
       { figure: "SOHISCERT", label: "ve EU Bio, gerçek sertifikasyonlar" },
     ],
     presentation: {
@@ -5756,7 +5786,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Şu anda neler oluyor",
-      title: "On üç pilot deneme sürüyor",
+      title: "On dört pilot deneme sürüyor",
       lede: "Tarım-endüstri grupları, kooperatifler ve iki Amerikan üniversitesi, kendi arazilerinde ve kendi ürünlerinde teknolojilerimiz üzerinde denemeler yürütüyor. Eylül 2026 itibarıyla işte bunlar.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Şeker kamışı", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -5772,6 +5802,7 @@ export const content = {
         { org: "Institut CEHPAPE", place: "Haiti", crop: "Sebzecilik / plantain muz / pirinç", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portekiz", crop: "Phenix çim", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Fas", crop: "Organik klemantin (Afourer çeşidi), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Mısır", crop: "Mısır / Yonca / Zeytin ağacı", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -5850,6 +5881,8 @@ export const content = {
       lede: "Tarım ekonomisi, sektörler, verim potansiyeli: ekiplerimiz yerleştiğimiz her ülke için özel bir çalışma hazırlıyor.",
       backToSite: "Siteye dön",
       callout: "Çalışmayı görün: bayrağın altındaki düğmeye basın",
+      notCoveredTitle: "Ülkeniz henüz kapsanmıyor mu?",
+      notCoveredBody: "Birçok bölgede distribütör ortaklar arıyoruz. Net bir çerçeve, teknik destek ve altmıştan fazla ülkede kanıtlanmış bir ürün gamı.",
       items: [
         { country: "Fildişi Sahili", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Kongo", href: "/documents/countries/congo.pdf" },
@@ -6018,7 +6051,7 @@ export const content = {
     proofBar: [
       { figure: "+30 do +100%", label: "plonu, zarówno w ilości, jak i jakości" },
       { figure: "−50 do −70%", label: "zapotrzebowania na wodę do nawadniania" },
-      { figure: "13", label: "prób pilotażowych w toku w 2026 roku" },
+      { figure: "14", label: "prób pilotażowych w toku w 2026 roku" },
       { figure: "SOHISCERT", label: "i EU Bio, prawdziwe certyfikaty" },
     ],
     presentation: {
@@ -6299,7 +6332,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Co się teraz dzieje",
-      title: "Trzynaście prób pilotażowych w toku",
+      title: "Czternaście prób pilotażowych w toku",
       lede: "Grupy agroprzemysłowe, spółdzielnie i dwa amerykańskie uniwersytety prowadzą obecnie próby naszych technologii na własnych działkach i własnych uprawach. Oto one, według stanu na wrzesień 2026 roku.",
       pilots: [
         { org: "Trois Rivières", place: "Martynika", crop: "Trzcina cukrowa", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -6315,6 +6348,7 @@ export const content = {
         { org: "Institut CEHPAPE", place: "Haiti", crop: "Warzywnictwo / banan plantain / ryż", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugalia", crop: "Trawnik Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Ekologiczne klementynki (odmiana Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Egipt", crop: "Kukurydza / Koniczyna / Oliwka", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -6393,6 +6427,8 @@ export const content = {
       lede: "Gospodarka rolna, sektory, potencjał plonowania: nasze zespoły przygotowują dedykowane opracowanie dla każdego kraju, w którym się osiedlamy.",
       backToSite: "Powrót do strony",
       callout: "Zobacz opracowanie: naciśnij przycisk pod flagą",
+      notCoveredTitle: "Twój kraj nie jest jeszcze objęty zasięgiem?",
+      notCoveredBody: "Szukamy partnerów dystrybucyjnych w wielu regionach. Jasne zasady współpracy, wsparcie techniczne i gama produktów sprawdzona już w ponad sześćdziesięciu krajach.",
       items: [
         { country: "Wybrzeże Kości Słoniowej", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Kongo", href: "/documents/countries/congo.pdf" },
