@@ -413,6 +413,7 @@ export const content = {
         { country: "Sénégal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunisie", href: "/documents/countries/tunisie.pdf" },
         { country: "Soudan du Sud", href: "/documents/countries/soudan-sud.pdf" },
+        { country: "Espagne", href: "/documents/countries/espagne.pdf" },
       ],
     },
     fieldTests: {
@@ -937,6 +938,7 @@ export const content = {
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunisia", href: "/documents/countries/tunisie.pdf" },
         { country: "South Sudan", href: "/documents/countries/soudan-sud.pdf" },
+        { country: "Spain", href: "/documents/countries/espagne.pdf" },
       ],
     },
     fieldTests: {
@@ -1461,6 +1463,7 @@ export const content = {
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Túnez", href: "/documents/countries/tunisie.pdf" },
         { country: "Sudán del Sur", href: "/documents/countries/soudan-sud.pdf" },
+        { country: "España", href: "/documents/countries/espagne.pdf" },
       ],
     },
     fieldTests: {
@@ -1985,6 +1988,7 @@ export const content = {
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunísia", href: "/documents/countries/tunisie.pdf" },
         { country: "Sudão do Sul", href: "/documents/countries/soudan-sud.pdf" },
+        { country: "Espanha", href: "/documents/countries/espagne.pdf" },
       ],
     },
     fieldTests: {
@@ -2509,6 +2513,7 @@ export const content = {
         { country: "السنغال", href: "/documents/countries/senegal.pdf" },
         { country: "تونس", href: "/documents/countries/tunisie.pdf" },
         { country: "جنوب السودان", href: "/documents/countries/soudan-sud.pdf" },
+        { country: "إسبانيا", href: "/documents/countries/espagne.pdf" },
       ],
     },
     fieldTests: {
@@ -3033,6 +3038,7 @@ export const content = {
         { country: "塞内加尔", href: "/documents/countries/senegal.pdf" },
         { country: "突尼斯", href: "/documents/countries/tunisie.pdf" },
         { country: "南苏丹", href: "/documents/countries/soudan-sud.pdf" },
+        { country: "西班牙", href: "/documents/countries/espagne.pdf" },
       ],
     },
     fieldTests: {
@@ -3557,6 +3563,7 @@ export const content = {
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunisia", href: "/documents/countries/tunisie.pdf" },
         { country: "Sudan Selatan", href: "/documents/countries/soudan-sud.pdf" },
+        { country: "Spanyol", href: "/documents/countries/espagne.pdf" },
       ],
     },
     fieldTests: {
@@ -4081,6 +4088,7 @@ export const content = {
         { country: "Senegal", href: "/documents/countries/senegal.pdf" },
         { country: "Tunesien", href: "/documents/countries/tunisie.pdf" },
         { country: "Südsudan", href: "/documents/countries/soudan-sud.pdf" },
+        { country: "Spanien", href: "/documents/countries/espagne.pdf" },
       ],
     },
     fieldTests: {

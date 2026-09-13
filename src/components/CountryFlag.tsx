@@ -137,6 +137,13 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect y="10" width="30" height="10" fill="#fff" />
     </>
   ),
+  espagne: () => (
+    <>
+      <rect width="30" height="5" fill="#AA151B" />
+      <rect y="5" width="30" height="10" fill="#F1BF00" />
+      <rect y="15" width="30" height="5" fill="#AA151B" />
+    </>
+  ),
   chine: () => (
     <>
       <rect width="30" height="20" fill="#DE2910" />
