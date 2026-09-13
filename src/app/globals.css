@@ -1470,9 +1470,6 @@ body {
 .tagline-banner {
   max-width: 62ch;
   margin-top: 1.1rem;
-  padding: 0.9rem 1.3rem;
-  border-left: 3px solid var(--leaf-light);
-  background: rgba(168, 209, 74, 0.08);
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 600;
