@@ -906,8 +906,7 @@ body {
 }
 .legal-lede {
   font-size: 1.05rem;
-  border-left: 3px solid var(--leaf, #a8d14a);
-  padding-left: 1.1rem;
+  opacity: 0.85;
   margin-bottom: 2rem;
 }
 /* Marks what still has to be supplied before publishing. */
@@ -1152,7 +1151,7 @@ body {
   backdrop-filter: blur(6px);
   box-shadow: inset 0 1px 0 rgba(236, 245, 236, 0.2), 0 10px 20px -8px rgba(0, 0, 0, 0.55);
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-  animation: hero-in-scale 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s both;
+  animation: hero-in-scale 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.85s both;
 }
 .where-to-go:active {
   transform: translateY(calc(-50% + 2px));
@@ -1451,9 +1450,6 @@ body {
 .tagline-banner {
   max-width: 62ch;
   margin-top: 1.1rem;
-  padding: 0.9rem 1.3rem;
-  border-left: 3px solid var(--leaf-light);
-  background: rgba(168, 209, 74, 0.08);
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 600;
