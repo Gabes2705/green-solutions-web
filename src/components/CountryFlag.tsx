@@ -144,6 +144,16 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect y="15" width="30" height="5" fill="#AA151B" />
     </>
   ),
+  grece: () => (
+    <>
+      {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+        <rect key={i} y={(i * 20) / 9} width="30" height={20 / 9} fill={i % 2 === 0 ? "#0D5EAF" : "#fff"} />
+      ))}
+      <rect width="11.11" height="11.11" fill="#0D5EAF" />
+      <rect x="4.44" width="2.22" height="11.11" fill="#fff" />
+      <rect y="4.44" width="11.11" height="2.22" fill="#fff" />
+    </>
+  ),
   chine: () => (
     <>
       <rect width="30" height="20" fill="#DE2910" />
