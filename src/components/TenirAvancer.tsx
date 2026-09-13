@@ -41,13 +41,16 @@ export default function TenirAvancer() {
         </div>
 
         {tab === "tenir" ? (
-          <ul className="ta-list" key="tenir">
-            {ta.tenirList.map((item, i) => (
-              <li key={item} style={{ animationDelay: `${i * 70}ms` }}>
-                {item}
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className="ta-list" key="tenir">
+              {ta.tenirList.map((item, i) => (
+                <li key={item} style={{ animationDelay: `${i * 70}ms` }}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="ta-cta">{ta.cta}</p>
+          </>
         ) : (
           <div className="ta-answers" key="avancer">
             {ta.avancerList.map((item, i) => (
@@ -62,10 +65,16 @@ export default function TenirAvancer() {
                 </a>
               </div>
             ))}
+            <a
+              href="#contact"
+              className="ta-cta-card"
+              style={{ animationDelay: `${ta.avancerList.length * 70}ms` }}
+            >
+              <span className="ta-cta-card-text">{ta.cta}</span>
+              <span className="ta-cta-card-arrow" aria-hidden="true">→</span>
+            </a>
           </div>
         )}
-
-        <p className="ta-cta">{ta.cta}</p>
       </div>
     </section>
   );
