@@ -398,6 +398,7 @@ export const content = {
       title: "Des dossiers pensés pour chaque marché",
       lede: "Économie agricole, filières, potentiel de rendement : nos équipes préparent une étude dédiée pour chaque pays où nous nous implantons.",
       backToSite: "Retour au site",
+      callout: "Voir l'étude : appuyez sur le bouton sous le drapeau",
       items: [
         { country: "Côte d'Ivoire", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Congo", href: "/documents/countries/congo.pdf" },
@@ -914,6 +915,7 @@ export const content = {
       title: "A dossier built for each market",
       lede: "Agricultural economics, sectors, yield potential: our teams prepare a dedicated study for every country where we set up.",
       backToSite: "Back to the site",
+      callout: "View the study: press the button under the flag",
       items: [
         { country: "Côte d'Ivoire", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Congo", href: "/documents/countries/congo.pdf" },
@@ -1430,6 +1432,7 @@ export const content = {
       title: "Un dossier pensado para cada mercado",
       lede: "Economía agrícola, sectores, potencial de rendimiento: nuestros equipos preparan un estudio dedicado para cada país en el que nos implantamos.",
       backToSite: "Volver al sitio",
+      callout: "Ver el estudio: pulsa el botón bajo la bandera",
       items: [
         { country: "Costa de Marfil", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Congo", href: "/documents/countries/congo.pdf" },
@@ -1946,6 +1949,7 @@ export const content = {
       title: "Um dossiê pensado para cada mercado",
       lede: "Economia agrícola, setores, potencial de rendimento: as nossas equipas preparam um estudo dedicado para cada país onde nos implantamos.",
       backToSite: "Voltar ao site",
+      callout: "Ver o estudo: prima o botão sob a bandeira",
       items: [
         { country: "Costa do Marfim", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Congo", href: "/documents/countries/congo.pdf" },
@@ -2462,6 +2466,7 @@ export const content = {
       title: "ملف مُعد لكل سوق",
       lede: "الاقتصاد الزراعي، القطاعات، إمكانات الإنتاجية: تُعد فرقنا دراسة مخصصة لكل دولة نستقر فيها.",
       backToSite: "العودة إلى الموقع",
+      callout: "لمشاهدة الدراسة: اضغط على الزر أسفل العلم",
       items: [
         { country: "ساحل العاج", href: "/documents/countries/cote-divoire.pdf" },
         { country: "الكونغو", href: "/documents/countries/congo.pdf" },
@@ -2978,6 +2983,7 @@ export const content = {
       title: "为每个市场量身定制的资料",
       lede: "农业经济、产业链、增产潜力：我们的团队为每一个进驻的国家准备专门的研究报告。",
       backToSite: "返回网站",
+      callout: "查看研究报告：点击国旗下方的按钮",
       items: [
         { country: "科特迪瓦", href: "/documents/countries/cote-divoire.pdf" },
         { country: "刚果", href: "/documents/countries/congo.pdf" },
@@ -3494,6 +3500,7 @@ export const content = {
       title: "Dokumen yang Dirancang untuk Setiap Pasar",
       lede: "Ekonomi pertanian, rantai pasok, potensi hasil panen: tim kami menyiapkan studi khusus untuk setiap negara tempat kami beroperasi.",
       backToSite: "Kembali ke situs",
+      callout: "Lihat studinya: tekan tombol di bawah bendera",
       items: [
         { country: "Pantai Gading", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Kongo", href: "/documents/countries/congo.pdf" },
@@ -4010,6 +4017,7 @@ export const content = {
       title: "Für jeden Markt aufbereitete Unterlagen",
       lede: "Agrarwirtschaft, Wertschöpfungsketten, Ertragspotenzial: Unsere Teams erstellen für jedes Land, in dem wir uns niederlassen, eine eigene Studie.",
       backToSite: "Zurück zur Website",
+      callout: "Studie ansehen: Knopf unter der Flagge drücken",
       items: [
         { country: "Elfenbeinküste", href: "/documents/countries/cote-divoire.pdf" },
         { country: "Kongo", href: "/documents/countries/congo.pdf" },
