@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import CountryTicker from "./CountryTicker";
 import Reveal from "./Reveal";
 import WorldNetwork from "./WorldNetwork";
@@ -34,8 +35,20 @@ export default function Reseau() {
     <section id="reseau" className="section reseau">
       <div className="section-inner">
         <Reveal>
-          <p className="eyebrow">{r.eyebrow}</p>
-          <h2 className="section-title">{withSerifFigure(r.title)}</h2>
+          <div className="reseau-title-row">
+            <div>
+              <p className="eyebrow">{r.eyebrow}</p>
+              <h2 className="section-title">{withSerifFigure(r.title)}</h2>
+            </div>
+            <Image
+              src="/images/world-flags-badge.png"
+              alt=""
+              width={200}
+              height={200}
+              className="reseau-badge"
+              aria-hidden="true"
+            />
+          </div>
           <p className="lede">{r.lede}</p>
         </Reveal>
 
