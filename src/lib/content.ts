@@ -92,6 +92,7 @@ export const content = {
       title: "Une réponse à chaque contrainte du champ",
       lede: "Cinq technologies de marque, et le programme d'agroforesterie qui les combine sur les terres à reconquérir.",
       moreInfo: "Plus de renseignements",
+      videosHeading: "En vidéo",
       readMore: "En savoir plus",
       readLess: "Voir moins",
       items: [
@@ -613,6 +614,7 @@ export const content = {
       title: "An answer to every field constraint",
       lede: "Five branded technologies, and the agroforestry program that combines them on land to be reclaimed.",
       moreInfo: "More information",
+      videosHeading: "In video",
       readMore: "Learn more",
       readLess: "Show less",
       items: [
@@ -1134,6 +1136,7 @@ export const content = {
       title: "Una respuesta a cada limitación del campo",
       lede: "Cinco tecnologías de marca, y el programa de agrosilvicultura que las combina en las tierras por recuperar.",
       moreInfo: "Más información",
+      videosHeading: "En vídeo",
       readMore: "Saber más",
       readLess: "Ver menos",
       items: [
@@ -1655,6 +1658,7 @@ export const content = {
       title: "Uma resposta a cada limitação do campo",
       lede: "Cinco tecnologias de marca, e o programa de agrossilvicultura que as combina nas terras a recuperar.",
       moreInfo: "Mais informações",
+      videosHeading: "Em vídeo",
       readMore: "Saber mais",
       readLess: "Ver menos",
       items: [
@@ -2176,6 +2180,7 @@ export const content = {
       title: "حل لكل قيد ميداني",
       lede: "خمس تقنيات حصرية، وبرنامج الزراعة الحرجية الذي يجمعها في الأراضي المراد استصلاحها.",
       moreInfo: "مزيد من المعلومات",
+      videosHeading: "بالفيديو",
       readMore: "اعرف المزيد",
       readLess: "عرض أقل",
       items: [
@@ -2697,6 +2702,7 @@ export const content = {
       title: "应对田间每一个制约因素的解决方案",
       lede: "五项品牌技术，以及将它们结合起来用于复垦土地的混农林业项目。",
       moreInfo: "获取更多信息",
+      videosHeading: "视频展示",
       readMore: "了解更多",
       readLess: "收起",
       items: [
@@ -3218,6 +3224,7 @@ export const content = {
       title: "Solusi untuk setiap kendala di lahan",
       lede: "Lima teknologi bermerek, dan program agroforestri yang menggabungkannya di lahan yang perlu dipulihkan.",
       moreInfo: "Informasi lebih lanjut",
+      videosHeading: "Dalam Video",
       readMore: "Pelajari lebih lanjut",
       readLess: "Tampilkan lebih sedikit",
       items: [
@@ -3739,6 +3746,7 @@ export const content = {
       title: "Eine Antwort auf jede Einschränkung im Feld",
       lede: "Fünf Markentechnologien, und das Agroforstprogramm, das sie auf zurückzugewinnenden Flächen kombiniert.",
       moreInfo: "Weitere Informationen",
+      videosHeading: "Im Video",
       readMore: "Mehr erfahren",
       readLess: "Weniger anzeigen",
       items: [

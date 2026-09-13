@@ -56,6 +56,10 @@ const TECH_IMAGES: Record<string, { hero: string; gallery: string[] }> = {
   },
 };
 
+const TECH_VIDEOS: Record<string, string[]> = {
+  "eau-restructuree": ["/videos/water-vital-1.mp4", "/videos/water-vital-2.mp4"],
+};
+
 const COLOR_CLASS: Record<string, string> = {
   "retention-eau": "tech-blue",
   paulownia: "tech-amber",
@@ -94,6 +98,7 @@ export default function TechnologyPageClient() {
   const id = Array.isArray(params.id) ? params.id[0] : params.id;
   const item = c.products.items.find((p) => p.id === id);
   const images = id ? TECH_IMAGES[id] : undefined;
+  const videos = id ? TECH_VIDEOS[id] : undefined;
   const colorClass = (id && COLOR_CLASS[id]) || "tech-blue";
 
   if (!item || !images) {
@@ -137,6 +142,21 @@ export default function TechnologyPageClient() {
             ))}
           </ul>
         </Reveal>
+
+        {videos && videos.length > 0 && (
+          <Reveal>
+            <section className="tech-section">
+              <h2>{c.products.videosHeading}</h2>
+              <div className="tech-video-grid">
+                {videos.map((src) => (
+                  <video key={src} className="tech-video" controls playsInline preload="metadata">
+                    <source src={src} type="video/mp4" />
+                  </video>
+                ))}
+              </div>
+            </section>
+          </Reveal>
+        )}
 
         {item.detail.sections.map((s, i) => {
           const src = images.gallery[i];
