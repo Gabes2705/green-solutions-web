@@ -40,6 +40,7 @@ const NODES = [
   { lat: 38.9, lng: 35.2, label: "Turquie" },
   { lat: -2.5, lng: 118.0, label: "Indonésie" },
   { lat: 35.9, lng: 104.2, label: "Chine" },
+  { lat: 26.8, lng: 30.8, label: "Égypte" },
 ];
 
 function projectPoint(lat: number, lng: number) {
@@ -111,19 +112,23 @@ export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
       // the arrowhead waits for its own line to reach it
       gsap.set(arrows, { opacity: 0, scale: 0.4, transformOrigin: "0px 0px" });
 
-      // Loops: the routes draw themselves, hold, then draw again. repeatDelay
-      // leaves the finished map on screen instead of restarting the moment it
-      // lands, and toggleActions stops it once the section scrolls away -
-      // this animates strokeDashoffset, which repaints every frame rather
-      // than riding the compositor, so it should not keep running out of view.
+      // Loops forever once started. The timeline itself is NOT given a
+      // scrollTrigger: ScrollTrigger's `once` self-kills after firing, and
+      // killing a ScrollTrigger also kills any animation attached to it -
+      // which stopped this dead after its first pass instead of letting it
+      // repeat. So the trigger below only calls play() once; the loop then
+      // runs independently, regardless of further scrolling.
       const tl = gsap.timeline({
+        paused: true,
         repeat: -1,
         repeatDelay: 3.2,
-        scrollTrigger: {
-          trigger: svg,
-          start: "top 75%",
-          toggleActions: "play pause resume pause",
-        },
+      });
+
+      ScrollTrigger.create({
+        trigger: svg,
+        start: "top 75%",
+        once: true,
+        onEnter: () => tl.play(),
       });
 
       tl.to(paths, {

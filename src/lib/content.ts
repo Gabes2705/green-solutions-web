@@ -28,7 +28,7 @@ export const content = {
     proofBar: [
       { figure: "+30 à +100 %", label: "de rendement, en quantité comme en qualité" },
       { figure: "−50 à −70 %", label: "de besoin en eau d'irrigation" },
-      { figure: "13", label: "essais pilotes en cours en 2026" },
+      { figure: "14", label: "essais pilotes en cours en 2026" },
       { figure: "SOHISCERT", label: "et EU Bio, certifications réelles" },
     ],
     presentation: {
@@ -40,7 +40,7 @@ export const content = {
       tagline: "Toutes nos solutions disruptives sont utilisables pour toutes les plantes et cultures, sous tous les climats et tous types de sol !",
       stats: [
         { num: "30", label: "partenaires" },
-        { num: "29", label: "pays" },
+        { num: "30", label: "pays" },
         { num: "4", label: "technologies de marque" },
       ],
       distinguish: [
@@ -307,7 +307,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Ce qui tourne en ce moment",
-      title: "Treize essais pilotes en cours",
+      title: "Quatorze essais pilotes en cours",
       lede: "Des groupes agro-industriels, des coopératives et deux universités américaines conduisent actuellement des essais sur nos technologies, sur leurs propres parcelles et sur leurs propres cultures. Voici lesquels, en septembre 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Canne à sucre", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -323,6 +323,7 @@ export const content = {
         { org: "Institut CEHPAPE", place: "Haïti", crop: "Maraîchage / banane plantain / riz", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Gazon Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroc", crop: "Clémentines bio (variété Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Égypte", crop: "Maïs, trèfle et olivier", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -391,9 +392,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Ils travaillent avec nous",
-      title: "Un réseau dans 29 pays",
+      title: "Un réseau dans 30 pays",
       lede: "Producteurs, coopératives, spécialistes du traitement de l'eau, universités et instituts de recherche, présents sur cinq continents.",
-      mapAriaLabel: "Carte du réseau Green Solutions dans 29 pays",
+      mapAriaLabel: "Carte du réseau Green Solutions dans 30 pays",
     },
     countryStudies: {
       eyebrow: "Approche pays",
@@ -547,7 +548,7 @@ export const content = {
     proofBar: [
       { figure: "+30 to +100%", label: "yield increase, in quantity and quality" },
       { figure: "−50 to −70%", label: "reduction in irrigation water needs" },
-      { figure: "13", label: "pilot trials underway in 2026" },
+      { figure: "14", label: "pilot trials underway in 2026" },
       { figure: "SOHISCERT", label: "and EU Bio, real certifications" },
     ],
     presentation: {
@@ -559,7 +560,7 @@ export const content = {
       tagline: "All our disruptive solutions can be used on every plant and crop, in every climate and soil type!",
       stats: [
         { num: "30", label: "partners" },
-        { num: "29", label: "countries" },
+        { num: "30", label: "countries" },
         { num: "4", label: "branded technologies" },
       ],
       distinguish: [
@@ -826,7 +827,7 @@ export const content = {
     },
     essais: {
       eyebrow: "What's running right now",
-      title: "Thirteen pilot trials under way",
+      title: "Fourteen pilot trials under way",
       lede: "Agro-industrial groups, cooperatives and two American universities are currently running trials on our technologies, on their own plots and their own crops. Here they are, in September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Sugarcane", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -842,6 +843,7 @@ export const content = {
         { org: "CEHPAPE Institute", place: "Haiti", crop: "Market gardening / plantain banana / rice", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Phenix turf", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Morocco", crop: "Organic clementines (Afourer variety), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Egypt", crop: "Corn, clover and olive trees", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -910,9 +912,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "They work with us",
-      title: "A network across 29 countries",
+      title: "A network across 30 countries",
       lede: "Producers, cooperatives, water-treatment specialists, universities and research institutes, present across five continents.",
-      mapAriaLabel: "Map of the Green Solutions network across 29 countries",
+      mapAriaLabel: "Map of the Green Solutions network across 30 countries",
     },
     countryStudies: {
       eyebrow: "Country approach",
@@ -1066,7 +1068,7 @@ export const content = {
     proofBar: [
       { figure: "+30 a +100 %", label: "de rendimiento, en cantidad y calidad" },
       { figure: "−50 a −70 %", label: "de necesidad de agua de riego" },
-      { figure: "13", label: "ensayos piloto en curso en 2026" },
+      { figure: "14", label: "ensayos piloto en curso en 2026" },
       { figure: "SOHISCERT", label: "y EU Bio, certificaciones reales" },
     ],
     presentation: {
@@ -1078,7 +1080,7 @@ export const content = {
       tagline: "¡Todas nuestras soluciones disruptivas se pueden usar en cualquier planta o cultivo, en cualquier clima y cualquier tipo de suelo!",
       stats: [
         { num: "30", label: "socios" },
-        { num: "29", label: "países" },
+        { num: "30", label: "países" },
         { num: "4", label: "tecnologías de marca" },
       ],
       distinguish: [
@@ -1345,7 +1347,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Lo que está en marcha ahora mismo",
-      title: "Trece ensayos piloto en curso",
+      title: "Catorce ensayos piloto en curso",
       lede: "Grupos agroindustriales, cooperativas y dos universidades estadounidenses realizan actualmente ensayos con nuestras tecnologías, en sus propias parcelas y sus propios cultivos. Estos son, en septiembre de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Caña de azúcar", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1361,6 +1363,7 @@ export const content = {
         { org: "Instituto CEHPAPE", place: "Haití", crop: "Horticultura / plátano macho / arroz", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Césped Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marruecos", crop: "Clementinas ecológicas (variedad Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Egipto", crop: "Maíz, trébol y olivos", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -1429,9 +1432,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabajan con nosotros",
-      title: "Una red en 29 países",
+      title: "Una red en 30 países",
       lede: "Productores, cooperativas, especialistas en tratamiento de agua, universidades e institutos de investigación, presentes en cinco continentes.",
-      mapAriaLabel: "Mapa de la red Green Solutions en 29 países",
+      mapAriaLabel: "Mapa de la red Green Solutions en 30 países",
     },
     countryStudies: {
       eyebrow: "Enfoque por país",
@@ -1585,7 +1588,7 @@ export const content = {
     proofBar: [
       { figure: "+30 a +100 %", label: "de rendimento, em quantidade e qualidade" },
       { figure: "−50 a −70 %", label: "de necessidade de água de irrigação" },
-      { figure: "13", label: "ensaios piloto em curso em 2026" },
+      { figure: "14", label: "ensaios piloto em curso em 2026" },
       { figure: "SOHISCERT", label: "e EU Bio, certificações reais" },
     ],
     presentation: {
@@ -1597,7 +1600,7 @@ export const content = {
       tagline: "Todas as nossas soluções disruptivas podem ser usadas em qualquer planta ou cultura, em qualquer clima e qualquer tipo de solo!",
       stats: [
         { num: "30", label: "parceiros" },
-        { num: "29", label: "países" },
+        { num: "30", label: "países" },
         { num: "4", label: "tecnologias de marca" },
       ],
       distinguish: [
@@ -1864,7 +1867,7 @@ export const content = {
     },
     essais: {
       eyebrow: "O que está em curso neste momento",
-      title: "Treze ensaios piloto em curso",
+      title: "Catorze ensaios piloto em curso",
       lede: "Grupos agroindustriais, cooperativas e duas universidades americanas conduzem atualmente ensaios com as nossas tecnologias, nas suas próprias parcelas e nas suas próprias culturas. Eis quais, em setembro de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Cana-de-açúcar", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1880,6 +1883,7 @@ export const content = {
         { org: "Instituto CEHPAPE", place: "Haiti", crop: "Horticultura / banana-da-terra / arroz", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Relva Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marrocos", crop: "Clementinas biológicas (variedade Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Egito", crop: "Milho, trevo e oliveiras", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -1948,9 +1952,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabalham connosco",
-      title: "Uma rede em 29 países",
+      title: "Uma rede em 30 países",
       lede: "Produtores, cooperativas, especialistas em tratamento de água, universidades e institutos de investigação, presentes em cinco continentes.",
-      mapAriaLabel: "Mapa da rede Green Solutions em 29 países",
+      mapAriaLabel: "Mapa da rede Green Solutions em 30 países",
     },
     countryStudies: {
       eyebrow: "Abordagem por país",
@@ -2104,7 +2108,7 @@ export const content = {
     proofBar: [
       { figure: "+30 إلى +100%", label: "زيادة في الإنتاجية، كمًا ونوعًا" },
       { figure: "−50 إلى −70%", label: "تخفيض في احتياجات مياه الري" },
-      { figure: "13", label: "تجربة رائدة قيد التنفيذ في 2026" },
+      { figure: "14", label: "تجربة رائدة قيد التنفيذ في 2026" },
       { figure: "SOHISCERT", label: "وشهادة EU Bio، اعتمادات حقيقية" },
     ],
     presentation: {
@@ -2116,7 +2120,7 @@ export const content = {
       tagline: "جميع حلولنا الابتكارية يمكن استخدامها مع كل النباتات والمحاصيل، في كل المناخات وكل أنواع التربة!",
       stats: [
         { num: "30", label: "شريك" },
-        { num: "29", label: "دولة" },
+        { num: "30", label: "دولة" },
         { num: "4", label: "تقنيات حصرية" },
       ],
       distinguish: [
@@ -2383,7 +2387,7 @@ export const content = {
     },
     essais: {
       eyebrow: "ما يجري حاليًا",
-      title: "ثلاث عشرة تجربة رائدة قيد التنفيذ",
+      title: "أربع عشرة تجربة رائدة قيد التنفيذ",
       lede: "تُجري مجموعات زراعية صناعية وتعاونيات وجامعتان أمريكيتان حاليًا تجارب على تقنياتنا، في أراضيها ومحاصيلها الخاصة. إليكم القائمة، في سبتمبر 2026.",
       pilots: [
         { org: "Trois Rivières", place: "مارتينيك", crop: "قصب السكر", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -2399,6 +2403,7 @@ export const content = {
         { org: "معهد CEHPAPE", place: "هايتي", crop: "الزراعة البستانية / موز الجنة / الأرز", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "البرتغال", crop: "عشب Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "شيشاوة، المغرب", crop: "يوسفي عضوي (صنف أفوري)، الباولونيا", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "مصر", crop: "الذرة والبرسيم والزيتون", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -2467,9 +2472,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "يعملون معنا",
-      title: "شبكة في 29 دولة",
+      title: "شبكة في 30 دولة",
       lede: "منتجون وتعاونيات ومتخصصون في معالجة المياه وجامعات ومعاهد بحثية، حاضرون في خمس قارات.",
-      mapAriaLabel: "خريطة شبكة Green Solutions في 29 دولة",
+      mapAriaLabel: "خريطة شبكة Green Solutions في 30 دولة",
     },
     countryStudies: {
       eyebrow: "النهج القطري",
@@ -2623,7 +2628,7 @@ export const content = {
     proofBar: [
       { figure: "+30 至 +100%", label: "产量提升，量与质兼顾" },
       { figure: "−50 至 −70%", label: "灌溉用水需求" },
-      { figure: "13", label: "2026年正在进行的试点项目" },
+      { figure: "14", label: "2026年正在进行的试点项目" },
       { figure: "SOHISCERT", label: "及欧盟有机认证，真实认证" },
     ],
     presentation: {
@@ -2635,7 +2640,7 @@ export const content = {
       tagline: "我们所有的颠覆性解决方案适用于任何植物和作物、任何气候及任何类型的土壤！",
       stats: [
         { num: "30", label: "合作伙伴" },
-        { num: "29", label: "国家" },
+        { num: "30", label: "国家" },
         { num: "4", label: "品牌技术" },
       ],
       distinguish: [
@@ -2902,7 +2907,7 @@ export const content = {
     },
     essais: {
       eyebrow: "当前正在进行的项目",
-      title: "十三项正在进行的试点试验",
+      title: "十四项正在进行的试点试验",
       lede: "多家农工业集团、合作社以及两所美国大学目前正在自己的地块和作物上，对我们的技术开展试验。以下是截至2026年9月的清单。",
       pilots: [
         { org: "Trois Rivières", place: "马提尼克", crop: "甘蔗", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -2918,6 +2923,7 @@ export const content = {
         { org: "CEHPAPE研究所", place: "海地", crop: "蔬菜种植 / 大蕉 / 水稻", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "葡萄牙", crop: "Phenix草坪", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "摩洛哥希沙瓦", crop: "有机小柑橘（Afourer品种）、泡桐", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "埃及", crop: "玉米、三叶草与橄榄树", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -2986,9 +2992,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "与我们合作的伙伴",
-      title: "覆盖29个国家的网络",
+      title: "覆盖30个国家的网络",
       lede: "生产者、合作社、水处理专家、高校及科研机构，遍布五大洲。",
-      mapAriaLabel: "Green Solutions覆盖29个国家的网络地图",
+      mapAriaLabel: "Green Solutions覆盖30个国家的网络地图",
     },
     countryStudies: {
       eyebrow: "国别方案",
@@ -3142,7 +3148,7 @@ export const content = {
     proofBar: [
       { figure: "+30 hingga +100%", label: "peningkatan hasil, dari segi jumlah maupun kualitas" },
       { figure: "−50 hingga −70%", label: "kebutuhan air irigasi" },
-      { figure: "13", label: "uji coba percontohan yang sedang berjalan pada 2026" },
+      { figure: "14", label: "uji coba percontohan yang sedang berjalan pada 2026" },
       { figure: "SOHISCERT", label: "dan EU Bio, sertifikasi nyata" },
     ],
     presentation: {
@@ -3154,7 +3160,7 @@ export const content = {
       tagline: "Semua solusi disruptif kami dapat digunakan untuk semua tanaman dan tanaman pangan, di semua iklim dan semua jenis tanah!",
       stats: [
         { num: "30", label: "mitra" },
-        { num: "29", label: "negara" },
+        { num: "30", label: "negara" },
         { num: "4", label: "teknologi bermerek" },
       ],
       distinguish: [
@@ -3421,7 +3427,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Yang sedang berjalan saat ini",
-      title: "Tiga Belas Uji Coba Percontohan yang Sedang Berlangsung",
+      title: "Empat Belas Uji Coba Percontohan yang Sedang Berlangsung",
       lede: "Kelompok agroindustri, koperasi, dan dua universitas Amerika saat ini sedang melakukan uji coba teknologi kami, di lahan dan tanaman mereka sendiri. Berikut daftarnya, per September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Tebu", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -3437,6 +3443,7 @@ export const content = {
         { org: "Institut CEHPAPE", place: "Haiti", crop: "Budi daya sayuran / pisang plantain / padi", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rumput Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Klementin organik (varietas Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Mesir", crop: "Jagung, semanggi, dan zaitun", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -3505,9 +3512,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Mereka bekerja sama dengan kami",
-      title: "Jaringan di 29 Negara",
+      title: "Jaringan di 30 Negara",
       lede: "Produsen, koperasi, spesialis pengolahan air, universitas, dan lembaga penelitian, hadir di lima benua.",
-      mapAriaLabel: "Peta jaringan Green Solutions di 29 negara",
+      mapAriaLabel: "Peta jaringan Green Solutions di 30 negara",
     },
     countryStudies: {
       eyebrow: "Pendekatan per Negara",
@@ -3661,7 +3668,7 @@ export const content = {
     proofBar: [
       { figure: "+30 bis +100 %", label: "Ertragssteigerung, in Menge und Qualität" },
       { figure: "−50 bis −70 %", label: "weniger Bewässerungsbedarf" },
-      { figure: "13", label: "laufende Pilotversuche im Jahr 2026" },
+      { figure: "14", label: "laufende Pilotversuche im Jahr 2026" },
       { figure: "SOHISCERT", label: "und EU-Bio, echte Zertifizierungen" },
     ],
     presentation: {
@@ -3673,7 +3680,7 @@ export const content = {
       tagline: "Alle unsere disruptiven Lösungen sind für jede Pflanze und Kultur, bei jedem Klima und jeder Bodenart einsetzbar!",
       stats: [
         { num: "30", label: "Partner" },
-        { num: "29", label: "Länder" },
+        { num: "30", label: "Länder" },
         { num: "4", label: "Markentechnologien" },
       ],
       distinguish: [
@@ -3940,7 +3947,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Was gerade läuft",
-      title: "Dreizehn laufende Pilotversuche",
+      title: "Vierzehn laufende Pilotversuche",
       lede: "Agrarindustrielle Gruppen, Genossenschaften und zwei amerikanische Universitäten führen derzeit Versuche mit unseren Technologien auf ihren eigenen Parzellen und mit ihren eigenen Kulturen durch. Hier die Liste, Stand September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Zuckerrohr", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -3956,6 +3963,7 @@ export const content = {
         { org: "Institut CEHPAPE", place: "Haiti", crop: "Gemüseanbau / Kochbananen / Reis", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rasen Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marokko", crop: "Bio-Clementinen (Sorte Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Ägypten", crop: "Mais, Klee und Olivenbäume", tech: ["EVERGREEN®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -4024,9 +4032,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Sie arbeiten mit uns",
-      title: "Ein Netzwerk in 29 Ländern",
+      title: "Ein Netzwerk in 30 Ländern",
       lede: "Erzeuger, Genossenschaften, Wasseraufbereitungsspezialisten, Universitäten und Forschungsinstitute, vertreten auf fünf Kontinenten.",
-      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 29 Ländern",
+      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 30 Ländern",
     },
     countryStudies: {
       eyebrow: "Länderansatz",
