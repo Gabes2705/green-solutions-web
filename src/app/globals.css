@@ -2901,8 +2901,8 @@ body {
   font-size: 1.08rem;
   line-height: 1.75;
   color: var(--muted);
-  text-align: left;
-  hyphens: none;
+  text-align: justify;
+  hyphens: auto;
 }
 .tech-figure {
   margin: 0.4em 0 1.6em;

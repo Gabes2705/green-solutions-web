@@ -133,43 +133,8 @@ export const content = {
           },
         },
         {
-          id: "paulownia",
-          num: "02",
-          kicker: "Planter pour durer",
-          title: "Paulownia ALTIFOLIA®",
-          text: "L'arbre à la croissance la plus rapide au monde : 13 à 15 m en six à huit ans, à près de 3 m par an. Associé à notre hydrorétenteur EVERGREEN®, il réduit de 50 % ses besoins en eau d'irrigation. Variétés hybrides stériles et non invasives, accompagnées du jeune plant jusqu'à la vente du bois.",
-          facts: [
-            "400 à 500 arbres/ha, valorisés à 400/450 € par m³",
-            "Rentabilité sur six ans de culture",
-            "Résiste de −25 °C à +45 °C, ne brûle qu'à 426 °C",
-            "400 à 700 kg de miel par hectare, et des crédits carbone",
-          ],
-          more: "Le Paulownia ALTIFOLIA® est l'arbre à la croissance la plus rapide au monde : dans de bonnes conditions, il atteint 13 à 15 mètres en six à huit ans, à raison d'environ 3 mètres par an, avec des feuilles pouvant dépasser 80 cm de long. C'est aussi l'un des arbres les plus efficaces pour capter le CO₂ et restituer de l'oxygène par photosynthèse. Notre variété ALTIFOLIA®, issue d'un croisement entre Paulownia Elongata et Paulownia Fortunei, a été sélectionnée pour les régions chaudes : elle développe un tronc au diamètre important en peu de temps et ne nécessite, en moyenne annuelle, que 2 litres d'eau par jour — contre 25 litres pour les autres variétés du marché (5 à 7 litres en période de canicule extrême). Associée à 100 g d'ECOSORB® par plant à la plantation, l'irrigation nécessaire baisse encore de 50 %, sans jamais exposer l'arbre au stress hydrique. Son système racinaire profond enrichit le sol en azote et prévient l'érosion ; sa résistance aux parasites et aux maladies est naturellement élevée, et le bois ne s'enflamme qu'à partir de 426 °C, ce qui en fait aussi une barrière anti-incendie. Les plants (25 à 30 cm à la livraison, en pot, certifiés sans maladie, garantis en cas de mortalité) sont acheminés par avion sous 6 semaines, puis doivent passer 6 semaines en serre avant plantation en goutte-à-goutte. La première coupe intervient en fin de sixième année, pour un bois valorisé à 400/450 € le m³ ; nous plantons nous-mêmes cette variété depuis plusieurs années, notamment en Espagne.",
-          detail: {
-            sections: [
-              {
-                h: "Le principe",
-                p: "Le Paulownia ALTIFOLIA® est l'arbre à la croissance la plus rapide au monde : dans de bonnes conditions, il atteint 13 à 15 mètres en six à huit ans, à raison d'environ 3 mètres par an, avec des feuilles pouvant dépasser 80 cm de long. C'est aussi l'un des arbres les plus efficaces pour capter le CO₂ et restituer de l'oxygène par photosynthèse. Notre variété ALTIFOLIA®, issue d'un croisement entre Paulownia Elongata et Paulownia Fortunei, a été sélectionnée pour les régions chaudes : elle développe un tronc au diamètre important en peu de temps et ne nécessite, en moyenne annuelle, que 2 litres d'eau par jour — contre 25 litres pour les autres variétés du marché (5 à 7 litres en période de canicule extrême). Associée à 100 g d'ECOSORB® par plant à la plantation, l'irrigation nécessaire baisse encore de 50 %, sans jamais exposer l'arbre au stress hydrique.",
-              },
-              {
-                h: "Une sélection pensée pour les régions chaudes",
-                p: "Notre variété ALTIFOLIA® se distingue par une croissance homogène et compacte, une couronne étroite et des feuilles épaisses et charnues ; la rectitude de ses pousses annuelles permet, dès la deuxième année, de se passer d'une coupe de formation. Très résistante aux parasites et aux maladies grâce à son système racinaire profond, elle enrichit également le sol en azote et prévient l'érosion. Le bois ne s'enflamme qu'à partir de 426 °C, ce qui en fait aussi une barrière anti-incendie efficace.",
-              },
-              {
-                h: "De la commande à la première récolte",
-                p: "Les arbres sont livrés en plants de 25 à 30 cm, en pot, par avion, sous un délai moyen de six semaines, à partir d'une commande minimum de 1000 unités. Chaque plant est certifié sans maladie par certificat phytosanitaire, et garanti : un arbre qui viendrait à mourir pendant sa croissance est automatiquement remplacé. À réception, les plants passent six semaines en serre avant la mise en terre, avec une irrigation goutte-à-goutte et une protection contre la faune. Le rythme de croissance, environ trois mètres par an, permet une première coupe dès la fin de la sixième année, pour un bois valorisé à 400/450 € le m³.",
-              },
-            ],
-            gallery: [
-              "L'entretien d'une plantation de Paulownia ALTIFOLIA®, en Espagne.",
-              "De la plantation à la récolte : sept ans de croissance, jusqu'à 20 mètres.",
-              "La floraison du Paulownia, précieuse aussi pour les apiculteurs.",
-            ],
-          },
-        },
-        {
           id: "fertilisation",
-          num: "03",
+          num: "02",
           kicker: "Nourrir sans chimie",
           title: "Fertilisants ECOFERT®",
           text: "Un fertilisant en microdoses d'acides aminés, azote, phosphore et potassium, issu de ressources renouvelables. Non chélatant : il n'épuise pas le sol, il l'enrichit. Ni lixiviation, ni hausse de salinité ou de nitrates, dans la plante comme dans la terre.",
@@ -204,7 +169,7 @@ export const content = {
         },
         {
           id: "protection",
-          num: "04",
+          num: "03",
           kicker: "Protéger sans résidu",
           title: "NAPEMA®",
           text: "Natural Pest Management : une lutte contre les ravageurs sans chimie de synthèse ni molécule active, à effet préventif et curatif, par pulvérisation foliaire et racinaire. Des solutions sur mesure sont formulées pour un problème précis.",
@@ -238,7 +203,7 @@ export const content = {
         },
         {
           id: "eau-restructuree",
-          num: "05",
+          num: "04",
           kicker: "Restructurer l'eau",
           title: "Water Vital®",
           text: "La restructuration par résonance moléculaire transforme une eau « morte », désorganisée au niveau atomique, en eau vivante qui retrouve ses propriétés naturelles. Le système fonctionne sans énergie, sans entretien et sans consommable.",
@@ -267,6 +232,41 @@ export const content = {
               "Le bassin d'irrigation du Groupe EL HILAL, 200 x 100 x 12 mètres, Sidi Moussa (Algérie).",
               "La station de pompage et de filtration, où Water Vital® a été installé.",
               "Le verger irrigué en goutte-à-goutte, lors de la visite d'août 2025.",
+            ],
+          },
+        },
+        {
+          id: "paulownia",
+          num: "05",
+          kicker: "Planter pour durer",
+          title: "Paulownia ALTIFOLIA®",
+          text: "L'arbre à la croissance la plus rapide au monde : 13 à 15 m en six à huit ans, à près de 3 m par an. Associé à notre hydrorétenteur EVERGREEN®, il réduit de 50 % ses besoins en eau d'irrigation. Variétés hybrides stériles et non invasives, accompagnées du jeune plant jusqu'à la vente du bois.",
+          facts: [
+            "400 à 500 arbres/ha, valorisés à 400/450 € par m³",
+            "Rentabilité sur six ans de culture",
+            "Résiste de −25 °C à +45 °C, ne brûle qu'à 426 °C",
+            "400 à 700 kg de miel par hectare, et des crédits carbone",
+          ],
+          more: "Le Paulownia ALTIFOLIA® est l'arbre à la croissance la plus rapide au monde : dans de bonnes conditions, il atteint 13 à 15 mètres en six à huit ans, à raison d'environ 3 mètres par an, avec des feuilles pouvant dépasser 80 cm de long. C'est aussi l'un des arbres les plus efficaces pour capter le CO₂ et restituer de l'oxygène par photosynthèse. Notre variété ALTIFOLIA®, issue d'un croisement entre Paulownia Elongata et Paulownia Fortunei, a été sélectionnée pour les régions chaudes : elle développe un tronc au diamètre important en peu de temps et ne nécessite, en moyenne annuelle, que 2 litres d'eau par jour — contre 25 litres pour les autres variétés du marché (5 à 7 litres en période de canicule extrême). Associée à 100 g d'ECOSORB® par plant à la plantation, l'irrigation nécessaire baisse encore de 50 %, sans jamais exposer l'arbre au stress hydrique. Son système racinaire profond enrichit le sol en azote et prévient l'érosion ; sa résistance aux parasites et aux maladies est naturellement élevée, et le bois ne s'enflamme qu'à partir de 426 °C, ce qui en fait aussi une barrière anti-incendie. Les plants (25 à 30 cm à la livraison, en pot, certifiés sans maladie, garantis en cas de mortalité) sont acheminés par avion sous 6 semaines, puis doivent passer 6 semaines en serre avant plantation en goutte-à-goutte. La première coupe intervient en fin de sixième année, pour un bois valorisé à 400/450 € le m³ ; nous plantons nous-mêmes cette variété depuis plusieurs années, notamment en Espagne.",
+          detail: {
+            sections: [
+              {
+                h: "Le principe",
+                p: "Le Paulownia ALTIFOLIA® est l'arbre à la croissance la plus rapide au monde : dans de bonnes conditions, il atteint 13 à 15 mètres en six à huit ans, à raison d'environ 3 mètres par an, avec des feuilles pouvant dépasser 80 cm de long. C'est aussi l'un des arbres les plus efficaces pour capter le CO₂ et restituer de l'oxygène par photosynthèse. Notre variété ALTIFOLIA®, issue d'un croisement entre Paulownia Elongata et Paulownia Fortunei, a été sélectionnée pour les régions chaudes : elle développe un tronc au diamètre important en peu de temps et ne nécessite, en moyenne annuelle, que 2 litres d'eau par jour — contre 25 litres pour les autres variétés du marché (5 à 7 litres en période de canicule extrême). Associée à 100 g d'ECOSORB® par plant à la plantation, l'irrigation nécessaire baisse encore de 50 %, sans jamais exposer l'arbre au stress hydrique.",
+              },
+              {
+                h: "Une sélection pensée pour les régions chaudes",
+                p: "Notre variété ALTIFOLIA® se distingue par une croissance homogène et compacte, une couronne étroite et des feuilles épaisses et charnues ; la rectitude de ses pousses annuelles permet, dès la deuxième année, de se passer d'une coupe de formation. Très résistante aux parasites et aux maladies grâce à son système racinaire profond, elle enrichit également le sol en azote et prévient l'érosion. Le bois ne s'enflamme qu'à partir de 426 °C, ce qui en fait aussi une barrière anti-incendie efficace.",
+              },
+              {
+                h: "De la commande à la première récolte",
+                p: "Les arbres sont livrés en plants de 25 à 30 cm, en pot, par avion, sous un délai moyen de six semaines, à partir d'une commande minimum de 1000 unités. Chaque plant est certifié sans maladie par certificat phytosanitaire, et garanti : un arbre qui viendrait à mourir pendant sa croissance est automatiquement remplacé. À réception, les plants passent six semaines en serre avant la mise en terre, avec une irrigation goutte-à-goutte et une protection contre la faune. Le rythme de croissance, environ trois mètres par an, permet une première coupe dès la fin de la sixième année, pour un bois valorisé à 400/450 € le m³.",
+              },
+            ],
+            gallery: [
+              "L'entretien d'une plantation de Paulownia ALTIFOLIA®, en Espagne.",
+              "De la plantation à la récolte : sept ans de croissance, jusqu'à 20 mètres.",
+              "La floraison du Paulownia, précieuse aussi pour les apiculteurs.",
             ],
           },
         },
@@ -655,43 +655,8 @@ export const content = {
           },
         },
         {
-          id: "paulownia",
-          num: "02",
-          kicker: "Plant for the long term",
-          title: "Paulownia ALTIFOLIA®",
-          text: "The world's fastest-growing tree: 13 to 15 m in six to eight years, nearly 3 m per year. Combined with our EVERGREEN® water-retaining polymer, it cuts irrigation water needs by 50%. Sterile, non-invasive hybrid varieties, supported from young plant to timber sale.",
-          facts: [
-            "400 to 500 trees/ha, valued at €400/450 per m³",
-            "Return on investment over a six-year growing cycle",
-            "Withstands −25°C to +45°C, only ignites at 426°C",
-            "400 to 700 kg of honey per hectare, plus carbon credits",
-          ],
-          more: "Paulownia ALTIFOLIA® is the fastest-growing tree in the world: under good conditions it reaches 13 to 15 metres in six to eight years — roughly 3 metres a year — with leaves that can exceed 80 cm in length. It is also among the most efficient trees at capturing CO₂ and releasing oxygen through photosynthesis. Our ALTIFOLIA® variety, a cross between Paulownia Elongata and Paulownia Fortunei, was selected for hot climates: it builds a wide trunk diameter in very little time and needs, on average, only 2 litres of water a day — against 25 litres for other varieties on the market (5 to 7 litres in extreme heatwaves). Combined with 100 g of ECOSORB® per plant at planting, irrigation needs drop by a further 50%, with no exposure to water stress. Its deep root system enriches the soil with nitrogen and prevents erosion; natural resistance to pests and disease is high, and the wood only ignites above 426°C, making it useful as a fire barrier too. Plants (25-30 cm at delivery, potted, disease-free certified, replaced under warranty in case of loss) are air-freighted within 6 weeks, then need 6 weeks under cover before drip-irrigated planting. First harvest comes at the end of year six, for wood valued at €400-450 per m³; we have been growing this variety ourselves for several years, notably in Spain.",
-          detail: {
-            sections: [
-              {
-                h: "The principle",
-                p: "Paulownia ALTIFOLIA® is the fastest-growing tree in the world: under good conditions it reaches 13 to 15 metres in six to eight years — roughly 3 metres a year — with leaves that can exceed 80 cm in length. It is also among the most efficient trees at capturing CO₂ and releasing oxygen through photosynthesis. Our ALTIFOLIA® variety, a cross between Paulownia Elongata and Paulownia Fortunei, was selected for hot climates: it needs, on average, only 2 litres of water a day — against 25 litres for other varieties on the market. Combined with 100 g of ECOSORB® per plant at planting, irrigation needs drop by a further 50%.",
-              },
-              {
-                h: "A selection bred for hot climates",
-                p: "Our ALTIFOLIA® variety stands out for its homogeneous, compact growth, a narrow crown and thick, fleshy leaves; the straightness of its annual shoots means formative pruning can be skipped from the second year onward. Highly resistant to pests and disease thanks to its deep root system, it also enriches the soil with nitrogen and prevents erosion. The wood only ignites above 426°C, making it an effective fire barrier too.",
-              },
-              {
-                h: "From order to first harvest",
-                p: "Trees are delivered as 25-30 cm potted plants, air-freighted within an average of six weeks, from a minimum order of 1,000 units. Every plant is certified disease-free with a phytosanitary certificate, and guaranteed: any tree that dies during growth is automatically replaced. On arrival, plants spend six weeks under cover before planting, with drip irrigation and protection from wildlife. The growth rate, around three metres a year, allows a first harvest at the end of year six, for wood valued at €400-450 per m³.",
-              },
-            ],
-            gallery: [
-              "Tending a Paulownia ALTIFOLIA® plantation, in Spain.",
-              "From planting to harvest: seven years of growth, up to 20 metres.",
-              "Paulownia in bloom, also prized by beekeepers.",
-            ],
-          },
-        },
-        {
           id: "fertilisation",
-          num: "03",
+          num: "02",
           kicker: "Nourish without chemistry",
           title: "ECOFERT® Fertilizers",
           text: "A microdose fertilizer of amino acids, nitrogen, phosphorus and potassium, from renewable resources. Non-chelating: it doesn't deplete the soil, it enriches it. No leaching, no rise in salinity or nitrates, in the plant or in the ground.",
@@ -726,7 +691,7 @@ export const content = {
         },
         {
           id: "protection",
-          num: "04",
+          num: "03",
           kicker: "Protect with no residue",
           title: "NAPEMA®",
           text: "Natural Pest Management: pest control with no synthetic chemistry or active molecule, both preventive and curative, applied by foliar and root spraying. Custom solutions are formulated for a specific problem.",
@@ -760,7 +725,7 @@ export const content = {
         },
         {
           id: "eau-restructuree",
-          num: "05",
+          num: "04",
           kicker: "Restructure water",
           title: "Water Vital®",
           text: "Restructuring by molecular resonance turns 'dead' water, disorganized at the atomic level, into living water that regains its natural properties. The system runs with no energy, no maintenance and no consumables.",
@@ -789,6 +754,41 @@ export const content = {
               "The EL HILAL Group's irrigation reservoir, 200 x 100 x 12 metres, Sidi Moussa (Algeria).",
               "The pumping and filtration station, where Water Vital® was installed.",
               "The drip-irrigated orchard, during the August 2025 site visit.",
+            ],
+          },
+        },
+        {
+          id: "paulownia",
+          num: "05",
+          kicker: "Plant for the long term",
+          title: "Paulownia ALTIFOLIA®",
+          text: "The world's fastest-growing tree: 13 to 15 m in six to eight years, nearly 3 m per year. Combined with our EVERGREEN® water-retaining polymer, it cuts irrigation water needs by 50%. Sterile, non-invasive hybrid varieties, supported from young plant to timber sale.",
+          facts: [
+            "400 to 500 trees/ha, valued at €400/450 per m³",
+            "Return on investment over a six-year growing cycle",
+            "Withstands −25°C to +45°C, only ignites at 426°C",
+            "400 to 700 kg of honey per hectare, plus carbon credits",
+          ],
+          more: "Paulownia ALTIFOLIA® is the fastest-growing tree in the world: under good conditions it reaches 13 to 15 metres in six to eight years — roughly 3 metres a year — with leaves that can exceed 80 cm in length. It is also among the most efficient trees at capturing CO₂ and releasing oxygen through photosynthesis. Our ALTIFOLIA® variety, a cross between Paulownia Elongata and Paulownia Fortunei, was selected for hot climates: it builds a wide trunk diameter in very little time and needs, on average, only 2 litres of water a day — against 25 litres for other varieties on the market (5 to 7 litres in extreme heatwaves). Combined with 100 g of ECOSORB® per plant at planting, irrigation needs drop by a further 50%, with no exposure to water stress. Its deep root system enriches the soil with nitrogen and prevents erosion; natural resistance to pests and disease is high, and the wood only ignites above 426°C, making it useful as a fire barrier too. Plants (25-30 cm at delivery, potted, disease-free certified, replaced under warranty in case of loss) are air-freighted within 6 weeks, then need 6 weeks under cover before drip-irrigated planting. First harvest comes at the end of year six, for wood valued at €400-450 per m³; we have been growing this variety ourselves for several years, notably in Spain.",
+          detail: {
+            sections: [
+              {
+                h: "The principle",
+                p: "Paulownia ALTIFOLIA® is the fastest-growing tree in the world: under good conditions it reaches 13 to 15 metres in six to eight years — roughly 3 metres a year — with leaves that can exceed 80 cm in length. It is also among the most efficient trees at capturing CO₂ and releasing oxygen through photosynthesis. Our ALTIFOLIA® variety, a cross between Paulownia Elongata and Paulownia Fortunei, was selected for hot climates: it needs, on average, only 2 litres of water a day — against 25 litres for other varieties on the market. Combined with 100 g of ECOSORB® per plant at planting, irrigation needs drop by a further 50%.",
+              },
+              {
+                h: "A selection bred for hot climates",
+                p: "Our ALTIFOLIA® variety stands out for its homogeneous, compact growth, a narrow crown and thick, fleshy leaves; the straightness of its annual shoots means formative pruning can be skipped from the second year onward. Highly resistant to pests and disease thanks to its deep root system, it also enriches the soil with nitrogen and prevents erosion. The wood only ignites above 426°C, making it an effective fire barrier too.",
+              },
+              {
+                h: "From order to first harvest",
+                p: "Trees are delivered as 25-30 cm potted plants, air-freighted within an average of six weeks, from a minimum order of 1,000 units. Every plant is certified disease-free with a phytosanitary certificate, and guaranteed: any tree that dies during growth is automatically replaced. On arrival, plants spend six weeks under cover before planting, with drip irrigation and protection from wildlife. The growth rate, around three metres a year, allows a first harvest at the end of year six, for wood valued at €400-450 per m³.",
+              },
+            ],
+            gallery: [
+              "Tending a Paulownia ALTIFOLIA® plantation, in Spain.",
+              "From planting to harvest: seven years of growth, up to 20 metres.",
+              "Paulownia in bloom, also prized by beekeepers.",
             ],
           },
         },
@@ -1177,43 +1177,8 @@ export const content = {
           },
         },
         {
-          id: "paulownia",
-          num: "02",
-          kicker: "Plantar para durar",
-          title: "Paulownia ALTIFOLIA®",
-          text: "El árbol de crecimiento más rápido del mundo: 13 a 15 m en seis a ocho años, casi 3 m al año. Combinado con nuestro hidrorretenedor EVERGREEN®, reduce un 50 % sus necesidades de agua de riego. Variedades híbridas estériles y no invasivas, acompañadas desde el plantón joven hasta la venta de la madera.",
-          facts: [
-            "400 a 500 árboles/ha, valorados a 400/450 € por m³",
-            "Rentabilidad a lo largo de seis años de cultivo",
-            "Resiste de −25 °C a +45 °C, solo se incendia a 426 °C",
-            "400 a 700 kg de miel por hectárea, además de créditos de carbono",
-          ],
-          more: "El Paulownia ALTIFOLIA® es el árbol de crecimiento más rápido del mundo: en buenas condiciones alcanza de 13 a 15 metros en seis a ocho años —unos 3 metros al año— con hojas que pueden superar los 80 cm de largo. Es también uno de los árboles más eficientes en la captación de CO₂ y en la liberación de oxígeno por fotosíntesis. Nuestra variedad ALTIFOLIA®, cruce entre Paulownia Elongata y Paulownia Fortunei, fue seleccionada para climas cálidos: desarrolla un tronco de gran diámetro en muy poco tiempo y necesita, en promedio, solo 2 litros de agua al día —frente a los 25 litros de otras variedades del mercado (5 a 7 litros en olas de calor extremo). Combinada con 100 g de ECOSORB® por planta en la plantación, la necesidad de riego cae otro 50%, sin exponer nunca el árbol al estrés hídrico. Su sistema radicular profundo enriquece el suelo con nitrógeno y previene la erosión; su resistencia natural a plagas y enfermedades es alta, y la madera solo se inflama a partir de 426°C, lo que también la convierte en una barrera cortafuegos. Las plantas (25-30 cm a la entrega, en maceta, certificadas libres de enfermedad, con garantía de reposición) se transportan por avión en 6 semanas, y luego requieren 6 semanas de invernadero antes de la plantación con riego por goteo. La primera corta llega a final del sexto año, con una madera valorada en 400-450 €/m³; nosotros mismos cultivamos esta variedad desde hace varios años, especialmente en España.",
-          detail: {
-            sections: [
-              {
-                h: "El principio",
-                p: "El Paulownia ALTIFOLIA® es el árbol de crecimiento más rápido del mundo: en buenas condiciones alcanza de 13 a 15 metros en seis a ocho años —unos 3 metros al año— con hojas que pueden superar los 80 cm de largo. Es también uno de los árboles más eficientes en la captación de CO₂ y en la liberación de oxígeno por fotosíntesis. Nuestra variedad ALTIFOLIA® fue seleccionada para climas cálidos: necesita, en promedio, solo 2 litros de agua al día, frente a los 25 litros de otras variedades del mercado. Combinada con 100 g de ECOSORB® por planta, la necesidad de riego cae otro 50%.",
-              },
-              {
-                h: "Una selección pensada para climas cálidos",
-                p: "Nuestra variedad ALTIFOLIA® se distingue por un crecimiento homogéneo y compacto, una copa estrecha y hojas gruesas y carnosas; la rectitud de sus brotes anuales permite prescindir de una poda de formación desde el segundo año. Muy resistente a plagas y enfermedades gracias a su sistema radicular profundo, también enriquece el suelo con nitrógeno y previene la erosión. La madera solo se inflama a partir de 426°C, lo que la convierte además en una barrera cortafuegos eficaz.",
-              },
-              {
-                h: "Del pedido a la primera cosecha",
-                p: "Los árboles se entregan como plantones de 25 a 30 cm, en maceta, transportados por avión en un plazo medio de seis semanas, a partir de un pedido mínimo de 1000 unidades. Cada planta está certificada libre de enfermedad con certificado fitosanitario, y garantizada: un árbol que muriera durante su crecimiento se repone automáticamente. A su llegada, las plantas pasan seis semanas en invernadero antes de la siembra, con riego por goteo y protección contra la fauna. El ritmo de crecimiento, unos tres metros al año, permite una primera corta a finales del sexto año, con una madera valorada en 400-450 €/m³.",
-              },
-            ],
-            gallery: [
-              "El mantenimiento de una plantación de Paulownia ALTIFOLIA®, en España.",
-              "De la plantación a la cosecha: siete años de crecimiento, hasta 20 metros.",
-              "La floración del Paulownia, también valiosa para los apicultores.",
-            ],
-          },
-        },
-        {
           id: "fertilisation",
-          num: "03",
+          num: "02",
           kicker: "Nutrir sin química",
           title: "Fertilizantes ECOFERT®",
           text: "Un fertilizante en microdosis de aminoácidos, nitrógeno, fósforo y potasio, procedente de recursos renovables. No quelante: no agota el suelo, lo enriquece. Sin lixiviación, sin aumento de salinidad ni de nitratos, ni en la planta ni en la tierra.",
@@ -1248,7 +1213,7 @@ export const content = {
         },
         {
           id: "protection",
-          num: "04",
+          num: "03",
           kicker: "Proteger sin residuos",
           title: "NAPEMA®",
           text: "Natural Pest Management: una lucha contra las plagas sin química de síntesis ni molécula activa, con efecto preventivo y curativo, mediante pulverización foliar y radicular. Se formulan soluciones a medida para un problema concreto.",
@@ -1282,7 +1247,7 @@ export const content = {
         },
         {
           id: "eau-restructuree",
-          num: "05",
+          num: "04",
           kicker: "Restructurar el agua",
           title: "Water Vital®",
           text: "La restructuración por resonancia molecular transforma un agua «muerta», desorganizada a nivel atómico, en agua viva que recupera sus propiedades naturales. El sistema funciona sin energía, sin mantenimiento y sin consumibles.",
@@ -1311,6 +1276,41 @@ export const content = {
               "El embalse de riego del Grupo EL HILAL, 200 x 100 x 12 metros, Sidi Moussa (Argelia).",
               "La estación de bombeo y filtración, donde se instaló Water Vital®.",
               "El huerto regado por goteo, durante la visita de agosto de 2025.",
+            ],
+          },
+        },
+        {
+          id: "paulownia",
+          num: "05",
+          kicker: "Plantar para durar",
+          title: "Paulownia ALTIFOLIA®",
+          text: "El árbol de crecimiento más rápido del mundo: 13 a 15 m en seis a ocho años, casi 3 m al año. Combinado con nuestro hidrorretenedor EVERGREEN®, reduce un 50 % sus necesidades de agua de riego. Variedades híbridas estériles y no invasivas, acompañadas desde el plantón joven hasta la venta de la madera.",
+          facts: [
+            "400 a 500 árboles/ha, valorados a 400/450 € por m³",
+            "Rentabilidad a lo largo de seis años de cultivo",
+            "Resiste de −25 °C a +45 °C, solo se incendia a 426 °C",
+            "400 a 700 kg de miel por hectárea, además de créditos de carbono",
+          ],
+          more: "El Paulownia ALTIFOLIA® es el árbol de crecimiento más rápido del mundo: en buenas condiciones alcanza de 13 a 15 metros en seis a ocho años —unos 3 metros al año— con hojas que pueden superar los 80 cm de largo. Es también uno de los árboles más eficientes en la captación de CO₂ y en la liberación de oxígeno por fotosíntesis. Nuestra variedad ALTIFOLIA®, cruce entre Paulownia Elongata y Paulownia Fortunei, fue seleccionada para climas cálidos: desarrolla un tronco de gran diámetro en muy poco tiempo y necesita, en promedio, solo 2 litros de agua al día —frente a los 25 litros de otras variedades del mercado (5 a 7 litros en olas de calor extremo). Combinada con 100 g de ECOSORB® por planta en la plantación, la necesidad de riego cae otro 50%, sin exponer nunca el árbol al estrés hídrico. Su sistema radicular profundo enriquece el suelo con nitrógeno y previene la erosión; su resistencia natural a plagas y enfermedades es alta, y la madera solo se inflama a partir de 426°C, lo que también la convierte en una barrera cortafuegos. Las plantas (25-30 cm a la entrega, en maceta, certificadas libres de enfermedad, con garantía de reposición) se transportan por avión en 6 semanas, y luego requieren 6 semanas de invernadero antes de la plantación con riego por goteo. La primera corta llega a final del sexto año, con una madera valorada en 400-450 €/m³; nosotros mismos cultivamos esta variedad desde hace varios años, especialmente en España.",
+          detail: {
+            sections: [
+              {
+                h: "El principio",
+                p: "El Paulownia ALTIFOLIA® es el árbol de crecimiento más rápido del mundo: en buenas condiciones alcanza de 13 a 15 metros en seis a ocho años —unos 3 metros al año— con hojas que pueden superar los 80 cm de largo. Es también uno de los árboles más eficientes en la captación de CO₂ y en la liberación de oxígeno por fotosíntesis. Nuestra variedad ALTIFOLIA® fue seleccionada para climas cálidos: necesita, en promedio, solo 2 litros de agua al día, frente a los 25 litros de otras variedades del mercado. Combinada con 100 g de ECOSORB® por planta, la necesidad de riego cae otro 50%.",
+              },
+              {
+                h: "Una selección pensada para climas cálidos",
+                p: "Nuestra variedad ALTIFOLIA® se distingue por un crecimiento homogéneo y compacto, una copa estrecha y hojas gruesas y carnosas; la rectitud de sus brotes anuales permite prescindir de una poda de formación desde el segundo año. Muy resistente a plagas y enfermedades gracias a su sistema radicular profundo, también enriquece el suelo con nitrógeno y previene la erosión. La madera solo se inflama a partir de 426°C, lo que la convierte además en una barrera cortafuegos eficaz.",
+              },
+              {
+                h: "Del pedido a la primera cosecha",
+                p: "Los árboles se entregan como plantones de 25 a 30 cm, en maceta, transportados por avión en un plazo medio de seis semanas, a partir de un pedido mínimo de 1000 unidades. Cada planta está certificada libre de enfermedad con certificado fitosanitario, y garantizada: un árbol que muriera durante su crecimiento se repone automáticamente. A su llegada, las plantas pasan seis semanas en invernadero antes de la siembra, con riego por goteo y protección contra la fauna. El ritmo de crecimiento, unos tres metros al año, permite una primera corta a finales del sexto año, con una madera valorada en 400-450 €/m³.",
+              },
+            ],
+            gallery: [
+              "El mantenimiento de una plantación de Paulownia ALTIFOLIA®, en España.",
+              "De la plantación a la cosecha: siete años de crecimiento, hasta 20 metros.",
+              "La floración del Paulownia, también valiosa para los apicultores.",
             ],
           },
         },
@@ -1699,43 +1699,8 @@ export const content = {
           },
         },
         {
-          id: "paulownia",
-          num: "02",
-          kicker: "Plantar para durar",
-          title: "Paulownia ALTIFOLIA®",
-          text: "A árvore de crescimento mais rápido do mundo: 13 a 15 m em seis a oito anos, quase 3 m por ano. Associada ao nosso hidrorretentor EVERGREEN®, reduz em 50% as suas necessidades de água de rega. Variedades híbridas estéreis e não invasivas, acompanhadas desde a muda jovem até à venda da madeira.",
-          facts: [
-            "400 a 500 árvores/ha, madeira valorizada a cerca de 400/450 €/m³",
-            "Rentabilidade ao longo de seis anos de cultivo",
-            "Resiste de −25 °C a +45 °C, só se incendeia a 426 °C",
-            "400 a 700 kg de mel por hectare, além de créditos de carbono",
-          ],
-          more: "O Paulownia ALTIFOLIA® é a árvore de crescimento mais rápido do mundo: em boas condições atinge 13 a 15 metros em seis a oito anos — cerca de 3 metros por ano — com folhas que podem ultrapassar 80 cm de comprimento. É também uma das árvores mais eficientes na captação de CO₂ e na libertação de oxigénio por fotossíntese. A nossa variedade ALTIFOLIA®, cruzamento entre Paulownia Elongata e Paulownia Fortunei, foi selecionada para climas quentes: desenvolve um tronco de grande diâmetro em pouco tempo e necessita, em média, de apenas 2 litros de água por dia — contra 25 litros de outras variedades do mercado (5 a 7 litros em ondas de calor extremo). Combinada com 100 g de ECOSORB® por planta na plantação, a necessidade de rega cai mais 50%, sem nunca expor a árvore ao stress hídrico. O seu sistema radicular profundo enriquece o solo em azoto e previne a erosão; a resistência natural a pragas e doenças é elevada, e a madeira só se inflama a partir de 426°C, o que a torna também uma barreira corta-fogo. As plantas (25-30 cm à entrega, em vaso, certificadas isentas de doenças, com garantia de substituição) são transportadas por avião em 6 semanas, e precisam depois de 6 semanas em estufa antes da plantação com rega gota-a-gota. O primeiro corte ocorre no final do sexto ano, com madeira valorizada em 400-450 €/m³; cultivamos nós próprios esta variedade há vários anos, nomeadamente em Espanha.",
-          detail: {
-            sections: [
-              {
-                h: "O princípio",
-                p: "O Paulownia ALTIFOLIA® é a árvore de crescimento mais rápido do mundo: em boas condições atinge 13 a 15 metros em seis a oito anos — cerca de 3 metros por ano — com folhas que podem ultrapassar 80 cm de comprimento. É também uma das árvores mais eficientes na captação de CO₂ e na libertação de oxigénio por fotossíntese. A nossa variedade ALTIFOLIA® foi selecionada para climas quentes: necessita, em média, de apenas 2 litros de água por dia, contra 25 litros de outras variedades do mercado. Combinada com 100 g de ECOSORB® por planta, a necessidade de rega cai mais 50%.",
-              },
-              {
-                h: "Uma seleção pensada para climas quentes",
-                p: "A nossa variedade ALTIFOLIA® distingue-se por um crescimento homogéneo e compacto, uma copa estreita e folhas espessas e carnudas; a retidão dos seus rebentos anuais permite dispensar uma poda de formação a partir do segundo ano. Muito resistente a pragas e doenças graças ao seu sistema radicular profundo, enriquece também o solo em azoto e previne a erosão. A madeira só se inflama a partir de 426°C, o que a torna também uma barreira corta-fogo eficaz.",
-              },
-              {
-                h: "Da encomenda à primeira colheita",
-                p: "As árvores são entregues como plantas de 25 a 30 cm, em vaso, transportadas por avião num prazo médio de seis semanas, a partir de uma encomenda mínima de 1000 unidades. Cada planta é certificada isenta de doenças com certificado fitossanitário, e garantida: uma árvore que morra durante o crescimento é automaticamente substituída. À chegada, as plantas passam seis semanas em estufa antes da plantação, com rega gota-a-gota e proteção contra a fauna. O ritmo de crescimento, cerca de três metros por ano, permite um primeiro corte no final do sexto ano, com madeira valorizada em 400-450 €/m³.",
-              },
-            ],
-            gallery: [
-              "A manutenção de uma plantação de Paulownia ALTIFOLIA®, em Espanha.",
-              "Da plantação à colheita: sete anos de crescimento, até 20 metros.",
-              "A floração do Paulownia, também valiosa para os apicultores.",
-            ],
-          },
-        },
-        {
           id: "fertilisation",
-          num: "03",
+          num: "02",
           kicker: "Nutrir sem química",
           title: "Fertilizantes ECOFERT®",
           text: "Um fertilizante em microdoses de aminoácidos, azoto, fósforo e potássio, proveniente de recursos renováveis. Não quelante: não esgota o solo, enriquece-o. Sem lixiviação, sem aumento de salinidade ou de nitratos, nem na planta nem na terra.",
@@ -1770,7 +1735,7 @@ export const content = {
         },
         {
           id: "protection",
-          num: "04",
+          num: "03",
           kicker: "Proteger sem resíduos",
           title: "NAPEMA®",
           text: "Natural Pest Management: uma luta contra as pragas sem química de síntese nem molécula ativa, com efeito preventivo e curativo, por pulverização foliar e radicular. Formulam-se soluções à medida para um problema específico.",
@@ -1804,7 +1769,7 @@ export const content = {
         },
         {
           id: "eau-restructuree",
-          num: "05",
+          num: "04",
           kicker: "Restruturar a água",
           title: "Water Vital®",
           text: "A restruturação por ressonância molecular transforma uma água «morta», desorganizada ao nível atómico, em água viva que recupera as suas propriedades naturais. O sistema funciona sem energia, sem manutenção e sem consumíveis.",
@@ -1833,6 +1798,41 @@ export const content = {
               "O reservatório de irrigação do Grupo EL HILAL, 200 x 100 x 12 metros, Sidi Moussa (Argélia).",
               "A estação de bombagem e filtração, onde a Water Vital® foi instalada.",
               "O pomar irrigado por gota-a-gota, durante a visita de agosto de 2025.",
+            ],
+          },
+        },
+        {
+          id: "paulownia",
+          num: "05",
+          kicker: "Plantar para durar",
+          title: "Paulownia ALTIFOLIA®",
+          text: "A árvore de crescimento mais rápido do mundo: 13 a 15 m em seis a oito anos, quase 3 m por ano. Associada ao nosso hidrorretentor EVERGREEN®, reduz em 50% as suas necessidades de água de rega. Variedades híbridas estéreis e não invasivas, acompanhadas desde a muda jovem até à venda da madeira.",
+          facts: [
+            "400 a 500 árvores/ha, madeira valorizada a cerca de 400/450 €/m³",
+            "Rentabilidade ao longo de seis anos de cultivo",
+            "Resiste de −25 °C a +45 °C, só se incendeia a 426 °C",
+            "400 a 700 kg de mel por hectare, além de créditos de carbono",
+          ],
+          more: "O Paulownia ALTIFOLIA® é a árvore de crescimento mais rápido do mundo: em boas condições atinge 13 a 15 metros em seis a oito anos — cerca de 3 metros por ano — com folhas que podem ultrapassar 80 cm de comprimento. É também uma das árvores mais eficientes na captação de CO₂ e na libertação de oxigénio por fotossíntese. A nossa variedade ALTIFOLIA®, cruzamento entre Paulownia Elongata e Paulownia Fortunei, foi selecionada para climas quentes: desenvolve um tronco de grande diâmetro em pouco tempo e necessita, em média, de apenas 2 litros de água por dia — contra 25 litros de outras variedades do mercado (5 a 7 litros em ondas de calor extremo). Combinada com 100 g de ECOSORB® por planta na plantação, a necessidade de rega cai mais 50%, sem nunca expor a árvore ao stress hídrico. O seu sistema radicular profundo enriquece o solo em azoto e previne a erosão; a resistência natural a pragas e doenças é elevada, e a madeira só se inflama a partir de 426°C, o que a torna também uma barreira corta-fogo. As plantas (25-30 cm à entrega, em vaso, certificadas isentas de doenças, com garantia de substituição) são transportadas por avião em 6 semanas, e precisam depois de 6 semanas em estufa antes da plantação com rega gota-a-gota. O primeiro corte ocorre no final do sexto ano, com madeira valorizada em 400-450 €/m³; cultivamos nós próprios esta variedade há vários anos, nomeadamente em Espanha.",
+          detail: {
+            sections: [
+              {
+                h: "O princípio",
+                p: "O Paulownia ALTIFOLIA® é a árvore de crescimento mais rápido do mundo: em boas condições atinge 13 a 15 metros em seis a oito anos — cerca de 3 metros por ano — com folhas que podem ultrapassar 80 cm de comprimento. É também uma das árvores mais eficientes na captação de CO₂ e na libertação de oxigénio por fotossíntese. A nossa variedade ALTIFOLIA® foi selecionada para climas quentes: necessita, em média, de apenas 2 litros de água por dia, contra 25 litros de outras variedades do mercado. Combinada com 100 g de ECOSORB® por planta, a necessidade de rega cai mais 50%.",
+              },
+              {
+                h: "Uma seleção pensada para climas quentes",
+                p: "A nossa variedade ALTIFOLIA® distingue-se por um crescimento homogéneo e compacto, uma copa estreita e folhas espessas e carnudas; a retidão dos seus rebentos anuais permite dispensar uma poda de formação a partir do segundo ano. Muito resistente a pragas e doenças graças ao seu sistema radicular profundo, enriquece também o solo em azoto e previne a erosão. A madeira só se inflama a partir de 426°C, o que a torna também uma barreira corta-fogo eficaz.",
+              },
+              {
+                h: "Da encomenda à primeira colheita",
+                p: "As árvores são entregues como plantas de 25 a 30 cm, em vaso, transportadas por avião num prazo médio de seis semanas, a partir de uma encomenda mínima de 1000 unidades. Cada planta é certificada isenta de doenças com certificado fitossanitário, e garantida: uma árvore que morra durante o crescimento é automaticamente substituída. À chegada, as plantas passam seis semanas em estufa antes da plantação, com rega gota-a-gota e proteção contra a fauna. O ritmo de crescimento, cerca de três metros por ano, permite um primeiro corte no final do sexto ano, com madeira valorizada em 400-450 €/m³.",
+              },
+            ],
+            gallery: [
+              "A manutenção de uma plantação de Paulownia ALTIFOLIA®, em Espanha.",
+              "Da plantação à colheita: sete anos de crescimento, até 20 metros.",
+              "A floração do Paulownia, também valiosa para os apicultores.",
             ],
           },
         },
@@ -2221,43 +2221,8 @@ export const content = {
           },
         },
         {
-          id: "paulownia",
-          num: "02",
-          kicker: "الزراعة من أجل الاستمرار",
-          title: "Paulownia ALTIFOLIA®",
-          text: "الشجرة الأسرع نموًا في العالم: 13 إلى 15 مترًا خلال ست إلى ثماني سنوات، بمعدل يقارب 3 أمتار سنويًا. بالاقتران مع مادة EVERGREEN® المحتفظة بالماء، تنخفض احتياجاتها من مياه الري بنسبة 50%. أصناف هجينة عقيمة وغير غازية، مصحوبة من الشتلة الصغيرة حتى بيع الخشب.",
-          facts: [
-            "400 إلى 500 شجرة/هكتار، بقيمة تتراوح بين 400 و450 يورو للمتر المكعب",
-            "ربحية على مدى ست سنوات من الزراعة",
-            "تتحمل من −25 إلى +45 درجة مئوية، ولا تحترق إلا عند 426 درجة",
-            "400 إلى 700 كجم من العسل لكل هكتار، بالإضافة إلى أرصدة كربونية",
-          ],
-          more: "شجرة الباولونيا ألتيفوليا® هي الأسرع نمواً في العالم: في الظروف المثلى تصل إلى ارتفاع 13 إلى 15 متراً خلال ست إلى ثماني سنوات، أي نحو 3 أمتار سنوياً، بأوراق قد يتجاوز طولها 80 سم. وهي أيضاً من أكثر الأشجار كفاءة في امتصاص ثاني أكسيد الكربون وإطلاق الأكسجين عبر التمثيل الضوئي. صنفنا ألتيفوليا®، وهو تهجين بين باولونيا إلونغاتا وباولونيا فورتونيي، اختير خصيصاً للمناطق الحارة: يطوّر جذعاً بقطر كبير في وقت قصير، ولا يحتاج في المتوسط سوى لترين من الماء يومياً، مقارنة بـ 25 لتراً للأصناف الأخرى في السوق (5 إلى 7 لترات في موجات الحر الشديد). وبإضافة 100 غرام من إيكوسورب® لكل شتلة عند الزراعة، تنخفض حاجة الري بنسبة 50% إضافية، دون تعريض الشجرة لأي إجهاد مائي. جذورها العميقة تُغني التربة بالنيتروجين وتمنع التعرية؛ ومقاومتها الطبيعية للآفات والأمراض عالية، ولا تشتعل خشبتها إلا عند 426 درجة مئوية، ما يجعلها أيضاً حاجزاً طبيعياً ضد الحرائق. تُشحن الشتلات (بطول 25 إلى 30 سم عند التسليم، معلّبة، معتمدة خالية من الأمراض، ومضمونة الاستبدال) جواً خلال 6 أسابيع، ثم تحتاج 6 أسابيع أخرى في الصوبة قبل الزراعة بالري بالتنقيط. يجري أول قطع في نهاية السنة السادسة، بخشب تُقدَّر قيمته بين 400 و450 يورو للمتر المكعب؛ ونحن نزرع هذا الصنف بأنفسنا منذ عدة سنوات، خصوصاً في إسبانيا.",
-          detail: {
-            sections: [
-              {
-                h: "المبدأ",
-                p: "شجرة الباولونيا ألتيفوليا® هي الأسرع نمواً في العالم: في الظروف المثلى تصل إلى ارتفاع 13 إلى 15 متراً خلال ست إلى ثماني سنوات، أي نحو 3 أمتار سنوياً. وهي أيضاً من أكثر الأشجار كفاءة في امتصاص ثاني أكسيد الكربون. اختير صنفنا ألتيفوليا® خصيصاً للمناطق الحارة: لا يحتاج في المتوسط سوى لترين من الماء يومياً، مقارنة بـ 25 لتراً للأصناف الأخرى. وبإضافة 100 غرام من إيكوسورب® لكل شتلة، تنخفض حاجة الري بنسبة 50% إضافية.",
-              },
-              {
-                h: "صنف مصمم للمناطق الحارة",
-                p: "يتميز صنفنا ألتيفوليا® بنمو متجانس ومتراص، وتاج ضيق، وأوراق سميكة ولحمية؛ واستقامة براعمه السنوية تسمح بالاستغناء عن التقليم التكويني بدءاً من السنة الثانية. وهو مقاوم جداً للآفات والأمراض بفضل جذوره العميقة، كما يُغني التربة بالنيتروجين ويمنع التعرية. لا تشتعل خشبته إلا عند 426 درجة مئوية، ما يجعلها أيضاً حاجزاً فعالاً ضد الحرائق.",
-              },
-              {
-                h: "من الطلب إلى أول حصاد",
-                p: "تُسلَّم الأشجار كشتلات بطول 25 إلى 30 سم، معلّبة، تُشحن جواً خلال مدة متوسطة قدرها ستة أسابيع، ابتداءً من حد أدنى للطلب قدره 1000 وحدة. كل شتلة معتمدة خالية من الأمراض بشهادة صحة نباتية، ومضمونة: أي شجرة تموت أثناء نموها تُستبدل تلقائياً. عند الوصول، تمضي الشتلات ستة أسابيع في الصوبة قبل الزراعة، مع ري بالتنقيط وحماية من الحيوانات البرية. يسمح معدل النمو، نحو ثلاثة أمتار سنوياً، بإجراء أول قطع في نهاية السنة السادسة، بخشب تُقدَّر قيمته بين 400 و450 يورو للمتر المكعب.",
-              },
-            ],
-            gallery: [
-              "صيانة مزرعة من الباولونيا ألتيفوليا®، في إسبانيا.",
-              "من الزراعة إلى الحصاد: سبع سنوات من النمو، حتى 20 متراً.",
-              "إزهار الباولونيا، ذو قيمة أيضاً لمربي النحل.",
-            ],
-          },
-        },
-        {
           id: "fertilisation",
-          num: "03",
+          num: "02",
           kicker: "التغذية دون كيماويات",
           title: "أسمدة ECOFERT®",
           text: "سماد بجرعات صغيرة من الأحماض الأمينية والنيتروجين والفوسفور والبوتاسيوم، مستخرج من موارد متجددة. غير مخلبي: لا يستنزف التربة بل يُغنيها. دون ترشيح، ودون زيادة في الملوحة أو النترات، سواء في النبات أو في التربة.",
@@ -2292,7 +2257,7 @@ export const content = {
         },
         {
           id: "protection",
-          num: "04",
+          num: "03",
           kicker: "الحماية دون بقايا",
           title: "NAPEMA®",
           text: "إدارة الآفات الطبيعية: مكافحة للآفات دون كيماويات تخليقية أو جزيئات فعالة، بتأثير وقائي وعلاجي، عبر الرش الورقي والجذري. تُصاغ حلول مخصصة لكل مشكلة محددة.",
@@ -2326,7 +2291,7 @@ export const content = {
         },
         {
           id: "eau-restructuree",
-          num: "05",
+          num: "04",
           kicker: "إعادة هيكلة الماء",
           title: "Water Vital®",
           text: "تحوّل إعادة الهيكلة بالرنين الجزيئي الماء «الميت»، غير المنظم على المستوى الذري، إلى ماء حي يستعيد خصائصه الطبيعية. يعمل النظام دون طاقة ودون صيانة ودون مواد استهلاكية.",
@@ -2355,6 +2320,41 @@ export const content = {
               "حوض الري لدى مجموعة الهلال، 200×100×12 متراً، سيدي موسى (الجزائر).",
               "محطة الضخ والترشيح، حيث رُكِّبت Water Vital®.",
               "البستان المروي بالتنقيط، خلال زيارة أغسطس 2025.",
+            ],
+          },
+        },
+        {
+          id: "paulownia",
+          num: "05",
+          kicker: "الزراعة من أجل الاستمرار",
+          title: "Paulownia ALTIFOLIA®",
+          text: "الشجرة الأسرع نموًا في العالم: 13 إلى 15 مترًا خلال ست إلى ثماني سنوات، بمعدل يقارب 3 أمتار سنويًا. بالاقتران مع مادة EVERGREEN® المحتفظة بالماء، تنخفض احتياجاتها من مياه الري بنسبة 50%. أصناف هجينة عقيمة وغير غازية، مصحوبة من الشتلة الصغيرة حتى بيع الخشب.",
+          facts: [
+            "400 إلى 500 شجرة/هكتار، بقيمة تتراوح بين 400 و450 يورو للمتر المكعب",
+            "ربحية على مدى ست سنوات من الزراعة",
+            "تتحمل من −25 إلى +45 درجة مئوية، ولا تحترق إلا عند 426 درجة",
+            "400 إلى 700 كجم من العسل لكل هكتار، بالإضافة إلى أرصدة كربونية",
+          ],
+          more: "شجرة الباولونيا ألتيفوليا® هي الأسرع نمواً في العالم: في الظروف المثلى تصل إلى ارتفاع 13 إلى 15 متراً خلال ست إلى ثماني سنوات، أي نحو 3 أمتار سنوياً، بأوراق قد يتجاوز طولها 80 سم. وهي أيضاً من أكثر الأشجار كفاءة في امتصاص ثاني أكسيد الكربون وإطلاق الأكسجين عبر التمثيل الضوئي. صنفنا ألتيفوليا®، وهو تهجين بين باولونيا إلونغاتا وباولونيا فورتونيي، اختير خصيصاً للمناطق الحارة: يطوّر جذعاً بقطر كبير في وقت قصير، ولا يحتاج في المتوسط سوى لترين من الماء يومياً، مقارنة بـ 25 لتراً للأصناف الأخرى في السوق (5 إلى 7 لترات في موجات الحر الشديد). وبإضافة 100 غرام من إيكوسورب® لكل شتلة عند الزراعة، تنخفض حاجة الري بنسبة 50% إضافية، دون تعريض الشجرة لأي إجهاد مائي. جذورها العميقة تُغني التربة بالنيتروجين وتمنع التعرية؛ ومقاومتها الطبيعية للآفات والأمراض عالية، ولا تشتعل خشبتها إلا عند 426 درجة مئوية، ما يجعلها أيضاً حاجزاً طبيعياً ضد الحرائق. تُشحن الشتلات (بطول 25 إلى 30 سم عند التسليم، معلّبة، معتمدة خالية من الأمراض، ومضمونة الاستبدال) جواً خلال 6 أسابيع، ثم تحتاج 6 أسابيع أخرى في الصوبة قبل الزراعة بالري بالتنقيط. يجري أول قطع في نهاية السنة السادسة، بخشب تُقدَّر قيمته بين 400 و450 يورو للمتر المكعب؛ ونحن نزرع هذا الصنف بأنفسنا منذ عدة سنوات، خصوصاً في إسبانيا.",
+          detail: {
+            sections: [
+              {
+                h: "المبدأ",
+                p: "شجرة الباولونيا ألتيفوليا® هي الأسرع نمواً في العالم: في الظروف المثلى تصل إلى ارتفاع 13 إلى 15 متراً خلال ست إلى ثماني سنوات، أي نحو 3 أمتار سنوياً. وهي أيضاً من أكثر الأشجار كفاءة في امتصاص ثاني أكسيد الكربون. اختير صنفنا ألتيفوليا® خصيصاً للمناطق الحارة: لا يحتاج في المتوسط سوى لترين من الماء يومياً، مقارنة بـ 25 لتراً للأصناف الأخرى. وبإضافة 100 غرام من إيكوسورب® لكل شتلة، تنخفض حاجة الري بنسبة 50% إضافية.",
+              },
+              {
+                h: "صنف مصمم للمناطق الحارة",
+                p: "يتميز صنفنا ألتيفوليا® بنمو متجانس ومتراص، وتاج ضيق، وأوراق سميكة ولحمية؛ واستقامة براعمه السنوية تسمح بالاستغناء عن التقليم التكويني بدءاً من السنة الثانية. وهو مقاوم جداً للآفات والأمراض بفضل جذوره العميقة، كما يُغني التربة بالنيتروجين ويمنع التعرية. لا تشتعل خشبته إلا عند 426 درجة مئوية، ما يجعلها أيضاً حاجزاً فعالاً ضد الحرائق.",
+              },
+              {
+                h: "من الطلب إلى أول حصاد",
+                p: "تُسلَّم الأشجار كشتلات بطول 25 إلى 30 سم، معلّبة، تُشحن جواً خلال مدة متوسطة قدرها ستة أسابيع، ابتداءً من حد أدنى للطلب قدره 1000 وحدة. كل شتلة معتمدة خالية من الأمراض بشهادة صحة نباتية، ومضمونة: أي شجرة تموت أثناء نموها تُستبدل تلقائياً. عند الوصول، تمضي الشتلات ستة أسابيع في الصوبة قبل الزراعة، مع ري بالتنقيط وحماية من الحيوانات البرية. يسمح معدل النمو، نحو ثلاثة أمتار سنوياً، بإجراء أول قطع في نهاية السنة السادسة، بخشب تُقدَّر قيمته بين 400 و450 يورو للمتر المكعب.",
+              },
+            ],
+            gallery: [
+              "صيانة مزرعة من الباولونيا ألتيفوليا®، في إسبانيا.",
+              "من الزراعة إلى الحصاد: سبع سنوات من النمو، حتى 20 متراً.",
+              "إزهار الباولونيا، ذو قيمة أيضاً لمربي النحل.",
             ],
           },
         },
@@ -2743,43 +2743,8 @@ export const content = {
           },
         },
         {
-          id: "paulownia",
-          num: "02",
-          kicker: "为长远而种植",
-          title: "泡桐ALTIFOLIA®",
-          text: "世界上生长速度最快的树种：六至八年内可长到13至15米，年均生长近3米。搭配我们的EVERGREEN®保水剂，可将灌溉用水需求降低50%。不育、非入侵性的杂交品种，从幼苗到木材销售全程陪伴。",
-          facts: [
-            "每公顷400至500棵树，价值为每立方米400/450欧元",
-            "六年种植周期即可实现盈利",
-            "耐受−25°C至+45°C，426°C才会燃烧",
-            "每公顷400至700公斤蜂蜜，外加碳信用额度",
-          ],
-          more: "泡桐ALTIFOLIA®是世界上生长速度最快的树种：在良好条件下，它能在六至八年内长到13至15米，即每年约3米，叶片长度可超过80厘米。它也是通过光合作用吸收二氧化碳并释放氧气效率最高的树种之一。我们的ALTIFOLIA®品种，由泡桐Elongata与泡桐Fortunei杂交而成，专为炎热地区选育：它能在短时间内长出粗大的树干，年均每天仅需2升水——而市场上其他品种需要25升（极端热浪期间为5至7升）。种植时每株搭配100克ECOSORB®，灌溉需求可再降低50%，且树木绝不会经历水分胁迫。其深根系统能为土壤补充氮素并防止水土流失；对病虫害的天然抗性很高，木材需达到426°C以上才会燃烧，因此也可作为防火屏障。苗木（交付时高25至30厘米，盆栽，经无病害认证，若死亡可获保证更换）在6周内空运送达，随后需在温室中度过6周，才能以滴灌方式种植。第一次采伐在第六年末进行，木材价值为每立方米400/450欧元；我们自己多年来一直在种植这一品种，尤其是在西班牙。",
-          detail: {
-            sections: [
-              {
-                h: "原理",
-                p: "泡桐ALTIFOLIA®是世界上生长速度最快的树种：在良好条件下，它能在六至八年内长到13至15米，即每年约3米，叶片长度可超过80厘米。它也是通过光合作用吸收二氧化碳并释放氧气效率最高的树种之一。我们的ALTIFOLIA®品种，由泡桐Elongata与泡桐Fortunei杂交而成，专为炎热地区选育：年均每天仅需2升水——而市场上其他品种需要25升。种植时每株搭配100克ECOSORB®，灌溉需求可再降低50%。",
-              },
-              {
-                h: "专为炎热地区设计的品种",
-                p: "我们的ALTIFOLIA®品种以生长均匀紧凑、树冠狭窄、叶片厚实多肉为特点；其年生枝条笔直，从第二年起即可省去整形修剪。得益于其深根系统，它对病虫害具有极强的抗性，同时还能为土壤补充氮素并防止水土流失。其木材需达到426°C以上才会燃烧，因此也是一道有效的防火屏障。",
-              },
-              {
-                h: "从订购到首次采伐",
-                p: "树苗以25至30厘米的盆栽形式交付，空运送达平均需时六周，最低起订量为1000株。每株苗木均附有植物检疫证书，认证无病害，并提供保证：任何在生长期间死亡的树木都会自动更换。到货后，苗木需在温室中度过六周，然后才可采用滴灌方式定植，并需防范野生动物侵害。约每年三米的生长速度，使得第六年末即可进行第一次采伐，木材价值为每立方米400/450欧元。",
-              },
-            ],
-            gallery: [
-              "在西班牙，一处泡桐ALTIFOLIA®种植园的日常维护。",
-              "从种植到采伐：七年生长，最高可达20米。",
-              "泡桐的花期，对养蜂人而言同样珍贵。",
-            ],
-          },
-        },
-        {
           id: "fertilisation",
-          num: "03",
+          num: "02",
           kicker: "无化学方式滋养",
           title: "ECOFERT®肥料",
           text: "一种由氨基酸、氮、磷和钾组成的微剂量肥料，源自可再生资源。不具螯合作用：它不会耗尽土壤，反而能使其更肥沃。无论对植物还是土壤，都不会造成淋溶，也不会提高盐分或硝酸盐含量。",
@@ -2814,7 +2779,7 @@ export const content = {
         },
         {
           id: "protection",
-          num: "04",
+          num: "03",
           kicker: "无残留保护",
           title: "NAPEMA®",
           text: "自然虫害管理（Natural Pest Management）：一种不使用合成化学品或活性分子的害虫防治方法，兼具预防和治疗效果，通过叶面和根部喷施实现。可根据具体问题定制配方。",
@@ -2848,7 +2813,7 @@ export const content = {
         },
         {
           id: "eau-restructuree",
-          num: "05",
+          num: "04",
           kicker: "重构水质",
           title: "Water Vital®",
           text: "通过分子共振进行的水质重构，能将在原子层面失序的“死水”转变为恢复其天然特性的“活水”。该系统运行无需能源、无需维护，也不消耗任何耗材。",
@@ -2877,6 +2842,41 @@ export const content = {
               "EL HILAL集团的灌溉蓄水池，规格为200×100×12米，位于阿尔及利亚西迪穆萨。",
               "安装了Water Vital®的水泵与过滤站。",
               "2025年8月实地考察期间，采用滴灌方式灌溉的果园。",
+            ],
+          },
+        },
+        {
+          id: "paulownia",
+          num: "05",
+          kicker: "为长远而种植",
+          title: "泡桐ALTIFOLIA®",
+          text: "世界上生长速度最快的树种：六至八年内可长到13至15米，年均生长近3米。搭配我们的EVERGREEN®保水剂，可将灌溉用水需求降低50%。不育、非入侵性的杂交品种，从幼苗到木材销售全程陪伴。",
+          facts: [
+            "每公顷400至500棵树，价值为每立方米400/450欧元",
+            "六年种植周期即可实现盈利",
+            "耐受−25°C至+45°C，426°C才会燃烧",
+            "每公顷400至700公斤蜂蜜，外加碳信用额度",
+          ],
+          more: "泡桐ALTIFOLIA®是世界上生长速度最快的树种：在良好条件下，它能在六至八年内长到13至15米，即每年约3米，叶片长度可超过80厘米。它也是通过光合作用吸收二氧化碳并释放氧气效率最高的树种之一。我们的ALTIFOLIA®品种，由泡桐Elongata与泡桐Fortunei杂交而成，专为炎热地区选育：它能在短时间内长出粗大的树干，年均每天仅需2升水——而市场上其他品种需要25升（极端热浪期间为5至7升）。种植时每株搭配100克ECOSORB®，灌溉需求可再降低50%，且树木绝不会经历水分胁迫。其深根系统能为土壤补充氮素并防止水土流失；对病虫害的天然抗性很高，木材需达到426°C以上才会燃烧，因此也可作为防火屏障。苗木（交付时高25至30厘米，盆栽，经无病害认证，若死亡可获保证更换）在6周内空运送达，随后需在温室中度过6周，才能以滴灌方式种植。第一次采伐在第六年末进行，木材价值为每立方米400/450欧元；我们自己多年来一直在种植这一品种，尤其是在西班牙。",
+          detail: {
+            sections: [
+              {
+                h: "原理",
+                p: "泡桐ALTIFOLIA®是世界上生长速度最快的树种：在良好条件下，它能在六至八年内长到13至15米，即每年约3米，叶片长度可超过80厘米。它也是通过光合作用吸收二氧化碳并释放氧气效率最高的树种之一。我们的ALTIFOLIA®品种，由泡桐Elongata与泡桐Fortunei杂交而成，专为炎热地区选育：年均每天仅需2升水——而市场上其他品种需要25升。种植时每株搭配100克ECOSORB®，灌溉需求可再降低50%。",
+              },
+              {
+                h: "专为炎热地区设计的品种",
+                p: "我们的ALTIFOLIA®品种以生长均匀紧凑、树冠狭窄、叶片厚实多肉为特点；其年生枝条笔直，从第二年起即可省去整形修剪。得益于其深根系统，它对病虫害具有极强的抗性，同时还能为土壤补充氮素并防止水土流失。其木材需达到426°C以上才会燃烧，因此也是一道有效的防火屏障。",
+              },
+              {
+                h: "从订购到首次采伐",
+                p: "树苗以25至30厘米的盆栽形式交付，空运送达平均需时六周，最低起订量为1000株。每株苗木均附有植物检疫证书，认证无病害，并提供保证：任何在生长期间死亡的树木都会自动更换。到货后，苗木需在温室中度过六周，然后才可采用滴灌方式定植，并需防范野生动物侵害。约每年三米的生长速度，使得第六年末即可进行第一次采伐，木材价值为每立方米400/450欧元。",
+              },
+            ],
+            gallery: [
+              "在西班牙，一处泡桐ALTIFOLIA®种植园的日常维护。",
+              "从种植到采伐：七年生长，最高可达20米。",
+              "泡桐的花期，对养蜂人而言同样珍贵。",
             ],
           },
         },
@@ -3265,43 +3265,8 @@ export const content = {
           },
         },
         {
-          id: "paulownia",
-          num: "02",
-          kicker: "Menanam untuk jangka panjang",
-          title: "Paulownia ALTIFOLIA®",
-          text: "Pohon dengan pertumbuhan tercepat di dunia: 13 hingga 15 m dalam enam hingga delapan tahun, hampir 3 m per tahun. Dipadukan dengan hidroretentor EVERGREEN® kami, kebutuhan air irigasinya berkurang 50%. Varietas hibrida steril dan tidak invasif, didampingi mulai dari bibit muda hingga penjualan kayu.",
-          facts: [
-            "400 hingga 500 pohon/ha, bernilai 400/450 € per m³",
-            "Profitabilitas dalam enam tahun masa tanam",
-            "Tahan dari −25 °C hingga +45 °C, baru terbakar pada 426 °C",
-            "400 hingga 700 kg madu per hektare, ditambah kredit karbon",
-          ],
-          more: "Paulownia ALTIFOLIA® adalah pohon dengan pertumbuhan tercepat di dunia: dalam kondisi baik, ia mencapai 13 hingga 15 meter dalam enam hingga delapan tahun, atau sekitar 3 meter per tahun, dengan daun yang bisa melebihi 80 cm panjangnya. Pohon ini juga salah satu yang paling efisien dalam menyerap CO₂ dan melepaskan oksigen melalui fotosintesis. Varietas ALTIFOLIA® kami, hasil persilangan antara Paulownia Elongata dan Paulownia Fortunei, dipilih khusus untuk wilayah beriklim panas: pohon ini mengembangkan batang berdiameter besar dalam waktu singkat dan hanya membutuhkan rata-rata 2 liter air per hari — dibandingkan 25 liter untuk varietas lain di pasaran (5 hingga 7 liter saat gelombang panas ekstrem). Dikombinasikan dengan 100 g ECOSORB® per tanaman saat penanaman, kebutuhan irigasi turun lagi sebesar 50%, tanpa pernah membuat pohon mengalami tekanan air. Sistem akarnya yang dalam memperkaya tanah dengan nitrogen dan mencegah erosi; ketahanannya terhadap hama dan penyakit secara alami tinggi, dan kayunya baru terbakar pada suhu di atas 426 °C, menjadikannya juga sebagai penghalang kebakaran. Bibit (25 hingga 30 cm saat pengiriman, dalam pot, bersertifikat bebas penyakit, dijamin penggantian jika mati) dikirim melalui udara dalam waktu 6 minggu, kemudian harus melalui masa 6 minggu di rumah kaca sebelum ditanam dengan irigasi tetes. Panen pertama dilakukan pada akhir tahun keenam, dengan nilai kayu 400/450 € per m³; kami sendiri telah menanam varietas ini selama beberapa tahun, khususnya di Spanyol.",
-          detail: {
-            sections: [
-              {
-                h: "Prinsipnya",
-                p: "Paulownia ALTIFOLIA® adalah pohon dengan pertumbuhan tercepat di dunia: dalam kondisi baik, ia mencapai 13 hingga 15 meter dalam enam hingga delapan tahun, atau sekitar 3 meter per tahun, dengan daun yang bisa melebihi 80 cm panjangnya. Pohon ini juga salah satu yang paling efisien dalam menyerap CO₂ dan melepaskan oksigen melalui fotosintesis. Varietas ALTIFOLIA® kami dipilih khusus untuk wilayah beriklim panas: hanya membutuhkan rata-rata 2 liter air per hari — dibandingkan 25 liter untuk varietas lain di pasaran. Dikombinasikan dengan 100 g ECOSORB® per tanaman, kebutuhan irigasi turun lagi sebesar 50%.",
-              },
-              {
-                h: "Varietas yang dirancang untuk wilayah beriklim panas",
-                p: "Varietas ALTIFOLIA® kami dicirikan oleh pertumbuhan yang homogen dan kompak, mahkota yang sempit, serta daun yang tebal dan berdaging; kelurusan tunas tahunannya memungkinkan untuk melewatkan pemangkasan bentuk sejak tahun kedua. Sangat tahan terhadap hama dan penyakit berkat sistem akarnya yang dalam, pohon ini juga memperkaya tanah dengan nitrogen dan mencegah erosi. Kayunya baru terbakar pada suhu di atas 426 °C, menjadikannya juga penghalang kebakaran yang efektif.",
-              },
-              {
-                h: "Dari pemesanan hingga panen pertama",
-                p: "Pohon dikirim sebagai bibit berukuran 25 hingga 30 cm, dalam pot, dikirim melalui udara dengan rata-rata waktu enam minggu, mulai dari pemesanan minimum 1000 unit. Setiap bibit bersertifikat bebas penyakit dengan sertifikat fitosanitasi, dan dijamin: pohon yang mati selama masa pertumbuhan akan diganti secara otomatis. Setibanya, bibit menghabiskan enam minggu di rumah kaca sebelum ditanam, dengan irigasi tetes dan perlindungan dari satwa liar. Laju pertumbuhan sekitar tiga meter per tahun memungkinkan panen pertama pada akhir tahun keenam, dengan nilai kayu 400/450 € per m³.",
-              },
-            ],
-            gallery: [
-              "Perawatan perkebunan Paulownia ALTIFOLIA®, di Spanyol.",
-              "Dari penanaman hingga panen: tujuh tahun pertumbuhan, hingga 20 meter.",
-              "Bunga Paulownia, juga bernilai bagi para peternak lebah.",
-            ],
-          },
-        },
-        {
           id: "fertilisation",
-          num: "03",
+          num: "02",
           kicker: "Menyuburkan tanpa bahan kimia",
           title: "Pupuk ECOFERT®",
           text: "Pupuk mikrodosis berbahan asam amino, nitrogen, fosfor, dan kalium, berasal dari sumber daya terbarukan. Tidak bersifat khelat: tidak menguras tanah, justru memperkaya. Tanpa pencucian, tanpa peningkatan salinitas atau nitrat, baik pada tanaman maupun tanah.",
@@ -3336,7 +3301,7 @@ export const content = {
         },
         {
           id: "protection",
-          num: "04",
+          num: "03",
           kicker: "Melindungi tanpa residu",
           title: "NAPEMA®",
           text: "Natural Pest Management: pengendalian hama tanpa bahan kimia sintetis atau molekul aktif, dengan efek pencegahan dan pengobatan, melalui penyemprotan daun dan akar. Solusi yang disesuaikan diformulasikan untuk masalah yang spesifik.",
@@ -3370,7 +3335,7 @@ export const content = {
         },
         {
           id: "eau-restructuree",
-          num: "05",
+          num: "04",
           kicker: "Merestrukturisasi air",
           title: "Water Vital®",
           text: "Restrukturisasi melalui resonansi molekuler mengubah air 'mati', yang tidak teratur pada tingkat atom, menjadi air hidup yang mengembalikan sifat-sifat alaminya. Sistem ini bekerja tanpa energi, tanpa perawatan, dan tanpa bahan habis pakai.",
@@ -3399,6 +3364,41 @@ export const content = {
               "Kolam irigasi milik Groupe EL HILAL, 200 x 100 x 12 meter, Sidi Moussa (Aljazair).",
               "Stasiun pemompaan dan penyaringan, tempat Water Vital® dipasang.",
               "Kebun buah yang diairi dengan irigasi tetes, saat kunjungan Agustus 2025.",
+            ],
+          },
+        },
+        {
+          id: "paulownia",
+          num: "05",
+          kicker: "Menanam untuk jangka panjang",
+          title: "Paulownia ALTIFOLIA®",
+          text: "Pohon dengan pertumbuhan tercepat di dunia: 13 hingga 15 m dalam enam hingga delapan tahun, hampir 3 m per tahun. Dipadukan dengan hidroretentor EVERGREEN® kami, kebutuhan air irigasinya berkurang 50%. Varietas hibrida steril dan tidak invasif, didampingi mulai dari bibit muda hingga penjualan kayu.",
+          facts: [
+            "400 hingga 500 pohon/ha, bernilai 400/450 € per m³",
+            "Profitabilitas dalam enam tahun masa tanam",
+            "Tahan dari −25 °C hingga +45 °C, baru terbakar pada 426 °C",
+            "400 hingga 700 kg madu per hektare, ditambah kredit karbon",
+          ],
+          more: "Paulownia ALTIFOLIA® adalah pohon dengan pertumbuhan tercepat di dunia: dalam kondisi baik, ia mencapai 13 hingga 15 meter dalam enam hingga delapan tahun, atau sekitar 3 meter per tahun, dengan daun yang bisa melebihi 80 cm panjangnya. Pohon ini juga salah satu yang paling efisien dalam menyerap CO₂ dan melepaskan oksigen melalui fotosintesis. Varietas ALTIFOLIA® kami, hasil persilangan antara Paulownia Elongata dan Paulownia Fortunei, dipilih khusus untuk wilayah beriklim panas: pohon ini mengembangkan batang berdiameter besar dalam waktu singkat dan hanya membutuhkan rata-rata 2 liter air per hari — dibandingkan 25 liter untuk varietas lain di pasaran (5 hingga 7 liter saat gelombang panas ekstrem). Dikombinasikan dengan 100 g ECOSORB® per tanaman saat penanaman, kebutuhan irigasi turun lagi sebesar 50%, tanpa pernah membuat pohon mengalami tekanan air. Sistem akarnya yang dalam memperkaya tanah dengan nitrogen dan mencegah erosi; ketahanannya terhadap hama dan penyakit secara alami tinggi, dan kayunya baru terbakar pada suhu di atas 426 °C, menjadikannya juga sebagai penghalang kebakaran. Bibit (25 hingga 30 cm saat pengiriman, dalam pot, bersertifikat bebas penyakit, dijamin penggantian jika mati) dikirim melalui udara dalam waktu 6 minggu, kemudian harus melalui masa 6 minggu di rumah kaca sebelum ditanam dengan irigasi tetes. Panen pertama dilakukan pada akhir tahun keenam, dengan nilai kayu 400/450 € per m³; kami sendiri telah menanam varietas ini selama beberapa tahun, khususnya di Spanyol.",
+          detail: {
+            sections: [
+              {
+                h: "Prinsipnya",
+                p: "Paulownia ALTIFOLIA® adalah pohon dengan pertumbuhan tercepat di dunia: dalam kondisi baik, ia mencapai 13 hingga 15 meter dalam enam hingga delapan tahun, atau sekitar 3 meter per tahun, dengan daun yang bisa melebihi 80 cm panjangnya. Pohon ini juga salah satu yang paling efisien dalam menyerap CO₂ dan melepaskan oksigen melalui fotosintesis. Varietas ALTIFOLIA® kami dipilih khusus untuk wilayah beriklim panas: hanya membutuhkan rata-rata 2 liter air per hari — dibandingkan 25 liter untuk varietas lain di pasaran. Dikombinasikan dengan 100 g ECOSORB® per tanaman, kebutuhan irigasi turun lagi sebesar 50%.",
+              },
+              {
+                h: "Varietas yang dirancang untuk wilayah beriklim panas",
+                p: "Varietas ALTIFOLIA® kami dicirikan oleh pertumbuhan yang homogen dan kompak, mahkota yang sempit, serta daun yang tebal dan berdaging; kelurusan tunas tahunannya memungkinkan untuk melewatkan pemangkasan bentuk sejak tahun kedua. Sangat tahan terhadap hama dan penyakit berkat sistem akarnya yang dalam, pohon ini juga memperkaya tanah dengan nitrogen dan mencegah erosi. Kayunya baru terbakar pada suhu di atas 426 °C, menjadikannya juga penghalang kebakaran yang efektif.",
+              },
+              {
+                h: "Dari pemesanan hingga panen pertama",
+                p: "Pohon dikirim sebagai bibit berukuran 25 hingga 30 cm, dalam pot, dikirim melalui udara dengan rata-rata waktu enam minggu, mulai dari pemesanan minimum 1000 unit. Setiap bibit bersertifikat bebas penyakit dengan sertifikat fitosanitasi, dan dijamin: pohon yang mati selama masa pertumbuhan akan diganti secara otomatis. Setibanya, bibit menghabiskan enam minggu di rumah kaca sebelum ditanam, dengan irigasi tetes dan perlindungan dari satwa liar. Laju pertumbuhan sekitar tiga meter per tahun memungkinkan panen pertama pada akhir tahun keenam, dengan nilai kayu 400/450 € per m³.",
+              },
+            ],
+            gallery: [
+              "Perawatan perkebunan Paulownia ALTIFOLIA®, di Spanyol.",
+              "Dari penanaman hingga panen: tujuh tahun pertumbuhan, hingga 20 meter.",
+              "Bunga Paulownia, juga bernilai bagi para peternak lebah.",
             ],
           },
         },
@@ -3787,43 +3787,8 @@ export const content = {
           },
         },
         {
-          id: "paulownia",
-          num: "02",
-          kicker: "Für die Dauer pflanzen",
-          title: "Paulownia ALTIFOLIA®",
-          text: "Der am schnellsten wachsende Baum der Welt: 13 bis 15 m in sechs bis acht Jahren, fast 3 m pro Jahr. In Kombination mit unserem Wasserspeicher-Polymer EVERGREEN® senkt er seinen Bewässerungsbedarf um 50 %. Sterile, nicht invasive Hybridsorten, begleitet von der Jungpflanze bis zum Holzverkauf.",
-          facts: [
-            "400 bis 500 Bäume/ha, bewertet mit 400/450 € pro m³",
-            "Rentabilität über sechs Anbaujahre",
-            "Widersteht −25 °C bis +45 °C, entzündet sich erst bei 426 °C",
-            "400 bis 700 kg Honig pro Hektar, plus CO₂-Zertifikate",
-          ],
-          more: "Die Paulownia ALTIFOLIA® ist der am schnellsten wachsende Baum der Welt: Unter guten Bedingungen erreicht sie in sechs bis acht Jahren 13 bis 15 Meter, also etwa 3 Meter pro Jahr, mit Blättern, die 80 cm Länge überschreiten können. Sie gehört zudem zu den effizientesten Bäumen bei der CO₂-Bindung und der Sauerstofffreisetzung durch Photosynthese. Unsere Sorte ALTIFOLIA®, eine Kreuzung aus Paulownia Elongata und Paulownia Fortunei, wurde für heiße Regionen ausgewählt: Sie entwickelt in kurzer Zeit einen Stamm mit großem Durchmesser und benötigt im Jahresdurchschnitt nur 2 Liter Wasser pro Tag – gegenüber 25 Litern bei anderen Sorten auf dem Markt (5 bis 7 Liter bei extremer Hitzewelle). Kombiniert mit 100 g ECOSORB® pro Pflanze bei der Pflanzung sinkt der Bewässerungsbedarf um weitere 50 %, ohne den Baum jemals Wasserstress auszusetzen. Sein tiefes Wurzelsystem reichert den Boden mit Stickstoff an und verhindert Erosion; seine natürliche Widerstandsfähigkeit gegen Schädlinge und Krankheiten ist hoch, und das Holz entzündet sich erst ab 426 °C, was es auch zu einer Feuerbarriere macht. Die Pflanzen (25 bis 30 cm bei Lieferung, im Topf, krankheitsfrei zertifiziert, mit Ersatzgarantie) werden innerhalb von 6 Wochen per Flugzeug geliefert und müssen dann 6 Wochen im Gewächshaus verbringen, bevor sie mit Tropfbewässerung gepflanzt werden. Die erste Ernte erfolgt am Ende des sechsten Jahres, bei einem Holzwert von 400/450 € pro m³; wir bauen diese Sorte selbst seit mehreren Jahren an, insbesondere in Spanien.",
-          detail: {
-            sections: [
-              {
-                h: "Das Prinzip",
-                p: "Die Paulownia ALTIFOLIA® ist der am schnellsten wachsende Baum der Welt: Unter guten Bedingungen erreicht sie in sechs bis acht Jahren 13 bis 15 Meter, also etwa 3 Meter pro Jahr, mit Blättern, die 80 cm Länge überschreiten können. Sie gehört zudem zu den effizientesten Bäumen bei der CO₂-Bindung. Unsere Sorte ALTIFOLIA® wurde für heiße Regionen ausgewählt: Sie benötigt im Jahresdurchschnitt nur 2 Liter Wasser pro Tag – gegenüber 25 Litern bei anderen Sorten. Kombiniert mit 100 g ECOSORB® pro Pflanze sinkt der Bewässerungsbedarf um weitere 50 %.",
-              },
-              {
-                h: "Eine für heiße Regionen konzipierte Auswahl",
-                p: "Unsere Sorte ALTIFOLIA® zeichnet sich durch ein homogenes, kompaktes Wachstum, eine schmale Krone und dicke, fleischige Blätter aus; die Geradlinigkeit ihrer Jahrestriebe ermöglicht es, ab dem zweiten Jahr auf einen Formschnitt zu verzichten. Dank ihres tiefen Wurzelsystems sehr widerstandsfähig gegen Schädlinge und Krankheiten, reichert sie außerdem den Boden mit Stickstoff an und verhindert Erosion. Das Holz entzündet sich erst ab 426 °C, was es zudem zu einer wirksamen Feuerbarriere macht.",
-              },
-              {
-                h: "Von der Bestellung bis zur ersten Ernte",
-                p: "Die Bäume werden als 25 bis 30 cm große Topfpflanzen per Flugzeug geliefert, im Durchschnitt innerhalb von sechs Wochen, ab einer Mindestbestellung von 1000 Einheiten. Jede Pflanze ist mit einem Pflanzengesundheitszeugnis als krankheitsfrei zertifiziert und garantiert: Ein Baum, der während seines Wachstums abstirbt, wird automatisch ersetzt. Nach Erhalt verbringen die Pflanzen sechs Wochen im Gewächshaus vor dem Auspflanzen, mit Tropfbewässerung und Schutz vor Wildtieren. Die Wachstumsrate von etwa drei Metern pro Jahr ermöglicht eine erste Ernte am Ende des sechsten Jahres, bei einem Holzwert von 400/450 € pro m³.",
-              },
-            ],
-            gallery: [
-              "Die Pflege einer Paulownia-ALTIFOLIA®-Plantage in Spanien.",
-              "Von der Pflanzung bis zur Ernte: sieben Jahre Wachstum, bis zu 20 Meter.",
-              "Die Blüte der Paulownia, auch für Imker wertvoll.",
-            ],
-          },
-        },
-        {
           id: "fertilisation",
-          num: "03",
+          num: "02",
           kicker: "Ohne Chemie ernähren",
           title: "ECOFERT®-Dünger",
           text: "Ein Mikrodosierungsdünger aus Aminosäuren, Stickstoff, Phosphor und Kalium, aus erneuerbaren Ressourcen. Nicht chelatbildend: Er erschöpft den Boden nicht, sondern bereichert ihn. Weder Auswaschung noch erhöhte Salzgehalte oder Nitratwerte, weder in der Pflanze noch im Boden.",
@@ -3858,7 +3823,7 @@ export const content = {
         },
         {
           id: "protection",
-          num: "04",
+          num: "03",
           kicker: "Ohne Rückstände schützen",
           title: "NAPEMA®",
           text: "Natural Pest Management: eine Schädlingsbekämpfung ohne synthetische Chemie oder Wirkstoffmoleküle, mit vorbeugender und heilender Wirkung, durch Blatt- und Wurzelbesprühung. Maßgeschneiderte Lösungen werden für ein präzises Problem formuliert.",
@@ -3892,7 +3857,7 @@ export const content = {
         },
         {
           id: "eau-restructuree",
-          num: "05",
+          num: "04",
           kicker: "Wasser restrukturieren",
           title: "Water Vital®",
           text: "Die Restrukturierung durch Molekularresonanz verwandelt „totes“, auf atomarer Ebene desorganisiertes Wasser in lebendiges Wasser, das seine natürlichen Eigenschaften zurückgewinnt. Das System funktioniert ohne Energie, ohne Wartung und ohne Verbrauchsmaterial.",
@@ -3921,6 +3886,41 @@ export const content = {
               "Das Bewässerungsbecken der Groupe EL HILAL, 200 x 100 x 12 Meter, Sidi Moussa (Algerien).",
               "Die Pump- und Filterstation, wo Water Vital® installiert wurde.",
               "Der per Tropfbewässerung bewässerte Obstgarten, während des Besuchs im August 2025.",
+            ],
+          },
+        },
+        {
+          id: "paulownia",
+          num: "05",
+          kicker: "Für die Dauer pflanzen",
+          title: "Paulownia ALTIFOLIA®",
+          text: "Der am schnellsten wachsende Baum der Welt: 13 bis 15 m in sechs bis acht Jahren, fast 3 m pro Jahr. In Kombination mit unserem Wasserspeicher-Polymer EVERGREEN® senkt er seinen Bewässerungsbedarf um 50 %. Sterile, nicht invasive Hybridsorten, begleitet von der Jungpflanze bis zum Holzverkauf.",
+          facts: [
+            "400 bis 500 Bäume/ha, bewertet mit 400/450 € pro m³",
+            "Rentabilität über sechs Anbaujahre",
+            "Widersteht −25 °C bis +45 °C, entzündet sich erst bei 426 °C",
+            "400 bis 700 kg Honig pro Hektar, plus CO₂-Zertifikate",
+          ],
+          more: "Die Paulownia ALTIFOLIA® ist der am schnellsten wachsende Baum der Welt: Unter guten Bedingungen erreicht sie in sechs bis acht Jahren 13 bis 15 Meter, also etwa 3 Meter pro Jahr, mit Blättern, die 80 cm Länge überschreiten können. Sie gehört zudem zu den effizientesten Bäumen bei der CO₂-Bindung und der Sauerstofffreisetzung durch Photosynthese. Unsere Sorte ALTIFOLIA®, eine Kreuzung aus Paulownia Elongata und Paulownia Fortunei, wurde für heiße Regionen ausgewählt: Sie entwickelt in kurzer Zeit einen Stamm mit großem Durchmesser und benötigt im Jahresdurchschnitt nur 2 Liter Wasser pro Tag – gegenüber 25 Litern bei anderen Sorten auf dem Markt (5 bis 7 Liter bei extremer Hitzewelle). Kombiniert mit 100 g ECOSORB® pro Pflanze bei der Pflanzung sinkt der Bewässerungsbedarf um weitere 50 %, ohne den Baum jemals Wasserstress auszusetzen. Sein tiefes Wurzelsystem reichert den Boden mit Stickstoff an und verhindert Erosion; seine natürliche Widerstandsfähigkeit gegen Schädlinge und Krankheiten ist hoch, und das Holz entzündet sich erst ab 426 °C, was es auch zu einer Feuerbarriere macht. Die Pflanzen (25 bis 30 cm bei Lieferung, im Topf, krankheitsfrei zertifiziert, mit Ersatzgarantie) werden innerhalb von 6 Wochen per Flugzeug geliefert und müssen dann 6 Wochen im Gewächshaus verbringen, bevor sie mit Tropfbewässerung gepflanzt werden. Die erste Ernte erfolgt am Ende des sechsten Jahres, bei einem Holzwert von 400/450 € pro m³; wir bauen diese Sorte selbst seit mehreren Jahren an, insbesondere in Spanien.",
+          detail: {
+            sections: [
+              {
+                h: "Das Prinzip",
+                p: "Die Paulownia ALTIFOLIA® ist der am schnellsten wachsende Baum der Welt: Unter guten Bedingungen erreicht sie in sechs bis acht Jahren 13 bis 15 Meter, also etwa 3 Meter pro Jahr, mit Blättern, die 80 cm Länge überschreiten können. Sie gehört zudem zu den effizientesten Bäumen bei der CO₂-Bindung. Unsere Sorte ALTIFOLIA® wurde für heiße Regionen ausgewählt: Sie benötigt im Jahresdurchschnitt nur 2 Liter Wasser pro Tag – gegenüber 25 Litern bei anderen Sorten. Kombiniert mit 100 g ECOSORB® pro Pflanze sinkt der Bewässerungsbedarf um weitere 50 %.",
+              },
+              {
+                h: "Eine für heiße Regionen konzipierte Auswahl",
+                p: "Unsere Sorte ALTIFOLIA® zeichnet sich durch ein homogenes, kompaktes Wachstum, eine schmale Krone und dicke, fleischige Blätter aus; die Geradlinigkeit ihrer Jahrestriebe ermöglicht es, ab dem zweiten Jahr auf einen Formschnitt zu verzichten. Dank ihres tiefen Wurzelsystems sehr widerstandsfähig gegen Schädlinge und Krankheiten, reichert sie außerdem den Boden mit Stickstoff an und verhindert Erosion. Das Holz entzündet sich erst ab 426 °C, was es zudem zu einer wirksamen Feuerbarriere macht.",
+              },
+              {
+                h: "Von der Bestellung bis zur ersten Ernte",
+                p: "Die Bäume werden als 25 bis 30 cm große Topfpflanzen per Flugzeug geliefert, im Durchschnitt innerhalb von sechs Wochen, ab einer Mindestbestellung von 1000 Einheiten. Jede Pflanze ist mit einem Pflanzengesundheitszeugnis als krankheitsfrei zertifiziert und garantiert: Ein Baum, der während seines Wachstums abstirbt, wird automatisch ersetzt. Nach Erhalt verbringen die Pflanzen sechs Wochen im Gewächshaus vor dem Auspflanzen, mit Tropfbewässerung und Schutz vor Wildtieren. Die Wachstumsrate von etwa drei Metern pro Jahr ermöglicht eine erste Ernte am Ende des sechsten Jahres, bei einem Holzwert von 400/450 € pro m³.",
+              },
+            ],
+            gallery: [
+              "Die Pflege einer Paulownia-ALTIFOLIA®-Plantage in Spanien.",
+              "Von der Pflanzung bis zur Ernte: sieben Jahre Wachstum, bis zu 20 Meter.",
+              "Die Blüte der Paulownia, auch für Imker wertvoll.",
             ],
           },
         },
