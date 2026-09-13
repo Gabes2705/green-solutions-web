@@ -13,7 +13,7 @@ const IMAGES: Record<string, string> = {
   agroforesterie: "/images/card-agroforesterie.jpg",
 };
 
-const ITEMS_WITH_VIDEO = ["retention-eau", "eau-restructuree"];
+const ITEMS_WITH_VIDEO = ["retention-eau", "fertilisation", "eau-restructuree"];
 
 const BUTTON_COLORS: Record<string, string> = {
   "retention-eau": "tech-blue",

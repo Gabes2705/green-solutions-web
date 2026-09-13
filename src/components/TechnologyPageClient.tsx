@@ -58,6 +58,7 @@ const TECH_IMAGES: Record<string, { hero: string; gallery: string[] }> = {
 
 const TECH_VIDEOS: Record<string, string[]> = {
   "retention-eau": ["/videos/evergreen-ecosorb.mp4"],
+  fertilisation: ["/videos/ecofert.mp4"],
   "eau-restructuree": ["/videos/water-vital-1.mp4", "/videos/water-vital-2.mp4"],
 };
 
