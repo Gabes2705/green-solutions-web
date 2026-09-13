@@ -14,6 +14,7 @@ export default function TechChain() {
           <p className="eyebrow">{tc.eyebrow}</p>
           <h2 className="section-title">{tc.title}</h2>
           <p className="lede">{tc.lede}</p>
+          <p className="tagline-banner">{tc.tagline}</p>
         </Reveal>
 
         <Reveal stagger=".chain-step" className="chain">

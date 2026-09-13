@@ -37,6 +37,7 @@ export const content = {
       title2: "Un but",
       title3: "La croissance et la qualité",
       lede: "Green Solutions développe et distribue des technologies agricoles disruptives, conçues pour augmenter la productivité tout en préservant, et même en régénérant, les ressources naturelles dont cette productivité dépend. Des réponses concrètes, éprouvées au champ, au stress hydrique, à l'épuisement des sols, à la rentabilité et à la sécurité alimentaire.",
+      tagline: "Toutes nos solutions disruptives sont utilisables pour toutes les plantes et cultures, sous tous les climats et tous types de sol !",
       stats: [
         { num: "30", label: "partenaires" },
         { num: "29", label: "pays" },
@@ -371,6 +372,7 @@ export const content = {
       eyebrow: "En chemin",
       title: "Conçues pour se renforcer",
       lede: "Les cinq technologies se vendent séparément, mais elles ont été conçues pour se renforcer. Chacune lève une contrainte sur laquelle la suivante buterait.",
+      tagline: "L'ensemble des technologies proposées sont éco-responsables, durables, efficientes & rentables",
       steps: [
         "Stocker l'eau dans le sol",
         "Restructurer l'eau d'irrigation",
@@ -554,6 +556,7 @@ export const content = {
       title2: "A goal",
       title3: "Growth and quality",
       lede: "Green Solutions develops and distributes disruptive agricultural technologies designed to increase productivity while preserving, and even regenerating, the natural resources that productivity depends on. Concrete, field-tested answers to water stress, soil depletion, profitability and food security.",
+      tagline: "All our disruptive solutions can be used on every plant and crop, in every climate and soil type!",
       stats: [
         { num: "30", label: "partners" },
         { num: "29", label: "countries" },
@@ -888,6 +891,7 @@ export const content = {
       eyebrow: "Along the way",
       title: "Designed to reinforce each other",
       lede: "The five technologies are sold separately, but they were designed to reinforce one another. Each one removes a constraint the next would otherwise run into.",
+      tagline: "All the technologies we offer are eco-responsible, sustainable, efficient & profitable",
       steps: [
         "Store water in the soil",
         "Restructure irrigation water",
@@ -1071,6 +1075,7 @@ export const content = {
       title2: "Un objetivo",
       title3: "El crecimiento y la calidad",
       lede: "Green Solutions desarrolla y distribuye tecnologías agrícolas disruptivas, diseñadas para aumentar la productividad preservando, e incluso regenerando, los recursos naturales de los que depende esa productividad. Respuestas concretas, probadas en el campo, frente al estrés hídrico, el agotamiento de los suelos, la rentabilidad y la seguridad alimentaria.",
+      tagline: "¡Todas nuestras soluciones disruptivas se pueden usar en cualquier planta o cultivo, en cualquier clima y cualquier tipo de suelo!",
       stats: [
         { num: "30", label: "socios" },
         { num: "29", label: "países" },
@@ -1405,6 +1410,7 @@ export const content = {
       eyebrow: "En el camino",
       title: "Diseñadas para reforzarse mutuamente",
       lede: "Las cinco tecnologías se venden por separado, pero fueron diseñadas para reforzarse entre sí. Cada una elimina una limitación con la que la siguiente tropezaría.",
+      tagline: "Todas las tecnologías que ofrecemos son ecorresponsables, sostenibles, eficientes y rentables",
       steps: [
         "Almacenar el agua en el suelo",
         "Restructurar el agua de riego",
@@ -1588,6 +1594,7 @@ export const content = {
       title2: "Um objetivo",
       title3: "O crescimento e a qualidade",
       lede: "A Green Solutions desenvolve e distribui tecnologias agrícolas disruptivas, concebidas para aumentar a produtividade preservando, e até regenerando, os recursos naturais dos quais essa produtividade depende. Respostas concretas, testadas no campo, ao estresse hídrico, ao esgotamento dos solos, à rentabilidade e à segurança alimentar.",
+      tagline: "Todas as nossas soluções disruptivas podem ser usadas em qualquer planta ou cultura, em qualquer clima e qualquer tipo de solo!",
       stats: [
         { num: "30", label: "parceiros" },
         { num: "29", label: "países" },
@@ -1922,6 +1929,7 @@ export const content = {
       eyebrow: "No caminho",
       title: "Concebidas para se reforçarem",
       lede: "As cinco tecnologias vendem-se separadamente, mas foram concebidas para se reforçarem mutuamente. Cada uma remove uma limitação em que a seguinte esbarraria.",
+      tagline: "Todas as tecnologias que oferecemos são ecologicamente responsáveis, sustentáveis, eficientes e rentáveis",
       steps: [
         "Armazenar a água no solo",
         "Restruturar a água de irrigação",
@@ -2105,6 +2113,7 @@ export const content = {
       title2: "هدف واحد",
       title3: "النمو والجودة",
       lede: "تطوّر شركة Green Solutions وتوزّع تقنيات زراعية مبتكرة، مصمَّمة لزيادة الإنتاجية مع الحفاظ على الموارد الطبيعية التي تعتمد عليها هذه الإنتاجية، بل وتجديدها. حلول ملموسة، مُختبرة ميدانيًا، لمواجهة الإجهاد المائي، واستنزاف التربة، والربحية، والأمن الغذائي.",
+      tagline: "جميع حلولنا الابتكارية يمكن استخدامها مع كل النباتات والمحاصيل، في كل المناخات وكل أنواع التربة!",
       stats: [
         { num: "30", label: "شريك" },
         { num: "29", label: "دولة" },
@@ -2439,6 +2448,7 @@ export const content = {
       eyebrow: "على طول الطريق",
       title: "مصممة لتعزيز بعضها البعض",
       lede: "تُباع التقنيات الخمس منفصلة، لكنها صُممت لتعزيز بعضها البعض. كل واحدة تزيل قيدًا كانت التالية ستصطدم به.",
+      tagline: "جميع التقنيات التي نقدمها مسؤولة بيئيًا، مستدامة، فعّالة ومربحة",
       steps: [
         "تخزين الماء في التربة",
         "إعادة هيكلة مياه الري",
@@ -2622,6 +2632,7 @@ export const content = {
       title2: "一个目标",
       title3: "增产与提质",
       lede: "Green Solutions 研发并推广颠覆性农业技术，旨在提高生产力的同时保护乃至再生这种生产力所依赖的自然资源。这些是经过田间验证的具体解决方案，应对水分胁迫、土壤退化、盈利能力与粮食安全等挑战。",
+      tagline: "我们所有的颠覆性解决方案适用于任何植物和作物、任何气候及任何类型的土壤！",
       stats: [
         { num: "30", label: "合作伙伴" },
         { num: "29", label: "国家" },
@@ -2956,6 +2967,7 @@ export const content = {
       eyebrow: "环环相扣",
       title: "为相互增效而设计",
       lede: "这五项技术虽然分开销售，但设计之初就是为了相互增效。每一项都消除了下一项可能遇到的制约因素。",
+      tagline: "我们提供的所有技术均具备环保、可持续、高效且盈利的特点",
       steps: [
         "将水储存在土壤中",
         "重构灌溉用水",
@@ -3139,6 +3151,7 @@ export const content = {
       title2: "Satu Tujuan",
       title3: "Pertumbuhan dan Kualitas",
       lede: "Green Solutions mengembangkan dan mendistribusikan teknologi pertanian yang disruptif, dirancang untuk meningkatkan produktivitas sekaligus menjaga, bahkan meregenerasi, sumber daya alam yang menjadi dasar produktivitas tersebut. Solusi konkret, teruji di lapangan, untuk mengatasi tekanan air, kelelahan tanah, profitabilitas, dan ketahanan pangan.",
+      tagline: "Semua solusi disruptif kami dapat digunakan untuk semua tanaman dan tanaman pangan, di semua iklim dan semua jenis tanah!",
       stats: [
         { num: "30", label: "mitra" },
         { num: "29", label: "negara" },
@@ -3473,6 +3486,7 @@ export const content = {
       eyebrow: "Dalam prosesnya",
       title: "Dirancang untuk Saling Memperkuat",
       lede: "Kelima teknologi dijual secara terpisah, tetapi dirancang untuk saling memperkuat. Masing-masing mengatasi kendala yang akan menghambat teknologi berikutnya.",
+      tagline: "Seluruh teknologi yang kami tawarkan bersifat ramah lingkungan, berkelanjutan, efisien, dan menguntungkan",
       steps: [
         "Menyimpan air di dalam tanah",
         "Merestrukturisasi air irigasi",
@@ -3656,6 +3670,7 @@ export const content = {
       title2: "Ein Ziel",
       title3: "Wachstum und Qualität",
       lede: "Green Solutions entwickelt und vertreibt disruptive Agrartechnologien, die darauf ausgelegt sind, die Produktivität zu steigern und gleichzeitig die natürlichen Ressourcen, von denen diese Produktivität abhängt, zu erhalten und sogar zu regenerieren. Konkrete, im Feld erprobte Antworten auf Wasserstress, Bodenerschöpfung, Rentabilität und Ernährungssicherheit.",
+      tagline: "Alle unsere disruptiven Lösungen sind für jede Pflanze und Kultur, bei jedem Klima und jeder Bodenart einsetzbar!",
       stats: [
         { num: "30", label: "Partner" },
         { num: "29", label: "Länder" },
@@ -3990,6 +4005,7 @@ export const content = {
       eyebrow: "Unterwegs",
       title: "Konzipiert, um sich zu verstärken",
       lede: "Die fünf Technologien werden getrennt verkauft, wurden aber so konzipiert, dass sie sich gegenseitig verstärken. Jede beseitigt eine Einschränkung, an der die nächste sonst scheitern würde.",
+      tagline: "Alle von uns angebotenen Technologien sind umweltverträglich, nachhaltig, effizient und rentabel",
       steps: [
         "Wasser im Boden speichern",
         "Bewässerungswasser restrukturieren",

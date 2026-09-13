@@ -20,6 +20,7 @@ export default function Presentation() {
             <span className="presentation-title-accent">{p.title3}</span>
           </h2>
           <p className="lede">{p.lede}</p>
+          <p className="tagline-banner">{p.tagline}</p>
         </Reveal>
 
         <Reveal stagger=".stat" className="stat-row">
