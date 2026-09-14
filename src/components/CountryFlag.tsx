@@ -22,6 +22,13 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <polygon points="30,0 9,20 0,20 21,0" fill="#FBDE4A" />
     </>
   ),
+  cameroun: () => (
+    <>
+      <rect width="10" height="20" fill="#007A5E" />
+      <rect x="10" width="10" height="20" fill="#CE1126" />
+      <rect x="20" width="10" height="20" fill="#FCD116" />
+    </>
+  ),
   ghana: () => (
     <>
       <rect width="30" height="6.67" fill="#CE1126" />
