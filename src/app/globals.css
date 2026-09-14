@@ -3334,3 +3334,239 @@ body {
     row-gap: 0.7em;
   }
 }
+
+/* ---------- dose calculator ---------- */
+
+.dose-layout {
+  margin-top: 2.4em;
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: 1.5em;
+  align-items: start;
+}
+.dose-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  min-width: 0;
+}
+.dose-panel {
+  padding: clamp(1.3em, 3vw, 2em);
+  border-radius: 18px;
+  background: rgba(236, 245, 236, 0.05);
+  border: 1px solid var(--hairline);
+  box-shadow: inset 0 1px 0 rgba(236, 245, 236, 0.07), 0 16px 32px -14px rgba(0, 0, 0, 0.6);
+}
+.dose-panel-title {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin: 0 0 1.2em;
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.dose-num {
+  display: grid;
+  place-items: center;
+  width: 1.9em;
+  height: 1.9em;
+  flex: none;
+  border-radius: 50%;
+  background: var(--leaf-deep);
+  color: #fff;
+  font-size: 0.82rem;
+  letter-spacing: 0;
+}
+.dose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1em 1.1em;
+}
+/* La section Eau garde deux colonnes égales, même à l'étroit. */
+.dose-grid-water {
+  grid-template-columns: 1fr 1fr;
+}
+.dose-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+  min-width: 0;
+}
+.dose-field label {
+  font-family: var(--font-sans);
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.dose-field input,
+.dose-field select {
+  width: 100%;
+  padding: 0.62em 0.75em;
+  border-radius: 9px;
+  border: 1px solid var(--hairline);
+  background: rgba(13, 36, 24, 0.55);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+}
+.dose-field select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 2.2em;
+}
+.dose-field input:focus,
+.dose-field select:focus {
+  outline: 2px solid var(--leaf-light);
+  outline-offset: 1px;
+}
+.dose-field input::placeholder {
+  color: rgba(147, 172, 156, 0.7);
+}
+.dose-field-action {
+  justify-content: flex-end;
+}
+.dose-button {
+  padding: 0.68em 1.1em;
+  border-radius: 9px;
+  border: 1px solid var(--hairline);
+  background: rgba(168, 209, 74, 0.14);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.dose-button:hover {
+  background: rgba(168, 209, 74, 0.24);
+}
+.dose-climate {
+  margin-top: 1.4em;
+  padding-top: 1.2em;
+  border-top: 1px solid var(--hairline);
+}
+.dose-climate-head {
+  margin: 0 0 0.9em;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--leaf-light);
+}
+.dose-climate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+  gap: 0.9em;
+}
+.dose-climate-grid span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22em;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+.dose-climate-grid b {
+  font-family: var(--font-numeric);
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.dose-status,
+.dose-hint {
+  margin: 1em 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.dose-results {
+  position: sticky;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85em;
+  min-width: 0;
+}
+.dose-results-title {
+  margin: 0 0 0.2em;
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.dose-card {
+  padding: 1.15em 1.3em;
+  border-radius: 14px;
+  background: rgba(236, 245, 236, 0.05);
+  border: 1px solid var(--hairline);
+}
+.dose-card-water {
+  background: rgba(29, 138, 150, 0.14);
+  border-color: rgba(29, 138, 150, 0.35);
+}
+.dose-card-label {
+  margin: 0 0 0.35em;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.dose-card-value {
+  margin: 0;
+  font-family: var(--font-numeric);
+  font-size: clamp(1.5rem, 3.2vw, 2rem);
+  line-height: 1.15;
+  color: var(--ink);
+}
+.dose-card-unit {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.dose-card-note {
+  margin: 0.45em 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.dose-card-money {
+  margin: 0.6em 0 0;
+  padding-top: 0.6em;
+  border-top: 1px solid rgba(29, 138, 150, 0.35);
+  font-family: var(--font-numeric);
+  font-size: 1.25rem;
+  color: var(--leaf-light);
+}
+
+@media (max-width: 900px) {
+  .dose-layout {
+    grid-template-columns: 1fr;
+  }
+  .dose-results {
+    position: static;
+  }
+}
+@media (max-width: 520px) {
+  .dose-grid {
+    grid-template-columns: 1fr;
+  }
+  /* La section Eau reste sur deux colonnes égales même ici : la spécification
+     l'impose, et deux champs numériques courts y tiennent encore. */
+  .dose-grid-water {
+    gap: 0.7em;
+  }
+  .dose-grid-water .dose-field label {
+    font-size: 0.76rem;
+  }
+}

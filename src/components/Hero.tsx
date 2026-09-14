@@ -42,6 +42,9 @@ export default function Hero() {
           <a href="#technologies" className="btn-3d btn-3d-light hero-cta-main">
             {c.hero.explore}
           </a>
+          <a href="#calculateur-dose" className="btn-3d btn-3d-dark hero-cta-alt">
+            {c.hero.doseCta}
+          </a>
           <a href="#calculateur" className="btn-3d btn-3d-dark hero-cta-alt">
             {c.hero.calculatorCta}
           </a>
