@@ -181,6 +181,83 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       </g>
     </>
   ),
+  maroc: () => (
+    <>
+      <rect width="30" height="20" fill="#EF2B2D" />
+      <g transform="translate(15 10) scale(1.2)">
+        <Star fill="#006C35" />
+      </g>
+    </>
+  ),
+  algerie: () => (
+    <>
+      <rect width="15" height="20" fill="#239E46" />
+      <rect x="15" width="15" height="20" fill="#FFF" />
+      <circle cx="20" cy="10" r="2" fill="#EF2B2D" />
+      <g transform="translate(20 10) scale(0.4)">
+        <Star fill="#EF2B2D" />
+      </g>
+    </>
+  ),
+  "afrique-du-sud": () => (
+    <>
+      <rect width="30" height="4" fill="#000" />
+      <rect y="4" width="30" height="4" fill="#FFD100" />
+      <rect y="8" width="30" height="4" fill="#007A5E" />
+      <rect y="12" width="30" height="4" fill="#FFF" />
+      <rect y="16" width="30" height="4" fill="#0052CC" />
+    </>
+  ),
+  gabon: () => (
+    <>
+      <rect width="30" height="6.67" fill="#007A5E" />
+      <rect y="6.67" width="30" height="6.67" fill="#FCD116" />
+      <rect y="13.33" width="30" height="6.67" fill="#CE1126" />
+    </>
+  ),
+  egypte: () => (
+    <>
+      <rect width="30" height="6.67" fill="#CE1126" />
+      <rect y="6.67" width="30" height="6.67" fill="#FFF" />
+      <rect y="13.33" width="30" height="6.67" fill="#000" />
+    </>
+  ),
+  jordanie: () => (
+    <>
+      <polygon points="0,0 30,0 0,8" fill="#000" />
+      <rect y="8" width="30" height="6" fill="#FFF" />
+      <rect y="14" width="30" height="6" fill="#007A5E" />
+      <polygon points="0,0 0,8 6,4" fill="#CE1126" />
+    </>
+  ),
+  haiti: () => (
+    <>
+      <rect width="30" height="10" fill="#003DA5" />
+      <rect y="10" width="30" height="10" fill="#CE1126" />
+    </>
+  ),
+  "etats-unis": () => (
+    <>
+      <rect width="30" height="20" fill="#0A3161" />
+      <g transform="translate(5 8)">
+        <Star fill="#FFF" />
+      </g>
+      <g transform="translate(14 4)">
+        <rect width="16" height="2" fill="#FFF" />
+      </g>
+      <g transform="translate(14 7)">
+        <rect width="16" height="2" fill="#FFF" />
+      </g>
+      <g transform="translate(14 10)">
+        <rect width="16" height="2" fill="#FFF" />
+      </g>
+    </>
+  ),
+  "arabie-saoudite": () => (
+    <>
+      <rect width="30" height="20" fill="#165D31" />
+    </>
+  ),
 };
 
 export default function CountryFlag({ id }: { id: string }) {
