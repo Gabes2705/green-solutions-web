@@ -1466,7 +1466,7 @@ body {
 
 .flag-square {
   width: 52px;
-  height: 52px;
+  height: 35px;
 }
 .flag-square-svg {
   width: 100%;
@@ -2041,7 +2041,7 @@ body {
 }
 .doc-flag .flag-square {
   width: 34px;
-  height: 34px;
+  height: 23px;
 }
 
 .field-tests-cta {
