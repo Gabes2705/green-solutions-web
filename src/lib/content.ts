@@ -445,6 +445,8 @@ export const content = {
         { country: "Soudan du Sud", href: "/documents/countries/soudan-sud.pdf" },
         { country: "Espagne", href: "/documents/countries/espagne.pdf" },
         { country: "Grèce", href: "/documents/countries/grece.pdf" },
+        { country: "Chili", href: "/documents/countries/chili.pdf" },
+        { country: "Argentine", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -1049,6 +1051,8 @@ export const content = {
         { country: "South Sudan", href: "/documents/countries/soudan-sud.pdf" },
         { country: "Spain", href: "/documents/countries/espagne.pdf" },
         { country: "Greece", href: "/documents/countries/grece.pdf" },
+        { country: "Chile", href: "/documents/countries/chili.pdf" },
+        { country: "Argentina", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -1653,6 +1657,10 @@ export const content = {
         { country: "Sudán del Sur", href: "/documents/countries/soudan-sud.pdf" },
         { country: "España", href: "/documents/countries/espagne.pdf" },
         { country: "Grecia", href: "/documents/countries/grece.pdf" },
+        { country: "Cile", href: "/documents/countries/chili.pdf" },
+        { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "Chile", href: "/documents/countries/chili.pdf" },
+        { country: "Argentina", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -2209,6 +2217,8 @@ export const content = {
         { country: "Sudão do Sul", href: "/documents/countries/soudan-sud.pdf" },
         { country: "Espanha", href: "/documents/countries/espagne.pdf" },
         { country: "Grécia", href: "/documents/countries/grece.pdf" },
+        { country: "Chile", href: "/documents/countries/chili.pdf" },
+        { country: "Argentina", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -2765,6 +2775,8 @@ export const content = {
         { country: "جنوب السودان", href: "/documents/countries/soudan-sud.pdf" },
         { country: "إسبانيا", href: "/documents/countries/espagne.pdf" },
         { country: "اليونان", href: "/documents/countries/grece.pdf" },
+        { country: "تشيلي", href: "/documents/countries/chili.pdf" },
+        { country: "الأرجنتين", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -3311,6 +3323,8 @@ export const content = {
         { country: "南苏丹", href: "/documents/countries/soudan-sud.pdf" },
         { country: "西班牙", href: "/documents/countries/espagne.pdf" },
         { country: "希腊", href: "/documents/countries/grece.pdf" },
+        { country: "智利", href: "/documents/countries/chili.pdf" },
+        { country: "阿根廷", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -3914,6 +3928,8 @@ export const content = {
         { country: "Sudan Selatan", href: "/documents/countries/soudan-sud.pdf" },
         { country: "Spanyol", href: "/documents/countries/espagne.pdf" },
         { country: "Yunani", href: "/documents/countries/grece.pdf" },
+        { country: "Chili", href: "/documents/countries/chili.pdf" },
+        { country: "Argentina", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -4460,6 +4476,8 @@ export const content = {
         { country: "Südsudan", href: "/documents/countries/soudan-sud.pdf" },
         { country: "Spanien", href: "/documents/countries/espagne.pdf" },
         { country: "Griechenland", href: "/documents/countries/grece.pdf" },
+        { country: "Chile", href: "/documents/countries/chili.pdf" },
+        { country: "Argentinien", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -5063,6 +5081,10 @@ export const content = {
         { country: "Sudan del Sud", href: "/documents/countries/soudan-sud.pdf" },
         { country: "Spagna", href: "/documents/countries/espagne.pdf" },
         { country: "Grecia", href: "/documents/countries/grece.pdf" },
+        { country: "Cile", href: "/documents/countries/chili.pdf" },
+        { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "Chile", href: "/documents/countries/chili.pdf" },
+        { country: "Argentina", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -5609,6 +5631,8 @@ export const content = {
         { country: "Νότιο Σουδάν", href: "/documents/countries/soudan-sud.pdf" },
         { country: "Ισπανία", href: "/documents/countries/espagne.pdf" },
         { country: "Ελλάδα", href: "/documents/countries/grece.pdf" },
+        { country: "Χιλή", href: "/documents/countries/chili.pdf" },
+        { country: "Αργεντινή", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -6155,6 +6179,8 @@ export const content = {
         { country: "Güney Sudan", href: "/documents/countries/soudan-sud.pdf" },
         { country: "İspanya", href: "/documents/countries/espagne.pdf" },
         { country: "Yunanistan", href: "/documents/countries/grece.pdf" },
+        { country: "Şili", href: "/documents/countries/chili.pdf" },
+        { country: "Arjantin", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {
@@ -6711,6 +6737,8 @@ export const content = {
         { country: "Sudan Południowy", href: "/documents/countries/soudan-sud.pdf" },
         { country: "Hiszpania", href: "/documents/countries/espagne.pdf" },
         { country: "Grecja", href: "/documents/countries/grece.pdf" },
+        { country: "Chile", href: "/documents/countries/chili.pdf" },
+        { country: "Argentyna", href: "/documents/countries/argentine.pdf" },
       ],
     },
     fieldTests: {

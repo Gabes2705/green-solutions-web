@@ -258,6 +258,27 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect width="30" height="20" fill="#165D31" />
     </>
   ),
+  chili: () => (
+    <>
+      <rect width="10" height="10" fill="#0039A6" />
+      <g transform="translate(5 5)">
+        <Star fill="#FFF" />
+      </g>
+      <rect x="10" width="20" height="10" fill="#FFF" />
+      <rect y="10" width="30" height="10" fill="#D71930" />
+    </>
+  ),
+  argentine: () => (
+    <>
+      <rect width="30" height="6.67" fill="#75AADB" />
+      <rect y="6.67" width="30" height="6.67" fill="#FFF" />
+      <rect y="13.33" width="30" height="6.67" fill="#75AADB" />
+      <circle cx="15" cy="10" r="2.5" fill="#FCD116" />
+      <g transform="translate(15 10)">
+        <path d="M 0,-2 L 0.6,-0.5 L 2,-0.2 L 1,0.6 L 1.2,2 L 0,1.3 L -1.2,2 L -1,0.6 L -2,-0.2 L -0.6,-0.5 Z" fill="#FCD116" />
+      </g>
+    </>
+  ),
 };
 
 export default function CountryFlag({ id }: { id: string }) {
