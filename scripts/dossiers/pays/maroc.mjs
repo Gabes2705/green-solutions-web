@@ -9,10 +9,14 @@ export default {
   cover: {
     eyebrow: "DOSSIER DE MARCHÉ",
     title: "Maroc",
+    officiel: "ROYAUME DU MAROC",
+    lieu: "Rabat · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "Septembre 2026 · Document confidentiel · À l'usage exclusif du destinataire",
     subtitle:
       "Agrumes, maraîchage et oléiculture sous contrainte hydrique durable.\nCe que l'hydro-rétention change pour une filière exportatrice.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",
-    photo: 0,
+    photo: 3,
   },
 
   chiffres: {

@@ -10,6 +10,10 @@ export default {
   cover: {
     eyebrow: "ملف السوق الزراعي",
     title: "المملكة العربية السعودية",
+    officiel: "المملكة العربية السعودية",
+    lieu: "الرياض · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "سبتمبر 2026 · وثيقة سرية · للاستخدام الحصري للمرسل إليه",
     subtitle:
       "التمور والخضروات المحمية والزراعة المروية تحت قيد مائي دائم.\nما الذي يغيّره احتباس الماء في التربة على مستوى الحقل.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",

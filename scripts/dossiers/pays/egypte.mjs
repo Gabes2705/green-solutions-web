@@ -10,6 +10,10 @@ export default {
   cover: {
     eyebrow: "دراسة سوق",
     title: "مصر",
+    officiel: "جمهورية مصر العربية",
+    lieu: "القاهرة · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "سبتمبر 2026 · وثيقة سرية · للاستخدام الحصري للمرسل إليه",
     subtitle:
       "زراعة مروية بالكامل تعتمد على نهر واحد وحصة مائية ثابتة.\nما الذي يغيّره احتباس الماء في التربة لمنتج يصدّر إلى أوروبا والخليج.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",

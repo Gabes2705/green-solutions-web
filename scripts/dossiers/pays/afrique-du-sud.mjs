@@ -9,6 +9,10 @@ export default {
   cover: {
     eyebrow: "MARKET DOSSIER",
     title: "South Africa",
+    officiel: "REPUBLIC OF SOUTH AFRICA",
+    lieu: "Pretoria · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "September 2026 · Confidential · For the sole use of the recipient",
     subtitle:
       "Citrus, deciduous fruit and wine grapes grown on half the world's average rainfall.\nWhat hydro-retention changes for an export-led sector.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",

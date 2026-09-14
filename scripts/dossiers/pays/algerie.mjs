@@ -9,6 +9,10 @@ export default {
   cover: {
     eyebrow: "DOSSIER DE MARCHÉ",
     title: "Algérie",
+    officiel: "RÉPUBLIQUE ALGÉRIENNE",
+    lieu: "Alger · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "Septembre 2026 · Document confidentiel · À l'usage exclusif du destinataire",
     subtitle:
       "Maraîchage, dattes et céréales entre littoral saturé et périmètres sahariens.\nCe que l'hydro-rétention change quand l'eau ne se renouvelle plus.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",

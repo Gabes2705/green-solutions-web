@@ -32,7 +32,14 @@ export async function build(spec) {
   });
   const foot = spec.pied;
 
-  await d.cover({ ...spec.cover, photo: pic(spec.cover.photo ?? 0) });
+  const drapeau = join(here, "drapeaux", `${spec.slug}.png`);
+  const logo = join(here, "../../public/images/logo-icon.png");
+  await d.cover({
+    ...spec.cover,
+    photo: pic(spec.cover.photo ?? 0),
+    flag: existsSync(drapeau) ? drapeau : null,
+    logo: existsSync(logo) ? logo : null,
+  });
   d.stats({ ...spec.chiffres, footer: foot });
   await d.split({
     ...spec.contrainte,

@@ -9,6 +9,10 @@ export default {
   cover: {
     eyebrow: "ESTUDIO DE MERCADO",
     title: "Chile",
+    officiel: "REPÚBLICA DE CHILE",
+    lieu: "Santiago · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "Septiembre de 2026 · Documento confidencial · Para uso exclusivo del destinatario",
     subtitle:
       "Fruta de exportación, viñedos y hortalizas bajo una sequía de más de una década.\nLo que cambia la hidrorretención en una agricultura de contraestación.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",

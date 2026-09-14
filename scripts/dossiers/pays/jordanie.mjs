@@ -10,6 +10,10 @@ export default {
   cover: {
     eyebrow: "ملف سوق",
     title: "المملكة الأردنية الهاشمية",
+    officiel: "المملكة الأردنية الهاشمية",
+    lieu: "عمّان · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "سبتمبر 2026 · وثيقة سرية · للاستخدام الحصري للمرسل إليه",
     subtitle:
       "خضار الأغوار وزيتون المرتفعات تحت ندرة مائية هيكلية.\nما الذي يغيّره الاحتفاظ بالماء في التربة على مستوى الحقل.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",

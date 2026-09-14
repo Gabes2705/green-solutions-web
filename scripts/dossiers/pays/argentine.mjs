@@ -9,10 +9,14 @@ export default {
   cover: {
     eyebrow: "DOSSIER DE MERCADO",
     title: "Argentina",
+    officiel: "REPÚBLICA ARGENTINA",
+    lieu: "Buenos Aires · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "Septiembre de 2026 · Documento confidencial · Para uso exclusivo del destinatario",
     subtitle:
       "Granos, vid y fruta de exportación bajo una restricción hídrica creciente.\nLo que la hidro-retención cambia para una agricultura exportadora.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",
-    photo: 0,
+    photo: 4,
   },
 
   chiffres: {

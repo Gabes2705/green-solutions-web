@@ -9,10 +9,14 @@ export default {
   cover: {
     eyebrow: "MARKET DOSSIER",
     title: "United States",
+    officiel: "UNITED STATES OF AMERICA",
+    lieu: "Washington · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "September 2026 · Confidential · For the sole use of the recipient",
     subtitle:
       "Row crops, permanent plantings and specialty produce on a shrinking water budget.\nWhat hydro-retention changes for irrigated acres.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",
-    photo: 0,
+    photo: 1,
   },
 
   chiffres: {

@@ -13,7 +13,7 @@ out = Path(sys.argv[2])
 
 PAYS = [
     "maroc", "algerie", "tunisie", "egypte", "jordanie", "arabie-saoudite",
-    "usa", "afrique-du-sud", "gabon", "chili", "argentine",
+    "usa", "afrique-du-sud", "gabon", "chili", "argentine", "haiti",
 ]
 
 COLS = 3

@@ -107,77 +107,169 @@ export class Deck {
     });
   }
 
-  // Couverture : photo plein cadre assombrie + titre
-  async cover({ photo, eyebrow, title, subtitle, footer, flag }) {
+  // Couverture : panneau sombre + photo, à la charte du dossier Tunisie
+  async cover({
+    photo,
+    officiel,
+    title,
+    lieu,
+    subtitle,
+    marques,
+    mention,
+    footer,
+    flag,
+    logo,
+  }) {
     const s = this.#prep(this.p.addSlide());
+    const PANEL = 6.86;
+    const M = 0.72;
+    const NOIR = "0D0D0D";
+    const VERT = "8BC34A";
+
+    // En RTL le panneau passe à droite : le lecteur commence par ce côté.
+    const px = this.rtl ? W - PANEL : 0;
+    const photoX = this.rtl ? 0 : PANEL;
+    const tx = this.rtl ? px + M : M;
+    const tw = PANEL - 2 * M;
+    const ali = this.rtl ? "right" : "left";
+
+    s.background = { color: NOIR };
     if (photo && existsSync(photo)) {
       s.addImage({
-        data: await tint(photo, W, H, "rgba(6,32,22,0.62)"),
-        x: 0,
+        data: await cover(photo, W - PANEL, H),
+        x: photoX,
         y: 0,
-        w: W,
+        w: W - PANEL,
         h: H,
       });
-    } else {
-      s.background = { color: this.pal.dark };
     }
-    if (flag && existsSync(flag)) {
-      s.addImage({ path: flag, x: 0.85, y: 0.8, w: 1.35, h: 0.9 });
-    }
-    s.addText(eyebrow, {
-      x: 0.85,
-      y: 2.15,
-      w: 11,
-      h: 0.35,
-      fontSize: 13,
+    s.addShape(this.p.ShapeType.rect, { x: px, y: 0, w: PANEL, h: H, fill: { color: NOIR } });
+
+    s.addText("GREEN SOLUTIONS GROUP", {
+      x: tx,
+      y: 0.62,
+      w: tw - 1.0,
+      h: 0.32,
+      fontSize: 11,
       bold: true,
-      color: this.pal.accent,
-      charSpacing: 2.5,
+      color: VERT,
+      charSpacing: 0.8,
       fontFace: BODY,
       isTextBox: true,
       margin: 0,
-      align: this.align,
+      align: ali,
     });
-    s.addText(title, {
-      x: 0.85,
-      y: 2.6,
-      w: 11.2,
-      h: 1.5,
-      fontSize: 42,
+
+    if (logo && existsSync(logo)) {
+      s.addImage({
+        path: logo,
+        x: this.rtl ? px + M : M + tw - 0.66,
+        y: 0.5,
+        w: 0.66,
+        h: 0.66,
+      });
+    }
+
+    // Le drapeau occupe le quart droit du panneau, à hauteur du titre.
+    const fw = 2.15;
+    const fh = fw * (2 / 3);
+    const fx = this.rtl ? px + M : px + PANEL - M - fw;
+    if (flag && existsSync(flag)) {
+      s.addImage({ path: flag, x: fx, y: 1.52, w: fw, h: fh });
+      s.addShape(this.p.ShapeType.rect, {
+        x: fx,
+        y: 1.52,
+        w: fw,
+        h: fh,
+        fill: { type: "none" },
+        line: { color: "3A3A3A", width: 0.75 },
+      });
+    }
+
+    // Le titre s'arrête avant le drapeau : « UNITED STATES OF AMERICA » passait
+    // dessous quand la largeur était fixe.
+    const titre = officiel ?? title;
+    const tiw = PANEL - 2 * M - fw - 0.25;
+    s.addText(titre, {
+      x: this.rtl ? px + PANEL - M - tiw : tx,
+      y: 1.42,
+      w: tiw,
+      h: 1.35,
+      fontSize: titre.length > 21 ? 24 : 28,
       bold: true,
       color: "FFFFFF",
       fontFace: HEAD,
       isTextBox: true,
       margin: 0,
-      align: this.align,
+      align: ali,
+      valign: "top",
+      lineSpacingMultiple: 1.1,
     });
-    s.addText(subtitle, {
-      x: 0.85,
-      y: 4.2,
-      w: 9.5,
-      h: 0.9,
+
+    s.addShape(this.p.ShapeType.rect, {
+      x: this.rtl ? px + PANEL - M - 3.05 : tx,
+      y: 3.16,
+      w: 3.05,
+      h: 0.05,
+      fill: { color: this.pal.accent },
+    });
+
+    s.addText(lieu, {
+      x: tx,
+      y: 3.46,
+      w: tw,
+      h: 0.42,
       fontSize: 16,
+      bold: true,
+      color: this.pal.accent,
+      fontFace: HEAD,
+      isTextBox: true,
+      margin: 0,
+      align: ali,
+    });
+
+    s.addText(subtitle, {
+      x: tx,
+      y: 4.12,
+      w: tw,
+      h: 1.0,
+      fontSize: 14.5,
       color: "FFFFFF",
-      transparency: 12,
       fontFace: BODY,
       isTextBox: true,
       margin: 0,
-      align: this.align,
-      lineSpacingMultiple: 1.25,
+      align: ali,
+      valign: "top",
+      lineSpacingMultiple: 1.28,
     });
-    s.addText(footer, {
-      x: 0.85,
-      y: H - 0.95,
-      w: 11,
-      h: 0.35,
+
+    s.addText(marques, {
+      x: tx,
+      y: 5.35,
+      w: tw,
+      h: 0.38,
       fontSize: 11,
-      color: "FFFFFF",
-      transparency: 35,
+      bold: true,
+      color: VERT,
       fontFace: BODY,
       isTextBox: true,
       margin: 0,
-      align: this.align,
+      align: ali,
     });
+
+    s.addText(mention, {
+      x: tx,
+      y: 6.62,
+      w: tw,
+      h: 0.34,
+      fontSize: 8.5,
+      color: "9A9A9A",
+      fontFace: BODY,
+      isTextBox: true,
+      margin: 0,
+      align: ali,
+    });
+
     this.n = 0;
     return s;
   }

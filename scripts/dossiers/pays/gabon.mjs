@@ -9,10 +9,14 @@ export default {
   cover: {
     eyebrow: "DOSSIER DE MARCHÉ",
     title: "Gabon",
+    officiel: "RÉPUBLIQUE GABONAISE",
+    lieu: "Libreville · 2026",
+    marques: "ECOSORB® · ECOFERT® · NAPEMA® · PAULOWNIA",
+    mention: "Septembre 2026 · Document confidentiel · À l'usage exclusif du destinataire",
     subtitle:
       "Vivrier, maraîchage péri-urbain et plantations industrielles sur sols lessivés.\nCe que l'hydro-rétention change quand la pluie s'arrête quatre mois.",
     footer: "Green Solutions · contact@evergreen-ecosorb.com",
-    photo: 0,
+    photo: 1,
   },
 
   chiffres: {
