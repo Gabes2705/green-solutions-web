@@ -57,7 +57,7 @@ export default {
     reading: {
       head: "Lo que esto implica",
       body:
-        "Reducir un 10 % el consumo agrícola libera más volumen que suprimir la totalidad del uso industrial.\n\nPor eso el esfuerzo se concentra en el lote y no en los demás usos. En las provincias áridas de Cuyo la participación del riego supera el 80 %.",
+        "Reducir un 10 % el consumo agrícola libera un volumen equivalente a cerca de dos tercios de todo el uso industrial del país.\n\nPor eso el esfuerzo se concentra en el lote y no en los demás usos. En las provincias áridas de Cuyo la participación del riego supera el 80 %.",
     },
   },
 
@@ -136,7 +136,7 @@ export default {
       {
         photo: 1,
         head: "Cuyo — Mendoza y San Juan",
-        metric: "≈ 145 000 ha de viñedo",
+        metric: "≈ 190 000 ha de viñedo",
         lines: [
           "Menos de 200 mm de lluvia al año: toda la producción depende del deshielo andino y del riego por manto o por goteo.",
           "Vid, olivo y frutales de alto valor unitario, con destino de exportación y pliegos de calidad exigentes.",
