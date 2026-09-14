@@ -213,7 +213,7 @@ export default {
       ],
     },
     note:
-      "Acrylamide analysis (Polymex laboratory, ISO 9001) and REACH / SVHC screening (SGS) are available on request, along with the current SOHISCERT certificate.",
+      "Acrylamide analysis (Polymex laboratory, ISO 9001, content below 3.0 µg/g), REACH / SVHC screening (SGS) and the SOHISCERT certificate valid to 4 September 2027 are all available on request.",
   },
 
   closing: {
