@@ -21,7 +21,7 @@ export default function FloatingVideo() {
           58vh caps the square on a short window, so it cannot reach down into
           the row of links along the foot of the cover. */}
       <div
-        className="film-screen relative bg-black border-4 border-gray-800"
+        className="film-screen relative bg-white border-4 border-white"
         style={{ width: "min(33vw, 560px, 58vh)" }}
       >
         <video
