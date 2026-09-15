@@ -22,7 +22,7 @@ export default function FloatingVideo() {
           the row of links along the foot of the cover. */}
       <div
         className="film-screen relative bg-white border-4 border-white"
-        style={{ width: "min(33vw, 560px, 58vh)" }}
+        style={{ width: "min(30vw, 500px, 54vh)" }}
       >
         <video
           className="w-full h-auto block"

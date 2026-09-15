@@ -407,12 +407,12 @@ body {
   justify-content: space-between;
   padding: 1.1vh 4vw;
   gap: 1.5em;
-  background: rgba(244, 246, 241, 0.95);
+  background: rgba(230, 241, 252, 0.95);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   animation: hero-in-down 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
-  border-bottom: 1px solid rgba(75, 139, 88, 0.18);
-  box-shadow: 0 8px 26px -14px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(96, 146, 196, 0.3);
+  box-shadow: 0 8px 26px -14px rgba(23, 57, 94, 0.22);
 }
 .brand-mark {
   display: flex;
@@ -442,8 +442,10 @@ body {
   justify-content: center;
   gap: 0.35em;
 }
+/* Pale blue and raised: white pills on a white bar were invisible, and the
+   lip under each one is what separates it from the bar it sits on. */
 .nav-links a:not(.nav-cta) {
-  color: var(--ink);
+  color: #17395E;
   text-decoration: none;
   font-size: 0.72rem;
   font-weight: 700;
@@ -452,28 +454,27 @@ body {
   white-space: nowrap;
   padding: 0.62em 0.85em;
   border-radius: 999px;
-  border: 1px solid rgba(31, 138, 69, 0.16);
-  background: linear-gradient(
-    160deg,
-    rgba(255, 255, 255, 0.95),
-    rgba(244, 248, 240, 0.9)
-  );
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    0 1px 0 rgba(31, 138, 69, 0.08), 0 4px 10px -6px rgba(20, 60, 30, 0.25);
+  border: 1px solid rgba(96, 146, 196, 0.45);
+  background: linear-gradient(180deg, #F4F9FF 0%, #DCEAFA 55%, #C7DCF2 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 2px 0 rgba(124, 166, 208, 0.7), 0 5px 10px -3px rgba(23, 57, 94, 0.3);
   transform: translateY(0);
   transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease,
     transform 0.15s ease, box-shadow 0.15s ease;
 }
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: #ffffff;
-  background: linear-gradient(160deg, #2BA557, var(--leaf-strong));
-  border-color: transparent;
+  color: #0E2A47;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E6F1FE 55%, #D2E4F7 100%);
+  border-color: rgba(96, 146, 196, 0.7);
   transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 3px 0 rgba(124, 166, 208, 0.75), 0 8px 14px -4px rgba(23, 57, 94, 0.34);
 }
 .nav-links a:not(.nav-cta):active {
-  transform: translateY(1px);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(23, 57, 94, 0.28),
+    0 1px 0 rgba(124, 166, 208, 0.6);
 }
 /* ---------- 3D button system — raised, tactile, restrained ---------- */
 
@@ -655,12 +656,12 @@ body {
   align-items: center;
   text-align: center;
 }
-/* From the width at which the film appears on the left, the cover's copy is
-   offset to clear it. Without this the row of calls to action, which is wider
-   than the claim above it, runs under the frame. */
+/* A nudge, not a shove: enough that the row of calls to action clears the film
+   on its left, while the claim stays centred in the gap between the film and
+   the drop rather than crowding the drop. */
 @media (min-width: 1024px) {
   .content {
-    padding-left: min(21vw, 330px);
+    padding-left: min(4.3vw, 62px);
   }
 }
 
@@ -836,16 +837,20 @@ body {
   text-align: left;
   min-height: 52px;
   padding: 0.7em clamp(0.7rem, 1.1vw, 1.1rem);
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(75, 139, 88, 0.42);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 6px 20px -12px rgba(20, 60, 30, 0.28);
+  background: linear-gradient(180deg, #F7FCF3 0%, #E6F2DB 55%, #D7E9C8 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 3px 0 rgba(139, 180, 131, 0.7), 0 7px 14px -4px rgba(30, 70, 40, 0.3);
   text-decoration: none;
   color: var(--ink);
-  transition: background-color 0.18s ease, border-color 0.18s ease,
-    color 0.18s ease;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease,
+    transform 0.15s ease, box-shadow 0.15s ease;
+}
+.cover-doors a:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(30, 70, 40, 0.28),
+    0 1px 0 rgba(139, 180, 131, 0.6);
 }
 .cover-doors-label {
   font-weight: 700;
@@ -866,9 +871,12 @@ body {
 }
 .cover-doors a:hover,
 .cover-doors a:focus-visible {
-  background: var(--leaf-strong);
-  border-color: var(--leaf-strong);
+  background: linear-gradient(180deg, #2BA557 0%, var(--leaf-strong) 100%);
+  border-color: var(--leaf-deep);
   color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 4px 0 rgba(23, 92, 47, 0.7), 0 10px 16px -5px rgba(30, 70, 40, 0.36);
 }
 .cover-doors a:focus-visible {
   outline: 2px solid var(--leaf-deep);
@@ -1141,11 +1149,11 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
-  padding: 0.9em 1.6em;
+  min-height: 46px;
+  padding: 0.82em 1.3em;
   border-radius: 999px;
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
