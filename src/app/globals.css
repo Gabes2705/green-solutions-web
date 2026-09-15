@@ -2987,13 +2987,18 @@ body li {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.15rem;
-  color: var(--ink);
+  color: #fff;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55);
 }
+/* Le bas de chaque carte est assombri par un dégradé : le texte y est donc
+   clair, avec une ombre douce pour tenir aussi sur les zones plus vives de
+   la photo (le ciel, les feuilles). */
 .resource-card p {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: rgba(13, 13, 13, 0.85);
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
   text-align: left;
 }
 
