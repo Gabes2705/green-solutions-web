@@ -579,6 +579,7 @@ export const content = {
         { name: "Daniel Baloche", role: "États-Unis" },
         { name: "Me Yves Haddad", role: "Avocat international" },
         { name: "David James", role: "Expert international en Paulownia · plus de 20 ans d'expérience" },
+        { name: "Emile Grac", role: "Conseil en Paulownia et Agrumes · Maroc" },
       ],
     },
     statement: {
@@ -1266,6 +1267,7 @@ export const content = {
         { name: "Daniel Baloche", role: "United States" },
         { name: "Me Yves Haddad", role: "International lawyer" },
         { name: "David James", role: "International Paulownia expert · 20+ years of experience" },
+        { name: "Emile Grac", role: "Paulownia & citrus advisor · Morocco" },
       ],
     },
     statement: {
@@ -1956,6 +1958,7 @@ export const content = {
         { name: "Daniel Baloche", role: "Estados Unidos" },
         { name: "Me Yves Haddad", role: "Abogado internacional" },
         { name: "David James", role: "Experto internacional en Paulownia · más de 20 años de experiencia" },
+        { name: "Emile Grac", role: "Asesor en Paulownia y cítricos · Marruecos" },
       ],
     },
     statement: {
@@ -2595,6 +2598,7 @@ export const content = {
         { name: "Daniel Baloche", role: "Estados Unidos" },
         { name: "Me Yves Haddad", role: "Advogado internacional" },
         { name: "David James", role: "Especialista internacional em Paulownia · mais de 20 anos de experiência" },
+        { name: "Emile Grac", role: "Consultor em Paulownia e citrinos · Marrocos" },
       ],
     },
     statement: {
@@ -3234,6 +3238,7 @@ export const content = {
         { name: "Daniel Baloche", role: "الولايات المتحدة" },
         { name: "Me Yves Haddad", role: "محامٍ دولي" },
         { name: "David James", role: "خبير دولي في شجرة الباولونيا · أكثر من 20 عامًا من الخبرة" },
+        { name: "Emile Grac", role: "مستشار في الباولونيا والحمضيات · المغرب" },
       ],
     },
     statement: {
@@ -3863,6 +3868,7 @@ export const content = {
         { name: "Daniel Baloche", role: "美国" },
         { name: "Yves Haddad 律师", role: "国际律师" },
         { name: "David James", role: "泡桐国际专家 · 20余年经验" },
+        { name: "Emile Grac", role: "泡桐与柑橘顾问 · 摩洛哥" },
       ],
     },
     statement: {
@@ -4549,6 +4555,7 @@ export const content = {
         { name: "Daniel Baloche", role: "Amerika Serikat" },
         { name: "Me Yves Haddad", role: "Pengacara Internasional" },
         { name: "David James", role: "Pakar internasional Paulownia · pengalaman lebih dari 20 tahun" },
+        { name: "Emile Grac", role: "Konsultan Paulownia & jeruk · Maroko" },
       ],
     },
     statement: {
@@ -5178,6 +5185,7 @@ export const content = {
         { name: "Daniel Baloche", role: "Vereinigte Staaten" },
         { name: "Me Yves Haddad", role: "Internationaler Rechtsanwalt" },
         { name: "David James", role: "Internationaler Paulownia-Experte · über 20 Jahre Erfahrung" },
+        { name: "Emile Grac", role: "Berater für Paulownia & Zitrusfrüchte · Marokko" },
       ],
     },
     statement: {
@@ -5867,6 +5875,7 @@ export const content = {
         { name: "Daniel Baloche", role: "Stati Uniti" },
         { name: "Me Yves Haddad", role: "Avvocato internazionale" },
         { name: "David James", role: "Esperto internazionale in Paulownia · oltre 20 anni di esperienza" },
+        { name: "Emile Grac", role: "Consulente in Paulownia e agrumi · Marocco" },
       ],
     },
     statement: {
@@ -6496,6 +6505,7 @@ export const content = {
         { name: "Daniel Baloche", role: "ΗΠΑ" },
         { name: "Me Yves Haddad", role: "Διεθνής δικηγόρος" },
         { name: "David James", role: "Διεθνής ειδικός σε Paulownia · πάνω από 20 χρόνια εμπειρίας" },
+        { name: "Emile Grac", role: "Σύμβουλος για Paulownia & εσπεριδοειδή · Μαρόκο" },
       ],
     },
     statement: {
@@ -7124,6 +7134,7 @@ export const content = {
         { name: "Daniel Baloche", role: "ABD" },
         { name: "Me Yves Haddad", role: "Uluslararası avukat" },
         { name: "David James", role: "Uluslararası Paulownia uzmanı · 20 yıldan fazla deneyim" },
+        { name: "Emile Grac", role: "Paulownia ve narenciye danışmanı · Fas" },
       ],
     },
     statement: {
@@ -7762,6 +7773,7 @@ export const content = {
         { name: "Daniel Baloche", role: "Stany Zjednoczone" },
         { name: "Me Yves Haddad", role: "Prawnik międzynarodowy" },
         { name: "David James", role: "Międzynarodowy ekspert ds. Paulownii · ponad 20 lat doświadczenia" },
+        { name: "Emile Grac", role: "Doradca ds. Paulownii i cytrusów · Maroko" },
       ],
     },
     statement: {
@@ -8401,6 +8413,7 @@ export const content = {
         { name: "Daniel Baloche", role: "Sjedinjene Američke Države" },
         { name: "Me Yves Haddad", role: "Međunarodni odvjetnik" },
         { name: "David James", role: "Međunarodni stručnjak za paulovniju · više od 20 godina iskustva" },
+        { name: "Emile Grac", role: "Savjetnik za paulovniju i agrume · Maroko" },
       ],
     },
     statement: {
