@@ -225,6 +225,6 @@ export default {
     title: "Recite nam kakvo je vaše gospodarstvo",
     body:
       "Kultura, način navodnjavanja, tip tla, količina vode koju danas trošite. Vraćamo se s odgovarajućom kombinacijom tehnologija, s dozama i s pokusima već provedenima u usporedivim situacijama.\n\nPrvi razgovor ni na što ne obvezuje.",
-    contact: "contact@evergreen-ecosorb.com · 821 Chemin des Clapiers, 83220 Le Pradet, Francuska",
+    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Švicarska",
   },
 };

@@ -3,6 +3,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
 import { Deck, PALETTES } from "./deck.mjs";
+import { communs } from "./communs.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const OUT = join(here, "../../public/documents/countries");
@@ -49,9 +50,26 @@ export async function build(spec) {
     photo: pic(spec.contrainte.photo ?? 1),
     footer: foot,
   });
+  // Un dossier « complet » porte en plus l'économie du pays, ses deux filières
+  // phares, le rendement par culture, le reste de la gamme, le partenariat et
+  // les sources — les sept pages qui manquaient face aux anciens dossiers.
+  const complet = Boolean(spec.economie);
+  // « pour le Maroc », « za Hrvatsku » : le nom du pays dans une phrase
+  // n'est pas toujours celui de la couverture.
+  const c = complet ? communs(spec.locale, spec.paysTitre ?? spec.cover.title) : null;
+
+  // Chaque page supplémentaire ne sort que si le complément la porte : un
+  // dossier court (économie, une filière, la gamme) tient en 14 pages, un
+  // dossier complet en 18.
   d.chart({ ...spec.usages, footer: foot });
+  if (complet) d.stats({ ...spec.economie, footer: foot });
   d.chart({ ...spec.productions, footer: foot });
+  for (const [i, f] of (spec.filieres ?? []).entries()) {
+    await d.split({ ...f, photo: pic(f.photo ?? i + 1), photoLeft: i % 2 === 1, footer: foot });
+  }
+  if (spec.rendement) d.chart({ ...c.rendement(spec.rendement), footer: foot });
   d.columns({ ...spec.solutions, footer: foot });
+  if (complet && spec.gamme !== false) d.columns({ ...c.gamme, footer: foot });
   d.chart({ ...spec.economies, footer: foot });
   await d.cards({
     ...spec.regions,
@@ -59,7 +77,9 @@ export async function build(spec) {
     footer: foot,
   });
   d.steps({ ...spec.deploiement, footer: foot });
+  if (complet && spec.partenariat !== false) d.steps({ ...c.partenariat, footer: foot });
   d.columns({ ...spec.risques, footer: foot });
+  if (spec.sources) d.columns({ ...c.sources(spec.sources), footer: foot });
   await d.closing({
     ...spec.closing,
     photo: pic(spec.closing.photo ?? 0),
@@ -93,7 +113,11 @@ if (arg) {
   for (const slug of slugs) {
     try {
       const spec = (await import(`./pays/${slug}.mjs`)).default;
-      await build(spec);
+      const complement = join(here, "complements", `${slug}.mjs`);
+      const plus = existsSync(complement)
+        ? (await import(`./complements/${slug}.mjs`)).default
+        : {};
+      await build({ ...spec, ...plus });
       console.log(`OK   ${slug}`);
       ok += 1;
     } catch (e) {

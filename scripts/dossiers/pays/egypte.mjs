@@ -226,6 +226,6 @@ export default {
     title: "احكِ لنا عن أرضك",
     body:
       "المحصول، أسلوب الري، طبيعة التربة، كمية الماء المستهلكة اليوم. نعود إليك بتركيبة التقنيات المناسبة، والجرعات، والتجارب التي أُجريت في أوضاع مشابهة.\n\nأول تبادل لا يلزمك بشيء.",
-    contact: "contact@evergreen-ecosorb.com · 821 Chemin des Clapiers, 83220 Le Pradet, France",
+    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
   },
 };

@@ -30,11 +30,20 @@ const FICHIERS = {
   haiti: "Flag of Haiti.svg",
   espagne: "Flag of Spain.svg",
   croatie: "Flag of Croatia.svg",
+  cameroun: "Flag of Cameroon.svg",
+  oman: "Flag of Oman.svg",
+  senegal: "Flag of Senegal.svg",
+  "soudan-sud": "Flag of South Sudan.svg",
+  grece: "Flag of Greece.svg",
 };
+
+// Sans argument, tous les drapeaux ; sinon seulement les pays nommés.
+const seuls = process.argv.slice(2);
 
 mkdirSync(out, { recursive: true });
 
 for (const [slug, fichier] of Object.entries(FICHIERS)) {
+  if (seuls.length && !seuls.includes(slug)) continue;
   const url =
     `${API}?action=query&format=json&titles=${encodeURIComponent(`File:${fichier}`)}` +
     `&prop=imageinfo&iiprop=url&iiurlwidth=1200`;
