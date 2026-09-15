@@ -21,6 +21,7 @@ const LANGS: { code: Lang; label: string; name: string; flag: string }[] = [
   { code: "el", label: "EL", name: "Ελληνικά", flag: "grece" },
   { code: "tr", label: "TR", name: "Türkçe", flag: "turquie" },
   { code: "pl", label: "PL", name: "Polski", flag: "pologne" },
+  { code: "hr", label: "HR", name: "Hrvatski", flag: "croatie" },
 ];
 
 export default function LanguageSwitcher() {

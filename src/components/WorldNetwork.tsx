@@ -41,6 +41,14 @@ const NODES = [
   { lat: -2.5, lng: 118.0, label: "Indonésie" },
   { lat: 35.9, lng: 104.2, label: "Chine" },
   { lat: 26.8, lng: 30.8, label: "Égypte" },
+  { lat: 28.0, lng: 1.7, label: "Algérie" },
+  { lat: -38.4, lng: -63.6, label: "Argentine" },
+  { lat: -35.7, lng: -71.5, label: "Chili" },
+  { lat: -0.8, lng: 11.6, label: "Gabon" },
+  { lat: 7.9, lng: -1.0, label: "Ghana" },
+  { lat: 30.6, lng: 36.2, label: "Jordanie" },
+  { lat: 29.3, lng: 47.5, label: "Koweït" },
+  { lat: 45.1, lng: 15.2, label: "Croatie" },
 ];
 
 function projectPoint(lat: number, lng: number) {

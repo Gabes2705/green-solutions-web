@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 
-const LANGUAGES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"] as const;
+const LANGUAGES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"] as const;
 const TECH_IDS = [
   "retention-eau",
   "paulownia",

@@ -23,7 +23,7 @@ const TECH_HERO: Record<string, string> = {
 
 export function generateStaticParams() {
   return TECH_IDS.flatMap((id) =>
-    ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].map((lang) => ({ lang, id }))
+    ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"].map((lang) => ({ lang, id }))
   );
 }
 
@@ -31,7 +31,7 @@ type Params = { params: Promise<{ lang: string; id: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { id, lang } = await params;
-  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].includes(lang) ? lang : "fr") as keyof typeof content;
+  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"].includes(lang) ? lang : "fr") as keyof typeof content;
   const item = content[langKey].products.items.find((p) => p.id === id);
   if (!item) return {};
 
@@ -81,7 +81,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 export default async function Page({ params }: Params) {
   const { id, lang } = await params;
-  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].includes(lang) ? lang : "fr") as keyof typeof content;
+  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"].includes(lang) ? lang : "fr") as keyof typeof content;
   const item = content[langKey].products.items.find((p) => p.id === id);
 
   const jsonLd = item

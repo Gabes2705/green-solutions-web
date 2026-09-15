@@ -343,6 +343,27 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect y="10" width="30" height="10" fill="#DC143C" />
     </>
   ),
+  croatie: () => (
+    <>
+      <rect width="30" height="6.67" fill="#FF0000" />
+      <rect y="6.67" width="30" height="6.67" fill="#fff" />
+      <rect y="13.33" width="30" height="6.67" fill="#171796" />
+      {/* Le damier, réduit à ce qui se lit à cette taille : cinq carreaux
+          rouges en quinconce sur un écu blanc. */}
+      <g transform="translate(12.4 5.6)">
+        <rect width="5.2" height="6" fill="#fff" stroke="#171796" strokeWidth="0.3" />
+        {[
+          [0, 0],
+          [2.6, 0],
+          [1.3, 2],
+          [0, 4],
+          [2.6, 4],
+        ].map(([x, y], i) => (
+          <rect key={i} x={x} y={y} width="1.3" height="2" fill="#FF0000" />
+        ))}
+      </g>
+    </>
+  ),
   portugal: () => (
     <>
       <rect width="30" height="20" fill="#DA291C" />

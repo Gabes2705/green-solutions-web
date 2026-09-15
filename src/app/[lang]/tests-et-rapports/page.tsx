@@ -4,14 +4,14 @@ import FieldTestsPageClient from "@/components/FieldTestsPageClient";
 import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
-  return ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].map((lang) => ({ lang }));
+  return ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"].map((lang) => ({ lang }));
 }
 
 type Params = { params: Promise<{ lang: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { lang } = await params;
-  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl"].includes(lang) ? lang : "fr") as keyof typeof content;
+  const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"].includes(lang) ? lang : "fr") as keyof typeof content;
   const ft = content[langKey].fieldTests;
 
   const url = `${SITE_URL}/${lang}/tests-et-rapports`;

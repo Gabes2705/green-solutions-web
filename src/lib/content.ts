@@ -1,4 +1,4 @@
-export type Lang = "fr" | "en" | "es" | "pt" | "ar" | "zh" | "id" | "de" | "it" | "el" | "tr" | "pl";
+export type Lang = "fr" | "en" | "es" | "pt" | "ar" | "zh" | "id" | "de" | "it" | "el" | "tr" | "pl" | "hr";
 
 export const RTL_LANGS: Lang[] = ["ar"];
 
@@ -134,7 +134,7 @@ export const content = {
       tagline: "Toutes nos solutions disruptives sont utilisables pour toutes les plantes et cultures, sous tous les climats et tous types de sol !",
       stats: [
         { num: "30", label: "partenaires" },
-        { num: "29", label: "pays" },
+        { num: "37", label: "pays" },
         { num: "4", label: "technologies de marque" },
       ],
       distinguish: [
@@ -488,9 +488,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Ils travaillent avec nous",
-      title: "Un réseau dans 29 pays",
+      title: "Un réseau dans 37 pays",
       lede: "Producteurs, coopératives, spécialistes du traitement de l'eau, universités et instituts de recherche, présents sur cinq continents.",
-      mapAriaLabel: "Carte du réseau Green Solutions dans 29 pays",
+      mapAriaLabel: "Carte du réseau Green Solutions dans 37 pays",
     },
     countryStudies: {
       eyebrow: "Approche pays",
@@ -636,6 +636,7 @@ export const content = {
       "Caraïbes", "États-Unis", "Cameroun", "Guinée", "Sénégal", "Maroc", "Guinée-Bissau", "Brésil",
       "Arabie saoudite", "Sultanat d'Oman", "Congo", "Côte d'Ivoire", "Soudan du Sud", "Pologne", "Grèce", "Portugal",
       "Émirats arabes unis", "Mexique", "Turquie", "Indonésie", "Chine",
+      "Algérie", "Argentine", "Chili", "Gabon", "Ghana", "Jordanie", "Koweït", "Croatie",
     ],
   },
   en: {
@@ -769,7 +770,7 @@ export const content = {
       tagline: "All our disruptive solutions can be used on every plant and crop, in every climate and soil type!",
       stats: [
         { num: "30", label: "partners" },
-        { num: "29", label: "countries" },
+        { num: "37", label: "countries" },
         { num: "4", label: "branded technologies" },
       ],
       distinguish: [
@@ -1123,9 +1124,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "They work with us",
-      title: "A network across 29 countries",
+      title: "A network across 37 countries",
       lede: "Producers, cooperatives, water-treatment specialists, universities and research institutes, present across five continents.",
-      mapAriaLabel: "Map of the Green Solutions network across 29 countries",
+      mapAriaLabel: "Map of the Green Solutions network across 37 countries",
     },
     countryStudies: {
       eyebrow: "Country approach",
@@ -1319,6 +1320,7 @@ export const content = {
       "Caribbean", "United States", "Cameroon", "Guinea", "Senegal", "Morocco", "Guinea-Bissau", "Brazil",
       "Saudi Arabia", "Sultanate of Oman", "Congo", "Ivory Coast", "South Sudan", "Poland", "Greece", "Portugal",
       "United Arab Emirates", "Mexico", "Turkey", "Indonesia", "China",
+      "Algeria", "Argentina", "Chile", "Gabon", "Ghana", "Jordan", "Kuwait", "Croatia",
     ],
   },
   es: {
@@ -1452,7 +1454,7 @@ export const content = {
       tagline: "¡Todas nuestras soluciones disruptivas se pueden usar en cualquier planta o cultivo, en cualquier clima y cualquier tipo de suelo!",
       stats: [
         { num: "30", label: "socios" },
-        { num: "29", label: "países" },
+        { num: "37", label: "países" },
         { num: "4", label: "tecnologías de marca" },
       ],
       distinguish: [
@@ -1806,9 +1808,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabajan con nosotros",
-      title: "Una red en 29 países",
+      title: "Una red en 37 países",
       lede: "Productores, cooperativas, especialistas en tratamiento de agua, universidades e institutos de investigación, presentes en cinco continentes.",
-      mapAriaLabel: "Mapa de la red Green Solutions en 29 países",
+      mapAriaLabel: "Mapa de la red Green Solutions en 37 países",
     },
     countryStudies: {
       eyebrow: "Enfoque por país",
@@ -2004,6 +2006,7 @@ export const content = {
       "Caribe", "Estados Unidos", "Camerún", "Guinea", "Senegal", "Marruecos", "Guinea-Bisáu", "Brasil",
       "Arabia Saudita", "Sultanato de Omán", "Congo", "Costa de Marfil", "Sudán del Sur", "Polonia", "Grecia", "Portugal",
       "Emiratos Árabes Unidos", "México", "Turquía", "Indonesia", "China",
+      "Argelia", "Argentina", "Chile", "Gabón", "Ghana", "Jordania", "Kuwait", "Croacia",
     ],
   },
   pt: {
@@ -2137,7 +2140,7 @@ export const content = {
       tagline: "Todas as nossas soluções disruptivas podem ser usadas em qualquer planta ou cultura, em qualquer clima e qualquer tipo de solo!",
       stats: [
         { num: "30", label: "parceiros" },
-        { num: "29", label: "países" },
+        { num: "37", label: "países" },
         { num: "4", label: "tecnologias de marca" },
       ],
       distinguish: [
@@ -2491,9 +2494,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabalham connosco",
-      title: "Uma rede em 29 países",
+      title: "Uma rede em 37 países",
       lede: "Produtores, cooperativas, especialistas em tratamento de água, universidades e institutos de investigação, presentes em cinco continentes.",
-      mapAriaLabel: "Mapa da rede Green Solutions em 29 países",
+      mapAriaLabel: "Mapa da rede Green Solutions em 37 países",
     },
     countryStudies: {
       eyebrow: "Abordagem por país",
@@ -2639,6 +2642,7 @@ export const content = {
       "Caraíbas", "Estados Unidos", "Camarões", "Guiné", "Senegal", "Marrocos", "Guiné-Bissau", "Brasil",
       "Arábia Saudita", "Sultanato de Omã", "Congo", "Costa do Marfim", "Sudão do Sul", "Polónia", "Grécia", "Portugal",
       "Emirados Árabes Unidos", "México", "Turquia", "Indonésia", "China",
+      "Argélia", "Argentina", "Chile", "Gabão", "Gana", "Jordânia", "Kuwait", "Croácia",
     ],
   },
   ar: {
@@ -2772,7 +2776,7 @@ export const content = {
       tagline: "جميع حلولنا الابتكارية يمكن استخدامها مع كل النباتات والمحاصيل، في كل المناخات وكل أنواع التربة!",
       stats: [
         { num: "30", label: "شريك" },
-        { num: "29", label: "دولة" },
+        { num: "37", label: "دولة" },
         { num: "4", label: "تقنيات حصرية" },
       ],
       distinguish: [
@@ -3126,9 +3130,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "يعملون معنا",
-      title: "شبكة في 29 دولة",
+      title: "شبكة في 37 دولة",
       lede: "منتجون وتعاونيات ومتخصصون في معالجة المياه وجامعات ومعاهد بحثية، حاضرون في خمس قارات.",
-      mapAriaLabel: "خريطة شبكة Green Solutions في 29 دولة",
+      mapAriaLabel: "خريطة شبكة Green Solutions في 37 دولة",
     },
     countryStudies: {
       eyebrow: "النهج القطري",
@@ -3274,6 +3278,7 @@ export const content = {
       "الكاريبي", "الولايات المتحدة", "الكاميرون", "غينيا", "السنغال", "المغرب", "غينيا بيساو", "البرازيل",
       "السعودية", "سلطنة عُمان", "الكونغو", "ساحل العاج", "جنوب السودان", "بولندا", "اليونان", "البرتغال",
       "الإمارات العربية المتحدة", "المكسيك", "تركيا", "إندونيسيا", "الصين",
+      "الجزائر", "الأرجنتين", "تشيلي", "الغابون", "غانا", "الأردن", "الكويت", "كرواتيا",
     ],
   },
   zh: {
@@ -3407,7 +3412,7 @@ export const content = {
       tagline: "我们所有的颠覆性解决方案适用于任何植物和作物、任何气候及任何类型的土壤！",
       stats: [
         { num: "30", label: "合作伙伴" },
-        { num: "29", label: "国家" },
+        { num: "37", label: "国家" },
         { num: "4", label: "品牌技术" },
       ],
       distinguish: [
@@ -3761,9 +3766,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "与我们合作的伙伴",
-      title: "覆盖29个国家的网络",
+      title: "覆盖37个国家的网络",
       lede: "生产者、合作社、水处理专家、高校及科研机构，遍布五大洲。",
-      mapAriaLabel: "Green Solutions覆盖29个国家的网络地图",
+      mapAriaLabel: "Green Solutions覆盖37个国家的网络地图",
     },
     countryStudies: {
       eyebrow: "国别方案",
@@ -3899,6 +3904,7 @@ export const content = {
       "加勒比地区", "美国", "喀麦隆", "几内亚", "塞内加尔", "摩洛哥", "几内亚比绍", "巴西",
       "沙特阿拉伯", "阿曼苏丹国", "刚果", "科特迪瓦", "南苏丹", "波兰", "希腊", "葡萄牙",
       "阿拉伯联合酋长国", "墨西哥", "土耳其", "印度尼西亚", "中国",
+      "阿尔及利亚", "阿根廷", "智利", "加蓬", "加纳", "约旦", "科威特", "克罗地亚",
     ],
   },
   id: {
@@ -4032,7 +4038,7 @@ export const content = {
       tagline: "Semua solusi disruptif kami dapat digunakan untuk semua tanaman dan tanaman pangan, di semua iklim dan semua jenis tanah!",
       stats: [
         { num: "30", label: "mitra" },
-        { num: "29", label: "negara" },
+        { num: "37", label: "negara" },
         { num: "4", label: "teknologi bermerek" },
       ],
       distinguish: [
@@ -4386,9 +4392,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Mereka bekerja sama dengan kami",
-      title: "Jaringan di 29 Negara",
+      title: "Jaringan di 37 Negara",
       lede: "Produsen, koperasi, spesialis pengolahan air, universitas, dan lembaga penelitian, hadir di lima benua.",
-      mapAriaLabel: "Peta jaringan Green Solutions di 29 negara",
+      mapAriaLabel: "Peta jaringan Green Solutions di 37 negara",
     },
     countryStudies: {
       eyebrow: "Pendekatan per Negara",
@@ -4581,6 +4587,7 @@ export const content = {
       "Karibia", "Amerika Serikat", "Kamerun", "Guinea", "Senegal", "Maroko", "Guinea-Bissau", "Brasil",
       "Arab Saudi", "Kesultanan Oman", "Kongo", "Pantai Gading", "Sudan Selatan", "Polandia", "Yunani", "Portugal",
       "Uni Emirat Arab", "Meksiko", "Turki", "Indonesia", "Tiongkok",
+      "Aljazair", "Argentina", "Chili", "Gabon", "Ghana", "Yordania", "Kuwait", "Kroasia",
     ],
   },
   de: {
@@ -4714,7 +4721,7 @@ export const content = {
       tagline: "Alle unsere disruptiven Lösungen sind für jede Pflanze und Kultur, bei jedem Klima und jeder Bodenart einsetzbar!",
       stats: [
         { num: "30", label: "Partner" },
-        { num: "29", label: "Länder" },
+        { num: "37", label: "Länder" },
         { num: "4", label: "Markentechnologien" },
       ],
       distinguish: [
@@ -5068,9 +5075,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Sie arbeiten mit uns",
-      title: "Ein Netzwerk in 29 Ländern",
+      title: "Ein Netzwerk in 37 Ländern",
       lede: "Erzeuger, Genossenschaften, Wasseraufbereitungsspezialisten, Universitäten und Forschungsinstitute, vertreten auf fünf Kontinenten.",
-      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 29 Ländern",
+      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 37 Ländern",
     },
     countryStudies: {
       eyebrow: "Länderansatz",
@@ -5206,6 +5213,7 @@ export const content = {
       "Karibik", "Vereinigte Staaten", "Kamerun", "Guinea", "Senegal", "Marokko", "Guinea-Bissau", "Brasilien",
       "Saudi-Arabien", "Sultanat Oman", "Kongo", "Elfenbeinküste", "Südsudan", "Polen", "Griechenland", "Portugal",
       "Vereinigte Arabische Emirate", "Mexiko", "Türkei", "Indonesien", "China",
+      "Algerien", "Argentinien", "Chile", "Gabun", "Ghana", "Jordanien", "Kuwait", "Kroatien",
     ],
   },
   it: {
@@ -5339,7 +5347,7 @@ export const content = {
       tagline: "Tutte le nostre soluzioni dirompenti sono utilizzabili per ogni pianta e coltura, in ogni clima e su ogni tipo di suolo!",
       stats: [
         { num: "30", label: "partner" },
-        { num: "29", label: "paesi" },
+        { num: "37", label: "paesi" },
         { num: "4", label: "tecnologie di marca" },
       ],
       distinguish: [
@@ -5693,9 +5701,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Lavorano con noi",
-      title: "Una rete in 29 paesi",
+      title: "Una rete in 37 paesi",
       lede: "Produttori, cooperative, specialisti del trattamento dell'acqua, università e istituti di ricerca, presenti su cinque continenti.",
-      mapAriaLabel: "Mappa della rete Green Solutions in 29 paesi",
+      mapAriaLabel: "Mappa della rete Green Solutions in 37 paesi",
     },
     countryStudies: {
       eyebrow: "Approccio per paese",
@@ -5890,6 +5898,7 @@ export const content = {
       "Caraibi", "Stati Uniti", "Camerun", "Guinea", "Senegal", "Marocco", "Guinea-Bissau", "Brasile",
       "Arabia Saudita", "Sultanato dell'Oman", "Congo", "Costa d'Avorio", "Sudan del Sud", "Polonia", "Grecia", "Portogallo",
       "Emirati Arabi Uniti", "Messico", "Turchia", "Indonesia", "Cina",
+      "Algeria", "Argentina", "Cile", "Gabon", "Ghana", "Giordania", "Kuwait", "Croazia",
     ],
   },
   el: {
@@ -6023,7 +6032,7 @@ export const content = {
       tagline: "Όλες οι ανατρεπτικές μας λύσεις είναι κατάλληλες για κάθε φυτό και καλλιέργεια, σε κάθε κλίμα και κάθε τύπο εδάφους!",
       stats: [
         { num: "30", label: "συνεργάτες" },
-        { num: "29", label: "χώρες" },
+        { num: "37", label: "χώρες" },
         { num: "4", label: "εμπορικές τεχνολογίες" },
       ],
       distinguish: [
@@ -6377,9 +6386,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Συνεργάζονται μαζί μας",
-      title: "Ένα δίκτυο σε 29 χώρες",
+      title: "Ένα δίκτυο σε 37 χώρες",
       lede: "Παραγωγοί, συνεταιρισμοί, ειδικοί επεξεργασίας νερού, πανεπιστήμια και ερευνητικά ιδρύματα, παρόντα σε πέντε ηπείρους.",
-      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 29 χώρες",
+      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 37 χώρες",
     },
     countryStudies: {
       eyebrow: "Προσέγγιση ανά χώρα",
@@ -6515,6 +6524,7 @@ export const content = {
       "Καραϊβική", "ΗΠΑ", "Καμερούν", "Γουινέα", "Σενεγάλη", "Μαρόκο", "Γουινέα-Μπισάου", "Βραζιλία",
       "Σαουδική Αραβία", "Σουλτανάτο του Ομάν", "Κονγκό", "Ακτή Ελεφαντοστού", "Νότιο Σουδάν", "Πολωνία", "Ελλάδα", "Πορτογαλία",
       "Ηνωμένα Αραβικά Εμιράτα", "Μεξικό", "Τουρκία", "Ινδονησία", "Κίνα",
+      "Αλγερία", "Αργεντινή", "Χιλή", "Γκαμπόν", "Γκάνα", "Ιορδανία", "Κουβέιτ", "Κροατία",
     ],
   },
   tr: {
@@ -6648,7 +6658,7 @@ export const content = {
       tagline: "Yıkıcı çözümlerimizin tümü her bitki ve ürün için, her iklimde ve her toprak türünde kullanılabilir!",
       stats: [
         { num: "30", label: "ortak" },
-        { num: "29", label: "ülke" },
+        { num: "37", label: "ülke" },
         { num: "4", label: "markalı teknoloji" },
       ],
       distinguish: [
@@ -7002,9 +7012,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Bizimle çalışıyorlar",
-      title: "29 ülkede bir ağ",
+      title: "37 ülkede bir ağ",
       lede: "Beş kıtada bulunan üreticiler, kooperatifler, su arıtma uzmanları, üniversiteler ve araştırma enstitüleri.",
-      mapAriaLabel: "Green Solutions ağının 29 ülkedeki haritası",
+      mapAriaLabel: "Green Solutions ağının 37 ülkedeki haritası",
     },
     countryStudies: {
       eyebrow: "Ülke yaklaşımı",
@@ -7140,6 +7150,7 @@ export const content = {
       "Karayipler", "ABD", "Kamerun", "Gine", "Senegal", "Fas", "Gine-Bissau", "Brezilya",
       "Suudi Arabistan", "Umman Sultanlığı", "Kongo", "Fildişi Sahili", "Güney Sudan", "Polonya", "Yunanistan", "Portekiz",
       "Birleşik Arap Emirlikleri", "Meksika", "Türkiye", "Endonezya", "Çin",
+      "Cezayir", "Arjantin", "Şili", "Gabon", "Gana", "Ürdün", "Kuveyt", "Hırvatistan",
     ],
   },
   pl: {
@@ -7273,7 +7284,7 @@ export const content = {
       tagline: "Wszystkie nasze przełomowe rozwiązania nadają się do każdej rośliny i uprawy, w każdym klimacie i na każdym rodzaju gleby!",
       stats: [
         { num: "30", label: "partnerów" },
-        { num: "29", label: "krajów" },
+        { num: "37", label: "krajów" },
         { num: "4", label: "opatentowane technologie" },
       ],
       distinguish: [
@@ -7627,9 +7638,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Współpracują z nami",
-      title: "Sieć w 29 krajach",
+      title: "Sieć w 37 krajach",
       lede: "Producenci, spółdzielnie, specjaliści od uzdatniania wody, uniwersytety i instytuty badawcze, obecni na pięciu kontynentach.",
-      mapAriaLabel: "Mapa sieci Green Solutions w 29 krajach",
+      mapAriaLabel: "Mapa sieci Green Solutions w 37 krajach",
     },
     countryStudies: {
       eyebrow: "Podejście według kraju",
@@ -7775,6 +7786,644 @@ export const content = {
       "Karaiby", "Stany Zjednoczone", "Kamerun", "Gwinea", "Senegal", "Maroko", "Gwinea Bissau", "Brazylia",
       "Arabia Saudyjska", "Sułtanat Omanu", "Kongo", "Wybrzeże Kości Słoniowej", "Sudan Południowy", "Polska", "Grecja", "Portugalia",
       "Zjednoczone Emiraty Arabskie", "Meksyk", "Turcja", "Indonezja", "Chiny",
+      "Algieria", "Argentyna", "Chile", "Gabon", "Ghana", "Jordania", "Kuwejt", "Chorwacja",
+    ],
+  },
+  hr: {
+    waterCalculator: {
+      eyebrow: "Simulator",
+      title: "Izračunajte svoju uštedu vode",
+      lede: "Unesite podatke o svojem gospodarstvu kako biste procijenili uštedu ostvarivu s našim hidroretenterima, ovisno o vašem trenutnom načinu navodnjavanja.",
+      surfaceLabel: "Obrađivana površina",
+      surfaceUnit: "ha",
+      irrigationLabel: "Trenutni način navodnjavanja",
+      irrigationModes: ["Kap po kap", "Rasprskivanje", "Pivot", "Gravitacijsko / potapanje", "Ostalo"],
+      consumptionLabel: "Trenutna potrošnja",
+      consumptionUnit: "m³/ha",
+      resultEyebrow: "Procijenjena ušteda u jednoj sezoni",
+      resultNote: "Od donje do gornje granice, ovisno o načinu navodnjavanja",
+      poolsPrefix: "što odgovara broju od",
+      poolsSuffix: "olimpijskih bazena",
+      disclaimer: "Okvirna procjena temeljena na dokumentiranim uštedama vode naših hidroretentera (−40 do −70 % ovisno o načinu navodnjavanja). Stvarni rezultat ovisi o tlu, klimi i kulturi. Ovaj alat daje red veličine: ove brojke ni u kojem slučaju ne predstavljaju zajamčenu, ugovornu ni apsolutnu vrijednost.",
+    },
+    doseCalculator: {
+      eyebrow: "Kalkulator doziranja",
+      title: "Koliko EVERGREEN®-a treba vašoj parceli",
+      lede: "Unesite lokaciju, kulturu i podatke o parceli. Izračun doze ne ovisi o podacima o vodi: oni samo preciziraju procjenu uštede.",
+      locationTitle: "Lokacija",
+      countryLabel: "Država",
+      regionLabel: "Regija / županija",
+      cityLabel: "Grad ili obližnje mjesto",
+      detectButton: "Osvježi lokaciju i klimu",
+      detecting: "Otkrivanje u tijeku…",
+      climateHead: "Zabilježeni klimatski uvjeti",
+      latitude: "Zemljopisna širina",
+      altitude: "Nadmorska visina",
+      zone: "Zona",
+      rainfall: "Oborine",
+      temperature: "Temperatura",
+      stress: "Stres",
+      climateUnavailable: "Klimatski podaci nisu dostupni za ovo mjesto. Doza se i dalje računa na temelju agronomskih parametara.",
+      zones: {
+        tropical: "Tropska",
+        subtropical: "Suptropska",
+        temperate: "Umjerena",
+        cold: "Hladna",
+      },
+      stressLevels: {
+        normal: "Normalan",
+        moderate: "Umjeren",
+        high: "Visok",
+      },
+      plotTitle: "Parcela i kultura",
+      cropLabel: "Kultura",
+      soilLabel: "Tip tla",
+      irrigationLabel: "Način navodnjavanja",
+      areaLabel: "Obrađivana površina (ha)",
+      densityLabel: "Gustoća (biljaka/ha, neobavezno)",
+      spacingLabel: "Razmak između redova (m, neobavezno)",
+      optionalPlaceholder: "Ostavite prazno ako nije poznato",
+      soils: {
+        unknown: "Nepoznato",
+        sandy: "Pjeskovito",
+        sandyLoam: "Pjeskovito-ilovasto",
+        loam: "Ilovasto",
+        clayLoam: "Glinasto-ilovasto",
+        clay: "Glinasto",
+      },
+      irrigations: {
+        rainfed: "Oborinsko",
+        drip: "Kap po kap",
+        sprinkler: "Rasprskivanje",
+        pivot: "Pivot",
+        flood: "Gravitacijsko / potapanje",
+        other: "Ostalo",
+      },
+      waterTitle: "Voda",
+      waterUseLabel: "Trenutna potrošnja (m³/ha/sezoni)",
+      waterUsePlaceholder: "Prazno ako je oborinsko ili nepoznato",
+      waterPriceLabel: "Cijena vode (€/m³)",
+      waterHint: "Ova dva polja nisu obavezna. Ona nikada ne mijenjaju dozu: služe isključivo za izračun uštede vode.",
+      resultsTitle: "Rezultati",
+      doseLabel: "Preporučena doza",
+      doseEstimated: "Gustoća procijenjena prema našim referencama",
+      doseFromInput: "Izračun s vrijednošću koju ste unijeli",
+      doseStress: "primijenjena doza za stres",
+      totalLabel: "Ukupna potreba za EVERGREEN®-om",
+      totalTonnesPrefix: "odnosno",
+      waterSavingLabel: "Procijenjena ušteda vode",
+      waterPending: "Za izračun",
+      waterNoConsumption: "Unesite svoju potrošnju kako biste dobili volumen",
+      yieldLabel: "Potencijal proizvodnje",
+      yieldStudy: "Potrebno je detaljno istraživanje",
+      yieldStudyNote: "Kod velikih žitarica i trava samo terensko istraživanje omogućuje ozbiljnu procjenu: odgovor previše ovisi o tehnološkom postupku.",
+      yieldRangeNote: "Raspon svojstven ovoj kulturi, koji tek treba potvrditi pokusima u tijeku.",
+      yieldDefaultNote: "Zadani okvirni raspon, u nedostatku potvrđene reference za ovu kulturu.",
+      to: "do",
+      disclaimer: "Okvirna procjena. Doza ovisi o tlu, klimi, kulturi i stvarnom tehnološkom postupku na parceli. Ovaj alat daje red veličine: ove brojke ni u kojem slučaju ne predstavljaju zajamčenu, ugovornu ni apsolutnu vrijednost.",
+    },
+    nav: {
+      approach: "Naš pristup",
+      technologies: "Tehnologije",
+      trials: "Pokusi",
+      proofs: "Dokazi",
+      network: "Mreža",
+      resources: "Materijali",
+      fieldTests: "Terenski testovi",
+      partners: "Partneri",
+      contact: "Pišite nam",
+      openMenu: "Otvori izbornik",
+      closeMenu: "Zatvori izbornik",
+    },
+    hero: {
+      slogan1: "Uzgajajte više",
+      slogan2: "s manje vode",
+      slogan3: "prirodnim putem",
+      explore: "Istražite",
+      calculatorCta: "Izračunajte uštedu vode",
+      doseCta: "Izračunajte svoju dozu",
+      whereTo1: "Naš pristup",
+      whereTo2: "Tehnologije?",
+    },
+    proofBar: [
+      { figure: "+30 do +100 %", label: "prinosa, i u količini i u kakvoći" },
+      { figure: "−50 do −70 %", label: "potrebe za vodom za navodnjavanje" },
+      { figure: "14", label: "pilot-pokusa u tijeku u 2026." },
+      { figure: "SOHISCERT", label: "i EU Bio, stvarni certifikati" },
+    ],
+    presentation: {
+      eyebrow: "Naš pristup",
+      title1: "Naše četiri tehnologije",
+      title2: "Jedan cilj",
+      title3: "Rast i kakvoća",
+      lede: "Green Solutions razvija i distribuira disruptivne poljoprivredne tehnologije, osmišljene da povećaju produktivnost uz očuvanje, pa i obnovu, prirodnih resursa o kojima ta produktivnost ovisi. Konkretni odgovori, provjereni na terenu, na vodni stres, iscrpljivanje tala, isplativost i sigurnost opskrbe hranom.",
+      tagline: "Sva naša disruptivna rješenja primjenjiva su na sve biljke i kulture, u svim klimama i na svim tipovima tla!",
+      stats: [
+        { num: "30", label: "partnera" },
+        { num: "37", label: "država" },
+        { num: "4", label: "tehnologije pod markom" },
+      ],
+      distinguish: [
+        { num: "01", title: "Certificirano, ne samo najavljeno", text: "SOHISCERT · EU Bio, primjenjivo u ekološkoj poljoprivredi." },
+        { num: "02", title: "Provjereno na terenu", text: "60 država za ECOFERT® · više od 55 država za Water Vital®." },
+        { num: "03", title: "Nula onečišćenja", text: "Potpuno razgradivi polimeri · nikakav toksični ostatak u tlu, zraku ni vodi." },
+        { num: "04", title: "Tehnologije koje se međusobno pojačavaju", text: "Svaka uklanja ograničenje sljedeće. Prodaju se odvojeno, osmišljene su zajedno." },
+      ],
+    },
+    tenirAvancer: {
+      eyebrow: "Što vas dovodi k nama?",
+      title1: "Dva moguća smjera:",
+      title2: "Pokušati preživjeti ili krenuti naprijed.",
+      tabLabel: "Izdržati ili napredovati",
+      tabTenir: "01 · Ne mijenjati ništa",
+      tabAvancer: "02 · Reagirati i dobiti",
+      tenirList: [
+        "Vode za navodnjavanje je sve manje i sve je skuplja",
+        "Tla gube strukturu i plodnost",
+        "Trošak repromaterijala jede maržu",
+        "Propisi o pesticidima postaju sve stroži",
+      ],
+      avancerList: [
+        {
+          text: "Povećati prinose bez računa za vodu: naši hidroretenteri i naša restrukturirana voda smanjuju potrebu za navodnjavanjem za 50 do 70 %, uz zadržavanje, pa i povećanje vaših prinosa.",
+          linkLabel: "Pogledajte EVERGREEN® i ECOSORB®",
+          linkHref: "#retention-eau",
+        },
+        {
+          text: "Zadovoljiti zahtjeve ekološke proizvodnje i certifikacije: ECOFERT® ima certifikate SOHISCERT i EU Bio i već se koristi u 60 država, za najstrože specifikacije bez žrtvovanja prinosa.",
+          linkLabel: "Pogledajte ECOFERT®",
+          linkHref: "#fertilisation",
+        },
+        {
+          text: "Učiniti da obnovljena zemlja donosi prinos: naš agrošumarski program uspostavlja funkcionalni ekosustav za manje od 24 mjeseca, uključujući na pjeskovitim i degradiranim tlima, uz svaku sadnicu opremljenu već pri sadnji.",
+          linkLabel: "Pogledajte agrošumarstvo",
+          linkHref: "#agroforesterie",
+        },
+        {
+          text: "Učiniti pošumljavanje isplativim: Paulownia ALTIFOLIA® doseže 13 do 15 m u šest do osam godina, a njezino se drvo vrednuje oko 550 €/m³, uz isplativost nakon šest godina uzgoja.",
+          linkLabel: "Pogledajte Paulownia ALTIFOLIA®",
+          linkHref: "#paulownia",
+        },
+      ],
+      cta: "Jesu li to vaše brige?",
+    },
+    products: {
+      eyebrow: "Tehnologije",
+      title: "Odgovor na svako ograničenje na polju",
+      lede: "Pet tehnologija pod markom i agrošumarski program koji ih objedinjuje na zemljištima koja treba obnoviti.",
+      moreInfo: "Više informacija",
+      videosHeading: "Na videu",
+      watchVideo: "Video",
+      readMore: "Saznajte više",
+      readLess: "Prikaži manje",
+      items: [
+        {
+          id: "retention-eau",
+          num: "01",
+          kicker: "Zadržati vodu",
+          title: "EVERGREEN® i ECOSORB®",
+          text: "Naši hidroretenteri hvataju kišnicu ili vodu za navodnjavanje i pohranjuju je u obliku gela neposredno uz korijenje, ne mijenjajući joj kakvoću. Trajni spremnik, dostupan biljci bez obzira na tlo i klimu, koji uklanja vodni stres u kritičnim fazama ciklusa.",
+          facts: [
+            "−50 do −70 % vode ovisno o načinu navodnjavanja",
+            "EVERGREEN®: WAC (kapacitet upijanja vode) 300 X, 3 godine u tlu",
+            "ECOSORB®: 300 puta vlastite težine, na bazi kukuruznog škroba, 2 do 3 godine",
+            "Razgrađuje se 20 do 25 % godišnje, bez opasnosti od predoziranja",
+            "Šećerna trska: +25 % udjela šećera (Brix) pri 15 kg/ha",
+          ],
+          more: "EVERGREEN® i ECOSORB® superapsorbirajući su polimeri koji se potpuno biorazgrađuju, bez ostatka u tlu i na biljkama. Upijaju do 300 do 400 puta vlastite težine u vodi i vraćaju je korijenju prema potrebama kulture, ciklus za ciklusom, sve do prirodne razgradnje (20 do 25 % godišnje) u CO₂, vodu i pristupačne dušikove spojeve. Za razliku od hidroretentera na bazi natrija — koji, jednom navlaženi, tvore gustu i slanu masu koja guši korijenje — ili formulacija na bazi akrilamida, zabranjenih u mnogim državama zbog toksičnosti, obje naše reference izrađene su na bazi kalija i primjerene su prehrambenim kulturama. U dodiru s vodom suho zrno se napuni i nabubri: to naizmjenično bubrenje i skupljanje rahli tlo poput gujavice, poboljšava njegovu propusnost i stvara vlažnu mikroklimu pogodnu za mikrofaunu i mikrofloru, pokretače prirodne plodnosti. Otopljena gnojiva zadržavaju se usput umjesto da se ispiru u podzemne vode, što smanjuje onečišćenje i omogućuje bolje vrednovanje svake primjene. U kombinaciji s našim gnojivima ECOFERT®, EVERGREEN® i ECOSORB® tvore cjelovit sustav koji je kod šećerne trske omogućio povećanje udjela šećera (Brix) od 25 % uz samo 15 kg proizvoda po hektaru. Više od 95 % presađenih sadnica primi se uz naše hidroretentere, naspram znatno niže stope u konvencionalnim uvjetima.",
+          detail: {
+            sections: [
+              {
+                h: "Načelo",
+                p: "EVERGREEN® i ECOSORB® superapsorbirajući su polimeri koji se potpuno biorazgrađuju, bez ostatka u tlu i na biljkama. Upijaju do 300 do 400 puta vlastite težine u vodi i vraćaju je korijenju prema potrebama kulture, ciklus za ciklusom, sve do prirodne razgradnje (20 do 25 % godišnje) u CO₂, vodu i pristupačne dušikove spojeve. Za razliku od hidroretentera na bazi natrija — koji, jednom navlaženi, tvore gustu i slanu masu koja guši korijenje — ili formulacija na bazi akrilamida, zabranjenih u mnogim državama zbog toksičnosti, obje naše reference izrađene su na bazi kalija i primjerene su prehrambenim kulturama. U dodiru s vodom suho zrno se napuni i nabubri: to naizmjenično bubrenje i skupljanje rahli tlo poput gujavice, poboljšava njegovu propusnost i stvara vlažnu mikroklimu pogodnu za mikrofaunu i mikrofloru, pokretače prirodne plodnosti. Otopljena gnojiva zadržavaju se usput umjesto da se ispiru u podzemne vode, što smanjuje onečišćenje i omogućuje bolje vrednovanje svake primjene.",
+              },
+              {
+                h: "Mehanizam, potanko",
+                p: "U dodiru s vodom — kišom, navodnjavanjem ili preostalom vlagom tla — suho zrno hidroretentera upija do 300 do 400 puta vlastite težine i pretvara se u gel koji pohranjuje vodu neposredno uz korijenje. Prva tri tjedna uzgoja su ključna: treba održavati uobičajeno navodnjavanje kako bi se zrna potpuno zasitila, a za to se vrijeme korijenje biljaka isprepliće s gelom i usidruje u toj zalihi vode. EVERGREEN® i ECOSORB® ni u kojem slučaju nisu otrovni za kožu; samo njihova sitna granulacija nalaže nošenje maske protiv prašine pri rukovanju. U slučaju slučajnog prosipanja ostatke treba otpuhati komprimiranim zrakom, a ne ispirati vodom, koja bi tlo učinila skliskim.",
+              },
+              {
+                h: "Gdje i kako ih primijeniti",
+                p: "Naši se hidroretenteri primjenjuju i u konvencionalnoj i u ekološkoj poljoprivredi — štoviše, ubrzavaju prijelaz na certificiranu ekološku proizvodnju —, u voćarstvu, rasadničarstvu, uređenju krajobraza i agrošumarstvu. Kod presađenih stabala prima se više od 95 % sadnica: preostali gubici potječu od neodrživih sadnica ili štete od divljači, nikada od vodnog stresa. Golf-tereni i gradske uprave koje ih uvode bilježe uštede na radu oko zalijevanja dovoljne da već u prvoj sezoni pokriju trošak proizvoda. Dovoljno ih je pomiješati sa supstratom za sadnju; podnose dodatak gnojiva, biostimulansa i bakterija, čije djelovanje pojačava stalna prisutnost vode.",
+              },
+            ],
+            gallery: [
+              "Ista kultura, sa i bez hidroretentera: razlika pred vodnim stresom.",
+              "Granule hidroretentera, natopljene vodom, u izravnom dodiru s korijenjem.",
+              "Pakiranje EVERGREEN® i ECOSORB®, spremno za otpremu.",
+            ],
+          },
+        },
+        {
+          id: "fertilisation",
+          num: "02",
+          kicker: "Hraniti bez kemije",
+          title: "Gnojiva ECOFERT®",
+          text: "Gnojivo u mikrodozama aminokiselina, dušika, fosfora i kalija, dobiveno iz obnovljivih izvora. Nije kelatno: ne iscrpljuje tlo, nego ga obogaćuje. Bez ispiranja, bez porasta slanosti ili nitrata, ni u biljci ni u zemlji.",
+          facts: [
+            "Do +100 % proizvodnje, i u količini i u kakvoći",
+            "+60 % prinosa dokumentirano u sahelskom pojasu s ECOSORB®-om",
+            "1 do 4 bočice od 140 ml po hektaru",
+            "Certificirano SOHISCERT i EU Bio, u uporabi u 60 država",
+          ],
+          more: "ECOFERT® je tekuće ekološko gnojivo u mikrodozama, sastavljeno od slobodnih aminokiselina (8 %) i ukupnog dušika (1,73 %), pretežno u organskom obliku (1,66 %), uz pH blizu 9. Njegova formula povezuje lizin, arginin, treonin, glicin, izoleucin i leucin — izravno pristupačne aminokiseline koje prate biljku u njezinim kritičnim fazama (cvatnja, zametanje ploda) a da nikada ne iscrpljuju tlo, za razliku od klasičnih kelatnih gnojiva. Proizvod, s certifikatom SOHISCERT i u skladu s europskom uredbom o ekološkoj proizvodnji (EU 2018/848), koristi se u šezdesetak država i dozira se u količini od 1 do 4 bočice od 140 ml po hektaru — dvije primjene u pravilu su dovoljne za voćke, agrume i povrće (jedna u tlo prije cvatnje ili sjetve, druga folijarno sredinom vegetacije); u tropskim područjima može se ići do jedne bočice svaka tri mjeseca. Bez osobite opasnosti za korisnika i okoliš, negoriv, bez posebnih uvjeta prijevoza i skladištenja, ECOFERT® je u kombinaciji s našim hidroretenterima EVERGREEN® i ECOSORB® omogućio dokumentiranje do +100 % proizvodnje u sahelskom pojasu, uz na terenu izmjerene dobitke prinosa od +60 %.",
+          detail: {
+            sections: [
+              {
+                h: "Načelo",
+                p: "ECOFERT® je tekuće ekološko gnojivo u mikrodozama, sastavljeno od slobodnih aminokiselina (8 %) i ukupnog dušika (1,73 %), pretežno u organskom obliku (1,66 %), uz pH blizu 9. Njegova formula povezuje lizin, arginin, treonin, glicin, izoleucin i leucin — izravno pristupačne aminokiseline koje prate biljku u njezinim kritičnim fazama (cvatnja, zametanje ploda) a da nikada ne iscrpljuju tlo, za razliku od klasičnih kelatnih gnojiva. Proizvod, s certifikatom SOHISCERT i u skladu s europskom uredbom o ekološkoj proizvodnji (EU 2018/848), koristi se u šezdesetak država.",
+              },
+              {
+                h: "Formula koja nikada ne iscrpljuje tlo",
+                p: "Za razliku od klasičnih kelatnih gnojiva, čija dugotrajna uporaba osiromašuje strukturu tla, ECOFERT® djeluje u mikrodozama izravno pristupačnih aminokiselina — bez ispiranja, bez porasta slanosti ili nitrata, ni u biljci ni u zemlji. Proizvod je negoriv, bez osobite opasnosti za korisnika (u najgorem slučaju blaga nadraženost pri vrlo dugom dodiru s kožom) i ne predstavlja nikakav problem u prijevozu, skladištenju ni otpremi, uključujući zračnim putem prema normama IATA i ICAO.",
+              },
+              {
+                h: "Jednostavan protokol, prilagođen svakoj kulturi",
+                p: "Primjena se obavlja u tlo ili folijarno, u pravilu dvaput po ciklusu: jednom prije cvatnje ili sjetve, drugi put sredinom vegetacije. Za masline su dovoljne dvije bočice na 90 do 100 stabala, jedna zimi i jedna u rujnu ili listopadu; u tropskom pojasu jedna bočica svaka tri mjeseca odgovara većini kultura. U kombinaciji s hidroretenterima EVERGREEN® i ECOSORB®, ECOFERT® umnožava svoje učinke: do +100 % dokumentirane proizvodnje u sahelskom pojasu.",
+              },
+            ],
+            gallery: [
+              "Uz ECOFERT® korijenov se sustav razvija u dubinu već od prvih faza.",
+              "Ratarstvo: ishrana u mikrodozama, bez ispiranja u podzemne vode.",
+              "Voćnjaci i voćarstvo: dovoljne su dvije primjene godišnje.",
+            ],
+          },
+        },
+        {
+          id: "protection",
+          num: "03",
+          kicker: "Zaštititi bez ostataka",
+          title: "NAPEMA®",
+          text: "Natural Pest Management: suzbijanje štetnika bez sintetske kemije i bez aktivne tvari, s preventivnim i kurativnim učinkom, folijarnim i korijenskim prskanjem. Rješenja se izrađuju po mjeri za točno određen problem.",
+          facts: [
+            "Nikakav ostatak u tlu, biljci ni zraku",
+            "Oprašivači i korisni organizmi ostaju sačuvani",
+            "Štitasta uš na smokvi, HLB agruma, nematode",
+          ],
+          more: "NAPEMA® (Natural Pest Management) disruptivan je pristup zaštiti bilja: ni sintetska molekula ni klasična biološka borba pomoću korisnih kukaca — metoda priznata po svojoj ekološkoj vrijednosti, ali ograničene učinkovitosti jer predatori nisu uvijek prisutni u pravom trenutku ni u dovoljnom broju, a bolesti gotovo nikad ne uspijeva suzbiti. NAPEMA® djeluje folijarnim i korijenskim prskanjem, preventivno i kurativno, protiv bolesti, nametnika, gljivica i štetnika, bez ostatka u tlu, u biljci i u zraku. Njegova je prava snaga u izradi po mjeri: svako je rješenje formulirano za točno određen problem, jednokratan ili ponavljajući — štitasta uš na indijskoj smokvi, citrus greening (HLB) koji ugrožava agrume ili nematode koje napadaju rajčicu i šećernu trsku primjeri su uspješno riješenih slučajeva. Rezultat je zaštita koja čuva korisnu faunu i floru — uključujući oprašivače i korisne organizme — bez remećenja prirodnog ciklusa plodnosti tla, uz trošak koji ostaje pristupačan i koji štiti isplativost uzgoja umjesto da je opterećuje.",
+          detail: {
+            sections: [
+              {
+                h: "Načelo",
+                p: "NAPEMA® (Natural Pest Management) disruptivan je pristup zaštiti bilja: ni sintetska molekula ni klasična biološka borba pomoću korisnih kukaca. NAPEMA® djeluje folijarnim i korijenskim prskanjem, preventivno i kurativno, protiv bolesti, nametnika, gljivica i štetnika, bez ostatka u tlu, u biljci i u zraku. Njegova je prava snaga u izradi po mjeri: svako je rješenje formulirano za točno određen problem, jednokratan ili ponavljajući — štitasta uš na indijskoj smokvi, citrus greening (HLB) koji ugrožava agrume ili nematode koje napadaju rajčicu i šećernu trsku primjeri su uspješno riješenih slučajeva.",
+              },
+              {
+                h: "Zašto NAPEMA® nadilazi klasičnu biološku borbu",
+                p: "Biološka borba pomoću predatorskih kukaca ili parazitoida ekološka je, ali ostaje neizvjesna: korisni organizmi nisu uvijek prisutni u pravom trenutku ni u dovoljnom broju, a ta metoda gotovo nikad ne omogućuje suzbijanje biljnih bolesti. NAPEMA® se primjenjuje izravno folijarnim i korijenskim prskanjem, s učinkom koji je istodobno preventivan — jača prirodnu obranu biljke prije pojave simptoma — i kurativan, jer brzo uklanja već prisutne uzročnike i vraća snagu napadnutoj biljci.",
+              },
+              {
+                h: "Rezultati vidljivi za nekoliko tjedana",
+                p: "Na indijskoj smokvi jako napadnutoj štitastim ušima primjena NAPEMA®-a prema našim preporukama vidljivo uklanja nametnike u četiri tjedna: biljka kreće ponovno, bez traga štitastih uši, uz zdrav novi rast. Isto načelo preventivnog i kurativnog djelovanja primjenjuje se na citrus greening (HLB) agruma te na nematode rajčice i šećerne trske — svaki put uz rješenje preformulirano za točno određen problem zatečen na terenu. Rezultat čuva korisnu faunu i floru, uključujući oprašivače i korisne organizme.",
+              },
+            ],
+            gallery: [
+              "Zdrava kultura, zaštićena bez ijednog ostatka u tlu.",
+              "Primjena prskanjem, u vegetaciji.",
+              "Oprašivači, potpuno sačuvani zahvaljujući NAPEMA®-u.",
+            ],
+          },
+        },
+        {
+          id: "eau-restructuree",
+          num: "04",
+          kicker: "Restrukturirati vodu",
+          title: "Water Vital®",
+          text: "Restrukturiranje molekularnom rezonancijom pretvara „mrtvu” vodu, razmještenu na atomskoj razini, u živu vodu koja vraća svoja prirodna svojstva. Sustav radi bez energije, bez održavanja i bez potrošnog materijala.",
+          facts: [
+            "−30 % vode, učinak odmah",
+            "Do −70 % u kombinaciji s hidroretenterima",
+            "Manje korozije i kamenca, prihvaćeno u 55 država",
+          ],
+          more: "Water Vital® restrukturira vodu molekularnom rezonancijom: „mrtva” voda, razmještena na atomskoj razini nakon prolaska kroz cjevovode ili bušotine, vraća strukturu blisku onoj prirodne vode. Sustav je čisto fizikalan — bez energije, bez održavanja, bez potrošnog materijala i kemikalija — i ugrađuje se izravno na postojeće mreže, na izlazu iz crpki. Na terenu, u Grupi EL HILAL (Sidi Moussa, Tipaza, Alžir), Water Vital® odabran je za navodnjavanje 350 hektara voćnjaka (smokve, jabuke, breskve, šipci) sustavom kap po kap, koje napaja bazen dimenzija 200 x 100 x 12 metara i više bušotina, preko tri crpna agregata protoka od 42 do 180 m³/h. Rješenje je ugrađeno izravno na izlaze crpki, bez izmjene postojeće mreže za navodnjavanje. Izmjereni učinci: do −30 % potrošnje vode već od puštanja u rad i do −70 % kada se Water Vital® kombinira s našim hidroretenterima EVERGREEN® ili ECOSORB®; manje korozije i kamenca u cjevovodima i na sapnicama. Tehnologija je danas prihvaćena u 55 država.",
+          detail: {
+            sections: [
+              {
+                h: "Načelo",
+                p: "Water Vital® restrukturira vodu molekularnom rezonancijom: „mrtva” voda, razmještena na atomskoj razini nakon prolaska kroz cjevovode ili bušotine, vraća strukturu blisku onoj prirodne vode. Sustav je čisto fizikalan — bez energije, bez održavanja, bez potrošnog materijala i kemikalija — i ugrađuje se izravno na postojeće mreže, na izlazu iz crpki. Izmjereni učinci: do −30 % potrošnje vode već od puštanja u rad i do −70 % kada se Water Vital® kombinira s našim hidroretenterima EVERGREEN® ili ECOSORB®; manje korozije i kamenca u cjevovodima i na sapnicama. Tehnologija je danas prihvaćena u 55 država.",
+              },
+              {
+                h: "Molekularna rezonancija, objašnjeno",
+                p: "Voda koja je dugo kružila cjevovodima, bušotinom ili mrežom za navodnjavanje gubi svoju prirodnu molekularnu strukturu: postaje „mrtva” voda, razmještena na atomskoj razini. Water Vital® tu strukturu obnavlja rezonancijom, bez dodane energije, bez održavanja i bez potrošnog materijala ili kemikalija — čisto fizikalan sustav koji se priključuje izravno na postojeće cijevi, na izlazu iz crpki, bez izmjene mreže.",
+              },
+              {
+                h: "Studija slučaja: Grupa EL HILAL, Alžir",
+                p: "U kolovozu 2025. naš je tim posjetio Sidi Moussu u vilajetu Tipaza, tvrtku SARL EL HILAL Développement et Agriculture Industrielle. Lokacija: oko 350 hektara voćnjaka (smokve, jabuke, breskve, šipci), već opremljenih sustavom kap po kap, koje napaja bazen za navodnjavanje dimenzija 200 x 100 x 12 metara i više bušotina. Tri crpna agregata, protoka od 42 do 180 m³/h, navodnjavaju imanje otprilike četiri sata dnevno. Water Vital® ugrađen je izravno na tri izlaza crpki. Rezultat: do −30 % potrošnje vode već od puštanja u rad i do −70 % u kombinaciji s našim hidroretenterima.",
+              },
+            ],
+            gallery: [
+              "Bazen za navodnjavanje Grupe EL HILAL, 200 x 100 x 12 metara, Sidi Moussa (Alžir).",
+              "Crpna i filtracijska stanica, gdje je ugrađen Water Vital®.",
+              "Voćnjak navodnjavan kap po kap, tijekom posjeta u kolovozu 2025.",
+            ],
+          },
+        },
+        {
+          id: "paulownia",
+          num: "05",
+          kicker: "Saditi da traje",
+          title: "Paulownia ALTIFOLIA®",
+          text: "Najbrže rastuće stablo na svijetu: 13 do 15 m u šest do osam godina, gotovo 3 m godišnje. U kombinaciji s našim hidroretenterom EVERGREEN® smanjuje potrebu za vodom za navodnjavanje za 50 %. Sterilne i neinvazivne hibridne sorte, uz praćenje od mlade sadnice do prodaje drva.",
+          facts: [
+            "400 do 500 stabala/ha, vrednovanih po 400/450 € po m³",
+            "Isplativost nakon šest godina uzgoja",
+            "Podnosi od −25 °C do +45 °C, gori tek na 426 °C",
+            "400 do 700 kg meda po hektaru, uz ugljične kredite",
+          ],
+          more: "Paulownia ALTIFOLIA® najbrže je rastuće stablo na svijetu: u dobrim uvjetima doseže 13 do 15 metara u šest do osam godina, otprilike 3 metra godišnje, s listovima koji mogu premašiti 80 cm duljine. Ujedno je jedno od najučinkovitijih stabala u vezivanju CO₂ i vraćanju kisika fotosintezom. Naša sorta ALTIFOLIA®, nastala križanjem vrsta Paulownia Elongata i Paulownia Fortunei, odabrana je za topla područja: u kratkom vremenu razvija deblo velikog promjera i treba, u godišnjem prosjeku, samo 2 litre vode dnevno — naspram 25 litara za druge sorte na tržištu (5 do 7 litara u razdoblju ekstremnih vrućina). Uz 100 g ECOSORB®-a po sadnici pri sadnji, potrebno navodnjavanje pada za dodatnih 50 %, a da stablo nikada nije izloženo vodnom stresu. Njezin dubok korijenov sustav obogaćuje tlo dušikom i sprječava eroziju; otpornost na nametnike i bolesti prirodno je visoka, a drvo se zapali tek na 426 °C, što ga čini i protupožarnom preprekom. Sadnice (25 do 30 cm pri isporuci, u posudi, certificirano zdrave, uz jamstvo u slučaju uginuća) dopremaju se zrakoplovom u roku od 6 tjedana, a zatim moraju provesti 6 tjedana u stakleniku prije sadnje uz navodnjavanje kap po kap. Prva sječa dolazi na kraju šeste godine, uz drvo vrednovano po 400/450 € po m³; tu sortu i sami sadimo već nekoliko godina, osobito u Španjolskoj.",
+          detail: {
+            sections: [
+              {
+                h: "Načelo",
+                p: "Paulownia ALTIFOLIA® najbrže je rastuće stablo na svijetu: u dobrim uvjetima doseže 13 do 15 metara u šest do osam godina, otprilike 3 metra godišnje, s listovima koji mogu premašiti 80 cm duljine. Ujedno je jedno od najučinkovitijih stabala u vezivanju CO₂ i vraćanju kisika fotosintezom. Naša sorta ALTIFOLIA®, nastala križanjem vrsta Paulownia Elongata i Paulownia Fortunei, odabrana je za topla područja: u kratkom vremenu razvija deblo velikog promjera i treba, u godišnjem prosjeku, samo 2 litre vode dnevno — naspram 25 litara za druge sorte na tržištu (5 do 7 litara u razdoblju ekstremnih vrućina). Uz 100 g ECOSORB®-a po sadnici pri sadnji, potrebno navodnjavanje pada za dodatnih 50 %, a da stablo nikada nije izloženo vodnom stresu.",
+              },
+              {
+                h: "Odabir osmišljen za topla područja",
+                p: "Našu sortu ALTIFOLIA® odlikuju ujednačen i zbijen rast, uska krošnja te debeli i mesnati listovi; ravnost godišnjih izbojaka omogućuje da se već od druge godine izostavi rez za oblikovanje. Vrlo otporna na nametnike i bolesti zahvaljujući dubokom korijenovu sustavu, ujedno obogaćuje tlo dušikom i sprječava eroziju. Drvo se zapali tek na 426 °C, što ga čini i djelotvornom protupožarnom preprekom.",
+              },
+              {
+                h: "Od narudžbe do prve žetve",
+                p: "Stabla se isporučuju kao sadnice od 25 do 30 cm, u posudi, zrakoplovom, u prosječnom roku od šest tjedana, uz najmanju narudžbu od 1000 komada. Svaka je sadnica fitosanitarnim certifikatom potvrđena kao zdrava i pod jamstvom: stablo koje bi uginulo tijekom rasta automatski se zamjenjuje. Po primitku sadnice provode šest tjedana u stakleniku prije sadnje, uz navodnjavanje kap po kap i zaštitu od divljači. Ritam rasta, otprilike tri metra godišnje, omogućuje prvu sječu već na kraju šeste godine, uz drvo vrednovano po 400/450 € po m³.",
+              },
+            ],
+            gallery: [
+              "Održavanje nasada Paulownia ALTIFOLIA® u Španjolskoj.",
+              "Od sadnje do žetve: sedam godina rasta, do 20 metara.",
+              "Cvatnja paulovnije, dragocjena i za pčelare.",
+            ],
+          },
+        },
+        {
+          id: "agroforesterie",
+          num: "06",
+          kicker: "Primjena · obnoviti zemlju",
+          title: "Agrošumarstvo i pošumljavanje",
+          text: "Agrošumarski ekosustavi uspostavljeni za manje od 24 mjeseca, za programe pošumljavanja i borbu protiv dezertifikacije. Svaka sadnica kreće sa svojim hidroretenterom i svojom dozom gnojiva, kako bi se primila i na pjeskovitim ili degradiranim tlima.",
+          facts: [
+            "Funkcionalan ekosustav za manje od 24 mjeseca",
+            "Svaka sadnica opremljena već pri sadnji",
+            "Stabilizacija pjeskovitih i degradiranih tala",
+          ],
+          more: "Agrošumarstvo je područje primjene u kojem se sve naše tehnologije spajaju. Svaki program pošumljavanja ili obnove degradiranih zemljišta povezuje Paulownia ALTIFOLIA® ili domaće vrste, naše hidroretentere EVERGREEN®/ECOSORB® unesene već pri sadnji i naša gnojiva ECOFERT® koja prate ukorjenjivanje — dovoljno da se za manje od 24 mjeseca uspostavi funkcionalan agrošumarski ekosustav, uključujući na pjeskovitim ili jako degradiranim tlima na kojima konvencionalno voćarstvo ne uspijeva. Svaka sadnica kreće opremljena svojom dozom hidroretentera, što uklanja opasnost od vodnog stresa tijekom ključnog razdoblja primanja i podiže stopu preživljavanja iznad 95 %. Osim drva i prihoda koje ono s vremenom donosi, takav program trajno stabilizira tla protiv erozije i dezertifikacije, obnavlja podzemnu i nadzemnu bioraznolikost te otvara pristup ugljičnim kreditima i proizvodnji meda (do 400-700 kg po hektaru uz paulovniju) koji diversificiraju prihode uključenih gospodarstava.",
+          detail: {
+            sections: [
+              {
+                h: "Načelo",
+                p: "Agrošumarstvo je područje primjene u kojem se sve naše tehnologije spajaju. Svaki program pošumljavanja ili obnove degradiranih zemljišta povezuje Paulownia ALTIFOLIA® ili domaće vrste, naše hidroretentere EVERGREEN®/ECOSORB® unesene već pri sadnji i naša gnojiva ECOFERT® koja prate ukorjenjivanje — dovoljno da se za manje od 24 mjeseca uspostavi funkcionalan agrošumarski ekosustav, uključujući na pjeskovitim ili jako degradiranim tlima na kojima konvencionalno voćarstvo ne uspijeva.",
+              },
+              {
+                h: "Metoda, a ne samo nasad",
+                p: "Obnova degradiranog zemljišta ne svodi se na sadnju stabala: bez potpore, primanje ne uspijeva na pjeskovitim, siromašnim tlima ili onima izloženima teškom vodnom stresu. Naša metoda dosljedno povezuje tri tehnološka elementa već pri sadnji — prikladnu vrstu, hidroretenter koji uklanja opasnost od vodnog stresa tijekom ključnog razdoblja primanja i gnojivo koje prati ukorjenjivanje — kako bi stopa preživljavanja premašila 95 %.",
+              },
+              {
+                h: "Više od drva: bioraznolikost i raznovrsni prihodi",
+                p: "Dobro vođen agrošumarski program obnavlja mikrofaunu i mikrofloru tla, trajno stabilizira pjeskovita i degradirana tla protiv erozije i može otvoriti pristup ugljičnim kreditima. Neke vrste, poput paulovnije, uz to omogućuju znatnu proizvodnju meda — do 400 do 700 kg po hektaru — koja diversificira prihode gospodarstva tijekom godina koje prethode prvoj sječi drva.",
+              },
+            ],
+            gallery: [
+              "Sadnja: svaka sadnica kreće opremljena svojim hidroretenterom.",
+              "Uređen agrošumarski ekosustav, spreman za dvadeset godina proizvodnje.",
+              "Pogled iz zraka na program obnove degradiranih tala.",
+            ],
+          },
+        },
+      ],
+    },
+    essais: {
+      eyebrow: "Što je trenutačno u tijeku",
+      title: "Četrnaest pilot-pokusa u tijeku",
+      lede: "Agroindustrijske grupacije, zadruge i dva američka sveučilišta trenutačno provode pokuse s našim tehnologijama, na vlastitim parcelama i vlastitim kulturama. Evo kojih, u rujnu 2026.",
+      pilots: [
+        { org: "Trois Rivières", place: "Martinik", crop: "Šećerna trska", tech: ["EVERGREEN®", "Water Vital®"] },
+        { org: "Sveučilište u Gainesvilleu", place: "Florida, SAD", crop: "Nasad crvenih javora", tech: ["EVERGREEN®"] },
+        { org: "Sveučilište u Portlandu", place: "Oregon, SAD", crop: "Nasad duglazije", tech: ["EVERGREEN®"] },
+        { org: "AXE CAPITAL FOREST", place: "Ujedinjeno Kraljevstvo · Toledo, Španjolska", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Grupa ZARROUK", place: "Tunis", crop: "Uzgoj rajčice", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "FICILIA", place: "Korzika, Francuska", crop: "Masline i lijeska", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "Institut Moreau-Daverne", place: "Francuska", crop: "Povrtlarstvo", tech: ["ECOSORB®", "ECOFERT®"] },
+        { org: "BEEN AGRO", place: "Gvineja Conakry", crop: "Kukuruz i kikiriki", tech: ["ECOSORB®", "ECOFERT®"] },
+        { org: "Grupa GOUDARAS", place: "Grčka", crop: "Nasad pitomog kestena", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "AGRO COMPLEX", place: "Poljska", crop: "Kukuruz i krumpir", tech: ["EVERGREEN®"] },
+        { org: "Institut CEHPAPE", place: "Haiti", crop: "Povrtlarstvo / banana plantain / riža", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
+        { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Travnjak Phenix", tech: ["EVERGREEN®"] },
+        { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Ekološke klementine (sorta Afourer), paulovnija", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
+        { org: "ARAFA Cie", place: "Egipat", crop: "Kukuruz / djetelina / maslina", tech: ["EVERGREEN®", "ECOFERT®"] },
+      ],
+    },
+    objections: {
+      eyebrow: "Što nas prvo pitaju",
+      title: "Šest pitanja koja dolaze prije narudžbe",
+      lede: "To su prigovori koje čujemo na svakom prvom sastanku.\nEvo odgovora i dokumenata koji ih potkrepljuju.",
+      items: [
+        {
+          q: "„Hidroretenter je poliakrilamid. Nije li to opasno?”",
+          a: "ECOSORB® je na bazi kukuruznog škroba, EVERGREEN® na bazi kalija — bez natrija, bez slobodnog akrilamida. Laboratorij Polymex, s certifikatom ISO 9001, odredio je akrilamid u ECOSORB®-u metodama UPLC/TOF-MS, pirolizom GC-MS i infracrvenom spektroskopijom: udio niži od 3,0 µg/g, ispod granice kvantifikacije metode. Cjelovito je izvješće dostupno za preuzimanje.",
+          proofLabel: "Analiza akrilamida — Polymex, prosinac 2024.",
+          proofHref: "/documents/analyse-acrylamide-ecosorb-polymex-2024.pdf",
+        },
+        {
+          q: "„A tvari koje izazivaju zabrinutost u smislu REACH-a?”",
+          a: "EVERGREEN® je podvrgnut SGS-ovu screeningu 233 posebno zabrinjavajuće tvari s popisa kandidata Europske agencije za kemikalije. Rezultat: sve ≤ 0,1 % masenog udjela, što je zakonski prag.",
+          proofLabel: "Screening REACH / SVHC — SGS, lipanj 2023.",
+          proofHref: "/documents/screening-reach-svhc-evergreen-sgs-2023.pdf",
+        },
+        {
+          q: "„Što ostaje u mojem tlu nakon nekoliko godina?”",
+          a: "Polimer se postupno razgrađuje, 20 do 25 % godišnje, u CO₂, vodu i dušikove spojeve koje biljke koriste kao hranjiva. Korisno djelovanje traje 2 do 3 godine za ECOSORB® i 3 do 4 godine za EVERGREEN®. Nema nakupljanja ni opasnosti od predoziranja.",
+          proofLabel: null,
+          proofHref: null,
+        },
+        {
+          q: "„Hidrogelovi koje sam isprobao ugušili su mi sadnice.”",
+          a: "To je mana proizvoda na bazi natrija: jednom navlaženi tvore masu koja guši biljku. Oni na bazi akrilamida dopušteni su, ondje gdje uopće jesu, samo za neprehrambene kulture. Obje naše formulacije na bazi su kalija, primjerene prehrambenim kulturama i mikrofauni tla.",
+          proofLabel: null,
+          proofHref: null,
+        },
+        {
+          q: "„Djeluje li to na mojem tlu i mojoj kulturi?”",
+          a: "Pravilo doziranja svugdje je isto: 3 grama po litri korisne zemlje. Pokusi u tijeku obuhvaćaju kukuruz, krumpir, šećernu trsku, rajčicu, maslinu, lijesku, kikiriki, pitomi kesten, travnjak, crveni javor i duglaziju, u klimama od Poljske do Gvineje. Recite nam kakva je vaša parcela, a mi ćemo vam reći što je već učinjeno u usporedivoj situaciji.",
+          proofLabel: null,
+          proofHref: null,
+        },
+        {
+          q: "„Govorite o ekološkoj proizvodnji. Tko to certificira?”",
+          a: "SOHISCERT, tijelo za kontrolu i certifikaciju, za repromaterijal primjenjiv u ekološkoj biljnoj proizvodnji u skladu s uredbama (EZ) 2018/848 i (EU) 2021/1165. Certifikat vrijedi do 4. rujna 2027.",
+          proofLabel: "Certifikat SOHISCERT — vrijedi do 2027.",
+          proofHref: "/documents/certificat-bio-sohiscert.pdf",
+        },
+      ],
+    },
+    techChain: {
+      eyebrow: "Na putu",
+      title: "Osmišljene da se međusobno pojačavaju",
+      lede: "Pet se tehnologija prodaje odvojeno, ali su osmišljene da se međusobno pojačavaju. Svaka uklanja ograničenje na kojem bi se sljedeća zaustavila.",
+      tagline: "Sve ponuđene tehnologije ekološki su odgovorne, održive, učinkovite i isplative",
+      steps: [
+        "Pohraniti vodu u tlu",
+        "Restrukturirati vodu za navodnjavanje",
+        "Hraniti certificiranim repromaterijalom",
+        "Zaštititi bez kemijskih pesticida",
+        "Saditi ondje gdje zemlju treba obnoviti",
+        "Svaka sadnica kreće sa svojim retenterom i svojom dozom",
+      ],
+    },
+    ctaBand: {
+      eyebrow: "Prvi razgovor ni na što ne obvezuje",
+      title: "Recite nam svoju kulturu, svoju vodu, svoje tlo.",
+      text: "Javljamo vam se s kombinacijom tehnologija koja odgovara vašoj parceli, s dozama i s pokusima već provedenima u usporedivim situacijama.",
+      cta1: "Razgovarajte s agronomom",
+      cta2: "Pogledajte tehničke materijale",
+    },
+    reseau: {
+      eyebrow: "Oni rade s nama",
+      title: "Mreža u 37 država",
+      lede: "Proizvođači, zadruge, stručnjaci za obradu vode, sveučilišta i istraživački instituti, prisutni na pet kontinenata.",
+      mapAriaLabel: "Karta mreže Green Solutions u 37 država",
+    },
+    countryStudies: {
+      eyebrow: "Pristup po državama",
+      title: "Studije osmišljene za svako tržište",
+      lede: "Poljoprivredno gospodarstvo, proizvodni lanci, potencijal prinosa: naši timovi pripremaju posebnu studiju za svaku državu u kojoj se pojavljujemo.",
+      backToSite: "Povratak na stranicu",
+      callout: "Pogledajte studiju: pritisnite gumb ispod zastave",
+      notCoveredTitle: "Vaša država još nije pokrivena?",
+      notCoveredBody: "Tražimo distribucijske partnere u više područja. Jasan okvir, tehnička podrška i asortiman već provjeren u više od šezdeset država.",
+      items: [
+        { country: "Obala Bjelokosti", href: "/documents/countries/cote-divoire.pdf" },
+        { country: "Kongo", href: "/documents/countries/congo.pdf" },
+        { country: "Gana", href: "/documents/countries/ghana.pdf" },
+        { country: "Gvineja Conakry", href: "/documents/countries/guinee-conakry.pdf" },
+        { country: "Maroko", href: "/documents/countries/maroc.pdf" },
+        { country: "Alžir", href: "/documents/countries/algerie.pdf" },
+        { country: "Južnoafrička Republika", href: "/documents/countries/afrique-du-sud.pdf" },
+        { country: "Gabon", href: "/documents/countries/gabon.pdf" },
+        { country: "Egipat", href: "/documents/countries/egypte.pdf" },
+        { country: "Jordan", href: "/documents/countries/jordanie.pdf" },
+        { country: "Haiti", href: "/documents/countries/haiti.pdf" },
+        { country: "Sjedinjene Američke Države", href: "/documents/countries/usa.pdf" },
+        { country: "Saudijska Arabija", href: "/documents/countries/arabie-saoudite.pdf" },
+        { country: "Kamerun", href: "/documents/countries/cameroun.pdf" },
+        { country: "Kuvajt", href: "/documents/countries/koweit.pdf" },
+        { country: "Oman", href: "/documents/countries/oman.pdf" },
+        { country: "Senegal", href: "/documents/countries/senegal.pdf" },
+        { country: "Tunis", href: "/documents/countries/tunisie.pdf" },
+        { country: "Južni Sudan", href: "/documents/countries/soudan-sud.pdf" },
+        { country: "Španjolska", href: "/documents/countries/espagne.pdf" },
+        { country: "Grčka", href: "/documents/countries/grece.pdf" },
+        { country: "Čile", href: "/documents/countries/chili.pdf" },
+        { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "Hrvatska", href: "/documents/countries/croatie.pdf" },
+      ],
+    },
+    fieldTests: {
+      eyebrow: "Terenski dokazi",
+      title: "Testovi i izvješća",
+      lede: "Izvješća neovisnih i internih pokusa provedenih na našim tehnologijama, država po država.",
+      backToSite: "Povratak na stranicu",
+      items: [
+        { title: "Datulje — Ujedinjeni Arapski Emirati", meta: "ICBA · studeni 2021.", href: "/documents/field-tests/palmiers-emirats-uae-icba-2021.pdf", country: "emirats" },
+        { title: "Lubenice — Meksiko", meta: "Terenski pokus · 2023.", href: "/documents/field-tests/pasteques-mexique-2023.pdf", country: "mexique" },
+        { title: "Pilot-pokus s hidrogelom — Florida", meta: "Klein University of Florida", href: "/documents/field-tests/hydrogel-floride-klein-university.pdf", country: "etats-unis" },
+        { title: "AfriKelp — vanjsko izvješće", meta: "Neovisna ocjena", href: "/documents/field-tests/afrikelp-rapport-externe.pdf", country: "afrique-du-sud" },
+        { title: "Pokus s hidrogelom — Oregon, SAD", meta: "2025.", href: "/documents/field-tests/hydrogel-oregon-2025.pdf", country: "etats-unis" },
+        { title: "Strateška bilješka — Perzijski zaljev", meta: "2026.", href: "/documents/field-tests/hydrogel-golfe-persique-2026.pdf", country: "emirats" },
+        { title: "Kukuruz — Turska", meta: "TIGEM", href: "/documents/field-tests/mais-turquie-tigem.pdf", country: "turquie" },
+        { title: "Šećerna trska — Java, Indonezija", meta: "2024.", href: "/documents/field-tests/canne-a-sucre-java-indonesie-2024.pdf", country: "indonesie" },
+        { title: "Soja — superapsorbirajući hidroretenter", meta: "Usporedni pokus", href: "/documents/field-tests/soja-super-absorbant.pdf", country: "chine" },
+        { title: "Krumpir — Južnoafrička Republika", meta: "2025.", href: "/documents/field-tests/pomme-de-terre-afrique-du-sud-2025.pdf", country: "afrique-du-sud" },
+        { title: "Pamuk — vodni stres, Turska", meta: "Terenski pokus", href: "/documents/field-tests/coton-stress-hydrique-turquie.pdf", country: "turquie" },
+      ],
+    },
+    partnersPage: {
+      eyebrow: "Ekosustav",
+      title: "Naši partneri",
+      lede: "Proizvođači, istraživački instituti, distributeri i organizacije koje s nama grade ovu mrežu.",
+      hint: "Kliknite na logotipe za pregled internetskih stranica.",
+    },
+    team: {
+      eyebrow: "Tvrtka",
+      title: "Uprava",
+      tagline: "Spoj iskustva i stručnosti!",
+      expertsEyebrow: "Stručnjaci i referenti",
+      direction: [
+        { name: "Michel-Paul Correa", role: "Glavni direktor" },
+        { name: "Jean-Michel Foucher", role: "Tehnički direktor" },
+        { name: "Gabriel Bonnat", role: "Direktor strategije" },
+        { name: "Franck Petain", role: "Financijski direktor" },
+      ],
+      experts: [
+        { name: "Gilles Martin-Peulet", role: "Stručnjak za tla i bilje · 50+ država" },
+        { name: "Christian Carnavalet", role: "Institut Moreau-Daverne · French Method" },
+        { name: "Prof. Nicolas Marmier", role: "Profesor i istraživač u području okoliša" },
+        { name: "René Munya", role: "Predsjednik, Afrinest Farm · Južnoafrička Republika" },
+        { name: "Chokri Bayoudh", role: "CEO, Greenfield Advisors · Tunis" },
+        { name: "Prof. Mohamed Hajlaoui", role: "Profesor, INAT Tunis · Direktor istraživanja" },
+        { name: "Jean-Guy Ongono", role: "Kamerun · CEMAC i Afrika" },
+        { name: "Lionel Lhommet", role: "Perzijski zaljev" },
+        { name: "Ken Arian", role: "Indijski ocean i Afrika" },
+        { name: "Ahmed Elashrry", role: "Egipat i Jordan" },
+        { name: "Alfrédo Curina", role: "Italija · Stručnjak za duhan" },
+        { name: "Jean-Camille Bissereth", role: "Predsjednik, CEHPAPE · Haiti i Karibi" },
+        { name: "Daniel Baloche", role: "Sjedinjene Američke Države" },
+        { name: "Me Yves Haddad", role: "Međunarodni odvjetnik" },
+        { name: "David James", role: "Međunarodni stručnjak za paulovniju · više od 20 godina iskustva" },
+      ],
+    },
+    statement: {
+      eyebrow: "Uspjeh nije uvijek ono što se vidi",
+      title: "Ono bitno odvija se pod zemljom.",
+      text: "Ono o čemu ovisi žetva zbiva se izvan vidokruga: voda koju tlo zna zadržati, život koji još nosi, ostaci prethodne sezone. Naših pet tehnologija radi upravo na tom sloju, onome koji nitko ne fotografira.",
+      tag: "Ondje mi radimo.",
+    },
+    contact: {
+      eyebrow: "Kontaktirajte nas",
+      titles: [
+        "Razgovarajmo o vašoj zemlji",
+        "Razgovarajmo o vašim nasadima",
+        "Razgovarajmo o uštedama",
+        "Razgovarajmo o učinkovitosti",
+        "Razgovarajmo o dobiti",
+      ],
+      lede: "Bez obzira na kulturu, klimu i veličinu parcele, prvi je korak uvijek isti: razumjeti tlo koje već imate. Prvi razgovor ni na što ne obvezuje.",
+      labelEmail: "E-pošta",
+      labelAddress: "Adresa",
+      successTitle: "Poruka poslana.",
+      successText: "Hvala, javljamo vam se ubrzo. Za hitne slučajeve pišite izravno na",
+      honeypotLabel: "Ne ispunjavati",
+      formName: "Ime",
+      formStructure: "Tvrtka",
+      formEmail: "E-pošta",
+      formMessage: "Vaša poruka",
+      sending: "Slanje…",
+      send: "Pošalji",
+      errorDefault: "Slanje nije uspjelo. Pokušajte ponovno.",
+      errorNetwork: "Poslužitelj nije dostupan. Provjerite vezu i pokušajte ponovno.",
+    },
+    resources: {
+      eyebrow: "Želite pogledati izbliza?",
+      title: "Nekoliko materijala za ponijeti prije bilo kakve odluke",
+      docsEyebrow: "Za preuzimanje odmah",
+      cards: [
+        { num: "01", title: "Tehnički materijal", text: "Sastav, doziranje, terenski pokusi i certifikati za svaku od pet tehnologija." },
+        { num: "02", title: "Materijal o paulovniji", text: "Gustoća sadnje, krivulja rasta, tržišta i vremenski plan isplativosti kroz šest godina." },
+        { num: "03", title: "Postanite partner", text: "Distribucija, zastupanje u državi, zajednički pokusi: recite nam svoje područje." },
+      ],
+      documents: [
+        { title: "Ekološki certifikat SOHISCERT", meta: "Repromaterijal primjenjiv u ekološkoj biljnoj proizvodnji · vrijedi do 4. rujna 2027." },
+        { title: "Analiza akrilamida ECOSORB®", meta: "Laboratorij Polymex, certifikat ISO 9001 · prosinac 2024. · udio < 3,0 µg/g" },
+        { title: "Screening REACH / SVHC EVERGREEN®", meta: "SGS · lipanj 2023. · 233 posebno zabrinjavajuće tvari, sve ≤ 0,1 %" },
+        { title: "Izvješće o pokusu ECOSORB®", meta: "SGS · studeni 2024. · karakterizacija superapsorbirajućeg polimera" },
+      ],
+    },
+    footer: {
+      address: "821 Chemin des Clapiers, 83220 Le Pradet, Francuska · SIRET 420 728 545 00021",
+      photoCreditPrefix: "Fotografije paulovnije:",
+      photoCreditAnd: "i",
+    },
+    countries: [
+      "Francuska", "Južnoafrička Republika", "Tunis", "Italija", "Ujedinjeno Kraljevstvo", "Kanada", "Španjolska", "Mali",
+      "Karibi", "Sjedinjene Američke Države", "Kamerun", "Gvineja", "Senegal", "Maroko", "Gvineja Bisau", "Brazil",
+      "Saudijska Arabija", "Sultanat Oman", "Kongo", "Obala Bjelokosti", "Južni Sudan", "Poljska", "Grčka", "Portugal",
+      "Ujedinjeni Arapski Emirati", "Meksiko", "Turska", "Indonezija", "Kina",
+      "Alžir", "Argentina", "Čile", "Gabon", "Gana", "Jordan", "Kuvajt", "Hrvatska",
     ],
   },
 };

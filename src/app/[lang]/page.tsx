@@ -34,6 +34,7 @@ export function generateStaticParams() {
     { lang: "el" },
     { lang: "tr" },
     { lang: "pl" },
+    { lang: "hr" },
   ];
 }
 
