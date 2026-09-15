@@ -593,16 +593,31 @@ body {
   .nav-burger {
     display: flex;
   }
+  /* Hung off the bar rather than off the viewport. `.topnav` animates in with
+     `hero-in-down`, whose fill-mode leaves a transform on the element for
+     good, and a transformed ancestor becomes the containing block for any
+     fixed descendant. The panel was therefore measured against the bar all
+     along: `inset: 64px 0 0 0` inside a 62px-tall bar resolved to a sliver a
+     few dozen pixels high with its links spilling out of it invisibly. Made
+     absolute and anchored under the bar, it says what it means. */
   .mobile-menu {
-    position: fixed;
-    inset: 64px 0 0 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     z-index: 49;
     display: flex;
     flex-direction: column;
     gap: 0;
+    max-height: calc(100svh - 100%);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     padding: 1rem 6vw 2rem;
     background: rgba(244, 246, 241, 0.98);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(96, 146, 196, 0.35);
+    box-shadow: 0 18px 30px -18px rgba(23, 57, 94, 0.45);
     transform: translateY(-8px);
     opacity: 0;
     pointer-events: none;
@@ -1369,13 +1384,23 @@ body li {
   text-wrap: pretty;
 }
 
-/* Too short to justify. Stretching two words across a card is precisely the
-   gap justification is meant to avoid, and menus and footers are not prose.
-   `start`, not `left`: the site is also read right to left. */
+/* Too short to justify, or not prose at all. Stretching two words across a card
+   is precisely the gap justification is meant to avoid, and menus and footers
+   are not prose. `start`, not `left`: the site is also read right to left.
+
+   The last four were measured into this list rather than guessed. With the
+   word gaps on the page compared against the width of a normal space, the
+   uppercase tracked label over the water figure came out at fourteen times a
+   space, and the italic display tagline at twelve: neither is running copy,
+   and neither has enough words on a line to absorb the stretch. */
 .eyebrow,
 .motif,
 .photo-credit,
 .ta-cta,
+.tagline-banner,
+.calc-result-eyebrow,
+.calc-result-note,
+.calc-disclaimer,
 .person-name,
 .person-role,
 .proof-figure,
@@ -1400,6 +1425,25 @@ body li {
 .lang-menu li {
   text-align: start;
   hyphens: manual;
+}
+
+/* Copy set inside a card is never justified, at any width.
+
+   A card sits in a grid two or three across inside a 1080px page, so its
+   column runs 35 to 55 characters however the window is sized. Justification
+   wants about sixty: below that a line has too few word spaces to absorb what
+   the last word leaves behind, and since breaking words is ruled out - the
+   fourteen-letter hyphenation threshold exists to keep énergie, associé and
+   reboisement whole - the slack has nowhere to go but into the spaces. It was
+   measured at eighteen times the width of a normal space in an objection card
+   on a 1024px screen, and eight times at 1440. Ragged, the same column reads
+   evenly at every width.
+
+   The running copy that keeps its justification is the copy that has the room
+   for it: the ledes, the technology bands and the legal pages, all of which
+   run 60 to 100 characters on a desktop. */
+.ta-answer p {
+  text-align: start;
 }
 
 .eyebrow {
@@ -2231,14 +2275,17 @@ body li {
   line-height: 1.3;
   color: var(--leaf-light);
 }
+/* Ragged, like all card copy - see the note beside `.ta-answer p`. Two
+   objections across a 1080px page leave each of them 42 to 55 characters, and
+   justifying that without leave to break words opened gaps of up to eighteen
+   times a normal space. */
 .objection p {
   margin: 0 0 1.2em;
   font-size: 1.08rem;
   line-height: 1.7;
   color: var(--ink);
-  text-align: justify;
-  hyphens: auto;
-  hyphenate-limit-chars: 14 5 5;
+  text-align: start;
+  hyphens: manual;
 }
 .objection-proof {
   align-self: flex-start;
@@ -2500,6 +2547,30 @@ body li {
   letter-spacing: 0.02em;
 }
 
+/* The group's seal, closing the page.
+   Sized by clamp rather than by a breakpoint: the address printed around the
+   ring is the smallest type on the site, so the mark is held at 110px even on
+   a 320px screen and never allowed past 140px, where it would start competing
+   with the copy above it instead of signing off under it. A short centred
+   hairline sets it apart from the fine print without drawing a rule across the
+   whole footer. */
+.footer-seal {
+  margin-top: 2.2em;
+}
+.footer-seal::before {
+  content: "";
+  display: block;
+  width: 3.5em;
+  height: 1px;
+  margin: 0 auto 1.7em;
+  background: var(--hairline);
+}
+.footer-seal img {
+  display: inline-block;
+  width: clamp(110px, 17vw, 140px);
+  height: auto;
+}
+
 /* ---------- Tenir / Avancer ---------- */
 
 .tenir-avancer {
@@ -2646,7 +2717,10 @@ body li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  grid-column: span 2;
+  /* `1 / -1`, not `span 2`: a span asks for two tracks whether or not the grid
+     has them, and in a one-column grid it invents the second, pushing the row
+     off the side of the screen. This spans whatever is there. */
+  grid-column: 1 / -1;
   gap: 1em;
   padding: 1.4em 1.8em;
   border-radius: 14px;
@@ -2913,13 +2987,18 @@ body li {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.15rem;
-  color: var(--ink);
+  color: #fff;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55);
 }
+/* Le bas de chaque carte est assombri par un dégradé : le texte y est donc
+   clair, avec une ombre douce pour tenir aussi sur les zones plus vives de
+   la photo (le ciel, les feuilles). */
 .resource-card p {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: rgba(13, 13, 13, 0.85);
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
   text-align: left;
 }
 
@@ -3240,14 +3319,18 @@ body li {
   display: flex;
   align-items: flex-end;
 }
+/* Un voile vert sombre plutôt que blanc : la photo garde sa profondeur et le
+   titre blanc se lit dessus. Seule la dernière bande rejoint le fond clair de
+   la page, pour que l'image ne se termine pas sur une coupure nette. */
 .tech-hero-veil {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(244, 246, 241, 0.55) 0%,
-    rgba(244, 246, 241, 0.45) 40%,
-    rgba(244, 246, 241, 0.96) 100%
+    rgba(10, 28, 16, 0.2) 0%,
+    rgba(10, 28, 16, 0.38) 55%,
+    rgba(10, 28, 16, 0.55) 90%,
+    rgba(244, 246, 241, 0.9) 100%
   );
 }
 .tech-hero-content {
@@ -3261,14 +3344,17 @@ body li {
 .tech-hero-num {
   font-family: var(--font-numeric);
   font-size: 1.2rem;
-  color: var(--leaf-light);
+  color: #CFE6C2;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
 }
 .tech-hero-kicker {
   margin: 0.6em 0 0.2em;
   font-size: 0.9rem;
+  font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--leaf-light);
+  color: #CFE6C2;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
 }
 .tech-hero-content h1 {
   margin: 0;
@@ -3475,10 +3561,18 @@ body li {
 
 /* ---------- dose calculator ---------- */
 
+/* Une seule colonne, à toutes les largeurs : la réponse vient après la
+   question.
+
+   Les résultats tenaient la colonne de droite, à hauteur du premier panneau.
+   On arrivait donc sur une dose recommandée posée en face de « Localisation »,
+   avant d'avoir nommé un pays, une culture ou une surface — un chiffre qui
+   avait l'air d'attendre là depuis toujours plutôt que d'avoir été calculé.
+   Ils passent sous les trois panneaux, où l'on arrive ayant demandé. */
 .dose-layout {
   margin-top: 2.4em;
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.5em;
   align-items: start;
 }
@@ -3624,15 +3718,17 @@ body li {
   line-height: 1.5;
   color: var(--muted);
 }
+/* En bande sous le formulaire plutôt qu'en colonne : quatre cartes empilées
+   sur 1080px de large seraient quatre bandeaux presque vides. */
 .dose-results {
-  position: sticky;
-  top: 96px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 0.85em;
+  align-items: start;
   min-width: 0;
 }
 .dose-results-title {
+  grid-column: 1 / -1;
   margin: 0 0 0.2em;
   font-family: var(--font-sans);
   font-size: 0.86rem;
@@ -3687,18 +3783,45 @@ body li {
   color: var(--leaf-light);
 }
 
-/* One column below this width. The results used to drop to the foot of it,
-   under all three panels, so filling a field and seeing what it changed could
-   not happen at once. They stay stuck to the top of the column instead, ahead
-   of the panels, and take an opaque face so the fields scroll behind them. */
-@media (max-width: 900px) {
-  .dose-layout {
-    grid-template-columns: 1fr;
+/* Le demi-temps d'arrêt pendant lequel la dose se refait : les chiffres
+   s'effacent, le reste de la carte ne bouge pas, et rien ne se déplace — une
+   valeur remplacée par un point de suspension ferait sauter la mise en page à
+   chaque frappe. */
+.dose-card-value,
+.dose-card-money,
+.calc-result-range,
+.calc-result-pools strong {
+  transition: opacity 0.16s ease;
+}
+.dose-results-calcul .dose-card-value,
+.dose-results-calcul .dose-card-money,
+.calc-result-calcul .calc-result-range,
+.calc-result-calcul .calc-result-pools strong {
+  opacity: 0.22;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dose-card-value,
+  .dose-card-money,
+  .calc-result-range,
+  .calc-result-pools strong {
+    transition: none;
   }
+}
+
+/* One column below this width, and the answer stays after the question.
+
+   They were lifted above the panels for a while, stuck to the top, so that a
+   figure could be watched changing while the field that changed it was being
+   filled. In one column that put a dose on screen for a plot nobody had
+   described yet: the result arrived before its question, which reads as a
+   number that was never computed from anything. The two-column layout above
+   this width still shows both at once, which is where that was worth having.
+   Here they keep the opaque face, and the place they belong. */
+@media (max-width: 900px) {
+  /* Deux cartes de front sur une tablette, une seule sur un téléphone : en
+     dessous de 210px la valeur et son unité se séparent. */
   .dose-results {
-    order: -1;
-    top: 76px;
-    z-index: 2;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
     padding: 1em 1.1em;
     border-radius: 16px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
@@ -3717,5 +3840,693 @@ body li {
   }
   .dose-grid-water .dose-field label {
     font-size: 0.76rem;
+  }
+}
+
+/* ==========================================================================
+   PHONES AND SMALL TABLETS — 768px and under
+   ==========================================================================
+
+   Everything below this line is confined to `max-width: 768px`, so the
+   desktop layout above that width is untouched by all of it. The block sits
+   last in the file on purpose: at equal specificity the later rule wins, so
+   it can restate a value set higher up (several phone rules were scattered
+   across queries cut at 520, 600, 640, 700, 720, 760 and 900) without having
+   to raise its specificity with `!important` or an extra class.
+
+   Four things it is here to do:
+     - leave no horizontal scroll at any width down to 320px;
+     - put every multi-column layout into one column;
+     - hold images, video and the map inside the column they sit in;
+     - give every control one height, one shape and a real thumb target.
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* ---------- 1. Nothing runs off the side ---------- */
+
+  /* A backstop, not the fix: every layout that overflowed is corrected
+     further down. `clip` rather than `hidden` because `hidden` would turn
+     the body into a scroll container and break the sticky results panel in
+     the dose calculator. */
+  body {
+    overflow-x: clip;
+  }
+
+  /* The one thing a fluid column cannot absorb is an unbroken string — a
+     URL, a reference, a German compound. Let those break rather than push
+     the page sideways. */
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  li,
+  span,
+  a,
+  label,
+  td,
+  th {
+    overflow-wrap: break-word;
+  }
+
+  /* ---------- 1 bis. Justification, and where it has to stop ---------- */
+
+  /* A phone column holds 33 to 38 characters. Justification needs roughly
+     sixty: below that there are too few word spaces on a line to absorb what
+     the last word leaves behind, and the slack collects into holes instead —
+     measured here at up to fourteen times the width of a normal space, which
+     is the "trous" in the screenshots.
+
+     Hyphenation is the usual way out and is closed to us: breaking words is
+     what `hyphenate-limit-chars: 14 5 5` exists to prevent, because énergie,
+     active, associé, reboisement and itinéraire were being cut and were asked
+     to be left whole. At fourteen letters almost nothing on a phone line
+     qualifies, so the browser has only the spaces to stretch.
+
+     Widening the column is the other way out, and there is nothing left to
+     widen: 375px less the gutters is 330, and no font size worth reading
+     turns that into sixty characters.
+
+     So on a phone the copy is set ragged. Every rule that justifies is named
+     here, because each sets it on its own class and would otherwise win. */
+  body p,
+  body li,
+  .lede,
+  .country-cta-card-body,
+  .objection p,
+  .tech-section p,
+  .product-row-body > p:not(.p-kicker) {
+    text-align: start;
+  }
+
+  /* ---------- 2. Media fits its column ---------- */
+
+  img,
+  video,
+  canvas,
+  object,
+  iframe,
+  svg {
+    max-width: 100%;
+  }
+  video,
+  iframe {
+    height: auto;
+  }
+
+  /* ---------- 3. The bar and the menu under it ---------- */
+
+  /* An exact height rather than a minimum, so the panel hung underneath can
+     be sized to the screen that is left with plain arithmetic. 62 less the
+     0.8rem of padding leaves 49px, which the 46px burger sits inside. */
+  .topnav {
+    height: 62px;
+    padding: 0.4rem 5vw;
+    gap: 0.6em;
+  }
+  /* An anchor landing under the bar is the same as not landing. */
+  html {
+    scroll-padding-top: 74px;
+  }
+  /* The wordmark is dropped from 1300px down to make room for a row of
+     pills that is hidden here anyway. On a phone the bar holds a mark, a
+     name and a burger with room to spare, and a bar carrying only an
+     unlabelled icon reads as a loading state. */
+  .brand-mark span {
+    display: inline;
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .nav-burger {
+    width: 46px;
+    height: 46px;
+    flex: none;
+  }
+
+  /* A full sheet on a phone rather than a dropdown: it takes the whole screen
+     under the bar, and its face is opaque so the cover does not read through
+     the links. */
+  .mobile-menu {
+    height: calc(100svh - 62px);
+    max-height: none;
+    padding: 0.4rem 5vw 1.6rem;
+    background: #F1F5EC;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .mobile-menu a:not(.nav-cta) {
+    display: flex;
+    align-items: center;
+    min-height: 52px;
+    padding: 0.4em 0;
+    font-size: 1rem;
+  }
+  .mobile-menu .language-switcher {
+    align-self: stretch;
+    margin-top: 1.2em;
+  }
+  .mobile-menu .lang-current {
+    width: 100%;
+    justify-content: center;
+    min-height: 48px;
+  }
+  /* Thirteen languages will not hang off a trigger sitting near the foot of
+     the screen: the list opened below the fold and scrolled inside a panel
+     that was already scrolling. Inside the sheet it stops floating and
+     simply follows the trigger, and the sheet carries it. */
+  .mobile-menu .lang-menu {
+    position: static;
+    min-width: 0;
+    max-height: none;
+    margin-top: 0.5rem;
+    border-radius: 12px;
+    box-shadow: none;
+  }
+  .mobile-menu .lang-option {
+    min-height: 46px;
+    font-size: 0.95rem;
+  }
+  .mobile-menu .nav-cta {
+    width: 100%;
+    margin-top: 1em;
+    justify-content: center;
+    min-height: 52px;
+  }
+
+  /* Hold the page still behind the open panel. The class is put on <body> by
+     the Nav component. */
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  /* ---------- 4. Cover ---------- */
+
+  /* Top padding clears the fixed bar. The bottom is set further down, with
+     the row of entry points that used to need a band reserved for it. */
+  .stage {
+    padding: 78px 5vw 2.5rem;
+  }
+  .hero-claim {
+    max-width: none;
+    font-size: clamp(1.9rem, 8.4vw, 3rem);
+    margin-bottom: 1em;
+  }
+  /* One column, so the three calls to action read as a stack of equals
+     rather than as a wrapped row with an orphan. */
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.7em;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+  .hero-cta a {
+    width: 100%;
+    max-width: 340px;
+    min-height: 52px;
+    font-size: 0.95rem;
+  }
+
+  /* The five entry points, all of them visible at once.
+
+     They used to be a strip that scrolled sideways, which fitted but hid
+     three of the five behind a gesture nobody is told about: the first
+     screen showed two doors and gave no sign there were more. On a phone
+     they leave the bottom edge of the cover, come back into the flow under
+     the buttons, and take two columns — the fifth spanning both, so the row
+     ends square rather than leaving a gap. Nothing to discover. */
+  .cover-doors {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 1.5em;
+    padding: 0;
+    overflow: visible;
+  }
+  .cover-doors a {
+    min-height: 52px;
+    padding: 0.6em 0.8em;
+    white-space: normal;
+  }
+  .cover-doors a:last-child {
+    grid-column: 1 / -1;
+  }
+  .cover-doors-label {
+    font-size: 0.76rem;
+    line-height: 1.2;
+  }
+
+  /* ---------- 5. Section rhythm ---------- */
+
+  /* The desktop rhythm is measured in viewport height, which on a phone
+     turns into 120px of empty band between every section. */
+  .section {
+    padding: 3.2rem 6vw 3rem;
+  }
+  .section-title {
+    font-size: clamp(1.6rem, 7.2vw, 2.15rem);
+    max-width: none;
+  }
+  .lede {
+    font-size: 1rem;
+  }
+  .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+  }
+  .tagline-banner {
+    font-size: 1.05rem;
+  }
+  .proof-bar {
+    padding: 1.8em 6vw;
+  }
+  .proof-inner {
+    grid-template-columns: 1fr;
+    gap: 1.1em;
+  }
+
+  /* ---------- 6. One column, everywhere ---------- */
+
+  .distinguish-grid,
+  .objection-list,
+  .pilot-grid,
+  .chain,
+  .person-grid,
+  .person-grid-experts,
+  .resource-grid,
+  .ta-list,
+  .ta-answers,
+  .tech-video-grid,
+  .dose-grid,
+  .contact-inner,
+  .dose-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .distinguish-grid {
+    gap: 1.5em;
+  }
+  .objection-list,
+  .pilot-grid,
+  .resource-grid {
+    gap: 1em;
+    margin-top: 1.8em;
+  }
+  .chain {
+    gap: 1.2em;
+    margin-top: 1.8em;
+  }
+  .contact-inner {
+    gap: 2em;
+  }
+  .stat-row {
+    gap: 1.4rem 2rem;
+    margin: 2.2em 0 2.4em;
+    padding-top: 1.6em;
+  }
+
+  /* The logo wall is the one grid that keeps its columns: a single file of
+     logos would run for pages, and a logo does not need the full width of a
+     screen. Two across on a phone, four on a 768 tablet. */
+  .partners-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.9em;
+  }
+
+  /* ---------- 7. Tenir / Avancer ---------- */
+
+  .ta-cta-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    padding: 1.2em 1.3em;
+  }
+  .ta-cta-card-text {
+    font-size: 1.32rem;
+  }
+  .ta-cta-card-arrow {
+    align-self: flex-end;
+    font-size: 1.6rem;
+  }
+
+  .ta-tabs {
+    flex-direction: column;
+    gap: 0.6em;
+    margin: 1.6em 0 1.4em;
+  }
+  .ta-tab {
+    width: 100%;
+    min-height: 52px;
+    padding: 0.9em 1.2em;
+    font-size: 0.98rem;
+  }
+  .ta-answers {
+    gap: 1em;
+  }
+  .ta-answer {
+    padding: 1.2em 1.2em 1.3em;
+  }
+  .ta-answer-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  /* ---------- 8. Country studies ---------- */
+
+  .country-title-row {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .country-callout-arrow {
+    display: none;
+  }
+  .country-callout-text {
+    font-size: 1.2rem;
+    max-width: none;
+  }
+  .country-grid {
+    gap: 1.2em 0.9em;
+    margin-top: 1.8em;
+  }
+  /* The card's parts are `flex: none` on desktop so the three sit on one
+     line. On a phone they stack, and the title has to be allowed to wrap
+     rather than push its own width out past the card. */
+  .country-cta-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7em;
+    padding: 1.3em 1.2em;
+  }
+  .country-cta-card-title,
+  .country-cta-card-body,
+  .country-cta-card-link {
+    flex: 0 1 auto;
+    width: 100%;
+  }
+  .country-cta-card-title {
+    font-size: 1.28rem;
+  }
+  .country-cta-card-body {
+    font-size: 0.95rem;
+  }
+  .country-cta-card-link {
+    justify-content: center;
+    white-space: normal;
+  }
+
+  /* ---------- 9. The network map ---------- */
+
+  /* The map keeps its 2:1 box: the dotted image is cropped to fill it while
+     the overlaid routes are fitted inside it, so any other ratio slides the
+     two apart. It only loses the margin around it. */
+  .world-network {
+    margin-top: 1.8em;
+  }
+  .reseau-title-row {
+    flex-direction: column;
+  }
+  .reseau-badge {
+    display: none;
+  }
+  .ticker {
+    margin-top: 2em;
+  }
+  .ticker-group li {
+    padding: 0 1.4em;
+    font-size: 0.78rem;
+  }
+
+  /* ---------- 10. Technology cards ---------- */
+
+  /* 880px is taller than the phone it is read on, so the card never fits the
+     screen and the photograph above the copy is only ever seen in pieces. */
+  .product-row {
+    min-height: min(84svh, 680px);
+    border-radius: 14px;
+    transform: none;
+  }
+  .product-row:hover {
+    transform: none;
+  }
+  .product-row-body {
+    padding: 1.5em 1.2em 1.7em;
+  }
+  .product-list {
+    gap: 1.2em;
+  }
+  .p-cta-row {
+    width: 100%;
+  }
+  .p-learn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ---------- 11. Dose calculator ---------- */
+
+  .dose-layout {
+    gap: 1em;
+    margin-top: 1.8em;
+  }
+  .dose-results {
+    gap: 0.7em;
+    margin-top: 0.4em;
+  }
+  .dose-card {
+    padding: 0.85em 1em;
+  }
+  .dose-card-value {
+    font-size: 1.45rem;
+  }
+  .dose-panel {
+    padding: 1.2em 1.1em;
+  }
+  .dose-panel-title {
+    margin-bottom: 1em;
+    font-size: 0.8rem;
+  }
+  .dose-climate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7em;
+  }
+  .dose-button {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  /* ---------- 12. Water calculator ---------- */
+
+  .calc-card {
+    margin-top: 1.8em;
+    padding: 1.3em 1.1em;
+    gap: 1.7em;
+  }
+  .calc-field-head {
+    flex-wrap: wrap;
+  }
+  /* The rail stays 6px; the input around it grows to a thumb's width so the
+     handle can actually be caught. */
+  .calc-slider {
+    height: 44px;
+  }
+  /* Five mode names cannot be written under a slider this narrow, so they
+     become the dots the handle travels between. */
+  .calc-scale-modes {
+    height: 1.2em;
+  }
+  .calc-scale-modes span {
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    max-width: none;
+    margin-top: -4.5px;
+    border-radius: 50%;
+    overflow: hidden;
+    color: transparent;
+    background: rgba(13, 13, 13, 0.28);
+  }
+  .calc-scale-modes span.active {
+    width: 11px;
+    height: 11px;
+    margin-top: -5.5px;
+    background: var(--leaf-light);
+  }
+  .calc-result {
+    padding: 1.3em 1.1em;
+  }
+  .calc-result-range {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+  }
+
+  /* ---------- 13. Forms ---------- */
+
+  /* 16px is the threshold below which iOS zooms the page when a field takes
+     focus — and a zoomed page is a page that scrolls sideways. */
+  .contact-form input,
+  .contact-form textarea,
+  .dose-field input,
+  .dose-field select {
+    font-size: 16px;
+  }
+  .contact-form input,
+  .dose-field input,
+  .dose-field select {
+    min-height: 46px;
+  }
+  .contact-form {
+    padding: 1.4em 1.2em;
+  }
+  .contact-form textarea {
+    min-height: 120px;
+  }
+  .contact-form button {
+    align-self: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-details {
+    margin-top: 1.8em;
+  }
+
+  /* ---------- 14. Bands and footer ---------- */
+
+  .cta-band,
+  .statement {
+    padding: 3.2rem 6vw;
+  }
+  .cta-band-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-band-actions a {
+    width: 100%;
+  }
+  .statement-text {
+    font-size: 1rem;
+  }
+  .site-footer {
+    padding: 2em 6vw 2.4em;
+  }
+  .footer-links {
+    gap: 0.4em 1.3em;
+  }
+  .footer-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  /* ---------- 15. Document rows ---------- */
+
+  .doc-list {
+    gap: 0.6em;
+  }
+  .doc-row {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.6em 0.8em;
+    padding: 1em;
+  }
+  .doc-body {
+    flex: 1 1 100%;
+    order: 3;
+  }
+  .doc-flag {
+    margin-left: auto;
+  }
+
+  /* ---------- 16. Inner pages ---------- */
+
+  .tech-bar {
+    flex-wrap: wrap;
+    row-gap: 0.6em;
+    padding: 0.8em 6vw;
+  }
+  .tech-hero {
+    min-height: 34svh;
+  }
+  .tech-hero-content {
+    padding: 2em 6vw 1.5em;
+  }
+  .tech-body {
+    padding: 2.2em 6vw 3.5em;
+  }
+  .field-tests-hero {
+    padding: 2.6em 6vw 0;
+  }
+  .tech-section {
+    margin-bottom: 2.4em;
+  }
+  .tech-section p {
+    font-size: 1rem;
+  }
+  .tech-cta {
+    margin-top: 2.6em;
+    padding-top: 2em;
+  }
+  .tech-video-grid {
+    gap: 1rem;
+  }
+  .etude-bar {
+    flex-wrap: wrap;
+    row-gap: 0.5em;
+    padding: 0.8em 6vw;
+  }
+  .etude-frame {
+    min-height: 62svh;
+  }
+  .legal {
+    padding: 2.2rem 6vw 3.5rem;
+  }
+
+  /* ---------- 17. One button, one shape ---------- */
+
+  /* Controls on this site come from seven different rules and rendered at
+     seven different heights — 22px on one link, 38px on another, 56px on a
+     tab. Here they all become the same box, at the 48px a fingertip needs.
+     `.nav-burger` is left out: it is a column of three bars, not a label. */
+  .hero-cta a,
+  .country-btn,
+  .country-cta-card-link,
+  .ta-tab,
+  .ta-answer-link,
+  .objection-proof,
+  .p-learn,
+  .tech-btn-3d,
+  .tech-back,
+  .etude-back,
+  .legal-back,
+  .dose-button,
+  .cta-band-actions a,
+  .contact-form button,
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+  }
+  .country-btn {
+    width: 100%;
+    padding: 0.8em 1em;
+    font-size: 0.86rem;
+    text-align: center;
+  }
+  .objection-proof {
+    width: 100%;
+  }
+  /* Two links that were set as running text and could not be hit reliably. */
+  .field-tests-cta,
+  .partners-hint {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
 }

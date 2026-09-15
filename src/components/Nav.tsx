@@ -29,6 +29,25 @@ export default function Nav() {
     return () => document.removeEventListener("keydown", onKey);
   }, [open]);
 
+  /* Hold the page still behind the open panel. Without this the menu scrolls
+     the cover underneath it on a phone, and closing it leaves you somewhere
+     you never asked to be. The class is what does the locking, so the styling
+     stays in the stylesheet with everything else. */
+  useEffect(() => {
+    document.body.classList.toggle("menu-open", open);
+    return () => document.body.classList.remove("menu-open");
+  }, [open]);
+
+  /* A phone keeps the same page across a hash link, so nothing would close
+     the panel after a tap on one. The container's onClick covers taps on the
+     links themselves; this covers the back button and any other route change. */
+  useEffect(() => {
+    if (!open) return;
+    const close = () => setOpen(false);
+    window.addEventListener("hashchange", close);
+    return () => window.removeEventListener("hashchange", close);
+  }, [open]);
+
   return (
     <nav className="topnav">
       <div className="brand-mark">
@@ -75,7 +94,13 @@ export default function Nav() {
       <div
         id="mobile-menu"
         className={`mobile-menu${open ? " open" : ""}`}
-        onClick={() => setOpen(false)}
+        /* Only a link closes the panel. Closing on any click inside it meant
+           the language switcher shut the whole menu the moment it was
+           tapped, so the language could not be changed from a phone at all:
+           its trigger and its options are buttons, not links. */
+        onClick={(e) => {
+          if ((e.target as HTMLElement).closest("a")) setOpen(false);
+        }}
       >
         {LINKS.map((l) => (
           <a href={l.href} key={l.href}>

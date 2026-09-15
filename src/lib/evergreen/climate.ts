@@ -9,6 +9,8 @@ const ARCHIVE = "https://archive-api.open-meteo.com/v1/archive";
 
 export interface PlaceQuery {
   country: string;
+  /** Code ISO 3166-1 alpha-2 : quand il est connu, il arbitre mieux qu'un nom. */
+  countryCode?: string;
   region?: string;
   city?: string;
 }
@@ -26,6 +28,7 @@ export class ClimateUnavailable extends Error {}
 interface GeocodingHit {
   name: string;
   country?: string;
+  country_code?: string;
   latitude: number;
   longitude: number;
   elevation?: number;
@@ -47,10 +50,14 @@ export async function findPlace(
   const hits = data.results ?? [];
   if (hits.length === 0) throw new ClimateUnavailable("not found");
 
-  // Une même ville existe sous plusieurs pays : le pays saisi arbitre.
+  // Une même ville existe sous plusieurs pays : le pays choisi arbitre — par
+  // son code d'abord, car « Congo-Kinshasa » ne se lit dans aucun nom officiel.
+  const code = query.countryCode?.toUpperCase();
   const wanted = query.country.trim().toLowerCase();
   const hit =
-    (wanted && hits.find((h) => String(h.country ?? "").toLowerCase().includes(wanted))) || hits[0];
+    (code && hits.find((h) => h.country_code?.toUpperCase() === code)) ||
+    (wanted && hits.find((h) => String(h.country ?? "").toLowerCase().includes(wanted))) ||
+    hits[0];
 
   return {
     name: hit.name,

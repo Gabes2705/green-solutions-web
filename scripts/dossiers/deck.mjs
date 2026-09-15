@@ -744,7 +744,7 @@ export class Deck {
   }
 
   // Clôture
-  async closing({ photo, title, body, contact, footer }) {
+  async closing({ photo, title, body, contact, footer, sceau }) {
     const s = this.#prep(this.p.addSlide());
     if (photo && existsSync(photo)) {
       s.addImage({
@@ -797,6 +797,29 @@ export class Deck {
       margin: 0,
       align: this.align,
     });
+
+    // Le sceau du groupe, qui signe le document — une seule fois, sur la
+    // dernière page, comme au pied du site.
+    //
+    // Une version claire : cette page est toujours sombre, photo teintée ou
+    // aplat, et le sceau imprimé en vert foncé n'y serait pas lisible. Il tient
+    // le coin sous la ligne de contact (qui s'arrête à 5,8) et au-dessus du
+    // pied de page (qui commence à 6,98), du côté opposé à la lecture pour ne
+    // jamais croiser le texte : à droite en LTR, à gauche en RTL.
+    if (sceau && existsSync(sceau)) {
+      // 1,15 : l'adresse gravée autour de l'anneau est le plus petit texte du
+      // dossier, et en dessous elle cesse de se lire.
+      const SW = 1.15;
+      s.addImage({
+        path: sceau,
+        x: this.rtl ? 0.55 : W - 0.55 - SW,
+        y: 5.68,
+        w: SW,
+        h: SW,
+        transparency: 15,
+      });
+    }
+
     this.#foot(s, footer, true);
     return s;
   }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import Reveal from "./Reveal";
 import { useLanguage } from "@/lib/LanguageContext";
 import { CROP_NAMES, CROPS } from "@/lib/evergreen/crops.ts";
@@ -14,6 +14,7 @@ import {
   type SoilType,
 } from "@/lib/evergreen/dose.ts";
 import { resolveClimate } from "@/lib/evergreen/climate.ts";
+import { countriesFor, countryName } from "@/lib/evergreen/countries.ts";
 
 const SOILS: SoilType[] = ["unknown", "sandy", "sandyLoam", "loam", "clayLoam", "clay"];
 const IRRIGATIONS: IrrigationMode[] = [
@@ -37,7 +38,21 @@ export default function DoseCalculator() {
   const { c, language } = useLanguage();
   const t = c.doseCalculator;
 
-  const [country, setCountry] = useState("France");
+  const [countryCode, setCountryCode] = useState("FR");
+  const country = useMemo(() => countryName(countryCode, language), [countryCode, language]);
+  // Les noms de pays viennent de la bibliothèque ICU, qui n'est pas la même
+  // sur le serveur et dans le navigateur (« Territoires palestiniens » d'un
+  // côté, « Palestine » de l'autre) : la liste complète ne se construit donc
+  // qu'une fois la page arrivée chez le visiteur, sinon l'hydratation échoue.
+  const chezLeVisiteur = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
+  const countries = useMemo(
+    () => (chezLeVisiteur ? countriesFor(language) : [{ code: countryCode, name: country }]),
+    [chezLeVisiteur, language, countryCode, country],
+  );
   const [region, setRegion] = useState("");
   const [city, setCity] = useState("");
 
@@ -95,7 +110,7 @@ export default function DoseCalculator() {
     setStatus("loading");
     try {
       const { place, climate: found } = await resolveClimate(
-        { country, region, city },
+        { country, countryCode, region, city },
         controller.signal,
         language,
       );
@@ -110,7 +125,7 @@ export default function DoseCalculator() {
       setPlaceName(null);
       setStatus("failed");
     }
-  }, [country, region, city, language]);
+  }, [country, countryCode, region, city, language]);
 
   // Pas de détection au montage : cela déclencherait un appel à une API tierce
   // au chargement de chaque page d'accueil. La dose se calcule sans climat.
@@ -126,6 +141,26 @@ export default function DoseCalculator() {
     const t = setTimeout(() => void detect(), 800);
     return () => clearTimeout(t);
   }, [detect]);
+
+  /* Un demi-temps d'arrêt entre la question et la réponse.
+   *
+   * La dose est un calcul pur : elle se refait à chaque frappe, et le chiffre
+   * changeait donc dans le même souffle que le champ, sans que rien paraisse
+   * avoir été calculé. Le délai n'améliore aucun résultat, il rend visible
+   * qu'il y en a eu un — la valeur s'efface le temps de le poser, puis
+   * revient. Pas au premier rendu : à l'arrivée, rien n'a encore été demandé.
+   */
+  const [calculEnCours, setCalculEnCours] = useState(false);
+  const premierRendu = useRef(true);
+  useEffect(() => {
+    if (premierRendu.current) {
+      premierRendu.current = false;
+      return;
+    }
+    setCalculEnCours(true);
+    const t = setTimeout(() => setCalculEnCours(false), 500);
+    return () => clearTimeout(t);
+  }, [input, climate]);
 
   const yieldLabel =
     potential.kind === "study"
@@ -158,14 +193,20 @@ export default function DoseCalculator() {
                 <div className="dose-grid">
                   <div className="dose-field">
                     <label htmlFor="dose-country">{t.countryLabel}</label>
-                    <input
+                    <select
                       id="dose-country"
-                      value={country}
+                      value={countryCode}
                       onChange={(e) => {
                         saisi.current = true;
-                        setCountry(e.target.value);
+                        setCountryCode(e.target.value);
                       }}
-                    />
+                    >
+                      {countries.map((p) => (
+                        <option key={p.code} value={p.code}>
+                          {p.name}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                   <div className="dose-field">
                     <label htmlFor="dose-region">{t.regionLabel}</label>
@@ -356,7 +397,10 @@ export default function DoseCalculator() {
               </section>
             </div>
 
-            <aside className="dose-results">
+            <aside
+              className={`dose-results${calculEnCours ? " dose-results-calcul" : ""}`}
+              aria-busy={calculEnCours}
+            >
               <h3 className="dose-results-title">{t.resultsTitle}</h3>
 
               <div className="dose-card">
