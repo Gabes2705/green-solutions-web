@@ -391,7 +391,7 @@ export class Deck {
           w: pw,
           h: 0.5,
           fontSize: 10,
-          italic: true,
+          italic: !this.rtl, // Arial Italic ne rend pas l'arabe : le texte devient invisible
           color: this.pal.muted,
           fontFace: BODY,
           isTextBox: true,
@@ -659,7 +659,7 @@ export class Deck {
         w: W - 1.3,
         h: 0.9,
         fontSize: 12.5,
-        italic: true,
+        italic: !this.rtl, // Arial Italic ne rend pas l'arabe : le texte devient invisible
         color: this.pal.muted,
         fontFace: BODY,
         isTextBox: true,
