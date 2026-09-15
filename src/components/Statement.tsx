@@ -12,7 +12,7 @@ export default function Statement() {
       className="statement"
       style={{
         backgroundImage:
-          "linear-gradient(180deg, rgba(255,255,255,0.86) 0%, rgba(255,255,255,0.93) 100%), url('/images/stock/aerial-field-pattern.jpg')",
+          "radial-gradient(56% 72% at 50% 50%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.76) 40%, rgba(255,255,255,0.34) 74%, rgba(255,255,255,0.08) 100%), url('/images/stock/orchard-rows-sunset.jpg')",
       }}
     >
       <div className="section-inner">

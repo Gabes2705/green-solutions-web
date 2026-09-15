@@ -2873,12 +2873,14 @@ body {
   line-height: 1.15;
   color: var(--ink);
 }
+/* Set over a photograph rather than a flat tint: the muted grey it used to
+   take has too little weight to hold against the rows behind it. */
 .statement-text {
   max-width: 60ch;
   margin: 0 auto 1em;
-  font-size: 1.02rem;
+  font-size: 1.06rem;
   line-height: 1.7;
-  color: var(--muted);
+  color: #2E3B33;
   text-align: center;
 }
 .statement-tag {
