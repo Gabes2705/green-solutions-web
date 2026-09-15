@@ -113,9 +113,19 @@ export default function DoseCalculator() {
   }, [country, region, city, language]);
 
   // Pas de détection au montage : cela déclencherait un appel à une API tierce
-  // au chargement de chaque page d'accueil. La dose se calcule sans climat ;
-  // l'utilisateur lance la détection quand il veut affiner l'estimation d'eau.
+  // au chargement de chaque page d'accueil. La dose se calcule sans climat.
   useEffect(() => () => abort.current?.abort(), []);
+
+  // En revanche, dès que le visiteur a touché un des trois champs, la
+  // résolution part seule : il n'a pas à réclamer un climat qu'il vient de
+  // décrire. Le délai laisse finir la frappe — sans lui, saisir « Bordeaux »
+  // lancerait huit requêtes — et chaque frappe annule la précédente.
+  const saisi = useRef(false);
+  useEffect(() => {
+    if (!saisi.current) return;
+    const t = setTimeout(() => void detect(), 800);
+    return () => clearTimeout(t);
+  }, [detect]);
 
   const yieldLabel =
     potential.kind === "study"
@@ -151,7 +161,10 @@ export default function DoseCalculator() {
                     <input
                       id="dose-country"
                       value={country}
-                      onChange={(e) => setCountry(e.target.value)}
+                      onChange={(e) => {
+                        saisi.current = true;
+                        setCountry(e.target.value);
+                      }}
                     />
                   </div>
                   <div className="dose-field">
@@ -159,17 +172,30 @@ export default function DoseCalculator() {
                     <input
                       id="dose-region"
                       value={region}
-                      onChange={(e) => setRegion(e.target.value)}
+                      onChange={(e) => {
+                        saisi.current = true;
+                        setRegion(e.target.value);
+                      }}
                     />
                   </div>
                   <div className="dose-field">
                     <label htmlFor="dose-city">{t.cityLabel}</label>
-                    <input id="dose-city" value={city} onChange={(e) => setCity(e.target.value)} />
+                    <input
+                      id="dose-city"
+                      value={city}
+                      onChange={(e) => {
+                        saisi.current = true;
+                        setCity(e.target.value);
+                      }}
+                    />
                   </div>
                   <div className="dose-field dose-field-action">
-                    <button type="button" className="dose-button" onClick={() => void detect()}>
-                      {status === "loading" ? t.detecting : t.detectButton}
-                    </button>
+                    {status === "loading" && <p className="dose-hint">{t.detecting}</p>}
+                    {status === "failed" && (
+                      <button type="button" className="dose-button" onClick={() => void detect()}>
+                        {t.detectButton}
+                      </button>
+                    )}
                   </div>
                 </div>
 
