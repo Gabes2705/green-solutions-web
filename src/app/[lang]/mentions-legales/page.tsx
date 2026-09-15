@@ -16,22 +16,18 @@ export default function MentionsLegales() {
       </a>
 
       <h1>Mentions légales</h1>
-      <p className="legal-updated">Dernière mise à jour : 9 septembre 2026</p>
+      <p className="legal-updated">Dernière mise à jour : 16 septembre 2026</p>
 
       <h2>Éditeur du site</h2>
       <p>
-        <strong>GREEN SOLUTIONS SAS</strong>
+        <strong>GREEN SOLUTIONS GROUPE AIM SA</strong>
         <br />
-        821 Chemin des Clapiers, 83220 Le Pradet, France
+        46, route de la Condémine, 1475 Forel, Suisse
         <br />
-        Société par actions simplifiée au capital de{" "}
+        Société anonyme de droit suisse
+        <br />
+        Numéro d&apos;identification des entreprises (IDE) :{" "}
         <mark>à compléter</mark>
-        <br />
-        RCS Toulon 420 728 545 — SIRET 420 728 545 00021
-        <br />
-        Code NAF : 4778C
-        <br />
-        TVA intracommunautaire : FR16420728545
         <br />
         Téléphone : +33 6 44 83 55 09
         <br />
