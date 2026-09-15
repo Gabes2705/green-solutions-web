@@ -179,7 +179,7 @@ export const content = {
           linkHref: "#paulownia",
         },
       ],
-      cta: "Ce sont vos sujets ?",
+      cta: "Ce sont vos préoccupations ?",
     },
     products: {
       eyebrow: "Les technologies",
@@ -1497,7 +1497,7 @@ export const content = {
           linkHref: "#paulownia",
         },
       ],
-      cta: "¿Son estos sus temas?",
+      cta: "¿Son estas sus preocupaciones?",
     },
     products: {
       eyebrow: "Las tecnologías",
@@ -2182,7 +2182,7 @@ export const content = {
           linkHref: "#paulownia",
         },
       ],
-      cta: "Estes são os seus temas?",
+      cta: "São estas as suas preocupações?",
     },
     products: {
       eyebrow: "As tecnologias",
@@ -2817,7 +2817,7 @@ export const content = {
           linkHref: "#paulownia",
         },
       ],
-      cta: "هل هذه هي مواضيعك؟",
+      cta: "هل هذه هي شواغلك؟",
     },
     products: {
       eyebrow: "التقنيات",
@@ -4759,7 +4759,7 @@ export const content = {
           linkHref: "#paulownia",
         },
       ],
-      cta: "Sind das Ihre Themen?",
+      cta: "Sind das Ihre Anliegen?",
     },
     products: {
       eyebrow: "Die Technologien",
@@ -5384,7 +5384,7 @@ export const content = {
           linkHref: "#paulownia",
         },
       ],
-      cta: "Sono questi i vostri temi?",
+      cta: "Sono queste le vostre preoccupazioni?",
     },
     products: {
       eyebrow: "Le tecnologie",
@@ -6068,7 +6068,7 @@ export const content = {
           linkHref: "#paulownia",
         },
       ],
-      cta: "Αυτά είναι τα δικά σας θέματα;",
+      cta: "Αυτές είναι οι δικές σας ανησυχίες;",
     },
     products: {
       eyebrow: "Οι τεχνολογίες",
@@ -6693,7 +6693,7 @@ export const content = {
           linkHref: "#paulownia",
         },
       ],
-      cta: "Bunlar sizin konularınız mı?",
+      cta: "Bunlar sizin endişeleriniz mi?",
     },
     products: {
       eyebrow: "Teknolojiler",
@@ -7318,7 +7318,7 @@ export const content = {
           linkHref: "#paulownia",
         },
       ],
-      cta: "Czy to Państwa tematy?",
+      cta: "Czy to Państwa obawy?",
     },
     products: {
       eyebrow: "Technologie",
