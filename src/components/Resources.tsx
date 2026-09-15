@@ -34,7 +34,7 @@ export default function Resources() {
               className="resource-card"
               key={card.num}
               style={{
-                backgroundImage: `linear-gradient(180deg, rgba(7,22,15,0.1) 0%, rgba(7,22,15,0.92) 82%), url('${CARD_IMAGES[i]}')`,
+                backgroundImage: `linear-gradient(180deg, rgba(7,22,15,0.04) 0%, rgba(7,22,15,0.4) 52%, rgba(7,22,15,0.84) 88%), url('${CARD_IMAGES[i]}')`,
               }}
             >
               <span className="p-num">{card.num}</span>

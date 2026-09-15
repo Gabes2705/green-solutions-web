@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-const COLORS = ["#A8D14A", "#1D8A96", "#ECF5EC"];
+const COLORS = ["#1F8A45", "#1D8A96", "#7FAE8C"];
 
 export default function Atmosphere() {
   const ref = useRef<HTMLDivElement | null>(null);

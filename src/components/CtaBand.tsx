@@ -12,7 +12,7 @@ export default function CtaBand() {
       className="cta-band"
       style={{
         backgroundImage:
-          "linear-gradient(100deg, rgba(13,36,24,0.94) 0%, rgba(13,36,24,0.7) 55%, rgba(13,36,24,0.9) 100%), url('/images/stock/wheat-golden-hour.jpg')",
+          "linear-gradient(100deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.72) 55%, rgba(255,255,255,0.88) 100%), url('/images/stock/wheat-golden-hour.jpg')",
       }}
     >
       <Reveal className="cta-band-inner">

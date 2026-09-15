@@ -86,7 +86,7 @@ export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
       const map = new DottedMap({ height: 90, grid: "diagonal" });
       const svg = map.getSVG({
         radius: 0.22,
-        color: "#93AC9C33",
+        color: "#5E8670AA",
         shape: "circle",
         backgroundColor: "transparent",
       });
@@ -170,8 +170,8 @@ export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
           <linearGradient id="route-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#1D8A96" stopOpacity="0" />
             <stop offset="12%" stopColor="#1D8A96" stopOpacity="1" />
-            <stop offset="88%" stopColor="#A8D14A" stopOpacity="1" />
-            <stop offset="100%" stopColor="#A8D14A" stopOpacity="0" />
+            <stop offset="88%" stopColor="#1F8A45" stopOpacity="1" />
+            <stop offset="100%" stopColor="#1F8A45" stopOpacity="0" />
           </linearGradient>
         </defs>
 
@@ -199,14 +199,14 @@ export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
               <path
                 className="route-arrow"
                 d="M -5.5 -3.2 L 0 0 L -5.5 3.2 Z"
-                fill="#A8D14A"
+                fill="#1F8A45"
               />
             </g>
           );
         })}
 
-        <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#A8D14A" />
-        <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#A8D14A" opacity="0.5">
+        <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#1F8A45" />
+        <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#1F8A45" opacity="0.5">
           <animate attributeName="r" from="3.2" to="12" dur="1.8s" repeatCount="indefinite" />
           <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" repeatCount="indefinite" />
         </circle>

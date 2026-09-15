@@ -42,8 +42,8 @@ export default function CountryStudies() {
                 />
                 <defs>
                   <linearGradient id="arrow-grad" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#ffb648" />
-                    <stop offset="100%" stopColor="#a8d14a" />
+                    <stop offset="0%" stopColor="#2E9155" />
+                    <stop offset="100%" stopColor="#1E6B3A" />
                   </linearGradient>
                 </defs>
               </svg>
