@@ -15,7 +15,7 @@
      every accent that was orange reads as deep green. */
   --gold: #1E6B3A;
   --amber: #2E9155;
-  --hairline: rgba(75, 139, 88, 0.12);
+  --hairline: rgba(75, 139, 88, 0.3);
   --font-numeric: "Times New Roman", Times, Georgia, serif;
 }
 
@@ -1113,7 +1113,7 @@ body {
   padding: 0.5em 0.95em;
   border-radius: 999px;
   border: 1px solid var(--hairline);
-  background: rgba(230, 235, 224, 0.55);
+  background: #FFFFFF;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   font-size: 0.76rem;
@@ -1334,6 +1334,16 @@ body {
   background-color: #D7E7C2;
   background-image: radial-gradient(rgba(60, 120, 72, 0.11) 1px, transparent 1px);
   background-size: 22px 22px;
+}
+/* A third tone, for a band that would otherwise sit between two greens and
+   read as the pale one again. It borrows the blue of the menu above. */
+.section-blue {
+  background-color: #E1EBF8;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(96, 146, 196, 0.07) 0 1px,
+    transparent 1px 16px
+  );
 }
 .section-inner {
   position: relative;
@@ -1610,7 +1620,7 @@ body {
   margin-top: 2.4em;
   padding: clamp(1.6em, 4vw, 3em);
   border-radius: 18px;
-  background: linear-gradient(180deg, #FBFDF7 0%, #EEF5E6 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
   border: 1px solid var(--hairline);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 16px 32px -14px rgba(30, 70, 40, 0.24);
   display: flex;
@@ -2040,7 +2050,7 @@ body {
   gap: 1.1em;
   padding: 1.1em 1.3em;
   border-radius: 12px;
-  background: linear-gradient(180deg, #FBFDF7 0%, #EEF5E6 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
   border: 1px solid var(--hairline);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 6px 16px -9px rgba(30, 70, 40, 0.24);
   text-decoration: none;
@@ -2123,7 +2133,7 @@ body {
   flex-direction: column;
   padding: 1.9em 1.8em;
   border-radius: 16px;
-  background: linear-gradient(180deg, #FBFDF7 0%, #EEF5E6 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
   border: 1px solid var(--hairline);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 2px 0 rgba(139, 180, 131, 0.55),
     0 10px 24px -10px rgba(30, 70, 40, 0.24), 0 2px 6px -2px rgba(0, 0, 0, 0.4);
@@ -2201,7 +2211,7 @@ body {
   flex-direction: column;
   padding: 1.5em 1.4em;
   border-radius: 14px;
-  background: linear-gradient(180deg, #FBFDF7 0%, #EEF5E6 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
   border: 1px solid var(--hairline);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 8px 20px -10px rgba(30, 70, 40, 0.24);
   transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
@@ -3232,7 +3242,7 @@ body {
   gap: 0.6em;
   padding: 1em;
   border-radius: 12px;
-  background: linear-gradient(180deg, #FBFDF7 0%, #EEF5E6 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
   border: 1px solid var(--hairline);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -3399,7 +3409,7 @@ body {
 .dose-panel {
   padding: clamp(1.3em, 3vw, 2em);
   border-radius: 18px;
-  background: linear-gradient(180deg, #FBFDF7 0%, #EEF5E6 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
   border: 1px solid var(--hairline);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 16px 32px -14px rgba(30, 70, 40, 0.24);
 }
@@ -3454,7 +3464,7 @@ body {
   padding: 0.62em 0.75em;
   border-radius: 9px;
   border: 1px solid var(--hairline);
-  background: rgba(230, 235, 224, 0.55);
+  background: #FFFFFF;
   color: var(--ink);
   font-family: var(--font-sans);
   font-size: 0.95rem;
@@ -3552,7 +3562,7 @@ body {
 .dose-card {
   padding: 1.15em 1.3em;
   border-radius: 14px;
-  background: linear-gradient(180deg, #FBFDF7 0%, #EEF5E6 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
   border: 1px solid var(--hairline);
 }
 .dose-card-water {
@@ -3595,12 +3605,23 @@ body {
   color: var(--leaf-light);
 }
 
+/* One column below this width. The results used to drop to the foot of it,
+   under all three panels, so filling a field and seeing what it changed could
+   not happen at once. They stay stuck to the top of the column instead, ahead
+   of the panels, and take an opaque face so the fields scroll behind them. */
 @media (max-width: 900px) {
   .dose-layout {
     grid-template-columns: 1fr;
   }
   .dose-results {
-    position: static;
+    order: -1;
+    top: 76px;
+    z-index: 2;
+    padding: 1em 1.1em;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
+    border: 1px solid rgba(75, 139, 88, 0.3);
+    box-shadow: 0 10px 24px -12px rgba(30, 70, 40, 0.34);
   }
 }
 @media (max-width: 520px) {

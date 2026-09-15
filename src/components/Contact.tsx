@@ -62,7 +62,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section section-alt">
       <div className="section-inner contact-inner">
         <div className="contact-copy">
           <p className="eyebrow">{ct.eyebrow}</p>

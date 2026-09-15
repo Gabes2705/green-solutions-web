@@ -8,7 +8,7 @@ export default function Essais() {
   const e = c.essais;
 
   return (
-    <section id="essais" className="section">
+    <section id="essais" className="section section-blue">
       <div className="section-inner">
         <Reveal>
           <p className="eyebrow">{e.eyebrow}</p>
