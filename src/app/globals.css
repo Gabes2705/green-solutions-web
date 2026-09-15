@@ -1352,12 +1352,54 @@ body {
   margin: 0 auto;
 }
 
-/* Running copy is justified. Hyphenation comes with it: without it, justifying
-   a narrow column opens rivers of white between the words. Labels, captions
-   and anything already centred keep their own alignment. */
-.section-inner p:not(.eyebrow):not(.motif):not(.photo-credit):not(.ta-cta) {
+/* Running copy is justified, wherever it sits: not every page wraps itself in
+   a <main>, so the rule hangs off body. It names two elements and nothing
+   else, which leaves it the weakest thing in the cascade - any class that sets
+   its own alignment, every centred block among them, still wins.
+
+   Hyphenation comes with it and is the whole point: justifying a column
+   without breaking words is what opens rivers of white between them. The
+   document carries a real lang attribute, so the browser hyphenates by the
+   rules of the language being read. `pretty` takes care of the last line. */
+body p,
+body li {
   text-align: justify;
   hyphens: auto;
+  text-wrap: pretty;
+}
+
+/* Too short to justify. Stretching two words across a card is precisely the
+   gap justification is meant to avoid, and menus and footers are not prose.
+   `start`, not `left`: the site is also read right to left. */
+.eyebrow,
+.motif,
+.photo-credit,
+.ta-cta,
+.person-name,
+.person-role,
+.proof-figure,
+.proof-label,
+.pilot-place,
+.pilot-crop,
+.pilot-tech li,
+.p-facts li,
+.p-num,
+.p-kicker,
+.doc-meta,
+.chain-step p,
+.cover-doors-label,
+.dose-hint,
+.dose-status,
+.dose-card-label,
+.dose-card-note,
+.country-cta-card-body,
+.nav-links li,
+.hero-domains li,
+.cover-doors li,
+.footer-links li,
+.lang-menu li {
+  text-align: start;
+  hyphens: manual;
 }
 
 .eyebrow {
@@ -1584,8 +1626,8 @@ body {
   font-size: 1.12rem;
   line-height: 1.65;
   color: var(--muted);
-  text-align: left;
-  hyphens: none;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .reseau-title-row {
@@ -1966,8 +2008,8 @@ body {
   font-size: 1.15rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.94);
-  text-align: left;
-  hyphens: none;
+  text-align: justify;
+  hyphens: auto;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -2160,8 +2202,8 @@ body {
   font-size: 1.08rem;
   line-height: 1.7;
   color: var(--ink);
-  text-align: left;
-  hyphens: none;
+  text-align: justify;
+  hyphens: auto;
 }
 .objection-proof {
   align-self: flex-start;
