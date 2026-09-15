@@ -3549,10 +3549,18 @@ body li {
 
 /* ---------- dose calculator ---------- */
 
+/* Une seule colonne, à toutes les largeurs : la réponse vient après la
+   question.
+
+   Les résultats tenaient la colonne de droite, à hauteur du premier panneau.
+   On arrivait donc sur une dose recommandée posée en face de « Localisation »,
+   avant d'avoir nommé un pays, une culture ou une surface — un chiffre qui
+   avait l'air d'attendre là depuis toujours plutôt que d'avoir été calculé.
+   Ils passent sous les trois panneaux, où l'on arrive ayant demandé. */
 .dose-layout {
   margin-top: 2.4em;
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.5em;
   align-items: start;
 }
@@ -3698,15 +3706,17 @@ body li {
   line-height: 1.5;
   color: var(--muted);
 }
+/* En bande sous le formulaire plutôt qu'en colonne : quatre cartes empilées
+   sur 1080px de large seraient quatre bandeaux presque vides. */
 .dose-results {
-  position: sticky;
-  top: 96px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 0.85em;
+  align-items: start;
   min-width: 0;
 }
 .dose-results-title {
+  grid-column: 1 / -1;
   margin: 0 0 0.2em;
   font-family: var(--font-sans);
   font-size: 0.86rem;
@@ -3761,18 +3771,39 @@ body li {
   color: var(--leaf-light);
 }
 
-/* One column below this width. The results used to drop to the foot of it,
-   under all three panels, so filling a field and seeing what it changed could
-   not happen at once. They stay stuck to the top of the column instead, ahead
-   of the panels, and take an opaque face so the fields scroll behind them. */
-@media (max-width: 900px) {
-  .dose-layout {
-    grid-template-columns: 1fr;
+/* Le demi-temps d'arrêt pendant lequel la dose se refait : les chiffres
+   s'effacent, le reste de la carte ne bouge pas, et rien ne se déplace — une
+   valeur remplacée par un point de suspension ferait sauter la mise en page à
+   chaque frappe. */
+.dose-card-value,
+.dose-card-money {
+  transition: opacity 0.16s ease;
+}
+.dose-results-calcul .dose-card-value,
+.dose-results-calcul .dose-card-money {
+  opacity: 0.22;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dose-card-value,
+  .dose-card-money {
+    transition: none;
   }
+}
+
+/* One column below this width, and the answer stays after the question.
+
+   They were lifted above the panels for a while, stuck to the top, so that a
+   figure could be watched changing while the field that changed it was being
+   filled. In one column that put a dose on screen for a plot nobody had
+   described yet: the result arrived before its question, which reads as a
+   number that was never computed from anything. The two-column layout above
+   this width still shows both at once, which is where that was worth having.
+   Here they keep the opaque face, and the place they belong. */
+@media (max-width: 900px) {
+  /* Deux cartes de front sur une tablette, une seule sur un téléphone : en
+     dessous de 210px la valeur et son unité se séparent. */
   .dose-results {
-    order: -1;
-    top: 76px;
-    z-index: 2;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
     padding: 1em 1.1em;
     border-radius: 16px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
@@ -3973,10 +4004,10 @@ body li {
 
   /* ---------- 4. Cover ---------- */
 
-  /* Top padding clears the fixed bar; the bottom clears the row of entry
-     points, which is absolutely positioned against the foot of the stage. */
+  /* Top padding clears the fixed bar. The bottom is set further down, with
+     the row of entry points that used to need a band reserved for it. */
   .stage {
-    padding: 78px 5vw 7rem;
+    padding: 78px 5vw 2.5rem;
   }
   .hero-claim {
     max-width: none;
@@ -4001,27 +4032,36 @@ body li {
     font-size: 0.95rem;
   }
 
-  /* Five labelled doors cannot sit side by side on a phone, and stacking
-     them would bury the claim. They stay a strip, with snap points so a
-     swipe lands on a whole button rather than between two. */
+  /* The five entry points, all of them visible at once.
+
+     They used to be a strip that scrolled sideways, which fitted but hid
+     three of the five behind a gesture nobody is told about: the first
+     screen showed two doors and gave no sign there were more. On a phone
+     they leave the bottom edge of the cover, come back into the flow under
+     the buttons, and take two columns — the fifth spanning both, so the row
+     ends square rather than leaving a gap. Nothing to discover. */
   .cover-doors {
-    display: flex;
-    gap: 0.55rem;
-    overflow-x: auto;
-    scroll-snap-type: x proximity;
-    scroll-padding-inline: 5vw;
-    padding: 0 5vw 1.1rem;
-    scrollbar-width: none;
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 1.5em;
+    padding: 0;
+    overflow: visible;
   }
   .cover-doors a {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    min-height: 48px;
-    padding: 0.6em 1.05em;
-    white-space: nowrap;
+    min-height: 52px;
+    padding: 0.6em 0.8em;
+    white-space: normal;
+  }
+  .cover-doors a:last-child {
+    grid-column: 1 / -1;
   }
   .cover-doors-label {
-    font-size: 0.78rem;
+    font-size: 0.76rem;
+    line-height: 1.2;
   }
 
   /* ---------- 5. Section rhythm ---------- */
@@ -4238,25 +4278,9 @@ body li {
     gap: 1em;
     margin-top: 1.8em;
   }
-  /* Kept stuck to the top of the column, so a figure changing can be seen
-     while the field that changed it is being filled — but tightened, since
-     on a phone it is sharing the screen with the panel it reports on. */
   .dose-results {
-    top: 70px;
-    gap: 0.6em;
-    padding: 0.85em 0.9em;
-    /* Stuck to the top it would otherwise hold two fifths of a phone screen
-       for good. Bounded, and given its own scroll so nothing is lost. */
-    max-height: 40svh;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-  }
-  .dose-results-title {
-    position: sticky;
-    top: 0;
-    margin: 0;
-    padding-bottom: 0.4em;
-    background: #FFFFFF;
+    gap: 0.7em;
+    margin-top: 0.4em;
   }
   .dose-card {
     padding: 0.85em 1em;

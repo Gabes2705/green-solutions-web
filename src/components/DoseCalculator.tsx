@@ -127,6 +127,26 @@ export default function DoseCalculator() {
     return () => clearTimeout(t);
   }, [detect]);
 
+  /* Un demi-temps d'arrêt entre la question et la réponse.
+   *
+   * La dose est un calcul pur : elle se refait à chaque frappe, et le chiffre
+   * changeait donc dans le même souffle que le champ, sans que rien paraisse
+   * avoir été calculé. Le délai n'améliore aucun résultat, il rend visible
+   * qu'il y en a eu un — la valeur s'efface le temps de le poser, puis
+   * revient. Pas au premier rendu : à l'arrivée, rien n'a encore été demandé.
+   */
+  const [calculEnCours, setCalculEnCours] = useState(false);
+  const premierRendu = useRef(true);
+  useEffect(() => {
+    if (premierRendu.current) {
+      premierRendu.current = false;
+      return;
+    }
+    setCalculEnCours(true);
+    const t = setTimeout(() => setCalculEnCours(false), 500);
+    return () => clearTimeout(t);
+  }, [input, climate]);
+
   const yieldLabel =
     potential.kind === "study"
       ? t.yieldStudy
@@ -356,7 +376,10 @@ export default function DoseCalculator() {
               </section>
             </div>
 
-            <aside className="dose-results">
+            <aside
+              className={`dose-results${calculEnCours ? " dose-results-calcul" : ""}`}
+              aria-busy={calculEnCours}
+            >
               <h3 className="dose-results-title">{t.resultsTitle}</h3>
 
               <div className="dose-card">
