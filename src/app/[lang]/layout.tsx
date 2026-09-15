@@ -37,10 +37,10 @@ const organizationJsonLd = {
     "Technologies agricoles disruptives pour l'eau, les sols, les cultures et la forêt : EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "821 Chemin des Clapiers",
-    postalCode: "83220",
-    addressLocality: "Le Pradet",
-    addressCountry: "FR",
+    streetAddress: "46, route de la Condémine",
+    postalCode: "1475",
+    addressLocality: "Forel",
+    addressCountry: "CH",
   },
 };
 
