@@ -225,6 +225,6 @@ export default {
     title: "Dites-nous votre parcelle",
     body:
       "Culture, pente, nature du sol, mode d'irrigation s'il y en a un. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les résultats déjà relevés en Haïti et dans la Caraïbe.\n\nUn premier échange n'engage à rien.",
-    contact: "contact@evergreen-ecosorb.com · 821 Chemin des Clapiers, 83220 Le Pradet, France",
+    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse",
   },
 };
