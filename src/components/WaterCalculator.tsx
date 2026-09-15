@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Reveal from "./Reveal";
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -35,6 +35,20 @@ export default function WaterCalculator() {
     const high = Math.round(total * highRatio);
     const pools = Math.round(high / POOL_M3);
     return { low, high, pools };
+  }, [surface, consumption, modeIndex]);
+
+  // Même demi-temps d'arrêt que le calculateur de dose : le résultat s'efface
+  // pendant qu'on règle, et revient une demi-seconde après le dernier geste.
+  const [calculEnCours, setCalculEnCours] = useState(false);
+  const premierRendu = useRef(true);
+  useEffect(() => {
+    if (premierRendu.current) {
+      premierRendu.current = false;
+      return;
+    }
+    setCalculEnCours(true);
+    const t = setTimeout(() => setCalculEnCours(false), 500);
+    return () => clearTimeout(t);
   }, [surface, consumption, modeIndex]);
 
   return (
@@ -131,7 +145,10 @@ export default function WaterCalculator() {
               </div>
             </div>
 
-            <div className="calc-result">
+            <div
+              className={`calc-result${calculEnCours ? " calc-result-calcul" : ""}`}
+              aria-busy={calculEnCours}
+            >
               <p className="calc-result-eyebrow">{wc.resultEyebrow}</p>
               <p className="calc-result-range">
                 {fmt.format(low)} – {fmt.format(high)} <span className="calc-result-unit">m³</span>

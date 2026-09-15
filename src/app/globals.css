@@ -3776,16 +3776,22 @@ body li {
    valeur remplacée par un point de suspension ferait sauter la mise en page à
    chaque frappe. */
 .dose-card-value,
-.dose-card-money {
+.dose-card-money,
+.calc-result-range,
+.calc-result-pools strong {
   transition: opacity 0.16s ease;
 }
 .dose-results-calcul .dose-card-value,
-.dose-results-calcul .dose-card-money {
+.dose-results-calcul .dose-card-money,
+.calc-result-calcul .calc-result-range,
+.calc-result-calcul .calc-result-pools strong {
   opacity: 0.22;
 }
 @media (prefers-reduced-motion: reduce) {
   .dose-card-value,
-  .dose-card-money {
+  .dose-card-money,
+  .calc-result-range,
+  .calc-result-pools strong {
     transition: none;
   }
 }
