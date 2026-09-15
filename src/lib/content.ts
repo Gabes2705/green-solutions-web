@@ -7,7 +7,7 @@ export const content = {
     waterCalculator: {
       eyebrow: "Simulateur",
       title: "Calculez vos économies d'eau",
-      lede: "Renseignez votre exploitation pour estimer l'économie réalisable avec nos hydro-rétenteurs, selon votre mode d'irrigation actuel.",
+      lede: "Renseignez votre exploitation pour estimer l'économie réalisable avec nos hydro‑rétenteurs, selon votre mode d'irrigation actuel.",
       surfaceLabel: "Surface cultivée",
       surfaceUnit: "ha",
       irrigationLabel: "Mode d'irrigation actuel",
@@ -18,7 +18,7 @@ export const content = {
       resultNote: "Fourchette basse à haute, selon le mode d'irrigation",
       poolsPrefix: "soit l'équivalent de",
       poolsSuffix: "piscines olympiques",
-      disclaimer: "Estimation indicative fondée sur les gains d'économie d'eau documentés de nos hydro-rétenteurs (−40 à −70 % selon le mode d'irrigation). Le résultat réel dépend du sol, du climat et de la culture. Cet outil donne un ordre de grandeur : en aucun cas ces chiffres ne peuvent être considérés comme une valeur garantie, contractuelle ou absolue.",
+      disclaimer: "Estimation indicative fondée sur les gains d'économie d'eau documentés de nos hydro‑rétenteurs (−40 à −70 % selon le mode d'irrigation). Le résultat réel dépend du sol, du climat et de la culture. Cet outil donne un ordre de grandeur : en aucun cas ces chiffres ne peuvent être considérés comme une valeur garantie, contractuelle ou absolue.",
     },
     doseCalculator: {
             eyebrow: "Calculateur de dosage",
@@ -159,7 +159,7 @@ export const content = {
       ],
       avancerList: [
         {
-          text: "Augmenter les rendements sans la facture d'eau : nos hydro-rétenteurs et notre eau restructurée réduisent le besoin en irrigation de 50 à 70 %, tout en maintenant, voire en augmentant, vos rendements.",
+          text: "Augmenter les rendements sans la facture d'eau : nos hydro‑rétenteurs et notre eau restructurée réduisent le besoin en irrigation de 50 à 70 %, tout en maintenant, voire en augmentant, vos rendements.",
           linkLabel: "Voir EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -196,7 +196,7 @@ export const content = {
           num: "01",
           kicker: "Retenir l'eau",
           title: "EVERGREEN® & ECOSORB®",
-          text: "Nos hydro-rétenteurs captent l'eau de pluie ou d'irrigation et la stockent sous forme gélifiée au plus près des racines, sans en altérer la qualité. Un réservoir permanent, accessible à la plante quel que soit le sol ou le climat, qui supprime le stress hydrique aux phases critiques du cycle.",
+          text: "Nos hydro‑rétenteurs captent l'eau de pluie ou d'irrigation et la stockent sous forme gélifiée au plus près des racines, sans en altérer la qualité. Un réservoir permanent, accessible à la plante quel que soit le sol ou le climat, qui supprime le stress hydrique aux phases critiques du cycle.",
           facts: [
             "−50 à −70 % d'eau selon le type d'irrigation",
             "EVERGREEN® : WAC (capacité d'absorption d'eau) 300 X, 3 ans dans le sol",
@@ -304,7 +304,7 @@ export const content = {
           text: "La restructuration par résonance moléculaire transforme une eau « morte », désorganisée au niveau atomique, en eau vivante qui retrouve ses propriétés naturelles. Le système fonctionne sans énergie, sans entretien et sans consommable.",
           facts: [
             "−30 % d'eau, effet immédiat",
-            "Jusqu'à −70 % combiné aux hydro-rétenteurs",
+            "Jusqu'à −70 % combiné aux hydro‑rétenteurs",
             "Moins de corrosion et de calcaire, adopté dans 55 pays",
           ],
           more: "Water Vital® restructure l'eau par résonance moléculaire : une eau « morte », désorganisée à l'échelle atomique après son passage dans les canalisations ou les forages, retrouve une structure proche de celle de l'eau naturelle. Le système est purement physique — sans énergie, sans entretien, sans consommable ni produit chimique — et s'installe directement sur les réseaux existants, au départ des pompes. Sur le terrain, chez le Groupe EL HILAL (Sidi Moussa, Tipaza, Algérie), Water Vital® a été retenu pour irriguer 350 hectares d'arbres fruitiers (figuiers, pommiers, pêchers, grenadiers) en goutte-à-goutte, alimentés par un bassin de 200 x 100 x 12 mètres et plusieurs forages, via trois groupes de pompage d'un débit de 42 à 180 m³/h. La solution a été installée directement au niveau des départs de pompe, sans modification du réseau d'irrigation existant. Les effets mesurés : jusqu'à −30 % de consommation d'eau dès la mise en service, et jusqu'à −70 % lorsque Water Vital® est combiné à nos hydrorétenteurs EVERGREEN® ou ECOSORB® ; moins de corrosion et de dépôts calcaires dans les canalisations et les buses d'irrigation. La technologie est aujourd'hui adoptée dans 55 pays.",
@@ -370,7 +370,7 @@ export const content = {
           num: "06",
           kicker: "L'application · reconquérir la terre",
           title: "Agroforesterie & reboisement",
-          text: "Des écosystèmes agroforestiers installés en moins de 24 mois, pour les programmes de reboisement et la lutte contre la désertification. Chaque plant part avec son hydro-rétenteur et sa dose de fertilisant, pour qu'il reprenne y compris sur sols sableux ou dégradés.",
+          text: "Des écosystèmes agroforestiers installés en moins de 24 mois, pour les programmes de reboisement et la lutte contre la désertification. Chaque plant part avec son hydro‑rétenteur et sa dose de fertilisant, pour qu'il reprenne y compris sur sols sableux ou dégradés.",
           facts: [
             "Écosystème fonctionnel sous 24 mois",
             "Chaque plant équipé dès la mise en terre",
@@ -425,10 +425,10 @@ export const content = {
     objections: {
       eyebrow: "Ce qu'on nous demande d'abord",
       title: "Les six questions qui viennent avant la commande",
-      lede: "Ce sont les objections que nous entendons à chaque premier rendez-vous. Voici les réponses, et les documents qui les portent.",
+      lede: "Ce sont les objections que nous entendons à chaque premier rendez-vous.\nVoici les réponses, et les documents qui les portent.",
       items: [
         {
-          q: "« Un hydro-rétenteur, c'est du polyacrylamide. Ce n'est pas dangereux ? »",
+          q: "« Un hydro‑rétenteur, c'est du polyacrylamide. Ce n'est pas dangereux ? »",
           a: "ECOSORB® est à base d'amidon de maïs, EVERGREEN® à base de potassium — pas de sodium, pas d'acrylamide libre. Le laboratoire Polymex, certifié ISO 9001, a dosé l'acrylamide dans ECOSORB® par UPLC/TOF-MS, pyrolyse GC-MS et infrarouge : teneur inférieure à 3,0 µg/g, sous la limite de quantification de la méthode. Le rapport complet est en téléchargement.",
           proofLabel: "Analyse acrylamide — Polymex, décembre 2024",
           proofHref: "/documents/analyse-acrylamide-ecosorb-polymex-2024.pdf",

@@ -1365,6 +1365,7 @@ body p,
 body li {
   text-align: justify;
   hyphens: auto;
+  hyphenate-limit-chars: 14 5 5;
   text-wrap: pretty;
 }
 
@@ -1544,6 +1545,7 @@ body li {
   color: rgba(255, 255, 255, 0.94);
   text-align: justify;
   hyphens: auto;
+  hyphenate-limit-chars: 14 5 5;
 }
 /* Raised like the rest, but in reverse: a white face on the card's green,
    with its lip cut from the same green so the button looks pressed into it. */
@@ -1639,6 +1641,9 @@ body li {
   height: 100%;
   color: var(--ink);
 }
+/* pre-line so a lede can force its own break where the sense turns. The line
+   before a forced break counts as a last line and is not stretched, so this
+   costs the justification nothing. */
 .lede {
   max-width: 62ch;
   font-size: 1.12rem;
@@ -1646,6 +1651,8 @@ body li {
   color: var(--muted);
   text-align: justify;
   hyphens: auto;
+  hyphenate-limit-chars: 14 5 5;
+  white-space: pre-line;
 }
 
 .reseau-title-row {
@@ -1786,6 +1793,7 @@ body li {
   line-height: 1.25;
   overflow-wrap: break-word;
   hyphens: auto;
+  hyphenate-limit-chars: 14 5 5;
   transition: color 0.2s ease, font-weight 0.2s ease;
 }
 .calc-scale-modes span:first-child {
@@ -2000,17 +2008,24 @@ body li {
   padding: 2.4em 2.6em 2.6em;
 }
 
+/* These two sit on the photograph, above the white heading. In the mid green
+   they took from the palette they were tone on tone with the foliage behind
+   them and simply did not read: they go pale, and carry a shadow of their own
+   for the frames where the photograph is light. */
 .p-num {
   font-family: var(--font-numeric);
-  font-size: 1.05rem;
-  color: var(--leaf-light);
+  font-size: 1.15rem;
+  color: #B8ECC6;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8), 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 .p-kicker {
   margin: 0.7em 0 0.2em;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--leaf-light);
+  color: #C6F0D2;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8), 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 .product-row h3 {
   margin: 0 0 0.5em;
@@ -2028,6 +2043,7 @@ body li {
   color: rgba(255, 255, 255, 0.94);
   text-align: justify;
   hyphens: auto;
+  hyphenate-limit-chars: 14 5 5;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -2222,6 +2238,7 @@ body li {
   color: var(--ink);
   text-align: justify;
   hyphens: auto;
+  hyphenate-limit-chars: 14 5 5;
 }
 .objection-proof {
   align-self: flex-start;
@@ -3386,6 +3403,7 @@ body li {
   color: var(--muted);
   text-align: justify;
   hyphens: auto;
+  hyphenate-limit-chars: 14 5 5;
 }
 .tech-figure {
   margin: 0.4em 0 1.6em;
