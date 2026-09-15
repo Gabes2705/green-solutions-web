@@ -58,17 +58,18 @@ export async function build(spec) {
   // n'est pas toujours celui de la couverture.
   const c = complet ? communs(spec.locale, spec.paysTitre ?? spec.cover.title) : null;
 
+  // Chaque page supplémentaire ne sort que si le complément la porte : un
+  // dossier court (économie, une filière, la gamme) tient en 14 pages, un
+  // dossier complet en 18.
   d.chart({ ...spec.usages, footer: foot });
   if (complet) d.stats({ ...spec.economie, footer: foot });
   d.chart({ ...spec.productions, footer: foot });
-  if (complet) {
-    for (const [i, f] of spec.filieres.entries()) {
-      await d.split({ ...f, photo: pic(f.photo ?? i + 1), photoLeft: i % 2 === 1, footer: foot });
-    }
-    d.chart({ ...c.rendement(spec.rendement), footer: foot });
+  for (const [i, f] of (spec.filieres ?? []).entries()) {
+    await d.split({ ...f, photo: pic(f.photo ?? i + 1), photoLeft: i % 2 === 1, footer: foot });
   }
+  if (spec.rendement) d.chart({ ...c.rendement(spec.rendement), footer: foot });
   d.columns({ ...spec.solutions, footer: foot });
-  if (complet) d.columns({ ...c.gamme, footer: foot });
+  if (complet && spec.gamme !== false) d.columns({ ...c.gamme, footer: foot });
   d.chart({ ...spec.economies, footer: foot });
   await d.cards({
     ...spec.regions,
@@ -76,9 +77,9 @@ export async function build(spec) {
     footer: foot,
   });
   d.steps({ ...spec.deploiement, footer: foot });
-  if (complet) d.steps({ ...c.partenariat, footer: foot });
+  if (complet && spec.partenariat !== false) d.steps({ ...c.partenariat, footer: foot });
   d.columns({ ...spec.risques, footer: foot });
-  if (complet) d.columns({ ...c.sources(spec.sources), footer: foot });
+  if (spec.sources) d.columns({ ...c.sources(spec.sources), footer: foot });
   await d.closing({
     ...spec.closing,
     photo: pic(spec.closing.photo ?? 0),

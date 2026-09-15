@@ -175,12 +175,21 @@ export class Deck {
     const fh = fw * (2 / 3);
     const fx = this.rtl ? px + M : px + PANEL - M - fw;
     if (flag && existsSync(flag)) {
-      s.addImage({ path: flag, x: fx, y: 1.52, w: fw, h: fh });
+      // Un drapeau garde ses proportions : celui d'Oman ou de la Croatie est
+      // deux fois plus large que haut, et l'étirer au format 3:2 du cadre le
+      // déforme. Il s'inscrit dans le cadre, calé sur le bord extérieur.
+      const meta = await sharp(flag).metadata();
+      const ratio = (meta.width ?? 3) / (meta.height ?? 2);
+      const w = ratio > fw / fh ? fw : fh * ratio;
+      const h = ratio > fw / fh ? fw / ratio : fh;
+      const x = this.rtl ? fx : fx + fw - w;
+      const y = 1.52 + (fh - h) / 2;
+      s.addImage({ path: flag, x, y, w, h });
       s.addShape(this.p.ShapeType.rect, {
-        x: fx,
-        y: 1.52,
-        w: fw,
-        h: fh,
+        x,
+        y,
+        w,
+        h,
         fill: { type: "none" },
         line: { color: "3A3A3A", width: 0.75 },
       });
