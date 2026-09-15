@@ -1,22 +1,26 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import CountryFlag from "./CountryFlag";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 
-const LANGS: { code: Lang; label: string; name: string }[] = [
-  { code: "fr", label: "FR", name: "Français" },
-  { code: "en", label: "EN", name: "English" },
-  { code: "es", label: "ES", name: "Español" },
-  { code: "pt", label: "PT", name: "Português" },
-  { code: "ar", label: "AR", name: "العربية" },
-  { code: "zh", label: "中文", name: "简体中文" },
-  { code: "id", label: "ID", name: "Bahasa Indonesia" },
-  { code: "de", label: "DE", name: "Deutsch" },
-  { code: "it", label: "IT", name: "Italiano" },
-  { code: "el", label: "EL", name: "Ελληνικά" },
-  { code: "tr", label: "TR", name: "Türkçe" },
-  { code: "pl", label: "PL", name: "Polski" },
+/* `flag` names the country whose flag stands for the language, which is not
+   always where the language is from: English is shown under the flag of the
+   market this site sells into rather than the language's birthplace. */
+const LANGS: { code: Lang; label: string; name: string; flag: string }[] = [
+  { code: "fr", label: "FR", name: "Français", flag: "france" },
+  { code: "en", label: "EN", name: "English", flag: "etats-unis" },
+  { code: "es", label: "ES", name: "Español", flag: "espagne" },
+  { code: "pt", label: "PT", name: "Português", flag: "portugal" },
+  { code: "ar", label: "AR", name: "العربية", flag: "arabie-saoudite" },
+  { code: "zh", label: "中文", name: "简体中文", flag: "chine" },
+  { code: "id", label: "ID", name: "Bahasa Indonesia", flag: "indonesie" },
+  { code: "de", label: "DE", name: "Deutsch", flag: "allemagne" },
+  { code: "it", label: "IT", name: "Italiano", flag: "italie" },
+  { code: "el", label: "EL", name: "Ελληνικά", flag: "grece" },
+  { code: "tr", label: "TR", name: "Türkçe", flag: "turquie" },
+  { code: "pl", label: "PL", name: "Polski", flag: "pologne" },
 ];
 
 export default function LanguageSwitcher() {
@@ -52,6 +56,7 @@ export default function LanguageSwitcher() {
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
       >
+        <CountryFlag id={current.flag} />
         {current.label}
         <span className={`lang-caret${open ? " open" : ""}`} aria-hidden="true" />
       </button>
@@ -69,6 +74,7 @@ export default function LanguageSwitcher() {
                   setOpen(false);
                 }}
               >
+                <CountryFlag id={l.flag} />
                 <span className="lang-option-code">{l.label}</span>
                 <span className="lang-option-name">{l.name}</span>
               </button>

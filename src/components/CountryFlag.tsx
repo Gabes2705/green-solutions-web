@@ -316,6 +316,41 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       </g>
     </>
   ),
+  france: () => (
+    <>
+      <rect width="10" height="20" fill="#002654" />
+      <rect x="10" width="10" height="20" fill="#fff" />
+      <rect x="20" width="10" height="20" fill="#ED2939" />
+    </>
+  ),
+  italie: () => (
+    <>
+      <rect width="10" height="20" fill="#009246" />
+      <rect x="10" width="10" height="20" fill="#fff" />
+      <rect x="20" width="10" height="20" fill="#CE2B37" />
+    </>
+  ),
+  allemagne: () => (
+    <>
+      <rect width="30" height="6.67" fill="#000" />
+      <rect y="6.67" width="30" height="6.67" fill="#DD0000" />
+      <rect y="13.33" width="30" height="6.67" fill="#FFCE00" />
+    </>
+  ),
+  pologne: () => (
+    <>
+      <rect width="30" height="10" fill="#fff" />
+      <rect y="10" width="30" height="10" fill="#DC143C" />
+    </>
+  ),
+  portugal: () => (
+    <>
+      <rect width="30" height="20" fill="#DA291C" />
+      <rect width="12" height="20" fill="#046A38" />
+      <circle cx="12" cy="10" r="3.6" fill="#FFE900" />
+      <circle cx="12" cy="10" r="2.5" fill="#DA291C" />
+    </>
+  ),
 };
 
 const ALIASES: Record<string, string> = {
