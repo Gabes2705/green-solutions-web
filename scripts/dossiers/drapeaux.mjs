@@ -28,6 +28,7 @@ const FICHIERS = {
   chili: "Flag of Chile.svg",
   argentine: "Flag of Argentina.svg",
   haiti: "Flag of Haiti.svg",
+  espagne: "Flag of Spain.svg",
 };
 
 mkdirSync(out, { recursive: true });
