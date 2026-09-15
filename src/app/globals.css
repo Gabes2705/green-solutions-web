@@ -2515,6 +2515,30 @@ body li {
   letter-spacing: 0.02em;
 }
 
+/* The group's seal, closing the page.
+   Sized by clamp rather than by a breakpoint: the address printed around the
+   ring is the smallest type on the site, so the mark is held at 110px even on
+   a 320px screen and never allowed past 140px, where it would start competing
+   with the copy above it instead of signing off under it. A short centred
+   hairline sets it apart from the fine print without drawing a rule across the
+   whole footer. */
+.footer-seal {
+  margin-top: 2.2em;
+}
+.footer-seal::before {
+  content: "";
+  display: block;
+  width: 3.5em;
+  height: 1px;
+  margin: 0 auto 1.7em;
+  background: var(--hairline);
+}
+.footer-seal img {
+  display: inline-block;
+  width: clamp(110px, 17vw, 140px);
+  height: auto;
+}
+
 /* ---------- Tenir / Avancer ---------- */
 
 .tenir-avancer {

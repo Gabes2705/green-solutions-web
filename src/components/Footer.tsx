@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Footer() {
@@ -40,6 +41,20 @@ export default function Footer() {
         </a>
         , CC BY-SA 4.0
       </p>
+
+      {/* The group's seal, closing the page. The mark carries the company name
+          and its Swiss address in its own ring, so the alt text says both
+          rather than naming it a logo. The footer is rendered on the home page
+          only, so this is the one place on the site it appears. */}
+      <div className="footer-seal">
+        <Image
+          src="/images/logo-aim-sa.png"
+          alt="Green Solutions Groupe AIM SA — 46, route de la Condémine, Forel 1475, Suisse"
+          width={512}
+          height={512}
+          sizes="140px"
+        />
+      </div>
     </footer>
   );
 }
