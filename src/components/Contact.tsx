@@ -82,11 +82,11 @@ export default function Contact() {
             <li>
               <span>{ct.labelAddress}</span>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=821+Chemin+des+Clapiers%2C+83220+Le+Pradet%2C+France"
+                href="https://www.google.com/maps/search/?api=1&query=46+route+de+la+Cond%C3%A9mine%2C+1475+Forel%2C+Switzerland"
                 target="_blank"
                 rel="noreferrer"
               >
-                821 Chemin des Clapiers, 83220 Le Pradet, France
+                46, route de la Condémine, 1475 Forel, Suisse
               </a>
             </li>
           </ul>

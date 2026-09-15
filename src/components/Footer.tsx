@@ -16,11 +16,9 @@ export default function Footer() {
         <a href="#reseau">{c.nav.network}</a>
         <a href="#ressources">{c.nav.resources}</a>
       </div>
+      {/* L'adresse du groupe, en Suisse. Le sceau plus bas la porte déjà dans
+          son anneau, mais à 110px elle ne se lit pas : elle est écrite ici. */}
       <p>{c.footer.address}</p>
-      {/* La société suisse du groupe, sous l'établissement français. Le sceau
-          plus bas porte déjà la même adresse gravée dans son anneau, mais à
-          110px celle-ci ne se lit pas : elle est écrite ici pour de bon. */}
-      <p>{c.footer.addressGroup}</p>
       <p className="footer-legal">
         <a href="/fr/mentions-legales">Mentions légales</a>
         <span aria-hidden="true"> · </span>

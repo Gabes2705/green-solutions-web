@@ -9,7 +9,7 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const HUB = { lat: 43.1, lng: 6.02, label: "France" }; // Le Pradet — siège
+const HUB = { lat: 46.88, lng: 6.89, label: "Suisse" }; // Forel — siège du groupe
 
 const NODES = [
   { lat: -30.5, lng: 22.9, label: "Afrique du Sud" },

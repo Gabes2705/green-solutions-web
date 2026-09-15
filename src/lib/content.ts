@@ -629,9 +629,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, France · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Suisse",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Suisse",
       photoCreditPrefix: "Photos Paulownia :",
       photoCreditAnd: "et",
     },
@@ -1317,9 +1316,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, France · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Switzerland",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Switzerland",
       photoCreditPrefix: "Paulownia photos:",
       photoCreditAnd: "and",
     },
@@ -2008,9 +2006,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, Francia · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Suiza",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Suiza",
       photoCreditPrefix: "Fotos Paulownia:",
       photoCreditAnd: "y",
     },
@@ -2648,9 +2645,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, França · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Suíça",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Suíça",
       photoCreditPrefix: "Fotos Paulownia:",
       photoCreditAnd: "e",
     },
@@ -3288,9 +3284,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers، 83220 Le Pradet، فرنسا · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46، route de la Condémine، 1475 Forel، سويسرا",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46، route de la Condémine، 1475 Forel، سويسرا",
       photoCreditPrefix: "صور Paulownia:",
       photoCreditAnd: "و",
     },
@@ -3918,9 +3913,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, 法国 · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, 瑞士",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, 瑞士",
       photoCreditPrefix: "泡桐图片：",
       photoCreditAnd: "及",
     },
@@ -4605,9 +4599,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, Prancis · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Swiss",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Swiss",
       photoCreditPrefix: "Foto Paulownia:",
       photoCreditAnd: "dan",
     },
@@ -5235,9 +5228,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, Frankreich · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Schweiz",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Schweiz",
       photoCreditPrefix: "Paulownia-Fotos:",
       photoCreditAnd: "und",
     },
@@ -5925,9 +5917,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, Francia · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Svizzera",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Svizzera",
       photoCreditPrefix: "Foto Paulownia:",
       photoCreditAnd: "e",
     },
@@ -6555,9 +6546,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, Γαλλία · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Ελβετία",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Ελβετία",
       photoCreditPrefix: "Φωτογραφίες Paulownia:",
       photoCreditAnd: "και",
     },
@@ -7184,9 +7174,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, Fransa · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, İsviçre",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, İsviçre",
       photoCreditPrefix: "Paulownia fotoğrafları:",
       photoCreditAnd: "ve",
     },
@@ -7823,9 +7812,8 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, Francja · SIRET 420 728 545 00021",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Szwajcaria",
 
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Szwajcaria",
       photoCreditPrefix: "Zdjęcia Paulownii:",
       photoCreditAnd: "i",
     },
@@ -8463,8 +8451,7 @@ export const content = {
       ],
     },
     footer: {
-      address: "821 Chemin des Clapiers, 83220 Le Pradet, Francuska · SIRET 420 728 545 00021",
-      addressGroup: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Švicarska",
+      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Švicarska",
       photoCreditPrefix: "Fotografije paulovnije:",
       photoCreditAnd: "i",
     },

@@ -16,7 +16,7 @@ export default function Confidentialite() {
       </a>
 
       <h1>Politique de confidentialité</h1>
-      <p className="legal-updated">Dernière mise à jour : 9 septembre 2026</p>
+      <p className="legal-updated">Dernière mise à jour : 16 septembre 2026</p>
 
       <p className="legal-lede">
         Ce site ne dépose aucun cookie, n&apos;utilise aucun outil de mesure
@@ -27,9 +27,9 @@ export default function Confidentialite() {
 
       <h2>Qui est responsable de ces données</h2>
       <p>
-        GREEN SOLUTIONS SAS, 821 Chemin des Clapiers, 83220 Le Pradet, France.
+        GREEN SOLUTIONS GROUPE AIM SA, 46, route de la Condémine, 1475 Forel, Suisse.
         <br />
-        RCS Toulon 420 728 545 — SIRET 420 728 545 00021.
+        Numéro d&apos;identification des entreprises (IDE) : <mark>à compléter</mark>.
         <br />
         Contact :{" "}
         <a href="mailto:contact@evergreen-ecosorb.com">
