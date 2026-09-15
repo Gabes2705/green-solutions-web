@@ -34,6 +34,9 @@ export async function build(spec) {
 
   const drapeau = join(here, "drapeaux", `${spec.slug}.png`);
   const logo = join(here, "../../public/images/logo-icon.png");
+  // Le sceau du groupe ferme le dossier. En blanc : la page de clôture est
+  // toujours sombre.
+  const sceau = join(here, "sceau-aim-clair.png");
   await d.cover({
     ...spec.cover,
     photo: pic(spec.cover.photo ?? 0),
@@ -57,7 +60,12 @@ export async function build(spec) {
   });
   d.steps({ ...spec.deploiement, footer: foot });
   d.columns({ ...spec.risques, footer: foot });
-  await d.closing({ ...spec.closing, photo: pic(spec.closing.photo ?? 0), footer: foot });
+  await d.closing({
+    ...spec.closing,
+    photo: pic(spec.closing.photo ?? 0),
+    footer: foot,
+    sceau: existsSync(sceau) ? sceau : null,
+  });
 
   mkdirSync(OUT, { recursive: true });
   const pptx = join(OUT, `${spec.fichier}.pptx`);
