@@ -524,6 +524,7 @@ export const content = {
         { country: "Grèce", href: "/documents/countries/grece.pdf" },
         { country: "Chili", href: "/documents/countries/chili.pdf" },
         { country: "Argentine", href: "/documents/countries/argentine.pdf" },
+        { country: "Croatie", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
@@ -1208,6 +1209,7 @@ export const content = {
         { country: "Greece", href: "/documents/countries/grece.pdf" },
         { country: "Chile", href: "/documents/countries/chili.pdf" },
         { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "Croatia", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
@@ -1892,8 +1894,10 @@ export const content = {
         { country: "Grecia", href: "/documents/countries/grece.pdf" },
         { country: "Cile", href: "/documents/countries/chili.pdf" },
         { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "Croacia", href: "/documents/countries/croatie.pdf" },
         { country: "Chile", href: "/documents/countries/chili.pdf" },
         { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "Croácia", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
@@ -2530,6 +2534,7 @@ export const content = {
         { country: "Grécia", href: "/documents/countries/grece.pdf" },
         { country: "Chile", href: "/documents/countries/chili.pdf" },
         { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "كرواتيا", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
@@ -3166,6 +3171,7 @@ export const content = {
         { country: "اليونان", href: "/documents/countries/grece.pdf" },
         { country: "تشيلي", href: "/documents/countries/chili.pdf" },
         { country: "الأرجنتين", href: "/documents/countries/argentine.pdf" },
+        { country: "克罗地亚", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
@@ -3792,6 +3798,7 @@ export const content = {
         { country: "希腊", href: "/documents/countries/grece.pdf" },
         { country: "智利", href: "/documents/countries/chili.pdf" },
         { country: "阿根廷", href: "/documents/countries/argentine.pdf" },
+        { country: "Kroasia", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
@@ -4475,6 +4482,7 @@ export const content = {
         { country: "Yunani", href: "/documents/countries/grece.pdf" },
         { country: "Chili", href: "/documents/countries/chili.pdf" },
         { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "Kroatien", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
@@ -5101,6 +5109,7 @@ export const content = {
         { country: "Griechenland", href: "/documents/countries/grece.pdf" },
         { country: "Chile", href: "/documents/countries/chili.pdf" },
         { country: "Argentinien", href: "/documents/countries/argentine.pdf" },
+        { country: "Croazia", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
@@ -5784,8 +5793,10 @@ export const content = {
         { country: "Grecia", href: "/documents/countries/grece.pdf" },
         { country: "Cile", href: "/documents/countries/chili.pdf" },
         { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "Κροατία", href: "/documents/countries/croatie.pdf" },
         { country: "Chile", href: "/documents/countries/chili.pdf" },
         { country: "Argentina", href: "/documents/countries/argentine.pdf" },
+        { country: "Hırvatistan", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
@@ -6412,6 +6423,7 @@ export const content = {
         { country: "Ελλάδα", href: "/documents/countries/grece.pdf" },
         { country: "Χιλή", href: "/documents/countries/chili.pdf" },
         { country: "Αργεντινή", href: "/documents/countries/argentine.pdf" },
+        { country: "Chorwacja", href: "/documents/countries/croatie.pdf" },
       ],
     },
     fieldTests: {
