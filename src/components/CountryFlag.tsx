@@ -14,14 +14,6 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect x="20" width="10" height="20" fill="#009E60" />
     </>
   ),
-  congo: () => (
-    <>
-      <polygon points="0,0 30,0 0,20" fill="#009543" />
-      <polygon points="30,0 30,20 0,20" fill="#DC241F" />
-      <polygon points="0,20 30,0 21,0 0,15" fill="#FBDE4A" />
-      <polygon points="30,0 9,20 0,20 21,0" fill="#FBDE4A" />
-    </>
-  ),
   cameroun: () => (
     <>
       <rect width="10" height="20" fill="#007A5E" />
@@ -47,22 +39,6 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect width="10" height="20" fill="#CE1126" />
       <rect x="10" width="10" height="20" fill="#FCD116" />
       <rect x="20" width="10" height="20" fill="#009460" />
-    </>
-  ),
-  koweit: () => (
-    <>
-      <rect width="30" height="6.67" fill="#007A3D" />
-      <rect y="6.67" width="30" height="6.67" fill="#fff" />
-      <rect y="13.33" width="30" height="6.67" fill="#CE1126" />
-      <polygon points="0,0 9,10 0,20" fill="#000" />
-    </>
-  ),
-  oman: () => (
-    <>
-      <rect width="30" height="6.67" fill="#fff" />
-      <rect y="6.67" width="30" height="6.67" fill="#DB161B" />
-      <rect y="13.33" width="30" height="6.67" fill="#008751" />
-      <rect width="9" height="20" fill="#DB161B" />
     </>
   ),
   senegal: () => (
@@ -136,16 +112,6 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
           />
         )),
       )}
-    </>
-  ),
-  "afrique-du-sud": () => (
-    <>
-      <rect width="30" height="20" fill="#fff" />
-      <polygon points="0,0 30,0 30,3.3 12,10 0,10" fill="#DE3831" />
-      <polygon points="0,20 30,20 30,16.7 12,10 0,10" fill="#002395" />
-      <polygon points="0,2.5 9.5,10 0,17.5" fill="#FFB612" />
-      <polygon points="0,4.5 7.4,10 0,15.5" fill="#000" />
-      <polygon points="0,6.5 30,0 30,3.3 12,10 30,16.7 30,20 0,13.5 5.5,10" fill="#007A4D" />
     </>
   ),
   turquie: () => (
@@ -235,53 +201,10 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect y="13.33" width="30" height="6.67" fill="#3A75C4" />
     </>
   ),
-  egypte: () => (
-    <>
-      <rect width="30" height="6.67" fill="#CE1126" />
-      <rect y="6.67" width="30" height="6.67" fill="#FFF" />
-      <rect y="13.33" width="30" height="6.67" fill="#000" />
-      <g fill="#C09300" transform="translate(15 10)">
-        <ellipse rx="1.05" ry="1.5" />
-        <path d="M-1 -0.5 L-3.6 -1.5 L-3.2 0.4 L-1 0.6 Z" />
-        <path d="M1 -0.5 L3.6 -1.5 L3.2 0.4 L1 0.6 Z" />
-        <path d="M-1 1.1 L1 1.1 L0.55 2.6 L-0.55 2.6 Z" />
-      </g>
-    </>
-  ),
-  jordanie: () => (
-    <>
-      <rect width="30" height="6.67" fill="#000" />
-      <rect y="6.67" width="30" height="6.67" fill="#FFF" />
-      <rect y="13.33" width="30" height="6.67" fill="#007A3D" />
-      <polygon points="0,0 11.5,10 0,20" fill="#CE1126" />
-      <g transform="translate(4.6 10) scale(0.42)">
-        <Star fill="#FFF" />
-      </g>
-    </>
-  ),
   haiti: () => (
     <>
       <rect width="30" height="10" fill="#003DA5" />
       <rect y="10" width="30" height="10" fill="#CE1126" />
-    </>
-  ),
-  "arabie-saoudite": () => (
-    <>
-      <rect width="30" height="20" fill="#006C35" />
-      <g fill="#FFF">
-        <rect x="4.5" y="7.4" width="21" height="0.85" />
-        {[6.2, 8.6, 11.4, 14.2, 17.6, 20.4, 23].map((x, i) => (
-          <rect key={x} x={x} y={7.4 - (i % 2 ? 2.5 : 1.7)} width="0.8" height={i % 2 ? 2.5 : 1.7} />
-        ))}
-        <rect x="5.5" y="11.2" width="19" height="0.85" />
-        {[7, 9.8, 12.6, 15.4, 18.2, 21].map((x, i) => (
-          <rect key={x} x={x} y={11.2 - (i % 2 ? 1.6 : 2.3)} width="0.8" height={i % 2 ? 1.6 : 2.3} />
-        ))}
-        <rect x="5.2" y="15" width="18.5" height="0.9" />
-        <polygon points="5.2,15 5.2,15.9 2.2,15.45" />
-        <rect x="23.2" y="13.7" width="0.9" height="3.5" />
-        <rect x="24.4" y="14.9" width="3.2" height="1.1" rx="0.5" />
-      </g>
     </>
   ),
   chili: () => (
@@ -379,8 +302,64 @@ const ALIASES: Record<string, string> = {
   "etats-unis-amerique": "etats-unis",
 };
 
+/**
+ * Drapeaux servis en fichier plutôt que redessinés ici.
+ *
+ * Les tracés ci-dessus sont des approximations. Pour trois bandes et une
+ * étoile, cela suffit et personne n'y perd. Ces sept-là ne se laissent pas
+ * approcher, parce qu'ils portent une écriture ou un emblème :
+ *
+ *   - L'Arabie saoudite porte la chahada, une profession de foi. La version
+ *     dessinée à la main la rendait par deux rangées de barres à dents — des
+ *     peignes, pas une écriture. Imiter grossièrement un texte sacré n'est pas
+ *     une imprécision graphique, et un lecteur saoudien le lirait ainsi. Une
+ *     calligraphie ne se redessine pas de mémoire : il faut le vrai tracé.
+ *   - La Jordanie porte une étoile à sept branches, une par verset de la
+ *     Fatiha. Elle était dessinée à cinq.
+ *   - L'Égypte porte l'aigle de Saladin, rendu par une ellipse et trois
+ *     triangles ; Oman le khanjar et les sabres, purement absents.
+ *   - L'Afrique du Sud tient sur un Y couché à six couleurs et deux liserés.
+ *     La version dessinée n'avait ni la forme ni les liserés.
+ *   - Le Koweït a un trapèze au guindant, qui était un triangle ; le Congo,
+ *     une bande jaune trop large sur une diagonale mal posée.
+ *
+ * Les fichiers sont rendus depuis les tracés vectoriels officiels de Wikimedia
+ * Commons — la source dont les couvertures de dossier tirent déjà leurs
+ * drapeaux, pour cette même raison. Rendus à 156px, soit trois fois la plus
+ * grande taille d'affichage : les sept pèsent 8 Ko en tout, là où les mêmes
+ * vecteurs en pesaient 61 une fois compressés, le seul khanjar omanais en
+ * portant 42 de détails qu'une vignette de 52px ne montrera jamais.
+ */
+const OFFICIELS = new Set([
+  "afrique-du-sud",
+  "arabie-saoudite",
+  "congo",
+  "egypte",
+  "jordanie",
+  "koweit",
+  "oman",
+]);
+
 export default function CountryFlag({ id }: { id: string }) {
-  const draw = FLAGS[ALIASES[id] ?? id];
+  const cle = ALIASES[id] ?? id;
+
+  if (OFFICIELS.has(cle)) {
+    return (
+      <div className="flag-square">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="flag-square-svg"
+          src={`/images/flags/${cle}.png`}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    );
+  }
+
+  const draw = FLAGS[cle];
   if (!draw) return null;
 
   return (
