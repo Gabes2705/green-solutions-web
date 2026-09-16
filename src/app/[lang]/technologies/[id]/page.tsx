@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { content } from "@/lib/content";
 import TechnologyPageClient from "@/components/TechnologyPageClient";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, languageAlternates } from "@/lib/site";
 
 const TECH_IDS = [
   "retention-eau",
@@ -45,20 +45,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     description,
     alternates: {
       canonical: url,
-      languages: {
-        fr: `${SITE_URL}/fr/technologies/${id}`,
-        en: `${SITE_URL}/en/technologies/${id}`,
-        es: `${SITE_URL}/es/technologies/${id}`,
-        pt: `${SITE_URL}/pt/technologies/${id}`,
-        ar: `${SITE_URL}/ar/technologies/${id}`,
-        zh: `${SITE_URL}/zh/technologies/${id}`,
-        id: `${SITE_URL}/id/technologies/${id}`,
-        de: `${SITE_URL}/de/technologies/${id}`,
-        it: `${SITE_URL}/it/technologies/${id}`,
-        el: `${SITE_URL}/el/technologies/${id}`,
-        tr: `${SITE_URL}/tr/technologies/${id}`,
-        pl: `${SITE_URL}/pl/technologies/${id}`,
-      },
+      languages: languageAlternates(`/technologies/${id}`),
     },
     openGraph: {
       type: "website",
