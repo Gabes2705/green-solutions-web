@@ -34,8 +34,37 @@ function detectLanguage(header: string | null): string {
   return DEFAULT_LANGUAGE;
 }
 
+/* Les six pages de l'ancien site WordPress, servi sur evergreen-ecosorb.com
+   jusqu'au jour où ce domaine pointera ici. Google les a indexées : sans cette
+   table, la détection de langue ci-dessous les enverrait sur /fr/nos-solutions
+   et consorts, qui n'existent pas — chaque résultat de recherche mènerait à une
+   page introuvable, et le crédit accumulé par l'ancienne adresse serait perdu.
+
+   L'accueil n'y figure pas : il mène déjà au nouvel accueil. */
+const ANCIENNES_PAGES: Record<string, string> = {
+  "/nos-solutions": "/fr/technologies/retention-eau",
+  "/nos-partenaires": "/fr/partenaires",
+  "/contactez-nous": "/fr/#contact",
+  "/a-propos-de-nous": "/fr/#entreprise",
+  "/politique-de-confidentialite": "/fr/confidentialite",
+};
+
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+
+  // Avant toute chose : une adresse de l'ancien site ne doit pas tomber entre
+  // les mains de la détection de langue.
+  //
+  // 308 et non 307 : permanent, ce qui demande au moteur de recherche de
+  // transférer à la nouvelle page le crédit de l'ancienne. Un permanent se met
+  // en cache, donc sa destination ne peut pas dépendre du navigateur : ces
+  // pages-là partent toutes vers le français, la langue dans laquelle elles
+  // étaient écrites et indexées. Le visiteur changera de langue s'il le veut.
+  const sansBarreFinale = pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
+  const ancienne = ANCIENNES_PAGES[sansBarreFinale];
+  if (ancienne) {
+    return NextResponse.redirect(new URL(ancienne, request.url), 308);
+  }
 
   const pathnameHasLanguage = LANGUAGES.some(
     (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`
