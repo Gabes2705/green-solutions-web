@@ -1427,24 +1427,17 @@ body li {
   hyphens: manual;
 }
 
-/* Copy set inside a card is never justified, at any width.
+/* Card copy is justified too, like every other block of running copy on the
+   site - asked for explicitly, and applied by letting the body rule above
+   reach these paragraphs rather than opting them out.
 
-   A card sits in a grid two or three across inside a 1080px page, so its
-   column runs 35 to 55 characters however the window is sized. Justification
-   wants about sixty: below that a line has too few word spaces to absorb what
-   the last word leaves behind, and since breaking words is ruled out - the
-   fourteen-letter hyphenation threshold exists to keep énergie, associé and
-   reboisement whole - the slack has nowhere to go but into the spaces. It was
-   measured at eighteen times the width of a normal space in an objection card
-   on a 1024px screen, and eight times at 1440. Ragged, the same column reads
-   evenly at every width.
-
-   The running copy that keeps its justification is the copy that has the room
-   for it: the ledes, the technology bands and the legal pages, all of which
-   run 60 to 100 characters on a desktop. */
-.ta-answer p {
-  text-align: start;
-}
+   It is the hardest place to justify, and worth knowing why: a card sits in a
+   grid two or three across inside a 1080px page, so its column runs 35 to 55
+   characters however the window is sized, where justification wants about
+   sixty. Below that a line has fewer word spaces to absorb what the last word
+   leaves behind. The automatic hyphenation that comes with the body rule is
+   what keeps those gaps closed, and its fourteen-letter threshold still keeps
+   énergie, associé and reboisement whole. */
 
 .eyebrow {
   margin: 0 0 0.9em;
@@ -2275,17 +2268,15 @@ body li {
   line-height: 1.3;
   color: var(--leaf-light);
 }
-/* Ragged, like all card copy - see the note beside `.ta-answer p`. Two
-   objections across a 1080px page leave each of them 42 to 55 characters, and
-   justifying that without leave to break words opened gaps of up to eighteen
-   times a normal space. */
+/* Justified, like all card copy - see the note beside `.ta-answer p`. Two
+   objections across a 1080px page leave each of them 42 to 55 characters, so
+   the automatic hyphenation inherited from the body rule is what holds the
+   word gaps closed here. */
 .objection p {
   margin: 0 0 1.2em;
   font-size: 1.08rem;
   line-height: 1.7;
   color: var(--ink);
-  text-align: start;
-  hyphens: manual;
 }
 .objection-proof {
   align-self: flex-start;
