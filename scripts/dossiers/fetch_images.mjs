@@ -20,8 +20,11 @@ const TARGET = parIdx > -1 ? Number(process.argv[parIdx + 1]) : 6;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// Les cultures tropicales manquaient : un fichier « Cocoa pods drying » ne
+// portait aucun des mots ci-dessous et se faisait écarter, alors que le cacao
+// est la photo emblématique de la Côte d'Ivoire ou du Ghana.
 const MOTS_OK =
-  /(field|farm|orchard|plantation|irrigat|oasis|oases|palm|vineyard|vine|crop|harvest|agricultur|greenhouse|terrace|olive|wheat|corn|maize|citrus|orange|farmland|cultivat|paddy|grove|tractor|barley|soy|blueberr|garden|valley|plain|delta)/i;
+  /(field|farm|orchard|plantation|irrigat|oasis|oases|palm|vineyard|vine|crop|harvest|agricultur|greenhouse|terrace|olive|wheat|corn|maize|citrus|orange|farmland|cultivat|paddy|grove|tractor|barley|soy|blueberr|garden|valley|plain|delta|cocoa|cacao|cashew|anacard|rubber|hevea|latex|yam|cassava|manioc|plantain|banana|coffee|rice|cotton|pineapple|mango)/i;
 
 const MOTS_KO = new RegExp(
   [

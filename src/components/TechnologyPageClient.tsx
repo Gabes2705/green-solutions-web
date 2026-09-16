@@ -62,6 +62,16 @@ const TECH_VIDEOS: Record<string, string[]> = {
   "eau-restructuree": ["/videos/water-vital-1.mp4", "/videos/water-vital-2.mp4"],
 };
 
+/* Une vidéo qui n'est pas la nôtre : elle est publiée par un tiers sur
+   YouTube, donc on intègre son lecteur au lieu d'en recopier le fichier. Le
+   domaine « nocookie » ne dépose rien dans le navigateur tant que le visiteur
+   n'a pas lancé la lecture — la politique de confidentialité le dit. */
+const TECH_YOUTUBE: Record<string, { id: string; titre: string }[]> = {
+  paulownia: [
+    { id: "9eDnuEEhu1M", titre: "Le paulownia, l'arbre du futur ? — Réel média" },
+  ],
+};
+
 const COLOR_CLASS: Record<string, string> = {
   "retention-eau": "tech-blue",
   paulownia: "tech-amber",
@@ -101,6 +111,7 @@ export default function TechnologyPageClient() {
   const item = c.products.items.find((p) => p.id === id);
   const images = id ? TECH_IMAGES[id] : undefined;
   const videos = id ? TECH_VIDEOS[id] : undefined;
+  const embeds = id ? TECH_YOUTUBE[id] : undefined;
   const colorClass = (id && COLOR_CLASS[id]) || "tech-blue";
 
   if (!item || !images) {
@@ -145,15 +156,27 @@ export default function TechnologyPageClient() {
           </ul>
         </Reveal>
 
-        {videos && videos.length > 0 && (
+        {((videos?.length ?? 0) > 0 || (embeds?.length ?? 0) > 0) && (
           <Reveal>
             <section id="video" className="tech-section">
               <h2>{c.products.videosHeading}</h2>
               <div className="tech-video-grid">
-                {videos.map((src) => (
+                {(videos ?? []).map((src) => (
                   <video key={src} className="tech-video" controls playsInline preload="metadata">
                     <source src={src} type="video/mp4" />
                   </video>
+                ))}
+                {(embeds ?? []).map((v) => (
+                  <div key={v.id} className="tech-video-embed">
+                    <iframe
+                      src={`https://www.youtube-nocookie.com/embed/${v.id}`}
+                      title={v.titre}
+                      loading="lazy"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  </div>
                 ))}
               </div>
             </section>

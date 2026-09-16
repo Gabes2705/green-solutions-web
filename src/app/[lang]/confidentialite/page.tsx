@@ -19,10 +19,11 @@ export default function Confidentialite() {
       <p className="legal-updated">Dernière mise à jour : 16 septembre 2026</p>
 
       <p className="legal-lede">
-        Ce site ne dépose aucun cookie, n&apos;utilise aucun outil de mesure
-        d&apos;audience et ne conserve rien dans votre navigateur. Les seules
-        données personnelles que nous recevons sont celles que vous nous
-        écrivez vous-même dans le formulaire de contact.
+        Ce site ne dépose aucun cookie et n&apos;utilise aucun outil de mesure
+        d&apos;audience. Les seules données personnelles que nous recevons sont
+        celles que vous nous écrivez vous-même dans le formulaire de contact.
+        Une vidéo YouTube est intégrée à la page consacrée au Paulownia :
+        c&apos;est la seule exception, détaillée plus bas.
       </p>
 
       <h2>Qui est responsable de ces données</h2>
@@ -92,15 +93,26 @@ export default function Confidentialite() {
 
       <h2>Cookies et mesure d&apos;audience</h2>
       <p>
-        Ce site n&apos;utilise <strong>aucun cookie</strong>, aucun traceur,
-        aucun outil statistique et aucun bouton de réseau social. C&apos;est
-        pourquoi vous ne voyez aucune fenêtre de consentement en arrivant :
-        il n&apos;y a rien à accepter.
+        Ce site ne dépose <strong>aucun cookie de son fait</strong> : aucun
+        traceur, aucun outil statistique, aucun bouton de réseau social.
+        C&apos;est pourquoi vous ne voyez aucune fenêtre de consentement en
+        arrivant.
       </p>
-      <p>
-        Les polices de caractères sont servies depuis Google Fonts, ce qui
-        transmet votre adresse IP à Google le temps du chargement.
-      </p>
+      <p>Deux services extérieurs sont toutefois appelés par vos pages :</p>
+      <ul>
+        <li>
+          <strong>Google Fonts</strong>, qui sert les polices de caractères :
+          votre adresse IP est transmise à Google le temps du chargement.
+        </li>
+        <li>
+          <strong>YouTube</strong>, sur la page consacrée au Paulownia, où une
+          vidéo est intégrée. Nous employons le lecteur sans cookie
+          (youtube-nocookie.com) : rien n&apos;est déposé dans votre navigateur
+          tant que vous ne lancez pas la lecture. Votre adresse IP est en
+          revanche transmise à Google dès l&apos;affichage de la page, et
+          démarrer la vidéo place des données sur votre appareil.
+        </li>
+      </ul>
 
       <h2>Vos droits</h2>
       <p>
