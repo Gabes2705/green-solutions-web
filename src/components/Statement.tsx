@@ -11,8 +11,11 @@ export default function Statement() {
     <section
       className="statement"
       style={{
+        // Un voile sombre, et non plus blanc : le blanc délavait la photo au
+        // point de la faire disparaître, et le texte posé dessus se lisait à
+        // peine. Le dégradé reste plus dense au centre, là où court le texte.
         backgroundImage:
-          "radial-gradient(56% 72% at 50% 50%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.76) 40%, rgba(255,255,255,0.34) 74%, rgba(255,255,255,0.08) 100%), url('/images/stock/orchard-rows-sunset.jpg')",
+          "radial-gradient(60% 75% at 50% 50%, rgba(8,26,16,0.82) 0%, rgba(8,26,16,0.74) 42%, rgba(8,26,16,0.58) 76%, rgba(8,26,16,0.44) 100%), url('/images/stock/orchard-rows-sunset.jpg')",
       }}
     >
       <div className="section-inner">

@@ -1408,7 +1408,6 @@ body li {
 .pilot-place,
 .pilot-crop,
 .pilot-tech li,
-.p-facts li,
 .p-num,
 .p-kicker,
 .doc-meta,
@@ -3002,13 +3001,18 @@ body li {
   background-position: center;
   text-align: center;
 }
+/* The band now sits on a darkened photograph, so every line on it is set
+   light. Each one keeps a shadow: the veil is a gradient, and the rows of
+   trees show through most at the edges, which is exactly where a line of
+   text ends. */
 .statement-eyebrow {
   margin: 0 0 0.8em;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: #CFE6C2;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55);
 }
 .statement-title {
   margin: 0 auto 0.8em;
@@ -3018,24 +3022,30 @@ body li {
   font-style: italic;
   font-size: clamp(1.8rem, 4vw, 3rem);
   line-height: 1.15;
-  color: var(--ink);
+  color: #FFFFFF;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
 }
-/* Set over a photograph rather than a flat tint: the muted grey it used to
-   take has too little weight to hold against the rows behind it. */
+/* Justified, like the rest of the running copy: this one has the room for it
+   at 60 characters, so the word gaps stay close to a normal space. */
 .statement-text {
   max-width: 60ch;
   margin: 0 auto 1em;
   font-size: 1.06rem;
   line-height: 1.7;
-  color: #2E3B33;
-  text-align: center;
+  color: rgba(255, 255, 255, 0.94);
+  text-align: justify;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
+/* The closing line was gold on a pale photograph and read as tone on tone.
+   White, larger and heavier, it carries. */
 .statement-tag {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 1.15rem;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #FFFFFF;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 760px) {
