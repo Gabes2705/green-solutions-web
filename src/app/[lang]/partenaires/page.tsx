@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { content } from "@/lib/content";
 import PartnersPageClient from "@/components/PartnersPageClient";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, languageAlternates } from "@/lib/site";
 
 export function generateStaticParams() {
   return ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"].map((lang) => ({ lang }));
@@ -22,16 +22,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     description: p.lede,
     alternates: {
       canonical: url,
-      languages: {
-        fr: `${SITE_URL}/fr/partenaires`,
-        en: `${SITE_URL}/en/partenaires`,
-        es: `${SITE_URL}/es/partenaires`,
-        pt: `${SITE_URL}/pt/partenaires`,
-        ar: `${SITE_URL}/ar/partenaires`,
-        zh: `${SITE_URL}/zh/partenaires`,
-        id: `${SITE_URL}/id/partenaires`,
-        de: `${SITE_URL}/de/partenaires`,
-      },
+      languages: languageAlternates("/partenaires"),
     },
     openGraph: {
       type: "website",

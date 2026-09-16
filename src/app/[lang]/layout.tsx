@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Manrope, Bricolage_Grotesque } from "next/font/google";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import "../globals.css";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, languageAlternates } from "@/lib/site";
 
 const fraunces = Fraunces({
   variable: "--font-display",
@@ -119,21 +119,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     description: t.description,
     alternates: {
       canonical,
-      languages: {
-        fr: `${SITE_URL}/fr/`,
-        en: `${SITE_URL}/en/`,
-        es: `${SITE_URL}/es/`,
-        pt: `${SITE_URL}/pt/`,
-        ar: `${SITE_URL}/ar/`,
-        zh: `${SITE_URL}/zh/`,
-        id: `${SITE_URL}/id/`,
-        de: `${SITE_URL}/de/`,
-        it: `${SITE_URL}/it/`,
-        el: `${SITE_URL}/el/`,
-        tr: `${SITE_URL}/tr/`,
-        pl: `${SITE_URL}/pl/`,
-        "x-default": `${SITE_URL}/fr/`,
-      },
+      languages: languageAlternates("/"),
     },
     keywords: [
       "agriculture écologiquement intensive",

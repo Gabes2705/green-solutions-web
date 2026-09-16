@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { content } from "@/lib/content";
 import FieldTestsPageClient from "@/components/FieldTestsPageClient";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, languageAlternates } from "@/lib/site";
 
 export function generateStaticParams() {
   return ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"].map((lang) => ({ lang }));
@@ -22,16 +22,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     description: ft.lede,
     alternates: {
       canonical: url,
-      languages: {
-        fr: `${SITE_URL}/fr/tests-et-rapports`,
-        en: `${SITE_URL}/en/tests-et-rapports`,
-        es: `${SITE_URL}/es/tests-et-rapports`,
-        pt: `${SITE_URL}/pt/tests-et-rapports`,
-        ar: `${SITE_URL}/ar/tests-et-rapports`,
-        zh: `${SITE_URL}/zh/tests-et-rapports`,
-        id: `${SITE_URL}/id/tests-et-rapports`,
-        de: `${SITE_URL}/de/tests-et-rapports`,
-      },
+      languages: languageAlternates("/tests-et-rapports"),
     },
     openGraph: {
       type: "website",
