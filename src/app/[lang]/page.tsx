@@ -15,7 +15,6 @@ import Statement from "@/components/Statement";
 import Team from "@/components/Team";
 import TechChain from "@/components/TechChain";
 import TenirAvancer from "@/components/TenirAvancer";
-import DoseCalculator from "@/components/DoseCalculator";
 import WaterCalculator from "@/components/WaterCalculator";
 
 export const dynamicParams = true;
@@ -49,7 +48,6 @@ export default function Home() {
       <Presentation />
       <TenirAvancer />
       <Produits />
-      <DoseCalculator />
       <WaterCalculator />
       <Essais />
       <Objections />
