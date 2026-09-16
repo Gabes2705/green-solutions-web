@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, LANGUAGES } from "@/lib/site";
 
-const LANGUAGES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"] as const;
 const TECH_IDS = [
   "retention-eau",
   "paulownia",
@@ -33,6 +32,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.8,
+      });
+    });
+  });
+
+  // Partners and field reports. They exist in all thirteen languages and
+  // answer 200 in every one of them, but had never been listed here: a search
+  // engine does not visit what it is not shown, so twenty-six real pages were
+  // invisible.
+  ["partenaires", "tests-et-rapports"].forEach((slug) => {
+    LANGUAGES.forEach((lang) => {
+      urls.push({
+        url: `${SITE_URL}/${lang}/${slug}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.6,
       });
     });
   });
