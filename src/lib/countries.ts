@@ -3,15 +3,22 @@
  *
  * Auparavant, chaque langue portait sa propre liste de vingt-quatre entrées
  * recopiée à la main dans content.ts. Les copies avaient divergé : l'anglais
- * affichait soixante-douze boutons, dont le Maroc six fois de suite sous les
- * noms « Fas », « Marocco », « Marokko », « Maroko », « Marruecos » et
- * « Morocco » ; l'allemand, le chinois, le grec et le turc en affichaient
- * quatorze au lieu de vingt-quatre ; et la dernière entrée de chaque langue
- * avait été écrasée par la première de la suivante, si bien que la Croatie
- * s'écrivait « كرواتيا » en portugais.
+ * affichait soixante-douze boutons, dont le Maroc six fois de suite ; le grec,
+ * l'allemand, le chinois et le turc n'en affichaient que treize ou quatorze ;
+ * et la dernière entrée de chaque langue avait été écrasée par la première de
+ * la suivante, si bien que la Croatie s'écrivait « كرواتيا » en portugais.
  *
- * L'ordre vient d'ici, les noms viennent d'ici, et une langue ne peut plus
- * perdre ni dupliquer un pays : il n'y a plus qu'une liste.
+ * CE FICHIER EST GÉNÉRÉ — ne pas l'éditer à la main.
+ *
+ *   node scripts/noms_pays.mjs
+ *
+ * Les noms viennent de CLDR, la base d'Unicode dont se servent les navigateurs
+ * et les systèmes d'exploitation, lue par Intl.DisplayNames à partir du code
+ * ISO 3166 de chaque pays. Deux conséquences valent d'être connues : CLDR
+ * nomme le Congo « Congo-Brazzaville », ce qui le distingue de Kinshasa et
+ * correspond à la couverture du dossier ; et il laisse « Côte d'Ivoire » en
+ * français dans la plupart des langues, parce que c'est le nom que le pays
+ * demande qu'on lui donne partout.
  */
 
 export const COUNTRY_SLUGS = [
@@ -44,19 +51,19 @@ export const COUNTRY_SLUGS = [
 export type CountrySlug = (typeof COUNTRY_SLUGS)[number];
 
 /**
- * Le nom de chaque pays dans chaque langue.
+ * Le nom de chaque pays dans chaque langue, d'après CLDR.
  *
- * Le type impose les vingt-quatre clés : ajouter un pays ci-dessus sans le
- * traduire ici ne compile pas. C'est voulu — c'est ce contrôle qui manquait.
+ * Le type impose les vingt-quatre clés : ajouter un pays à la liste ci-dessus
+ * sans le nommer ici ne compile pas. C'est ce contrôle qui manquait.
  */
 type NameTable = Record<CountrySlug, string>;
 
 export const COUNTRY_NAMES: Record<string, NameTable> = {
   fr: {
-    "cote-divoire": "Côte d'Ivoire",
-    congo: "Congo",
+    "cote-divoire": "Côte d’Ivoire",
+    congo: "Congo-Brazzaville",
     ghana: "Ghana",
-    "guinee-conakry": "Guinée Conakry",
+    "guinee-conakry": "Guinée",
     maroc: "Maroc",
     algerie: "Algérie",
     "afrique-du-sud": "Afrique du Sud",
@@ -65,7 +72,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     jordanie: "Jordanie",
     haiti: "Haïti",
     usa: "États-Unis",
-    "arabie-saoudite": "Arabie Saoudite",
+    "arabie-saoudite": "Arabie saoudite",
     cameroun: "Cameroun",
     koweit: "Koweït",
     oman: "Oman",
@@ -79,10 +86,10 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     croatie: "Croatie",
   },
   en: {
-    "cote-divoire": "Côte d'Ivoire",
-    congo: "Congo",
+    "cote-divoire": "Côte d’Ivoire",
+    congo: "Congo - Brazzaville",
     ghana: "Ghana",
-    "guinee-conakry": "Guinea Conakry",
+    "guinee-conakry": "Guinea",
     maroc: "Morocco",
     algerie: "Algeria",
     "afrique-du-sud": "South Africa",
@@ -105,10 +112,10 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     croatie: "Croatia",
   },
   es: {
-    "cote-divoire": "Costa de Marfil",
+    "cote-divoire": "Côte d’Ivoire",
     congo: "Congo",
     ghana: "Ghana",
-    "guinee-conakry": "Guinea Conakri",
+    "guinee-conakry": "Guinea",
     maroc: "Marruecos",
     algerie: "Argelia",
     "afrique-du-sud": "Sudáfrica",
@@ -132,9 +139,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
   },
   pt: {
     "cote-divoire": "Costa do Marfim",
-    congo: "Congo",
+    congo: "República do Congo",
     ghana: "Gana",
-    "guinee-conakry": "Guiné Conacri",
+    "guinee-conakry": "Guiné",
     maroc: "Marrocos",
     algerie: "Argélia",
     "afrique-du-sud": "África do Sul",
@@ -158,13 +165,13 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
   },
   ar: {
     "cote-divoire": "ساحل العاج",
-    congo: "الكونغو",
+    congo: "الكونغو - برازافيل",
     ghana: "غانا",
-    "guinee-conakry": "غينيا كوناكري",
+    "guinee-conakry": "غينيا",
     maroc: "المغرب",
     algerie: "الجزائر",
     "afrique-du-sud": "جنوب أفريقيا",
-    gabon: "الجابون",
+    gabon: "الغابون",
     egypte: "مصر",
     jordanie: "الأردن",
     haiti: "هايتي",
@@ -184,9 +191,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
   },
   zh: {
     "cote-divoire": "科特迪瓦",
-    congo: "刚果",
+    congo: "刚果（布）",
     ghana: "加纳",
-    "guinee-conakry": "几内亚科纳克里",
+    "guinee-conakry": "几内亚",
     maroc: "摩洛哥",
     algerie: "阿尔及利亚",
     "afrique-du-sud": "南非",
@@ -209,10 +216,10 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     croatie: "克罗地亚",
   },
   id: {
-    "cote-divoire": "Pantai Gading",
-    congo: "Kongo",
+    "cote-divoire": "Côte d’Ivoire",
+    congo: "Kongo - Brazzaville",
     ghana: "Ghana",
-    "guinee-conakry": "Guinea Conakry",
+    "guinee-conakry": "Guinea",
     maroc: "Maroko",
     algerie: "Aljazair",
     "afrique-du-sud": "Afrika Selatan",
@@ -230,15 +237,15 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     "soudan-sud": "Sudan Selatan",
     espagne: "Spanyol",
     grece: "Yunani",
-    chili: "Chili",
+    chili: "Cile",
     argentine: "Argentina",
     croatie: "Kroasia",
   },
   de: {
-    "cote-divoire": "Elfenbeinküste",
-    congo: "Kongo",
+    "cote-divoire": "Côte d’Ivoire",
+    congo: "Kongo-Brazzaville",
     ghana: "Ghana",
-    "guinee-conakry": "Guinea-Conakry",
+    "guinee-conakry": "Guinea",
     maroc: "Marokko",
     algerie: "Algerien",
     "afrique-du-sud": "Südafrika",
@@ -261,10 +268,10 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     croatie: "Kroatien",
   },
   it: {
-    "cote-divoire": "Costa d'Avorio",
-    congo: "Congo",
+    "cote-divoire": "Costa d’Avorio",
+    congo: "Congo-Brazzaville",
     ghana: "Ghana",
-    "guinee-conakry": "Guinea Conakry",
+    "guinee-conakry": "Guinea",
     maroc: "Marocco",
     algerie: "Algeria",
     "afrique-du-sud": "Sudafrica",
@@ -279,7 +286,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     oman: "Oman",
     senegal: "Senegal",
     tunisie: "Tunisia",
-    "soudan-sud": "Sudan del Sud",
+    "soudan-sud": "Sud Sudan",
     espagne: "Spagna",
     grece: "Grecia",
     chili: "Cile",
@@ -288,9 +295,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
   },
   el: {
     "cote-divoire": "Ακτή Ελεφαντοστού",
-    congo: "Κονγκό",
+    congo: "Κονγκό - Μπραζαβίλ",
     ghana: "Γκάνα",
-    "guinee-conakry": "Γουινέα Κόνακρι",
+    "guinee-conakry": "Γουινέα",
     maroc: "Μαρόκο",
     algerie: "Αλγερία",
     "afrique-du-sud": "Νότια Αφρική",
@@ -313,10 +320,10 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     croatie: "Κροατία",
   },
   tr: {
-    "cote-divoire": "Fildişi Sahili",
-    congo: "Kongo",
+    "cote-divoire": "Côte d’Ivoire",
+    congo: "Kongo - Brazavil",
     ghana: "Gana",
-    "guinee-conakry": "Gine Konakri",
+    "guinee-conakry": "Gine",
     maroc: "Fas",
     algerie: "Cezayir",
     "afrique-du-sud": "Güney Afrika",
@@ -339,10 +346,10 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     croatie: "Hırvatistan",
   },
   pl: {
-    "cote-divoire": "Wybrzeże Kości Słoniowej",
+    "cote-divoire": "Côte d’Ivoire",
     congo: "Kongo",
     ghana: "Ghana",
-    "guinee-conakry": "Gwinea Konakry",
+    "guinee-conakry": "Gwinea",
     maroc: "Maroko",
     algerie: "Algieria",
     "afrique-du-sud": "Republika Południowej Afryki",
@@ -366,9 +373,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
   },
   hr: {
     "cote-divoire": "Obala Bjelokosti",
-    congo: "Kongo",
+    congo: "Kongo - Brazzaville",
     ghana: "Gana",
-    "guinee-conakry": "Gvineja Conakry",
+    "guinee-conakry": "Gvineja",
     maroc: "Maroko",
     algerie: "Alžir",
     "afrique-du-sud": "Južnoafrička Republika",
