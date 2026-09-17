@@ -39,6 +39,10 @@ export default function Contact() {
         body: JSON.stringify({
           nom: data.get("nom"),
           structure: data.get("structure"),
+          pays: data.get("pays"),
+          ville: data.get("ville"),
+          culture: data.get("culture"),
+          surface: data.get("surface"),
           email: data.get("email"),
           message: data.get("message"),
           societe_site: data.get("societe_site"),
@@ -123,6 +127,33 @@ export default function Contact() {
             <label>
               {ct.formStructure}
               <input type="text" name="structure" autoComplete="organization" />
+            </label>
+            {/* Pays and Ville share a line: two short answers, one thought. */}
+            <div className="contact-form-row">
+              <label>
+                {ct.formCountry}
+                <input
+                  type="text"
+                  name="pays"
+                  autoComplete="country-name"
+                />
+              </label>
+              <label>
+                {ct.formCity}
+                <input
+                  type="text"
+                  name="ville"
+                  autoComplete="address-level2"
+                />
+              </label>
+            </div>
+            <label>
+              {ct.formCrop}
+              <input type="text" name="culture" autoComplete="off" />
+            </label>
+            <label>
+              {ct.formArea}
+              <input type="text" name="surface" autoComplete="off" />
             </label>
             <label>
               {ct.formEmail}
