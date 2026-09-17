@@ -61,5 +61,43 @@ export default async function Page({ params }: Params) {
   const dossier = DOSSIERS[pays];
   if (!dossier || dossier.langue !== lang) notFound();
 
-  return <DossierPage dossier={dossier} />;
+  // Le fil d'Ariane situe la page dans le site : le moteur affiche alors
+  // « Green Solutions › Dossier de marché › Côte d'Ivoire » sous le lien, au
+  // lieu d'une adresse brute. Les libellés viennent du dossier lui-même, donc
+  // ils sont déjà dans la bonne langue.
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Green Solutions",
+        item: `${SITE_URL}/${lang}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: dossier.cover.eyebrow,
+        item: `${SITE_URL}/${lang}/#etudes-pays`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: dossier.cover.title,
+        item: `${SITE_URL}/${lang}/dossiers/${pays}`,
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <DossierPage dossier={dossier} />
+    </>
+  );
 }

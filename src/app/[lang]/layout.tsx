@@ -44,6 +44,18 @@ const organizationJsonLd = {
   },
 };
 
+/* La fiche du site lui-même, distincte de celle de l'entreprise. Elle dit aux
+ * moteurs que les treize adresses de langue sont un seul site, et non treize
+ * sites qui se ressemblent. */
+const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Green Solutions",
+  url: SITE_URL,
+  publisher: { "@type": "Organization", name: "Green Solutions" },
+  inLanguage: ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"],
+};
+
 const translations = {
   fr: {
     title: "Green Solutions · Agriculture écologiquement intensive",
@@ -190,6 +202,11 @@ export default async function LangLayout({
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJsonLd) }}
         />
       </head>
       <body>
