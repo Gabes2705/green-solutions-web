@@ -297,9 +297,11 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
           {cover.subtitle && (
             <Paragraphes texte={cover.subtitle} className="dossier-hero-chapeau" />
           )}
-          <a className="dossier-pdf btn-3d btn-3d-light" href={dossier.pdf}>
-            Télécharger le dossier (PDF)
-          </a>
+          {dossier.pdf && (
+            <a className="dossier-pdf btn-3d btn-3d-light" href={dossier.pdf}>
+              Télécharger le dossier (PDF)
+            </a>
+          )}
         </div>
       </header>
 

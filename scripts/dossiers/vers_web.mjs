@@ -47,6 +47,21 @@ function photosInstallees(slug) {
   return { nombre, credits };
 }
 
+/**
+ * Les dossiers dont le document téléchargeable a été retiré du site.
+ *
+ * L'Arabie saoudite est dans ce cas. Ses photos venaient d'internet, et la
+ * recherche d'images libres n'a rien donné d'utilisable pour ce pays : un
+ * graphique sur le cacao en Indonésie et des régimes de palmier à huile
+ * ouest-africains, aucun dattier saoudien établi. Le document ne peut donc pas
+ * être refabriqué sans ces photos, et il n'est plus distribué.
+ *
+ * La liste est explicite plutôt que déduite du disque : les fichiers restent
+ * présents en local, ce sont leurs versions suivies par git qui disparaissent
+ * du site.
+ */
+const RETIRES = new Set(["arabie-saoudite"]);
+
 /** Un graphique de dossier, réduit à ce qu'une page web sait redessiner. */
 function graphique(bloc) {
   if (!bloc) return null;
@@ -138,7 +153,7 @@ for (const slug of slugs) {
     slug,
     locale: spec.locale,
     langue: spec.locale.slice(0, 2),
-    pdf: `/documents/countries/${spec.fichier}.pdf`,
+    pdf: RETIRES.has(slug) ? null : `/documents/countries/${spec.fichier}.pdf`,
     photos: nombre,
     credits,
     cover: {
@@ -235,7 +250,8 @@ export type Dossier = {
   slug: string;
   locale: string;
   langue: string;
-  pdf: string;
+  /** Null quand le PDF a été retiré du site. */
+  pdf: string | null;
   /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
   photos: number;
   credits: { titre: string | null; auteur: string | null; licence: string | null }[] | null;

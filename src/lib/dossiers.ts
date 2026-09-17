@@ -65,7 +65,8 @@ export type Dossier = {
   slug: string;
   locale: string;
   langue: string;
-  pdf: string;
+  /** Null quand le PDF a été retiré du site. */
+  pdf: string | null;
   /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
   photos: number;
   credits: { titre: string | null; auteur: string | null; licence: string | null }[] | null;
@@ -718,7 +719,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "arabie-saoudite",
     "locale": "ar-SA",
     "langue": "ar",
-    "pdf": "/documents/countries/arabie-saoudite.pdf",
+    "pdf": null,
     "photos": 0,
     "credits": null,
     "cover": {

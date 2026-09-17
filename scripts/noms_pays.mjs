@@ -14,12 +14,18 @@
  */
 import { writeFileSync } from "node:fs";
 
-/** Le code ISO 3166-1 de chaque dossier. C'est la seule chose saisie ici. */
+/**
+ * Le code ISO 3166-1 de chaque dossier. C'est la seule chose saisie ici.
+ *
+ * Cinq pays ont disparu de cette liste le 17 septembre 2026 : Congo, Ghana,
+ * Guinée, Koweït et Tunisie. Leurs dossiers n'existaient qu'en PDF, illustrés
+ * de photos prises sur internet, et sans texte source ils ne pouvaient pas
+ * être refabriqués avec des images libres. Les documents ont été retirés du
+ * site ; laisser leurs boutons dans la grille aurait laissé cinq liens morts.
+ * Ils reviendront le jour où leur dossier sera rédigé.
+ */
 const ISO = {
   "cote-divoire": "CI",
-  congo: "CG", // République du Congo — la couverture du dossier porte « Congo-Brazzaville »
-  ghana: "GH",
-  "guinee-conakry": "GN", // République de Guinée — le dossier est titré « Conakry »
   maroc: "MA",
   algerie: "DZ",
   "afrique-du-sud": "ZA",
@@ -30,10 +36,8 @@ const ISO = {
   usa: "US",
   "arabie-saoudite": "SA",
   cameroun: "CM",
-  koweit: "KW",
   oman: "OM",
   senegal: "SN",
-  tunisie: "TN",
   "soudan-sud": "SS",
   espagne: "ES",
   grece: "GR",
