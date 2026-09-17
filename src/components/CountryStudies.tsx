@@ -3,6 +3,7 @@
 import Reveal from "./Reveal";
 import CountryFlag from "./CountryFlag";
 import { countryItems } from "@/lib/countries";
+import { dossierHref } from "@/lib/dossiers-index";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function CountryStudies() {
@@ -55,7 +56,13 @@ export default function CountryStudies() {
           {items.map((item) => (
             <a
               key={item.slug}
-              href={`/etudes?file=${encodeURIComponent(item.href)}&name=${encodeURIComponent(item.country)}`}
+              // Dix-neuf pays ont désormais une vraie page, lisible par les
+              // moteurs de recherche ; les cinq autres n'existent qu'en PDF et
+              // gardent la visionneuse.
+              href={
+                dossierHref(item.slug) ??
+                `/etudes?file=${encodeURIComponent(item.href)}&name=${encodeURIComponent(item.country)}`
+              }
               className="country-item"
             >
               <CountryFlag id={item.slug} />

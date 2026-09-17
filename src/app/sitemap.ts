@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { DOSSIER_LANGS } from "@/lib/dossiers-index";
 import { SITE_URL, LANGUAGES } from "@/lib/site";
 
 const TECH_IDS = [
@@ -48,6 +49,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly",
         priority: 0.6,
       });
+    });
+  });
+
+  // Country dossiers. Each one is written in the language of its market, so it
+  // is listed once, under that language, rather than thirteen times: the South
+  // African dossier is English wherever you reach it, and claiming a German
+  // version would be claiming a translation that does not exist.
+  Object.entries(DOSSIER_LANGS).forEach(([pays, lang]) => {
+    urls.push({
+      url: `${SITE_URL}/${lang}/dossiers/${pays}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
     });
   });
 
