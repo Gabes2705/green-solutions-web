@@ -2430,6 +2430,12 @@ body li {
   text-transform: uppercase;
   color: var(--muted);
 }
+/* Pays and Ville sit side by side so the block reads as one location line. */
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1em;
+}
 .contact-form input,
 .contact-form textarea {
   font-family: var(--font-sans);
@@ -4403,6 +4409,10 @@ body li {
   }
   .contact-form {
     padding: 1.4em 1.2em;
+  }
+  /* Too narrow for two fields abreast — stack them. */
+  .contact-form-row {
+    grid-template-columns: 1fr;
   }
   .contact-form textarea {
     min-height: 120px;

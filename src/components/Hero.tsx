@@ -39,6 +39,9 @@ export default function Hero() {
         </h1>
 
         <div className="hero-cta">
+          <a href="#contact" className="btn-3d btn-3d-light hero-cta-main">
+            {c.hero.quoteCta}
+          </a>
           <a href="#technologies" className="btn-3d btn-3d-dark hero-cta-alt">
             {c.hero.explore}
           </a>

@@ -9,6 +9,10 @@ const FROM_EMAIL = "contact@evergreen-ecosorb.com";
 type Payload = {
   nom?: string;
   structure?: string;
+  pays?: string;
+  ville?: string;
+  culture?: string;
+  surface?: string;
   email?: string;
   message?: string;
   // honeypot — real users never fill this, bots often do
@@ -34,6 +38,10 @@ export async function POST(request: Request) {
 
   const nom = (body.nom || "").trim();
   const structure = (body.structure || "").trim();
+  const pays = (body.pays || "").trim();
+  const ville = (body.ville || "").trim();
+  const culture = (body.culture || "").trim();
+  const surface = (body.surface || "").trim();
   const email = (body.email || "").trim();
   const message = (body.message || "").trim();
 
@@ -81,6 +89,10 @@ export async function POST(request: Request) {
   const bodyHtml = `
         <p><strong>Nom :</strong> ${escapeHtml(nom)}</p>
         <p><strong>Structure :</strong> ${escapeHtml(structure) || "—"}</p>
+        <p><strong>Pays :</strong> ${escapeHtml(pays) || "—"}</p>
+        <p><strong>Ville :</strong> ${escapeHtml(ville) || "—"}</p>
+        <p><strong>Type de culture :</strong> ${escapeHtml(culture) || "—"}</p>
+        <p><strong>Surface cultivée :</strong> ${escapeHtml(surface) || "—"}</p>
         <p><strong>E-mail :</strong> ${escapeHtml(email)}</p>
         <p><strong>Message :</strong></p>
         <p>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>
