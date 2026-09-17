@@ -1,0 +1,93 @@
+{
+  "maroc": [
+    "cat:Agriculture in Morocco",
+    "cat:Irrigation in Morocco",
+    "Morocco orchard irrigation",
+    "Souss Massa agriculture",
+    "Morocco olive grove"
+  ],
+  "algerie": [
+    "cat:Agriculture in Algeria",
+    "cat:Oases of Algeria",
+    "Algeria date palm oasis",
+    "Algeria wheat field",
+    "Mitidja agriculture"
+  ],
+  "egypte": [
+    "cat:Agriculture in Egypt",
+    "cat:Irrigation in Egypt",
+    "Nile delta farmland",
+    "Egypt sugarcane field",
+    "Egypt citrus orchard"
+  ],
+  "afrique-du-sud": [
+    "cat:Agriculture in South Africa",
+    "cat:Vineyards in South Africa",
+    "South Africa maize field",
+    "Western Cape orchard",
+    "South Africa citrus farm"
+  ],
+  "gabon": [
+    "cat:Agriculture in Gabon",
+    "Gabon cassava farm",
+    "Gabon plantain plantation",
+    "Gabon oil palm plantation",
+    "Gabon rural farming"
+  ],
+  "jordanie": [
+    "cat:Agriculture in Jordan",
+    "Jordan Valley irrigation",
+    "Jordan greenhouse vegetables",
+    "Jordan olive grove",
+    "Jordan date palm"
+  ],
+  "arabie-saoudite": [
+    "cat:Agriculture in Saudi Arabia",
+    "Saudi Arabia centre pivot irrigation",
+    "Al Ahsa oasis palm",
+    "Saudi Arabia date palm farm",
+    "Saudi Arabia greenhouse"
+  ],
+  "haiti": [
+    "cat:Agriculture in Haiti",
+    "Haiti rice paddy Artibonite",
+    "Haiti mango orchard",
+    "Haiti coffee plantation",
+    "Haiti farmland hills"
+  ],
+  "usa": [
+    "cat:Agriculture in the United States",
+    "cat:Irrigation in the United States",
+    "California almond orchard",
+    "Central Valley irrigation field",
+    "United States corn field harvest"
+  ],
+  "argentine": [
+    "cat:Agriculture in Argentina",
+    "Argentina soybean field",
+    "Mendoza vineyard irrigation",
+    "Argentina wheat harvest",
+    "Pampas farmland"
+  ],
+  "chili": [
+    "cat:Agriculture in Chile",
+    "Chile vineyard valley",
+    "Chile avocado orchard",
+    "Chile blueberry plantation",
+    "Central Chile irrigation"
+  ],
+  "espagne": [
+    "cat:Agriculture in Spain",
+    "cat:Irrigation in Spain",
+    "Almeria greenhouse crops",
+    "Spain olive grove Andalusia",
+    "Spain citrus orchard Valencia"
+  ],
+  "croatie": [
+    "cat:Agriculture in Croatia",
+    "Croatia vineyard Istria",
+    "Slavonia wheat field",
+    "Croatia olive grove Dalmatia",
+    "Croatia maize field"
+  ]
+}

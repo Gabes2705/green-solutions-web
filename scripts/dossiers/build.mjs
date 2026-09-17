@@ -1,4 +1,4 @@
-import { readdirSync, existsSync, mkdirSync } from "node:fs";
+import { readdirSync, existsSync, mkdirSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
@@ -11,6 +11,45 @@ const SOFFICE = "C:\\Program Files\\LibreOffice\\program\\soffice.exe";
 
 // Les photos vivent hors du dépôt : passer leur racine en 2e argument.
 const PHOTOS = process.argv[3] ?? join(here, "photos");
+
+/**
+ * Les crédits des photographies, pour la page Sources.
+ *
+ * Les images libres de Wikimedia Commons sont pour la plupart sous licence
+ * CC BY-SA, qui impose de nommer l'auteur partout où l'œuvre est diffusée — y
+ * compris à l'intérieur d'un PDF commercial. Les citer sur le site ne suffit
+ * pas : le document circule seul, par courriel, sans la page qui l'accompagne.
+ *
+ * Un auteur n'est cité qu'une fois, même s'il a fourni plusieurs photos.
+ */
+const PHRASE_CREDITS = {
+  fr: "Photographies : {0} — via Wikimedia Commons.",
+  en: "Photographs: {0} — via Wikimedia Commons.",
+  es: "Fotografías: {0} — vía Wikimedia Commons.",
+  ar: "الصور الفوتوغرافية: {0} — عبر ويكيميديا كومنز.",
+  el: "Φωτογραφίες: {0} — μέσω Wikimedia Commons.",
+  hr: "Fotografije: {0} — putem Wikimedia Commonsa.",
+};
+
+function creditsPhotos(spec) {
+  const fichier = join(PHOTOS, "_credits.json");
+  if (!existsSync(fichier)) return [];
+  const tout = JSON.parse(readFileSync(fichier, "utf8"));
+  const items = tout[spec.slug];
+  if (!items || items.length === 0) return [];
+
+  const vus = new Map();
+  for (const i of items) {
+    if (!i.auteur) continue;
+    if (!vus.has(i.auteur)) vus.set(i.auteur, i.licence || "");
+  }
+  if (vus.size === 0) return [];
+
+  const liste = [...vus].map(([auteur, licence]) => (licence ? `${auteur} (${licence})` : auteur));
+  const langue = spec.locale.slice(0, 2);
+  const modele = PHRASE_CREDITS[langue] ?? PHRASE_CREDITS.fr;
+  return [modele.replace("{0}", liste.join(", "))];
+}
 
 function photosOf(slug) {
   const dir = join(PHOTOS, slug);
@@ -79,7 +118,9 @@ export async function build(spec) {
   d.steps({ ...spec.deploiement, footer: foot });
   if (complet && spec.partenariat !== false) d.steps({ ...c.partenariat, footer: foot });
   d.columns({ ...spec.risques, footer: foot });
-  if (spec.sources) d.columns({ ...c.sources(spec.sources), footer: foot });
+  if (spec.sources) {
+    d.columns({ ...c.sources([...spec.sources, ...creditsPhotos(spec)]), footer: foot });
+  }
   await d.closing({
     ...spec.closing,
     photo: pic(spec.closing.photo ?? 0),

@@ -46,7 +46,12 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       url,
       siteName: "Green Solutions",
       locale: dossier.locale.replace("-", "_"),
-      images: [{ url: `${SITE_URL}/images/dossiers/${pays}/0.webp` }],
+      // Treize dossiers n'ont aucune photo dont l'origine soit établie. Leur
+      // annoncer une image d'aperçu revenait à envoyer les réseaux sociaux
+      // chercher un fichier qui répond 404.
+      ...(dossier.photos > 0
+        ? { images: [{ url: `${SITE_URL}/images/dossiers/${pays}/0.webp` }] }
+        : {}),
     },
   };
 }
