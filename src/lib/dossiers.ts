@@ -66,6 +66,9 @@ export type Dossier = {
   locale: string;
   langue: string;
   pdf: string;
+  /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
+  photos: number;
+  credits: { titre: string | null; auteur: string | null; licence: string | null }[] | null;
   cover: {
     eyebrow: string;
     title: string;
@@ -94,6 +97,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "en-ZA",
     "langue": "en",
     "pdf": "/documents/countries/afrique-du-sud.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "MARKET DOSSIER",
       "title": "South Africa",
@@ -403,6 +408,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-DZ",
     "langue": "fr",
     "pdf": "/documents/countries/algerie.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Algérie",
@@ -712,6 +719,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "ar-SA",
     "langue": "ar",
     "pdf": "/documents/countries/arabie-saoudite.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "ملف السوق الزراعي",
       "title": "المملكة العربية السعودية",
@@ -1019,6 +1028,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "es-AR",
     "langue": "es",
     "pdf": "/documents/countries/argentine.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "DOSSIER DE MERCADO",
       "title": "Argentina",
@@ -1328,6 +1339,54 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-CM",
     "langue": "fr",
     "pdf": "/documents/countries/cameroun.pdf",
+    "photos": 9,
+    "credits": [
+      {
+        "titre": "Bakweri cocoyam farmer from Cameroon.jpg",
+        "auteur": "Amcaja",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Agriculture rurale.jpg",
+        "auteur": "Perez Mekem",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cultivatrice camerounaise.jpg",
+        "auteur": "Hnkamwa",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cultivatrice camerounaise5.jpg",
+        "auteur": "Hnkamwa",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Plantation-cacao-cameroun.jpg",
+        "auteur": "Barada-nikto",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "ChrisTonaldo on his harvested coacoa.jpg",
+        "auteur": "CHRISTONALDO",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Plantation de thé - Ouest du Cameroun.JPG",
+        "auteur": "PRA",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Rows in a tea plantation.jpg",
+        "auteur": "Adesolive",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Tea farm at dawn.jpg",
+        "auteur": "Adesolive",
+        "licence": "CC BY-SA 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Cameroun",
@@ -1619,6 +1678,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "es-CL",
     "langue": "es",
     "pdf": "/documents/countries/chili.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "ESTUDIO DE MERCADO",
       "title": "Chile",
@@ -1924,6 +1985,64 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-CI",
     "langue": "fr",
     "pdf": "/documents/countries/cote-divoire.pdf",
+    "photos": 11,
+    "credits": [
+      {
+        "titre": "Cacao San Pedro Grand Bereby La Flotte.jpg",
+        "auteur": "GillesJer",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cacao fruit in Côte d'Ivoire (14).JPG",
+        "auteur": "Hanay",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cultivateurs de cacao.jpg",
+        "auteur": "KokoDZ",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cultivateur de cacao 01.jpg",
+        "auteur": "KokoDZ",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cacao fruit in Côte d'Ivoire (16).JPG",
+        "auteur": "Hanay",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cultivateur de manioc 1.jpg",
+        "auteur": "Metchyves",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Planting corn in Ivory coast.jpg",
+        "auteur": "Pedro Radio Brandoni",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Emballage de Cacao.jpg",
+        "auteur": "Abdallahbigboy",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cultivateur de cacao 02.jpg",
+        "auteur": "KokoDZ",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cacao fruit in Côte d'Ivoire (11).JPG",
+        "auteur": "Hanay",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Cultivateur de cacao 04.jpg",
+        "auteur": "KokoDZ",
+        "licence": "CC BY-SA 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Côte d'Ivoire",
@@ -2233,6 +2352,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "hr-HR",
     "langue": "hr",
     "pdf": "/documents/countries/croatie.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "TRŽIŠNA STUDIJA",
       "title": "Hrvatska",
@@ -2542,6 +2663,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "ar-EG",
     "langue": "ar",
     "pdf": "/documents/countries/egypte.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "دراسة سوق",
       "title": "مصر",
@@ -2847,6 +2970,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "es-ES",
     "langue": "es",
     "pdf": "/documents/countries/espagne.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "ESTUDIO DE MERCADO",
       "title": "España",
@@ -3156,6 +3281,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-GA",
     "langue": "fr",
     "pdf": "/documents/countries/gabon.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Gabon",
@@ -3465,6 +3592,54 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "el-GR",
     "langue": "el",
     "pdf": "/documents/countries/grece.pdf",
+    "photos": 9,
+    "credits": [
+      {
+        "titre": "Lavandula fields.jpg",
+        "auteur": "Neptuul",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Corfu olive grove bgiu.jpg",
+        "auteur": "Bogdan Giuşcă",
+        "licence": "CC BY-SA 2.5"
+      },
+      {
+        "titre": "1.The olive grove.jpg",
+        "auteur": "Freideriki Dionysopoulou",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "10. Rainbow in olive grove.jpg",
+        "auteur": "Freideriki Dionysopoulou",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Olive Grove (158100468).jpg",
+        "auteur": "Alastair Rae from London, United Kingdom",
+        "licence": "CC BY-SA 2.0"
+      },
+      {
+        "titre": "Olive grove - panoramio.jpg",
+        "auteur": "vitsoft",
+        "licence": "CC BY 3.0"
+      },
+      {
+        "titre": "Keri Peninsula with olive groves and view into Keri Bay.jpg",
+        "auteur": "Jimzoun",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Olive grove with grazing sheep - panoramio.jpg",
+        "auteur": "macrolepis",
+        "licence": "CC BY 3.0"
+      },
+      {
+        "titre": "Olive grove, Amoudi IMG 6928 - panoramio.jpg",
+        "auteur": "Paul Lakin",
+        "licence": "CC BY 3.0"
+      }
+    ],
     "cover": {
       "eyebrow": "ΜΕΛΕΤΗ ΑΓΟΡΑΣ",
       "title": "Ελλάδα",
@@ -3750,6 +3925,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-HT",
     "langue": "fr",
     "pdf": "/documents/countries/haiti.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Haïti",
@@ -4059,6 +4236,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "ar-JO",
     "langue": "ar",
     "pdf": "/documents/countries/jordanie.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "ملف سوق",
       "title": "المملكة الأردنية الهاشمية",
@@ -4364,6 +4543,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-MA",
     "langue": "fr",
     "pdf": "/documents/countries/maroc.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Maroc",
@@ -4671,6 +4852,54 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "en-OM",
     "langue": "en",
     "pdf": "/documents/countries/oman.pdf",
+    "photos": 9,
+    "credits": [
+      {
+        "titre": "Jebel Akhdar – irrigation canals in Al-Ayn.jpg",
+        "auteur": "albinfo",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Date palm tree irrigation.jpg",
+        "auteur": "Okhtyartist",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "\"The Falaj\" - Traditional irrigation system.jpg",
+        "auteur": "Altaf Habib",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "\"The Falaj\" - Traditional irrigation system 06.jpg",
+        "auteur": "Altaf Habib",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Farm house, tareef - panoramio.jpg",
+        "auteur": "Omar AV",
+        "licence": "CC BY 3.0"
+      },
+      {
+        "titre": "Nakhl Fort amid palm groves, Oman (3).jpg",
+        "auteur": "Prof. Mortel",
+        "licence": "CC BY 2.0"
+      },
+      {
+        "titre": "Palm grove at Nakhl, Oman (2).jpg",
+        "auteur": "Prof. Mortel",
+        "licence": "CC BY 2.0"
+      },
+      {
+        "titre": "Palm grove at Nakhl, Oman (6).jpg",
+        "auteur": "Prof. Mortel",
+        "licence": "CC BY 2.0"
+      },
+      {
+        "titre": "Palm grove at Nakhl, Oman (1).jpg",
+        "auteur": "Prof. Mortel",
+        "licence": "CC BY 2.0"
+      }
+    ],
     "cover": {
       "eyebrow": "MARKET DOSSIER",
       "title": "Oman",
@@ -4960,6 +5189,39 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-SN",
     "langue": "fr",
     "pdf": "/documents/countries/senegal.pdf",
+    "photos": 6,
+    "credits": [
+      {
+        "titre": "Agriculture Tradictionnelle.jpg",
+        "auteur": "Abdoulaye9",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Irrigated rice cultivation in the Senegal River Valley - panoramio.jpg",
+        "auteur": "Africa Rice Center",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Irrigated rice cultivation in the Senegal River Valley - panoramio (9).jpg",
+        "auteur": "Africa Rice Center",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Irrigated rice cultivation in the Senegal River Valley - panoramio (14).jpg",
+        "auteur": "Africa Rice Center",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Irrigated rice cultivation in the Senegal River Valley - panoramio (16).jpg",
+        "auteur": "Africa Rice Center",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Vegetable crop production West Africa.jpg",
+        "auteur": "T.K. Naliaka",
+        "licence": "CC BY-SA 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Sénégal",
@@ -5251,6 +5513,39 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "en-SS",
     "langue": "en",
     "pdf": "/documents/countries/soudan-sud.pdf",
+    "photos": 6,
+    "credits": [
+      {
+        "titre": "Harvested grain in Mundri.jpg",
+        "auteur": "Vetiverman",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "A kitchen garden next to a homestead of a South Sudanese.jpg",
+        "auteur": "Lomoraronald",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "A afarmer in her farm.jpg",
+        "auteur": "Kabang Bladina Gideon",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "A banana plantation.jpg",
+        "auteur": "Kabang Bladina Gideon",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Women cool off after clearing the farm in South Sudan.jpg",
+        "auteur": "Lomoraronald",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Small-scale farmers increase production (7536268172).jpg",
+        "auteur": "Oxfam East Africa",
+        "licence": "CC BY 2.0"
+      }
+    ],
     "cover": {
       "eyebrow": "MARKET DOSSIER",
       "title": "South Sudan",
@@ -5534,6 +5829,8 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "en-US",
     "langue": "en",
     "pdf": "/documents/countries/usa.pdf",
+    "photos": 0,
+    "credits": null,
     "cover": {
       "eyebrow": "MARKET DOSSIER",
       "title": "United States",

@@ -56,9 +56,24 @@ const pays = readdirSync(SOURCE).filter((d) => statSync(join(SOURCE, d)).isDirec
 let total = 0;
 let octets = 0;
 
+/* Les crédits connus, par pays.
+ *
+ * Une photo dont on ne sait pas d'où elle vient ne se republie pas. Treize des
+ * dix-neuf jeux ont été installés autrefois depuis un dossier extérieur, sans
+ * qu'aucune source soit conservée : install_photos.mjs recopie les images en
+ * les renommant 00.jpg, 01.jpg, et ne garde rien de leur origine. Ces treize-là
+ * restent donc hors du site tant que leur provenance n'est pas établie. */
+const TOUS_CREDITS = existsSync(join(SOURCE, "_credits.json"))
+  ? JSON.parse(readFileSync(join(SOURCE, "_credits.json"), "utf8"))
+  : {};
+
 for (const slug of pays) {
   if (!AVEC_DOSSIER.has(slug)) {
     console.log(`${slug.padEnd(18)} ignoré — pas de dossier rédigé`);
+    continue;
+  }
+  if (!TOUS_CREDITS[slug]) {
+    console.log(`${slug.padEnd(18)} IGNORÉ — origine des photos inconnue`);
     continue;
   }
   const dossierSource = join(SOURCE, slug);

@@ -29,6 +29,17 @@
   object-fit: cover;
 }
 
+/* Treize dossiers n'ont pas de photo dont l'origine soit établie. Leur
+ * couverture est un aplat profond plutôt qu'un cadre vide : le titre garde son
+ * fond sombre, donc son contraste, et rien ne signale un manque au lecteur. */
+.dossier-hero-uni {
+  min-height: 0;
+  padding-block: 3rem 2.5rem;
+  background:
+    radial-gradient(120% 140% at 15% 0%, rgba(46, 145, 85, 0.45) 0%, rgba(8, 26, 16, 0) 60%),
+    linear-gradient(160deg, #16402a 0%, #0b2418 100%);
+}
+
 .dossier-hero-voile {
   position: absolute;
   inset: 0;
@@ -441,4 +452,31 @@
 .dossier-cloture p {
   line-height: 1.65;
   text-align: justify;
+}
+
+/* ---- Crédits photo ---- */
+
+.dossier-credits {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.dossier-credits-titre {
+  margin: 0 0 0.6rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.dossier-credits ul {
+  margin: 0 0 0.6rem;
+  padding-inline-start: 1.1rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.dossier-credits p {
+  margin: 0;
 }

@@ -13,10 +13,19 @@ import type { Cartes, Chiffres, Colonnes, Dossier, Etapes, Graphique, Puces } fr
  * Les graphiques sont dessinés en CSS plutôt qu'avec une bibliothèque : quatre
  * barres et un pourcentage ne justifient pas trois cents kilo-octets de
  * JavaScript, et des barres en HTML restent lisibles pour un lecteur d'écran.
+ *
+ * Treize des dix-neuf dossiers n'ont aucune photo, parce que l'origine de leurs
+ * images n'est pas établie et qu'une photo dont on ignore la provenance ne se
+ * republie pas. La page doit donc tenir debout sans images : chaque bloc les
+ * traite comme un ornement, jamais comme une structure.
  */
 
-function photo(slug: string, index: number | null, secours = 0) {
-  return `/images/dossiers/${slug}/${index ?? secours}.webp`;
+function urlPhoto(dossier: Dossier, index: number | null, secours = 0): string | null {
+  if (dossier.photos === 0) return null;
+  const i = index ?? secours;
+  // Un dossier peut demander « photo: 8 » alors que six images seulement sont
+  // installées : on retombe sur une image qui existe plutôt que sur un trou.
+  return `/images/dossiers/${dossier.slug}/${i % dossier.photos}.webp`;
 }
 
 /** Une ligne de texte par paragraphe : les sauts de ligne viennent du dossier. */
@@ -50,9 +59,19 @@ function BlocChiffres({ bloc }: { bloc: Chiffres }) {
   );
 }
 
-function BlocPuces({ bloc, slug, secours }: { bloc: Puces; slug: string; secours: number }) {
+function BlocPuces({
+  bloc,
+  dossier,
+  secours,
+}: {
+  bloc: Puces;
+  dossier: Dossier;
+  secours: number;
+}) {
+  const photo = urlPhoto(dossier, bloc.photo, secours);
+
   return (
-    <section className="dossier-section dossier-split">
+    <section className={`dossier-section${photo ? " dossier-split" : ""}`}>
       <div className="dossier-split-texte">
         <p className="eyebrow">{bloc.kicker}</p>
         <h2 className="section-title">{bloc.title}</h2>
@@ -62,11 +81,13 @@ function BlocPuces({ bloc, slug, secours }: { bloc: Puces; slug: string; secours
           ))}
         </ul>
       </div>
-      <figure className="dossier-split-photo">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={photo(slug, bloc.photo, secours)} alt="" loading="lazy" decoding="async" />
-        {bloc.caption && <figcaption>{bloc.caption}</figcaption>}
-      </figure>
+      {photo && (
+        <figure className="dossier-split-photo">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={photo} alt="" loading="lazy" decoding="async" />
+          {bloc.caption && <figcaption>{bloc.caption}</figcaption>}
+        </figure>
+      )}
     </section>
   );
 }
@@ -153,27 +174,32 @@ function BlocColonnes({ bloc }: { bloc: Colonnes }) {
   );
 }
 
-function BlocCartes({ bloc, slug }: { bloc: Cartes; slug: string }) {
+function BlocCartes({ bloc, dossier }: { bloc: Cartes; dossier: Dossier }) {
   return (
     <section className="dossier-section">
       <p className="eyebrow">{bloc.kicker}</p>
       <h2 className="section-title">{bloc.title}</h2>
       <div className="dossier-cartes">
-        {bloc.items.map((item, i) => (
-          <article key={i} className="dossier-carte">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photo(slug, item.photo, i)} alt="" loading="lazy" decoding="async" />
-            <div className="dossier-carte-corps">
-              <h3>{item.head}</h3>
-              {item.metric && <p className="dossier-carte-metrique">{item.metric}</p>}
-              <ul className="dossier-puces">
-                {item.lines.map((ligne, j) => (
-                  <li key={j}>{ligne}</li>
-                ))}
-              </ul>
-            </div>
-          </article>
-        ))}
+        {bloc.items.map((item, i) => {
+          const photo = urlPhoto(dossier, item.photo, i);
+          return (
+            <article key={i} className="dossier-carte">
+              {photo && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={photo} alt="" loading="lazy" decoding="async" />
+              )}
+              <div className="dossier-carte-corps">
+                <h3>{item.head}</h3>
+                {item.metric && <p className="dossier-carte-metrique">{item.metric}</p>}
+                <ul className="dossier-puces">
+                  {item.lines.map((ligne, j) => (
+                    <li key={j}>{ligne}</li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
@@ -202,9 +228,42 @@ function BlocEtapes({ bloc }: { bloc: Etapes }) {
   );
 }
 
+/**
+ * Le crédit des photos.
+ *
+ * Les images viennent de Wikimedia Commons sous licence CC BY-SA, qui impose de
+ * nommer l'auteur. Sans ce bloc, la page ne serait pas en règle.
+ */
+function Credits({ dossier }: { dossier: Dossier }) {
+  const credits = dossier.credits;
+  if (!credits || credits.length === 0) return null;
+
+  const uniques = Array.from(
+    new Map(credits.filter((c) => c.auteur).map((c) => [`${c.auteur}|${c.licence}`, c])).values(),
+  );
+  if (uniques.length === 0) return null;
+
+  return (
+    <section className="dossier-section dossier-credits">
+      <h2 className="dossier-credits-titre">Crédits photo</h2>
+      <ul>
+        {uniques.map((c, i) => (
+          <li key={i}>
+            {c.auteur}
+            {c.licence ? ` — ${c.licence}` : ""}
+            {c.titre ? `, « ${c.titre.replace(/\.(jpe?g|png|svg)$/i, "")} »` : ""}
+          </li>
+        ))}
+      </ul>
+      <p>Photographies issues de Wikimedia Commons, réutilisées selon leur licence.</p>
+    </section>
+  );
+}
+
 export default function DossierPage({ dossier }: { dossier: Dossier }) {
-  const { slug, cover } = dossier;
+  const { cover } = dossier;
   const rtl = dossier.langue === "ar";
+  const photoCouverture = urlPhoto(dossier, 0);
 
   return (
     <article className="dossier-page" dir={rtl ? "rtl" : undefined} lang={dossier.locale}>
@@ -214,19 +273,23 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
         </a>
       </div>
 
-      <header className="dossier-hero">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          className="dossier-hero-photo"
-          src={photo(slug, 0)}
-          alt=""
-          fetchPriority="high"
-          decoding="async"
-        />
-        <div className="dossier-hero-voile" aria-hidden="true" />
+      <header className={`dossier-hero${photoCouverture ? "" : " dossier-hero-uni"}`}>
+        {photoCouverture && (
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className="dossier-hero-photo"
+              src={photoCouverture}
+              alt=""
+              fetchPriority="high"
+              decoding="async"
+            />
+            <div className="dossier-hero-voile" aria-hidden="true" />
+          </>
+        )}
         <div className="dossier-hero-texte">
           <span className="dossier-hero-drapeau">
-            <CountryFlag id={slug} />
+            <CountryFlag id={dossier.slug} />
           </span>
           <p className="eyebrow">{cover.eyebrow}</p>
           <h1>{cover.title}</h1>
@@ -242,16 +305,18 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
 
       <div className="dossier-corps">
         {dossier.chiffres && <BlocChiffres bloc={dossier.chiffres} />}
-        {dossier.contrainte && <BlocPuces bloc={dossier.contrainte} slug={slug} secours={1} />}
+        {dossier.contrainte && (
+          <BlocPuces bloc={dossier.contrainte} dossier={dossier} secours={1} />
+        )}
         {dossier.usages && <BlocGraphique bloc={dossier.usages} />}
         {dossier.economie && <BlocChiffres bloc={dossier.economie} />}
         {dossier.productions && <BlocGraphique bloc={dossier.productions} />}
         {dossier.filieres.map((filiere, i) => (
-          <BlocPuces key={i} bloc={filiere} slug={slug} secours={i + 2} />
+          <BlocPuces key={i} bloc={filiere} dossier={dossier} secours={i + 2} />
         ))}
         {dossier.solutions && <BlocColonnes bloc={dossier.solutions} />}
         {dossier.economies && <BlocGraphique bloc={dossier.economies} />}
-        {dossier.regions && <BlocCartes bloc={dossier.regions} slug={slug} />}
+        {dossier.regions && <BlocCartes bloc={dossier.regions} dossier={dossier} />}
         {dossier.deploiement && <BlocEtapes bloc={dossier.deploiement} />}
         {dossier.risques && <BlocColonnes bloc={dossier.risques} />}
 
@@ -276,6 +341,8 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
             <p className="dossier-note">{dossier.closing.contact}</p>
           )}
         </section>
+
+        <Credits dossier={dossier} />
       </div>
     </article>
   );

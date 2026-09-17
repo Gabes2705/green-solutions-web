@@ -20,12 +20,32 @@
  * cette langue et le déclare à Google, plutôt que de faire croire à une
  * traduction qui n'existe pas.
  */
-import { readdirSync, existsSync, mkdirSync, writeFileSync } from "node:fs";
+import { readdirSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ici = dirname(fileURLToPath(import.meta.url));
 const RACINE = join(ici, "../..");
+
+/* Ce que le site peut réellement montrer.
+ *
+ * Une page n'affiche que les photos installées dans public/, et il n'y en a que
+ * pour les pays dont l'origine des images est connue. Compter ici évite qu'une
+ * page réclame au navigateur une image qui n'existe pas. */
+function photosInstallees(slug) {
+  const dir = join(RACINE, "public/images/dossiers", slug);
+  if (!existsSync(dir)) return { nombre: 0, credits: null };
+  const nombre = readdirSync(dir).filter((f) => f.endsWith(".webp")).length;
+  const fichierCredits = join(dir, "_credits.json");
+  const credits = existsSync(fichierCredits)
+    ? JSON.parse(readFileSync(fichierCredits, "utf8")).map((c) => ({
+        titre: c.titre ?? null,
+        auteur: c.auteur ?? null,
+        licence: c.licence ?? null,
+      }))
+    : null;
+  return { nombre, credits };
+}
 
 /** Un graphique de dossier, réduit à ce qu'une page web sait redessiner. */
 function graphique(bloc) {
@@ -112,11 +132,15 @@ for (const slug of slugs) {
     ? (await import(`./complements/${slug}.mjs`)).default
     : {};
 
+  const { nombre, credits } = photosInstallees(slug);
+
   dossiers[slug] = {
     slug,
     locale: spec.locale,
     langue: spec.locale.slice(0, 2),
     pdf: `/documents/countries/${spec.fichier}.pdf`,
+    photos: nombre,
+    credits,
     cover: {
       eyebrow: spec.cover.eyebrow,
       title: spec.cover.title,
@@ -212,6 +236,9 @@ export type Dossier = {
   locale: string;
   langue: string;
   pdf: string;
+  /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
+  photos: number;
+  credits: { titre: string | null; auteur: string | null; licence: string | null }[] | null;
   cover: {
     eyebrow: string;
     title: string;
