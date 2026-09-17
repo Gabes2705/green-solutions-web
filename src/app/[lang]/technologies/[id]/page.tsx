@@ -21,6 +21,25 @@ const TECH_HERO: Record<string, string> = {
   agroforesterie: "/images/card-agroforesterie.jpg",
 };
 
+/**
+ * Le titre affiché par les moteurs de recherche.
+ *
+ * Il portait la marque en premier : « EVERGREEN® & ECOSORB® — Retenir l'eau ».
+ * Or personne ne cherche une marque qu'il ne connaît pas encore ; on cherche
+ * « retenir l'eau dans le sol ». L'accroche passe donc devant. Elle existe,
+ * écrite à la main, dans les treize langues — « Wasser speichern », « Suyu
+ * tutmak », « 保持水分 » — donc rien n'est traduit ni inventé ici : l'ordre
+ * change, les mots non.
+ *
+ * Le nom de l'entreprise n'est ajouté que s'il reste de la place : au-delà
+ * d'une soixantaine de caractères, Google coupe, et il vaut mieux perdre la
+ * signature que le sujet de la page.
+ */
+function titreDeRecherche(kicker: string, marque: string): string {
+  const base = `${kicker} — ${marque}`;
+  return base.length <= 45 ? `${base} | Green Solutions` : base;
+}
+
 export function generateStaticParams() {
   return TECH_IDS.flatMap((id) =>
     ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"].map((lang) => ({ lang, id }))
@@ -36,7 +55,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!item) return {};
 
   const url = `${SITE_URL}/${lang}/technologies/${id}`;
-  const title = `${item.title} — ${item.kicker} | Green Solutions`;
+  const title = titreDeRecherche(item.kicker, item.title);
   const description = item.text;
   const image = TECH_HERO[id];
 
@@ -71,6 +90,37 @@ export default async function Page({ params }: Params) {
   const langKey = (["en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"].includes(lang) ? lang : "fr") as keyof typeof content;
   const item = content[langKey].products.items.find((p) => p.id === id);
 
+  // Le fil d'Ariane dit au moteur où la page se situe dans le site, et lui
+  // permet d'afficher « Green Solutions › Les technologies › … » sous le lien
+  // plutôt qu'une adresse brute. Les libellés viennent des traductions
+  // existantes : rien n'est écrit ici.
+  const breadcrumb = item
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Green Solutions",
+            item: `${SITE_URL}/${lang}/`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: content[langKey].products.eyebrow,
+            item: `${SITE_URL}/${lang}/#technologies`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: item.title,
+            item: `${SITE_URL}/${lang}/technologies/${id}`,
+          },
+        ],
+      }
+    : null;
+
   const jsonLd = item
     ? {
         "@context": "https://schema.org",
@@ -97,6 +147,13 @@ export default async function Page({ params }: Params) {
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
+      {breadcrumb && (
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
         />
       )}
       <TechnologyPageClient />
