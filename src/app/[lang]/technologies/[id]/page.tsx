@@ -121,34 +121,15 @@ export default async function Page({ params }: Params) {
       }
     : null;
 
-  const jsonLd = item
-    ? {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        name: item.title,
-        description: item.text,
-        image: `${SITE_URL}${TECH_HERO[id] || ""}`,
-        url: `${SITE_URL}/${lang}/technologies/${id}`,
-        brand: {
-          "@type": "Organization",
-          name: "Green Solutions",
-        },
-        additionalProperty: item.facts.map((f) => ({
-          "@type": "PropertyValue",
-          value: f,
-        })),
-      }
-    : null;
+  // Il y avait ici une fiche « Product ». Google exige qu'un produit porte au
+  // moins un prix, un avis ou une note ; ces pages n'en ont aucun, parce que
+  // la vente se fait à la tonne et sur devis. La fiche ne pouvait donc jamais
+  // être valide, et Search Console la signalait sur les soixante-dix-huit
+  // pages. Inventer un prix ou des avis pour la satisfaire aurait été pire que
+  // l'erreur : elle est retirée.
 
   return (
     <>
-      {jsonLd && (
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      )}
       {breadcrumb && (
         <script
           type="application/ld+json"
