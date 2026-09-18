@@ -98,8 +98,29 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "en-ZA",
     "langue": "en",
     "pdf": "/documents/countries/afrique-du-sud.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 4,
+    "credits": [
+      {
+        "titre": "Hemel-en-aarde Valley -Babylon Tower.jpg",
+        "auteur": "Amada44",
+        "licence": "Public domain"
+      },
+      {
+        "titre": "Field and Sky.jpg",
+        "auteur": "Barry haynes",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Africain farmers.jpg",
+        "auteur": "Haytam123258",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Farms near Clarens.jpg",
+        "auteur": "Ossewa",
+        "licence": "CC BY-SA 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "MARKET DOSSIER",
       "title": "South Africa",
@@ -409,8 +430,29 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-DZ",
     "langue": "fr",
     "pdf": "/documents/countries/algerie.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 4,
+    "credits": [
+      {
+        "titre": "Agricultureadrar.jpg",
+        "auteur": "Clapsus",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Agriculture Chlef 3.jpg",
+        "auteur": "Knight of honor",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "El oued crop pivots.jpg",
+        "auteur": "NASA",
+        "licence": "Public domain"
+      },
+      {
+        "titre": "Plaine du gri.jpg",
+        "auteur": "Timici",
+        "licence": "CC BY-SA 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Algérie",
@@ -1029,8 +1071,14 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "es-AR",
     "langue": "es",
     "pdf": "/documents/countries/argentine.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 1,
+    "credits": [
+      {
+        "titre": "Soja en Siembra Directa sobre rastrojo de Sorgo Granífero (cropped).jpg",
+        "auteur": "Maggilautaro",
+        "licence": "CC BY 3.0"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MERCADO",
       "title": "Argentina",
@@ -1679,8 +1727,24 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "es-CL",
     "langue": "es",
     "pdf": "/documents/countries/chili.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 3,
+    "credits": [
+      {
+        "titre": "Sauzal vineyard ancient vines and grower Nivaldo Morales.jpg",
+        "auteur": "Alder Yarrow",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Row upon row across gently rolling valleys, Matetic Wines, Chile (38609005014).jpg",
+        "auteur": "Winniepix",
+        "licence": "CC BY 2.0"
+      },
+      {
+        "titre": "Waling through the vineyard at Bodegas RE, Casablanca Valley, Chile (27137278149).jpg",
+        "auteur": "Winniepix",
+        "licence": "CC BY 2.0"
+      }
+    ],
     "cover": {
       "eyebrow": "ESTUDIO DE MERCADO",
       "title": "Chile",
@@ -2353,8 +2417,34 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "hr-HR",
     "langue": "hr",
     "pdf": "/documents/countries/croatie.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 5,
+    "credits": [
+      {
+        "titre": "Croatia agriculture-1.jpg",
+        "auteur": "Beyond silence",
+        "licence": "Public domain"
+      },
+      {
+        "titre": "Croatia agriculture-3.jpg",
+        "auteur": "László Szalai (Beyond silence)",
+        "licence": "Public domain"
+      },
+      {
+        "titre": "Croatia agriculture-4.jpg",
+        "auteur": "László Szalai (Beyond silence)",
+        "licence": "Public domain"
+      },
+      {
+        "titre": "Croatia agriculture-5.jpg",
+        "auteur": "László Szalai (Beyond silence)",
+        "licence": "Public domain"
+      },
+      {
+        "titre": "Vineyards of Istria (Croatia).jpg",
+        "auteur": "Petar Milošević",
+        "licence": "CC BY-SA 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "TRŽIŠNA STUDIJA",
       "title": "Hrvatska",
@@ -2664,8 +2754,19 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "ar-EG",
     "langue": "ar",
     "pdf": "/documents/countries/egypte.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 2,
+    "credits": [
+      {
+        "titre": "Agricultural Farmland (1).jpg",
+        "auteur": "Myousry6666",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Agricultural Farmland (4).jpg",
+        "auteur": "Myousry6666",
+        "licence": "CC BY-SA 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "دراسة سوق",
       "title": "مصر",
@@ -2971,8 +3072,29 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "es-ES",
     "langue": "es",
     "pdf": "/documents/countries/espagne.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 4,
+    "credits": [
+      {
+        "titre": "Fields in Spring, Montferri.jpg",
+        "auteur": "Galimatiasgg",
+        "licence": "CC0"
+      },
+      {
+        "titre": "Olive trees almond trees near Arenas del Rey, Andalusia, Spain.jpg",
+        "auteur": "Jebulon",
+        "licence": "CC0"
+      },
+      {
+        "titre": "OrangeTreesPicassent.jpg",
+        "auteur": "Raul2009",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Agricultura a la Ribera - 39.jpeg",
+        "auteur": "User:Coentor",
+        "licence": "CC BY-SA 1.0"
+      }
+    ],
     "cover": {
       "eyebrow": "ESTUDIO DE MERCADO",
       "title": "España",
@@ -3282,8 +3404,29 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-GA",
     "langue": "fr",
     "pdf": "/documents/countries/gabon.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 4,
+    "credits": [
+      {
+        "titre": "Plantation de feuilles de manioc.jpg",
+        "auteur": "Estrella230",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Plantation d' une université.jpg",
+        "auteur": "Estrella230",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Plantation de cannes à sucre.jpg",
+        "auteur": "Estrella230",
+        "licence": "CC BY 4.0"
+      },
+      {
+        "titre": "Plantation au quartier Melen.jpg",
+        "auteur": "Estrella230",
+        "licence": "CC BY 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Gabon",
@@ -3926,8 +4069,24 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-HT",
     "langue": "fr",
     "pdf": "/documents/countries/haiti.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 3,
+    "credits": [
+      {
+        "titre": "Fish Farm (5683723189).jpg",
+        "auteur": "USAID U.S. Agency for International Development",
+        "licence": "Public domain"
+      },
+      {
+        "titre": "Agriculture Training Center (5683690897).jpg",
+        "auteur": "USAID U.S. Agency for International Development",
+        "licence": "Public domain"
+      },
+      {
+        "titre": "Mountainous Farming Plots Haiti.jpg",
+        "auteur": "Jlanghurst",
+        "licence": "CC BY-SA 3.0"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Haïti",
@@ -4237,8 +4396,19 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "ar-JO",
     "langue": "ar",
     "pdf": "/documents/countries/jordanie.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 2,
+    "credits": [
+      {
+        "titre": "Farm, Al-Hisn, Jordan.jpg",
+        "auteur": "User:Issagm",
+        "licence": "CC BY-SA 3.0"
+      },
+      {
+        "titre": "Irbid Farm 2026.jpg",
+        "auteur": "Omarbrodsd",
+        "licence": "CC BY-SA 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "ملف سوق",
       "title": "المملكة الأردنية الهاشمية",
@@ -4544,8 +4714,19 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-MA",
     "langue": "fr",
     "pdf": "/documents/countries/maroc.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 2,
+    "credits": [
+      {
+        "titre": "AZILAL agriculture.jpg",
+        "auteur": "Hamza EL GHAZALI",
+        "licence": "CC BY-SA 4.0"
+      },
+      {
+        "titre": "Agriculture in ASNI- TOUBKAL.jpg",
+        "auteur": "Hamza EL GHAZALI",
+        "licence": "CC BY-SA 4.0"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Maroc",
@@ -5830,8 +6011,19 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "en-US",
     "langue": "en",
     "pdf": "/documents/countries/usa.pdf",
-    "photos": 0,
-    "credits": null,
+    "photos": 2,
+    "credits": [
+      {
+        "titre": "20090915-USDA-OC-PSD-0002 - 54674579668 Agriculture in the United States.jpg",
+        "auteur": "USDAgov",
+        "licence": "Public domain"
+      },
+      {
+        "titre": "20090914-USDA-OC-PSD-0003 Agriculture in the United States.jpg",
+        "auteur": "USDAgov",
+        "licence": "Public domain"
+      }
+    ],
     "cover": {
       "eyebrow": "MARKET DOSSIER",
       "title": "United States",
