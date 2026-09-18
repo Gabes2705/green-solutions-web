@@ -14,18 +14,48 @@ import type { Cartes, Chiffres, Colonnes, Dossier, Etapes, Graphique, Puces } fr
  * barres et un pourcentage ne justifient pas trois cents kilo-octets de
  * JavaScript, et des barres en HTML restent lisibles pour un lecteur d'écran.
  *
- * Treize des dix-neuf dossiers n'ont aucune photo, parce que l'origine de leurs
- * images n'est pas établie et qu'une photo dont on ignore la provenance ne se
- * republie pas. La page doit donc tenir debout sans images : chaque bloc les
- * traite comme un ornement, jamais comme une structure.
+ * Les photos d'origine de treize dossiers venaient d'internet et ont été
+ * retirées ; douze ont reçu à la place des photos libres de Wikimedia, souvent
+ * moins nombreuses, et l'Arabie saoudite n'en a aucune. La page doit donc tenir
+ * debout avec une photo, deux, ou aucune : chaque bloc les traite comme un
+ * ornement, jamais comme une structure.
  */
 
-function urlPhoto(dossier: Dossier, index: number | null, secours = 0): string | null {
-  if (dossier.photos === 0) return null;
-  const i = index ?? secours;
-  // Un dossier peut demander « photo: 8 » alors que six images seulement sont
-  // installées : on retombe sur une image qui existe plutôt que sur un trou.
-  return `/images/dossiers/${dossier.slug}/${i % dossier.photos}.webp`;
+type Photographe = (index: number | null, secours: number) => string | null;
+
+/**
+ * Distribue les photos d'un dossier dans la page, chacune une seule fois.
+ *
+ * Les dossiers désignent leurs photos par numéro — « photo: 4 » — en pensant
+ * aux jeux d'origine, qui en comptaient jusqu'à onze. Les photos libres qui ont
+ * remplacé celles prises sur internet sont moins nombreuses : quatre pour le
+ * Gabon, deux pour le Maroc, une seule pour l'Argentine. Reprendre le numéro
+ * modulo le nombre de photos faisait revenir la même image trois ou quatre fois
+ * dans la page.
+ *
+ * Désormais, un numéro déjà pris ou inexistant cède la place à la première
+ * photo encore libre, et quand il n'en reste plus, le bloc s'affiche sans image.
+ * Les dossiers d'origine, qui ont assez de photos, gardent exactement celles que
+ * leur spécification désigne.
+ */
+function distributeur(dossier: Dossier): Photographe {
+  const prises = new Set<number>();
+  return (index, secours) => {
+    if (dossier.photos === 0) return null;
+    let i = index ?? secours;
+    if (i >= dossier.photos || prises.has(i)) {
+      i = -1;
+      for (let k = 0; k < dossier.photos; k++) {
+        if (!prises.has(k)) {
+          i = k;
+          break;
+        }
+      }
+      if (i === -1) return null;
+    }
+    prises.add(i);
+    return `/images/dossiers/${dossier.slug}/${i}.webp`;
+  };
 }
 
 /** Une ligne de texte par paragraphe : les sauts de ligne viennent du dossier. */
@@ -61,14 +91,14 @@ function BlocChiffres({ bloc }: { bloc: Chiffres }) {
 
 function BlocPuces({
   bloc,
-  dossier,
+  photographe,
   secours,
 }: {
   bloc: Puces;
-  dossier: Dossier;
+  photographe: Photographe;
   secours: number;
 }) {
-  const photo = urlPhoto(dossier, bloc.photo, secours);
+  const photo = photographe(bloc.photo, secours);
 
   return (
     <section className={`dossier-section${photo ? " dossier-split" : ""}`}>
@@ -174,14 +204,14 @@ function BlocColonnes({ bloc }: { bloc: Colonnes }) {
   );
 }
 
-function BlocCartes({ bloc, dossier }: { bloc: Cartes; dossier: Dossier }) {
+function BlocCartes({ bloc, photographe }: { bloc: Cartes; photographe: Photographe }) {
   return (
     <section className="dossier-section">
       <p className="eyebrow">{bloc.kicker}</p>
       <h2 className="section-title">{bloc.title}</h2>
       <div className="dossier-cartes">
         {bloc.items.map((item, i) => {
-          const photo = urlPhoto(dossier, item.photo, i);
+          const photo = photographe(item.photo, i);
           return (
             <article key={i} className="dossier-carte">
               {photo && (
@@ -263,7 +293,8 @@ function Credits({ dossier }: { dossier: Dossier }) {
 export default function DossierPage({ dossier }: { dossier: Dossier }) {
   const { cover } = dossier;
   const rtl = dossier.langue === "ar";
-  const photoCouverture = urlPhoto(dossier, 0);
+  const photographe = distributeur(dossier);
+  const photoCouverture = photographe(0, 0);
 
   return (
     <article className="dossier-page" dir={rtl ? "rtl" : undefined} lang={dossier.locale}>
@@ -308,17 +339,17 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
       <div className="dossier-corps">
         {dossier.chiffres && <BlocChiffres bloc={dossier.chiffres} />}
         {dossier.contrainte && (
-          <BlocPuces bloc={dossier.contrainte} dossier={dossier} secours={1} />
+          <BlocPuces bloc={dossier.contrainte} photographe={photographe} secours={1} />
         )}
         {dossier.usages && <BlocGraphique bloc={dossier.usages} />}
         {dossier.economie && <BlocChiffres bloc={dossier.economie} />}
         {dossier.productions && <BlocGraphique bloc={dossier.productions} />}
         {dossier.filieres.map((filiere, i) => (
-          <BlocPuces key={i} bloc={filiere} dossier={dossier} secours={i + 2} />
+          <BlocPuces key={i} bloc={filiere} photographe={photographe} secours={i + 2} />
         ))}
         {dossier.solutions && <BlocColonnes bloc={dossier.solutions} />}
         {dossier.economies && <BlocGraphique bloc={dossier.economies} />}
-        {dossier.regions && <BlocCartes bloc={dossier.regions} dossier={dossier} />}
+        {dossier.regions && <BlocCartes bloc={dossier.regions} photographe={photographe} />}
         {dossier.deploiement && <BlocEtapes bloc={dossier.deploiement} />}
         {dossier.risques && <BlocColonnes bloc={dossier.risques} />}
 
