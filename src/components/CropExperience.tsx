@@ -1,12 +1,22 @@
 "use client";
 
-import Image from "next/image";
-import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { useMemo, useRef, useState, type CSSProperties } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
 
 type Phase = { title: string; description: string };
+
+type CoreLang = "fr" | "en" | "es" | "pt" | "ar" | "zh";
+
+type FilmCopy = {
+  film: string;
+  duration: string;
+  restart: string;
+  synergyEyebrow: string;
+  synergyTitle: string;
+  synergyIntro: string;
+};
 
 type ExperienceCopy = {
   eyebrow: string;
@@ -323,12 +333,59 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
 };
 
-const IMAGES = [
-  "/images/agronomic-experience/phase-01-dry-soil.webp",
-  "/images/agronomic-experience/phase-02-water-captured.webp",
-  "/images/agronomic-experience/phase-03-root-development.webp",
-  "/images/agronomic-experience/phase-04-harvest.webp",
-] as const;
+const FILM_COPY: Record<CoreLang, FilmCopy> = {
+  fr: {
+    film: "Film de synergie agronomique",
+    duration: "14 s · lecture en boucle",
+    restart: "Recommencer le film",
+    synergyEyebrow: "Le système complet",
+    synergyTitle: "Quatre leviers qui se renforcent",
+    synergyIntro: "L’eau est mieux préparée, captée près des racines, valorisée par une nutrition ciblée et protégée des pressions biologiques. Chaque solution reste indépendante ; leur combinaison construit un itinéraire agronomique cohérent.",
+  },
+  en: {
+    film: "Agronomic synergy film",
+    duration: "14 sec · continuous loop",
+    restart: "Restart film",
+    synergyEyebrow: "The complete system",
+    synergyTitle: "Four levers that reinforce one another",
+    synergyIntro: "Water is better prepared, captured near the roots, supported by targeted nutrition and protected from biological pressure. Each solution stands alone; together they form a coherent agronomic pathway.",
+  },
+  es: {
+    film: "Película de sinergia agronómica",
+    duration: "14 s · reproducción continua",
+    restart: "Reiniciar la película",
+    synergyEyebrow: "El sistema completo",
+    synergyTitle: "Cuatro palancas que se refuerzan",
+    synergyIntro: "El agua se prepara mejor, se retiene junto a las raíces, se aprovecha con una nutrición específica y se protege de las presiones biológicas. Cada solución es autónoma; juntas forman un itinerario agronómico coherente.",
+  },
+  pt: {
+    film: "Filme de sinergia agronómica",
+    duration: "14 s · reprodução contínua",
+    restart: "Reiniciar o filme",
+    synergyEyebrow: "O sistema completo",
+    synergyTitle: "Quatro alavancas que se reforçam",
+    synergyIntro: "A água é melhor preparada, captada junto às raízes, valorizada por nutrição dirigida e protegida das pressões biológicas. Cada solução funciona de forma autónoma; juntas formam um percurso agronómico coerente.",
+  },
+  ar: {
+    film: "فيلم التكامل الزراعي",
+    duration: "14 ثانية · تشغيل متكرر",
+    restart: "إعادة تشغيل الفيلم",
+    synergyEyebrow: "النظام المتكامل",
+    synergyTitle: "أربع تقنيات يعزز بعضها بعضاً",
+    synergyIntro: "يُحضّر الماء بصورة أفضل ويُحفظ قرب الجذور، ثم تدعمه تغذية موجهة وحماية من الضغوط الحيوية. تعمل كل تقنية بمفردها، وتكوّن معاً مساراً زراعياً متكاملاً.",
+  },
+  zh: {
+    film: "农艺协同短片",
+    duration: "14 秒 · 循环播放",
+    restart: "重新播放",
+    synergyEyebrow: "完整系统",
+    synergyTitle: "四项相互强化的技术",
+    synergyIntro: "水得到优化并储存在根区，配合精准营养和生物压力防护。每项方案都可独立使用，组合后形成连贯的农艺路径。",
+  },
+};
+
+const FILM_CHAPTER_TIMES = [0, 3.1, 6.7, 10.3] as const;
+const CORE_LANGS = new Set<Lang>(["fr", "en", "es", "pt", "ar", "zh"]);
 
 function clamp(value: number, minimum: number, maximum: number) {
   return Math.max(minimum, Math.min(maximum, value));
@@ -337,18 +394,12 @@ function clamp(value: number, minimum: number, maximum: number) {
 export default function CropExperience() {
   const { language, c } = useLanguage();
   const copy = COPY[language];
+  const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [phase, setPhase] = useState(0);
   const [playing, setPlaying] = useState(true);
   const [water, setWater] = useState(70);
   const [interval, setIntervalValue] = useState(8);
-
-  useEffect(() => {
-    if (!playing) return;
-    const timer = window.setInterval(() => {
-      setPhase((current) => (current + 1) % IMAGES.length);
-    }, 5200);
-    return () => window.clearInterval(timer);
-  }, [playing]);
 
   const metrics = useMemo(() => {
     const controlWater = clamp(Math.round(water * 0.62 - interval * 2.2), 12, 78);
@@ -369,8 +420,36 @@ export default function CropExperience() {
     "--treated-reserve": String(clamp(metrics.water[1] / 145, 0.28, 0.66)),
   } as CSSProperties;
 
-  const movePhase = (direction: number) => {
-    setPhase((current) => (current + direction + IMAGES.length) % IMAGES.length);
+  const togglePlayback = async () => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      await video.play();
+    } else {
+      video.pause();
+    }
+  };
+
+  const seekTo = async (index: number) => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.currentTime = FILM_CHAPTER_TIMES[index];
+    setPhase(index);
+    await video.play();
+  };
+
+  const restartFilm = async () => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.currentTime = 0;
+    setPhase(0);
+    await video.play();
+  };
+
+  const syncChapter = () => {
+    const currentTime = videoRef.current?.currentTime ?? 0;
+    const chapter = currentTime >= FILM_CHAPTER_TIMES[3] ? 3 : currentTime >= FILM_CHAPTER_TIMES[2] ? 2 : currentTime >= FILM_CHAPTER_TIMES[1] ? 1 : 0;
+    setPhase((current) => current === chapter ? current : chapter);
   };
 
   const metricRows = [
@@ -378,6 +457,7 @@ export default function CropExperience() {
     { label: copy.metricRoots, values: metrics.roots },
     { label: copy.metricYield, values: metrics.yield },
   ];
+  const synergyItems = [c.products.items[0], c.products.items[3], c.products.items[1], c.products.items[2]];
 
   return (
     <section id="experience" className={styles.section} aria-labelledby="experience-title">
@@ -398,31 +478,35 @@ export default function CropExperience() {
             <div className={styles.phaseCopy} aria-live="polite">
               <span className={styles.phaseNumber}>{String(phase + 1).padStart(2, "0")}</span>
               <div>
-                <strong>{copy.phases[phase].title}</strong>
-                <span>{copy.phases[phase].description}</span>
+                <strong>{filmCopy.film} · {copy.phases[phase].title}</strong>
+                <span>{copy.phases[phase].description} · {filmCopy.duration}</span>
               </div>
             </div>
             <div className={styles.transport}>
-              <button type="button" onClick={() => movePhase(-1)} aria-label={copy.previous}>←</button>
-              <button type="button" onClick={() => setPlaying((value) => !value)} aria-label={playing ? copy.pause : copy.play} aria-pressed={!playing}>
+              <button type="button" onClick={restartFilm} aria-label={filmCopy.restart}>↻</button>
+              <button type="button" onClick={togglePlayback} aria-label={playing ? copy.pause : copy.play} aria-pressed={!playing}>
                 {playing ? "Ⅱ" : "▶"}
               </button>
-              <button type="button" onClick={() => movePhase(1)} aria-label={copy.next}>→</button>
             </div>
           </div>
 
           <div className={styles.visual} style={visualStyle}>
-            {IMAGES.map((src, index) => (
-              <Image
-                key={src}
-                src={src}
-                alt={index === phase ? `${copy.control} / ${copy.treated} — ${copy.phases[index].title}` : ""}
-                fill
-                sizes="(max-width: 800px) 94vw, 1240px"
-                className={`${styles.phaseImage} ${index === phase ? styles.activeImage : ""}`}
-                priority={index === 0}
-              />
-            ))}
+            <video
+              ref={videoRef}
+              className={styles.film}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/images/agronomic-film/maize-film-poster.webp"
+              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film}`}
+              onTimeUpdate={syncChapter}
+              onPlay={() => setPlaying(true)}
+              onPause={() => setPlaying(false)}
+            >
+              <source src="/videos/green-solutions-synergy.mp4" type="video/mp4" />
+            </video>
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
             <div className={styles.plotLabelControl}>
@@ -475,13 +559,33 @@ export default function CropExperience() {
               role="tab"
               aria-selected={phase === index}
               className={phase === index ? styles.activeTab : ""}
-              onClick={() => setPhase(index)}
+              onClick={() => seekTo(index)}
               key={item.title}
             >
               <span>{String(index + 1).padStart(2, "0")}</span>
               <strong>{item.title}</strong>
             </button>
           ))}
+        </div>
+
+        <div className={styles.synergy}>
+          <header>
+            <div>
+              <p>{filmCopy.synergyEyebrow}</p>
+              <h3>{filmCopy.synergyTitle}</h3>
+            </div>
+            <span>{filmCopy.synergyIntro}</span>
+          </header>
+          <div className={styles.synergyGrid}>
+            {synergyItems.map((item, index) => (
+              <a href={`#${item.id}`} key={item.id}>
+                <i aria-hidden="true">{String(index + 1).padStart(2, "0")}</i>
+                <strong>{item.title}</strong>
+                <b>{item.kicker}</b>
+                <small>{item.text}</small>
+              </a>
+            ))}
+          </div>
         </div>
 
         <div className={styles.solutions}>

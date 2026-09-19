@@ -153,17 +153,14 @@
   background: #b8c7b9;
 }
 
-.phaseImage {
+.film {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   z-index: 0;
   object-fit: cover;
-  opacity: 0;
-  transform: scale(1.015);
-  transition: opacity 1s ease, transform 5.2s ease;
-}
-
-.activeImage {
-  opacity: 1;
-  transform: scale(1);
+  background: #92aa98;
 }
 
 .controlStress,
@@ -459,6 +456,99 @@
 .phaseRail .activeTab { color: #fff; }
 .phaseRail .activeTab::before { right: 0; }
 
+.synergy {
+  margin-top: clamp(58px, 7vw, 88px);
+}
+
+.synergy > header {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(360px, 1.15fr);
+  align-items: end;
+  gap: clamp(32px, 7vw, 96px);
+  margin-bottom: 24px;
+}
+
+.synergy > header p {
+  margin: 0 0 12px;
+  color: #7bc79a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.synergy > header h3 {
+  margin: 0;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -.03em;
+}
+
+.synergy > header > span {
+  color: rgba(247, 251, 248, .7);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.synergyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.synergyGrid a {
+  min-width: 0;
+  min-height: 236px;
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,.17);
+  border-radius: 20px;
+  background: rgba(255,255,255,.045);
+  color: #fff;
+  text-decoration: none;
+  transition: translate .25s ease, background .25s ease, border-color .25s ease;
+}
+
+.synergyGrid a:hover {
+  translate: 0 -4px;
+  border-color: rgba(123,199,154,.6);
+  background: rgba(123,199,154,.1);
+}
+
+.synergyGrid i {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 9px;
+  border: 1px solid rgba(123,199,154,.45);
+  border-radius: 50%;
+  color: #7bc79a;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.synergyGrid a:nth-child(2) i { border-color: rgba(96,194,218,.5); color: #76c7d8; }
+.synergyGrid a:nth-child(3) i { border-color: rgba(218,178,84,.5); color: #ddbd72; }
+.synergyGrid a:nth-child(4) i { border-color: rgba(185,132,211,.5); color: #c495dc; }
+.synergyGrid strong { font-size: 14px; line-height: 1.25; }
+.synergyGrid b { color: #85c99e; font-size: 10px; font-weight: 700; }
+.synergyGrid small {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 8px;
+  color: rgba(255,255,255,.55);
+  font-size: 10px;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
 .solutions {
   margin-top: clamp(58px, 7vw, 88px);
 }
@@ -503,6 +593,8 @@
   .introText { max-width: 720px; }
   .dashboard { grid-template-columns: 1fr; }
   .scenario { border-right: 0; border-bottom: 1px solid #dbe4de; }
+  .synergy > header { grid-template-columns: 1fr; gap: 18px; }
+  .synergyGrid { grid-template-columns: repeat(2, 1fr); }
   .solutions > div { grid-template-columns: repeat(2, 1fr); }
   .solutions a { border-bottom: 1px solid rgba(255,255,255,.14); }
   .solutions a:nth-child(2n) { border-right: 0; }
@@ -521,7 +613,6 @@
   .phaseNumber { font-size: 25px; }
   .transport { margin-left: auto; }
   .transport button { width: 44px; height: 44px; }
-  .transport button:first-child { display: none; }
   .visual { aspect-ratio: 16 / 9.4; }
   .plotLabelControl, .plotLabelTreated { top: 10px; max-width: 46%; padding: 7px 8px; gap: 6px; border-radius: 14px; }
   .plotLabelControl { left: 8px; }
@@ -537,14 +628,16 @@
   .phaseRail button { min-height: 62px; justify-content: center; padding-inline: 5px; }
   .phaseRail button { display: grid; justify-items: center; gap: 3px; }
   .phaseRail button strong { font-size: 9px; text-align: center; }
+  .synergyGrid { grid-template-columns: 1fr; }
+  .synergyGrid a { min-height: 0; }
   .solutions > div { grid-template-columns: 1fr; }
   .solutions a, .solutions a:nth-child(2n), .solutions a:last-child { grid-column: auto; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.14); }
   .solutions a:last-child { border-bottom: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .phaseImage,
   .bars i,
   .phaseRail button::before,
-  .transport button { transition: none; }
+  .transport button,
+  .synergyGrid a { transition: none; }
 }
