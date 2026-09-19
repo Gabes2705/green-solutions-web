@@ -50,13 +50,13 @@ type ExperienceCopy = {
 const COPY: Record<Lang, ExperienceCopy> = {
   fr: {
     eyebrow: "Démonstrateur agronomique interactif",
-    title: "Voir ce que change une réserve d’eau au niveau des racines",
-    intro: "Comparez une culture témoin et une culture avec hydrorétenteur. Faites varier l’eau disponible et l’intervalle d’irrigation, puis suivez le parcours du sol jusqu’à la récolte.",
+    title: "Voir cinq solutions agir, de l’eau jusqu’à la récolte",
+    intro: "Comparez une culture témoin et une culture accompagnée par la synergie Green Solutions : eau préparée, réserve hydrique, nutrition ciblée et protection de la plante, du sol jusqu’aux épis.",
     modelNote: "Simulation pédagogique : les indices illustrent un mécanisme, ils ne constituent pas une promesse de rendement. Les résultats réels dépendent du sol, du climat, de la culture et du protocole.",
     control: "Culture témoin",
     controlSub: "Sol sans hydrorétenteur",
-    treated: "Avec EVERGREEN®",
-    treatedSub: "Hydrorétenteur dans la zone racinaire",
+    treated: "Synergie Green Solutions",
+    treatedSub: "5 solutions · un itinéraire agronomique",
     waterAvailable: "Eau disponible",
     irrigationInterval: "Intervalle d’irrigation",
     low: "Faible",
@@ -83,13 +83,13 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
   en: {
     eyebrow: "Interactive agronomic demonstrator",
-    title: "See what a root-zone water reserve changes",
-    intro: "Compare a control crop with a crop using a water retainer. Adjust available water and irrigation interval, then follow the journey from soil to harvest.",
+    title: "See five solutions work, from water to harvest",
+    intro: "Compare a control crop with a crop supported by the Green Solutions synergy: prepared water, root-zone reserve, targeted nutrition and plant protection, from soil to mature ears.",
     modelNote: "Educational simulation: the indices illustrate a mechanism and are not a yield promise. Field results depend on soil, climate, crop and protocol.",
     control: "Control crop",
     controlSub: "Soil without water retainer",
-    treated: "With EVERGREEN®",
-    treatedSub: "Water retainer in the root zone",
+    treated: "Green Solutions synergy",
+    treatedSub: "5 solutions · one agronomic pathway",
     waterAvailable: "Available water",
     irrigationInterval: "Irrigation interval",
     low: "Low",
@@ -116,13 +116,13 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
   es: {
     eyebrow: "Demostrador agronómico interactivo",
-    title: "Vea qué cambia una reserva de agua en la zona radicular",
-    intro: "Compare un cultivo testigo con otro que utiliza hidroretenedor. Ajuste el agua disponible y el intervalo de riego y siga el recorrido del suelo a la cosecha.",
+    title: "Vea actuar cinco soluciones, del agua a la cosecha",
+    intro: "Compare un cultivo testigo con otro apoyado por la sinergia Green Solutions: agua preparada, reserva hídrica, nutrición específica y protección vegetal, del suelo a las mazorcas maduras.",
     modelNote: "Simulación pedagógica: los índices ilustran un mecanismo y no garantizan rendimiento. Los resultados dependen del suelo, clima, cultivo y protocolo.",
     control: "Cultivo testigo",
     controlSub: "Suelo sin hidroretenedor",
-    treated: "Con EVERGREEN®",
-    treatedSub: "Hidroretenedor en la zona radicular",
+    treated: "Sinergia Green Solutions",
+    treatedSub: "5 soluciones · un itinerario agronómico",
     waterAvailable: "Agua disponible",
     irrigationInterval: "Intervalo de riego",
     low: "Baja",
@@ -149,13 +149,13 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
   pt: {
     eyebrow: "Demonstração agronómica interativa",
-    title: "Veja o que muda com uma reserva de água na zona radicular",
-    intro: "Compare uma cultura de controlo com outra que utiliza hidroretentor. Ajuste a água disponível e o intervalo de rega e siga o percurso do solo à colheita.",
+    title: "Veja cinco soluções em ação, da água à colheita",
+    intro: "Compare uma cultura de controlo com outra apoiada pela sinergia Green Solutions: água preparada, reserva hídrica, nutrição dirigida e proteção vegetal, do solo às espigas maduras.",
     modelNote: "Simulação pedagógica: os índices ilustram um mecanismo e não garantem rendimento. Os resultados dependem do solo, clima, cultura e protocolo.",
     control: "Cultura de controlo",
     controlSub: "Solo sem hidroretentor",
-    treated: "Com EVERGREEN®",
-    treatedSub: "Hidroretentor na zona radicular",
+    treated: "Sinergia Green Solutions",
+    treatedSub: "5 soluções · um percurso agronómico",
     waterAvailable: "Água disponível",
     irrigationInterval: "Intervalo de rega",
     low: "Baixa",
@@ -182,13 +182,13 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
   ar: {
     eyebrow: "عرض زراعي تفاعلي",
-    title: "شاهد أثر مخزون الماء في منطقة الجذور",
-    intro: "قارن بين محصول شاهد ومحصول يستخدم مادة محتجزة للماء. عدّل كمية الماء وفترة الري وتابع المسار من التربة إلى الحصاد.",
+    title: "شاهد عمل خمسة حلول من الماء إلى الحصاد",
+    intro: "قارن بين محصول شاهد ومحصول تدعمه منظومة Green Solutions: ماء مُحضّر ومخزون مائي وتغذية موجهة وحماية للنبات، من التربة حتى أكواز الذرة الناضجة.",
     modelNote: "محاكاة تعليمية: المؤشرات تشرح الآلية ولا تمثل ضماناً للإنتاج. تعتمد النتائج الفعلية على التربة والمناخ والمحصول والبروتوكول.",
     control: "المحصول الشاهد",
     controlSub: "تربة من دون مادة محتجزة للماء",
-    treated: "مع EVERGREEN®",
-    treatedSub: "مادة محتجزة للماء في منطقة الجذور",
+    treated: "تكامل Green Solutions",
+    treatedSub: "5 حلول · مسار زراعي واحد",
     waterAvailable: "الماء المتاح",
     irrigationInterval: "الفاصل بين الري",
     low: "منخفض",
@@ -215,13 +215,13 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
   zh: {
     eyebrow: "互动农业演示",
-    title: "直观看到根区蓄水带来的变化",
-    intro: "对比普通种植与使用保水剂的种植效果。调节可用水量和灌溉间隔，观察从土壤到收获的全过程。",
+    title: "观察五项方案从用水到收获的协同作用",
+    intro: "对比普通种植与 Green Solutions 协同方案：优化水质、根区蓄水、精准营养和作物保护，从土壤一直观察到成熟玉米穗。",
     modelNote: "教学模拟：指数用于说明作用机制，并非产量承诺。实际结果取决于土壤、气候、作物和应用方案。",
     control: "对照种植",
     controlSub: "未使用保水剂的土壤",
-    treated: "使用 EVERGREEN®",
-    treatedSub: "根区使用保水剂",
+    treated: "Green Solutions 协同方案",
+    treatedSub: "5 项方案 · 一套农艺路径",
     waterAvailable: "可用水量",
     irrigationInterval: "灌溉间隔",
     low: "低",
@@ -251,7 +251,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
     title: "Lihat perubahan dari cadangan air di zona akar",
     intro: "Bandingkan tanaman kontrol dengan tanaman yang memakai penahan air. Atur air tersedia dan jeda irigasi, lalu ikuti proses dari tanah hingga panen.",
     modelNote: "Simulasi edukatif: indeks menjelaskan mekanisme, bukan jaminan hasil. Hasil lapangan bergantung pada tanah, iklim, tanaman, dan protokol.",
-    control: "Tanaman kontrol", controlSub: "Tanah tanpa penahan air", treated: "Dengan EVERGREEN®", treatedSub: "Penahan air di zona akar",
+    control: "Tanaman kontrol", controlSub: "Tanah tanpa penahan air", treated: "Sinergi Green Solutions", treatedSub: "5 solusi · satu jalur agronomi",
     waterAvailable: "Air tersedia", irrigationInterval: "Jeda irigasi", low: "Rendah", high: "Tinggi", frequent: "Sering", spaced: "Jarang",
     reading: "Perbandingan", indexNote: "Indeks edukatif / 100", metricWater: "Air di zona akar", metricRoots: "Perkembangan akar", metricYield: "Potensi hasil", adjust: "Atur skenario", solutions: "Pelajari solusi terkait", previous: "Tahap sebelumnya", next: "Tahap berikutnya", pause: "Jeda animasi", play: "Lanjutkan animasi",
     phases: [
@@ -266,7 +266,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
     title: "So wirkt eine Wasserreserve im Wurzelraum",
     intro: "Vergleichen Sie eine Kontrollkultur mit einer Kultur mit Wasserspeicher. Variieren Sie Wassermenge und Bewässerungsabstand – vom Boden bis zur Ernte.",
     modelNote: "Lehrsimulation: Die Indizes erklären einen Mechanismus und sind keine Ertragsgarantie. Feldergebnisse hängen von Boden, Klima, Kultur und Protokoll ab.",
-    control: "Kontrollkultur", controlSub: "Boden ohne Wasserspeicher", treated: "Mit EVERGREEN®", treatedSub: "Wasserspeicher im Wurzelraum",
+    control: "Kontrollkultur", controlSub: "Boden ohne Wasserspeicher", treated: "Green Solutions Synergie", treatedSub: "5 Lösungen · ein agronomisches System",
     waterAvailable: "Verfügbares Wasser", irrigationInterval: "Bewässerungsabstand", low: "Niedrig", high: "Hoch", frequent: "Häufig", spaced: "Weit",
     reading: "Vergleich", indexNote: "Lehrindizes / 100", metricWater: "Wasser im Wurzelraum", metricRoots: "Wurzelentwicklung", metricYield: "Ertragspotenzial", adjust: "Szenario anpassen", solutions: "Zugehörige Lösungen", previous: "Vorherige Phase", next: "Nächste Phase", pause: "Animation pausieren", play: "Animation fortsetzen",
     phases: [
@@ -281,7 +281,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
     title: "Scoprite cosa cambia con una riserva d’acqua nella zona radicale",
     intro: "Confrontate una coltura di controllo con una coltura dotata di idroritentore. Regolate acqua disponibile e intervallo irriguo, dal suolo al raccolto.",
     modelNote: "Simulazione didattica: gli indici illustrano un meccanismo e non garantiscono la resa. I risultati dipendono da suolo, clima, coltura e protocollo.",
-    control: "Coltura di controllo", controlSub: "Suolo senza idroritentore", treated: "Con EVERGREEN®", treatedSub: "Idroritentore nella zona radicale",
+    control: "Coltura di controllo", controlSub: "Suolo senza idroritentore", treated: "Sinergia Green Solutions", treatedSub: "5 soluzioni · un percorso agronomico",
     waterAvailable: "Acqua disponibile", irrigationInterval: "Intervallo irriguo", low: "Bassa", high: "Alta", frequent: "Frequente", spaced: "Distanziato",
     reading: "Lettura comparativa", indexNote: "Indici didattici / 100", metricWater: "Acqua nella zona radicale", metricRoots: "Sviluppo radicale", metricYield: "Potenziale di resa", adjust: "Regolate lo scenario", solutions: "Scoprite le soluzioni associate", previous: "Fase precedente", next: "Fase successiva", pause: "Metti in pausa", play: "Riprendi l’animazione",
     phases: [
@@ -293,7 +293,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
   el: {
     eyebrow: "Διαδραστική γεωπονική επίδειξη", title: "Δείτε τι αλλάζει ένα απόθεμα νερού στη ριζόσφαιρα", intro: "Συγκρίνετε μια καλλιέργεια μάρτυρα με μια καλλιέργεια που χρησιμοποιεί υδροσυγκρατητικό. Ρυθμίστε το νερό και το διάστημα άρδευσης, από το έδαφος έως τη συγκομιδή.", modelNote: "Εκπαιδευτική προσομοίωση: οι δείκτες εξηγούν τον μηχανισμό και δεν εγγυώνται απόδοση. Τα αποτελέσματα εξαρτώνται από έδαφος, κλίμα, καλλιέργεια και πρωτόκολλο.",
-    control: "Καλλιέργεια μάρτυρα", controlSub: "Έδαφος χωρίς υδροσυγκρατητικό", treated: "Με EVERGREEN®", treatedSub: "Υδροσυγκρατητικό στη ριζόσφαιρα", waterAvailable: "Διαθέσιμο νερό", irrigationInterval: "Διάστημα άρδευσης", low: "Χαμηλό", high: "Υψηλό", frequent: "Συχνό", spaced: "Αραιό", reading: "Σύγκριση", indexNote: "Εκπαιδευτικοί δείκτες / 100", metricWater: "Νερό στη ριζόσφαιρα", metricRoots: "Ανάπτυξη ριζών", metricYield: "Δυναμικό απόδοσης", adjust: "Ρυθμίστε το σενάριο", solutions: "Σχετικές λύσεις", previous: "Προηγούμενο στάδιο", next: "Επόμενο στάδιο", pause: "Παύση κίνησης", play: "Συνέχιση κίνησης",
+    control: "Καλλιέργεια μάρτυρα", controlSub: "Έδαφος χωρίς υδροσυγκρατητικό", treated: "Συνέργεια Green Solutions", treatedSub: "5 λύσεις · μία γεωπονική διαδρομή", waterAvailable: "Διαθέσιμο νερό", irrigationInterval: "Διάστημα άρδευσης", low: "Χαμηλό", high: "Υψηλό", frequent: "Συχνό", spaced: "Αραιό", reading: "Σύγκριση", indexNote: "Εκπαιδευτικοί δείκτες / 100", metricWater: "Νερό στη ριζόσφαιρα", metricRoots: "Ανάπτυξη ριζών", metricYield: "Δυναμικό απόδοσης", adjust: "Ρυθμίστε το σενάριο", solutions: "Σχετικές λύσεις", previous: "Προηγούμενο στάδιο", next: "Επόμενο στάδιο", pause: "Παύση κίνησης", play: "Συνέχιση κίνησης",
     phases: [
       { title: "Ξηρό έδαφος", description: "Χωρίς τοπικό απόθεμα, το νερό απομακρύνεται γρηγορότερα από τη ριζόσφαιρα." },
       { title: "Συγκράτηση νερού", description: "Το υδροσυγκρατητικό φορτίζεται και διατηρεί διαθέσιμη υγρασία κοντά στις ρίζες." },
@@ -303,7 +303,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
   tr: {
     eyebrow: "Etkileşimli agronomi gösterimi", title: "Kök bölgesindeki su rezervinin etkisini görün", intro: "Kontrol ürünü ile su tutucu kullanılan ürünü karşılaştırın. Kullanılabilir suyu ve sulama aralığını ayarlayıp topraktan hasada süreci izleyin.", modelNote: "Eğitim simülasyonu: endeksler mekanizmayı açıklar, verim garantisi değildir. Sonuçlar toprak, iklim, ürün ve protokole bağlıdır.",
-    control: "Kontrol ürünü", controlSub: "Su tutucusuz toprak", treated: "EVERGREEN® ile", treatedSub: "Kök bölgesinde su tutucu", waterAvailable: "Kullanılabilir su", irrigationInterval: "Sulama aralığı", low: "Düşük", high: "Yüksek", frequent: "Sık", spaced: "Aralıklı", reading: "Karşılaştırma", indexNote: "Eğitim endeksleri / 100", metricWater: "Kök bölgesindeki su", metricRoots: "Kök gelişimi", metricYield: "Verim potansiyeli", adjust: "Senaryoyu ayarlayın", solutions: "İlgili çözümler", previous: "Önceki aşama", next: "Sonraki aşama", pause: "Animasyonu duraklat", play: "Animasyonu sürdür",
+    control: "Kontrol ürünü", controlSub: "Su tutucusuz toprak", treated: "Green Solutions sinerjisi", treatedSub: "5 çözüm · tek agronomik yaklaşım", waterAvailable: "Kullanılabilir su", irrigationInterval: "Sulama aralığı", low: "Düşük", high: "Yüksek", frequent: "Sık", spaced: "Aralıklı", reading: "Karşılaştırma", indexNote: "Eğitim endeksleri / 100", metricWater: "Kök bölgesindeki su", metricRoots: "Kök gelişimi", metricYield: "Verim potansiyeli", adjust: "Senaryoyu ayarlayın", solutions: "İlgili çözümler", previous: "Önceki aşama", next: "Sonraki aşama", pause: "Animasyonu duraklat", play: "Animasyonu sürdür",
     phases: [
       { title: "Kuru toprak", description: "Yerel rezerv olmadan su kök bölgesinden daha hızlı uzaklaşır." },
       { title: "Tutulan su", description: "Su tutucu yüklenir ve köklere yakın kullanılabilir nemi korur." },
@@ -313,7 +313,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
   pl: {
     eyebrow: "Interaktywny demonstrator agronomiczny", title: "Zobacz wpływ rezerwy wody w strefie korzeni", intro: "Porównaj uprawę kontrolną z uprawą z hydroretenerem. Zmieniaj ilość wody i odstęp między nawadnianiem, śledząc drogę od gleby do zbioru.", modelNote: "Symulacja edukacyjna: wskaźniki objaśniają mechanizm i nie gwarantują plonu. Wyniki zależą od gleby, klimatu, uprawy i protokołu.",
-    control: "Uprawa kontrolna", controlSub: "Gleba bez hydroretenera", treated: "Z EVERGREEN®", treatedSub: "Hydroretener w strefie korzeni", waterAvailable: "Dostępna woda", irrigationInterval: "Odstęp nawadniania", low: "Mała", high: "Duża", frequent: "Częsty", spaced: "Rzadki", reading: "Porównanie", indexNote: "Wskaźniki edukacyjne / 100", metricWater: "Woda w strefie korzeni", metricRoots: "Rozwój korzeni", metricYield: "Potencjał plonu", adjust: "Dostosuj scenariusz", solutions: "Powiązane rozwiązania", previous: "Poprzedni etap", next: "Następny etap", pause: "Wstrzymaj animację", play: "Wznów animację",
+    control: "Uprawa kontrolna", controlSub: "Gleba bez hydroretenera", treated: "Synergia Green Solutions", treatedSub: "5 rozwiązań · jeden program agronomiczny", waterAvailable: "Dostępna woda", irrigationInterval: "Odstęp nawadniania", low: "Mała", high: "Duża", frequent: "Częsty", spaced: "Rzadki", reading: "Porównanie", indexNote: "Wskaźniki edukacyjne / 100", metricWater: "Woda w strefie korzeni", metricRoots: "Rozwój korzeni", metricYield: "Potencjał plonu", adjust: "Dostosuj scenariusz", solutions: "Powiązane rozwiązania", previous: "Poprzedni etap", next: "Następny etap", pause: "Wstrzymaj animację", play: "Wznów animację",
     phases: [
       { title: "Sucha gleba", description: "Bez lokalnej rezerwy woda szybciej opuszcza strefę korzeni." },
       { title: "Zatrzymana woda", description: "Hydroretener napełnia się i utrzymuje dostępną wilgoć blisko korzeni." },
@@ -323,7 +323,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
   hr: {
     eyebrow: "Interaktivni agronomski prikaz", title: "Pogledajte učinak zalihe vode u zoni korijena", intro: "Usporedite kontrolni usjev s usjevom koji koristi hidroretentor. Podesite dostupnu vodu i razmak navodnjavanja te pratite put od tla do žetve.", modelNote: "Edukativna simulacija: pokazatelji objašnjavaju mehanizam i nisu jamstvo prinosa. Rezultati ovise o tlu, klimi, usjevu i protokolu.",
-    control: "Kontrolni usjev", controlSub: "Tlo bez hidroretentora", treated: "S EVERGREEN®", treatedSub: "Hidroretentor u zoni korijena", waterAvailable: "Dostupna voda", irrigationInterval: "Razmak navodnjavanja", low: "Niska", high: "Visoka", frequent: "Čest", spaced: "Rijedak", reading: "Usporedni prikaz", indexNote: "Edukativni pokazatelji / 100", metricWater: "Voda u zoni korijena", metricRoots: "Razvoj korijena", metricYield: "Potencijal prinosa", adjust: "Podesite scenarij", solutions: "Povezana rješenja", previous: "Prethodna faza", next: "Sljedeća faza", pause: "Pauziraj animaciju", play: "Nastavi animaciju",
+    control: "Kontrolni usjev", controlSub: "Tlo bez hidroretentora", treated: "Sinergija Green Solutions", treatedSub: "5 rješenja · jedan agronomski pristup", waterAvailable: "Dostupna voda", irrigationInterval: "Razmak navodnjavanja", low: "Niska", high: "Visoka", frequent: "Čest", spaced: "Rijedak", reading: "Usporedni prikaz", indexNote: "Edukativni pokazatelji / 100", metricWater: "Voda u zoni korijena", metricRoots: "Razvoj korijena", metricYield: "Potencijal prinosa", adjust: "Podesite scenarij", solutions: "Povezana rješenja", previous: "Prethodna faza", next: "Sljedeća faza", pause: "Pauziraj animaciju", play: "Nastavi animaciju",
     phases: [
       { title: "Suho tlo", description: "Bez lokalne zalihe voda brže napušta zonu korijena." },
       { title: "Zadržana voda", description: "Hidroretentor upija vodu i održava vlagu dostupnom uz korijen." },
@@ -336,55 +336,55 @@ const COPY: Record<Lang, ExperienceCopy> = {
 const FILM_COPY: Record<CoreLang, FilmCopy> = {
   fr: {
     film: "Film de synergie agronomique",
-    duration: "14 s · lecture en boucle",
+    duration: "26 s · récolte maintenue à l’écran",
     restart: "Recommencer le film",
     synergyEyebrow: "Le système complet",
-    synergyTitle: "Quatre leviers qui se renforcent",
-    synergyIntro: "L’eau est mieux préparée, captée près des racines, valorisée par une nutrition ciblée et protégée des pressions biologiques. Chaque solution reste indépendante ; leur combinaison construit un itinéraire agronomique cohérent.",
+    synergyTitle: "Cinq solutions, une seule synergie agronomique",
+    synergyIntro: "EVERGREEN® et ECOSORB® créent deux réserves hydriques complémentaires ; Water Vital® prépare l’eau, ECOFERT® nourrit la plante et NAPEMA® la protège. Leur combinaison construit un itinéraire agronomique cohérent.",
   },
   en: {
     film: "Agronomic synergy film",
-    duration: "14 sec · continuous loop",
+    duration: "26 sec · extended harvest view",
     restart: "Restart film",
     synergyEyebrow: "The complete system",
-    synergyTitle: "Four levers that reinforce one another",
-    synergyIntro: "Water is better prepared, captured near the roots, supported by targeted nutrition and protected from biological pressure. Each solution stands alone; together they form a coherent agronomic pathway.",
+    synergyTitle: "Five solutions, one agronomic synergy",
+    synergyIntro: "EVERGREEN® and ECOSORB® create two complementary water reserves; Water Vital® prepares the water, ECOFERT® feeds the plant and NAPEMA® protects it. Together they form a coherent agronomic pathway.",
   },
   es: {
     film: "Película de sinergia agronómica",
-    duration: "14 s · reproducción continua",
+    duration: "26 s · cosecha prolongada en pantalla",
     restart: "Reiniciar la película",
     synergyEyebrow: "El sistema completo",
-    synergyTitle: "Cuatro palancas que se refuerzan",
-    synergyIntro: "El agua se prepara mejor, se retiene junto a las raíces, se aprovecha con una nutrición específica y se protege de las presiones biológicas. Cada solución es autónoma; juntas forman un itinerario agronómico coherente.",
+    synergyTitle: "Cinco soluciones, una sinergia agronómica",
+    synergyIntro: "EVERGREEN® y ECOSORB® crean dos reservas hídricas complementarias; Water Vital® prepara el agua, ECOFERT® nutre la planta y NAPEMA® la protege. Juntas forman un itinerario agronómico coherente.",
   },
   pt: {
     film: "Filme de sinergia agronómica",
-    duration: "14 s · reprodução contínua",
+    duration: "26 s · colheita prolongada no ecrã",
     restart: "Reiniciar o filme",
     synergyEyebrow: "O sistema completo",
-    synergyTitle: "Quatro alavancas que se reforçam",
-    synergyIntro: "A água é melhor preparada, captada junto às raízes, valorizada por nutrição dirigida e protegida das pressões biológicas. Cada solução funciona de forma autónoma; juntas formam um percurso agronómico coerente.",
+    synergyTitle: "Cinco soluções, uma sinergia agronómica",
+    synergyIntro: "EVERGREEN® e ECOSORB® criam duas reservas hídricas complementares; Water Vital® prepara a água, ECOFERT® nutre a planta e NAPEMA® protege-a. Juntas formam um percurso agronómico coerente.",
   },
   ar: {
     film: "فيلم التكامل الزراعي",
-    duration: "14 ثانية · تشغيل متكرر",
+    duration: "26 ثانية · عرض مطوّل للحصاد",
     restart: "إعادة تشغيل الفيلم",
     synergyEyebrow: "النظام المتكامل",
-    synergyTitle: "أربع تقنيات يعزز بعضها بعضاً",
-    synergyIntro: "يُحضّر الماء بصورة أفضل ويُحفظ قرب الجذور، ثم تدعمه تغذية موجهة وحماية من الضغوط الحيوية. تعمل كل تقنية بمفردها، وتكوّن معاً مساراً زراعياً متكاملاً.",
+    synergyTitle: "خمسة حلول في منظومة زراعية متكاملة",
+    synergyIntro: "يشكّل EVERGREEN® وECOSORB® مخزونين مائيين متكاملين؛ ويُحضّر Water Vital® الماء، ويغذي ECOFERT® النبات، ويحميه NAPEMA®. وتكوّن معاً مساراً زراعياً متكاملاً.",
   },
   zh: {
     film: "农艺协同短片",
-    duration: "14 秒 · 循环播放",
+    duration: "26 秒 · 延长展示收获效果",
     restart: "重新播放",
     synergyEyebrow: "完整系统",
-    synergyTitle: "四项相互强化的技术",
-    synergyIntro: "水得到优化并储存在根区，配合精准营养和生物压力防护。每项方案都可独立使用，组合后形成连贯的农艺路径。",
+    synergyTitle: "五项方案，一套农艺协同系统",
+    synergyIntro: "EVERGREEN® 与 ECOSORB® 形成互补的蓄水系统；Water Vital® 优化水质，ECOFERT® 为作物提供营养，NAPEMA® 提供保护。五项方案共同形成完整的农艺路径。",
   },
 };
 
-const FILM_CHAPTER_TIMES = [0, 3.1, 6.7, 10.3] as const;
+const FILM_CHAPTER_TIMES = [0, 4.5, 10, 18] as const;
 const CORE_LANGS = new Set<Lang>(["fr", "en", "es", "pt", "ar", "zh"]);
 
 function clamp(value: number, minimum: number, maximum: number) {
@@ -457,7 +457,13 @@ export default function CropExperience() {
     { label: copy.metricRoots, values: metrics.roots },
     { label: copy.metricYield, values: metrics.yield },
   ];
-  const synergyItems = [c.products.items[0], c.products.items[3], c.products.items[1], c.products.items[2]];
+  const synergyItems = [
+    { ...c.products.items[0], id: "retention-eau", title: "EVERGREEN®" },
+    { ...c.products.items[0], id: "retention-eau", title: "ECOSORB®" },
+    c.products.items[3],
+    c.products.items[1],
+    c.products.items[2],
+  ];
 
   return (
     <section id="experience" className={styles.section} aria-labelledby="experience-title">
@@ -498,7 +504,8 @@ export default function CropExperience() {
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="auto"
+              poster="/images/agronomic-film/maize-stage-harvest.webp"
               aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film}`}
               onTimeUpdate={syncChapter}
               onPlay={() => setPlaying(true)}
@@ -577,7 +584,7 @@ export default function CropExperience() {
           </header>
           <div className={styles.synergyGrid}>
             {synergyItems.map((item, index) => (
-              <a href={`#${item.id}`} key={item.id}>
+              <a href={`#${item.id}`} key={`${item.id}-${item.title}`}>
                 <i aria-hidden="true">{String(index + 1).padStart(2, "0")}</i>
                 <strong>{item.title}</strong>
                 <b>{item.kicker}</b>
@@ -590,9 +597,9 @@ export default function CropExperience() {
         <div className={styles.solutions}>
           <p>{copy.solutions}</p>
           <div>
-            {c.products.items.slice(0, 5).map((item) => (
-              <a href={`#${item.id}`} key={item.id}>
-                <span>{item.num}</span>
+            {synergyItems.map((item, index) => (
+              <a href={`#${item.id}`} key={`${item.id}-${item.title}`}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
                 <strong>{item.title}</strong>
                 <small>{item.kicker}</small>
               </a>
