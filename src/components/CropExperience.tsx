@@ -499,13 +499,12 @@ export default function CropExperience() {
               loop
               playsInline
               preload="metadata"
-              poster="/images/agronomic-film/maize-film-poster.webp"
               aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film}`}
               onTimeUpdate={syncChapter}
               onPlay={() => setPlaying(true)}
               onPause={() => setPlaying(false)}
             >
-              <source src="/videos/green-solutions-synergy.mp4" type="video/mp4" />
+              <source src="/green-solutions-synergy.mp4" type="video/mp4" />
             </video>
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
