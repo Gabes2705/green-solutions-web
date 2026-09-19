@@ -520,7 +520,7 @@
   .phaseCopy div span { display: none; }
   .phaseNumber { font-size: 25px; }
   .transport { margin-left: auto; }
-  .transport button { width: 36px; height: 36px; }
+  .transport button { width: 44px; height: 44px; }
   .transport button:first-child { display: none; }
   .visual { aspect-ratio: 16 / 9.4; }
   .plotLabelControl, .plotLabelTreated { top: 10px; max-width: 46%; padding: 7px 8px; gap: 6px; border-radius: 14px; }
