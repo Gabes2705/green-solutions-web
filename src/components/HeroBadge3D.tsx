@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import * as THREE from "three";
 
 const ICON_SRC = "/images/logo-icon.png";
@@ -25,13 +26,22 @@ export default function HeroBadge3D() {
 
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
-    const renderer = new THREE.WebGLRenderer({
-      canvas,
-      alpha: true,
-      // On a high-density screen the extra samples are not visible at this
-      // size, and multisampling is not free.
-      antialias: dpr < 2,
-    });
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({
+        canvas,
+        alpha: true,
+        // On a high-density screen the extra samples are not visible at this
+        // size, and multisampling is not free.
+        antialias: dpr < 2,
+      });
+    } catch {
+      // WebGL can be disabled by hardened browsers, remote desktops and some
+      // low-power devices. Keep the hero usable instead of letting Three.js
+      // take down the whole page.
+      stage.classList.add("badge-stage--fallback");
+      return () => stage.classList.remove("badge-stage--fallback");
+    }
     // Capped at 2: past that the badge costs several times the fill for no
     // visible gain, and it shares the frame budget with the cover video.
     renderer.setPixelRatio(dpr);
@@ -214,6 +224,14 @@ export default function HeroBadge3D() {
 
   return (
     <div className="badge-stage" ref={stageRef}>
+      <Image
+        className="badge-static-fallback"
+        src={ICON_SRC}
+        alt="Green Solutions"
+        width={675}
+        height={768}
+        priority
+      />
       <canvas ref={canvasRef} />
     </div>
   );

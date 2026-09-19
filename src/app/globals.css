@@ -695,6 +695,20 @@ body {
   width: 100% !important;
   height: 100% !important;
 }
+.badge-static-fallback {
+  position: absolute;
+  inset: 8%;
+  width: 84%;
+  height: 84%;
+  object-fit: contain;
+  opacity: 0;
+}
+.badge-stage--fallback canvas {
+  display: none;
+}
+.badge-stage--fallback .badge-static-fallback {
+  opacity: 1;
+}
 .badge-stage::after {
   content: "";
   position: absolute;

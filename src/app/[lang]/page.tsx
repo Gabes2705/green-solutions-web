@@ -16,6 +16,8 @@ import Team from "@/components/Team";
 import TechChain from "@/components/TechChain";
 import TenirAvancer from "@/components/TenirAvancer";
 import WaterCalculator from "@/components/WaterCalculator";
+import CropExperience from "@/components/CropExperience";
+import RegionalScenarios from "@/components/RegionalScenarios";
 
 export const dynamicParams = true;
 
@@ -42,6 +44,8 @@ export default function Home() {
     <main>
       <SmoothAnchors />
       <Hero />
+      <CropExperience />
+      <RegionalScenarios />
       <Reseau />
       <CountryStudies />
       <ProofBar />

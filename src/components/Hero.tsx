@@ -42,7 +42,7 @@ export default function Hero() {
           <a href="#contact" className="btn-3d btn-3d-light hero-cta-main">
             {c.hero.quoteCta}
           </a>
-          <a href="#technologies" className="btn-3d btn-3d-dark hero-cta-alt">
+          <a href="#experience" className="btn-3d btn-3d-dark hero-cta-alt">
             {c.hero.explore}
           </a>
           <a href="#calculateur" className="btn-3d btn-3d-light hero-cta-main">
