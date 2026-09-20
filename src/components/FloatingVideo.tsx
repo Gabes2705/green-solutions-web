@@ -1,9 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function FloatingVideo() {
   const [dismissed, setDismissed] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const keepPlaying = () => {
+      if (!document.hidden && video.paused) {
+        void video.play().catch(() => undefined);
+      }
+    };
+
+    keepPlaying();
+    video.addEventListener("canplay", keepPlaying);
+    video.addEventListener("pause", keepPlaying);
+    document.addEventListener("visibilitychange", keepPlaying);
+    const timer = window.setInterval(keepPlaying, 1000);
+
+    return () => {
+      video.removeEventListener("canplay", keepPlaying);
+      video.removeEventListener("pause", keepPlaying);
+      document.removeEventListener("visibilitychange", keepPlaying);
+      window.clearInterval(timer);
+    };
+  }, []);
 
   if (dismissed) return null;
 
@@ -20,6 +45,7 @@ export default function FloatingVideo() {
         className="film-screen"
       >
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop

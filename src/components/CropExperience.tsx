@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
@@ -411,11 +411,34 @@ export default function CropExperience() {
   const copy = COPY[language];
   const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
   const videoRef = useRef<HTMLVideoElement>(null);
+  const wantsPlaybackRef = useRef(true);
   const [phase, setPhase] = useState(0);
   const [playing, setPlaying] = useState(true);
   const [hydrated, setHydrated] = useState(false);
   const [water, setWater] = useState(70);
   const [interval, setIntervalValue] = useState(8);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const keepPlaying = () => {
+      if (wantsPlaybackRef.current && !document.hidden && video.paused) {
+        void video.play().catch(() => undefined);
+      }
+    };
+
+    keepPlaying();
+    video.addEventListener("canplay", keepPlaying);
+    document.addEventListener("visibilitychange", keepPlaying);
+    const timer = window.setInterval(keepPlaying, 1000);
+
+    return () => {
+      video.removeEventListener("canplay", keepPlaying);
+      document.removeEventListener("visibilitychange", keepPlaying);
+      window.clearInterval(timer);
+    };
+  }, []);
 
   const metrics = useMemo(() => {
     const controlWater = clamp(Math.round(water * 0.62 - interval * 2.2), 12, 78);
@@ -440,8 +463,10 @@ export default function CropExperience() {
     const video = videoRef.current;
     if (!video) return;
     if (video.paused) {
+      wantsPlaybackRef.current = true;
       await video.play();
     } else {
+      wantsPlaybackRef.current = false;
       video.pause();
     }
   };
@@ -450,6 +475,7 @@ export default function CropExperience() {
     const video = videoRef.current;
     if (!video) return;
     video.currentTime = FILM_CHAPTER_TIMES[index];
+    wantsPlaybackRef.current = true;
     setPhase(index);
     setHydrated(index > 0);
     await video.play();
@@ -459,6 +485,7 @@ export default function CropExperience() {
     const video = videoRef.current;
     if (!video) return;
     video.currentTime = 0;
+    wantsPlaybackRef.current = true;
     setPhase(0);
     setHydrated(false);
     await video.play();

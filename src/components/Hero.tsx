@@ -34,7 +34,7 @@ export default function Hero() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="hero-photo-img"
-          src="/images/hero-cover-clair.jpg"
+          src="/images/hero-cover-clean.png"
           alt=""
           fetchPriority="high"
           decoding="async"

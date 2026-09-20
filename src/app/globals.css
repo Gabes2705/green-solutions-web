@@ -798,10 +798,10 @@ body {
 }
 .film-screen {
   position: relative;
-  width: min(26vw, 420px, 44vh);
+  width: min(31vw, 560px, 52vh);
   overflow: hidden;
-  border: 4px solid #fff;
-  background: #fff;
+  border: 0;
+  background: transparent;
   pointer-events: auto;
 }
 .film-screen video {
@@ -848,10 +848,7 @@ body {
    make the browser recompose the shadow on every frame, which showed up as
    dropped frames rather than as a slow page. */
 .film-screen {
-  box-shadow:
-    0 2px 6px rgba(20, 60, 30, 0.14),
-    0 20px 40px -16px rgba(20, 60, 30, 0.3),
-    0 0 0 1px rgba(31, 138, 69, 0.14);
+  box-shadow: none;
 }
 /* Deliberately no border-radius on the video: see FloatingVideo. */
 
