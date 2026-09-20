@@ -149,7 +149,9 @@
   --split-position: 47.5%;
   position: relative;
   isolation: isolate;
-  aspect-ratio: 16 / 8.7;
+  width: min(100%, 720px);
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
   overflow: hidden;
   background: #b8c7b9;
 }
@@ -719,7 +721,7 @@
   .phaseNumber { font-size: 25px; }
   .transport { margin-left: auto; }
   .transport button { width: 44px; height: 44px; }
-  .visual { aspect-ratio: 16 / 9.4; }
+  .visual { width: 100%; aspect-ratio: 1 / 1; }
   .plotLabelControl, .plotLabelTreated { top: 10px; max-width: 46%; padding: 7px 8px; gap: 6px; border-radius: 14px; }
   .plotLabelControl { left: 8px; }
   .plotLabelTreated { right: 8px; }

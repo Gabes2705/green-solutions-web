@@ -1,9 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function FloatingVideo() {
   const [dismissed, setDismissed] = useState(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const keepPlaying = () => {
+      const video = videoRef.current;
+      if (video && video.paused && document.visibilityState === "visible") {
+        void video.play().catch(() => undefined);
+      }
+    };
+    keepPlaying();
+    const timer = window.setInterval(keepPlaying, 750);
+    return () => window.clearInterval(timer);
+  }, []);
 
   if (dismissed) return null;
 
@@ -20,6 +33,7 @@ export default function FloatingVideo() {
         className="film-screen"
       >
         <video
+          ref={videoRef}
           src="/videos/film-hero-compatible.mp4"
           poster="/images/film-hero-poster.jpg"
           aria-label="Film agronomique Green Solutions — 33 secondes"

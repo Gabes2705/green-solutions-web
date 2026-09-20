@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
@@ -392,15 +392,6 @@ const CORE_LANGS = new Set<Lang>(["fr", "en", "es", "pt", "ar", "zh"]);
  * l'eau. On garde cette couche dans le navigateur afin qu'elle reste exactement
  * alignée sur les racines, même pendant les fondus du film.
  */
-const EVERGREEN_GRAINS = [
-  [7, 20, 4, 15, -18], [15, 52, 5, 18, 22], [23, 31, 4, 16, 8],
-  [31, 71, 5, 20, -31], [39, 43, 4, 17, 28], [48, 17, 5, 19, -12],
-  [56, 61, 4, 16, 35], [64, 36, 5, 21, -24], [72, 77, 4, 18, 14],
-  [81, 48, 5, 20, -8], [90, 24, 4, 17, 31], [95, 68, 5, 19, -27],
-  [11, 84, 4, 16, 27], [27, 11, 5, 18, -16], [43, 88, 4, 17, 9],
-  [59, 91, 5, 20, -22], [76, 12, 4, 16, 18], [86, 88, 5, 19, 6],
-] as const;
-
 function clamp(value: number, minimum: number, maximum: number) {
   return Math.max(minimum, Math.min(maximum, value));
 }
@@ -411,7 +402,7 @@ export default function CropExperience() {
   const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
   const [phase, setPhase] = useState(0);
   const [filmRun, setFilmRun] = useState(0);
-  const [hydrated, setHydrated] = useState(false);
+  const filmRef = useRef<HTMLVideoElement | null>(null);
   const [water, setWater] = useState(70);
   const [interval, setIntervalValue] = useState(8);
 
@@ -419,12 +410,23 @@ export default function CropExperience() {
     const timer = window.setInterval(() => {
       setPhase((current) => {
         const next = (current + 1) % 4;
-        setHydrated(next > 0);
         return next;
       });
     }, 1000);
     return () => window.clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    const keepPlaying = () => {
+      const video = filmRef.current;
+      if (video && video.paused && document.visibilityState === "visible") {
+        void video.play().catch(() => undefined);
+      }
+    };
+    keepPlaying();
+    const timer = window.setInterval(keepPlaying, 750);
+    return () => window.clearInterval(timer);
+  }, [filmRun]);
 
   const metrics = useMemo(() => {
     const controlWater = clamp(Math.round(water * 0.62 - interval * 2.2), 12, 78);
@@ -447,12 +449,10 @@ export default function CropExperience() {
 
   const seekTo = (index: number) => {
     setPhase(index);
-    setHydrated(index > 0);
   };
 
   const restartFilm = () => {
     setPhase(0);
-    setHydrated(false);
     setFilmRun((current) => current + 1);
   };
 
@@ -499,6 +499,7 @@ export default function CropExperience() {
 
           <div className={styles.visual} style={visualStyle}>
             <video
+              ref={filmRef}
               key={filmRun}
               className={styles.film}
               src="/videos/comparatif-tomates-compatible.mp4"
@@ -514,21 +515,6 @@ export default function CropExperience() {
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
             <div className={styles.splitFrame} aria-hidden="true"><i /><i /></div>
-            <div className={`${styles.granuleField} ${hydrated ? styles.granulesHydrated : ""}`} aria-hidden="true">
-              {EVERGREEN_GRAINS.map(([left, top, drySize, wetSize, rotation], index) => (
-                <i
-                  key={`${left}-${top}`}
-                  style={{
-                    left: `${left}%`,
-                    top: `${top}%`,
-                    "--grain-dry": `${drySize}px`,
-                    "--grain-wet": `${wetSize}px`,
-                    "--grain-rotation": `${rotation}deg`,
-                    "--grain-delay": `${(index % 6) * 90}ms`,
-                  } as CSSProperties}
-                />
-              ))}
-            </div>
             <div className={styles.plotLabelControl}>
               <span>A</span><div><strong>{copy.control}</strong><small>{copy.controlSub}</small></div>
             </div>
