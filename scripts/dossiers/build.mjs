@@ -4,10 +4,13 @@ import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
 import { Deck, PALETTES } from "./deck.mjs";
 import { communs } from "./communs.mjs";
+import { stressHydrique, sourcesStress } from "./stress.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const OUT = join(here, "../../public/documents/countries");
-const SOFFICE = "C:\\Program Files\\LibreOffice\\program\\soffice.exe";
+const SOFFICE =
+  process.env.LIBREOFFICE_BIN ??
+  (process.platform === "win32" ? "C:\\Program Files\\LibreOffice\\program\\soffice.exe" : "soffice");
 
 // Les photos vivent hors du dépôt : passer leur racine en 2e argument.
 const PHOTOS = process.argv[3] ?? join(here, "photos");
@@ -31,6 +34,15 @@ const PHRASE_CREDITS = {
   hr: "Fotografije: {0} — putem Wikimedia Commonsa.",
 };
 
+const PHRASE_CONCEPT = {
+  fr: "Illustrations photographiques conceptuelles : {0}. Elles ne documentent pas un site ou un essai réel.",
+  en: "Conceptual photographic illustrations: {0}. They do not document a real site or trial.",
+  es: "Ilustraciones fotográficas conceptuales: {0}. No documentan un lugar ni un ensayo real.",
+  ar: "صور توضيحية فوتوغرافية مفاهيمية: {0}. لا توثّق موقعاً أو تجربة حقيقية.",
+  el: "Εννοιολογικές φωτογραφικές απεικονίσεις: {0}. Δεν τεκμηριώνουν πραγματική τοποθεσία ή δοκιμή.",
+  hr: "Konceptualne fotografske ilustracije: {0}. Ne dokumentiraju stvarnu lokaciju ni pokus.",
+};
+
 function creditsPhotos(spec) {
   const fichier = join(PHOTOS, "_credits.json");
   if (!existsSync(fichier)) return [];
@@ -38,17 +50,30 @@ function creditsPhotos(spec) {
   const items = tout[spec.slug];
   if (!items || items.length === 0) return [];
 
+  const langue = spec.locale.slice(0, 2);
+  const lignes = [];
+  const commons = items.filter((i) => i.source !== "conceptual");
+  const concepts = items.filter((i) => i.source === "conceptual");
+
   const vus = new Map();
-  for (const i of items) {
+  for (const i of commons) {
     if (!i.auteur) continue;
     if (!vus.has(i.auteur)) vus.set(i.auteur, i.licence || "");
   }
-  if (vus.size === 0) return [];
+  if (vus.size > 0) {
+    const liste = [...vus].map(([auteur, licence]) =>
+      licence ? `${auteur} (${licence})` : auteur,
+    );
+    const modele = PHRASE_CREDITS[langue] ?? PHRASE_CREDITS.fr;
+    lignes.push(modele.replace("{0}", liste.join(", ")));
+  }
 
-  const liste = [...vus].map(([auteur, licence]) => (licence ? `${auteur} (${licence})` : auteur));
-  const langue = spec.locale.slice(0, 2);
-  const modele = PHRASE_CREDITS[langue] ?? PHRASE_CREDITS.fr;
-  return [modele.replace("{0}", liste.join(", "))];
+  const auteursConcept = [...new Set(concepts.map((i) => i.auteur).filter(Boolean))];
+  if (auteursConcept.length > 0) {
+    const modele = PHRASE_CONCEPT[langue] ?? PHRASE_CONCEPT.fr;
+    lignes.push(modele.replace("{0}", auteursConcept.join(", ")));
+  }
+  return lignes;
 }
 
 function photosOf(slug) {
@@ -89,6 +114,7 @@ export async function build(spec) {
     photo: pic(spec.contrainte.photo ?? 1),
     footer: foot,
   });
+  d.chart({ ...(spec.stress ?? stressHydrique(spec.locale)), footer: foot });
   // Un dossier « complet » porte en plus l'économie du pays, ses deux filières
   // phares, le rendement par culture, le reste de la gamme, le partenariat et
   // les sources — les sept pages qui manquaient face aux anciens dossiers.
@@ -100,27 +126,28 @@ export async function build(spec) {
   // Chaque page supplémentaire ne sort que si le complément la porte : un
   // dossier court (économie, une filière, la gamme) tient en 14 pages, un
   // dossier complet en 18.
-  d.chart({ ...spec.usages, footer: foot });
+  if (spec.usages) d.chart({ ...spec.usages, footer: foot });
   if (complet) d.stats({ ...spec.economie, footer: foot });
-  d.chart({ ...spec.productions, footer: foot });
+  if (spec.productions) d.chart({ ...spec.productions, footer: foot });
   for (const [i, f] of (spec.filieres ?? []).entries()) {
     await d.split({ ...f, photo: pic(f.photo ?? i + 1), photoLeft: i % 2 === 1, footer: foot });
   }
   if (spec.rendement) d.chart({ ...c.rendement(spec.rendement), footer: foot });
   d.columns({ ...spec.solutions, footer: foot });
   if (complet && spec.gamme !== false) d.columns({ ...c.gamme, footer: foot });
-  d.chart({ ...spec.economies, footer: foot });
-  await d.cards({
-    ...spec.regions,
-    items: spec.regions.items.map((it) => ({ ...it, photo: pic(it.photo ?? 0) })),
-    footer: foot,
-  });
+  if (spec.economies) d.chart({ ...spec.economies, footer: foot });
+  if (spec.regions) {
+    await d.cards({
+      ...spec.regions,
+      items: spec.regions.items.map((it) => ({ ...it, photo: pic(it.photo ?? 0) })),
+      footer: foot,
+    });
+  }
   d.steps({ ...spec.deploiement, footer: foot });
   if (complet && spec.partenariat !== false) d.steps({ ...c.partenariat, footer: foot });
   d.columns({ ...spec.risques, footer: foot });
-  if (spec.sources) {
-    d.columns({ ...c.sources([...spec.sources, ...creditsPhotos(spec)]), footer: foot });
-  }
+  const sources = [...(spec.sources ?? []), ...sourcesStress(spec.locale), ...creditsPhotos(spec)];
+  d.columns({ ...c.sources(sources), footer: foot });
   await d.closing({
     ...spec.closing,
     photo: pic(spec.closing.photo ?? 0),

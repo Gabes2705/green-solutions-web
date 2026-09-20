@@ -387,6 +387,21 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
 const FILM_CHAPTER_TIMES = [0, 4.5, 10, 18] as const;
 const CORE_LANGS = new Set<Lang>(["fr", "en", "es", "pt", "ar", "zh"]);
 
+/*
+ * Positionnement volontairement irrégulier des grains dans la moitié traitée.
+ * Ils commencent comme des cristaux secs, puis gonflent lors de l'arrivée de
+ * l'eau. On garde cette couche dans le navigateur afin qu'elle reste exactement
+ * alignée sur les racines, même pendant les fondus du film.
+ */
+const EVERGREEN_GRAINS = [
+  [7, 20, 4, 15, -18], [15, 52, 5, 18, 22], [23, 31, 4, 16, 8],
+  [31, 71, 5, 20, -31], [39, 43, 4, 17, 28], [48, 17, 5, 19, -12],
+  [56, 61, 4, 16, 35], [64, 36, 5, 21, -24], [72, 77, 4, 18, 14],
+  [81, 48, 5, 20, -8], [90, 24, 4, 17, 31], [95, 68, 5, 19, -27],
+  [11, 84, 4, 16, 27], [27, 11, 5, 18, -16], [43, 88, 4, 17, 9],
+  [59, 91, 5, 20, -22], [76, 12, 4, 16, 18], [86, 88, 5, 19, 6],
+] as const;
+
 function clamp(value: number, minimum: number, maximum: number) {
   return Math.max(minimum, Math.min(maximum, value));
 }
@@ -398,6 +413,7 @@ export default function CropExperience() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [phase, setPhase] = useState(0);
   const [playing, setPlaying] = useState(true);
+  const [hydrated, setHydrated] = useState(false);
   const [water, setWater] = useState(70);
   const [interval, setIntervalValue] = useState(8);
 
@@ -435,6 +451,7 @@ export default function CropExperience() {
     if (!video) return;
     video.currentTime = FILM_CHAPTER_TIMES[index];
     setPhase(index);
+    setHydrated(index > 0);
     await video.play();
   };
 
@@ -443,6 +460,7 @@ export default function CropExperience() {
     if (!video) return;
     video.currentTime = 0;
     setPhase(0);
+    setHydrated(false);
     await video.play();
   };
 
@@ -450,6 +468,7 @@ export default function CropExperience() {
     const currentTime = videoRef.current?.currentTime ?? 0;
     const chapter = currentTime >= FILM_CHAPTER_TIMES[3] ? 3 : currentTime >= FILM_CHAPTER_TIMES[2] ? 2 : currentTime >= FILM_CHAPTER_TIMES[1] ? 1 : 0;
     setPhase((current) => current === chapter ? current : chapter);
+    setHydrated(currentTime >= 2.4);
   };
 
   const metricRows = [
@@ -515,6 +534,22 @@ export default function CropExperience() {
             </video>
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
+            <div className={styles.splitFrame} aria-hidden="true"><i /><i /></div>
+            <div className={`${styles.granuleField} ${hydrated ? styles.granulesHydrated : ""}`} aria-hidden="true">
+              {EVERGREEN_GRAINS.map(([left, top, drySize, wetSize, rotation], index) => (
+                <i
+                  key={`${left}-${top}`}
+                  style={{
+                    left: `${left}%`,
+                    top: `${top}%`,
+                    "--grain-dry": `${drySize}px`,
+                    "--grain-wet": `${wetSize}px`,
+                    "--grain-rotation": `${rotation}deg`,
+                    "--grain-delay": `${(index % 6) * 90}ms`,
+                  } as CSSProperties}
+                />
+              ))}
+            </div>
             <div className={styles.plotLabelControl}>
               <span>A</span><div><strong>{copy.control}</strong><small>{copy.controlSub}</small></div>
             </div>

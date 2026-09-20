@@ -15,8 +15,9 @@ import type { Cartes, Chiffres, Colonnes, Dossier, Etapes, Graphique, Puces } fr
  * JavaScript, et des barres en HTML restent lisibles pour un lecteur d'écran.
  *
  * Les photos d'origine de treize dossiers venaient d'internet et ont été
- * retirées ; douze ont reçu à la place des photos libres de Wikimedia, souvent
- * moins nombreuses, et l'Arabie saoudite n'en a aucune. La page doit donc tenir
+ * retirées ; les pays ont reçu à la place des photos libres de Wikimedia ou,
+ * lorsqu'une série ouverte cohérente n'existait pas, des illustrations
+ * conceptuelles clairement signalées. La page doit donc tenir
  * debout avec une photo, deux, ou aucune : chaque bloc les traite comme un
  * ornement, jamais comme une structure.
  */
@@ -269,13 +270,56 @@ function Credits({ dossier }: { dossier: Dossier }) {
   if (!credits || credits.length === 0) return null;
 
   const uniques = Array.from(
-    new Map(credits.filter((c) => c.auteur).map((c) => [`${c.auteur}|${c.licence}`, c])).values(),
+    new Map(
+      credits
+        .filter((c) => c.auteur)
+        .map((c) => [`${c.auteur}|${c.licence}|${c.source}`, c]),
+    ).values(),
   );
   if (uniques.length === 0) return null;
 
+  const textes = {
+    fr: {
+      titre: "Crédits photo",
+      commons: "Photographies issues de Wikimedia Commons, réutilisées selon leur licence.",
+      conceptual:
+        "Les illustrations conceptuelles sont signalées comme telles et ne documentent ni un site ni un essai réel.",
+    },
+    en: {
+      titre: "Photo credits",
+      commons: "Photographs from Wikimedia Commons, reused under their stated licences.",
+      conceptual:
+        "Conceptual illustrations are identified as such and do not document a real site or trial.",
+    },
+    es: {
+      titre: "Créditos fotográficos",
+      commons: "Fotografías de Wikimedia Commons, reutilizadas conforme a sus licencias.",
+      conceptual:
+        "Las ilustraciones conceptuales están identificadas y no documentan un lugar ni un ensayo real.",
+    },
+    ar: {
+      titre: "اعتمادات الصور",
+      commons: "صور من ويكيميديا كومنز، معاد استخدامها وفق تراخيصها.",
+      conceptual: "الصور المفاهيمية مذكورة بوضوح ولا توثّق موقعاً أو تجربة حقيقية.",
+    },
+    el: {
+      titre: "Φωτογραφικές πιστώσεις",
+      commons: "Φωτογραφίες από το Wikimedia Commons, σύμφωνα με τις άδειές τους.",
+      conceptual: "Οι εννοιολογικές εικόνες επισημαίνονται και δεν τεκμηριώνουν πραγματική δοκιμή.",
+    },
+    hr: {
+      titre: "Fotografske zasluge",
+      commons: "Fotografije s Wikimedia Commonsa, ponovno korištene prema licencama.",
+      conceptual: "Konceptualne ilustracije su označene i ne dokumentiraju stvarni pokus.",
+    },
+  } as const;
+  const t = textes[dossier.langue as keyof typeof textes] ?? textes.fr;
+  const aCommons = uniques.some((c) => c.source !== "conceptual");
+  const aConcept = uniques.some((c) => c.source === "conceptual");
+
   return (
     <section className="dossier-section dossier-credits">
-      <h2 className="dossier-credits-titre">Crédits photo</h2>
+      <h2 className="dossier-credits-titre">{t.titre}</h2>
       <ul>
         {uniques.map((c, i) => (
           <li key={i}>
@@ -285,7 +329,8 @@ function Credits({ dossier }: { dossier: Dossier }) {
           </li>
         ))}
       </ul>
-      <p>Photographies issues de Wikimedia Commons, réutilisées selon leur licence.</p>
+      {aCommons && <p>{t.commons}</p>}
+      {aConcept && <p>{t.conceptual}</p>}
     </section>
   );
 }
@@ -341,6 +386,7 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
         {dossier.contrainte && (
           <BlocPuces bloc={dossier.contrainte} photographe={photographe} secours={1} />
         )}
+        {dossier.stress && <BlocGraphique bloc={dossier.stress} />}
         {dossier.usages && <BlocGraphique bloc={dossier.usages} />}
         {dossier.economie && <BlocChiffres bloc={dossier.economie} />}
         {dossier.productions && <BlocGraphique bloc={dossier.productions} />}

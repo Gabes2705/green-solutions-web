@@ -23,6 +23,7 @@
 import { readdirSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { stressHydrique, sourcesStress } from "./stress.mjs";
 
 const ici = dirname(fileURLToPath(import.meta.url));
 const RACINE = join(ici, "../..");
@@ -42,25 +43,14 @@ function photosInstallees(slug) {
         titre: c.titre ?? null,
         auteur: c.auteur ?? null,
         licence: c.licence ?? null,
+        source: c.source ?? "commons",
       }))
     : null;
   return { nombre, credits };
 }
 
-/**
- * Les dossiers dont le document téléchargeable a été retiré du site.
- *
- * L'Arabie saoudite est dans ce cas. Ses photos venaient d'internet, et la
- * recherche d'images libres n'a rien donné d'utilisable pour ce pays : un
- * graphique sur le cacao en Indonésie et des régimes de palmier à huile
- * ouest-africains, aucun dattier saoudien établi. Le document ne peut donc pas
- * être refabriqué sans ces photos, et il n'est plus distribué.
- *
- * La liste est explicite plutôt que déduite du disque : les fichiers restent
- * présents en local, ce sont leurs versions suivies par git qui disparaissent
- * du site.
- */
-const RETIRES = new Set(["arabie-saoudite"]);
+/** Dossiers temporairement non distribués, le cas échéant. */
+const RETIRES = new Set();
 
 /** Un graphique de dossier, réduit à ce qu'une page web sait redessiner. */
 function graphique(bloc) {
@@ -165,6 +155,7 @@ for (const slug of slugs) {
     },
     chiffres: chiffres(spec.chiffres),
     contrainte: texteAPuces(spec.contrainte),
+    stress: graphique(spec.stress ?? stressHydrique(spec.locale)),
     usages: graphique(spec.usages),
     economie: chiffres(plus.economie),
     productions: graphique(spec.productions),
@@ -174,7 +165,7 @@ for (const slug of slugs) {
     regions: cartes(spec.regions),
     deploiement: etapes(spec.deploiement),
     risques: colonnes(spec.risques),
-    sources: plus.sources ?? null,
+    sources: [...(plus.sources ?? []), ...sourcesStress(spec.locale)],
     closing: {
       title: spec.closing.title,
       body: spec.closing.body,
@@ -254,7 +245,7 @@ export type Dossier = {
   pdf: string | null;
   /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
   photos: number;
-  credits: { titre: string | null; auteur: string | null; licence: string | null }[] | null;
+  credits: { titre: string | null; auteur: string | null; licence: string | null; source: string }[] | null;
   cover: {
     eyebrow: string;
     title: string;
@@ -264,6 +255,7 @@ export type Dossier = {
   };
   chiffres: Chiffres | null;
   contrainte: Puces | null;
+  stress: Graphique | null;
   usages: Graphique | null;
   economie: Chiffres | null;
   productions: Graphique | null;
@@ -292,7 +284,7 @@ writeFileSync(join(RACINE, "src/lib/dossiers.ts"), sortie, "utf8");
  *
  * dossiers.ts pèse plus de deux cents kilo-octets : le charger dans le
  * navigateur pour savoir quels pays ont une page reviendrait à envoyer les
- * dix-neuf dossiers entiers à chaque visiteur. Cet index-ci ne porte que le
+ * dossiers entiers à chaque visiteur. Cet index-ci ne porte que le
  * slug et la langue. */
 const index = Object.fromEntries(slugs.map((s) => [s, dossiers[s].langue]));
 const sortieIndex = `/**
@@ -302,7 +294,7 @@ const sortieIndex = `/**
  *
  *   node scripts/dossiers/vers_web.mjs
  *
- * Volontairement séparé de dossiers.ts, qui porte le texte des dix-neuf
+ * Volontairement séparé de dossiers.ts, qui porte le texte de tous les
  * dossiers : la page d'accueil a seulement besoin de savoir vers quoi pointer.
  */
 

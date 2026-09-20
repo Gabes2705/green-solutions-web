@@ -163,7 +163,7 @@ export default {
     title: "أين نبدأ التجارب الأولى",
     items: [
       {
-        photo: 1,
+        photo: 0,
         head: "الأحساء",
         metric: "≈ 2,5 مليون نخلة",
         lines: [
@@ -173,7 +173,7 @@ export default {
         ],
       },
       {
-        photo: 4,
+        photo: 1,
         head: "القصيم",
         metric: "أكثر من 8 ملايين نخلة",
         lines: [
@@ -183,7 +183,7 @@ export default {
         ],
       },
       {
-        photo: 2,
+        photo: 4,
         head: "عسير",
         metric: "300 إلى 500 مم أمطار",
         lines: [

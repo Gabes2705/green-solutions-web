@@ -287,6 +287,13 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       </g>
     </>
   ),
+  madagascar: () => (
+    <>
+      <rect width="10" height="20" fill="#FFF" />
+      <rect x="10" width="20" height="10" fill="#FC3D32" />
+      <rect x="10" y="10" width="20" height="10" fill="#007E3A" />
+    </>
+  ),
   portugal: () => (
     <>
       <rect width="30" height="20" fill="#DA291C" />
