@@ -485,21 +485,15 @@ export default function CropExperience() {
           </div>
 
           <div className={styles.visual} style={visualStyle}>
-            <video
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               key={filmRun}
               className={styles.film}
-              poster="/images/comparatif-tomates-poster.jpg"
-              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-            >
-              <source src="/videos/comparatif-tomates.webm" type="video/webm; codecs=vp9" />
-              <source src="/videos/comparatif-tomates-compatible.mp4" type="video/mp4" />
-              Votre navigateur ne peut pas lire ce film.
-            </video>
+              src={`/videos/comparatif-tomates-animated.webp?run=${filmRun}`}
+              alt={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
+              loading="lazy"
+              decoding="async"
+            />
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
             <div className={styles.splitFrame} aria-hidden="true"><i /><i /></div>

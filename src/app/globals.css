@@ -801,7 +801,7 @@ body {
   width: min(38vw, 675px, 70vh);
   overflow: hidden;
   border: 0;
-  background: transparent;
+  background: #10251a url("/images/film-hero-poster.jpg") center / cover no-repeat;
   pointer-events: auto;
 }
 .film-screen video,

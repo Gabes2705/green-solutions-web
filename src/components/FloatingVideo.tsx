@@ -18,19 +18,16 @@ export default function FloatingVideo() {
       <div
         className="film-screen"
       >
-        <video
-          poster="/images/film-hero-poster.jpg"
-          aria-label="Film agronomique Green Solutions — 33 secondes"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        >
-          <source src="/videos/film-hero.webm" type="video/webm; codecs=vp9" />
-          <source src="/videos/film-hero-compatible.mp4" type="video/mp4" />
-          Votre navigateur ne peut pas lire ce film.
-        </video>
+        {/* The browser video decoder froze after roughly one second on the
+            protected preview. An animated WebP uses the image decoder instead,
+            preserves all 792 frames and cannot expose a grey video surface. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/videos/film-hero-animated.webp"
+          alt="Film agronomique Green Solutions — 33 secondes"
+          fetchPriority="high"
+          decoding="async"
+        />
 
         <button
           type="button"
