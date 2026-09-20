@@ -530,7 +530,7 @@ export default function CropExperience() {
               onPlay={() => setPlaying(true)}
               onPause={() => setPlaying(false)}
             >
-              <source src="/videos/comparatif-tomates.mp4" type="video/mp4" />
+              <source src="/videos/comparatif-tomates-integral.mp4" type="video/mp4" />
             </video>
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />

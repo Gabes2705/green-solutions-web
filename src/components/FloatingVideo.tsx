@@ -27,7 +27,7 @@ export default function FloatingVideo() {
           preload="auto"
           aria-label="Film agronomique Green Solutions"
         >
-          <source src="/videos/croissance-tomates.mp4" type="video/mp4" />
+          <source src="/videos/film-hero-runway-33s.mp4" type="video/mp4" />
         </video>
 
         <button
