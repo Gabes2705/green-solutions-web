@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import SpritePlayer from "./SpritePlayer";
 
 export default function FloatingVideo() {
   const [dismissed, setDismissed] = useState(false);
@@ -19,15 +18,19 @@ export default function FloatingVideo() {
       <div
         className="film-screen"
       >
-        <SpritePlayer
-          src="/images/hero-film-sprite.jpg"
-          columns={12}
-          frameCount={132}
-          frameWidth={300}
-          frameHeight={169}
-          duration={33}
-          label="Film agronomique Green Solutions — 33 secondes"
-        />
+        <video
+          poster="/images/film-hero-poster.jpg"
+          aria-label="Film agronomique Green Solutions — 33 secondes"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        >
+          <source src="/videos/film-hero.webm" type="video/webm; codecs=vp9" />
+          <source src="/videos/film-hero-compatible.mp4" type="video/mp4" />
+          Votre navigateur ne peut pas lire ce film.
+        </video>
 
         <button
           type="button"
