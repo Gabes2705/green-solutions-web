@@ -7,15 +7,27 @@ export default function FloatingVideo() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
+    let clockOrigin = performance.now();
     const keepPlaying = () => {
       const video = videoRef.current;
-      if (video && video.paused && document.visibilityState === "visible") {
-        void video.play().catch(() => undefined);
-      }
+      if (!video || document.visibilityState !== "visible" || !video.duration) return;
+      if (video.paused) void video.play().catch(() => undefined);
+      const expected = ((performance.now() - clockOrigin) / 1000) % video.duration;
+      const drift = Math.min(Math.abs(video.currentTime - expected), video.duration - Math.abs(video.currentTime - expected));
+      if (drift > 0.9) video.currentTime = expected;
     };
-    keepPlaying();
-    const timer = window.setInterval(keepPlaying, 750);
-    return () => window.clearInterval(timer);
+    const initialiseClock = () => {
+      const video = videoRef.current;
+      if (video) clockOrigin = performance.now() - video.currentTime * 1000;
+      keepPlaying();
+    };
+    const video = videoRef.current;
+    video?.addEventListener("loadedmetadata", initialiseClock);
+    const timer = window.setInterval(keepPlaying, 500);
+    return () => {
+      video?.removeEventListener("loadedmetadata", initialiseClock);
+      window.clearInterval(timer);
+    };
   }, []);
 
   if (dismissed) return null;

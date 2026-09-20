@@ -417,15 +417,28 @@ export default function CropExperience() {
   }, []);
 
   useEffect(() => {
+    let clockOrigin = performance.now();
     const keepPlaying = () => {
       const video = filmRef.current;
-      if (video && video.paused && document.visibilityState === "visible") {
-        void video.play().catch(() => undefined);
-      }
+      if (!video || document.visibilityState !== "visible" || !video.duration) return;
+      if (video.paused) void video.play().catch(() => undefined);
+      const expected = ((performance.now() - clockOrigin) / 1000) % video.duration;
+      const delta = Math.abs(video.currentTime - expected);
+      const drift = Math.min(delta, video.duration - delta);
+      if (drift > 0.7) video.currentTime = expected;
     };
-    keepPlaying();
-    const timer = window.setInterval(keepPlaying, 750);
-    return () => window.clearInterval(timer);
+    const initialiseClock = () => {
+      const video = filmRef.current;
+      if (video) clockOrigin = performance.now() - video.currentTime * 1000;
+      keepPlaying();
+    };
+    const video = filmRef.current;
+    video?.addEventListener("loadedmetadata", initialiseClock);
+    const timer = window.setInterval(keepPlaying, 400);
+    return () => {
+      video?.removeEventListener("loadedmetadata", initialiseClock);
+      window.clearInterval(timer);
+    };
   }, [filmRun]);
 
   const metrics = useMemo(() => {
