@@ -146,6 +146,7 @@
 }
 
 .visual {
+  --split-position: 47.5%;
   position: relative;
   isolation: isolate;
   aspect-ratio: 16 / 8.7;
@@ -168,7 +169,6 @@
   position: absolute;
   z-index: 1;
   inset-block: 0;
-  width: 50%;
   pointer-events: none;
   mix-blend-mode: multiply;
   transition: opacity .5s ease;
@@ -176,12 +176,14 @@
 
 .controlStress {
   inset-inline-start: 0;
+  width: var(--split-position);
   opacity: var(--control-stress);
   background: linear-gradient(to bottom, transparent 35%, rgba(123, 71, 31, .28));
 }
 
 .treatedReserve {
   inset-inline-end: 0;
+  width: calc(100% - var(--split-position));
   opacity: var(--treated-reserve);
   background: linear-gradient(to bottom, transparent 30%, rgba(0, 104, 125, .2));
 }
@@ -191,7 +193,7 @@
   z-index: 2;
   inset: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: var(--split-position) calc(100% - var(--split-position));
   pointer-events: none;
 }
 
@@ -214,7 +216,7 @@
   top: 56%;
   right: 1.5%;
   bottom: 2%;
-  left: 51.5%;
+  left: calc(var(--split-position) + 1.5%);
   overflow: hidden;
   pointer-events: none;
 }
@@ -355,7 +357,7 @@
   z-index: 6;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: var(--split-position);
   width: 4px;
   transform: translateX(-50%);
   background: rgba(255,255,255,.94);
