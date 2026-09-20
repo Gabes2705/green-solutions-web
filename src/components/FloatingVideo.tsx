@@ -11,17 +11,15 @@ export default function FloatingVideo() {
   // the cover is on screen and is carried away as the page scrolls past it.
   // Sits on the left, vertically centred, matching the cover artwork.
   return (
-    <div className="film-anchor group hidden lg:flex">
+    <div className="film-anchor">
       {/* Square corners on purpose: rounding a video makes the browser mask
           every frame, which takes it off the hardware overlay path.
           58vh caps the square on a short window, so it cannot reach down into
           the row of links along the foot of the cover. */}
       <div
-        className="film-screen relative bg-white border-4 border-white"
-        style={{ width: "min(30vw, 500px, 54vh)" }}
+        className="film-screen"
       >
         <video
-          className="w-full h-auto block"
           autoPlay
           muted
           loop
@@ -36,8 +34,7 @@ export default function FloatingVideo() {
           type="button"
           onClick={() => setDismissed(true)}
           aria-label="Fermer la vidéo"
-          className="absolute top-2 right-2 w-7 h-7 rounded-full bg-black/60 text-white text-base leading-none
-                     opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity"
+          className="film-close"
         >
           ×
         </button>
