@@ -798,14 +798,15 @@ body {
 }
 .film-screen {
   position: relative;
-  width: min(36vw, 640px, 68vh);
+  width: min(38vw, 675px, 70vh);
   overflow: hidden;
   border: 0;
   background: transparent;
   pointer-events: auto;
 }
 .film-screen video,
-.film-screen img {
+.film-screen img,
+.film-screen canvas {
   display: block;
   width: 100%;
   height: auto;

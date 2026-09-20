@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
+import SpritePlayer from "./SpritePlayer";
 
 type Phase = { title: string; description: string };
 
@@ -402,7 +403,6 @@ export default function CropExperience() {
   const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
   const [phase, setPhase] = useState(0);
   const [filmRun, setFilmRun] = useState(0);
-  const filmRef = useRef<HTMLVideoElement | null>(null);
   const [water, setWater] = useState(70);
   const [interval, setIntervalValue] = useState(8);
 
@@ -415,31 +415,6 @@ export default function CropExperience() {
     }, 1000);
     return () => window.clearInterval(timer);
   }, []);
-
-  useEffect(() => {
-    let clockOrigin = performance.now();
-    const keepPlaying = () => {
-      const video = filmRef.current;
-      if (!video || document.visibilityState !== "visible" || !video.duration) return;
-      if (video.paused) void video.play().catch(() => undefined);
-      const expected = ((performance.now() - clockOrigin) / 1000) % video.duration;
-      const delta = Math.abs(video.currentTime - expected);
-      const drift = Math.min(delta, video.duration - delta);
-      if (drift > 0.7) video.currentTime = expected;
-    };
-    const initialiseClock = () => {
-      const video = filmRef.current;
-      if (video) clockOrigin = performance.now() - video.currentTime * 1000;
-      keepPlaying();
-    };
-    const video = filmRef.current;
-    video?.addEventListener("loadedmetadata", initialiseClock);
-    const timer = window.setInterval(keepPlaying, 400);
-    return () => {
-      video?.removeEventListener("loadedmetadata", initialiseClock);
-      window.clearInterval(timer);
-    };
-  }, [filmRun]);
 
   const metrics = useMemo(() => {
     const controlWater = clamp(Math.round(water * 0.62 - interval * 2.2), 12, 78);
@@ -511,19 +486,16 @@ export default function CropExperience() {
           </div>
 
           <div className={styles.visual} style={visualStyle}>
-            <video
-              ref={filmRef}
+            <SpritePlayer
               key={filmRun}
               className={styles.film}
-              src="/videos/comparatif-tomates-compatible.mp4"
-              poster="/images/comparatif-tomates-poster.jpg"
-              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-              preload="auto"
+              src="/images/compare-film-sprite.jpg"
+              columns={7}
+              frameCount={33}
+              frameWidth={360}
+              frameHeight={360}
+              duration={4.041667}
+              label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
             />
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
