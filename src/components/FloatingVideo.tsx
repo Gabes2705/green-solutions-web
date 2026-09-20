@@ -19,13 +19,15 @@ export default function FloatingVideo() {
       <div
         className="film-screen"
       >
-        {/* Le GIF animé garantit la lecture complète, y compris sur les
-            navigateurs qui interrompaient les versions MP4 et AVIF. */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/images/film-hero-runway-33s.gif"
-          alt="Film agronomique Green Solutions"
-          decoding="async"
+        <video
+          src="/videos/film-hero-compatible.mp4"
+          aria-label="Film agronomique Green Solutions"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          onCanPlay={(event) => void event.currentTarget.play()}
         />
 
         <button
