@@ -19,10 +19,16 @@ export default function FloatingVideo() {
       <div
         className="film-screen"
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/images/film-hero-runway-33s.gif"
-          alt="Film agronomique Green Solutions"
+        <video
+          src="/videos/film-hero-compatible.mp4"
+          poster="/images/film-hero-poster.jpg"
+          aria-label="Film agronomique Green Solutions — 33 secondes"
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls
+          preload="auto"
         />
 
         <button

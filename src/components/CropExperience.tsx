@@ -498,12 +498,18 @@ export default function CropExperience() {
           </div>
 
           <div className={styles.visual} style={visualStyle}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <video
               key={filmRun}
               className={styles.film}
-              src="/images/comparatif-tomates-integral.gif"
-              alt={`${copy.control} / ${copy.treated} — ${filmCopy.film}`}
+              src="/videos/comparatif-tomates-compatible.mp4"
+              poster="/images/comparatif-tomates-poster.jpg"
+              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="auto"
             />
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
