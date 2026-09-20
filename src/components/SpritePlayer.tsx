@@ -44,6 +44,7 @@ export default function SpritePlayer({
         const sourceX = (frame % columns) * frameWidth;
         const sourceY = Math.floor(frame / columns) * frameHeight;
         context.drawImage(sprite, sourceX, sourceY, frameWidth, frameHeight, 0, 0, frameWidth, frameHeight);
+        canvas.dataset.frame = String(frame);
         lastFrame = frame;
       }
       animation = requestAnimationFrame(draw);
