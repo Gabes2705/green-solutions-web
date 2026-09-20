@@ -1,34 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 export default function FloatingVideo() {
   const [dismissed, setDismissed] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const keepPlaying = () => {
-      if (!document.hidden && video.paused) {
-        void video.play().catch(() => undefined);
-      }
-    };
-
-    keepPlaying();
-    video.addEventListener("canplay", keepPlaying);
-    video.addEventListener("pause", keepPlaying);
-    document.addEventListener("visibilitychange", keepPlaying);
-    const timer = window.setInterval(keepPlaying, 1000);
-
-    return () => {
-      video.removeEventListener("canplay", keepPlaying);
-      video.removeEventListener("pause", keepPlaying);
-      document.removeEventListener("visibilitychange", keepPlaying);
-      window.clearInterval(timer);
-    };
-  }, []);
 
   if (dismissed) return null;
 
@@ -44,17 +19,14 @@ export default function FloatingVideo() {
       <div
         className="film-screen"
       >
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-label="Film agronomique Green Solutions"
-        >
-          <source src="/videos/film-hero-runway-33s.mp4" type="video/mp4" />
-        </video>
+        {/* L'animation WebP évite les interruptions de lecture automatique
+            observées avec la vidéo MP4 sur certains navigateurs. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/film-hero-runway-33s.webp"
+          alt="Film agronomique Green Solutions"
+          decoding="async"
+        />
 
         <button
           type="button"

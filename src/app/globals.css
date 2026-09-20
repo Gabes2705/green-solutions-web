@@ -804,7 +804,8 @@ body {
   background: transparent;
   pointer-events: auto;
 }
-.film-screen video {
+.film-screen video,
+.film-screen img {
   display: block;
   width: 100%;
   height: auto;

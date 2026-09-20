@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
@@ -384,7 +384,6 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
 };
 
-const FILM_CHAPTER_TIMES = [0, 1, 2, 3] as const;
 const CORE_LANGS = new Set<Lang>(["fr", "en", "es", "pt", "ar", "zh"]);
 
 /*
@@ -410,34 +409,21 @@ export default function CropExperience() {
   const { language, c } = useLanguage();
   const copy = COPY[language];
   const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const wantsPlaybackRef = useRef(true);
   const [phase, setPhase] = useState(0);
-  const [playing, setPlaying] = useState(true);
+  const [filmRun, setFilmRun] = useState(0);
   const [hydrated, setHydrated] = useState(false);
   const [water, setWater] = useState(70);
   const [interval, setIntervalValue] = useState(8);
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const keepPlaying = () => {
-      if (wantsPlaybackRef.current && !document.hidden && video.paused) {
-        void video.play().catch(() => undefined);
-      }
-    };
-
-    keepPlaying();
-    video.addEventListener("canplay", keepPlaying);
-    document.addEventListener("visibilitychange", keepPlaying);
-    const timer = window.setInterval(keepPlaying, 1000);
-
-    return () => {
-      video.removeEventListener("canplay", keepPlaying);
-      document.removeEventListener("visibilitychange", keepPlaying);
-      window.clearInterval(timer);
-    };
+    const timer = window.setInterval(() => {
+      setPhase((current) => {
+        const next = (current + 1) % 4;
+        setHydrated(next > 0);
+        return next;
+      });
+    }, 1000);
+    return () => window.clearInterval(timer);
   }, []);
 
   const metrics = useMemo(() => {
@@ -459,43 +445,15 @@ export default function CropExperience() {
     "--treated-reserve": String(clamp(metrics.water[1] / 145, 0.28, 0.66)),
   } as CSSProperties;
 
-  const togglePlayback = async () => {
-    const video = videoRef.current;
-    if (!video) return;
-    if (video.paused) {
-      wantsPlaybackRef.current = true;
-      await video.play();
-    } else {
-      wantsPlaybackRef.current = false;
-      video.pause();
-    }
-  };
-
-  const seekTo = async (index: number) => {
-    const video = videoRef.current;
-    if (!video) return;
-    video.currentTime = FILM_CHAPTER_TIMES[index];
-    wantsPlaybackRef.current = true;
+  const seekTo = (index: number) => {
     setPhase(index);
     setHydrated(index > 0);
-    await video.play();
   };
 
-  const restartFilm = async () => {
-    const video = videoRef.current;
-    if (!video) return;
-    video.currentTime = 0;
-    wantsPlaybackRef.current = true;
+  const restartFilm = () => {
     setPhase(0);
     setHydrated(false);
-    await video.play();
-  };
-
-  const syncChapter = () => {
-    const currentTime = videoRef.current?.currentTime ?? 0;
-    const chapter = currentTime >= FILM_CHAPTER_TIMES[3] ? 3 : currentTime >= FILM_CHAPTER_TIMES[2] ? 2 : currentTime >= FILM_CHAPTER_TIMES[1] ? 1 : 0;
-    setPhase((current) => current === chapter ? current : chapter);
-    setHydrated(currentTime >= FILM_CHAPTER_TIMES[1]);
+    setFilmRun((current) => current + 1);
   };
 
   const metricRows = [
@@ -536,29 +494,18 @@ export default function CropExperience() {
             </div>
             <div className={styles.transport}>
               <button type="button" onClick={restartFilm} aria-label={filmCopy.restart}>↻</button>
-              <button type="button" onClick={togglePlayback} aria-label={playing ? copy.pause : copy.play} aria-pressed={!playing}>
-                {playing ? "Ⅱ" : "▶"}
-              </button>
             </div>
           </div>
 
           <div className={styles.visual} style={visualStyle}>
-            <video
-              ref={videoRef}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              key={filmRun}
               className={styles.film}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              poster="/images/agronomic-film/tomato-comparison.webp"
-              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film}`}
-              onTimeUpdate={syncChapter}
-              onPlay={() => setPlaying(true)}
-              onPause={() => setPlaying(false)}
-            >
-              <source src="/videos/comparatif-tomates-integral.mp4" type="video/mp4" />
-            </video>
+              src="/images/comparatif-tomates-integral.webp"
+              alt={`${copy.control} / ${copy.treated} — ${filmCopy.film}`}
+              decoding="async"
+            />
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
             <div className={styles.splitFrame} aria-hidden="true"><i /><i /></div>
