@@ -16,12 +16,13 @@ export default function Confidentialite() {
       </a>
 
       <h1>Politique de confidentialité</h1>
-      <p className="legal-updated">Dernière mise à jour : 16 septembre 2026</p>
+      <p className="legal-updated">Dernière mise à jour : 20 septembre 2026</p>
 
       <p className="legal-lede">
         Ce site ne dépose aucun cookie et n&apos;utilise aucun outil de mesure
         d&apos;audience. Les seules données personnelles que nous recevons sont
-        celles que vous nous écrivez vous-même dans le formulaire de contact.
+        celles que vous nous écrivez vous-même dans nos formulaires de contact
+        et de demande de partenariat.
         Une vidéo YouTube est intégrée à la page consacrée au Paulownia :
         c&apos;est la seule exception, détaillée plus bas.
       </p>
@@ -39,12 +40,14 @@ export default function Confidentialite() {
       </p>
 
       <h2>Ce que le formulaire collecte</h2>
-      <p>Quatre champs, et rien d&apos;autre :</p>
+      <p>Selon le formulaire utilisé, nous pouvons recevoir :</p>
       <ul>
         <li>votre nom</li>
-        <li>votre organisation, si vous la renseignez</li>
+        <li>le nom de votre société et son site internet</li>
+        <li>votre adresse postale complète, ville, pays et code postal</li>
+        <li>votre numéro de téléphone</li>
         <li>votre adresse électronique</li>
-        <li>le message que vous écrivez</li>
+        <li>le message ou commentaire que vous écrivez</li>
       </ul>
       <p>
         Aucune de ces informations n&apos;est enregistrée dans une base de

@@ -7,8 +7,13 @@ const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "contact@evergreen-ecosorb.com"
 const FROM_EMAIL = "contact@evergreen-ecosorb.com";
 
 type Payload = {
+  type?: "contact" | "partner";
   nom?: string;
   structure?: string;
+  site?: string;
+  adresse?: string;
+  codePostal?: string;
+  telephone?: string;
   pays?: string;
   ville?: string;
   culture?: string;
@@ -38,6 +43,10 @@ export async function POST(request: Request) {
 
   const nom = (body.nom || "").trim();
   const structure = (body.structure || "").trim();
+  const site = (body.site || "").trim();
+  const adresse = (body.adresse || "").trim();
+  const codePostal = (body.codePostal || "").trim();
+  const telephone = (body.telephone || "").trim();
   const pays = (body.pays || "").trim();
   const ville = (body.ville || "").trim();
   const culture = (body.culture || "").trim();
@@ -45,9 +54,11 @@ export async function POST(request: Request) {
   const email = (body.email || "").trim();
   const message = (body.message || "").trim();
 
-  if (!nom || !email || !message) {
+  const isPartner = body.type === "partner";
+
+  if (!nom || !email || !message || (isPartner && (!structure || !adresse || !codePostal || !ville || !pays || !telephone))) {
     return NextResponse.json(
-      { error: "Nom, e-mail et message sont requis." },
+      { error: isPartner ? "Tous les champs obligatoires doivent être renseignés." : "Nom, e-mail et message sont requis." },
       { status: 400 }
     );
   }
@@ -85,12 +96,16 @@ export async function POST(request: Request) {
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c] as string)
     );
 
-  const subject = `Nouveau contact — ${nom}${structure ? ` (${structure})` : ""}`;
+  const subject = `${isPartner ? "Nouvelle demande de partenariat" : "Nouveau contact"} — ${nom}${structure ? ` (${structure})` : ""}`;
   const bodyHtml = `
         <p><strong>Nom :</strong> ${escapeHtml(nom)}</p>
         <p><strong>Structure :</strong> ${escapeHtml(structure) || "—"}</p>
+        <p><strong>Site internet :</strong> ${escapeHtml(site) || "—"}</p>
+        <p><strong>Adresse :</strong> ${escapeHtml(adresse) || "—"}</p>
+        <p><strong>Code postal :</strong> ${escapeHtml(codePostal) || "—"}</p>
         <p><strong>Pays :</strong> ${escapeHtml(pays) || "—"}</p>
         <p><strong>Ville :</strong> ${escapeHtml(ville) || "—"}</p>
+        <p><strong>Téléphone :</strong> ${escapeHtml(telephone) || "—"}</p>
         <p><strong>Type de culture :</strong> ${escapeHtml(culture) || "—"}</p>
         <p><strong>Surface cultivée :</strong> ${escapeHtml(surface) || "—"}</p>
         <p><strong>E-mail :</strong> ${escapeHtml(email)}</p>
