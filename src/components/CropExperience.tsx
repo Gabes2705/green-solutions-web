@@ -468,7 +468,7 @@ export default function CropExperience() {
     const currentTime = videoRef.current?.currentTime ?? 0;
     const chapter = currentTime >= FILM_CHAPTER_TIMES[3] ? 3 : currentTime >= FILM_CHAPTER_TIMES[2] ? 2 : currentTime >= FILM_CHAPTER_TIMES[1] ? 1 : 0;
     setPhase((current) => current === chapter ? current : chapter);
-    setHydrated(currentTime >= 2.4);
+    setHydrated(currentTime >= FILM_CHAPTER_TIMES[1]);
   };
 
   const metricRows = [
