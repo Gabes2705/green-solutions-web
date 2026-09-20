@@ -798,7 +798,7 @@ body {
 }
 .film-screen {
   position: relative;
-  width: min(31vw, 560px, 52vh);
+  width: min(36vw, 640px, 68vh);
   overflow: hidden;
   border: 0;
   background: transparent;

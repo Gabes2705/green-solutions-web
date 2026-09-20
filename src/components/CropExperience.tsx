@@ -502,7 +502,7 @@ export default function CropExperience() {
             <img
               key={filmRun}
               className={styles.film}
-              src="/images/comparatif-tomates-integral.webp"
+              src="/images/comparatif-tomates-integral.avif"
               alt={`${copy.control} / ${copy.treated} — ${filmCopy.film}`}
               decoding="async"
             />

@@ -19,11 +19,11 @@ export default function FloatingVideo() {
       <div
         className="film-screen"
       >
-        {/* L'animation WebP évite les interruptions de lecture automatique
+        {/* L'animation AVIF évite les interruptions de lecture automatique
             observées avec la vidéo MP4 sur certains navigateurs. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/film-hero-runway-33s.webp"
+          src="/images/film-hero-runway-33s.avif"
           alt="Film agronomique Green Solutions"
           decoding="async"
         />
