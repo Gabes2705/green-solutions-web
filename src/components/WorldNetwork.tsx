@@ -83,7 +83,13 @@ function arrowTransform(start: Point, end: Point) {
   return `translate(${end.x} ${end.y}) rotate(${angle})`;
 }
 
-export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
+export default function WorldNetwork({
+  ariaLabel,
+  countryCountLabel,
+}: {
+  ariaLabel?: string;
+  countryCountLabel?: string;
+}) {
   const svgRef = useRef<SVGSVGElement | null>(null);
   const [dotsSvg, setDotsSvg] = useState<string | null>(null);
   const hubPoint = projectPoint(HUB.lat, HUB.lng);
@@ -158,6 +164,7 @@ export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
 
   return (
     <div className="world-network">
+      {countryCountLabel && <div className="world-network-count">{countryCountLabel}</div>}
       {dotsSvg && (
         <Image
           src={`data:image/svg+xml;utf8,${encodeURIComponent(dotsSvg)}`}
@@ -189,7 +196,7 @@ export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
           return (
             <path
               key={n.label}
-              className="route"
+              className={n.label === "Madagascar" ? "route route-madagascar" : "route"}
               d={curvedPath(hubPoint, p)}
               fill="none"
               stroke="url(#route-gradient)"
@@ -206,7 +213,7 @@ export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
             // path's transform, and would otherwise overwrite it
             <g key={`arrow-${n.label}`} transform={arrowTransform(hubPoint, p)}>
               <path
-                className="route-arrow"
+                className={n.label === "Madagascar" ? "route-arrow route-arrow-madagascar" : "route-arrow"}
                 d="M -5.5 -3.2 L 0 0 L -5.5 3.2 Z"
                 fill="#1F8A45"
               />
@@ -223,13 +230,28 @@ export default function WorldNetwork({ ariaLabel }: { ariaLabel?: string }) {
         {NODES.map((n, i) => {
           const p = projectPoint(n.lat, n.lng);
           const delay = `${(i % 6) * 0.28}s`;
+          const isMadagascar = n.label === "Madagascar";
           return (
             <g key={n.label}>
-              <circle cx={p.x} cy={p.y} r="2.2" fill="#1D8A96" />
-              <circle cx={p.x} cy={p.y} r="2.2" fill="#1D8A96" opacity="0.5">
-                <animate attributeName="r" from="2.2" to="8" dur="1.8s" begin={delay} repeatCount="indefinite" />
+              <circle
+                cx={p.x}
+                cy={p.y}
+                r={isMadagascar ? 3.6 : 2.2}
+                fill={isMadagascar ? "#F3B63F" : "#1D8A96"}
+              />
+              <circle cx={p.x} cy={p.y} r={isMadagascar ? 3.6 : 2.2} fill={isMadagascar ? "#F3B63F" : "#1D8A96"} opacity="0.5">
+                <animate attributeName="r" from={isMadagascar ? "3.6" : "2.2"} to={isMadagascar ? "11" : "8"} dur="1.8s" begin={delay} repeatCount="indefinite" />
                 <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" begin={delay} repeatCount="indefinite" />
               </circle>
+              {isMadagascar && (
+                <text
+                  x={p.x + 8}
+                  y={p.y - 8}
+                  className="madagascar-label"
+                >
+                  Madagascar
+                </text>
+              )}
             </g>
           );
         })}
