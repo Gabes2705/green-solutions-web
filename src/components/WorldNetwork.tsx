@@ -49,7 +49,7 @@ const NODES = [
   { lat: 30.6, lng: 36.2, label: "Jordanie" },
   { lat: 29.3, lng: 47.5, label: "Koweït" },
   { lat: 45.1, lng: 15.2, label: "Croatie" },
-  { lat: -18.8, lng: 46.9, label: "Madagascar" },
+  { lat: -20.0, lng: 49.5, label: "Madagascar" },
 ];
 
 function projectPoint(lat: number, lng: number) {
@@ -196,7 +196,7 @@ export default function WorldNetwork({
           return (
             <path
               key={n.label}
-              className={n.label === "Madagascar" ? "route route-madagascar" : "route"}
+              className="route"
               d={curvedPath(hubPoint, p)}
               fill="none"
               stroke="url(#route-gradient)"
@@ -213,7 +213,7 @@ export default function WorldNetwork({
             // path's transform, and would otherwise overwrite it
             <g key={`arrow-${n.label}`} transform={arrowTransform(hubPoint, p)}>
               <path
-                className={n.label === "Madagascar" ? "route-arrow route-arrow-madagascar" : "route-arrow"}
+                className="route-arrow"
                 d="M -5.5 -3.2 L 0 0 L -5.5 3.2 Z"
                 fill="#1F8A45"
               />
@@ -233,14 +233,9 @@ export default function WorldNetwork({
           const isMadagascar = n.label === "Madagascar";
           return (
             <g key={n.label}>
-              <circle
-                cx={p.x}
-                cy={p.y}
-                r={isMadagascar ? 3.6 : 2.2}
-                fill={isMadagascar ? "#F3B63F" : "#1D8A96"}
-              />
-              <circle cx={p.x} cy={p.y} r={isMadagascar ? 3.6 : 2.2} fill={isMadagascar ? "#F3B63F" : "#1D8A96"} opacity="0.5">
-                <animate attributeName="r" from={isMadagascar ? "3.6" : "2.2"} to={isMadagascar ? "11" : "8"} dur="1.8s" begin={delay} repeatCount="indefinite" />
+              <circle cx={p.x} cy={p.y} r="2.2" fill="#1D8A96" />
+              <circle cx={p.x} cy={p.y} r="2.2" fill="#1D8A96" opacity="0.5">
+                <animate attributeName="r" from="2.2" to="8" dur="1.8s" begin={delay} repeatCount="indefinite" />
                 <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" begin={delay} repeatCount="indefinite" />
               </circle>
               {isMadagascar && (
