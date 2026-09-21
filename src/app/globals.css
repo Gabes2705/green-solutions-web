@@ -782,7 +782,7 @@ body {
    ancestor of a video is, like rounding it, one of the things that drops it
    from the compositor's overlay path onto the slow one. */
 .film-anchor {
-  display: none;
+  display: flex;
   position: absolute;
   left: 2vw;
   top: 0;
