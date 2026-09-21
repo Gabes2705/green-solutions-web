@@ -53,7 +53,7 @@ const webSiteJsonLd = {
   name: "Green Solutions",
   url: SITE_URL,
   publisher: { "@type": "Organization", name: "Green Solutions" },
-  inLanguage: ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"],
+  inLanguage: ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr", "ca"],
 };
 
 const translations = {
