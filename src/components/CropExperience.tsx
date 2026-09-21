@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
@@ -441,17 +440,7 @@ export default function CropExperience() {
           </div>
         </header>
 
-        <div className={styles.mediaPair}>
-          <figure className={styles.heroStill}>
-            <Image
-              src="/images/film-hero-poster.jpg"
-              alt="Film agronomique Green Solutions"
-              fill
-              sizes="(max-width: 900px) 100vw, 68vw"
-              priority={false}
-            />
-          </figure>
-
+        <div className={styles.tomatoOnly}>
           <figure className={styles.tomatoFilm}>
             <video
               src="/videos/comparatif-tomates-restored.mp4"
