@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
@@ -397,6 +397,7 @@ function clamp(value: number, minimum: number, maximum: number) {
 }
 
 export default function CropExperience() {
+  const filmRef = useRef<HTMLVideoElement>(null);
   const { language, c } = useLanguage();
   const copy = COPY[language];
   const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
@@ -486,6 +487,7 @@ export default function CropExperience() {
 
           <div className={styles.visual} style={visualStyle}>
             <video
+              ref={filmRef}
               key={filmRun}
               className={styles.film}
               src="/videos/croissance-tomates.mp4"
@@ -495,8 +497,18 @@ export default function CropExperience() {
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="auto"
               disablePictureInPicture
+              onLoadedData={(event) => {
+                event.currentTarget.muted = true;
+                void event.currentTarget.play().catch(() => undefined);
+              }}
+              onCanPlay={(event) => {
+                event.currentTarget.muted = true;
+                if (event.currentTarget.paused) {
+                  void event.currentTarget.play().catch(() => undefined);
+                }
+              }}
             />
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
