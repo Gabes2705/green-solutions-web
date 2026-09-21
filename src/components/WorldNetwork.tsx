@@ -10,6 +10,7 @@ if (typeof window !== "undefined") {
 }
 
 const HUB = { lat: 46.88, lng: 6.89, label: "Suisse" };
+const MADAGASCAR_POINT = { x: 551, y: 286 };
 
 const NODES = [
   { lat: -30.5, lng: 22.9, label: "Afrique du Sud" },
@@ -106,6 +107,9 @@ export default function WorldNetwork({
 
       const hubPin = map.getPin({ lat: HUB.lat, lng: HUB.lng });
       const nodes = NODES.map((node) => {
+        if (node.label === "Madagascar") {
+          return { ...MADAGASCAR_POINT, label: node.label };
+        }
         const pin = map.getPin({ lat: node.lat, lng: node.lng });
         return pin ? { ...toOverlay(pin), label: node.label } : null;
       }).filter((node): node is ProjectedNode => Boolean(node));
