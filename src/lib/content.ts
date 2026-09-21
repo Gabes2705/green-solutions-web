@@ -404,7 +404,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Ce qui tourne en ce moment",
-      title: "Quatorze essais pilotes en cours",
+      title: "Quinze essais pilotes en cours",
       lede: "Des groupes agro-industriels, des coopératives et deux universités américaines conduisent actuellement des essais sur nos technologies, sur leurs propres parcelles et sur leurs propres cultures. Voici lesquels, en septembre 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Canne à sucre", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -421,6 +421,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Gazon Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroc", crop: "Clémentines bio (variété Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Égypte", crop: "Maïs / Trèfle / Olivier", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Maraîchage / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -1022,7 +1023,7 @@ export const content = {
     },
     essais: {
       eyebrow: "What's running right now",
-      title: "Fourteen pilot trials under way",
+      title: "Fifteen pilot trials under way",
       lede: "Agro-industrial groups, cooperatives and two American universities are currently running trials on our technologies, on their own plots and their own crops. Here they are, in September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Sugarcane", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1039,6 +1040,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Phenix turf", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Morocco", crop: "Organic clementines (Afourer variety), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egypt", crop: "Corn / Clover / Olive tree", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Market gardening / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -1640,7 +1642,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Lo que está en marcha ahora mismo",
-      title: "Catorce ensayos piloto en curso",
+      title: "Quince ensayos piloto en curso",
       lede: "Grupos agroindustriales, cooperativas y dos universidades estadounidenses realizan actualmente ensayos con nuestras tecnologías, en sus propias parcelas y sus propios cultivos. Estos son, en septiembre de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Caña de azúcar", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1657,6 +1659,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Césped Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marruecos", crop: "Clementinas ecológicas (variedad Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egipto", crop: "Maíz / Trébol / Olivo", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Horticultura / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -2258,7 +2261,7 @@ export const content = {
     },
     essais: {
       eyebrow: "O que está em curso neste momento",
-      title: "Catorze ensaios piloto em curso",
+      title: "Quinze ensaios piloto em curso",
       lede: "Grupos agroindustriais, cooperativas e duas universidades americanas conduzem atualmente ensaios com as nossas tecnologias, nas suas próprias parcelas e nas suas próprias culturas. Eis quais, em setembro de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Cana-de-açúcar", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -2275,6 +2278,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Relva Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marrocos", crop: "Clementinas biológicas (variedade Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egito", crop: "Milho / Trevo / Oliveira", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Horticultura / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -2876,7 +2880,7 @@ export const content = {
     },
     essais: {
       eyebrow: "ما يجري حاليًا",
-      title: "أربع عشرة تجربة رائدة قيد التنفيذ",
+      title: "خمس عشرة تجربة رائدة قيد التنفيذ",
       lede: "تُجري مجموعات زراعية صناعية وتعاونيات وجامعتان أمريكيتان حاليًا تجارب على تقنياتنا، في أراضيها ومحاصيلها الخاصة. إليكم القائمة، في سبتمبر 2026.",
       pilots: [
         { org: "Trois Rivières", place: "مارتينيك", crop: "قصب السكر", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -2893,6 +2897,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "البرتغال", crop: "عشب Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "شيشاوة، المغرب", crop: "يوسفي عضوي (صنف أفوري)، الباولونيا", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "مصر", crop: "الذرة / البرسيم / الزيتون", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "مدغشقر", crop: "الزراعة البستانية / الباولونيا", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -3494,7 +3499,7 @@ export const content = {
     },
     essais: {
       eyebrow: "当前正在进行的项目",
-      title: "十四项正在进行的试点试验",
+      title: "十五项正在进行的试点试验",
       lede: "多家农工业集团、合作社以及两所美国大学目前正在自己的地块和作物上，对我们的技术开展试验。以下是截至2026年9月的清单。",
       pilots: [
         { org: "Trois Rivières", place: "马提尼克", crop: "甘蔗", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -3511,6 +3516,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "葡萄牙", crop: "Phenix草坪", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "摩洛哥希沙瓦", crop: "有机小柑橘（Afourer品种）、泡桐", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "埃及", crop: "玉米 / 三叶草 / 橄榄树", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "马达加斯加", crop: "蔬菜种植 / 泡桐", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -4112,7 +4118,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Yang sedang berjalan saat ini",
-      title: "Empat Belas Uji Coba Percontohan yang Sedang Berlangsung",
+      title: "Lima Belas Uji Coba Percontohan yang Sedang Berlangsung",
       lede: "Kelompok agroindustri, koperasi, dan dua universitas Amerika saat ini sedang melakukan uji coba teknologi kami, di lahan dan tanaman mereka sendiri. Berikut daftarnya, per September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Tebu", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -4129,6 +4135,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rumput Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Klementin organik (varietas Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Mesir", crop: "Jagung / Semanggi / Zaitun", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Budi daya sayuran / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -4730,7 +4737,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Was gerade läuft",
-      title: "Vierzehn laufende Pilotversuche",
+      title: "Fünfzehn laufende Pilotversuche",
       lede: "Agrarindustrielle Gruppen, Genossenschaften und zwei amerikanische Universitäten führen derzeit Versuche mit unseren Technologien auf ihren eigenen Parzellen und mit ihren eigenen Kulturen durch. Hier die Liste, Stand September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Zuckerrohr", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -4747,6 +4754,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rasen Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marokko", crop: "Bio-Clementinen (Sorte Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Ägypten", crop: "Mais / Klee / Olivenbaum", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Gemüsebau / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -5348,7 +5356,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Cosa sta succedendo in questo momento",
-      title: "Quattordici sperimentazioni pilota in corso",
+      title: "Quindici sperimentazioni pilota in corso",
       lede: "Gruppi agroindustriali, cooperative e due università americane conducono attualmente sperimentazioni sulle nostre tecnologie, sui propri terreni e sulle proprie colture. Eccole, a settembre 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Canna da zucchero", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -5365,6 +5373,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portogallo", crop: "Tappeto erboso Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marocco", crop: "Clementine bio (varietà Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egitto", crop: "Mais / Trifoglio / Olivo", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Orticoltura / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -5966,7 +5975,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Τι συμβαίνει αυτή τη στιγμή",
-      title: "Δεκατέσσερις πιλοτικές δοκιμές σε εξέλιξη",
+      title: "Δεκαπέντε πιλοτικές δοκιμές σε εξέλιξη",
       lede: "Αγροβιομηχανικοί όμιλοι, συνεταιρισμοί και δύο αμερικανικά πανεπιστήμια διεξάγουν επί του παρόντος δοκιμές στις τεχνολογίες μας, στα δικά τους αγροτεμάχια και στις δικές τους καλλιέργειες. Ιδού ποιες, τον Σεπτέμβριο του 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Μαρτινίκα", crop: "Ζαχαροκάλαμο", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -5983,6 +5992,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Πορτογαλία", crop: "Χλοοτάπητας Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Μαρόκο", crop: "Βιολογικά κλημεντίνια (ποικιλία Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Αίγυπτος", crop: "Καλαμπόκι / Τριφύλλι / Ελιά", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Μαδαγασκάρη", crop: "Κηπευτικές καλλιέργειες / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -6584,7 +6594,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Şu anda neler oluyor",
-      title: "On dört pilot deneme sürüyor",
+      title: "On beş pilot deneme sürüyor",
       lede: "Tarım-endüstri grupları, kooperatifler ve iki Amerikan üniversitesi, kendi arazilerinde ve kendi ürünlerinde teknolojilerimiz üzerinde denemeler yürütüyor. Eylül 2026 itibarıyla işte bunlar.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Şeker kamışı", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -6601,6 +6611,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portekiz", crop: "Phenix çim", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Fas", crop: "Organik klemantin (Afourer çeşidi), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Mısır", crop: "Mısır / Yonca / Zeytin ağacı", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Sebze yetiştiriciliği / Pavlonya", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -7202,7 +7213,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Co się teraz dzieje",
-      title: "Czternaście prób pilotażowych w toku",
+      title: "Piętnaście prób pilotażowych w toku",
       lede: "Grupy agroprzemysłowe, spółdzielnie i dwa amerykańskie uniwersytety prowadzą obecnie próby naszych technologii na własnych działkach i własnych uprawach. Oto one, według stanu na wrzesień 2026 roku.",
       pilots: [
         { org: "Trois Rivières", place: "Martynika", crop: "Trzcina cukrowa", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -7219,6 +7230,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugalia", crop: "Trawnik Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Ekologiczne klementynki (odmiana Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egipt", crop: "Kukurydza / Koniczyna / Oliwka", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Uprawa warzyw / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -7820,7 +7832,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Što je trenutačno u tijeku",
-      title: "Četrnaest pilot-pokusa u tijeku",
+      title: "Petnaest pilot-pokusa u tijeku",
       lede: "Agroindustrijske grupacije, zadruge i dva američka sveučilišta trenutačno provode pokuse s našim tehnologijama, na vlastitim parcelama i vlastitim kulturama. Evo kojih, u rujnu 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Šećerna trska", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -7837,6 +7849,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Travnjak Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Ekološke klementine (sorta Afourer), paulovnija", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egipat", crop: "Kukuruz / djetelina / maslina", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Povrtlarstvo / paulovnija", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
