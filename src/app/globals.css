@@ -783,11 +783,14 @@ body {
    from the compositor's overlay path onto the slow one. */
 .film-anchor {
   display: flex;
-  position: absolute;
-  left: 2vw;
-  top: 0;
-  bottom: 0;
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 100%;
+  margin: 1.25rem auto 0;
   align-items: center;
+  justify-content: center;
   z-index: 20;
   /* The anchor spans the full height of the cover in order to centre the clip
      without a transform, which would cost the clip its hardware overlay. That
@@ -798,7 +801,8 @@ body {
 }
 .film-screen {
   position: relative;
-  width: min(38vw, 675px, 70vh);
+  width: min(92vw, 720px);
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border: 0;
   background: #10251a url("/images/film-hero-poster.jpg") center / cover no-repeat;
@@ -809,7 +813,8 @@ body {
 .film-screen canvas {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 .film-close {
   position: absolute;
@@ -834,7 +839,16 @@ body {
 }
 @media (min-width: 1024px) {
   .film-anchor {
-    display: flex;
+    position: absolute;
+    left: 2vw;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .film-screen {
+    width: min(42vw, 760px, 72vh);
   }
 }
 /* Only nudge it clear of the left edge once there is room; below this the
