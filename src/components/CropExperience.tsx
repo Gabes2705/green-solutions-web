@@ -336,7 +336,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
 const FILM_COPY: Record<CoreLang, FilmCopy> = {
   fr: {
     film: "Film de synergie agronomique",
-    duration: "26 s · progression complète",
+    duration: "4 s · comparaison accélérée",
     restart: "Recommencer le film",
     synergyEyebrow: "Le système complet",
     synergyTitle: "Cinq solutions, une seule synergie agronomique",
@@ -344,7 +344,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   en: {
     film: "Agronomic synergy film",
-    duration: "26 sec · full progression",
+    duration: "4 sec · accelerated comparison",
     restart: "Restart film",
     synergyEyebrow: "The complete system",
     synergyTitle: "Five solutions, one agronomic synergy",
@@ -352,7 +352,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   es: {
     film: "Película de sinergia agronómica",
-    duration: "26 s · progresión completa",
+    duration: "4 s · comparación acelerada",
     restart: "Reiniciar la película",
     synergyEyebrow: "El sistema completo",
     synergyTitle: "Cinco soluciones, una sinergia agronómica",
@@ -360,7 +360,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   pt: {
     film: "Filme de sinergia agronómica",
-    duration: "26 s · progressão completa",
+    duration: "4 s · comparação acelerada",
     restart: "Reiniciar o filme",
     synergyEyebrow: "O sistema completo",
     synergyTitle: "Cinco soluções, uma sinergia agronómica",
@@ -368,7 +368,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   ar: {
     film: "فيلم التكامل الزراعي",
-    duration: "26 ثانية · تطور كامل",
+    duration: "4 ثوانٍ · مقارنة متسارعة",
     restart: "إعادة تشغيل الفيلم",
     synergyEyebrow: "النظام المتكامل",
     synergyTitle: "خمسة حلول في منظومة زراعية متكاملة",
@@ -376,7 +376,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   zh: {
     film: "农艺协同短片",
-    duration: "26 秒 · 完整生长过程",
+    duration: "4 秒 · 加速对比",
     restart: "重新播放",
     synergyEyebrow: "完整系统",
     synergyTitle: "五项方案，一套农艺协同系统",
@@ -386,12 +386,6 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
 
 const CORE_LANGS = new Set<Lang>(["fr", "en", "es", "pt", "ar", "zh"]);
 
-const FILM_GRAINS = [
-  [15, 30], [27, 48], [38, 25], [50, 57], [63, 36], [75, 63],
-  [86, 29], [20, 72], [42, 78], [58, 83], [79, 79], [91, 58],
-];
-
-const FILM_RAIN = [8, 18, 29, 41, 53, 66, 78, 90];
 
 /*
  * Positionnement volontairement irrégulier des grains dans la moitié traitée.
@@ -409,7 +403,6 @@ export default function CropExperience() {
   const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
   const [phase, setPhase] = useState(0);
   const [filmRun, setFilmRun] = useState(0);
-  const [filmStartPhase, setFilmStartPhase] = useState(0);
   const [water, setWater] = useState(70);
   const [interval, setIntervalValue] = useState(8);
 
@@ -442,13 +435,11 @@ export default function CropExperience() {
 
   const seekTo = (index: number) => {
     setPhase(index);
-    setFilmStartPhase(index);
     setFilmRun((current) => current + 1);
   };
 
   const restartFilm = () => {
     setPhase(0);
-    setFilmStartPhase(0);
     setFilmRun((current) => current + 1);
   };
 
@@ -494,40 +485,19 @@ export default function CropExperience() {
           </div>
 
           <div className={styles.visual} style={visualStyle}>
-            <div
+            <video
               key={filmRun}
-              className={styles.filmSequence}
-              style={{ "--film-offset": `${filmStartPhase * -6.5}s` } as CSSProperties}
-              role="img"
-              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — ${filmCopy.duration}`}
-            >
-              {/* Les trois plaques partagent exactement le même cadre et la même ligne
-                  médiane. Seuls la croissance et les effets se fondent entre elles. */}
-              <img className={styles.stageYoung} src="/images/agronomic-film/maize-stage-young.webp" alt="" />
-              <img className={styles.stageGrowth} src="/images/agronomic-film/maize-stage-growth.webp" alt="" />
-              <img className={styles.stageHarvest} src="/images/agronomic-film/maize-stage-harvest.webp" alt="" />
-
-              <span className={`${styles.filmBadge} ${styles.badgeEvergreen}`}>EVERGREEN®</span>
-              <span className={`${styles.filmBadge} ${styles.badgeEcosorb}`}>ECOSORB®</span>
-              <span className={`${styles.filmBadge} ${styles.badgeWater}`}>WATER VITAL®</span>
-              <span className={`${styles.filmBadge} ${styles.badgeEcofert}`}>ECOFERT®</span>
-              <span className={`${styles.filmBadge} ${styles.badgeNapema}`}>NAPEMA®</span>
-
-              <div className={styles.filmGranules} aria-hidden="true">
-                {FILM_GRAINS.map(([left, top], index) => (
-                  <i key={`${left}-${top}`} style={{ left: `${left}%`, top: `${top}%`, "--grain-index": index } as CSSProperties} />
-                ))}
-              </div>
-              <div className={styles.filmRain} aria-hidden="true">
-                {FILM_RAIN.map((left, index) => <i key={left} style={{ left: `${left}%`, "--rain-index": index } as CSSProperties} />)}
-              </div>
-              <div className={styles.filmNutrients} aria-hidden="true"><i /><i /><i /></div>
-              <div className={styles.filmNapema} aria-hidden="true"><i /><i /><i /></div>
-              <div className={styles.filmFinale}>
-                <strong>SYNERGIE GREEN SOLUTIONS</strong>
-                <span>EVERGREEN® · ECOSORB® · WATER VITAL® · ECOFERT® · NAPEMA®</span>
-              </div>
-            </div>
+              className={styles.film}
+              src="/videos/comparatif-tomates-compatible.mp4"
+              poster="/images/comparatif-tomates-poster.jpg"
+              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              disablePictureInPicture
+            />
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
             <div className={styles.splitFrame} aria-hidden="true"><i /><i /></div>
