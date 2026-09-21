@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
@@ -419,53 +419,6 @@ export default function CropExperience() {
   const { language, c } = useLanguage();
   const copy = COPY[language];
   const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
-  const [phase, setPhase] = useState(0);
-  const [filmRun, setFilmRun] = useState(0);
-  const [water, setWater] = useState(70);
-  const [interval, setIntervalValue] = useState(8);
-
-  useEffect(() => {
-    const timer = window.setInterval(() => {
-      setPhase((current) => (current + 1) % 4);
-    }, 6500);
-    return () => window.clearInterval(timer);
-  }, [filmRun]);
-
-
-  const metrics = useMemo(() => {
-    const controlWater = clamp(Math.round(water * 0.62 - interval * 2.2), 12, 78);
-    const treatedWater = clamp(Math.round(controlWater + 28 + water * 0.08), controlWater + 14, 96);
-    const controlRoots = clamp(Math.round(28 + water * 0.23 - interval * 0.9), 24, 68);
-    const treatedRoots = clamp(Math.round(controlRoots + 30 - interval * 0.2), controlRoots + 18, 97);
-    const controlYield = clamp(Math.round(25 + water * 0.37 - interval * 1.6), 22, 78);
-    const treatedYield = clamp(Math.round(controlYield + 31 + (interval - 3) * 0.7), controlYield + 18, 98);
-    return {
-      water: [controlWater, treatedWater],
-      roots: [controlRoots, treatedRoots],
-      yield: [controlYield, treatedYield],
-    };
-  }, [interval, water]);
-
-  const visualStyle = {
-    "--control-stress": String(clamp((100 - metrics.water[0]) / 100, 0.18, 0.72)),
-    "--treated-reserve": String(clamp(metrics.water[1] / 145, 0.28, 0.66)),
-  } as CSSProperties;
-
-  const seekTo = (index: number) => {
-    setPhase(index);
-    setFilmRun((current) => current + 1);
-  };
-
-  const restartFilm = () => {
-    setPhase(0);
-    setFilmRun((current) => current + 1);
-  };
-
-  const metricRows = [
-    { label: copy.metricWater, values: metrics.water },
-    { label: copy.metricRoots, values: metrics.roots },
-    { label: copy.metricYield, values: metrics.yield },
-  ];
   const synergyItems = [
     { ...c.products.items[0], id: "retention-eau", title: "EVERGREEN®" },
     { ...c.products.items[0], id: "retention-eau", title: "ECOSORB®" },
@@ -488,27 +441,22 @@ export default function CropExperience() {
           </div>
         </header>
 
-        <div className={styles.shell}>
-          <div className={styles.toolbar}>
-            <div className={styles.phaseCopy} aria-live="polite">
-              <span className={styles.phaseNumber}>{String(phase + 1).padStart(2, "0")}</span>
-              <div>
-                <strong>{filmCopy.film} · {copy.phases[phase].title}</strong>
-                <span>{copy.phases[phase].description} · {filmCopy.duration}</span>
-              </div>
-            </div>
-            <div className={styles.transport}>
-              <button type="button" onClick={restartFilm} aria-label={filmCopy.restart}>↻</button>
-            </div>
-          </div>
+        <div className={styles.mediaPair}>
+          <figure className={styles.heroStill}>
+            <Image
+              src="/images/film-hero-poster.jpg"
+              alt="Film agronomique Green Solutions"
+              fill
+              sizes="(max-width: 900px) 100vw, 68vw"
+              priority={false}
+            />
+          </figure>
 
-          <div className={styles.visual} style={visualStyle}>
+          <figure className={styles.tomatoFilm}>
             <video
-              key={filmRun}
-              className={styles.film}
               src="/videos/comparatif-tomates-restored.mp4"
               poster="/images/comparatif-tomates-poster.jpg"
-              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
+              aria-label={`${copy.control} / ${copy.treated}`}
               autoPlay
               muted
               loop
@@ -516,65 +464,7 @@ export default function CropExperience() {
               preload="auto"
               disablePictureInPicture
             />
-            <div className={styles.controlStress} aria-hidden="true" />
-            <div className={styles.treatedReserve} aria-hidden="true" />
-            <div className={styles.splitFrame} aria-hidden="true"><i /><i /></div>
-            <div className={styles.plotLabelControl}>
-              <span>A</span><div><strong>{copy.control}</strong><small>{copy.controlSub}</small></div>
-            </div>
-            <div className={styles.plotLabelTreated}>
-              <span>B</span><div><strong>{copy.treated}</strong><small>{copy.treatedSub}</small></div>
-            </div>
-          </div>
-
-          <div className={styles.dashboard}>
-            <div className={styles.scenario}>
-              <p className={styles.panelTitle}>{copy.adjust}</p>
-              <label className={styles.rangeField}>
-                <span><b>{copy.waterAvailable}</b><output>{water} mm</output></span>
-                <input type="range" min="30" max="120" step="5" value={water} onChange={(event) => setWater(Number(event.target.value))} />
-                <small><span>{copy.low}</span><span>{copy.high}</span></small>
-              </label>
-              <label className={styles.rangeField}>
-                <span><b>{copy.irrigationInterval}</b><output>{interval} j</output></span>
-                <input type="range" min="3" max="14" step="1" value={interval} onChange={(event) => setIntervalValue(Number(event.target.value))} />
-                <small><span>{copy.frequent}</span><span>{copy.spaced}</span></small>
-              </label>
-            </div>
-
-            <div className={styles.metrics}>
-              <div className={styles.metricsHeading}>
-                <p className={styles.panelTitle}>{copy.reading}</p>
-                <span>{copy.indexNote}</span>
-              </div>
-              {metricRows.map((metric) => (
-                <div className={styles.metricRow} key={metric.label}>
-                  <span>{metric.label}</span>
-                  <div className={styles.bars} aria-hidden="true">
-                    <i style={{ width: `${metric.values[0]}%` }} />
-                    <i style={{ width: `${metric.values[1]}%` }} />
-                  </div>
-                  <strong><span>{metric.values[0]}</span><b>→</b><span>{metric.values[1]}</span></strong>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.phaseRail} role="tablist" aria-label={copy.eyebrow}>
-          {copy.phases.map((item, index) => (
-            <button
-              type="button"
-              role="tab"
-              aria-selected={phase === index}
-              className={phase === index ? styles.activeTab : ""}
-              onClick={() => seekTo(index)}
-              key={item.title}
-            >
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <strong>{item.title}</strong>
-            </button>
-          ))}
+          </figure>
         </div>
 
         <div className={styles.synergy}>
