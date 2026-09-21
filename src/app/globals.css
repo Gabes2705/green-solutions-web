@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 :root {
   --bg-deep: #F4F6F1;
   --bg-mid: #E5EDD6;
@@ -695,6 +693,20 @@ body {
   width: 100% !important;
   height: 100% !important;
 }
+.badge-static-fallback {
+  position: absolute;
+  inset: 8%;
+  width: 84%;
+  height: 84%;
+  object-fit: contain;
+  opacity: 0;
+}
+.badge-stage--fallback canvas {
+  display: none;
+}
+.badge-stage--fallback .badge-static-fallback {
+  opacity: 1;
+}
 .badge-stage::after {
   content: "";
   position: absolute;
@@ -770,11 +782,15 @@ body {
    ancestor of a video is, like rounding it, one of the things that drops it
    from the compositor's overlay path onto the slow one. */
 .film-anchor {
-  position: absolute;
-  left: 2vw;
-  top: 0;
-  bottom: 0;
+  display: flex;
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 100%;
+  margin: 1.25rem auto 0;
   align-items: center;
+  justify-content: center;
   z-index: 20;
   /* The anchor spans the full height of the cover in order to centre the clip
      without a transform, which would cost the clip its hardware overlay. That
@@ -784,7 +800,56 @@ body {
   pointer-events: none;
 }
 .film-screen {
+  position: relative;
+  width: min(92vw, 720px);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 0;
+  background: #10251a url("/images/film-hero-poster.jpg") center / cover no-repeat;
   pointer-events: auto;
+}
+.film-screen video,
+.film-screen img,
+.film-screen canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.film-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .62);
+  color: #fff;
+  font: 600 18px/1 sans-serif;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.film-screen:hover .film-close,
+.film-close:focus-visible {
+  opacity: 1;
+}
+@media (min-width: 1024px) {
+  .film-anchor {
+    position: absolute;
+    left: 2vw;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .film-screen {
+    width: min(42vw, 760px, 72vh);
+  }
 }
 /* Only nudge it clear of the left edge once there is room; below this the
    claim would be crowded against the frame. */
@@ -799,10 +864,7 @@ body {
    make the browser recompose the shadow on every frame, which showed up as
    dropped frames rather than as a slow page. */
 .film-screen {
-  box-shadow:
-    0 2px 6px rgba(20, 60, 30, 0.14),
-    0 20px 40px -16px rgba(20, 60, 30, 0.3),
-    0 0 0 1px rgba(31, 138, 69, 0.14);
+  box-shadow: none;
 }
 /* Deliberately no border-radius on the video: see FloatingVideo. */
 
@@ -1398,9 +1460,6 @@ body li {
 .photo-credit,
 .ta-cta,
 .tagline-banner,
-.calc-result-eyebrow,
-.calc-result-note,
-.calc-disclaimer,
 .person-name,
 .person-role,
 .proof-figure,
@@ -1413,10 +1472,6 @@ body li {
 .doc-meta,
 .chain-step p,
 .cover-doors-label,
-.dose-hint,
-.dose-status,
-.dose-card-label,
-.dose-card-note,
 .nav-links li,
 .hero-domains li,
 .cover-doors li,
@@ -1719,222 +1774,6 @@ body li {
   font-size: 1.15rem;
   line-height: 1.45;
   color: var(--leaf-light);
-}
-
-.calc-card {
-  margin-top: 2.4em;
-  padding: clamp(1.6em, 4vw, 3em);
-  border-radius: 18px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
-  border: 1px solid var(--hairline);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 16px 32px -14px rgba(30, 70, 40, 0.24);
-  display: flex;
-  flex-direction: column;
-  gap: 2.2em;
-}
-.calc-field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7em;
-}
-.calc-field-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1em;
-}
-.calc-field-head label {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  font-size: 0.98rem;
-  color: var(--ink);
-}
-.calc-value {
-  flex: none;
-  font-family: var(--font-numeric);
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--leaf-light);
-  font-variant-numeric: tabular-nums;
-  text-align: right;
-  white-space: nowrap;
-}
-
-.calc-slider {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 24px;
-  background: transparent;
-  cursor: pointer;
-}
-.calc-slider::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 6px;
-  border-radius: 999px;
-  background: rgba(75, 139, 88, 0.16);
-}
-.calc-slider::-moz-range-track {
-  width: 100%;
-  height: 6px;
-  border-radius: 999px;
-  background: rgba(75, 139, 88, 0.16);
-}
-.calc-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  margin-top: -7px;
-  border-radius: 50%;
-  background: var(--leaf-light);
-  border: 3px solid var(--bg-deep);
-  box-shadow: 0 2px 8px -2px rgba(30, 70, 40, 0.24);
-  cursor: pointer;
-  transition: transform 0.15s ease;
-}
-.calc-slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  border: 3px solid var(--bg-deep);
-  border-radius: 50%;
-  background: var(--leaf-light);
-  box-shadow: 0 2px 8px -2px rgba(30, 70, 40, 0.24);
-  cursor: pointer;
-  transition: transform 0.15s ease;
-}
-.calc-slider:hover::-webkit-slider-thumb {
-  transform: scale(1.12);
-}
-.calc-slider:hover::-moz-range-thumb {
-  transform: scale(1.12);
-}
-
-.calc-scale {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.78rem;
-  color: var(--muted);
-}
-.calc-scale-modes {
-  position: relative;
-  height: 2.7em;
-  font-size: 0.78rem;
-  color: var(--muted);
-}
-.calc-scale-modes span {
-  position: absolute;
-  top: 0;
-  max-width: 22%;
-  text-align: center;
-  line-height: 1.25;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  hyphenate-limit-chars: 14 5 5;
-  transition: color 0.2s ease, font-weight 0.2s ease;
-}
-.calc-scale-modes span:first-child {
-  text-align: left;
-}
-.calc-scale-modes span:last-child {
-  text-align: right;
-}
-.calc-scale-modes span.active {
-  color: var(--leaf-light);
-  font-weight: 700;
-}
-
-.calc-result {
-  padding: 1.6em clamp(1.4em, 3vw, 2.2em);
-  border-radius: 14px;
-  background: linear-gradient(160deg, rgba(75, 139, 88, 0.14), rgba(75, 139, 88, 0.03));
-  border: 1px solid rgba(75, 139, 88, 0.3);
-  text-align: center;
-}
-.calc-result-eyebrow {
-  margin: 0 0 0.5em;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--amber);
-}
-.calc-result-range {
-  margin: 0;
-  font-family: var(--font-numeric);
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  font-weight: 600;
-  color: var(--leaf-light);
-  font-variant-numeric: tabular-nums;
-}
-.calc-result-unit {
-  font-size: 0.55em;
-  font-weight: 500;
-  color: var(--muted);
-}
-.calc-result-note {
-  margin: 0.4em 0 0;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-.calc-result-divider {
-  margin: 1.2em auto;
-  width: 3em;
-  height: 0;
-  border: none;
-  border-top: 1px solid var(--hairline);
-}
-.calc-result-pools {
-  margin: 0;
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  color: var(--ink);
-}
-.calc-result-pools strong {
-  color: var(--leaf-light);
-  font-family: var(--font-numeric);
-  font-variant-numeric: tabular-nums;
-}
-
-.calc-disclaimer {
-  margin-top: 1.1em;
-  max-width: 62ch;
-  font-size: 0.78rem;
-  line-height: 1.5;
-  color: var(--muted);
-  opacity: 0.85;
-}
-
-@media (max-width: 640px) {
-  .calc-card {
-    padding: 1.5em 1.2em;
-    gap: 1.8em;
-  }
-  .calc-field-head {
-    flex-wrap: wrap;
-  }
-  .calc-scale-modes {
-    height: 1.2em;
-  }
-  .calc-scale-modes span {
-    top: 50%;
-    width: 9px;
-    height: 9px;
-    max-width: none;
-    margin-top: -4.5px;
-    border-radius: 50%;
-    overflow: hidden;
-    color: transparent;
-    background: rgba(13, 13, 13, 0.28);
-  }
-  .calc-scale-modes span.active {
-    width: 11px;
-    height: 11px;
-    margin-top: -5.5px;
-    background: var(--leaf-light);
-  }
-  .calc-result-range {
-    font-size: clamp(1.8rem, 8vw, 2.6rem);
-  }
 }
 
 .stat-row {
@@ -2476,6 +2315,33 @@ body li {
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+/* ---------- partner application ---------- */
+.partner-application-page {
+  min-height: 100vh;
+  color: #10251d;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(106, 196, 142, .24), transparent 34rem),
+    linear-gradient(145deg, #f4fbf7 0%, #e7f5ed 54%, #d8eee4 100%);
+}
+.partner-application-bar { background: rgba(244, 251, 247, .88); backdrop-filter: blur(14px); }
+.partner-application-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: clamp(58px, 8vw, 112px) 0 96px;
+  display: grid;
+  grid-template-columns: minmax(0, .86fr) minmax(460px, 1.14fr);
+  gap: clamp(38px, 7vw, 92px);
+  align-items: start;
+}
+.partner-application-copy { position: sticky; top: 120px; }
+.partner-application-copy h1 { margin: 12px 0 20px; font-size: clamp(2.7rem, 6vw, 5.6rem); line-height: .92; letter-spacing: -.055em; }
+.partner-promise { margin-top: 30px; display: inline-flex; padding: 13px 18px; border: 1px solid rgba(23, 104, 69, .24); border-radius: 999px; background: rgba(255,255,255,.62); font-weight: 750; color: #176845; }
+.partner-application-form { box-shadow: 0 28px 80px rgba(20, 72, 48, .14); }
+@media (max-width: 850px) {
+  .partner-application-shell { grid-template-columns: 1fr; padding-top: 42px; }
+  .partner-application-copy { position: static; }
 }
 
 .contact-error {
@@ -3585,8 +3451,6 @@ body li {
   }
 }
 
-/* ---------- dose calculator ---------- */
-
 /* Une seule colonne, à toutes les largeurs : la réponse vient après la
    question.
 
@@ -3595,244 +3459,14 @@ body li {
    avant d'avoir nommé un pays, une culture ou une surface — un chiffre qui
    avait l'air d'attendre là depuis toujours plutôt que d'avoir été calculé.
    Ils passent sous les trois panneaux, où l'on arrive ayant demandé. */
-.dose-layout {
-  margin-top: 2.4em;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1.5em;
-  align-items: start;
-}
-.dose-panels {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2em;
-  min-width: 0;
-}
-.dose-panel {
-  padding: clamp(1.3em, 3vw, 2em);
-  border-radius: 18px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
-  border: 1px solid var(--hairline);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 16px 32px -14px rgba(30, 70, 40, 0.24);
-}
-.dose-panel-title {
-  display: flex;
-  align-items: center;
-  gap: 0.7em;
-  margin: 0 0 1.2em;
-  font-family: var(--font-sans);
-  font-size: 0.86rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink);
-}
-.dose-num {
-  display: grid;
-  place-items: center;
-  width: 1.9em;
-  height: 1.9em;
-  flex: none;
-  border-radius: 50%;
-  background: var(--leaf-deep);
-  color: #fff;
-  font-size: 0.82rem;
-  letter-spacing: 0;
-}
-.dose-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 1em 1.1em;
-}
 /* La section Eau garde deux colonnes égales, même à l'étroit. */
-.dose-grid-water {
-  grid-template-columns: 1fr 1fr;
-}
-.dose-field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.45em;
-  min-width: 0;
-}
-.dose-field label {
-  font-family: var(--font-sans);
-  font-size: 0.83rem;
-  font-weight: 600;
-  color: var(--muted);
-}
-.dose-field input,
-.dose-field select {
-  width: 100%;
-  padding: 0.62em 0.75em;
-  border-radius: 9px;
-  border: 1px solid var(--hairline);
-  background: #FFFFFF;
-  color: var(--ink);
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-}
-.dose-field select {
-  appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
-    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
-  background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%;
-  background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat;
-  padding-right: 2.2em;
-}
-.dose-field input:focus,
-.dose-field select:focus {
-  outline: 2px solid var(--leaf-light);
-  outline-offset: 1px;
-}
-.dose-field input::placeholder {
-  color: rgba(147, 172, 156, 0.7);
-}
-.dose-field-action {
-  justify-content: flex-end;
-}
-.dose-button {
-  padding: 0.68em 1.1em;
-  border-radius: 9px;
-  border: 1px solid var(--hairline);
-  background: rgba(75, 139, 88, 0.14);
-  color: var(--ink);
-  font-family: var(--font-sans);
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-.dose-button:hover {
-  background: rgba(75, 139, 88, 0.24);
-}
-.dose-climate {
-  margin-top: 1.4em;
-  padding-top: 1.2em;
-  border-top: 1px solid var(--hairline);
-}
-.dose-climate-head {
-  margin: 0 0 0.9em;
-  font-family: var(--font-sans);
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--leaf-light);
-}
-.dose-climate-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
-  gap: 0.9em;
-}
-.dose-climate-grid span {
-  display: flex;
-  flex-direction: column;
-  gap: 0.22em;
-  font-family: var(--font-sans);
-  font-size: 0.76rem;
-  color: var(--muted);
-}
-.dose-climate-grid b {
-  font-family: var(--font-numeric);
-  font-size: 1.05rem;
-  color: var(--ink);
-}
-.dose-status,
-.dose-hint {
-  margin: 1em 0 0;
-  font-family: var(--font-sans);
-  font-size: 0.82rem;
-  line-height: 1.5;
-  color: var(--muted);
-}
 /* En bande sous le formulaire plutôt qu'en colonne : quatre cartes empilées
    sur 1080px de large seraient quatre bandeaux presque vides. */
-.dose-results {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 0.85em;
-  align-items: start;
-  min-width: 0;
-}
-.dose-results-title {
-  grid-column: 1 / -1;
-  margin: 0 0 0.2em;
-  font-family: var(--font-sans);
-  font-size: 0.86rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.dose-card {
-  padding: 1.15em 1.3em;
-  border-radius: 14px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
-  border: 1px solid var(--hairline);
-}
-.dose-card-water {
-  background: rgba(29, 138, 150, 0.14);
-  border-color: rgba(29, 138, 150, 0.35);
-}
-.dose-card-label {
-  margin: 0 0 0.35em;
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--muted);
-}
-.dose-card-value {
-  margin: 0;
-  font-family: var(--font-numeric);
-  font-size: clamp(1.5rem, 3.2vw, 2rem);
-  line-height: 1.15;
-  color: var(--ink);
-}
-.dose-card-unit {
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--muted);
-}
-.dose-card-note {
-  margin: 0.45em 0 0;
-  font-family: var(--font-sans);
-  font-size: 0.76rem;
-  line-height: 1.45;
-  color: var(--muted);
-}
-.dose-card-money {
-  margin: 0.6em 0 0;
-  padding-top: 0.6em;
-  border-top: 1px solid rgba(29, 138, 150, 0.35);
-  font-family: var(--font-numeric);
-  font-size: 1.25rem;
-  color: var(--leaf-light);
-}
 
 /* Le demi-temps d'arrêt pendant lequel la dose se refait : les chiffres
    s'effacent, le reste de la carte ne bouge pas, et rien ne se déplace — une
    valeur remplacée par un point de suspension ferait sauter la mise en page à
    chaque frappe. */
-.dose-card-value,
-.dose-card-money,
-.calc-result-range,
-.calc-result-pools strong {
-  transition: opacity 0.16s ease;
-}
-.dose-results-calcul .dose-card-value,
-.dose-results-calcul .dose-card-money,
-.calc-result-calcul .calc-result-range,
-.calc-result-calcul .calc-result-pools strong {
-  opacity: 0.22;
-}
-@media (prefers-reduced-motion: reduce) {
-  .dose-card-value,
-  .dose-card-money,
-  .calc-result-range,
-  .calc-result-pools strong {
-    transition: none;
-  }
-}
 
 /* One column below this width, and the answer stays after the question.
 
@@ -3846,27 +3480,10 @@ body li {
 @media (max-width: 900px) {
   /* Deux cartes de front sur une tablette, une seule sur un téléphone : en
      dessous de 210px la valeur et son unité se séparent. */
-  .dose-results {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
-    padding: 1em 1.1em;
-    border-radius: 16px;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F3F8ED 100%);
-    border: 1px solid rgba(75, 139, 88, 0.3);
-    box-shadow: 0 10px 24px -12px rgba(30, 70, 40, 0.34);
-  }
 }
 @media (max-width: 520px) {
-  .dose-grid {
-    grid-template-columns: 1fr;
-  }
   /* La section Eau reste sur deux colonnes égales même ici : la spécification
      l'impose, et deux champs numériques courts y tiennent encore. */
-  .dose-grid-water {
-    gap: 0.7em;
-  }
-  .dose-grid-water .dose-field label {
-    font-size: 0.76rem;
-  }
 }
 
 /* ==========================================================================
@@ -3889,11 +3506,6 @@ body li {
 
 @media (max-width: 768px) {
   /* ---------- 1. Nothing runs off the side ---------- */
-
-  /* A backstop, not the fix: every layout that overflowed is corrected
-     further down. `clip` rather than `hidden` because `hidden` would turn
-     the body into a scroll container and break the sticky results panel in
-     the dose calculator. */
   body {
     overflow-x: clip;
   }
@@ -4140,18 +3752,16 @@ body li {
   /* ---------- 6. One column, everywhere ---------- */
 
   .distinguish-grid,
-  .objection-list,
-  .pilot-grid,
-  .chain,
-  .person-grid,
-  .person-grid-experts,
-  .resource-grid,
-  .ta-list,
-  .ta-answers,
-  .tech-video-grid,
-  .dose-grid,
-  .contact-inner,
-  .dose-layout {
+.objection-list,
+.pilot-grid,
+.chain,
+.person-grid,
+.person-grid-experts,
+.resource-grid,
+.ta-list,
+.ta-answers,
+.tech-video-grid,
+.contact-inner {
     grid-template-columns: minmax(0, 1fr);
   }
   .distinguish-grid {
@@ -4315,96 +3925,20 @@ body li {
     width: 100%;
     justify-content: center;
   }
-
-  /* ---------- 11. Dose calculator ---------- */
-
-  .dose-layout {
-    gap: 1em;
-    margin-top: 1.8em;
-  }
-  .dose-results {
-    gap: 0.7em;
-    margin-top: 0.4em;
-  }
-  .dose-card {
-    padding: 0.85em 1em;
-  }
-  .dose-card-value {
-    font-size: 1.45rem;
-  }
-  .dose-panel {
-    padding: 1.2em 1.1em;
-  }
-  .dose-panel-title {
-    margin-bottom: 1em;
-    font-size: 0.8rem;
-  }
-  .dose-climate-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.7em;
-  }
-  .dose-button {
-    width: 100%;
-    min-height: 46px;
-  }
-
-  /* ---------- 12. Water calculator ---------- */
-
-  .calc-card {
-    margin-top: 1.8em;
-    padding: 1.3em 1.1em;
-    gap: 1.7em;
-  }
-  .calc-field-head {
-    flex-wrap: wrap;
-  }
   /* The rail stays 6px; the input around it grows to a thumb's width so the
      handle can actually be caught. */
-  .calc-slider {
-    height: 44px;
-  }
   /* Five mode names cannot be written under a slider this narrow, so they
      become the dots the handle travels between. */
-  .calc-scale-modes {
-    height: 1.2em;
-  }
-  .calc-scale-modes span {
-    top: 50%;
-    width: 9px;
-    height: 9px;
-    max-width: none;
-    margin-top: -4.5px;
-    border-radius: 50%;
-    overflow: hidden;
-    color: transparent;
-    background: rgba(13, 13, 13, 0.28);
-  }
-  .calc-scale-modes span.active {
-    width: 11px;
-    height: 11px;
-    margin-top: -5.5px;
-    background: var(--leaf-light);
-  }
-  .calc-result {
-    padding: 1.3em 1.1em;
-  }
-  .calc-result-range {
-    font-size: clamp(1.8rem, 8vw, 2.6rem);
-  }
 
   /* ---------- 13. Forms ---------- */
 
   /* 16px is the threshold below which iOS zooms the page when a field takes
      focus — and a zoomed page is a page that scrolls sideways. */
   .contact-form input,
-  .contact-form textarea,
-  .dose-field input,
-  .dose-field select {
+.contact-form textarea {
     font-size: 16px;
   }
-  .contact-form input,
-  .dose-field input,
-  .dose-field select {
+  .contact-form input {
     min-height: 46px;
   }
   .contact-form {
@@ -4524,20 +4058,19 @@ body li {
      tab. Here they all become the same box, at the 48px a fingertip needs.
      `.nav-burger` is left out: it is a column of three bars, not a label. */
   .hero-cta a,
-  .country-btn,
-  .country-cta-card-link,
-  .ta-tab,
-  .ta-answer-link,
-  .objection-proof,
-  .p-learn,
-  .tech-btn-3d,
-  .tech-back,
-  .etude-back,
-  .legal-back,
-  .dose-button,
-  .cta-band-actions a,
-  .contact-form button,
-  .nav-cta {
+.country-btn,
+.country-cta-card-link,
+.ta-tab,
+.ta-answer-link,
+.objection-proof,
+.p-learn,
+.tech-btn-3d,
+.tech-back,
+.etude-back,
+.legal-back,
+.cta-band-actions a,
+.contact-form button,
+.nav-cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;

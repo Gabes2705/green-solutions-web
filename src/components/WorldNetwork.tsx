@@ -49,6 +49,7 @@ const NODES = [
   { lat: 30.6, lng: 36.2, label: "Jordanie" },
   { lat: 29.3, lng: 47.5, label: "Koweït" },
   { lat: 45.1, lng: 15.2, label: "Croatie" },
+  { lat: -18.8, lng: 46.9, label: "Madagascar" },
 ];
 
 function projectPoint(lat: number, lng: number) {

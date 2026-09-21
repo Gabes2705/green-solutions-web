@@ -135,7 +135,7 @@ export const content = {
       tagline: "Toutes nos solutions disruptives sont utilisables pour toutes les plantes et cultures, sous tous les climats et tous types de sol !",
       stats: [
         { num: "30", label: "partenaires" },
-        { num: "37", label: "pays" },
+        { num: "38", label: "pays" },
         { num: "4", label: "technologies de marque" },
       ],
       distinguish: [
@@ -404,7 +404,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Ce qui tourne en ce moment",
-      title: "Quatorze essais pilotes en cours",
+      title: "Quinze essais pilotes en cours",
       lede: "Des groupes agro-industriels, des coopératives et deux universités américaines conduisent actuellement des essais sur nos technologies, sur leurs propres parcelles et sur leurs propres cultures. Voici lesquels, en septembre 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Canne à sucre", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -421,6 +421,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Gazon Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroc", crop: "Clémentines bio (variété Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Égypte", crop: "Maïs / Trèfle / Olivier", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Maraîchage / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -489,9 +490,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Ils travaillent avec nous",
-      title: "Un réseau dans 37 pays",
+      title: "Un réseau dans 38 pays",
       lede: "Producteurs, coopératives, spécialistes du traitement de l'eau, universités et instituts de recherche, présents sur cinq continents.",
-      mapAriaLabel: "Carte du réseau Green Solutions dans 37 pays",
+      mapAriaLabel: "Carte du réseau Green Solutions dans 38 pays",
     },
     countryStudies: {
       eyebrow: "Approche pays",
@@ -753,7 +754,7 @@ export const content = {
       tagline: "All our disruptive solutions can be used on every plant and crop, in every climate and soil type!",
       stats: [
         { num: "30", label: "partners" },
-        { num: "37", label: "countries" },
+        { num: "38", label: "countries" },
         { num: "4", label: "branded technologies" },
       ],
       distinguish: [
@@ -1022,7 +1023,7 @@ export const content = {
     },
     essais: {
       eyebrow: "What's running right now",
-      title: "Fourteen pilot trials under way",
+      title: "Fifteen pilot trials under way",
       lede: "Agro-industrial groups, cooperatives and two American universities are currently running trials on our technologies, on their own plots and their own crops. Here they are, in September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Sugarcane", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1039,6 +1040,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Phenix turf", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Morocco", crop: "Organic clementines (Afourer variety), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egypt", crop: "Corn / Clover / Olive tree", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Market gardening / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -1107,9 +1109,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "They work with us",
-      title: "A network across 37 countries",
+      title: "A network across 38 countries",
       lede: "Producers, cooperatives, water-treatment specialists, universities and research institutes, present across five continents.",
-      mapAriaLabel: "Map of the Green Solutions network across 37 countries",
+      mapAriaLabel: "Map of the Green Solutions network across 38 countries",
     },
     countryStudies: {
       eyebrow: "Country approach",
@@ -1371,7 +1373,7 @@ export const content = {
       tagline: "¡Todas nuestras soluciones disruptivas se pueden usar en cualquier planta o cultivo, en cualquier clima y cualquier tipo de suelo!",
       stats: [
         { num: "30", label: "socios" },
-        { num: "37", label: "países" },
+        { num: "38", label: "países" },
         { num: "4", label: "tecnologías de marca" },
       ],
       distinguish: [
@@ -1640,7 +1642,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Lo que está en marcha ahora mismo",
-      title: "Catorce ensayos piloto en curso",
+      title: "Quince ensayos piloto en curso",
       lede: "Grupos agroindustriales, cooperativas y dos universidades estadounidenses realizan actualmente ensayos con nuestras tecnologías, en sus propias parcelas y sus propios cultivos. Estos son, en septiembre de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Caña de azúcar", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -1657,6 +1659,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Césped Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marruecos", crop: "Clementinas ecológicas (variedad Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egipto", crop: "Maíz / Trébol / Olivo", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Horticultura / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -1725,9 +1728,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabajan con nosotros",
-      title: "Una red en 37 países",
+      title: "Una red en 38 países",
       lede: "Productores, cooperativas, especialistas en tratamiento de agua, universidades e institutos de investigación, presentes en cinco continentes.",
-      mapAriaLabel: "Mapa de la red Green Solutions en 37 países",
+      mapAriaLabel: "Mapa de la red Green Solutions en 38 países",
     },
     countryStudies: {
       eyebrow: "Enfoque por país",
@@ -1989,7 +1992,7 @@ export const content = {
       tagline: "Todas as nossas soluções disruptivas podem ser usadas em qualquer planta ou cultura, em qualquer clima e qualquer tipo de solo!",
       stats: [
         { num: "30", label: "parceiros" },
-        { num: "37", label: "países" },
+        { num: "38", label: "países" },
         { num: "4", label: "tecnologias de marca" },
       ],
       distinguish: [
@@ -2258,7 +2261,7 @@ export const content = {
     },
     essais: {
       eyebrow: "O que está em curso neste momento",
-      title: "Catorze ensaios piloto em curso",
+      title: "Quinze ensaios piloto em curso",
       lede: "Grupos agroindustriais, cooperativas e duas universidades americanas conduzem atualmente ensaios com as nossas tecnologias, nas suas próprias parcelas e nas suas próprias culturas. Eis quais, em setembro de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Cana-de-açúcar", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -2275,6 +2278,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Relva Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marrocos", crop: "Clementinas biológicas (variedade Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egito", crop: "Milho / Trevo / Oliveira", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Horticultura / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -2343,9 +2347,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabalham connosco",
-      title: "Uma rede em 37 países",
+      title: "Uma rede em 38 países",
       lede: "Produtores, cooperativas, especialistas em tratamento de água, universidades e institutos de investigação, presentes em cinco continentes.",
-      mapAriaLabel: "Mapa da rede Green Solutions em 37 países",
+      mapAriaLabel: "Mapa da rede Green Solutions em 38 países",
     },
     countryStudies: {
       eyebrow: "Abordagem por país",
@@ -2607,7 +2611,7 @@ export const content = {
       tagline: "جميع حلولنا الابتكارية يمكن استخدامها مع كل النباتات والمحاصيل، في كل المناخات وكل أنواع التربة!",
       stats: [
         { num: "30", label: "شريك" },
-        { num: "37", label: "دولة" },
+        { num: "38", label: "دولة" },
         { num: "4", label: "تقنيات حصرية" },
       ],
       distinguish: [
@@ -2876,7 +2880,7 @@ export const content = {
     },
     essais: {
       eyebrow: "ما يجري حاليًا",
-      title: "أربع عشرة تجربة رائدة قيد التنفيذ",
+      title: "خمس عشرة تجربة رائدة قيد التنفيذ",
       lede: "تُجري مجموعات زراعية صناعية وتعاونيات وجامعتان أمريكيتان حاليًا تجارب على تقنياتنا، في أراضيها ومحاصيلها الخاصة. إليكم القائمة، في سبتمبر 2026.",
       pilots: [
         { org: "Trois Rivières", place: "مارتينيك", crop: "قصب السكر", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -2893,6 +2897,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "البرتغال", crop: "عشب Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "شيشاوة، المغرب", crop: "يوسفي عضوي (صنف أفوري)، الباولونيا", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "مصر", crop: "الذرة / البرسيم / الزيتون", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "مدغشقر", crop: "الزراعة البستانية / الباولونيا", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -2961,9 +2966,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "يعملون معنا",
-      title: "شبكة في 37 دولة",
+      title: "شبكة في 38 دولة",
       lede: "منتجون وتعاونيات ومتخصصون في معالجة المياه وجامعات ومعاهد بحثية، حاضرون في خمس قارات.",
-      mapAriaLabel: "خريطة شبكة Green Solutions في 37 دولة",
+      mapAriaLabel: "خريطة شبكة Green Solutions في 38 دولة",
     },
     countryStudies: {
       eyebrow: "النهج القطري",
@@ -3225,7 +3230,7 @@ export const content = {
       tagline: "我们所有的颠覆性解决方案适用于任何植物和作物、任何气候及任何类型的土壤！",
       stats: [
         { num: "30", label: "合作伙伴" },
-        { num: "37", label: "国家" },
+        { num: "38", label: "国家" },
         { num: "4", label: "品牌技术" },
       ],
       distinguish: [
@@ -3494,7 +3499,7 @@ export const content = {
     },
     essais: {
       eyebrow: "当前正在进行的项目",
-      title: "十四项正在进行的试点试验",
+      title: "十五项正在进行的试点试验",
       lede: "多家农工业集团、合作社以及两所美国大学目前正在自己的地块和作物上，对我们的技术开展试验。以下是截至2026年9月的清单。",
       pilots: [
         { org: "Trois Rivières", place: "马提尼克", crop: "甘蔗", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -3511,6 +3516,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "葡萄牙", crop: "Phenix草坪", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "摩洛哥希沙瓦", crop: "有机小柑橘（Afourer品种）、泡桐", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "埃及", crop: "玉米 / 三叶草 / 橄榄树", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "马达加斯加", crop: "蔬菜种植 / 泡桐", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -3579,9 +3585,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "与我们合作的伙伴",
-      title: "覆盖37个国家的网络",
+      title: "覆盖38个国家的网络",
       lede: "生产者、合作社、水处理专家、高校及科研机构，遍布五大洲。",
-      mapAriaLabel: "Green Solutions覆盖37个国家的网络地图",
+      mapAriaLabel: "Green Solutions覆盖38个国家的网络地图",
     },
     countryStudies: {
       eyebrow: "国别方案",
@@ -3843,7 +3849,7 @@ export const content = {
       tagline: "Semua solusi disruptif kami dapat digunakan untuk semua tanaman dan tanaman pangan, di semua iklim dan semua jenis tanah!",
       stats: [
         { num: "30", label: "mitra" },
-        { num: "37", label: "negara" },
+        { num: "38", label: "negara" },
         { num: "4", label: "teknologi bermerek" },
       ],
       distinguish: [
@@ -4112,7 +4118,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Yang sedang berjalan saat ini",
-      title: "Empat Belas Uji Coba Percontohan yang Sedang Berlangsung",
+      title: "Lima Belas Uji Coba Percontohan yang Sedang Berlangsung",
       lede: "Kelompok agroindustri, koperasi, dan dua universitas Amerika saat ini sedang melakukan uji coba teknologi kami, di lahan dan tanaman mereka sendiri. Berikut daftarnya, per September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Tebu", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -4129,6 +4135,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rumput Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Klementin organik (varietas Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Mesir", crop: "Jagung / Semanggi / Zaitun", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Budi daya sayuran / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -4197,9 +4204,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Mereka bekerja sama dengan kami",
-      title: "Jaringan di 37 Negara",
+      title: "Jaringan di 38 Negara",
       lede: "Produsen, koperasi, spesialis pengolahan air, universitas, dan lembaga penelitian, hadir di lima benua.",
-      mapAriaLabel: "Peta jaringan Green Solutions di 37 negara",
+      mapAriaLabel: "Peta jaringan Green Solutions di 38 negara",
     },
     countryStudies: {
       eyebrow: "Pendekatan per Negara",
@@ -4461,7 +4468,7 @@ export const content = {
       tagline: "Alle unsere disruptiven Lösungen sind für jede Pflanze und Kultur, bei jedem Klima und jeder Bodenart einsetzbar!",
       stats: [
         { num: "30", label: "Partner" },
-        { num: "37", label: "Länder" },
+        { num: "38", label: "Länder" },
         { num: "4", label: "Markentechnologien" },
       ],
       distinguish: [
@@ -4730,7 +4737,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Was gerade läuft",
-      title: "Vierzehn laufende Pilotversuche",
+      title: "Fünfzehn laufende Pilotversuche",
       lede: "Agrarindustrielle Gruppen, Genossenschaften und zwei amerikanische Universitäten führen derzeit Versuche mit unseren Technologien auf ihren eigenen Parzellen und mit ihren eigenen Kulturen durch. Hier die Liste, Stand September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Zuckerrohr", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -4747,6 +4754,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Rasen Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marokko", crop: "Bio-Clementinen (Sorte Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Ägypten", crop: "Mais / Klee / Olivenbaum", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Gemüsebau / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -4815,9 +4823,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Sie arbeiten mit uns",
-      title: "Ein Netzwerk in 37 Ländern",
+      title: "Ein Netzwerk in 38 Ländern",
       lede: "Erzeuger, Genossenschaften, Wasseraufbereitungsspezialisten, Universitäten und Forschungsinstitute, vertreten auf fünf Kontinenten.",
-      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 37 Ländern",
+      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 38 Ländern",
     },
     countryStudies: {
       eyebrow: "Länderansatz",
@@ -5079,7 +5087,7 @@ export const content = {
       tagline: "Tutte le nostre soluzioni dirompenti sono utilizzabili per ogni pianta e coltura, in ogni clima e su ogni tipo di suolo!",
       stats: [
         { num: "30", label: "partner" },
-        { num: "37", label: "paesi" },
+        { num: "38", label: "paesi" },
         { num: "4", label: "tecnologie di marca" },
       ],
       distinguish: [
@@ -5348,7 +5356,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Cosa sta succedendo in questo momento",
-      title: "Quattordici sperimentazioni pilota in corso",
+      title: "Quindici sperimentazioni pilota in corso",
       lede: "Gruppi agroindustriali, cooperative e due università americane conducono attualmente sperimentazioni sulle nostre tecnologie, sui propri terreni e sulle proprie colture. Eccole, a settembre 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Canna da zucchero", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -5365,6 +5373,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portogallo", crop: "Tappeto erboso Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Marocco", crop: "Clementine bio (varietà Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egitto", crop: "Mais / Trifoglio / Olivo", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Orticoltura / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -5433,9 +5442,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Lavorano con noi",
-      title: "Una rete in 37 paesi",
+      title: "Una rete in 38 paesi",
       lede: "Produttori, cooperative, specialisti del trattamento dell'acqua, università e istituti di ricerca, presenti su cinque continenti.",
-      mapAriaLabel: "Mappa della rete Green Solutions in 37 paesi",
+      mapAriaLabel: "Mappa della rete Green Solutions in 38 paesi",
     },
     countryStudies: {
       eyebrow: "Approccio per paese",
@@ -5697,7 +5706,7 @@ export const content = {
       tagline: "Όλες οι ανατρεπτικές μας λύσεις είναι κατάλληλες για κάθε φυτό και καλλιέργεια, σε κάθε κλίμα και κάθε τύπο εδάφους!",
       stats: [
         { num: "30", label: "συνεργάτες" },
-        { num: "37", label: "χώρες" },
+        { num: "38", label: "χώρες" },
         { num: "4", label: "εμπορικές τεχνολογίες" },
       ],
       distinguish: [
@@ -5966,7 +5975,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Τι συμβαίνει αυτή τη στιγμή",
-      title: "Δεκατέσσερις πιλοτικές δοκιμές σε εξέλιξη",
+      title: "Δεκαπέντε πιλοτικές δοκιμές σε εξέλιξη",
       lede: "Αγροβιομηχανικοί όμιλοι, συνεταιρισμοί και δύο αμερικανικά πανεπιστήμια διεξάγουν επί του παρόντος δοκιμές στις τεχνολογίες μας, στα δικά τους αγροτεμάχια και στις δικές τους καλλιέργειες. Ιδού ποιες, τον Σεπτέμβριο του 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Μαρτινίκα", crop: "Ζαχαροκάλαμο", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -5983,6 +5992,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Πορτογαλία", crop: "Χλοοτάπητας Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Μαρόκο", crop: "Βιολογικά κλημεντίνια (ποικιλία Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Αίγυπτος", crop: "Καλαμπόκι / Τριφύλλι / Ελιά", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Μαδαγασκάρη", crop: "Κηπευτικές καλλιέργειες / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -6051,9 +6061,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Συνεργάζονται μαζί μας",
-      title: "Ένα δίκτυο σε 37 χώρες",
+      title: "Ένα δίκτυο σε 38 χώρες",
       lede: "Παραγωγοί, συνεταιρισμοί, ειδικοί επεξεργασίας νερού, πανεπιστήμια και ερευνητικά ιδρύματα, παρόντα σε πέντε ηπείρους.",
-      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 37 χώρες",
+      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 38 χώρες",
     },
     countryStudies: {
       eyebrow: "Προσέγγιση ανά χώρα",
@@ -6315,7 +6325,7 @@ export const content = {
       tagline: "Yıkıcı çözümlerimizin tümü her bitki ve ürün için, her iklimde ve her toprak türünde kullanılabilir!",
       stats: [
         { num: "30", label: "ortak" },
-        { num: "37", label: "ülke" },
+        { num: "38", label: "ülke" },
         { num: "4", label: "markalı teknoloji" },
       ],
       distinguish: [
@@ -6584,7 +6594,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Şu anda neler oluyor",
-      title: "On dört pilot deneme sürüyor",
+      title: "On beş pilot deneme sürüyor",
       lede: "Tarım-endüstri grupları, kooperatifler ve iki Amerikan üniversitesi, kendi arazilerinde ve kendi ürünlerinde teknolojilerimiz üzerinde denemeler yürütüyor. Eylül 2026 itibarıyla işte bunlar.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Şeker kamışı", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -6601,6 +6611,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portekiz", crop: "Phenix çim", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Fas", crop: "Organik klemantin (Afourer çeşidi), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Mısır", crop: "Mısır / Yonca / Zeytin ağacı", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Sebze yetiştiriciliği / Pavlonya", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -6669,9 +6680,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Bizimle çalışıyorlar",
-      title: "37 ülkede bir ağ",
+      title: "38 ülkede bir ağ",
       lede: "Beş kıtada bulunan üreticiler, kooperatifler, su arıtma uzmanları, üniversiteler ve araştırma enstitüleri.",
-      mapAriaLabel: "Green Solutions ağının 37 ülkedeki haritası",
+      mapAriaLabel: "Green Solutions ağının 38 ülkedeki haritası",
     },
     countryStudies: {
       eyebrow: "Ülke yaklaşımı",
@@ -6933,7 +6944,7 @@ export const content = {
       tagline: "Wszystkie nasze przełomowe rozwiązania nadają się do każdej rośliny i uprawy, w każdym klimacie i na każdym rodzaju gleby!",
       stats: [
         { num: "30", label: "partnerów" },
-        { num: "37", label: "krajów" },
+        { num: "38", label: "krajów" },
         { num: "4", label: "opatentowane technologie" },
       ],
       distinguish: [
@@ -7202,7 +7213,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Co się teraz dzieje",
-      title: "Czternaście prób pilotażowych w toku",
+      title: "Piętnaście prób pilotażowych w toku",
       lede: "Grupy agroprzemysłowe, spółdzielnie i dwa amerykańskie uniwersytety prowadzą obecnie próby naszych technologii na własnych działkach i własnych uprawach. Oto one, według stanu na wrzesień 2026 roku.",
       pilots: [
         { org: "Trois Rivières", place: "Martynika", crop: "Trzcina cukrowa", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -7219,6 +7230,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugalia", crop: "Trawnik Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Ekologiczne klementynki (odmiana Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egipt", crop: "Kukurydza / Koniczyna / Oliwka", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Uprawa warzyw / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -7287,9 +7299,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Współpracują z nami",
-      title: "Sieć w 37 krajach",
+      title: "Sieć w 38 krajach",
       lede: "Producenci, spółdzielnie, specjaliści od uzdatniania wody, uniwersytety i instytuty badawcze, obecni na pięciu kontynentach.",
-      mapAriaLabel: "Mapa sieci Green Solutions w 37 krajach",
+      mapAriaLabel: "Mapa sieci Green Solutions w 38 krajach",
     },
     countryStudies: {
       eyebrow: "Podejście według kraju",
@@ -7551,7 +7563,7 @@ export const content = {
       tagline: "Sva naša disruptivna rješenja primjenjiva su na sve biljke i kulture, u svim klimama i na svim tipovima tla!",
       stats: [
         { num: "30", label: "partnera" },
-        { num: "37", label: "država" },
+        { num: "38", label: "država" },
         { num: "4", label: "tehnologije pod markom" },
       ],
       distinguish: [
@@ -7820,7 +7832,7 @@ export const content = {
     },
     essais: {
       eyebrow: "Što je trenutačno u tijeku",
-      title: "Četrnaest pilot-pokusa u tijeku",
+      title: "Petnaest pilot-pokusa u tijeku",
       lede: "Agroindustrijske grupacije, zadruge i dva američka sveučilišta trenutačno provode pokuse s našim tehnologijama, na vlastitim parcelama i vlastitim kulturama. Evo kojih, u rujnu 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Šećerna trska", tech: ["EVERGREEN®", "Water Vital®"] },
@@ -7837,6 +7849,7 @@ export const content = {
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Travnjak Phenix", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Ekološke klementine (sorta Afourer), paulovnija", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egipat", crop: "Kukuruz / djetelina / maslina", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagaskar", crop: "Povrtlarstvo / paulovnija", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
     objections: {
@@ -7905,9 +7918,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Oni rade s nama",
-      title: "Mreža u 37 država",
+      title: "Mreža u 38 država",
       lede: "Proizvođači, zadruge, stručnjaci za obradu vode, sveučilišta i istraživački instituti, prisutni na pet kontinenata.",
-      mapAriaLabel: "Karta mreže Green Solutions u 37 država",
+      mapAriaLabel: "Karta mreže Green Solutions u 38 država",
     },
     countryStudies: {
       eyebrow: "Pristup po državama",

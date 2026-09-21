@@ -35,14 +35,9 @@ yarn-error.log*
 
 # Dossiers retirés du site le 17 septembre 2026.
 #
-# Leurs photos venaient d'internet et n'ont pas pu être remplacées : l'Arabie
-# saoudite n'a donné aucune image libre exploitable, et le Congo, le Ghana, la
-# Guinée, le Koweït et la Tunisie n'ont pas de texte source, donc rien à
-# refabriquer. Les fichiers restent sur les postes de travail, mais ne doivent
-# plus jamais repartir en ligne : sans ces lignes, un simple « git add -A » les
-# remet — c'est exactement ce qui s'est produit une première fois.
-public/documents/countries/arabie-saoudite.pdf
-public/documents/countries/arabie-saoudite.pptx
+# Ces cinq pays n'ont pas de texte source, donc rien à refabriquer avec des
+# images dont la licence est établie. Les fichiers restent sur les postes de
+# travail, mais ne doivent plus jamais repartir en ligne.
 public/documents/countries/congo.pdf
 public/documents/countries/ghana.pdf
 public/documents/countries/guinee-conakry.pdf

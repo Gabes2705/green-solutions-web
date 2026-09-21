@@ -41,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // answer 200 in every one of them, but had never been listed here: a search
   // engine does not visit what it is not shown, so twenty-six real pages were
   // invisible.
-  ["partenaires", "tests-et-rapports"].forEach((slug) => {
+  ["partenaires", "devenir-partenaire", "tests-et-rapports"].forEach((slug) => {
     LANGUAGES.forEach((lang) => {
       urls.push({
         url: `${SITE_URL}/${lang}/${slug}`,

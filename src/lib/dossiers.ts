@@ -69,7 +69,7 @@ export type Dossier = {
   pdf: string | null;
   /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
   photos: number;
-  credits: { titre: string | null; auteur: string | null; licence: string | null }[] | null;
+  credits: { titre: string | null; auteur: string | null; licence: string | null; source: string }[] | null;
   cover: {
     eyebrow: string;
     title: string;
@@ -79,6 +79,7 @@ export type Dossier = {
   };
   chiffres: Chiffres | null;
   contrainte: Puces | null;
+  stress: Graphique | null;
   usages: Graphique | null;
   economie: Chiffres | null;
   productions: Graphique | null;
@@ -103,22 +104,26 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Hemel-en-aarde Valley -Babylon Tower.jpg",
         "auteur": "Amada44",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       },
       {
         "titre": "Field and Sky.jpg",
         "auteur": "Barry haynes",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Africain farmers.jpg",
         "auteur": "Haytam123258",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Farms near Clarens.jpg",
         "auteur": "Ossewa",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -163,6 +168,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Public plans — new dams, water reuse, coastal desalination — act on supply. Hydro-retention acts on demand, in the root zone, block by block."
       ],
       "photo": 3
+    },
+    "stress": {
+      "kicker": "DROUGHT AND WATER STRESS",
+      "title": "Pressure is rising, but risk remains local",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Global index of drought number and duration",
+          "labels": [
+            "1980–1999",
+            "Since 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Two indicators, not a shortcut",
+        "body": "Worldwide, the number and duration of droughts have risen by 29% since 2000 compared with the two previous decades.\n\nWater stress measures something different: withdrawals as a share of renewable resources available after environmental needs. This global signal is therefore not a country forecast; it must be read alongside local rainfall, aquifers, seasons and uses."
+      }
     },
     "usages": {
       "kicker": "WHERE THE WATER GOES",
@@ -417,7 +444,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "Statistics South Africa: GDP by industry, Quarterly Labour Force Survey, Census of Commercial Agriculture.",
       "Department of Agriculture: Abstract of Agricultural Statistics.",
       "Citrus Growers' Association; SAWIS for vineyard area.",
-      "Department of Water and Sanitation; FAO (FAOSTAT, AQUASTAT); World Bank (WDI)."
+      "Department of Water and Sanitation; FAO (FAOSTAT, AQUASTAT); World Bank (WDI).",
+      "UNCCD, Drought in Numbers 2022: number and duration of droughts, +29% since 2000 versus 1980–1999.",
+      "UN-Water / FAO AQUASTAT, SDG indicator 6.4.2: definition and thresholds of water stress."
     ],
     "closing": {
       "title": "Tell us about your block",
@@ -435,22 +464,26 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Agricultureadrar.jpg",
         "auteur": "Clapsus",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Agriculture Chlef 3.jpg",
         "auteur": "Knight of honor",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "El oued crop pivots.jpg",
         "auteur": "NASA",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       },
       {
         "titre": "Plaine du gri.jpg",
         "auteur": "Timici",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -495,6 +528,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "La réponse publique — barrages, transferts, unités de dessalement de grande capacité — porte sur l'offre. L'hydro-rétention agit sur la demande, à la parcelle."
       ],
       "photo": 3
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
     },
     "usages": {
       "kicker": "OÙ PART L'EAU",
@@ -749,7 +804,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "Office national des statistiques (ONS) : comptes nationaux, production agricole.",
       "Ministère de l'Agriculture et du Développement rural : statistiques agricoles.",
       "Douanes algériennes : importations de céréales, de lait et de produits alimentaires.",
-      "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI)."
+      "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI).",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
     ],
     "closing": {
       "title": "Dites-nous votre parcelle",
@@ -761,9 +818,40 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "arabie-saoudite",
     "locale": "ar-SA",
     "langue": "ar",
-    "pdf": null,
-    "photos": 0,
-    "credits": null,
+    "pdf": "/documents/countries/arabie-saoudite.pdf",
+    "photos": 5,
+    "credits": [
+      {
+        "titre": "Palmeraie irriguée — concept Al-Ahsa",
+        "auteur": "Green Solutions / OpenAI",
+        "licence": "Illustration conceptuelle, septembre 2026",
+        "source": "conceptual"
+      },
+      {
+        "titre": "Pivot et blé en milieu aride — concept Al-Jawf",
+        "auteur": "Green Solutions / OpenAI",
+        "licence": "Illustration conceptuelle, septembre 2026",
+        "source": "conceptual"
+      },
+      {
+        "titre": "Serre maraîchère de précision — concept saoudien",
+        "auteur": "Green Solutions / OpenAI",
+        "licence": "Illustration conceptuelle, septembre 2026",
+        "source": "conceptual"
+      },
+      {
+        "titre": "Essai comparatif de maïs en zone aride — concept",
+        "auteur": "Green Solutions / OpenAI",
+        "licence": "Illustration conceptuelle, septembre 2026",
+        "source": "conceptual"
+      },
+      {
+        "titre": "Oliveraie irriguée — concept Al-Jawf",
+        "auteur": "Green Solutions / OpenAI",
+        "licence": "Illustration conceptuelle, septembre 2026",
+        "source": "conceptual"
+      }
+    ],
     "cover": {
       "eyebrow": "ملف السوق الزراعي",
       "title": "المملكة العربية السعودية",
@@ -806,6 +894,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "تحلية المياه تغطي الشرب بأكثر من 5 ملايين متر مكعب يومياً، لكن كلفتها تستبعدها للري. هذه معالجة لجانب العرض؛ أما احتباس الماء في التربة فيعمل على الطلب، عند الجذر."
       ],
       "photo": 3
+    },
+    "stress": {
+      "kicker": "الجفاف والإجهاد المائي",
+      "title": "الضغط يتزايد، لكن المخاطر تبقى محلية",
+      "type": "bar",
+      "series": [
+        {
+          "name": "مؤشر عالمي لعدد فترات الجفاف ومدتها",
+          "labels": [
+            "1980–1999",
+            "منذ 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "مؤشران مختلفان",
+        "body": "عالمياً، ارتفع عدد فترات الجفاف ومدتها بنسبة 29٪ منذ عام 2000 مقارنة بالعقدين السابقين.\n\nأما الإجهاد المائي فيقيس نسبة السحب إلى الموارد المتجددة المتاحة بعد الاحتياجات البيئية. لذلك لا تمثل هذه الإشارة العالمية توقعاً خاصاً بالدولة، بل يجب قراءتها مع الأمطار والمياه الجوفية والمواسم والاستخدامات المحلية."
+      }
     },
     "usages": {
       "kicker": "أين يذهب الماء",
@@ -892,7 +1002,7 @@ export const DOSSIERS: Record<string, Dossier> = {
           "يدفع المركز الوطني للنخيل والتمور نحو الجودة والتصدير: كل تحسّن في انتظام الثمار قيمة مباشرة.",
           "وضع الحابس للماء عند غرس الفسائل أو حول جذور النخيل القائم يطيل توافر الماء بين الريّات."
         ],
-        "photo": 1
+        "photo": 0
       },
       {
         "kicker": "القطاع الثاني",
@@ -905,7 +1015,7 @@ export const DOSSIERS: Record<string, Dossier> = {
           "الخضروات من أكثر المحاصيل استجابة: من 30 إلى 50 % زيادة متوقعة في محصول الطماطم.",
           "‏NAPEMA® يعالج الآفات دون متبقيات، وهو شرط في سلاسل التجزئة الكبرى والتصدير."
         ],
-        "photo": 0
+        "photo": 2
       }
     ],
     "solutions": {
@@ -984,7 +1094,7 @@ export const DOSSIERS: Record<string, Dossier> = {
             "انخفاض متواصل في منسوب الآبار بعد أن كانت العيون تتدفق من تلقائها.",
             "زحف الرمال وارتفاع ملوحة التربة يستدعيان حلاً يعمل عند الجذر مباشرة."
           ],
-          "photo": 1
+          "photo": 0
         },
         {
           "head": "القصيم",
@@ -994,7 +1104,7 @@ export const DOSSIERS: Record<string, Dossier> = {
             "مزارع تجارية كبيرة قادرة على اتخاذ قرار سريع بشأن تجربة ميدانية.",
             "بريدة سوق تمور مرجعية: نتيجة تجربة واحدة تنتشر بسرعة بين المزارعين."
           ],
-          "photo": 4
+          "photo": 1
         },
         {
           "head": "عسير",
@@ -1004,7 +1114,7 @@ export const DOSSIERS: Record<string, Dossier> = {
             "الأمطار موسمية وغير منتظمة: الاحتفاظ بها في التربة هو المسألة الأساسية.",
             "محاصيل عالية القيمة — البن العربي والفواكه — تبرّر كلفة التدخل."
           ],
-          "photo": 2
+          "photo": 4
         }
       ]
     },
@@ -1058,7 +1168,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "الهيئة العامة للإحصاء: الناتج المحلي حسب النشاط والإحصاءات الزراعية.",
       "وزارة البيئة والمياه والزراعة: الاستراتيجية الوطنية للأمن الغذائي ونسب الاكتفاء الذاتي.",
       "المركز الوطني للنخيل والتمور: أعداد النخيل وصادرات التمور.",
-      "منظمة الأغذية والزراعة (FAOSTAT وAQUASTAT) والبنك الدولي (WDI)."
+      "منظمة الأغذية والزراعة (FAOSTAT وAQUASTAT) والبنك الدولي (WDI).",
+      "اتفاقية الأمم المتحدة لمكافحة التصحر، الجفاف بالأرقام 2022: ارتفاع عدد فترات الجفاف ومدتها 29٪ منذ 2000 مقارنة بـ1980–1999.",
+      "الأمم المتحدة للمياه / أكواستات الفاو، مؤشر الهدف 6.4.2: تعريف الإجهاد المائي وحدوده."
     ],
     "closing": {
       "title": "أخبرنا عن أرضك",
@@ -1076,7 +1188,8 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Soja en Siembra Directa sobre rastrojo de Sorgo Granífero (cropped).jpg",
         "auteur": "Maggilautaro",
-        "licence": "CC BY 3.0"
+        "licence": "CC BY 3.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -1121,6 +1234,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "La respuesta pública trabaja sobre la oferta — embalses, revestimiento de canales, riego tecnificado. La hidro-retención actúa sobre la demanda, en el lote."
       ],
       "photo": 3
+    },
+    "stress": {
+      "kicker": "SEQUÍA Y ESTRÉS HÍDRICO",
+      "title": "La presión aumenta, pero el riesgo sigue siendo local",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Índice mundial del número y duración de las sequías",
+          "labels": [
+            "1980–1999",
+            "Desde 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Dos indicadores, no un atajo",
+        "body": "A escala mundial, el número y la duración de las sequías han aumentado un 29 % desde 2000 frente a las dos décadas anteriores.\n\nEl estrés hídrico mide otra cosa: las extracciones respecto a los recursos renovables disponibles tras las necesidades ambientales. Esta señal mundial no es una previsión nacional; debe leerse con la lluvia, los acuíferos, las estaciones y los usos locales."
+      }
     },
     "usages": {
       "kicker": "ADÓNDE VA EL AGUA",
@@ -1375,7 +1510,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "INDEC: comercio exterior y cuentas nacionales.",
       "Bolsa de Cereales de Buenos Aires y Bolsa de Comercio de Rosario: campañas y sequía 2022/23.",
       "Instituto Nacional de Vitivinicultura (INV): superficie y elaboración por provincia.",
-      "FAO (FAOSTAT, AQUASTAT) y Banco Mundial (WDI)."
+      "FAO (FAOSTAT, AQUASTAT) y Banco Mundial (WDI).",
+      "UNCCD, Drought in Numbers 2022: número y duración de las sequías, +29 % desde 2000 frente a 1980–1999.",
+      "ONU-Agua / FAO AQUASTAT, indicador ODS 6.4.2: definición y umbrales del estrés hídrico."
     ],
     "closing": {
       "title": "Cuéntenos cómo es su lote",
@@ -1393,47 +1530,56 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Bakweri cocoyam farmer from Cameroon.jpg",
         "auteur": "Amcaja",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Agriculture rurale.jpg",
         "auteur": "Perez Mekem",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cultivatrice camerounaise.jpg",
         "auteur": "Hnkamwa",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cultivatrice camerounaise5.jpg",
         "auteur": "Hnkamwa",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Plantation-cacao-cameroun.jpg",
         "auteur": "Barada-nikto",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "ChrisTonaldo on his harvested coacoa.jpg",
         "auteur": "CHRISTONALDO",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Plantation de thé - Ouest du Cameroun.JPG",
         "auteur": "PRA",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Rows in a tea plantation.jpg",
         "auteur": "Adesolive",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Tea farm at dawn.jpg",
         "auteur": "Adesolive",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -1478,6 +1624,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Presque toute la production est pluviale : l'enjeu n'est pas de pomper davantage, mais de garder l'eau de pluie dans la zone racinaire au moment où la plante en a besoin."
       ],
       "photo": 6
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
     },
     "usages": {
       "kicker": "OÙ PART L'EAU",
@@ -1715,7 +1883,10 @@ export const DOSSIERS: Record<string, Dossier> = {
       },
       "note": "Analyse acrylamide (laboratoire Polymex, ISO 9001, teneur inférieure à 3,0 µg/g) et screening REACH / SVHC (SGS) disponibles sur demande, ainsi que le certificat SOHISCERT valable jusqu'au 4 septembre 2027."
     },
-    "sources": null,
+    "sources": [
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
@@ -1732,17 +1903,20 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Sauzal vineyard ancient vines and grower Nivaldo Morales.jpg",
         "auteur": "Alder Yarrow",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Row upon row across gently rolling valleys, Matetic Wines, Chile (38609005014).jpg",
         "auteur": "Winniepix",
-        "licence": "CC BY 2.0"
+        "licence": "CC BY 2.0",
+        "source": "commons"
       },
       {
         "titre": "Waling through the vineyard at Bodegas RE, Casablanca Valley, Chile (27137278149).jpg",
         "auteur": "Winniepix",
-        "licence": "CC BY 2.0"
+        "licence": "CC BY 2.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -1787,6 +1961,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "La respuesta pública —embalses, revestimiento de canales, desalación en el norte— actúa sobre la oferta. La hidrorretención actúa sobre la demanda, dentro del predio."
       ],
       "photo": 3
+    },
+    "stress": {
+      "kicker": "SEQUÍA Y ESTRÉS HÍDRICO",
+      "title": "La presión aumenta, pero el riesgo sigue siendo local",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Índice mundial del número y duración de las sequías",
+          "labels": [
+            "1980–1999",
+            "Desde 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Dos indicadores, no un atajo",
+        "body": "A escala mundial, el número y la duración de las sequías han aumentado un 29 % desde 2000 frente a las dos décadas anteriores.\n\nEl estrés hídrico mide otra cosa: las extracciones respecto a los recursos renovables disponibles tras las necesidades ambientales. Esta señal mundial no es una previsión nacional; debe leerse con la lluvia, los acuíferos, las estaciones y los usos locales."
+      }
     },
     "usages": {
       "kicker": "ADÓNDE VA EL AGUA",
@@ -2037,7 +2233,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "Banco Central de Chile: cuentas nacionales y exportaciones.",
       "ODEPA: boletines de exportaciones silvoagropecuarias y de fruta fresca.",
       "Dirección General de Aguas: Código de Aguas y decretos de escasez hídrica.",
-      "FAO (FAOSTAT, AQUASTAT) y Banco Mundial (WDI)."
+      "FAO (FAOSTAT, AQUASTAT) y Banco Mundial (WDI).",
+      "UNCCD, Drought in Numbers 2022: número y duración de las sequías, +29 % desde 2000 frente a 1980–1999.",
+      "ONU-Agua / FAO AQUASTAT, indicador ODS 6.4.2: definición y umbrales del estrés hídrico."
     ],
     "closing": {
       "title": "Cuéntenos cómo es su predio",
@@ -2055,57 +2253,68 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Cacao San Pedro Grand Bereby La Flotte.jpg",
         "auteur": "GillesJer",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cacao fruit in Côte d'Ivoire (14).JPG",
         "auteur": "Hanay",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cultivateurs de cacao.jpg",
         "auteur": "KokoDZ",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cultivateur de cacao 01.jpg",
         "auteur": "KokoDZ",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cacao fruit in Côte d'Ivoire (16).JPG",
         "auteur": "Hanay",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cultivateur de manioc 1.jpg",
         "auteur": "Metchyves",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Planting corn in Ivory coast.jpg",
         "auteur": "Pedro Radio Brandoni",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Emballage de Cacao.jpg",
         "auteur": "Abdallahbigboy",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cultivateur de cacao 02.jpg",
         "auteur": "KokoDZ",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cacao fruit in Côte d'Ivoire (11).JPG",
         "auteur": "Hanay",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Cultivateur de cacao 04.jpg",
         "auteur": "KokoDZ",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -2150,6 +2359,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Presque toute la production est pluviale. L'enjeu n'est pas de pomper davantage, mais de garder l'eau de pluie dans la zone racinaire au moment où la plante en a besoin."
       ],
       "photo": 4
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
     },
     "usages": {
       "kicker": "OÙ PART L'EAU",
@@ -2404,7 +2635,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "Conseil du Café-Cacao et Conseil Coton-Anacarde : production, campagnes, prix garantis.",
       "Ministère de l'Agriculture, ANADER et FIRCA : statistiques agricoles et programmes de filière.",
       "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI) : PIB agricole, emploi, prélèvements d'eau.",
-      "USDA GAIN et ICCO : cacao, café, riz et échanges mondiaux."
+      "USDA GAIN et ICCO : cacao, café, riz et échanges mondiaux.",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
     ],
     "closing": {
       "title": "Dites-nous votre parcelle",
@@ -2422,27 +2655,32 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Croatia agriculture-1.jpg",
         "auteur": "Beyond silence",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       },
       {
         "titre": "Croatia agriculture-3.jpg",
         "auteur": "László Szalai (Beyond silence)",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       },
       {
         "titre": "Croatia agriculture-4.jpg",
         "auteur": "László Szalai (Beyond silence)",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       },
       {
         "titre": "Croatia agriculture-5.jpg",
         "auteur": "László Szalai (Beyond silence)",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       },
       {
         "titre": "Vineyards of Istria (Croatia).jpg",
         "auteur": "Petar Milošević",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -2487,6 +2725,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Javni odgovor — sustavi navodnjavanja, akumulacije, sredstva EU za ruralni razvoj — gradi ponudu, a traje godinama. Hidroretencija djeluje odmah, unutar same parcele."
       ],
       "photo": 2
+    },
+    "stress": {
+      "kicker": "SUŠA I VODNI STRES",
+      "title": "Pritisak raste, ali rizik ostaje lokalan",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Globalni indeks broja i trajanja suša",
+          "labels": [
+            "1980.–1999.",
+            "Od 2000."
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Dva različita pokazatelja",
+        "body": "Globalno su broj i trajanje suša od 2000. porasli 29% u odnosu na prethodna dva desetljeća.\n\nVodni stres mjeri nešto drugo: zahvaćanje vode kao udio obnovljivih resursa nakon okolišnih potreba. Taj globalni signal nije prognoza za pojedinu državu; mora se čitati uz lokalne oborine, vodonosnike, sezone i načine uporabe."
+      }
     },
     "usages": {
       "kicker": "KAMO ODLAZI VODA",
@@ -2741,7 +3001,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "Državni zavod za statistiku: biljna proizvodnja i poljoprivredna gospodarstva.",
       "Ministarstvo poljoprivrede: Nacionalni projekt navodnjavanja i gospodarenja zemljištem i vodama.",
       "Eurostat: struktura poljoprivrednih gospodarstava, vanjska trgovina hranom.",
-      "FAO (FAOSTAT, AQUASTAT) i Svjetska banka (WDI)."
+      "FAO (FAOSTAT, AQUASTAT) i Svjetska banka (WDI).",
+      "UNCCD, Drought in Numbers 2022: broj i trajanje suša, +29% od 2000. u odnosu na 1980.–1999.",
+      "UN-Water / FAO AQUASTAT, pokazatelj SDG 6.4.2: definicija i pragovi vodnog stresa."
     ],
     "closing": {
       "title": "Recite nam kakvo je vaše gospodarstvo",
@@ -2759,12 +3021,14 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Agricultural Farmland (1).jpg",
         "auteur": "Myousry6666",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Agricultural Farmland (4).jpg",
         "auteur": "Myousry6666",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -2809,6 +3073,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "المشروعات العامة — تبطين الترع، إعادة استخدام مياه الصرف، التحلية — تعالج جانب العرض. احتباس الماء في التربة يعمل على جانب الطلب، داخل الحقل نفسه."
       ],
       "photo": 3
+    },
+    "stress": {
+      "kicker": "الجفاف والإجهاد المائي",
+      "title": "الضغط يتزايد، لكن المخاطر تبقى محلية",
+      "type": "bar",
+      "series": [
+        {
+          "name": "مؤشر عالمي لعدد فترات الجفاف ومدتها",
+          "labels": [
+            "1980–1999",
+            "منذ 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "مؤشران مختلفان",
+        "body": "عالمياً، ارتفع عدد فترات الجفاف ومدتها بنسبة 29٪ منذ عام 2000 مقارنة بالعقدين السابقين.\n\nأما الإجهاد المائي فيقيس نسبة السحب إلى الموارد المتجددة المتاحة بعد الاحتياجات البيئية. لذلك لا تمثل هذه الإشارة العالمية توقعاً خاصاً بالدولة، بل يجب قراءتها مع الأمطار والمياه الجوفية والمواسم والاستخدامات المحلية."
+      }
     },
     "usages": {
       "kicker": "أين تذهب المياه",
@@ -3059,7 +3345,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "الجهاز المركزي للتعبئة العامة والإحصاء: السكان والإنتاج الزراعي والتجارة الخارجية.",
       "وزارة الزراعة واستصلاح الأراضي: إحصاءات الصادرات الزراعية.",
       "وزارة الموارد المائية والري: الخطة القومية للموارد المائية.",
-      "منظمة الأغذية والزراعة (FAOSTAT وAQUASTAT) والبنك الدولي (WDI)."
+      "منظمة الأغذية والزراعة (FAOSTAT وAQUASTAT) والبنك الدولي (WDI).",
+      "اتفاقية الأمم المتحدة لمكافحة التصحر، الجفاف بالأرقام 2022: ارتفاع عدد فترات الجفاف ومدتها 29٪ منذ 2000 مقارنة بـ1980–1999.",
+      "الأمم المتحدة للمياه / أكواستات الفاو، مؤشر الهدف 6.4.2: تعريف الإجهاد المائي وحدوده."
     ],
     "closing": {
       "title": "احكِ لنا عن أرضك",
@@ -3077,22 +3365,26 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Fields in Spring, Montferri.jpg",
         "auteur": "Galimatiasgg",
-        "licence": "CC0"
+        "licence": "CC0",
+        "source": "commons"
       },
       {
         "titre": "Olive trees almond trees near Arenas del Rey, Andalusia, Spain.jpg",
         "auteur": "Jebulon",
-        "licence": "CC0"
+        "licence": "CC0",
+        "source": "commons"
       },
       {
         "titre": "OrangeTreesPicassent.jpg",
         "auteur": "Raul2009",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Agricultura a la Ribera - 39.jpeg",
         "auteur": "User:Coentor",
-        "licence": "CC BY-SA 1.0"
+        "licence": "CC BY-SA 1.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -3137,6 +3429,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "La respuesta pública —desalación, regeneración, modernización de regadíos, trasvases— actúa sobre la oferta. La hidrorretención actúa sobre la demanda, dentro de la parcela."
       ],
       "photo": 2
+    },
+    "stress": {
+      "kicker": "SEQUÍA Y ESTRÉS HÍDRICO",
+      "title": "La presión aumenta, pero el riesgo sigue siendo local",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Índice mundial del número y duración de las sequías",
+          "labels": [
+            "1980–1999",
+            "Desde 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Dos indicadores, no un atajo",
+        "body": "A escala mundial, el número y la duración de las sequías han aumentado un 29 % desde 2000 frente a las dos décadas anteriores.\n\nEl estrés hídrico mide otra cosa: las extracciones respecto a los recursos renovables disponibles tras las necesidades ambientales. Esta señal mundial no es una previsión nacional; debe leerse con la lluvia, los acuíferos, las estaciones y los usos locales."
+      }
     },
     "usages": {
       "kicker": "ADÓNDE VA EL AGUA",
@@ -3391,7 +3705,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "INE: Contabilidad Nacional y Encuesta de Población Activa.",
       "Ministerio de Agricultura, Pesca y Alimentación: ESYRCE, anuario de estadística, comercio exterior agroalimentario.",
       "Confederaciones Hidrográficas del Guadalquivir y del Segura: dotaciones de riego.",
-      "FAO (FAOSTAT, AQUASTAT) y Banco Mundial (WDI)."
+      "FAO (FAOSTAT, AQUASTAT) y Banco Mundial (WDI).",
+      "UNCCD, Drought in Numbers 2022: número y duración de las sequías, +29 % desde 2000 frente a 1980–1999.",
+      "ONU-Agua / FAO AQUASTAT, indicador ODS 6.4.2: definición y umbrales del estrés hídrico."
     ],
     "closing": {
       "title": "Cuéntenos cómo es su finca",
@@ -3409,22 +3725,26 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Plantation de feuilles de manioc.jpg",
         "auteur": "Estrella230",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Plantation d' une université.jpg",
         "auteur": "Estrella230",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Plantation de cannes à sucre.jpg",
         "auteur": "Estrella230",
-        "licence": "CC BY 4.0"
+        "licence": "CC BY 4.0",
+        "source": "commons"
       },
       {
         "titre": "Plantation au quartier Melen.jpg",
         "auteur": "Estrella230",
-        "licence": "CC BY 4.0"
+        "licence": "CC BY 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -3469,6 +3789,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "La contrainte n'est donc pas le volume d'eau reçu, mais sa disponibilité dans la zone racinaire au moment où la plante en a besoin. C'est précisément ce que corrige l'hydro-rétention."
       ],
       "photo": 2
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
     },
     "usages": {
       "kicker": "OÙ PART L'EAU",
@@ -3723,7 +4065,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "Direction générale de la statistique : comptes nationaux, commerce extérieur.",
       "Ministère de l'Agriculture : programme GRAINE, statistiques agricoles.",
       "Banque africaine de développement : profil agricole du Gabon.",
-      "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI)."
+      "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI).",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
     ],
     "closing": {
       "title": "Dites-nous votre parcelle",
@@ -3741,47 +4085,56 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Lavandula fields.jpg",
         "auteur": "Neptuul",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Corfu olive grove bgiu.jpg",
         "auteur": "Bogdan Giuşcă",
-        "licence": "CC BY-SA 2.5"
+        "licence": "CC BY-SA 2.5",
+        "source": "commons"
       },
       {
         "titre": "1.The olive grove.jpg",
         "auteur": "Freideriki Dionysopoulou",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "10. Rainbow in olive grove.jpg",
         "auteur": "Freideriki Dionysopoulou",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Olive Grove (158100468).jpg",
         "auteur": "Alastair Rae from London, United Kingdom",
-        "licence": "CC BY-SA 2.0"
+        "licence": "CC BY-SA 2.0",
+        "source": "commons"
       },
       {
         "titre": "Olive grove - panoramio.jpg",
         "auteur": "vitsoft",
-        "licence": "CC BY 3.0"
+        "licence": "CC BY 3.0",
+        "source": "commons"
       },
       {
         "titre": "Keri Peninsula with olive groves and view into Keri Bay.jpg",
         "auteur": "Jimzoun",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Olive grove with grazing sheep - panoramio.jpg",
         "auteur": "macrolepis",
-        "licence": "CC BY 3.0"
+        "licence": "CC BY 3.0",
+        "source": "commons"
       },
       {
         "titre": "Olive grove, Amoudi IMG 6928 - panoramio.jpg",
         "auteur": "Paul Lakin",
-        "licence": "CC BY 3.0"
+        "licence": "CC BY 3.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -3826,6 +4179,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Τα έργα αποθήκευσης και επαναχρησιμοποίησης νερού δρουν στην προσφορά· η συγκράτηση νερού στο έδαφος δρα στη ζήτηση, στη ρίζα."
       ],
       "photo": 2
+    },
+    "stress": {
+      "kicker": "ΞΗΡΑΣΙΑ ΚΑΙ ΥΔΑΤΙΚΗ ΠΙΕΣΗ",
+      "title": "Η πίεση αυξάνεται, αλλά ο κίνδυνος παραμένει τοπικός",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Παγκόσμιος δείκτης αριθμού και διάρκειας ξηρασιών",
+          "labels": [
+            "1980–1999",
+            "Από το 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Δύο διαφορετικοί δείκτες",
+        "body": "Παγκοσμίως, ο αριθμός και η διάρκεια των ξηρασιών αυξήθηκαν κατά 29% από το 2000 σε σύγκριση με τις δύο προηγούμενες δεκαετίες.\n\nΗ υδατική πίεση μετρά κάτι διαφορετικό: τις απολήψεις ως ποσοστό των ανανεώσιμων πόρων μετά τις περιβαλλοντικές ανάγκες. Το παγκόσμιο σήμα δεν είναι εθνική πρόβλεψη· διαβάζεται μαζί με τις τοπικές βροχές, τους υδροφορείς, τις εποχές και τις χρήσεις."
+      }
     },
     "usages": {
       "kicker": "ΠΟΥ ΠΗΓΑΙΝΕΙ ΤΟ ΝΕΡΟ",
@@ -4057,7 +4432,10 @@ export const DOSSIERS: Record<string, Dossier> = {
       },
       "note": "Ανάλυση ακρυλαμιδίου (εργαστήριο Polymex, ISO 9001, περιεκτικότητα κάτω από 3,0 µg/g) και έλεγχος REACH / SVHC (SGS) διαθέσιμα κατόπιν αιτήματος, μαζί με το πιστοποιητικό SOHISCERT σε ισχύ έως τις 4 Σεπτεμβρίου 2027."
     },
-    "sources": null,
+    "sources": [
+      "UNCCD, Drought in Numbers 2022: αριθμός και διάρκεια ξηρασιών, +29% από το 2000 έναντι 1980–1999.",
+      "UN-Water / FAO AQUASTAT, δείκτης ΣΒΑ 6.4.2: ορισμός και όρια υδατικής πίεσης."
+    ],
     "closing": {
       "title": "Πείτε μας για το χωράφι σας",
       "body": "Καλλιέργεια, μέθοδος άρδευσης, τύπος εδάφους, όγκος νερού που χρησιμοποιείτε σήμερα. Επιστρέφουμε με τον κατάλληλο συνδυασμό τεχνολογιών, τις δόσεις και τις δοκιμές που έχουν ήδη γίνει σε παρόμοιες συνθήκες.\n\nΜια πρώτη συζήτηση δεν σας δεσμεύει σε τίποτα.",
@@ -4074,17 +4452,20 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Fish Farm (5683723189).jpg",
         "auteur": "USAID U.S. Agency for International Development",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       },
       {
         "titre": "Agriculture Training Center (5683690897).jpg",
         "auteur": "USAID U.S. Agency for International Development",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       },
       {
         "titre": "Mountainous Farming Plots Haiti.jpg",
         "auteur": "Jlanghurst",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -4129,6 +4510,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Les cyclones et tempêtes tropicales détruisent régulièrement les récoltes et aggravent le décapage des sols sur les parcelles les plus exposées."
       ],
       "photo": 1
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
     },
     "usages": {
       "kicker": "OÙ PART L'EAU",
@@ -4383,7 +4786,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "Institut haïtien de statistique et d'informatique (IHSI) : comptes nationaux.",
       "Coordination nationale de la sécurité alimentaire (CNSA) et analyses IPC.",
       "Ministère de l'Agriculture, des Ressources naturelles et du Développement rural (MARNDR).",
-      "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI)."
+      "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI).",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
     ],
     "closing": {
       "title": "Dites-nous votre parcelle",
@@ -4401,12 +4806,14 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Farm, Al-Hisn, Jordan.jpg",
         "auteur": "User:Issagm",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Irbid Farm 2026.jpg",
         "auteur": "Omarbrodsd",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -4451,6 +4858,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "الاستجابة الرسمية — ناقل مياه العقبة وإعادة استخدام أكثر من 90 % من مياه الصرف المعالجة في الري — تعالج جانب العرض. الاحتفاظ بالماء في التربة يعمل على جانب الطلب، داخل الحقل نفسه."
       ],
       "photo": 3
+    },
+    "stress": {
+      "kicker": "الجفاف والإجهاد المائي",
+      "title": "الضغط يتزايد، لكن المخاطر تبقى محلية",
+      "type": "bar",
+      "series": [
+        {
+          "name": "مؤشر عالمي لعدد فترات الجفاف ومدتها",
+          "labels": [
+            "1980–1999",
+            "منذ 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "مؤشران مختلفان",
+        "body": "عالمياً، ارتفع عدد فترات الجفاف ومدتها بنسبة 29٪ منذ عام 2000 مقارنة بالعقدين السابقين.\n\nأما الإجهاد المائي فيقيس نسبة السحب إلى الموارد المتجددة المتاحة بعد الاحتياجات البيئية. لذلك لا تمثل هذه الإشارة العالمية توقعاً خاصاً بالدولة، بل يجب قراءتها مع الأمطار والمياه الجوفية والمواسم والاستخدامات المحلية."
+      }
     },
     "usages": {
       "kicker": "أين تذهب المياه",
@@ -4701,12 +5130,312 @@ export const DOSSIERS: Record<string, Dossier> = {
       "دائرة الإحصاءات العامة: الناتج المحلي الإجمالي والمسوح الزراعية.",
       "وزارة الزراعة: الاستراتيجية الوطنية للتنمية الزراعية وإحصاءات الزيتون.",
       "وزارة المياه والري وسلطة وادي الأردن: الاستراتيجية الوطنية للمياه وحصص الري.",
-      "منظمة الأغذية والزراعة (FAOSTAT وAQUASTAT) والبنك الدولي (WDI)."
+      "منظمة الأغذية والزراعة (FAOSTAT وAQUASTAT) والبنك الدولي (WDI).",
+      "اتفاقية الأمم المتحدة لمكافحة التصحر، الجفاف بالأرقام 2022: ارتفاع عدد فترات الجفاف ومدتها 29٪ منذ 2000 مقارنة بـ1980–1999.",
+      "الأمم المتحدة للمياه / أكواستات الفاو، مؤشر الهدف 6.4.2: تعريف الإجهاد المائي وحدوده."
     ],
     "closing": {
       "title": "حدّثونا عن قطعتكم",
       "body": "المحصول، وأسلوب الري، وطبيعة التربة، وحجم المياه المستهلك اليوم. نعود إليكم بتركيبة التقنيات المناسبة، والجرعات، والتجارب التي أُجريت في أوضاع مشابهة.\n\nالتواصل الأول لا يرتّب أي التزام.",
       "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
+    }
+  },
+  "madagascar": {
+    "slug": "madagascar",
+    "locale": "fr-MG",
+    "langue": "fr",
+    "pdf": "/documents/countries/madagascar.pdf",
+    "photos": 5,
+    "credits": [
+      {
+        "titre": "Rice paddies in Madagascar.jpg",
+        "auteur": "Luc Legay",
+        "licence": "CC BY-SA 2.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Madagascar CNFPAR.jpg",
+        "auteur": "Smegrandria",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Baobab and rice field.jpg",
+        "auteur": "Zigomar",
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Produits agroécologiques, Ankazobe Madagascar.jpg",
+        "auteur": "Cactus0625",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Village Sunrise, Madagascar.jpg",
+        "auteur": "Rod Waddington",
+        "licence": "CC BY-SA 2.0",
+        "source": "commons"
+      }
+    ],
+    "cover": {
+      "eyebrow": "DOSSIER DE MARCHÉ",
+      "title": "Madagascar",
+      "officiel": "RÉPUBLIQUE DE MADAGASCAR",
+      "lieu": "Antananarivo · 2026",
+      "subtitle": "Riz des Hautes Terres, cultures vivrières du Grand Sud et filières de valeur exposées à des chocs climatiques très contrastés.\nCe que la rétention d’eau change quand la moyenne nationale masque les crises locales."
+    },
+    "chiffres": {
+      "kicker": "LE PAYS EN BREF",
+      "title": "Une agriculture pluviale, vitale et très exposée",
+      "items": [
+        {
+          "value": "31,2 M",
+          "label": "d’habitants"
+        },
+        {
+          "value": "1,7 M",
+          "label": "de personnes en forte insécurité alimentaire aiguë"
+        },
+        {
+          "value": "11,3 %",
+          "label": "de stress hydrique national en 2022"
+        },
+        {
+          "value": "≈ 40 %",
+          "label": "des enfants touchés par la malnutrition chronique"
+        }
+      ],
+      "note": "Le stress hydrique national reste inférieur aux seuils élevés, mais cette moyenne ne décrit ni les sécheresses récurrentes du Sud, ni les déficits saisonniers, ni la dépendance d’une grande partie des exploitations aux pluies. Les chiffres alimentaires sont ceux du Programme alimentaire mondial ; l’indicateur d’eau vient de la Banque mondiale et de FAO AQUASTAT."
+    },
+    "contrainte": {
+      "kicker": "LA CONTRAINTE",
+      "title": "Trop peu d’eau au Sud, parfois trop d’eau à l’Est",
+      "caption": "Travail du sol dans une exploitation malgache",
+      "bullets": [
+        "Le Sud est régulièrement touché par la sécheresse, tandis que le Sud-Est subit cyclones et inondations récurrents : le même pays doit gérer le manque et l’excès d’eau.",
+        "Une grande part de la production dépend directement de la pluie ; une rupture au semis ou à la floraison devient rapidement une perte de récolte.",
+        "Sur les Hautes Terres, les rizières retiennent l’eau mais les cultures de contre-saison et les pépinières restent exposées aux tours d’eau irréguliers.",
+        "Dans le Grand Sud, sols pauvres, vent et évaporation réduisent la réserve utile autour des racines.",
+        "L’enjeu n’est pas de remplacer l’irrigation : il est de sécuriser la zone racinaire et de mesurer l’effet sur une parcelle témoin conduite à l’identique."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": {
+      "kicker": "LIRE LE STRESS HYDRIQUE",
+      "title": "Une moyenne nationale basse peut cacher un risque local fort",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Part des ressources renouvelables prélevée (%)",
+          "labels": [
+            "Madagascar, 2022",
+            "Seuil de stress faible",
+            "Seuil de stress élevé"
+          ],
+          "values": [
+            11.3,
+            25,
+            75
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Ce que cela implique",
+        "body": "L’indicateur ODD 6.4.2 place Madagascar sous 25 % au niveau national. Il ne mesure toutefois ni la répartition géographique, ni la saison, ni une sécheresse météorologique.\n\nLes essais doivent donc être ciblés par bassin, culture et calendrier, en priorité là où les racines manquent réellement d’eau."
+      }
+    },
+    "economie": {
+      "kicker": "SÉCURITÉ ALIMENTAIRE",
+      "title": "La résilience agricole est un enjeu économique immédiat",
+      "items": [
+        {
+          "value": "31,2 M",
+          "label": "d’habitants"
+        },
+        {
+          "value": "1,7 M",
+          "label": "de personnes en forte insécurité alimentaire aiguë"
+        },
+        {
+          "value": "102 000",
+          "label": "petits producteurs accompagnés par le PAM"
+        },
+        {
+          "value": "57",
+          "label": "sites communautaires nutritionnels soutenus par le PAM"
+        }
+      ],
+      "note": "Le Programme alimentaire mondial relie l’insécurité alimentaire à la dépendance aux pluies, à la faible diversification et à l’intensification des chocs climatiques. L’opportunité commerciale doit donc être construite avec un protocole abordable et une preuve économique locale."
+    },
+    "productions": null,
+    "filieres": [
+      {
+        "kicker": "FILIÈRE PRIORITAIRE",
+        "title": "Riz : sécuriser les stades sensibles, pas promettre l’impossible",
+        "caption": null,
+        "bullets": [
+          "Le riz structure les paysages, l’alimentation et le revenu de nombreuses exploitations des Hautes Terres.",
+          "L’hydro-rétention n’a pas vocation à remplacer la submersion d’une rizière correctement alimentée.",
+          "Les cibles pertinentes sont les pépinières, le repiquage, les bordures drainantes et les cultures de contre-saison.",
+          "Le protocole doit séparer survie des plants, fréquence d’arrosage, rendement et coût de main-d’œuvre.",
+          "Une belle parcelle ne suffit pas : seule la comparaison avec un témoin permet de conclure."
+        ],
+        "photo": 0
+      },
+      {
+        "kicker": "FILIÈRE RÉSILIENCE",
+        "title": "Grand Sud : protéger la levée et la réserve racinaire",
+        "caption": null,
+        "bullets": [
+          "Maïs, manioc et légumineuses subissent les pauses de pluie et des sols à faible réserve utile.",
+          "Le premier objectif d’essai est la régularité de levée et la survie jusqu’à l’enracinement.",
+          "EVERGREEN® ou ECOSORB® sont évalués avec WATER VITAL®, ECOFERT® et NAPEMA® seulement si le diagnostic le justifie.",
+          "La synergie attendue doit être décomposée : eau, nutrition, protection sanitaire et coût total.",
+          "Le prix et la rentabilité restent des champs ouverts, à compléter avec les équipes et les producteurs."
+        ],
+        "photo": 4
+      }
+    ],
+    "solutions": {
+      "kicker": "NOTRE RÉPONSE",
+      "title": "Une combinaison à tester, pas une promesse isolée",
+      "left": {
+        "head": "EVERGREEN® / ECOSORB® — retenir près des racines",
+        "lines": [
+          "Hydro-rétenteur à base de potassium placé dans la zone racinaire au semis, à la plantation ou au repiquage.",
+          "Capte une partie de la pluie ou de l’irrigation et la restitue progressivement pendant les intervalles secs.",
+          "WATER VITAL® intervient sur la qualité et la disponibilité de l’eau lorsque l’analyse du site le justifie.",
+          "Le protocole compare toujours une parcelle traitée et une parcelle témoin conduites avec la même eau et le même calendrier."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® / NAPEMA® — nourrir et protéger",
+        "lines": [
+          "ECOFERT® apporte une nutrition en microdose, sans présenter l’effet de l’hydro-rétenteur comme un substitut à la fertilité.",
+          "NAPEMA® complète le dispositif lorsque ravageurs ou maladies limitent le potentiel de la culture.",
+          "L’intérêt recherché est synergique : eau disponible, nutrition adaptée et protection cohérente au même stade cultural.",
+          "Le rendement, la consommation d’eau et la marge sont mesurés séparément avant toute généralisation."
+        ]
+      },
+      "note": "Le choix des produits et leur dosage restent conditionnés par l’analyse de sol, la qualité de l’eau, la culture et un essai local. Aucun gain de rendement ou d’économie n’est garanti avant mesure sur le terrain."
+    },
+    "economies": null,
+    "regions": {
+      "kicker": "TROIS TERRAINS PRIORITAIRES",
+      "title": "Où engager les premiers essais comparatifs",
+      "items": [
+        {
+          "head": "Hautes Terres",
+          "metric": "Riz et contre-saison",
+          "lines": [
+            "Rizières en terrasses autour d’Antananarivo et d’Antsirabe.",
+            "Cibler pépinières, repiquage et cultures de contre-saison plutôt que promettre un gain sur riz submergé.",
+            "Mesurer reprise, fréquence des tours d’eau et rendement marchand."
+          ],
+          "photo": 0
+        },
+        {
+          "head": "Grand Sud",
+          "metric": "Maïs, manioc, légumineuses",
+          "lines": [
+            "Sécheresses récurrentes et forte dépendance à une saison des pluies courte.",
+            "Priorité à la levée et à l’enracinement, avec témoin et suivi de l’humidité du sol.",
+            "Associer l’essai à une conduite réaliste pour les petits producteurs."
+          ],
+          "photo": 4
+        },
+        {
+          "head": "Nord-Est et SAVA",
+          "metric": "Vanille et cultures de valeur",
+          "lines": [
+            "Forte valeur à l’hectare, mais alternance d’excès d’eau, d’érosion et de périodes sèches.",
+            "Tester sur jeunes plants et pépinières, là où une perte de plant coûte le plus.",
+            "Intégrer drainage, ombrage et protection sanitaire au protocole."
+          ],
+          "photo": 3
+        }
+      ]
+    },
+    "deploiement": {
+      "kicker": "COMMENT NOUS PROCÉDONS",
+      "title": "Un essai local, mesuré avant toute extension",
+      "items": [
+        {
+          "head": "Diagnostic",
+          "body": "Sol, eau, pluie, culture et pratiques de la parcelle sont documentés."
+        },
+        {
+          "head": "Témoin",
+          "body": "Une parcelle traitée et une parcelle témoin sont conduites à l’identique."
+        },
+        {
+          "head": "Mesure",
+          "body": "Humidité, reprise, eau apportée, rendement marchand et coûts sont relevés."
+        },
+        {
+          "head": "Décision",
+          "body": "La solution n’est étendue que si l’écart technique et économique est net."
+        }
+      ],
+      "note": "Le prix produit, la main-d’œuvre, l’eau et la valeur de la récolte restent des champs de calcul ouverts jusqu’à validation par les équipes locales."
+    },
+    "risques": {
+      "kicker": "CE QU’IL FAUT ANTICIPER",
+      "title": "Risques identifiés et réponses",
+      "left": {
+        "head": "Risques",
+        "lines": [
+          "Résultats très variables entre Hautes Terres, côte humide et Grand Sud.",
+          "Confusion possible entre sécheresse, manque d’irrigation et stress hydrique national.",
+          "Coût d’accès aux parcelles, petites superficies et suivi de mesure irrégulier.",
+          "Pression cyclonique et excès d’eau dans l’Est, où la rétention n’est pas toujours la priorité."
+        ]
+      },
+      "right": {
+        "head": "Nos réponses",
+        "lines": [
+          "Segmenter les essais par bassin, sol et culture, sans extrapoler une moyenne nationale.",
+          "Mesurer l’humidité, l’eau réellement apportée et la récolte commercialisable.",
+          "Travailler avec une organisation locale capable de tenir le protocole jusqu’à la récolte.",
+          "Exclure les parcelles mal drainées et adapter la combinaison de solutions au diagnostic."
+        ]
+      },
+      "note": "Les éléments réglementaires, certificats et fiches techniques doivent être revus avec l’importateur et les autorités malgaches avant commercialisation."
+    },
+    "sources": [
+      "Programme alimentaire mondial, page pays Madagascar : population, insécurité alimentaire, chocs climatiques et actions de résilience.",
+      "Banque mondiale, World Development Indicators, ER.H2O.FWST.ZS : stress hydrique à Madagascar, 2022.",
+      "FAO AQUASTAT et ONU-Eau : indicateur ODD 6.4.2 et limites d’interprétation à l’échelle nationale.",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Choisissons une parcelle pilote",
+      "body": "Culture, type de sol, calendrier des pluies, accès à l’eau, coût de l’irrigation et prix de vente. À partir de ces données, nous préparons un protocole simple avec témoin, critères de réussite et budget à compléter par l’équipe locale.\n\nUne première étude n’engage pas à un déploiement.",
+      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "maroc": {
@@ -4719,12 +5448,14 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "AZILAL agriculture.jpg",
         "auteur": "Hamza EL GHAZALI",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Agriculture in ASNI- TOUBKAL.jpg",
         "auteur": "Hamza EL GHAZALI",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -4769,6 +5500,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "La réponse publique — barrages, dessalement à Agadir et Casablanca, reconversion au goutte-à-goutte — traite l'offre. L'hydro-rétention agit sur la demande, à la parcelle."
       ],
       "photo": 3
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
     },
     "usages": {
       "kicker": "OÙ PART L'EAU",
@@ -5021,7 +5774,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "Haut-Commissariat au Plan (HCP) : comptes nationaux et emploi.",
       "Ministère de l'Agriculture : stratégie Génération Green, statistiques des filières.",
       "Office des changes : exportations agroalimentaires.",
-      "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI)."
+      "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI).",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
     ],
     "closing": {
       "title": "Dites-nous votre parcelle",
@@ -5039,47 +5794,56 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Jebel Akhdar – irrigation canals in Al-Ayn.jpg",
         "auteur": "albinfo",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Date palm tree irrigation.jpg",
         "auteur": "Okhtyartist",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "\"The Falaj\" - Traditional irrigation system.jpg",
         "auteur": "Altaf Habib",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "\"The Falaj\" - Traditional irrigation system 06.jpg",
         "auteur": "Altaf Habib",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Farm house, tareef - panoramio.jpg",
         "auteur": "Omar AV",
-        "licence": "CC BY 3.0"
+        "licence": "CC BY 3.0",
+        "source": "commons"
       },
       {
         "titre": "Nakhl Fort amid palm groves, Oman (3).jpg",
         "auteur": "Prof. Mortel",
-        "licence": "CC BY 2.0"
+        "licence": "CC BY 2.0",
+        "source": "commons"
       },
       {
         "titre": "Palm grove at Nakhl, Oman (2).jpg",
         "auteur": "Prof. Mortel",
-        "licence": "CC BY 2.0"
+        "licence": "CC BY 2.0",
+        "source": "commons"
       },
       {
         "titre": "Palm grove at Nakhl, Oman (6).jpg",
         "auteur": "Prof. Mortel",
-        "licence": "CC BY 2.0"
+        "licence": "CC BY 2.0",
+        "source": "commons"
       },
       {
         "titre": "Palm grove at Nakhl, Oman (1).jpg",
         "auteur": "Prof. Mortel",
-        "licence": "CC BY 2.0"
+        "licence": "CC BY 2.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -5124,6 +5888,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Desalination supplies the cities, but its cost rules it out for most irrigation. Hydro-retention works on demand, in the root zone, where every pumped cubic metre is paid for."
       ],
       "photo": 0
+    },
+    "stress": {
+      "kicker": "DROUGHT AND WATER STRESS",
+      "title": "Pressure is rising, but risk remains local",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Global index of drought number and duration",
+          "labels": [
+            "1980–1999",
+            "Since 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Two indicators, not a shortcut",
+        "body": "Worldwide, the number and duration of droughts have risen by 29% since 2000 compared with the two previous decades.\n\nWater stress measures something different: withdrawals as a share of renewable resources available after environmental needs. This global signal is therefore not a country forecast; it must be read alongside local rainfall, aquifers, seasons and uses."
+      }
     },
     "usages": {
       "kicker": "WHERE THE WATER GOES",
@@ -5359,7 +6145,10 @@ export const DOSSIERS: Record<string, Dossier> = {
       },
       "note": "Acrylamide analysis (Polymex laboratory, ISO 9001, content below 3.0 µg/g) and REACH / SVHC screening (SGS) are available on request, together with the SOHISCERT certificate valid until 4 September 2027."
     },
-    "sources": null,
+    "sources": [
+      "UNCCD, Drought in Numbers 2022: number and duration of droughts, +29% since 2000 versus 1980–1999.",
+      "UN-Water / FAO AQUASTAT, SDG indicator 6.4.2: definition and thresholds of water stress."
+    ],
     "closing": {
       "title": "Tell us about your farm",
       "body": "Crop, irrigation method, soil type, the volume of water you use today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable situations.\n\nA first conversation commits you to nothing.",
@@ -5376,32 +6165,38 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Agriculture Tradictionnelle.jpg",
         "auteur": "Abdoulaye9",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Irrigated rice cultivation in the Senegal River Valley - panoramio.jpg",
         "auteur": "Africa Rice Center",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Irrigated rice cultivation in the Senegal River Valley - panoramio (9).jpg",
         "auteur": "Africa Rice Center",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Irrigated rice cultivation in the Senegal River Valley - panoramio (14).jpg",
         "auteur": "Africa Rice Center",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Irrigated rice cultivation in the Senegal River Valley - panoramio (16).jpg",
         "auteur": "Africa Rice Center",
-        "licence": "CC BY-SA 3.0"
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
       },
       {
         "titre": "Vegetable crop production West Africa.jpg",
         "auteur": "T.K. Naliaka",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -5446,6 +6241,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Dans la vallée du fleuve, l'eau est pompée à grands frais : chaque tour d'eau économisé réduit la facture de gasoil ou d'électricité."
       ],
       "photo": 1
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
     },
     "usages": {
       "kicker": "OÙ PART L'EAU",
@@ -5683,7 +6500,10 @@ export const DOSSIERS: Record<string, Dossier> = {
       },
       "note": "Analyse acrylamide (laboratoire Polymex, ISO 9001, teneur inférieure à 3,0 µg/g) et screening REACH / SVHC (SGS) disponibles sur demande, ainsi que le certificat SOHISCERT valable jusqu'au 4 septembre 2027."
     },
-    "sources": null,
+    "sources": [
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
@@ -5700,32 +6520,38 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "Harvested grain in Mundri.jpg",
         "auteur": "Vetiverman",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "A kitchen garden next to a homestead of a South Sudanese.jpg",
         "auteur": "Lomoraronald",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "A afarmer in her farm.jpg",
         "auteur": "Kabang Bladina Gideon",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "A banana plantation.jpg",
         "auteur": "Kabang Bladina Gideon",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Women cool off after clearing the farm in South Sudan.jpg",
         "auteur": "Lomoraronald",
-        "licence": "CC BY-SA 4.0"
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
       },
       {
         "titre": "Small-scale farmers increase production (7536268172).jpg",
         "auteur": "Oxfam East Africa",
-        "licence": "CC BY 2.0"
+        "licence": "CC BY 2.0",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -5770,6 +6596,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Water retention only makes sense on well-drained, drought-exposed plots. On flood-prone land, drainage and raised planting come first."
       ],
       "photo": 4
+    },
+    "stress": {
+      "kicker": "DROUGHT AND WATER STRESS",
+      "title": "Pressure is rising, but risk remains local",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Global index of drought number and duration",
+          "labels": [
+            "1980–1999",
+            "Since 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Two indicators, not a shortcut",
+        "body": "Worldwide, the number and duration of droughts have risen by 29% since 2000 compared with the two previous decades.\n\nWater stress measures something different: withdrawals as a share of renewable resources available after environmental needs. This global signal is therefore not a country forecast; it must be read alongside local rainfall, aquifers, seasons and uses."
+      }
     },
     "usages": {
       "kicker": "THE FOOD BALANCE",
@@ -5999,7 +6847,10 @@ export const DOSSIERS: Record<string, Dossier> = {
       },
       "note": "Acrylamide analysis (Polymex laboratory, ISO 9001, content below 3.0 µg/g) and REACH / SVHC screening (SGS) are available on request, together with the SOHISCERT certificate valid until 4 September 2027."
     },
-    "sources": null,
+    "sources": [
+      "UNCCD, Drought in Numbers 2022: number and duration of droughts, +29% since 2000 versus 1980–1999.",
+      "UN-Water / FAO AQUASTAT, SDG indicator 6.4.2: definition and thresholds of water stress."
+    ],
     "closing": {
       "title": "Tell us about your plot",
       "body": "Crop, drainage, soil type and how you water today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable situations.\n\nA first conversation commits you to nothing.",
@@ -6016,12 +6867,14 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "titre": "20090915-USDA-OC-PSD-0002 - 54674579668 Agriculture in the United States.jpg",
         "auteur": "USDAgov",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       },
       {
         "titre": "20090914-USDA-OC-PSD-0003 Agriculture in the United States.jpg",
         "auteur": "USDAgov",
-        "licence": "Public domain"
+        "licence": "Public domain",
+        "source": "commons"
       }
     ],
     "cover": {
@@ -6066,6 +6919,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "Public policy works on supply — storage, recycling, fallowing payments, groundwater plans California basins must balance by 2040. Hydro-retention works on demand, in the root zone."
       ],
       "photo": 3
+    },
+    "stress": {
+      "kicker": "DROUGHT AND WATER STRESS",
+      "title": "Pressure is rising, but risk remains local",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Global index of drought number and duration",
+          "labels": [
+            "1980–1999",
+            "Since 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Two indicators, not a shortcut",
+        "body": "Worldwide, the number and duration of droughts have risen by 29% since 2000 compared with the two previous decades.\n\nWater stress measures something different: withdrawals as a share of renewable resources available after environmental needs. This global signal is therefore not a country forecast; it must be read alongside local rainfall, aquifers, seasons and uses."
+      }
     },
     "usages": {
       "kicker": "WHERE THE WATER GOES",
@@ -6320,7 +7195,9 @@ export const DOSSIERS: Record<string, Dossier> = {
       "USDA NASS: 2022 Census of Agriculture, state farm cash receipts.",
       "USDA ERS: agriculture and food sectors in the economy, farm exports.",
       "USGS: estimated water use in the United States, High Plains aquifer monitoring.",
-      "California Department of Water Resources (SGMA); Almond Board of California."
+      "California Department of Water Resources (SGMA); Almond Board of California.",
+      "UNCCD, Drought in Numbers 2022: number and duration of droughts, +29% since 2000 versus 1980–1999.",
+      "UN-Water / FAO AQUASTAT, SDG indicator 6.4.2: definition and thresholds of water stress."
     ],
     "closing": {
       "title": "Tell us about your field",

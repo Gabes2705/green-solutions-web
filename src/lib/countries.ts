@@ -41,6 +41,7 @@ export const COUNTRY_SLUGS = [
   "chili",
   "argentine",
   "croatie",
+  "madagascar",
 ] as const;
 
 export type CountrySlug = (typeof COUNTRY_SLUGS)[number];
@@ -74,6 +75,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Chili",
     argentine: "Argentine",
     croatie: "Croatie",
+    madagascar: "Madagascar",
   },
   en: {
     "cote-divoire": "Côte d’Ivoire",
@@ -95,6 +97,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Chile",
     argentine: "Argentina",
     croatie: "Croatia",
+    madagascar: "Madagascar",
   },
   es: {
     "cote-divoire": "Côte d’Ivoire",
@@ -116,6 +119,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Chile",
     argentine: "Argentina",
     croatie: "Croacia",
+    madagascar: "Madagascar",
   },
   pt: {
     "cote-divoire": "Costa do Marfim",
@@ -137,6 +141,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Chile",
     argentine: "Argentina",
     croatie: "Croácia",
+    madagascar: "Madagascar",
   },
   ar: {
     "cote-divoire": "ساحل العاج",
@@ -158,6 +163,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "تشيلي",
     argentine: "الأرجنتين",
     croatie: "كرواتيا",
+    madagascar: "مدغشقر",
   },
   zh: {
     "cote-divoire": "科特迪瓦",
@@ -179,6 +185,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "智利",
     argentine: "阿根廷",
     croatie: "克罗地亚",
+    madagascar: "马达加斯加",
   },
   id: {
     "cote-divoire": "Côte d’Ivoire",
@@ -200,6 +207,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Cile",
     argentine: "Argentina",
     croatie: "Kroasia",
+    madagascar: "Madagaskar",
   },
   de: {
     "cote-divoire": "Côte d’Ivoire",
@@ -221,6 +229,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Chile",
     argentine: "Argentinien",
     croatie: "Kroatien",
+    madagascar: "Madagaskar",
   },
   it: {
     "cote-divoire": "Costa d’Avorio",
@@ -242,6 +251,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Cile",
     argentine: "Argentina",
     croatie: "Croazia",
+    madagascar: "Madagascar",
   },
   el: {
     "cote-divoire": "Ακτή Ελεφαντοστού",
@@ -263,6 +273,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Χιλή",
     argentine: "Αργεντινή",
     croatie: "Κροατία",
+    madagascar: "Μαδαγασκάρη",
   },
   tr: {
     "cote-divoire": "Côte d’Ivoire",
@@ -284,6 +295,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Şili",
     argentine: "Arjantin",
     croatie: "Hırvatistan",
+    madagascar: "Madagaskar",
   },
   pl: {
     "cote-divoire": "Côte d’Ivoire",
@@ -305,6 +317,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Chile",
     argentine: "Argentyna",
     croatie: "Chorwacja",
+    madagascar: "Madagaskar",
   },
   hr: {
     "cote-divoire": "Obala Bjelokosti",
@@ -326,6 +339,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     chili: "Čile",
     argentine: "Argentina",
     croatie: "Hrvatska",
+    madagascar: "Madagaskar",
   },
 };
 

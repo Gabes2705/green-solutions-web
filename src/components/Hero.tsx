@@ -10,7 +10,23 @@ import VideoDiagnostic from "./VideoDiagnostic";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Hero() {
-  const { c } = useLanguage();
+  const { c, language } = useLanguage();
+
+  const partnerLabel = {
+    fr: "Devenir partenaire",
+    en: "Become a partner",
+    es: "Hacerse socio",
+    pt: "Tornar-se parceiro",
+    ar: "كن شريكًا",
+    zh: "成为合作伙伴",
+    id: "Menjadi mitra",
+    de: "Partner werden",
+    it: "Diventa partner",
+    el: "Γίνετε συνεργάτης",
+    tr: "İş ortağımız olun",
+    pl: "Zostań partnerem",
+    hr: "Postanite partner",
+  }[language];
 
   return (
     <div className="stage">
@@ -18,7 +34,7 @@ export default function Hero() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="hero-photo-img"
-          src="/images/hero-cover-clair.jpg"
+          src="/images/hero-cover-clean.jpg"
           alt=""
           fetchPriority="high"
           decoding="async"
@@ -42,11 +58,14 @@ export default function Hero() {
           <a href="#contact" className="btn-3d btn-3d-light hero-cta-main">
             {c.hero.quoteCta}
           </a>
-          <a href="#technologies" className="btn-3d btn-3d-dark hero-cta-alt">
+          <a href="#experience" className="btn-3d btn-3d-dark hero-cta-alt">
             {c.hero.explore}
           </a>
-          <a href="#calculateur" className="btn-3d btn-3d-light hero-cta-main">
-            {c.hero.calculatorCta}
+          <a
+            href={`/${language}/devenir-partenaire`}
+            className="btn-3d btn-3d-light hero-cta-main"
+          >
+            {partnerLabel}
           </a>
         </div>
       </HeroParallax>

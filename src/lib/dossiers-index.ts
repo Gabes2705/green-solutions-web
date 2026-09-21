@@ -5,7 +5,7 @@
  *
  *   node scripts/dossiers/vers_web.mjs
  *
- * Volontairement séparé de dossiers.ts, qui porte le texte des dix-neuf
+ * Volontairement séparé de dossiers.ts, qui porte le texte de tous les
  * dossiers : la page d'accueil a seulement besoin de savoir vers quoi pointer.
  */
 
@@ -24,6 +24,7 @@ export const DOSSIER_LANGS: Record<string, string> = {
   "grece": "el",
   "haiti": "fr",
   "jordanie": "ar",
+  "madagascar": "fr",
   "maroc": "fr",
   "oman": "en",
   "senegal": "fr",

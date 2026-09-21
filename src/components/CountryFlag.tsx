@@ -68,15 +68,16 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
   ),
   "soudan-sud": () => (
     <>
-      <rect width="30" height="5.5" fill="#000" />
-      <rect y="5.5" width="30" height="0.7" fill="#fff" />
-      <rect y="6.2" width="30" height="7.6" fill="#DA121A" />
-      <rect y="13.8" width="30" height="0.7" fill="#fff" />
-      <rect y="14.5" width="30" height="5.5" fill="#078930" />
-      <polygon points="0,0 0,20 13,10" fill="#0F47AF" />
-      <g transform="translate(4.6 10) scale(0.5)">
-        <Star fill="#FCDD09" />
-      </g>
+      <rect width="30" height="6" fill="#000" />
+      <rect y="6" width="30" height="1" fill="#fff" />
+      <rect y="7" width="30" height="6" fill="#E5002B" />
+      <rect y="13" width="30" height="1" fill="#fff" />
+      <rect y="14" width="30" height="6" fill="#078930" />
+      <polygon points="0,0 0,20 13.5,10" fill="#1849A9" />
+      <path
+        d="M4.8 6.55 5.55 8.75 7.9 8.75 6 10.13 6.73 12.35 4.8 10.98 2.87 12.35 3.6 10.13 1.7 8.75 4.05 8.75Z"
+        fill="#FCDD09"
+      />
     </>
   ),
   emirats: () => (
@@ -285,6 +286,13 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
           <rect key={i} x={x} y={y} width="1.3" height="2" fill="#FF0000" />
         ))}
       </g>
+    </>
+  ),
+  madagascar: () => (
+    <>
+      <rect width="10" height="20" fill="#FFF" />
+      <rect x="10" width="20" height="10" fill="#FC3D32" />
+      <rect x="10" y="10" width="20" height="10" fill="#007E3A" />
     </>
   ),
   portugal: () => (

@@ -349,5 +349,79 @@
       "auteur": "KokoDZ",
       "licence": "CC BY-SA 4.0"
     }
+  ],
+  "arabie-saoudite": [
+    {
+      "fichier": "0.jpg",
+      "titre": "Palmeraie irriguée — concept Al-Ahsa",
+      "auteur": "Green Solutions / OpenAI",
+      "licence": "Illustration conceptuelle, septembre 2026",
+      "source": "conceptual"
+    },
+    {
+      "fichier": "1.jpg",
+      "titre": "Pivot et blé en milieu aride — concept Al-Jawf",
+      "auteur": "Green Solutions / OpenAI",
+      "licence": "Illustration conceptuelle, septembre 2026",
+      "source": "conceptual"
+    },
+    {
+      "fichier": "2.jpg",
+      "titre": "Serre maraîchère de précision — concept saoudien",
+      "auteur": "Green Solutions / OpenAI",
+      "licence": "Illustration conceptuelle, septembre 2026",
+      "source": "conceptual"
+    },
+    {
+      "fichier": "3.jpg",
+      "titre": "Essai comparatif de maïs en zone aride — concept",
+      "auteur": "Green Solutions / OpenAI",
+      "licence": "Illustration conceptuelle, septembre 2026",
+      "source": "conceptual"
+    },
+    {
+      "fichier": "4.jpg",
+      "titre": "Oliveraie irriguée — concept Al-Jawf",
+      "auteur": "Green Solutions / OpenAI",
+      "licence": "Illustration conceptuelle, septembre 2026",
+      "source": "conceptual"
+    }
+  ],
+  "madagascar": [
+    {
+      "fichier": "0.jpg",
+      "titre": "Rice paddies in Madagascar.jpg",
+      "auteur": "Luc Legay",
+      "licence": "CC BY-SA 2.0",
+      "source": "commons"
+    },
+    {
+      "fichier": "1.jpg",
+      "titre": "Madagascar CNFPAR.jpg",
+      "auteur": "Smegrandria",
+      "licence": "CC BY-SA 4.0",
+      "source": "commons"
+    },
+    {
+      "fichier": "2.jpg",
+      "titre": "Baobab and rice field.jpg",
+      "auteur": "Zigomar",
+      "licence": "CC BY-SA 3.0",
+      "source": "commons"
+    },
+    {
+      "fichier": "3.jpg",
+      "titre": "Produits agroécologiques, Ankazobe Madagascar.jpg",
+      "auteur": "Cactus0625",
+      "licence": "CC BY-SA 4.0",
+      "source": "commons"
+    },
+    {
+      "fichier": "4.jpg",
+      "titre": "Village Sunrise, Madagascar.jpg",
+      "auteur": "Rod Waddington",
+      "licence": "CC BY-SA 2.0",
+      "source": "commons"
+    }
   ]
 }

@@ -44,6 +44,7 @@ const ISO = {
   chili: "CL",
   argentine: "AR",
   croatie: "HR",
+  madagascar: "MG",
 };
 
 const LANGUES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"];
