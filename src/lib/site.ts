@@ -23,12 +23,12 @@ function resolveSiteUrl(): string {
 
 export const SITE_URL = resolveSiteUrl();
 
-/* Les treize langues du site, en un seul endroit.
+/* Les quatorze langues du site, en un seul endroit.
  *
  * La liste était recopiée à la main dans chaque page qui déclare ses
  * traductions, et les copies avaient divergé : le croate ne figurait nulle
  * part, « x-default » manquait aux pages technologies, et les pages
- * Partenaires et Tests et rapports n'annonçaient que huit langues sur treize.
+ * Partenaires et Tests et rapports n'annonçaient que huit langues sur quatorze.
  * Un moteur de recherche ne relie entre elles que les versions qu'on lui
  * nomme : les autres passent pour des pages étrangères sans rapport. */
 export const LANGUAGES = [
@@ -45,6 +45,7 @@ export const LANGUAGES = [
   "tr",
   "pl",
   "hr",
+  "ca",
 ] as const;
 
 /**
@@ -55,7 +56,7 @@ export const LANGUAGES = [
  * doit reproduire l'adresse canonique de la page, sans quoi la traduction
  * déclarée ne désigne pas la page servie.
  *
- * « x-default » désigne la page montrée à qui ne parle aucune des treize.
+ * « x-default » désigne la page montrée à qui ne parle aucune des quatorze.
  */
 export function languageAlternates(chemin: string): Record<string, string> {
   const carte: Record<string, string> = {};
