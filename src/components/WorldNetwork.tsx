@@ -10,7 +10,7 @@ if (typeof window !== "undefined") {
 }
 
 const HUB = { lat: 46.88, lng: 6.89, label: "Suisse" }; // Forel — siège du groupe
-const MADAGASCAR_POINT = { x: 500, y: 258 };
+const MADAGASCAR_POINT = { x: 394, y: 226 };
 
 const NODES = [
   { lat: -30.5, lng: 22.9, label: "Afrique du Sud" },
