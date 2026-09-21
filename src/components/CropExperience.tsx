@@ -499,7 +499,7 @@ export default function CropExperience() {
               className={styles.filmSequence}
               style={{ "--film-offset": `${filmStartPhase * -6.5}s` } as CSSProperties}
               role="img"
-              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 26 secondes`}
+              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — ${filmCopy.duration}`}
             >
               {/* Les trois plaques partagent exactement le même cadre et la même ligne
                   médiane. Seuls la croissance et les effets se fondent entre elles. */}
