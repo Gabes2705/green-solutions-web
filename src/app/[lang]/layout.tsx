@@ -117,6 +117,11 @@ const translations = {
     description: "Przełomowe technologie rolnicze dla wody, gleb, upraw i lasów: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
     locale: "pl_PL",
   },
+  ca: {
+    title: "Green Solutions · Agricultura ecològicament intensiva",
+    description: "Tecnologies agrícoles disruptives per a l'aigua, els sòls, els cultius i els boscos: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® i Paulownia ALTIFOLIA®.",
+    locale: "ca_ES",
+  },
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
