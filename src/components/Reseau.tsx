@@ -52,7 +52,10 @@ export default function Reseau() {
           <p className="lede">{r.lede}</p>
         </Reveal>
 
-        <WorldNetwork ariaLabel={r.mapAriaLabel} />
+        <WorldNetwork
+          ariaLabel={r.mapAriaLabel}
+          countryCountLabel={`${c.presentation.stats[1].num} ${c.presentation.stats[1].label}`}
+        />
       </div>
 
       <CountryTicker />
