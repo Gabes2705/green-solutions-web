@@ -11,7 +11,7 @@ export default function FloatingVideo() {
       <div className="film-screen">
         <video
           className="w-full h-auto block"
-          src="/videos/film-hero-runway-33s.mp4"
+          src="/videos/film-hero-runaway-33s-sans-son.mp4..mp4"
           poster="/images/film-hero-poster.jpg"
           aria-label="Film agronomique Green Solutions — 33 secondes"
           autoPlay
