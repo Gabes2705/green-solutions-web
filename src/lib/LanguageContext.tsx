@@ -13,7 +13,7 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-const SUPPORTED_LANGS: Lang[] = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"];
+const SUPPORTED_LANGS: Lang[] = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr", "ca"];
 
 function getLanguageFromPathname(pathname: string): Lang {
   // Extract language from /[lang]/* pattern
