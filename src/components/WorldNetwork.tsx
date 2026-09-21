@@ -9,8 +9,7 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const HUB = { lat: 46.88, lng: 6.89, label: "Suisse" }; // Forel — siège du groupe
-const MADAGASCAR_POINT = { x: 394, y: 270 };
+const HUB = { lat: 46.88, lng: 6.89, label: "Suisse" };
 
 const NODES = [
   { lat: -30.5, lng: 22.9, label: "Afrique du Sud" },
@@ -50,16 +49,11 @@ const NODES = [
   { lat: 30.6, lng: 36.2, label: "Jordanie" },
   { lat: 29.3, lng: 47.5, label: "Koweït" },
   { lat: 45.1, lng: 15.2, label: "Croatie" },
-  { lat: -19.0, lng: 46.7, label: "Madagascar" },
+  { lat: -20.0, lng: 47.0, label: "Madagascar" },
 ];
 
-function projectPoint(lat: number, lng: number) {
-  const x = (lng + 180) * (800 / 360);
-  const y = (90 - lat) * (400 / 180);
-  return { x, y };
-}
-
 type Point = { x: number; y: number };
+type ProjectedNode = Point & { label: string };
 
 function controlPoint(start: Point, end: Point): Point {
   return { x: (start.x + end.x) / 2, y: Math.min(start.y, end.y) - 40 };
@@ -70,16 +64,9 @@ function curvedPath(start: Point, end: Point) {
   return `M ${start.x} ${start.y} Q ${c.x} ${c.y} ${end.x} ${end.y}`;
 }
 
-/**
- * Arrowhead sitting on the destination end of the route, rotated along the
- * curve's tangent there. For a quadratic Bézier the tangent at the end point
- * runs from the control point to the end point.
- */
 function arrowTransform(start: Point, end: Point) {
   const c = controlPoint(start, end);
   const rawAngle = (Math.atan2(end.y - c.y, end.x - c.x) * 180) / Math.PI;
-  // rounded to avoid a server/client floating-point mismatch in the last
-  // decimals of atan2, which otherwise trips a hydration warning
   const angle = Math.round(rawAngle * 1000) / 1000;
   return `translate(${end.x} ${end.y}) rotate(${angle})`;
 }
@@ -93,13 +80,39 @@ export default function WorldNetwork({
 }) {
   const svgRef = useRef<SVGSVGElement | null>(null);
   const [dotsSvg, setDotsSvg] = useState<string | null>(null);
-  const hubPoint = projectPoint(HUB.lat, HUB.lng);
+  const [hubPoint, setHubPoint] = useState<Point | null>(null);
+  const [projectedNodes, setProjectedNodes] = useState<ProjectedNode[]>([]);
 
   useEffect(() => {
     let cancelled = false;
+
     import("dotted-map").then(({ default: DottedMap }) => {
       if (cancelled) return;
-      const map = new DottedMap({ height: 90, grid: "diagonal" });
+
+      // Force a 2:1 canvas so the dotted map and the route overlay use
+      // exactly the same geometry at every screen size.
+      const map = new DottedMap({
+        height: 90,
+        width: 180,
+        grid: "diagonal",
+      });
+
+      const width = map.image.width;
+      const height = map.image.height;
+      const toOverlay = (p: { x: number; y: number }): Point => ({
+        x: (p.x / width) * 800,
+        y: (p.y / height) * 400,
+      });
+
+      const hubPin = map.getPin({ lat: HUB.lat, lng: HUB.lng });
+      const nodes = NODES.map((node) => {
+        const pin = map.getPin({ lat: node.lat, lng: node.lng });
+        return pin ? { ...toOverlay(pin), label: node.label } : null;
+      }).filter((node): node is ProjectedNode => Boolean(node));
+
+      if (hubPin) setHubPoint(toOverlay(hubPin));
+      setProjectedNodes(nodes);
+
       const svg = map.getSVG({
         radius: 0.22,
         color: "#5E8670AA",
@@ -108,6 +121,7 @@ export default function WorldNetwork({
       });
       setDotsSvg(svg);
     });
+
     return () => {
       cancelled = true;
     };
@@ -115,7 +129,8 @@ export default function WorldNetwork({
 
   useEffect(() => {
     const svg = svgRef.current;
-    if (!svg) return;
+    if (!svg || !hubPoint || !projectedNodes.length) return;
+
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
@@ -125,14 +140,8 @@ export default function WorldNetwork({
 
     const ctx = gsap.context(() => {
       gsap.set(paths, { strokeDasharray: 100, strokeDashoffset: 100 });
-      // the arrowhead waits for its own line to reach it
       gsap.set(arrows, { opacity: 0, scale: 0.4, transformOrigin: "0px 0px" });
 
-      // Loops: the routes draw themselves, hold, then draw again. repeatDelay
-      // leaves the finished map on screen instead of restarting the moment it
-      // lands, and toggleActions stops it once the section scrolls away -
-      // this animates strokeDashoffset, which repaints every frame rather
-      // than riding the compositor, so it should not keep running out of view.
       const tl = gsap.timeline({
         repeat: -1,
         repeatDelay: 3.2,
@@ -160,12 +169,16 @@ export default function WorldNetwork({
         0.85
       );
     }, svg);
+
     return () => ctx.revert();
-  }, [dotsSvg]);
+  }, [dotsSvg, hubPoint, projectedNodes]);
 
   return (
     <div className="world-network">
-      {countryCountLabel && <div className="world-network-count">{countryCountLabel}</div>}
+      {countryCountLabel && (
+        <div className="world-network-count">{countryCountLabel}</div>
+      )}
+
       {dotsSvg && (
         <Image
           src={`data:image/svg+xml;utf8,${encodeURIComponent(dotsSvg)}`}
@@ -176,12 +189,13 @@ export default function WorldNetwork({
           draggable={false}
         />
       )}
+
       <svg
         ref={svgRef}
         viewBox="0 0 800 400"
         className="world-network-svg"
         role="img"
-        aria-label={ariaLabel || "Carte du réseau Green Solutions dans 24 pays"}
+        aria-label={ariaLabel || "Carte du réseau Green Solutions dans 38 pays"}
       >
         <defs>
           <linearGradient id="route-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -192,80 +206,73 @@ export default function WorldNetwork({
           </linearGradient>
         </defs>
 
-        {NODES.filter((n) => n.label !== "Madagascar").map((n) => {
-          const p = projectPoint(n.lat, n.lng);
-          return (
-            <path
-              key={n.label}
-              className="route"
-              d={curvedPath(hubPoint, p)}
-              fill="none"
-              stroke="url(#route-gradient)"
-              strokeWidth="1.1"
-              pathLength={100}
-            />
-          );
-        })}
-
-        <path
-          className="route"
-          d={curvedPath(hubPoint, MADAGASCAR_POINT)}
-          fill="none"
-          stroke="url(#route-gradient)"
-          strokeWidth="1.1"
-          pathLength={100}
-        />
-
-        {NODES.filter((n) => n.label !== "Madagascar").map((n) => {
-          const p = projectPoint(n.lat, n.lng);
-          return (
-            // the placement lives on the wrapper: GSAP animates the inner
-            // path's transform, and would otherwise overwrite it
-            <g key={`arrow-${n.label}`} transform={arrowTransform(hubPoint, p)}>
-              <path
-                className="route-arrow"
-                d="M -5.5 -3.2 L 0 0 L -5.5 3.2 Z"
-                fill="#1F8A45"
-              />
-            </g>
-          );
-        })}
-
-        <g transform={arrowTransform(hubPoint, MADAGASCAR_POINT)}>
+        {hubPoint && projectedNodes.map((node) => (
           <path
-            className="route-arrow"
-            d="M -5.5 -3.2 L 0 0 L -5.5 3.2 Z"
-            fill="#1F8A45"
+            key={`route-${node.label}`}
+            className="route"
+            d={curvedPath(hubPoint, node)}
+            fill="none"
+            stroke="url(#route-gradient)"
+            strokeWidth="1.1"
+            pathLength={100}
           />
-        </g>
+        ))}
 
-        <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#1F8A45" />
-        <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#1F8A45" opacity="0.5">
-          <animate attributeName="r" from="3.2" to="12" dur="1.8s" repeatCount="indefinite" />
-          <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" repeatCount="indefinite" />
-        </circle>
+        {hubPoint && projectedNodes.map((node) => (
+          <g
+            key={`arrow-${node.label}`}
+            transform={arrowTransform(hubPoint, node)}
+          >
+            <path
+              className="route-arrow"
+              d="M -5.5 -3.2 L 0 0 L -5.5 3.2 Z"
+              fill="#1F8A45"
+            />
+          </g>
+        ))}
 
-        {NODES.filter((n) => n.label !== "Madagascar").map((n, i) => {
-          const p = projectPoint(n.lat, n.lng);
+        {hubPoint && (
+          <>
+            <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#1F8A45" />
+            <circle
+              cx={hubPoint.x}
+              cy={hubPoint.y}
+              r="3.2"
+              fill="#1F8A45"
+              opacity="0.5"
+            >
+              <animate attributeName="r" from="3.2" to="12" dur="1.8s" repeatCount="indefinite" />
+              <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" repeatCount="indefinite" />
+            </circle>
+          </>
+        )}
+
+        {projectedNodes.map((node, i) => {
           const delay = `${(i % 6) * 0.28}s`;
           return (
-            <g key={n.label}>
-              <circle cx={p.x} cy={p.y} r="2.2" fill="#1D8A96" />
-              <circle cx={p.x} cy={p.y} r="2.2" fill="#1D8A96" opacity="0.5">
-                <animate attributeName="r" from="2.2" to="8" dur="1.8s" begin={delay} repeatCount="indefinite" />
-                <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" begin={delay} repeatCount="indefinite" />
+            <g key={`point-${node.label}`}>
+              <circle cx={node.x} cy={node.y} r="2.2" fill="#1D8A96" />
+              <circle cx={node.x} cy={node.y} r="2.2" fill="#1D8A96" opacity="0.5">
+                <animate
+                  attributeName="r"
+                  from="2.2"
+                  to="8"
+                  dur="1.8s"
+                  begin={delay}
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  from="0.5"
+                  to="0"
+                  dur="1.8s"
+                  begin={delay}
+                  repeatCount="indefinite"
+                />
               </circle>
             </g>
           );
         })}
-
-        <g>
-          <circle cx={MADAGASCAR_POINT.x} cy={MADAGASCAR_POINT.y} r="2.2" fill="#1D8A96" />
-          <circle cx={MADAGASCAR_POINT.x} cy={MADAGASCAR_POINT.y} r="2.2" fill="#1D8A96" opacity="0.5">
-            <animate attributeName="r" from="2.2" to="8" dur="1.8s" repeatCount="indefinite" />
-            <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" repeatCount="indefinite" />
-          </circle>
-        </g>
       </svg>
     </div>
   );
