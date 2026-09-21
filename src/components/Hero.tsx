@@ -26,6 +26,7 @@ export default function Hero() {
     tr: "İş ortağımız olun",
     pl: "Zostań partnerem",
     hr: "Postanite partner",
+    ca: "Feu-vos soci",
   }[language];
 
   return (
