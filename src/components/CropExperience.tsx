@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
-import SpritePlayer from "./SpritePlayer";
 
 type Phase = { title: string; description: string };
 
@@ -487,16 +486,17 @@ export default function CropExperience() {
           </div>
 
           <div className={styles.visual} style={visualStyle}>
-            <SpritePlayer
+            <video
               key={filmRun}
               className={styles.film}
-              src="/images/compare-film-sprite.jpg"
-              columns={7}
-              frameCount={33}
-              frameWidth={360}
-              frameHeight={360}
-              duration={4.041667}
-              label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
+              src="/videos/comparatif-tomates-restored.mp4"
+              poster="/images/comparatif-tomates-poster.jpg"
+              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
             />
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
