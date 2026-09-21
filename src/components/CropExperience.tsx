@@ -507,7 +507,6 @@ export default function CropExperience() {
             <div className={styles.plotLabelTreated}>
               <span>B</span><div><strong>{copy.treated}</strong><small>{copy.treatedSub}</small></div>
             </div>
-            <div className={styles.divider} aria-hidden="true"><span>VS</span></div>
           </div>
 
           <div className={styles.dashboard}>
