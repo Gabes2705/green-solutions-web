@@ -336,7 +336,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
 const FILM_COPY: Record<CoreLang, FilmCopy> = {
   fr: {
     film: "Film de synergie agronomique",
-    duration: "26 s · comparaison accélérée",
+    duration: "4 s · comparaison accélérée",
     restart: "Recommencer le film",
     synergyEyebrow: "Le système complet",
     synergyTitle: "Cinq solutions, une seule synergie agronomique",
@@ -344,7 +344,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   en: {
     film: "Agronomic synergy film",
-    duration: "26 sec · accelerated comparison",
+    duration: "4 sec · accelerated comparison",
     restart: "Restart film",
     synergyEyebrow: "The complete system",
     synergyTitle: "Five solutions, one agronomic synergy",
@@ -352,7 +352,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   es: {
     film: "Película de sinergia agronómica",
-    duration: "26 s · comparación acelerada",
+    duration: "4 s · comparación acelerada",
     restart: "Reiniciar la película",
     synergyEyebrow: "El sistema completo",
     synergyTitle: "Cinco soluciones, una sinergia agronómica",
@@ -360,7 +360,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   pt: {
     film: "Filme de sinergia agronómica",
-    duration: "26 s · comparação acelerada",
+    duration: "4 s · comparação acelerada",
     restart: "Reiniciar o filme",
     synergyEyebrow: "O sistema completo",
     synergyTitle: "Cinco soluções, uma sinergia agronómica",
@@ -368,7 +368,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   ar: {
     film: "فيلم التكامل الزراعي",
-    duration: "26 ثانية · مقارنة متسارعة",
+    duration: "4 ثوانٍ · مقارنة متسارعة",
     restart: "إعادة تشغيل الفيلم",
     synergyEyebrow: "النظام المتكامل",
     synergyTitle: "خمسة حلول في منظومة زراعية متكاملة",
@@ -376,7 +376,7 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
   },
   zh: {
     film: "农艺协同短片",
-    duration: "26 秒 · 加速对比",
+    duration: "4 秒 · 加速对比",
     restart: "重新播放",
     synergyEyebrow: "完整系统",
     synergyTitle: "五项方案，一套农艺协同系统",
@@ -510,9 +510,9 @@ export default function CropExperience() {
               ref={filmRef}
               key={filmRun}
               className={styles.film}
-              src="/green-solutions-synergy.mp4"
+              src="/videos/comparatif-tomates-compatible.mp4"
               poster="/images/comparatif-tomates-poster.jpg"
-              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 26 secondes`}
+              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
               autoPlay
               muted
               loop
