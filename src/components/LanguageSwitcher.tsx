@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import CountryFlag from "./CountryFlag";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
@@ -27,6 +28,8 @@ const LANGS: { code: Lang; label: string; name: string; flag: string }[] = [
 
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
+  const pathname = usePathname();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const current = LANGS.find((l) => l.code === language) ?? LANGS[0];
@@ -73,6 +76,13 @@ export default function LanguageSwitcher() {
                 className={`lang-option${language === l.code ? " active" : ""}`}
                 onClick={() => {
                   setLanguage(l.code);
+                  const parts = pathname.split("/");
+                  if (parts[1] && LANGS.some((item) => item.code === parts[1])) {
+                    parts[1] = l.code;
+                    router.push(parts.join("/") || `/${l.code}`);
+                  } else {
+                    router.push(`/${l.code}${pathname.startsWith("/") ? pathname : `/${pathname}`}`);
+                  }
                   setOpen(false);
                 }}
               >
