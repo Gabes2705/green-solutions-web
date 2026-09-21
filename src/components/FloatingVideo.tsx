@@ -33,7 +33,7 @@ export default function FloatingVideo() {
       <div className="film-screen">
         <video
           ref={videoRef}
-          src="/videos/film-hero-runway-33s.mp4"
+          src="/videos/film-hero-compatible.mp4"
           poster="/images/film-hero-poster.jpg"
           aria-label="Film agronomique Green Solutions — 33 secondes"
           autoPlay
