@@ -10,6 +10,7 @@ if (typeof window !== "undefined") {
 }
 
 const HUB = { lat: 46.88, lng: 6.89, label: "Suisse" }; // Forel — siège du groupe
+const MADAGASCAR_POINT = { x: 500, y: 258 };
 
 const NODES = [
   { lat: -30.5, lng: 22.9, label: "Afrique du Sud" },
@@ -206,19 +207,14 @@ export default function WorldNetwork({
           );
         })}
 
-        {(() => {
-          const madagascar = projectPoint(-19.0, 46.7);
-          return (
-            <path
-              className="route route-madagascar-direct"
-              d={curvedPath(hubPoint, madagascar)}
-              fill="none"
-              stroke="url(#route-gradient)"
-              strokeWidth="1.1"
-              pathLength={100}
-            />
-          );
-        })()}
+        <path
+          className="route"
+          d={curvedPath(hubPoint, MADAGASCAR_POINT)}
+          fill="none"
+          stroke="url(#route-gradient)"
+          strokeWidth="1.1"
+          pathLength={100}
+        />
 
         {NODES.filter((n) => n.label !== "Madagascar").map((n) => {
           const p = projectPoint(n.lat, n.lng);
@@ -235,18 +231,13 @@ export default function WorldNetwork({
           );
         })}
 
-        {(() => {
-          const madagascar = projectPoint(-19.0, 46.7);
-          return (
-            <g transform={arrowTransform(hubPoint, madagascar)}>
-              <path
-                className="route-arrow"
-                d="M -5.5 -3.2 L 0 0 L -5.5 3.2 Z"
-                fill="#1F8A45"
-              />
-            </g>
-          );
-        })()}
+        <g transform={arrowTransform(hubPoint, MADAGASCAR_POINT)}>
+          <path
+            className="route-arrow"
+            d="M -5.5 -3.2 L 0 0 L -5.5 3.2 Z"
+            fill="#1F8A45"
+          />
+        </g>
 
         <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#1F8A45" />
         <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#1F8A45" opacity="0.5">
@@ -254,7 +245,7 @@ export default function WorldNetwork({
           <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" repeatCount="indefinite" />
         </circle>
 
-        {NODES.map((n, i) => {
+        {NODES.filter((n) => n.label !== "Madagascar").map((n, i) => {
           const p = projectPoint(n.lat, n.lng);
           const delay = `${(i % 6) * 0.28}s`;
           return (
@@ -267,6 +258,14 @@ export default function WorldNetwork({
             </g>
           );
         })}
+
+        <g>
+          <circle cx={MADAGASCAR_POINT.x} cy={MADAGASCAR_POINT.y} r="2.2" fill="#1D8A96" />
+          <circle cx={MADAGASCAR_POINT.x} cy={MADAGASCAR_POINT.y} r="2.2" fill="#1D8A96" opacity="0.5">
+            <animate attributeName="r" from="2.2" to="8" dur="1.8s" repeatCount="indefinite" />
+            <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" repeatCount="indefinite" />
+          </circle>
+        </g>
       </svg>
     </div>
   );
