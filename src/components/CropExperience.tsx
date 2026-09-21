@@ -488,7 +488,7 @@ export default function CropExperience() {
             <video
               key={filmRun}
               className={styles.film}
-              src="/videos/comparatif-tomates-compatible.mp4"
+              src="/videos/comparatif-tomates-restored.mp4"
               poster="/images/comparatif-tomates-poster.jpg"
               aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
               autoPlay
