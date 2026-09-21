@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PartnerApplicationPageClient from "@/components/PartnerApplicationPageClient";
 import { SITE_URL, languageAlternates } from "@/lib/site";
 
-const LANGS = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"];
+const LANGS = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr", "ca"];
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
