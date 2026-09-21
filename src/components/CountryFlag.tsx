@@ -131,6 +131,14 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect y="10" width="30" height="10" fill="#fff" />
     </>
   ),
+  catalunya: () => (
+    <>
+      <rect width="30" height="20" fill="#FCDD09" />
+      {[1, 3, 5, 7].map((i) => (
+        <rect key={i} y={(i * 20) / 9} width="30" height={20 / 9} fill="#DA121A" />
+      ))}
+    </>
+  ),
   espagne: () => (
     <>
       <rect width="30" height="5" fill="#AA151B" />
