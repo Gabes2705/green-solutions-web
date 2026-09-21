@@ -7,7 +7,7 @@ import styles from "./CropExperience.module.css";
 
 type Phase = { title: string; description: string };
 
-type CoreLang = "fr" | "en" | "es" | "pt" | "ar" | "zh";
+type CoreLang = "fr" | "en" | "es" | "pt" | "ar" | "zh" | "ca";
 
 type FilmCopy = {
   film: string;
@@ -331,6 +331,16 @@ const COPY: Record<Lang, ExperienceCopy> = {
       { title: "Žetva", description: "Biljka bolje podnosi razmak navodnjavanja i čuva svoj potencijal." },
     ],
   },
+  ca: {
+    eyebrow: "Demostració agronòmica interactiva", title: "Vegeu l'efecte d'una reserva d'aigua a la zona radicular", intro: "Compareu un cultiu de control amb un cultiu que utilitza hidroretentor. Ajusteu l'aigua disponible i l'interval de reg i seguiu el procés del sòl fins a la collita.", modelNote: "Simulació educativa: els indicadors expliquen el mecanisme i no garanteixen el rendiment. Els resultats depenen del sòl, el clima, el cultiu i el protocol.",
+    control: "Cultiu de control", controlSub: "Sòl sense hidroretentor", treated: "Sinergia Green Solutions", treatedSub: "5 solucions · un enfocament agronòmic", waterAvailable: "Aigua disponible", irrigationInterval: "Interval de reg", low: "Baixa", high: "Alta", frequent: "Freqüent", spaced: "Espaiat", reading: "Comparació", indexNote: "Indicadors educatius / 100", metricWater: "Aigua a la zona radicular", metricRoots: "Desenvolupament radicular", metricYield: "Potencial de rendiment", adjust: "Ajusteu l'escenari", solutions: "Solucions relacionades", previous: "Fase anterior", next: "Fase següent", pause: "Pausa l'animació", play: "Reprèn l'animació",
+    phases: [
+      { title: "Sòl sec", description: "Sense una reserva local, l'aigua abandona més ràpidament la zona radicular." },
+      { title: "Aigua retinguda", description: "L'hidroretentor es carrega i manté la humitat disponible a prop de les arrels." },
+      { title: "Arrels", description: "Una disponibilitat d'aigua més regular afavoreix el desenvolupament de les arrels." },
+      { title: "Collita", description: "La planta tolera millor l'interval de reg i conserva el seu potencial." },
+    ],
+  },
 };
 
 const FILM_COPY: Record<CoreLang, FilmCopy> = {
@@ -382,9 +392,17 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
     synergyTitle: "五项方案，一套农艺协同系统",
     synergyIntro: "EVERGREEN® 与 ECOSORB® 形成互补的蓄水系统；Water Vital® 优化水质，ECOFERT® 为作物提供营养，NAPEMA® 提供保护。五项方案共同形成完整的农艺路径。",
   },
+  ca: {
+    film: "Film de sinergia agronòmica",
+    duration: "4 s · comparació accelerada",
+    restart: "Reinicia el film",
+    synergyEyebrow: "El sistema complet",
+    synergyTitle: "Cinc solucions, una sola sinergia agronòmica",
+    synergyIntro: "EVERGREEN® i ECOSORB® creen dues reserves hídriques complementàries; Water Vital® prepara l'aigua, ECOFERT® nodreix la planta i NAPEMA® la protegeix. Juntes formen un itinerari agronòmic coherent.",
+  },
 };
 
-const CORE_LANGS = new Set<Lang>(["fr", "en", "es", "pt", "ar", "zh"]);
+const CORE_LANGS = new Set<Lang>(["fr", "en", "es", "pt", "ar", "zh", "ca"]);
 
 
 /*
