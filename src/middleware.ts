@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const LANGUAGES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"] as const;
+const LANGUAGES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr", "ca"] as const;
 const DEFAULT_LANGUAGE = "fr";
 
 // Maps the base part of a locale tag to one of our languages, so that
