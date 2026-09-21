@@ -69,37 +69,20 @@
   line-height: 1.55;
 }
 
-.mediaPair {
-  display: grid;
-  grid-template-columns: minmax(0, 1.65fr) minmax(280px, .75fr);
-  gap: 22px;
-  align-items: stretch;
+.tomatoOnly {
   margin: 0 0 38px;
 }
 
-.heroStill,
 .tomatoFilm {
   position: relative;
-  margin: 0;
+  width: min(760px, 100%);
+  margin: 0 auto;
   overflow: hidden;
   border: 1px solid rgba(184, 210, 194, .62);
   border-radius: 24px;
   background: #071910;
   box-shadow: 0 28px 64px rgba(0, 0, 0, .24);
-}
-
-.heroStill {
-  min-height: clamp(380px, 43vw, 610px);
-}
-
-.heroStill img {
-  object-fit: cover;
-}
-
-.tomatoFilm {
-  min-height: clamp(380px, 43vw, 610px);
-  display: grid;
-  place-items: center;
+  aspect-ratio: 16 / 9;
 }
 
 .tomatoFilm video {
@@ -107,18 +90,6 @@
   height: 100%;
   display: block;
   object-fit: cover;
-}
-
-@media (max-width: 900px) {
-  .mediaPair {
-    grid-template-columns: 1fr;
-  }
-
-  .heroStill,
-  .tomatoFilm {
-    min-height: auto;
-    aspect-ratio: 16 / 9;
-  }
 }
 
 .shell {
