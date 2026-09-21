@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/content";
 import styles from "./CropExperience.module.css";
+import SpritePlayer from "./SpritePlayer";
 
 type Phase = { title: string; description: string };
 
@@ -397,7 +398,6 @@ function clamp(value: number, minimum: number, maximum: number) {
 }
 
 export default function CropExperience() {
-  const filmRef = useRef<HTMLVideoElement>(null);
   const { language, c } = useLanguage();
   const copy = COPY[language];
   const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
@@ -416,25 +416,6 @@ export default function CropExperience() {
     return () => window.clearInterval(timer);
   }, []);
 
-  useEffect(() => {
-    const play = () => {
-      const video = filmRef.current;
-      if (!video || document.visibilityState === "hidden") return;
-      video.muted = true;
-      void video.play().catch(() => undefined);
-    };
-    play();
-    document.addEventListener("visibilitychange", play);
-    window.addEventListener("pageshow", play);
-    window.addEventListener("pointerdown", play, { passive: true });
-    window.addEventListener("touchstart", play, { passive: true });
-    return () => {
-      document.removeEventListener("visibilitychange", play);
-      window.removeEventListener("pageshow", play);
-      window.removeEventListener("pointerdown", play);
-      window.removeEventListener("touchstart", play);
-    };
-  }, [filmRun]);
 
   const metrics = useMemo(() => {
     const controlWater = clamp(Math.round(water * 0.62 - interval * 2.2), 12, 78);
@@ -506,29 +487,16 @@ export default function CropExperience() {
           </div>
 
           <div className={styles.visual} style={visualStyle}>
-            <video
-              ref={filmRef}
+            <SpritePlayer
               key={filmRun}
               className={styles.film}
-              src="/videos/comparatif-tomates-compatible.mp4"
-              poster="/images/comparatif-tomates-poster.jpg"
-              aria-label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              disablePictureInPicture
-              onLoadedData={(event) => {
-                event.currentTarget.muted = true;
-                void event.currentTarget.play().catch(() => undefined);
-              }}
-              onCanPlay={(event) => {
-                event.currentTarget.muted = true;
-                if (event.currentTarget.paused) {
-                  void event.currentTarget.play().catch(() => undefined);
-                }
-              }}
+              src="/images/compare-film-sprite.jpg"
+              columns={7}
+              frameCount={33}
+              frameWidth={360}
+              frameHeight={360}
+              duration={4.041667}
+              label={`${copy.control} / ${copy.treated} — ${filmCopy.film} — 4 secondes`}
             />
             <div className={styles.controlStress} aria-hidden="true" />
             <div className={styles.treatedReserve} aria-hidden="true" />
