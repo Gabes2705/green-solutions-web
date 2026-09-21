@@ -135,7 +135,7 @@ export const content = {
       tagline: "Toutes nos solutions disruptives sont utilisables pour toutes les plantes et cultures, sous tous les climats et tous types de sol !",
       stats: [
         { num: "30", label: "partenaires" },
-        { num: "37", label: "pays" },
+        { num: "38", label: "pays" },
         { num: "4", label: "technologies de marque" },
       ],
       distinguish: [
@@ -489,9 +489,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Ils travaillent avec nous",
-      title: "Un réseau dans 37 pays",
+      title: "Un réseau dans 38 pays",
       lede: "Producteurs, coopératives, spécialistes du traitement de l'eau, universités et instituts de recherche, présents sur cinq continents.",
-      mapAriaLabel: "Carte du réseau Green Solutions dans 37 pays",
+      mapAriaLabel: "Carte du réseau Green Solutions dans 38 pays",
     },
     countryStudies: {
       eyebrow: "Approche pays",
@@ -753,7 +753,7 @@ export const content = {
       tagline: "All our disruptive solutions can be used on every plant and crop, in every climate and soil type!",
       stats: [
         { num: "30", label: "partners" },
-        { num: "37", label: "countries" },
+        { num: "38", label: "countries" },
         { num: "4", label: "branded technologies" },
       ],
       distinguish: [
@@ -1107,9 +1107,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "They work with us",
-      title: "A network across 37 countries",
+      title: "A network across 38 countries",
       lede: "Producers, cooperatives, water-treatment specialists, universities and research institutes, present across five continents.",
-      mapAriaLabel: "Map of the Green Solutions network across 37 countries",
+      mapAriaLabel: "Map of the Green Solutions network across 38 countries",
     },
     countryStudies: {
       eyebrow: "Country approach",
@@ -1371,7 +1371,7 @@ export const content = {
       tagline: "¡Todas nuestras soluciones disruptivas se pueden usar en cualquier planta o cultivo, en cualquier clima y cualquier tipo de suelo!",
       stats: [
         { num: "30", label: "socios" },
-        { num: "37", label: "países" },
+        { num: "38", label: "países" },
         { num: "4", label: "tecnologías de marca" },
       ],
       distinguish: [
@@ -1725,9 +1725,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabajan con nosotros",
-      title: "Una red en 37 países",
+      title: "Una red en 38 países",
       lede: "Productores, cooperativas, especialistas en tratamiento de agua, universidades e institutos de investigación, presentes en cinco continentes.",
-      mapAriaLabel: "Mapa de la red Green Solutions en 37 países",
+      mapAriaLabel: "Mapa de la red Green Solutions en 38 países",
     },
     countryStudies: {
       eyebrow: "Enfoque por país",
@@ -1989,7 +1989,7 @@ export const content = {
       tagline: "Todas as nossas soluções disruptivas podem ser usadas em qualquer planta ou cultura, em qualquer clima e qualquer tipo de solo!",
       stats: [
         { num: "30", label: "parceiros" },
-        { num: "37", label: "países" },
+        { num: "38", label: "países" },
         { num: "4", label: "tecnologias de marca" },
       ],
       distinguish: [
@@ -2343,9 +2343,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Trabalham connosco",
-      title: "Uma rede em 37 países",
+      title: "Uma rede em 38 países",
       lede: "Produtores, cooperativas, especialistas em tratamento de água, universidades e institutos de investigação, presentes em cinco continentes.",
-      mapAriaLabel: "Mapa da rede Green Solutions em 37 países",
+      mapAriaLabel: "Mapa da rede Green Solutions em 38 países",
     },
     countryStudies: {
       eyebrow: "Abordagem por país",
@@ -2607,7 +2607,7 @@ export const content = {
       tagline: "جميع حلولنا الابتكارية يمكن استخدامها مع كل النباتات والمحاصيل، في كل المناخات وكل أنواع التربة!",
       stats: [
         { num: "30", label: "شريك" },
-        { num: "37", label: "دولة" },
+        { num: "38", label: "دولة" },
         { num: "4", label: "تقنيات حصرية" },
       ],
       distinguish: [
@@ -2961,9 +2961,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "يعملون معنا",
-      title: "شبكة في 37 دولة",
+      title: "شبكة في 38 دولة",
       lede: "منتجون وتعاونيات ومتخصصون في معالجة المياه وجامعات ومعاهد بحثية، حاضرون في خمس قارات.",
-      mapAriaLabel: "خريطة شبكة Green Solutions في 37 دولة",
+      mapAriaLabel: "خريطة شبكة Green Solutions في 38 دولة",
     },
     countryStudies: {
       eyebrow: "النهج القطري",
@@ -3225,7 +3225,7 @@ export const content = {
       tagline: "我们所有的颠覆性解决方案适用于任何植物和作物、任何气候及任何类型的土壤！",
       stats: [
         { num: "30", label: "合作伙伴" },
-        { num: "37", label: "国家" },
+        { num: "38", label: "国家" },
         { num: "4", label: "品牌技术" },
       ],
       distinguish: [
@@ -3579,9 +3579,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "与我们合作的伙伴",
-      title: "覆盖37个国家的网络",
+      title: "覆盖38个国家的网络",
       lede: "生产者、合作社、水处理专家、高校及科研机构，遍布五大洲。",
-      mapAriaLabel: "Green Solutions覆盖37个国家的网络地图",
+      mapAriaLabel: "Green Solutions覆盖38个国家的网络地图",
     },
     countryStudies: {
       eyebrow: "国别方案",
@@ -3843,7 +3843,7 @@ export const content = {
       tagline: "Semua solusi disruptif kami dapat digunakan untuk semua tanaman dan tanaman pangan, di semua iklim dan semua jenis tanah!",
       stats: [
         { num: "30", label: "mitra" },
-        { num: "37", label: "negara" },
+        { num: "38", label: "negara" },
         { num: "4", label: "teknologi bermerek" },
       ],
       distinguish: [
@@ -4197,9 +4197,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Mereka bekerja sama dengan kami",
-      title: "Jaringan di 37 Negara",
+      title: "Jaringan di 38 Negara",
       lede: "Produsen, koperasi, spesialis pengolahan air, universitas, dan lembaga penelitian, hadir di lima benua.",
-      mapAriaLabel: "Peta jaringan Green Solutions di 37 negara",
+      mapAriaLabel: "Peta jaringan Green Solutions di 38 negara",
     },
     countryStudies: {
       eyebrow: "Pendekatan per Negara",
@@ -4461,7 +4461,7 @@ export const content = {
       tagline: "Alle unsere disruptiven Lösungen sind für jede Pflanze und Kultur, bei jedem Klima und jeder Bodenart einsetzbar!",
       stats: [
         { num: "30", label: "Partner" },
-        { num: "37", label: "Länder" },
+        { num: "38", label: "Länder" },
         { num: "4", label: "Markentechnologien" },
       ],
       distinguish: [
@@ -4815,9 +4815,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Sie arbeiten mit uns",
-      title: "Ein Netzwerk in 37 Ländern",
+      title: "Ein Netzwerk in 38 Ländern",
       lede: "Erzeuger, Genossenschaften, Wasseraufbereitungsspezialisten, Universitäten und Forschungsinstitute, vertreten auf fünf Kontinenten.",
-      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 37 Ländern",
+      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 38 Ländern",
     },
     countryStudies: {
       eyebrow: "Länderansatz",
@@ -5079,7 +5079,7 @@ export const content = {
       tagline: "Tutte le nostre soluzioni dirompenti sono utilizzabili per ogni pianta e coltura, in ogni clima e su ogni tipo di suolo!",
       stats: [
         { num: "30", label: "partner" },
-        { num: "37", label: "paesi" },
+        { num: "38", label: "paesi" },
         { num: "4", label: "tecnologie di marca" },
       ],
       distinguish: [
@@ -5433,9 +5433,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Lavorano con noi",
-      title: "Una rete in 37 paesi",
+      title: "Una rete in 38 paesi",
       lede: "Produttori, cooperative, specialisti del trattamento dell'acqua, università e istituti di ricerca, presenti su cinque continenti.",
-      mapAriaLabel: "Mappa della rete Green Solutions in 37 paesi",
+      mapAriaLabel: "Mappa della rete Green Solutions in 38 paesi",
     },
     countryStudies: {
       eyebrow: "Approccio per paese",
@@ -5697,7 +5697,7 @@ export const content = {
       tagline: "Όλες οι ανατρεπτικές μας λύσεις είναι κατάλληλες για κάθε φυτό και καλλιέργεια, σε κάθε κλίμα και κάθε τύπο εδάφους!",
       stats: [
         { num: "30", label: "συνεργάτες" },
-        { num: "37", label: "χώρες" },
+        { num: "38", label: "χώρες" },
         { num: "4", label: "εμπορικές τεχνολογίες" },
       ],
       distinguish: [
@@ -6051,9 +6051,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Συνεργάζονται μαζί μας",
-      title: "Ένα δίκτυο σε 37 χώρες",
+      title: "Ένα δίκτυο σε 38 χώρες",
       lede: "Παραγωγοί, συνεταιρισμοί, ειδικοί επεξεργασίας νερού, πανεπιστήμια και ερευνητικά ιδρύματα, παρόντα σε πέντε ηπείρους.",
-      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 37 χώρες",
+      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 38 χώρες",
     },
     countryStudies: {
       eyebrow: "Προσέγγιση ανά χώρα",
@@ -6315,7 +6315,7 @@ export const content = {
       tagline: "Yıkıcı çözümlerimizin tümü her bitki ve ürün için, her iklimde ve her toprak türünde kullanılabilir!",
       stats: [
         { num: "30", label: "ortak" },
-        { num: "37", label: "ülke" },
+        { num: "38", label: "ülke" },
         { num: "4", label: "markalı teknoloji" },
       ],
       distinguish: [
@@ -6669,9 +6669,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Bizimle çalışıyorlar",
-      title: "37 ülkede bir ağ",
+      title: "38 ülkede bir ağ",
       lede: "Beş kıtada bulunan üreticiler, kooperatifler, su arıtma uzmanları, üniversiteler ve araştırma enstitüleri.",
-      mapAriaLabel: "Green Solutions ağının 37 ülkedeki haritası",
+      mapAriaLabel: "Green Solutions ağının 38 ülkedeki haritası",
     },
     countryStudies: {
       eyebrow: "Ülke yaklaşımı",
@@ -6933,7 +6933,7 @@ export const content = {
       tagline: "Wszystkie nasze przełomowe rozwiązania nadają się do każdej rośliny i uprawy, w każdym klimacie i na każdym rodzaju gleby!",
       stats: [
         { num: "30", label: "partnerów" },
-        { num: "37", label: "krajów" },
+        { num: "38", label: "krajów" },
         { num: "4", label: "opatentowane technologie" },
       ],
       distinguish: [
@@ -7287,9 +7287,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Współpracują z nami",
-      title: "Sieć w 37 krajach",
+      title: "Sieć w 38 krajach",
       lede: "Producenci, spółdzielnie, specjaliści od uzdatniania wody, uniwersytety i instytuty badawcze, obecni na pięciu kontynentach.",
-      mapAriaLabel: "Mapa sieci Green Solutions w 37 krajach",
+      mapAriaLabel: "Mapa sieci Green Solutions w 38 krajach",
     },
     countryStudies: {
       eyebrow: "Podejście według kraju",
@@ -7551,7 +7551,7 @@ export const content = {
       tagline: "Sva naša disruptivna rješenja primjenjiva su na sve biljke i kulture, u svim klimama i na svim tipovima tla!",
       stats: [
         { num: "30", label: "partnera" },
-        { num: "37", label: "država" },
+        { num: "38", label: "država" },
         { num: "4", label: "tehnologije pod markom" },
       ],
       distinguish: [
@@ -7905,9 +7905,9 @@ export const content = {
     },
     reseau: {
       eyebrow: "Oni rade s nama",
-      title: "Mreža u 37 država",
+      title: "Mreža u 38 država",
       lede: "Proizvođači, zadruge, stručnjaci za obradu vode, sveučilišta i istraživački instituti, prisutni na pet kontinenata.",
-      mapAriaLabel: "Karta mreže Green Solutions u 37 država",
+      mapAriaLabel: "Karta mreže Green Solutions u 38 država",
     },
     countryStudies: {
       eyebrow: "Pristup po državama",
