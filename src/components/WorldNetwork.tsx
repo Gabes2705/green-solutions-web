@@ -49,7 +49,7 @@ const NODES = [
   { lat: 30.6, lng: 36.2, label: "Jordanie" },
   { lat: 29.3, lng: 47.5, label: "Koweït" },
   { lat: 45.1, lng: 15.2, label: "Croatie" },
-  { lat: -20.0, lng: 49.5, label: "Madagascar" },
+  { lat: -19.0, lng: 46.7, label: "Madagascar" },
 ];
 
 function projectPoint(lat: number, lng: number) {
@@ -191,7 +191,7 @@ export default function WorldNetwork({
           </linearGradient>
         </defs>
 
-        {NODES.map((n) => {
+        {NODES.filter((n) => n.label !== "Madagascar").map((n) => {
           const p = projectPoint(n.lat, n.lng);
           return (
             <path
@@ -206,7 +206,21 @@ export default function WorldNetwork({
           );
         })}
 
-        {NODES.map((n) => {
+        {(() => {
+          const madagascar = projectPoint(-19.0, 46.7);
+          return (
+            <path
+              className="route route-madagascar-direct"
+              d={curvedPath(hubPoint, madagascar)}
+              fill="none"
+              stroke="url(#route-gradient)"
+              strokeWidth="1.1"
+              pathLength={100}
+            />
+          );
+        })()}
+
+        {NODES.filter((n) => n.label !== "Madagascar").map((n) => {
           const p = projectPoint(n.lat, n.lng);
           return (
             // the placement lives on the wrapper: GSAP animates the inner
@@ -221,6 +235,19 @@ export default function WorldNetwork({
           );
         })}
 
+        {(() => {
+          const madagascar = projectPoint(-19.0, 46.7);
+          return (
+            <g transform={arrowTransform(hubPoint, madagascar)}>
+              <path
+                className="route-arrow"
+                d="M -5.5 -3.2 L 0 0 L -5.5 3.2 Z"
+                fill="#1F8A45"
+              />
+            </g>
+          );
+        })()}
+
         <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#1F8A45" />
         <circle cx={hubPoint.x} cy={hubPoint.y} r="3.2" fill="#1F8A45" opacity="0.5">
           <animate attributeName="r" from="3.2" to="12" dur="1.8s" repeatCount="indefinite" />
@@ -230,7 +257,6 @@ export default function WorldNetwork({
         {NODES.map((n, i) => {
           const p = projectPoint(n.lat, n.lng);
           const delay = `${(i % 6) * 0.28}s`;
-          const isMadagascar = n.label === "Madagascar";
           return (
             <g key={n.label}>
               <circle cx={p.x} cy={p.y} r="2.2" fill="#1D8A96" />
@@ -238,15 +264,6 @@ export default function WorldNetwork({
                 <animate attributeName="r" from="2.2" to="8" dur="1.8s" begin={delay} repeatCount="indefinite" />
                 <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" begin={delay} repeatCount="indefinite" />
               </circle>
-              {isMadagascar && (
-                <text
-                  x={p.x + 8}
-                  y={p.y - 8}
-                  className="madagascar-label"
-                >
-                  Madagascar
-                </text>
-              )}
             </g>
           );
         })}
