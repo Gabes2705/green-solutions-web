@@ -107,6 +107,13 @@ const LABELS: Record<Lang, readonly [string, string, string, string, string]> = 
     "Lijek za bilje",
     "Stablo paulovnije",
   ],
+  ca: [
+    "Estalvi d'aigua",
+    "Revitalització de l'aigua",
+    "Creixement multiplicat",
+    "Medicina per a les plantes",
+    "Arbre de paulòwnia",
+  ],
 };
 
 export function doorsFor(lang: Lang): Door[] {
