@@ -24,6 +24,7 @@ const PAGES = {
   "canne-a-sucre-indonesie": ["sugarcane field", "sugar cane plantation", "sugarcane harvest"],
   "pommes-de-terre-afrique-du-sud": ["potato field", "potato harvest field", "potato plants field"],
   "soja-chine-shandong": ["soybean plants", "soybean field green", "soybean pods plant"],
+  "protection-naturelle-des-cultures": ["Opuntia ficus-indica fruits", "orange orchard fruit trees", "Citrus sinensis tree fruits"],
   "engrais-bio-liquide-biostimulant": ["tomato plants greenhouse", "foliar spraying crop", "organic farm vegetables field"],
 };
 
@@ -73,12 +74,17 @@ for (const [slug, requetes] of Object.entries(PAGES)) {
   if (choisis.length && !choisis.includes(slug)) continue;
   const retenues = [];
   const vus = new Set();
+  // Une photo par recherche quand la page en a plusieurs : deux sujets
+  // différents valent mieux que deux vues du même.
+  const parRecherche = requetes.length > 2 ? 1 : 2;
   for (const q of requetes) {
+    let prises = 0;
     for (const c of await chercher(q)) {
-      if (retenues.length >= 2) break;
+      if (retenues.length >= 2 || prises >= parRecherche) break;
       if (vus.has(c.titre)) continue;
       vus.add(c.titre);
       retenues.push(c);
+      prises++;
     }
     if (retenues.length >= 2) break;
     await sleep(500);

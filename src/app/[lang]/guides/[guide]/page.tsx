@@ -39,6 +39,24 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   };
 }
 
+function Oui() {
+  return (
+    <span className="gv-oui">
+      <span aria-hidden="true">✓</span>
+      <span className="gv-invisible">Oui</span>
+    </span>
+  );
+}
+
+function Non() {
+  return (
+    <span className="gv-non">
+      <span aria-hidden="true">✕</span>
+      <span className="gv-invisible">Non</span>
+    </span>
+  );
+}
+
 export default async function Page({ params }: Params) {
   const { lang, guide: slug } = await params;
   const guide = GUIDES.find((g) => g.slug === slug);
@@ -119,7 +137,7 @@ export default async function Page({ params }: Params) {
                       </p>
                     ))}
                   </div>
-                  <VideoPousse film={FILMS.mais} />
+                  <VideoPousse film={FILMS[guide.video]} />
                 </div>
               ) : (
                 s.paragraphes?.map((p, j) => (
@@ -143,6 +161,37 @@ export default async function Page({ params }: Params) {
               <p className="eyebrow">Résultats de terrain</p>
               <h2 className="section-title">Ce que les essais ont mesuré</h2>
               <Graphiques graphiques={graphiques} />
+            </section>
+          )}
+
+          {guide.comparaison && (
+            <section className="dossier-section">
+              <p className="eyebrow">Comparaison</p>
+              <h2 className="section-title">{guide.comparaison.titre}</h2>
+              <div className="gv-comparaison">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <span className="gv-invisible">Critère</span>
+                      </th>
+                      <th scope="col">{guide.comparaison.colonnes[0]}</th>
+                      <th scope="col" className="gv-nous">
+                        {guide.comparaison.colonnes[1]}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {guide.comparaison.lignes.map((l, i) => (
+                      <tr key={i}>
+                        <th scope="row">{l.critere}</th>
+                        <td>{l.a ? <Oui /> : <Non />}</td>
+                        <td className="gv-nous">{l.b ? <Oui /> : <Non />}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </section>
           )}
 

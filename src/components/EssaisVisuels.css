@@ -188,3 +188,74 @@
   text-align: justify;
   hyphens: auto;
 }
+
+/* ---- Tableau de comparaison ---- */
+
+.gv-comparaison {
+  overflow-x: auto;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 6px 24px rgba(31, 138, 69, 0.1);
+}
+
+.gv-comparaison table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.gv-comparaison th,
+.gv-comparaison td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--hairline);
+  text-align: center;
+}
+
+.gv-comparaison tbody th {
+  text-align: start;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.gv-comparaison thead th {
+  font-weight: 700;
+  color: var(--leaf-deep);
+}
+
+.gv-comparaison tr:last-child th,
+.gv-comparaison tr:last-child td {
+  border-bottom: 0;
+}
+
+.gv-comparaison .gv-nous {
+  background: rgba(31, 138, 69, 0.08);
+}
+
+.gv-oui,
+.gv-non {
+  display: inline-grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+.gv-oui {
+  background: var(--leaf-strong);
+  color: #fff;
+}
+
+.gv-non {
+  background: var(--bg-mid);
+  color: var(--muted);
+}
+
+.gv-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

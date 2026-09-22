@@ -104,6 +104,17 @@ function splitParagraphs(text: string, lang: string): string[] {
   return [text];
 }
 
+/**
+ * Les pages écrites pour les moteurs de recherche (essais, guides) n'existent
+ * qu'en français. Chaque page produit française y renvoie, pour qu'on les
+ * trouve aussi en visitant le site.
+ */
+const GUIDE_FR: Record<string, { href: string; label: string }> = {
+  "retention-eau": { href: "/fr/essais-terrain", label: "Voir les résultats des essais de terrain →" },
+  fertilisation: { href: "/fr/guides/engrais-bio-liquide-biostimulant", label: "Lire le guide de l'engrais bio liquide →" },
+  protection: { href: "/fr/guides/protection-naturelle-des-cultures", label: "Lire le guide de la protection naturelle des cultures →" },
+};
+
 export default function TechnologyPageClient() {
   const params = useParams<{ id: string }>();
   const { c, language } = useLanguage();
@@ -155,6 +166,12 @@ export default function TechnologyPageClient() {
             ))}
           </ul>
         </Reveal>
+
+        {language === "fr" && id && GUIDE_FR[id] && (
+          <a href={GUIDE_FR[id].href} className="field-tests-cta">
+            {GUIDE_FR[id].label}
+          </a>
+        )}
 
         {((videos?.length ?? 0) > 0 || (embeds?.length ?? 0) > 0) && (
           <Reveal>
