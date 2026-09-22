@@ -107,6 +107,11 @@ export default function WorldNetwork({
 
       const hubPin = map.getPin({ lat: HUB.lat, lng: HUB.lng });
       const nodes = NODES.map((node) => {
+        // Madagascar keeps the manually validated visual position on this map,
+        // but from here onward it is rendered exactly like every other country.
+        if (node.label === "Madagascar") {
+          return { ...MADAGASCAR_POINT, label: node.label };
+        }
         const pin = map.getPin({ lat: node.lat, lng: node.lng });
         return pin ? { ...toOverlay(pin), label: node.label } : null;
       }).filter((node): node is ProjectedNode => Boolean(node));
