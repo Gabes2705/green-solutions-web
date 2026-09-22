@@ -1,6 +1,8 @@
 import "./DossierPage.css";
 import { ESSAIS, GRAPHIQUES, type Essai } from "@/lib/essais";
-import { AnimationGranule, Graphiques, PhotoLibre, photosDe } from "./EssaisVisuels";
+import { Graphiques, PhotoLibre, photosDe } from "./EssaisVisuels";
+import VideoPousse from "./VideoPousse";
+import { FILMS } from "@/lib/films";
 
 /**
  * Un essai de terrain rendu en HTML.
@@ -23,7 +25,7 @@ export default function EssaiPage({ essai }: { essai: Essai }) {
         </a>
       </div>
 
-      <header className={`dossier-hero${photos[0] ? "" : " dossier-hero-uni"}`}>
+      <header className={`dossier-hero gv-hero${photos[0] ? "" : " dossier-hero-uni"}`}>
         {photos[0] && (
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -67,7 +69,7 @@ export default function EssaiPage({ essai }: { essai: Essai }) {
           <p className="eyebrow">Comment ça marche</p>
           <h2 className="section-title">L&apos;eau reste là où la plante en a besoin</h2>
           <div className="gv-duo">
-            <AnimationGranule />
+            <VideoPousse film={FILMS.racines} />
             <p className="dossier-texte">
               Mélangé au sol près des racines, l&apos;hydrorétenteur se gorge d&apos;eau à chaque
               arrosage ou à chaque pluie, au lieu de la laisser s&apos;évaporer ou filer en

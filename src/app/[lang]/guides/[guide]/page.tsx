@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import "@/components/DossierPage.css";
 import { GUIDES } from "@/lib/guides";
 import { ESSAIS, GRAPHIQUES } from "@/lib/essais";
-import { AnimationPousse, Graphiques, PhotoLibre, photosDe } from "@/components/EssaisVisuels";
+import { Graphiques, PhotoLibre, photosDe } from "@/components/EssaisVisuels";
+import VideoPousse from "@/components/VideoPousse";
+import { FILMS } from "@/lib/films";
 import { SITE_URL } from "@/lib/site";
 
 /** Rédigés en français seulement : servis sous /fr, nulle part ailleurs. */
@@ -72,7 +74,7 @@ export default async function Page({ params }: Params) {
           </a>
         </div>
 
-        <header className={`dossier-hero${photos[0] ? "" : " dossier-hero-uni"}`}>
+        <header className={`dossier-hero gv-hero${photos[0] ? "" : " dossier-hero-uni"}`}>
           {photos[0] && (
             <>
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -117,7 +119,7 @@ export default async function Page({ params }: Params) {
                       </p>
                     ))}
                   </div>
-                  <AnimationPousse />
+                  <VideoPousse film={FILMS.mais} />
                 </div>
               ) : (
                 s.paragraphes?.map((p, j) => (
