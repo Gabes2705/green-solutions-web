@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import "@/components/DossierPage.css";
 import { ESSAIS, ESSAIS_EN_COURS } from "@/lib/essais";
+import { GUIDES } from "@/lib/guides";
 import { SITE_URL } from "@/lib/site";
 
 /**
@@ -81,6 +82,17 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
               <li key={e.pdf}>
                 <strong>{e.titre}.</strong> {e.texte}{" "}
                 <a href={e.pdf}>Lettre de l&apos;université (PDF)</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="dossier-section">
+          <h2 className="section-title">Nos guides</h2>
+          <ul className="dossier-puces">
+            {GUIDES.map((g) => (
+              <li key={g.slug}>
+                <a href={`/fr/guides/${g.slug}`}>{g.titre}</a>
               </li>
             ))}
           </ul>
