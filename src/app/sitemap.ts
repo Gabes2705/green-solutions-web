@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { DOSSIER_LANGS } from "@/lib/dossiers-index";
+import { ESSAIS } from "@/lib/essais";
 import { SITE_URL, LANGUAGES } from "@/lib/site";
 
 const TECH_IDS = [
@@ -62,6 +63,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
+    });
+  });
+
+  // Field trials, rewritten as web pages from the PDF reports. French only.
+  ["", ...ESSAIS.map((e) => `/${e.slug}`)].forEach((suffixe) => {
+    urls.push({
+      url: `${SITE_URL}/fr/essais-terrain${suffixe}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
     });
   });
 

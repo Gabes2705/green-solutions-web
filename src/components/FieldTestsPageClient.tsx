@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 import CountryFlag from "@/components/CountryFlag";
 
 export default function FieldTestsPageClient() {
-  const { c } = useLanguage();
+  const { c, language } = useLanguage();
   const ft = c.fieldTests;
 
   return (
@@ -22,6 +22,12 @@ export default function FieldTestsPageClient() {
         <p className="eyebrow">{ft.eyebrow}</p>
         <h1>{ft.title}</h1>
         <p className="lede">{ft.lede}</p>
+        {/* Les résultats réécrits en pages web n'existent qu'en français. */}
+        {language === "fr" && (
+          <a href="/fr/essais-terrain" className="field-tests-cta">
+            Lire les résultats essai par essai →
+          </a>
+        )}
       </header>
 
       <div className="tech-body">
