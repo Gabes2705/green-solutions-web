@@ -16,7 +16,7 @@ export default function Nav() {
     { href: "#objections", label: c.nav.proofs },
     { href: "#reseau", label: c.nav.network },
     { href: "#ressources", label: c.nav.resources },
-    { href: "/tests-et-rapports", label: c.nav.fieldTests },
+    { href: "#tests-et-rapports", label: c.nav.fieldTests },
     { href: "/partenaires", label: c.nav.partners },
   ];
 

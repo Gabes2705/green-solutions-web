@@ -18,7 +18,8 @@
   align-items: start;
 }
 
-.ft-colonnes h2 {
+.ft-colonnes h2,
+.ft-colonnes h3 {
   margin: 0 0 0.4em;
   font-family: var(--font-display);
   font-weight: 600;
@@ -39,7 +40,8 @@
   box-shadow: 0 18px 40px -18px rgba(31, 138, 69, 0.55);
 }
 
-.ft-resultats h2 {
+.ft-resultats h2,
+.ft-resultats h3 {
   color: #fff;
 }
 
@@ -122,7 +124,8 @@
 
 /* ---- Colonne des rapports ---- */
 
-.ft-rapports h2 {
+.ft-rapports h2,
+.ft-rapports h3 {
   color: var(--leaf-deep);
 }
 
@@ -149,4 +152,15 @@
 .ft-carte-titre,
 .ft-intro {
   text-align: start;
+}
+
+/* ---- Le même bloc sur la page d'accueil ---- */
+
+.section-inner-large {
+  max-width: 1180px;
+}
+
+.ft-colonnes-accueil {
+  max-width: none;
+  padding: 1.6rem 0 0;
 }
