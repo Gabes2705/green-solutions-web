@@ -40,7 +40,8 @@ export default function VideoPousse({ film }: { film: Film }) {
       <figcaption>
         {film.legende}{" "}
         <span className="gv-credit">
-          Vidéo : {film.auteur}, accélérée —{" "}
+          Vidéo : {film.auteur}
+          {film.accelere ? ", accélérée" : ""} —{" "}
           <a href={film.page} target="_blank" rel="noreferrer">
             {film.licence}, Wikimedia Commons
           </a>

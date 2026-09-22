@@ -126,5 +126,21 @@
       "page": "https://commons.wikimedia.org/wiki/File:Swafield_Hall_Open_Day,_Tomato_and_cucumber_plants_in_the_greenhouse_-_geograph.org.uk_-_7806450.jpg",
       "titre": "File:Swafield Hall Open Day, Tomato and cucumber plants in the greenhouse - geograph.org.uk - 7806450.jpg"
     }
+  ],
+  "protection-naturelle-des-cultures": [
+    {
+      "src": "/images/essais/protection-naturelle-des-cultures/0.webp",
+      "auteur": "Tomás Castelazo",
+      "licence": "CC BY-SA 2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:Prickly_pears.jpg",
+      "titre": "File:Prickly pears.jpg"
+    },
+    {
+      "src": "/images/essais/protection-naturelle-des-cultures/1.webp",
+      "auteur": "Zeynel Cebeci",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Orange_orchard,_Karaisal%C4%B1_01.JPG",
+      "titre": "File:Orange orchard, Karaisalı 01.JPG"
+    }
   ]
 }
