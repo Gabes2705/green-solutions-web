@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { DOSSIER_LANGS } from "@/lib/dossiers-index";
 import { ESSAIS } from "@/lib/essais";
+import { GUIDES } from "@/lib/guides";
 import { SITE_URL, LANGUAGES } from "@/lib/site";
 
 const TECH_IDS = [
@@ -70,6 +71,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ["", ...ESSAIS.map((e) => `/${e.slug}`)].forEach((suffixe) => {
     urls.push({
       url: `${SITE_URL}/fr/essais-terrain${suffixe}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
+  });
+
+  // Topic guides, one per subject people search for. French only.
+  GUIDES.forEach((g) => {
+    urls.push({
+      url: `${SITE_URL}/fr/guides/${g.slug}`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,

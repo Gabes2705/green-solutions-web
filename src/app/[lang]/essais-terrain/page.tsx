@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import "@/components/DossierPage.css";
 import { ESSAIS, ESSAIS_EN_COURS } from "@/lib/essais";
+import { GUIDES } from "@/lib/guides";
+import "@/components/EssaisVisuels.css";
+import { photosDe } from "@/components/EssaisVisuels";
+import VideoPousse from "@/components/VideoPousse";
+import { FILMS } from "@/lib/films";
 import { SITE_URL } from "@/lib/site";
 
 /**
@@ -32,6 +37,9 @@ export const metadata: Metadata = {
   },
 };
 
+/** La palmeraie en CC0 : lumineuse, et sans crédit obligatoire. Il est donné quand même, en bas. */
+const BANDEAU = photosDe("palmiers-dattiers-emirats-icba")[1];
+
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (lang !== "fr") notFound();
@@ -44,10 +52,13 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         </a>
       </div>
 
-      <header className="dossier-hero dossier-hero-uni">
+      <header className="dossier-hero gv-hero">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="dossier-hero-photo" src={BANDEAU.src} alt="" fetchPriority="high" />
+        <div className="dossier-hero-voile" aria-hidden="true" />
         <div className="dossier-hero-texte">
           <p className="eyebrow">Essais de terrain</p>
-          <h1>Moins d&apos;eau, plus de récolte : les résultats mesurés</h1>
+          <h1>Moins d&apos;eau, plus de récolte&nbsp;: les résultats mesurés</h1>
           <p className="dossier-hero-chapeau">
             Universités, centres de recherche et exploitations ont testé l&apos;hydrorétenteur
             EVERGREEN, seul ou avec le fertilisant ECOFERT, sur sept cultures et dans six pays.
@@ -58,10 +69,25 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
 
       <div className="dossier-corps">
         <section className="dossier-section">
+          <div className="gv-duo">
+            <VideoPousse film={FILMS.racines} />
+            <p className="dossier-texte">
+              Le principe est le même partout : l&apos;hydrorétenteur garde l&apos;eau près des
+              racines et la rend à la plante peu à peu. Selon la culture et le climat, les essais
+              mesurent jusqu&apos;à 82 % d&apos;eau en moins et jusqu&apos;à 93 % de récolte en plus.
+            </p>
+          </div>
+        </section>
+
+        <section className="dossier-section">
           <h2 className="section-title">Les essais terminés</h2>
           <div className="dossier-cartes">
             {ESSAIS.map((e) => (
               <a key={e.slug} className="dossier-carte" href={`/fr/essais-terrain/${e.slug}`}>
+                {photosDe(e.slug)[0] && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={photosDe(e.slug)[0].src} alt="" loading="lazy" decoding="async" />
+                )}
                 <div className="dossier-carte-corps">
                   <p className="eyebrow">
                     {e.culture.split(" (")[0]} · {e.pays}
@@ -84,6 +110,26 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
               </li>
             ))}
           </ul>
+        </section>
+
+        <section className="dossier-section">
+          <h2 className="section-title">Nos guides</h2>
+          <ul className="dossier-puces">
+            {GUIDES.map((g) => (
+              <li key={g.slug}>
+                <a href={`/fr/guides/${g.slug}`}>{g.titre}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="dossier-section">
+          <p className="gv-credit">
+            Photo du bandeau : {BANDEAU.auteur} —{" "}
+            <a href={BANDEAU.page} target="_blank" rel="noreferrer">
+              {BANDEAU.licence}, Wikimedia Commons
+            </a>
+          </p>
         </section>
       </div>
     </article>
