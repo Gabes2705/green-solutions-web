@@ -93,6 +93,10 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect width="10" height="20" fill="#006847" />
       <rect x="10" width="10" height="20" fill="#fff" />
       <rect x="20" width="10" height="20" fill="#CE1126" />
+      {/* L'aigle des armoiries, réduit à un médaillon : sans lui, le drapeau
+          mexicain ne se distingue pas du drapeau italien. */}
+      <circle cx="15" cy="10" r="3.2" fill="#8C5A2B" />
+      <circle cx="15" cy="10" r="3.2" fill="none" stroke="#006847" strokeWidth="0.8" />
     </>
   ),
   "etats-unis": () => (
