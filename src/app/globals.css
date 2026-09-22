@@ -3272,7 +3272,8 @@ body li {
   font-weight: 600;
   font-size: clamp(1.9rem, 4.4vw, 2.8rem);
   line-height: 1.1;
-  color: #fff;
+  /* Était blanc, sur un fond clair : le titre ne se lisait pas. */
+  color: var(--leaf-deep);
 }
 .field-tests-list {
   margin-top: 0.6em;
