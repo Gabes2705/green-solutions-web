@@ -1,7 +1,7 @@
 /* La page « Tests et rapports » en français : deux colonnes.
  *
- * À gauche, les résultats expliqués essai par essai, sur un fond vert qui se
- * voit ; à droite, les rapports PDF d'origine. Sur téléphone, les résultats
+ * À gauche, les rapports PDF d'origine ; à droite, sur un fond vert qui se
+ * voit, les résultats expliqués essai par essai. Sur téléphone, les résultats
  * passent en premier. */
 
 .field-tests-hero.ft-large {
@@ -13,7 +13,7 @@
   margin: 0 auto;
   padding: 2.4em 6vw 6em;
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   gap: 2.2rem;
   align-items: start;
 }
@@ -29,6 +29,7 @@
 /* ---- Colonne des résultats ---- */
 
 .ft-resultats {
+  order: 2;
   padding: 1.6rem;
   border-radius: 22px;
   background:
@@ -132,6 +133,9 @@
 @media (max-width: 860px) {
   .ft-colonnes {
     grid-template-columns: 1fr;
+  }
+  .ft-resultats {
+    order: 0;
   }
 }
 
