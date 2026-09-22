@@ -15,6 +15,7 @@ import Statement from "@/components/Statement";
 import Team from "@/components/Team";
 import TechChain from "@/components/TechChain";
 import TenirAvancer from "@/components/TenirAvancer";
+import TestsRapports from "@/components/TestsRapports";
 import CropExperience from "@/components/CropExperience";
 
 export const dynamicParams = true;
@@ -50,6 +51,7 @@ export default function Home() {
       <Presentation />
       <TenirAvancer />
       <Produits />
+      <TestsRapports />
       <Essais />
       <Objections />
       <TechChain />
