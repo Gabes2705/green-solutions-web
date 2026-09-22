@@ -1,8 +1,10 @@
-/* La page « Tests et rapports » en français : deux colonnes.
+/* « Tests et rapports » en français : deux encadrés côte à côte.
  *
- * À gauche, les rapports PDF d'origine ; à droite, sur un fond vert qui se
- * voit, les résultats expliqués essai par essai. Sur téléphone, les résultats
- * passent en premier. */
+ * À gauche, les rapports PDF d'origine ; à droite, les résultats expliqués
+ * essai par essai. Les deux encadrés ont la même hauteur et leurs titres sont
+ * sur la même ligne. Les couleurs sont les verts pâles du site : un vert vif
+ * tranchait trop sur l'ambiance générale. Sur téléphone, les résultats passent
+ * en premier. */
 
 .field-tests-hero.ft-large {
   max-width: 1180px;
@@ -15,7 +17,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   gap: 2.2rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .ft-colonnes h2,
@@ -29,25 +31,33 @@
 
 /* ---- Colonne des résultats ---- */
 
-.ft-resultats {
-  order: 2;
+.ft-resultats,
+.ft-rapports {
+  display: flex;
+  flex-direction: column;
   padding: 1.6rem;
   border-radius: 22px;
-  background:
-    radial-gradient(90% 70% at 100% 0%, rgba(243, 211, 107, 0.35) 0%, rgba(243, 211, 107, 0) 60%),
-    linear-gradient(150deg, var(--leaf-strong) 0%, var(--amber) 55%, var(--teal) 100%);
-  color: #fff;
-  box-shadow: 0 18px 40px -18px rgba(31, 138, 69, 0.55);
+  border: 1px solid var(--hairline);
+}
+
+.ft-resultats {
+  order: 2;
+  background: linear-gradient(160deg, var(--bg-mid) 0%, #d7e7c2 100%);
+  box-shadow: 0 14px 34px -22px rgba(31, 138, 69, 0.45);
+}
+
+.ft-rapports {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .ft-resultats h2,
 .ft-resultats h3 {
-  color: #fff;
+  color: var(--leaf-deep);
 }
 
 .ft-intro {
   margin: 0 0 1.2rem;
-  color: rgba(255, 255, 255, 0.92);
+  color: var(--muted);
 }
 
 .ft-cartes {
@@ -58,12 +68,14 @@
   gap: 0.7rem;
 }
 
+/* Sept essais en face de onze rapports : des vignettes plus grandes
+   équilibrent la hauteur des deux listes. */
 .ft-carte {
   display: grid;
-  grid-template-columns: 5.5rem 1fr;
+  grid-template-columns: 9rem 1fr;
   align-items: center;
-  gap: 0.9rem;
-  padding: 0.55rem;
+  gap: 1.1rem;
+  padding: 0.65rem;
   border-radius: 14px;
   background: #fff;
   color: var(--ink);
@@ -74,11 +86,11 @@
 .ft-carte:hover,
 .ft-carte:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px -12px rgba(8, 40, 24, 0.6);
+  box-shadow: 0 10px 22px -12px rgba(30, 70, 40, 0.35);
 }
 
 .ft-carte:focus-visible {
-  outline: 3px solid #f3d36b;
+  outline: 3px solid var(--leaf-strong);
   outline-offset: 2px;
 }
 
@@ -104,22 +116,34 @@
 
 .ft-carte-titre {
   font-weight: 600;
-  line-height: 1.3;
+  font-size: 1.05rem;
+  line-height: 1.35;
 }
 
+@media (max-width: 480px) {
+  .ft-carte {
+    grid-template-columns: 6rem 1fr;
+  }
+}
+
+/* Le bouton reste en bas de l'encadré, aligné sur la fin de la liste d'en face. */
 .ft-tous {
-  display: inline-block;
-  margin-top: 1.2rem;
+  align-self: flex-start;
+  margin-top: auto;
   padding: 0.7em 1.3em;
   border-radius: 999px;
-  background: #fff;
-  color: var(--leaf-deep);
+  background: var(--leaf-strong);
+  color: #fff;
   font-weight: 700;
   text-decoration: none;
 }
 
+.ft-cartes {
+  margin-bottom: 1.2rem;
+}
+
 .ft-tous:hover {
-  background: #f3d36b;
+  background: var(--leaf-deep);
 }
 
 /* ---- Colonne des rapports ---- */
@@ -130,7 +154,7 @@
 }
 
 .ft-rapports .doc-list {
-  margin-top: 0.8em;
+  margin-top: 0;
 }
 
 @media (max-width: 860px) {

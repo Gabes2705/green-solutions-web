@@ -89,6 +89,9 @@ export default function TestsRapportsColonnes({
 
       <section className="ft-rapports" aria-labelledby={`ft-rapports-${titres}`}>
         <Titre id={`ft-rapports-${titres}`}>Les rapports originaux (PDF)</Titre>
+        <p className="ft-intro">
+          Les documents complets, tels que les universités et les exploitations les ont remis.
+        </p>
         {rapports}
       </section>
     </div>
