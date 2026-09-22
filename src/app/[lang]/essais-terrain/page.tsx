@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import "@/components/DossierPage.css";
 import { ESSAIS, ESSAIS_EN_COURS } from "@/lib/essais";
 import { GUIDES } from "@/lib/guides";
+import { AnimationGranule, photosDe } from "@/components/EssaisVisuels";
 import { SITE_URL } from "@/lib/site";
 
 /**
@@ -59,10 +60,25 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
 
       <div className="dossier-corps">
         <section className="dossier-section">
+          <div className="gv-duo">
+            <AnimationGranule />
+            <p className="dossier-texte">
+              Le principe est le même partout : l&apos;hydrorétenteur garde l&apos;eau près des
+              racines et la rend à la plante peu à peu. Selon la culture et le climat, les essais
+              mesurent jusqu&apos;à 82 % d&apos;eau en moins et jusqu&apos;à 93 % de récolte en plus.
+            </p>
+          </div>
+        </section>
+
+        <section className="dossier-section">
           <h2 className="section-title">Les essais terminés</h2>
           <div className="dossier-cartes">
             {ESSAIS.map((e) => (
               <a key={e.slug} className="dossier-carte" href={`/fr/essais-terrain/${e.slug}`}>
+                {photosDe(e.slug)[0] && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={photosDe(e.slug)[0].src} alt="" loading="lazy" decoding="async" />
+                )}
                 <div className="dossier-carte-corps">
                   <p className="eyebrow">
                     {e.culture.split(" (")[0]} · {e.pays}

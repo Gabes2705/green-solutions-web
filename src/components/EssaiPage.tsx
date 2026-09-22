@@ -1,5 +1,6 @@
 import "./DossierPage.css";
-import { ESSAIS, type Essai } from "@/lib/essais";
+import { ESSAIS, GRAPHIQUES, type Essai } from "@/lib/essais";
+import { AnimationGranule, Graphiques, PhotoLibre, photosDe } from "./EssaisVisuels";
 
 /**
  * Un essai de terrain rendu en HTML.
@@ -11,6 +12,8 @@ import { ESSAIS, type Essai } from "@/lib/essais";
  */
 export default function EssaiPage({ essai }: { essai: Essai }) {
   const autres = ESSAIS.filter((e) => e.slug !== essai.slug);
+  const photos = photosDe(essai.slug);
+  const culture = essai.culture.split(" (")[0].toLowerCase();
 
   return (
     <article className="dossier-page" lang="fr-FR">
@@ -20,7 +23,14 @@ export default function EssaiPage({ essai }: { essai: Essai }) {
         </a>
       </div>
 
-      <header className="dossier-hero dossier-hero-uni">
+      <header className={`dossier-hero${photos[0] ? "" : " dossier-hero-uni"}`}>
+        {photos[0] && (
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="dossier-hero-photo" src={photos[0].src} alt="" fetchPriority="high" />
+            <div className="dossier-hero-voile" aria-hidden="true" />
+          </>
+        )}
         <div className="dossier-hero-texte">
           <p className="eyebrow">
             Essai de terrain · {essai.pays}
@@ -44,6 +54,26 @@ export default function EssaiPage({ essai }: { essai: Essai }) {
                 <span className="dossier-chiffre-label">{r.label}</span>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="dossier-section">
+          <p className="eyebrow">En images</p>
+          <h2 className="section-title">Avant, après : la différence mesurée</h2>
+          <Graphiques graphiques={GRAPHIQUES[essai.slug] ?? []} />
+        </section>
+
+        <section className="dossier-section">
+          <p className="eyebrow">Comment ça marche</p>
+          <h2 className="section-title">L&apos;eau reste là où la plante en a besoin</h2>
+          <div className="gv-duo">
+            <AnimationGranule />
+            <p className="dossier-texte">
+              Mélangé au sol près des racines, l&apos;hydrorétenteur se gorge d&apos;eau à chaque
+              arrosage ou à chaque pluie, au lieu de la laisser s&apos;évaporer ou filer en
+              profondeur. Il la rend ensuite à la plante, jour après jour. On arrose moins souvent,
+              et la plante ne subit pas de coup de soif entre deux arrosages.
+            </p>
           </div>
         </section>
 
@@ -80,6 +110,16 @@ export default function EssaiPage({ essai }: { essai: Essai }) {
             ))}
           </ul>
         </section>
+
+        {photos.length > 0 && (
+          <section className="dossier-section">
+            <div className="gv-photos">
+              {photos.map((ph, i) => (
+                <PhotoLibre key={i} photo={ph} alt={`Culture de ${culture}`} />
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="dossier-section">
           <p className="eyebrow">Autres essais</p>

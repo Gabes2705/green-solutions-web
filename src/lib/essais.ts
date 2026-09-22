@@ -274,3 +274,52 @@ export const ESSAIS_EN_COURS = [
     pdf: "/documents/field-tests/hydrogel-oregon-2025.pdf",
   },
 ];
+
+/**
+ * Les graphiques de chaque page : une comparaison témoin / traité par mesure.
+ *
+ * Les valeurs sont celles des rapports. Quand un rapport ne donne qu'un
+ * pourcentage, le témoin est posé à 100 et l'unité le dit (« indice »).
+ */
+export type Barre = { label: string; valeur: number; affiche: string; traite: boolean };
+export type Graphique = { titre: string; barres: Barre[] };
+
+const t = (label: string, valeur: number, affiche: string): Barre => ({ label, valeur, affiche, traite: false });
+const v = (label: string, valeur: number, affiche: string): Barre => ({ label, valeur, affiche, traite: true });
+
+export const GRAPHIQUES: Record<string, Graphique[]> = {
+  "palmiers-dattiers-emirats-icba": [
+    { titre: "Eau d'irrigation sur la saison (indice, témoin = 100)", barres: [t("Sans EVERGREEN", 100, "100"), v("Avec EVERGREEN", 18, "18")] },
+    { titre: "Rendement en dattes (indice, témoin = 100)", barres: [t("Sans EVERGREEN", 100, "100"), v("300 g par arbre", 120, "120")] },
+  ],
+  "pasteques-mexique": [
+    { titre: "Eau d'irrigation (indice, témoin = 100)", barres: [t("Sans EVERGREEN", 100, "100"), v("5 g par plant", 39.5, "39,5")] },
+    { titre: "Récolte (indice, témoin = 100)", barres: [t("Sans EVERGREEN", 100, "100"), v("5 g par plant", 130, "130")] },
+  ],
+  "coton-turquie-hatay": [
+    { titre: "Rendement en coton (t/ha)", barres: [t("Zone témoin", 2.53, "2,53 t"), v("Avec EVERGREEN", 4.88, "4,88 t")] },
+    { titre: "Revenu brut (USD/ha)", barres: [t("Zone témoin", 1710, "1 710 $"), v("Avec EVERGREEN", 3300, "3 300 $")] },
+  ],
+  "mais-turquie-konya": [
+    { titre: "Eau d'irrigation sur 4 mois (mm)", barres: [t("Zone témoin", 864, "864 mm"), v("Zones traitées", 528, "528 mm")] },
+    {
+      titre: "Rendement en maïs selon la dose (kg/ha)",
+      barres: [t("Témoin", 10300, "10 300"), v("39 kg/ha", 11200, "11 200"), v("51 kg/ha", 10300, "10 300"), v("74 kg/ha", 12060, "12 060")],
+    },
+  ],
+  "canne-a-sucre-indonesie": [
+    { titre: "Tonnage récolté (t)", barres: [t("Témoin", 6950, "6 950 t"), v("2,5 g par pied", 9330, "9 330 t"), v("5 g par pied", 10800, "10 800 t")] },
+    { titre: "Teneur en saccharose à la récolte", barres: [t("Témoin", 14, "14"), v("2,5 g par pied", 16, "16"), v("5 g par pied", 18, "18")] },
+  ],
+  "pommes-de-terre-afrique-du-sud": [
+    { titre: "Rendement (t/ha)", barres: [t("Sans traitement", 12, "12 t"), v("EVERGREEN + ECOFERT", 15.7, "15,7 t")] },
+    { titre: "Eau d'irrigation (indice, témoin = 100)", barres: [t("Sans traitement", 100, "100"), v("EVERGREEN + ECOFERT", 48, "48")] },
+  ],
+  "soja-chine-shandong": [
+    { titre: "Rendement en soja (indice, témoin = 100)", barres: [t("Sans super-absorbant", 100, "100"), v("Avec super-absorbant", 111.3, "111,2 à 111,4")] },
+  ],
+  "engrais-bio-liquide-biostimulant": [
+    { titre: "Canne à sucre à Java : tonnage (t)", barres: [t("Témoin", 6950, "6 950 t"), v("EVERGREEN + ECOFERT", 10800, "10 800 t")] },
+    { titre: "Pommes de terre en Afrique du Sud : rendement (t/ha)", barres: [t("Sans traitement", 12, "12 t"), v("EVERGREEN + ECOFERT", 15.7, "15,7 t")] },
+  ],
+};

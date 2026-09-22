@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import "@/components/DossierPage.css";
 import { GUIDES } from "@/lib/guides";
-import { ESSAIS } from "@/lib/essais";
+import { ESSAIS, GRAPHIQUES } from "@/lib/essais";
+import { AnimationPousse, Graphiques, PhotoLibre, photosDe } from "@/components/EssaisVisuels";
 import { SITE_URL } from "@/lib/site";
 
 /** Rédigés en français seulement : servis sous /fr, nulle part ailleurs. */
@@ -45,6 +46,9 @@ export default async function Page({ params }: Params) {
     .map((s) => ESSAIS.find((e) => e.slug === s))
     .filter((e) => e !== undefined);
 
+  const photos = photosDe(guide.slug);
+  const graphiques = GRAPHIQUES[guide.slug] ?? [];
+
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -68,7 +72,14 @@ export default async function Page({ params }: Params) {
           </a>
         </div>
 
-        <header className="dossier-hero dossier-hero-uni">
+        <header className={`dossier-hero${photos[0] ? "" : " dossier-hero-uni"}`}>
+          {photos[0] && (
+            <>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className="dossier-hero-photo" src={photos[0].src} alt="" fetchPriority="high" />
+              <div className="dossier-hero-voile" aria-hidden="true" />
+            </>
+          )}
           <div className="dossier-hero-texte">
             <p className="eyebrow">{guide.eyebrow}</p>
             <h1>{guide.h1}</h1>
@@ -97,11 +108,24 @@ export default async function Page({ params }: Params) {
           {guide.sections.map((s, i) => (
             <section key={i} className="dossier-section">
               <h2 className="section-title">{s.titre}</h2>
-              {s.paragraphes?.map((p, j) => (
-                <p key={j} className="dossier-note">
-                  {p}
-                </p>
-              ))}
+              {i === 0 ? (
+                <div className="gv-duo">
+                  <div>
+                    {s.paragraphes?.map((p, j) => (
+                      <p key={j} className="dossier-texte">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                  <AnimationPousse />
+                </div>
+              ) : (
+                s.paragraphes?.map((p, j) => (
+                  <p key={j} className="dossier-texte">
+                    {p}
+                  </p>
+                ))
+              )}
               {s.puces && (
                 <ul className="dossier-puces">
                   {s.puces.map((p, j) => (
@@ -111,6 +135,24 @@ export default async function Page({ params }: Params) {
               )}
             </section>
           ))}
+
+          {graphiques.length > 0 && (
+            <section className="dossier-section">
+              <p className="eyebrow">Résultats de terrain</p>
+              <h2 className="section-title">Ce que les essais ont mesuré</h2>
+              <Graphiques graphiques={graphiques} />
+            </section>
+          )}
+
+          {photos.length > 0 && (
+            <section className="dossier-section">
+              <div className="gv-photos">
+                {photos.map((ph, i) => (
+                  <PhotoLibre key={i} photo={ph} alt="Jeunes plants de tomates en serre" />
+                ))}
+              </div>
+            </section>
+          )}
 
           {essais.length > 0 && (
             <section className="dossier-section">
