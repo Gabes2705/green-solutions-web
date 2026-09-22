@@ -107,9 +107,6 @@ export default function WorldNetwork({
 
       const hubPin = map.getPin({ lat: HUB.lat, lng: HUB.lng });
       const nodes = NODES.map((node) => {
-        if (node.label === "Madagascar") {
-          return { ...MADAGASCAR_POINT, label: node.label };
-        }
         const pin = map.getPin({ lat: node.lat, lng: node.lng });
         return pin ? { ...toOverlay(pin), label: node.label } : null;
       }).filter((node): node is ProjectedNode => Boolean(node));
@@ -177,6 +174,8 @@ export default function WorldNetwork({
     return () => ctx.revert();
   }, [dotsSvg, hubPoint, projectedNodes]);
 
+  const madagascarNode = projectedNodes.find((node) => node.label === "Madagascar");
+
   return (
     <div className="world-network">
       {countryCountLabel && (
@@ -234,6 +233,32 @@ export default function WorldNetwork({
             />
           </g>
         ))}
+
+        {hubPoint && madagascarNode && (
+          <>
+            <path
+              d={curvedPath(hubPoint, madagascarNode)}
+              fill="none"
+              stroke="#E53935"
+              strokeWidth="2.4"
+              strokeLinecap="round"
+            />
+            <g transform={arrowTransform(hubPoint, madagascarNode)}>
+              <path
+                d="M -8 -4.8 L 0 0 L -8 4.8 Z"
+                fill="#E53935"
+              />
+            </g>
+            <circle
+              cx={madagascarNode.x}
+              cy={madagascarNode.y}
+              r="10"
+              fill="none"
+              stroke="#E53935"
+              strokeWidth="2.2"
+            />
+          </>
+        )}
 
         {hubPoint && (
           <>
