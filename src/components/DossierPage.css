@@ -53,7 +53,7 @@
 
 .dossier-hero-texte {
   position: relative;
-  max-width: 54rem;
+  max-width: 76rem;
   margin: 0 auto;
   width: 100%;
   display: grid;
@@ -88,7 +88,7 @@
 
 .dossier-hero-chapeau {
   margin: 0;
-  max-width: 44rem;
+  max-width: 62rem;
   font-size: 1.05rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.92);
@@ -104,7 +104,9 @@
 /* ---- Corps ---- */
 
 .dossier-corps {
-  max-width: 54rem;
+  /* Plus large qu'à l'origine (54rem), à la demande de Gabriel : moins de
+     défilement, les listes passent sur deux colonnes. */
+  max-width: 76rem;
   margin: 0 auto;
   padding: 0 1.25rem 4rem;
 }
@@ -479,4 +481,24 @@
 
 .dossier-credits p {
   margin: 0;
+}
+
+/* ---- Sur grand écran : listes et questions sur deux colonnes ---- */
+
+@media (min-width: 64rem) {
+  .dossier-puces {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem 2.5rem;
+  }
+
+  .dossier-split .dossier-puces {
+    grid-template-columns: 1fr;
+  }
+
+  .gv-faq {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 2rem;
+  }
 }

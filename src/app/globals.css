@@ -3257,9 +3257,39 @@ body li {
 }
 
 .tech-body {
-  max-width: 780px;
+  /* Était de 780 px : sur un écran d'ordinateur, le texte n'occupait pas le
+     tiers de la page et il fallait faire défiler sans fin. */
+  max-width: 1240px;
   margin: 0 auto;
   padding: 3.2em 6vw 6em;
+}
+@media (min-width: 1000px) {
+  .tech-section-duo {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+  }
+  .tech-section-inverse {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+  }
+  .tech-section-inverse .tech-section-texte {
+    order: 2;
+  }
+  .tech-section-duo .tech-figure {
+    position: sticky;
+    top: 96px;
+    margin-top: 2.6rem;
+  }
+  .tech-body .tech-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9em 2.5em;
+  }
+}
+/* Une seule vidéo ne s'étire pas sur toute la largeur. */
+.tech-video-grid:has(> :only-child) {
+  max-width: 860px;
 }
 .field-tests-hero {
   max-width: 780px;

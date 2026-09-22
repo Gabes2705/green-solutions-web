@@ -204,16 +204,21 @@ export default function TechnologyPageClient() {
           const src = images.gallery[i];
           const caption = item.detail.gallery[i];
           const paragraphs = splitParagraphs(s.p, language);
-          const splitAt = Math.ceil(paragraphs.length / 2);
-          const firstHalf = paragraphs.slice(0, splitAt);
-          const secondHalf = paragraphs.slice(splitAt);
+          // Sur grand écran, le texte et la photo se partagent la largeur, et
+          // la photo change de côté d'une section à l'autre ; sur téléphone,
+          // la photo passe sous le texte.
+          const classes = src
+            ? `tech-section tech-section-duo${i % 2 ? " tech-section-inverse" : ""}`
+            : "tech-section";
           return (
             <Reveal key={s.h}>
-              <section className="tech-section">
-                <h2>{s.h}</h2>
-                {firstHalf.map((p, pi) => (
-                  <p key={pi}>{p}</p>
-                ))}
+              <section className={classes}>
+                <div className="tech-section-texte">
+                  <h2>{s.h}</h2>
+                  {paragraphs.map((p, pi) => (
+                    <p key={pi}>{p}</p>
+                  ))}
+                </div>
                 {src && (
                   <figure className="tech-figure">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -221,9 +226,6 @@ export default function TechnologyPageClient() {
                     {caption && <figcaption>{caption}</figcaption>}
                   </figure>
                 )}
-                {secondHalf.map((p, pi) => (
-                  <p key={pi}>{p}</p>
-                ))}
               </section>
             </Reveal>
           );

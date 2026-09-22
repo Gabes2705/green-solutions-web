@@ -222,12 +222,14 @@ export default async function Page({ params }: Params) {
           <section className="dossier-section">
             <p className="eyebrow">Questions fréquentes</p>
             <h2 className="section-title">Ce qu&apos;on nous demande souvent</h2>
-            {guide.faq.map((f, i) => (
-              <div key={i} className="dossier-lecture">
-                <h3>{f.q}</h3>
-                <p>{f.r}</p>
-              </div>
-            ))}
+            <div className="gv-faq">
+              {guide.faq.map((f, i) => (
+                <div key={i} className="dossier-lecture">
+                  <h3>{f.q}</h3>
+                  <p>{f.r}</p>
+                </div>
+              ))}
+            </div>
           </section>
         </div>
       </article>
