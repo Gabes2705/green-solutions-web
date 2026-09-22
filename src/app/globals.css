@@ -2709,15 +2709,6 @@ body li {
   box-shadow: 0 8px 24px rgba(20, 70, 43, 0.1);
   backdrop-filter: blur(8px);
 }
-.madagascar-label {
-  fill: #7a4a00;
-  font-size: 11px;
-  font-weight: 800;
-  paint-order: stroke;
-  stroke: rgba(255,255,255,.95);
-  stroke-width: 3px;
-  stroke-linejoin: round;
-}
 
 .ticker {
   margin-top: 3em;
