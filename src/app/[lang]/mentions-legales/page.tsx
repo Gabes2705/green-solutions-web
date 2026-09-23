@@ -74,9 +74,9 @@ export default async function MentionsLegales({ params }: Params) {
       <p>{t.creditsBody}</p>
 
       <h2>{t.personalData}</h2>
+      <p>{t.personalDataBody}</p>
       <p>
-        {t.personalDataBody}{" "}
-        <a href={`/${key}/confidentialite`}>{t.privacyTitle}</a>.
+        <a href={`/${key}/confidentialite`}>{t.privacyTitle} →</a>
       </p>
     </main>
   );
