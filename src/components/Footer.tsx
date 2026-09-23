@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
+import { LEGAL_TEXT } from "@/lib/legal-content";
 
 export default function Footer() {
-  const { c } = useLanguage();
+  const { c, language } = useLanguage();
+  const legal = LEGAL_TEXT[language];
 
   return (
     <footer className="site-footer">
@@ -20,9 +22,9 @@ export default function Footer() {
           son anneau, mais à 110px elle ne se lit pas : elle est écrite ici. */}
       <p>{c.footer.address}</p>
       <p className="footer-legal">
-        <a href="/fr/mentions-legales">Mentions légales</a>
+        <a href={`/${language}/mentions-legales`}>{legal.legalTitle}</a>
         <span aria-hidden="true"> · </span>
-        <a href="/fr/confidentialite">Politique de confidentialité</a>
+        <a href={`/${language}/confidentialite`}>{legal.privacyTitle}</a>
       </p>
       <p className="photo-credit">
         {c.footer.photoCreditPrefix}{" "}
