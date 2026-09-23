@@ -7,7 +7,7 @@ const baseContent = {
     waterCalculator: {
       eyebrow: "Simulateur",
       title: "Calculez vos économies d'eau",
-      lede: "Renseignez votre exploitation pour estimer l'économie réalisable avec nos hydro‑rétenteurs, selon votre mode d'irrigation actuel.",
+      lede: "Renseignez votre exploitation pour estimer l'économie réalisable avec nos hydrorétenteurs, selon votre mode d'irrigation actuel.",
       surfaceLabel: "Surface cultivée",
       surfaceUnit: "ha",
       irrigationLabel: "Mode d'irrigation actuel",
@@ -18,7 +18,7 @@ const baseContent = {
       resultNote: "Fourchette basse à haute, selon le mode d'irrigation",
       poolsPrefix: "soit l'équivalent de",
       poolsSuffix: "piscines olympiques",
-      disclaimer: "Estimation indicative fondée sur les gains d'économie d'eau documentés de nos hydro‑rétenteurs (−40 à −70 % selon le mode d'irrigation). Le résultat réel dépend du sol, du climat et de la culture. Cet outil donne un ordre de grandeur : en aucun cas ces chiffres ne peuvent être considérés comme une valeur garantie, contractuelle ou absolue.",
+      disclaimer: "Estimation indicative fondée sur les gains d'économie d'eau documentés de nos hydrorétenteurs (−40 à −70 % selon le mode d'irrigation). Le résultat réel dépend du sol, du climat et de la culture. Cet outil donne un ordre de grandeur : en aucun cas ces chiffres ne peuvent être considérés comme une valeur garantie, contractuelle ou absolue.",
     },
     doseCalculator: {
             eyebrow: "Calculateur de dosage",
@@ -122,21 +122,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 à +100 %", label: "de rendement, en quantité comme en qualité" },
-      { figure: "−50 à −70 %", label: "de besoin en eau d'irrigation" },
-      { figure: "14", label: "essais pilotes en cours en 2026" },
+      { figure: "−40 à −70 %", label: "de besoin en eau d'irrigation" },
+      { figure: "15", label: "essais pilotes en cours en 2026" },
       { figure: "SOHISCERT", label: "et EU Bio, certifications réelles" },
     ],
     presentation: {
       eyebrow: "Notre approche",
-      title1: "Nos quatre technologies",
+      title1: "Nos cinq technologies",
       title2: "Un but",
       title3: "La croissance et la qualité",
       lede: "Green Solutions développe et distribue des technologies agricoles disruptives, conçues pour augmenter la productivité tout en préservant, et même en régénérant, les ressources naturelles dont cette productivité dépend. Des réponses concrètes, éprouvées au champ, au stress hydrique, à l'épuisement des sols, à la rentabilité et à la sécurité alimentaire.",
       tagline: "Toutes nos solutions disruptives sont utilisables pour toutes les plantes et cultures, sous tous les climats et tous types de sol !",
       stats: [
         { num: "30", label: "partenaires" },
-        { num: "38", label: "pays" },
-        { num: "4", label: "technologies de marque" },
+        { num: "39", label: "pays" },
+        { num: "5", label: "technologies de marque" },
       ],
       distinguish: [
         { num: "01", title: "Certifié, pas simplement annoncé", text: "SOHISCERT · EU Bio, compatible agriculture biologique." },
@@ -148,7 +148,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "Qu'est-ce qui vous amène ?",
       title1: "Deux directions possibles :",
-      title2: "Tenter de survivre, avancer de l'autre.",
+      title2: "Tenter de survivre d'un côté, avancer de l'autre.",
       tabLabel: "Tenir ou avancer",
       tabTenir: "01 · Ne rien changer",
       tabAvancer: "02 · Réagir et gagner",
@@ -160,7 +160,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Augmenter les rendements sans la facture d'eau : nos hydro‑rétenteurs et notre eau restructurée réduisent le besoin en irrigation de 50 à 70 %, tout en maintenant, voire en augmentant, vos rendements.",
+          text: "Augmenter les rendements sans la facture d'eau : nos hydrorétenteurs et notre eau restructurée réduisent le besoin en irrigation de 50 à 70 %, tout en maintenant, voire en augmentant, vos rendements.",
           linkLabel: "Voir EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -175,7 +175,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Rendre le reboisement rentable : le Paulownia ALTIFOLIA® atteint 13 à 15 m en six à huit ans et son bois se valorise autour de 550 €/m³, pour une rentabilité sur six ans de culture.",
+          text: "Rendre le reboisement rentable : le Paulownia ALTIFOLIA® atteint 13 à 15 m en six à huit ans, jusqu'à 20 m ensuite et son bois se valorise autour de 550 €/m³, pour une rentabilité sur six ans de culture.",
           linkLabel: "Voir Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -197,24 +197,24 @@ const baseContent = {
           num: "01",
           kicker: "Retenir l'eau",
           title: "EVERGREEN® & ECOSORB®",
-          text: "Nos hydro‑rétenteurs captent l'eau de pluie ou d'irrigation et la stockent sous forme gélifiée au plus près des racines, sans en altérer la qualité. Un réservoir permanent, accessible à la plante quel que soit le sol ou le climat, qui supprime le stress hydrique aux phases critiques du cycle.",
+          text: "Nos hydrorétenteurs captent l'eau de pluie ou d'irrigation et la stockent sous forme gélifiée au plus près des racines, sans en altérer la qualité. Un réservoir permanent, accessible à la plante quel que soit le sol ou le climat, qui supprime le stress hydrique aux phases critiques du cycle.",
           facts: [
-            "−50 à −70 % d'eau selon le type d'irrigation",
-            "EVERGREEN® : WAC (capacité d'absorption d'eau) 300 X, 3 ans dans le sol",
-            "ECOSORB® : 300 fois son poids, base amidon de maïs, 2 à 3 ans",
+            "−40 à −70 % d'eau selon le type d'irrigation",
+            "EVERGREEN® : environ 300 fois son poids en eau, 3 à 4 ans dans le sol",
+            "ECOSORB® : environ 300 fois son poids, base amidon de maïs, 2 à 3 ans",
             "Se dégrade de 20 à 25 % par an, aucun risque de surdosage",
             "Canne à sucre : +25 % de taux de sucre (Brix) à 15 kg/ha",
           ],
-          more: "EVERGREEN® et ECOSORB® sont des polymères super-absorbants qui se biodégradent complètement, sans laisser de résidu dans le sol ni sur les plantes. Ils absorbent jusqu'à 300 à 400 fois leur poids en eau et la restituent aux racines selon les besoins de la culture, cycle après cycle, jusqu'à leur dégradation naturelle (20 à 25 % par an) en CO₂, eau et composés azotés assimilables. Contrairement aux hydrorétenteurs à base de sodium — qui, une fois hydratés, forment une pâte asphyxiante et salée pour les racines — ou aux formulations à base d'acrylamide, interdites dans de nombreux pays pour leur toxicité, nos deux références sont élaborées à base de potassium, compatibles avec les cultures alimentaires. Au contact de l'eau, le grain sec se gorge et gonfle : cet effet de va-et-vient décompacte le sol comme le ferait un lombric, améliore sa perméabilité et crée un microclimat humide propice à la microfaune et à la microflore, moteurs de la fertilité naturelle. Les engrais dissous sont capturés au passage plutôt que lessivés vers les nappes, ce qui réduit la pollution et permet de mieux valoriser chaque apport. Associés à nos fertilisants ECOFERT®, EVERGREEN® et ECOSORB® forment un système complet qui a permis, en canne à sucre, un gain de 25 % de taux de sucre (Brix) avec seulement 15 kg de produit par hectare. Plus de 95 % des plants transplantés avec nos hydrorétenteurs reprennent, contre un taux nettement plus faible en conditions conventionnelles.",
+          more: "EVERGREEN® et ECOSORB® sont des polymères super-absorbants qui se biodégradent complètement, sans laisser de résidu dans le sol ni sur les plantes. Ils absorbent environ 300 fois leur poids en eau et la restituent aux racines selon les besoins de la culture, cycle après cycle, jusqu'à leur dégradation naturelle (20 à 25 % par an) en CO₂, eau et composés azotés assimilables. Contrairement aux hydrorétenteurs à base de sodium — qui, une fois hydratés, forment une pâte asphyxiante et salée pour les racines — ou aux formulations à base d'acrylamide, interdites dans de nombreux pays pour leur toxicité, nos deux références sont élaborées à base de potassium, compatibles avec les cultures alimentaires. Au contact de l'eau, le grain sec se gorge et gonfle : cet effet de va-et-vient décompacte le sol comme le ferait un lombric, améliore sa perméabilité et crée un microclimat humide propice à la microfaune et à la microflore, moteurs de la fertilité naturelle. Les engrais dissous sont capturés au passage plutôt que lessivés vers les nappes, ce qui réduit la pollution et permet de mieux valoriser chaque apport. Associés à nos fertilisants ECOFERT®, EVERGREEN® et ECOSORB® forment un système complet qui a permis, en canne à sucre, un gain de 25 % de taux de sucre (Brix) avec seulement 15 kg de produit par hectare. Plus de 95 % des plants transplantés avec nos hydrorétenteurs reprennent, contre un taux nettement plus faible en conditions conventionnelles.",
           detail: {
             sections: [
               {
                 h: "Le principe",
-                p: "EVERGREEN® et ECOSORB® sont des polymères super-absorbants qui se biodégradent complètement, sans laisser de résidu dans le sol ni sur les plantes. Ils absorbent jusqu'à 300 à 400 fois leur poids en eau et la restituent aux racines selon les besoins de la culture, cycle après cycle, jusqu'à leur dégradation naturelle (20 à 25 % par an) en CO₂, eau et composés azotés assimilables. Contrairement aux hydrorétenteurs à base de sodium — qui, une fois hydratés, forment une pâte asphyxiante et salée pour les racines — ou aux formulations à base d'acrylamide, interdites dans de nombreux pays pour leur toxicité, nos deux références sont élaborées à base de potassium, compatibles avec les cultures alimentaires. Au contact de l'eau, le grain sec se gorge et gonfle : cet effet de va-et-vient décompacte le sol comme le ferait un lombric, améliore sa perméabilité et crée un microclimat humide propice à la microfaune et à la microflore, moteurs de la fertilité naturelle. Les engrais dissous sont capturés au passage plutôt que lessivés vers les nappes, ce qui réduit la pollution et permet de mieux valoriser chaque apport. Associés à nos fertilisants ECOFERT®, EVERGREEN® et ECOSORB® forment un système complet qui a permis, en canne à sucre, un gain de 25 % de taux de sucre (Brix) avec seulement 15 kg de produit par hectare. Plus de 95 % des plants transplantés avec nos hydrorétenteurs reprennent, contre un taux nettement plus faible en conditions conventionnelles.",
+                p: "EVERGREEN® et ECOSORB® sont des polymères super-absorbants qui se biodégradent complètement, sans laisser de résidu dans le sol ni sur les plantes. Ils absorbent environ 300 fois leur poids en eau et la restituent aux racines selon les besoins de la culture, cycle après cycle, jusqu'à leur dégradation naturelle (20 à 25 % par an) en CO₂, eau et composés azotés assimilables. Contrairement aux hydrorétenteurs à base de sodium — qui, une fois hydratés, forment une pâte asphyxiante et salée pour les racines — ou aux formulations à base d'acrylamide, interdites dans de nombreux pays pour leur toxicité, nos deux références sont élaborées à base de potassium, compatibles avec les cultures alimentaires. Au contact de l'eau, le grain sec se gorge et gonfle : cet effet de va-et-vient décompacte le sol comme le ferait un lombric, améliore sa perméabilité et crée un microclimat humide propice à la microfaune et à la microflore, moteurs de la fertilité naturelle. Les engrais dissous sont capturés au passage plutôt que lessivés vers les nappes, ce qui réduit la pollution et permet de mieux valoriser chaque apport. Associés à nos fertilisants ECOFERT®, EVERGREEN® et ECOSORB® forment un système complet qui a permis, en canne à sucre, un gain de 25 % de taux de sucre (Brix) avec seulement 15 kg de produit par hectare. Plus de 95 % des plants transplantés avec nos hydrorétenteurs reprennent, contre un taux nettement plus faible en conditions conventionnelles.",
               },
               {
                 h: "Le mécanisme, en détail",
-                p: "Au contact de l'eau — pluie, irrigation ou humidité résiduelle du sol — le grain sec d'hydrorétenteur absorbe jusqu'à 300 à 400 fois son propre poids, se transformant en un gel qui stocke l'eau au plus près des racines. Les trois premières semaines de culture sont critiques : une irrigation normale doit être maintenue pour saturer complètement les grains, pendant lesquelles les racines des plantes s'entremêlent avec le gel et s'ancrent dans cette réserve d'eau. EVERGREEN® et ECOSORB® ne sont en aucun cas toxiques pour la peau ; seule leur granulométrie fine impose le port d'un masque anti-poussière à la manipulation. En cas de renversement accidentel, on souffle les résidus à l'air comprimé plutôt que de rincer à l'eau, qui rendrait le sol glissant.",
+                p: "Au contact de l'eau — pluie, irrigation ou humidité résiduelle du sol — le grain sec d'hydrorétenteur absorbe environ 300 fois son propre poids, se transformant en un gel qui stocke l'eau au plus près des racines. Les trois premières semaines de culture sont critiques : une irrigation normale doit être maintenue pour saturer complètement les grains, pendant lesquelles les racines des plantes s'entremêlent avec le gel et s'ancrent dans cette réserve d'eau. EVERGREEN® et ECOSORB® ne sont en aucun cas toxiques pour la peau ; seule leur granulométrie fine impose le port d'un masque anti-poussière à la manipulation. En cas de renversement accidentel, on souffle les résidus à l'air comprimé plutôt que de rincer à l'eau, qui rendrait le sol glissant.",
               },
               {
                 h: "Où et comment l'utiliser",
@@ -305,7 +305,7 @@ const baseContent = {
           text: "La restructuration par résonance moléculaire transforme une eau « morte », désorganisée au niveau atomique, en eau vivante qui retrouve ses propriétés naturelles. Le système fonctionne sans énergie, sans entretien et sans consommable.",
           facts: [
             "−30 % d'eau, effet immédiat",
-            "Jusqu'à −70 % combiné aux hydro‑rétenteurs",
+            "Jusqu'à −70 % combiné aux hydrorétenteurs",
             "Moins de corrosion et de calcaire, adopté dans 55 pays",
           ],
           more: "Water Vital® restructure l'eau par résonance moléculaire : une eau « morte », désorganisée à l'échelle atomique après son passage dans les canalisations ou les forages, retrouve une structure proche de celle de l'eau naturelle. Le système est purement physique — sans énergie, sans entretien, sans consommable ni produit chimique — et s'installe directement sur les réseaux existants, au départ des pompes. Sur le terrain, chez le Groupe EL HILAL (Sidi Moussa, Tipaza, Algérie), Water Vital® a été retenu pour irriguer 350 hectares d'arbres fruitiers (figuiers, pommiers, pêchers, grenadiers) en goutte-à-goutte, alimentés par un bassin de 200 x 100 x 12 mètres et plusieurs forages, via trois groupes de pompage d'un débit de 42 à 180 m³/h. La solution a été installée directement au niveau des départs de pompe, sans modification du réseau d'irrigation existant. Les effets mesurés : jusqu'à −30 % de consommation d'eau dès la mise en service, et jusqu'à −70 % lorsque Water Vital® est combiné à nos hydrorétenteurs EVERGREEN® ou ECOSORB® ; moins de corrosion et de dépôts calcaires dans les canalisations et les buses d'irrigation. La technologie est aujourd'hui adoptée dans 55 pays.",
@@ -336,19 +336,19 @@ const baseContent = {
           num: "05",
           kicker: "Planter pour durer",
           title: "Paulownia ALTIFOLIA®",
-          text: "L'arbre à la croissance la plus rapide au monde : 13 à 15 m en six à huit ans, à près de 3 m par an. Associé à notre hydrorétenteur EVERGREEN®, il réduit de 50 % ses besoins en eau d'irrigation. Variétés hybrides stériles et non invasives, accompagnées du jeune plant jusqu'à la vente du bois.",
+          text: "L'arbre à la croissance la plus rapide au monde : 13 à 15 m en six à huit ans, jusqu'à 20 m ensuite, à près de 3 m par an. Associé à notre hydrorétenteur EVERGREEN®, il réduit de 50 % ses besoins en eau d'irrigation. Variétés hybrides stériles et non invasives, accompagnées du jeune plant jusqu'à la vente du bois.",
           facts: [
             "400 à 500 arbres/ha, valorisés à 400/450 € par m³",
             "Rentabilité sur six ans de culture",
             "Résiste de −25 °C à +45 °C, ne brûle qu'à 426 °C",
             "400 à 700 kg de miel par hectare, et des crédits carbone",
           ],
-          more: "Le Paulownia ALTIFOLIA® est l'arbre à la croissance la plus rapide au monde : dans de bonnes conditions, il atteint 13 à 15 mètres en six à huit ans, à raison d'environ 3 mètres par an, avec des feuilles pouvant dépasser 80 cm de long. C'est aussi l'un des arbres les plus efficaces pour capter le CO₂ et restituer de l'oxygène par photosynthèse. Notre variété ALTIFOLIA®, issue d'un croisement entre Paulownia Elongata et Paulownia Fortunei, a été sélectionnée pour les régions chaudes : elle développe un tronc au diamètre important en peu de temps. Associée à 100 g d'EVERGREEN® par plant à la plantation, l'irrigation nécessaire diminue de 50 % sans jamais exposer l'arbre au stress hydrique. Son système racinaire profond enrichit le sol en azote et prévient l'érosion ; sa résistance aux parasites et aux maladies est naturellement élevée, et le bois ne s'enflamme qu'à partir de 426 °C, ce qui en fait aussi une barrière anti-incendie. Les plants (25 à 30 cm à la livraison, en pot, certifiés sans maladie, garantis en cas de mortalité) sont acheminés par avion sous 6 semaines, puis doivent passer 6 semaines en serre avant plantation en goutte-à-goutte. La première coupe intervient en fin de sixième année, pour un bois valorisé à 400/450 € le m³ ; nous plantons nous-mêmes cette variété depuis plusieurs années, notamment en Espagne.",
+          more: "Le Paulownia ALTIFOLIA® est l'arbre à la croissance la plus rapide au monde : dans de bonnes conditions, il atteint 13 à 15 mètres en six à huit ans, et jusqu'à 20 mètres ensuite, à raison d'environ 3 mètres par an, avec des feuilles pouvant dépasser 80 cm de long. C'est aussi l'un des arbres les plus efficaces pour capter le CO₂ et restituer de l'oxygène par photosynthèse. Notre variété ALTIFOLIA®, issue d'un croisement entre Paulownia Elongata et Paulownia Fortunei, a été sélectionnée pour les régions chaudes : elle développe un tronc au diamètre important en peu de temps. Associée à 100 g d'EVERGREEN® par plant à la plantation, l'irrigation nécessaire diminue de 50 % sans jamais exposer l'arbre au stress hydrique. Son système racinaire profond enrichit le sol en azote et prévient l'érosion ; sa résistance aux parasites et aux maladies est naturellement élevée, et le bois ne s'enflamme qu'à partir de 426 °C, ce qui en fait aussi une barrière anti-incendie. Les plants (25 à 30 cm à la livraison, en pot, certifiés sans maladie, garantis en cas de mortalité) sont acheminés par avion sous 6 semaines, puis doivent passer 6 semaines en serre avant plantation en goutte-à-goutte. La première coupe intervient en fin de sixième année, pour un bois valorisé à 400/450 € le m³ ; nous plantons nous-mêmes cette variété depuis plusieurs années, notamment en Espagne.",
           detail: {
             sections: [
               {
                 h: "Le principe",
-                p: "Le Paulownia ALTIFOLIA® est l'arbre à la croissance la plus rapide au monde : dans de bonnes conditions, il atteint 13 à 15 mètres en six à huit ans, à raison d'environ 3 mètres par an, avec des feuilles pouvant dépasser 80 cm de long. C'est aussi l'un des arbres les plus efficaces pour capter le CO₂ et restituer de l'oxygène par photosynthèse. Notre variété ALTIFOLIA®, issue d'un croisement entre Paulownia Elongata et Paulownia Fortunei, a été sélectionnée pour les régions chaudes : elle développe un tronc au diamètre important en peu de temps. Associée à 100 g d'EVERGREEN® par plant à la plantation, l'irrigation nécessaire diminue de 50 % sans jamais exposer l'arbre au stress hydrique.",
+                p: "Le Paulownia ALTIFOLIA® est l'arbre à la croissance la plus rapide au monde : dans de bonnes conditions, il atteint 13 à 15 mètres en six à huit ans, et jusqu'à 20 mètres ensuite, à raison d'environ 3 mètres par an, avec des feuilles pouvant dépasser 80 cm de long. C'est aussi l'un des arbres les plus efficaces pour capter le CO₂ et restituer de l'oxygène par photosynthèse. Notre variété ALTIFOLIA®, issue d'un croisement entre Paulownia Elongata et Paulownia Fortunei, a été sélectionnée pour les régions chaudes : elle développe un tronc au diamètre important en peu de temps. Associée à 100 g d'EVERGREEN® par plant à la plantation, l'irrigation nécessaire diminue de 50 % sans jamais exposer l'arbre au stress hydrique.",
               },
               {
                 h: "Une sélection pensée pour les régions chaudes",
@@ -371,7 +371,7 @@ const baseContent = {
           num: "06",
           kicker: "L'application · reconquérir la terre",
           title: "Agroforesterie & reboisement",
-          text: "Des écosystèmes agroforestiers installés en moins de 24 mois, pour les programmes de reboisement et la lutte contre la désertification. Chaque plant part avec son hydro‑rétenteur et sa dose de fertilisant, pour qu'il reprenne y compris sur sols sableux ou dégradés.",
+          text: "Des écosystèmes agroforestiers installés en moins de 24 mois, pour les programmes de reboisement et la lutte contre la désertification. Chaque plant part avec son hydrorétenteur et sa dose de fertilisant, pour qu'il reprenne y compris sur sols sableux ou dégradés.",
           facts: [
             "Écosystème fonctionnel sous 24 mois",
             "Chaque plant équipé dès la mise en terre",
@@ -408,8 +408,8 @@ const baseContent = {
       lede: "Des groupes agro-industriels, des coopératives et deux universités américaines conduisent actuellement des essais sur nos technologies, sur leurs propres parcelles et sur leurs propres cultures. Voici lesquels, en septembre 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Canne à sucre", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Université de Gainesville", place: "Floride, États-Unis", crop: "Plantation d'érables rouges", tech: ["EVERGREEN®"] },
-        { org: "Université de Portland", place: "Oregon, États-Unis", crop: "Plantation de pins Douglas", tech: ["EVERGREEN®"] },
+        { org: "Université de Floride, à Gainesville", place: "Floride, États-Unis", crop: "Plantation d'érables rouges", tech: ["EVERGREEN®"] },
+        { org: "Université d'État de l'Oregon, à Corvallis", place: "Oregon, États-Unis", crop: "Plantation de sapins de Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Royaume-Uni · Tolède, Espagne", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Groupe ZARROUK", place: "Tunisie", crop: "Culture de tomates", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Corse, France", crop: "Oliviers et noisetiers", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -430,7 +430,7 @@ const baseContent = {
       lede: "Ce sont les objections que nous entendons à chaque premier rendez-vous.\nVoici les réponses, et les documents qui les portent.",
       items: [
         {
-          q: "« Un hydro‑rétenteur, c'est du polyacrylamide. Ce n'est pas dangereux ? »",
+          q: "« Un hydrorétenteur, c'est du polyacrylamide. Ce n'est pas dangereux ? »",
           a: "ECOSORB® est à base d'amidon de maïs, EVERGREEN® à base de potassium — pas de sodium, pas d'acrylamide libre. Le laboratoire Polymex, certifié ISO 9001, a dosé l'acrylamide dans ECOSORB® par UPLC/TOF-MS, pyrolyse GC-MS et infrarouge : teneur inférieure à 3,0 µg/g, sous la limite de quantification de la méthode. Le rapport complet est en téléchargement.",
           proofLabel: "Analyse acrylamide — Polymex, décembre 2024",
           proofHref: "/documents/analyse-acrylamide-ecosorb-polymex-2024.pdf",
@@ -455,7 +455,7 @@ const baseContent = {
         },
         {
           q: "« Est-ce que ça fonctionne sur mon sol et ma culture ? »",
-          a: "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Les essais en cours portent sur le maïs, la pomme de terre, la canne à sucre, la tomate, l'olivier, le noisetier, l'arachide, le châtaignier, le gazon, l'érable rouge et le pin Douglas, sous des climats allant de la Pologne à la Guinée. Dites-nous votre parcelle, nous vous dirons ce qui a déjà été fait dans une situation comparable.",
+          a: "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Les essais en cours portent sur le maïs, la pomme de terre, la canne à sucre, la tomate, l'olivier, le noisetier, l'arachide, le châtaignier, le gazon, l'érable rouge et le sapin de Douglas, sous des climats allant de la Pologne à la Guinée. Dites-nous votre parcelle, nous vous dirons ce qui a déjà été fait dans une situation comparable.",
           proofLabel: null as string | null,
           proofHref: null as string | null,
         },
@@ -490,9 +490,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Ils travaillent avec nous",
-      title: "Un réseau dans 38 pays",
+      title: "Un réseau dans 39 pays",
       lede: "Producteurs, coopératives, spécialistes du traitement de l'eau, universités et instituts de recherche, présents sur cinq continents.",
-      mapAriaLabel: "Carte du réseau Green Solutions dans 38 pays",
+      mapAriaLabel: "Carte du réseau Green Solutions dans 39 pays",
     },
     countryStudies: {
       eyebrow: "Approche pays",
@@ -618,8 +618,8 @@ const baseContent = {
       "France", "Afrique du Sud", "Tunisie", "Italie", "Royaume-Uni", "Canada", "Espagne", "Mali",
       "Caraïbes", "États-Unis", "Cameroun", "Guinée", "Sénégal", "Maroc", "Guinée-Bissau", "Brésil",
       "Arabie saoudite", "Sultanat d'Oman", "Congo", "Côte d'Ivoire", "Soudan du Sud", "Pologne", "Grèce", "Portugal",
-      "Émirats arabes unis", "Mexique", "Turquie", "Indonésie", "Chine",
-      "Algérie", "Argentine", "Chili", "Gabon", "Ghana", "Jordanie", "Koweït", "Croatie",
+      "Émirats arabes unis", "Mexique", "Turquie", "Indonésie", "Chine", "Égypte",
+      "Algérie", "Argentine", "Chili", "Gabon", "Ghana", "Jordanie", "Koweït", "Croatie", "Madagascar",
     ],
   },
   en: {
@@ -741,21 +741,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 to +100%", label: "yield increase, in quantity and quality" },
-      { figure: "−50 to −70%", label: "reduction in irrigation water needs" },
-      { figure: "14", label: "pilot trials underway in 2026" },
+      { figure: "−40 to −70%", label: "reduction in irrigation water needs" },
+      { figure: "15", label: "pilot trials underway in 2026" },
       { figure: "SOHISCERT", label: "and EU Bio, real certifications" },
     ],
     presentation: {
       eyebrow: "Our approach",
-      title1: "Our four technologies",
+      title1: "Our five technologies",
       title2: "A goal",
       title3: "Growth and quality",
       lede: "Green Solutions develops and distributes disruptive agricultural technologies designed to increase productivity while preserving, and even regenerating, the natural resources that productivity depends on. Concrete, field-tested answers to water stress, soil depletion, profitability and food security.",
       tagline: "All our disruptive solutions can be used on every plant and crop, in every climate and soil type!",
       stats: [
         { num: "30", label: "partners" },
-        { num: "38", label: "countries" },
-        { num: "4", label: "branded technologies" },
+        { num: "39", label: "countries" },
+        { num: "5", label: "branded technologies" },
       ],
       distinguish: [
         { num: "01", title: "Certified, not just claimed", text: "SOHISCERT · EU Bio, compatible with organic farming." },
@@ -767,7 +767,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "What brings you here?",
       title1: "Two possible directions:",
-      title2: "Try to survive, move forward on the other.",
+      title2: "Struggling to survive on one side, moving forward on the other.",
       tabLabel: "Hold or advance",
       tabTenir: "01 · Change nothing",
       tabAvancer: "02 · React and win",
@@ -794,7 +794,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Make reforestation profitable: Paulownia ALTIFOLIA® reaches 13 to 15 m in six to eight years and its wood is valued at around €550/m³, for a return on investment over a six-year growing cycle.",
+          text: "Make reforestation profitable: Paulownia ALTIFOLIA® reaches 13 to 15 m in six to eight years, up to 20 m later and its wood is valued at around €550/m³, for a return on investment over a six-year growing cycle.",
           linkLabel: "See Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -818,22 +818,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "Our water-retaining polymers capture rainwater or irrigation water and store it in gel form right at the roots, without altering its quality. A permanent reservoir, accessible to the plant regardless of soil or climate, that removes water stress during the critical phases of the cycle.",
           facts: [
-            "−50 to −70% water depending on irrigation type",
-            "EVERGREEN®: WAC (Water Absorption Capacity) 300X, 3 years in the soil",
-            "ECOSORB®: 300 times its weight, corn-starch base, 2 to 3 years",
+            "−40 to −70% water depending on irrigation type",
+            "EVERGREEN®: about 300 times its weight in water, 3 to 4 years in the soil",
+            "ECOSORB®: about 300 times its weight, corn-starch base, 2 to 3 years",
             "Degrades 20 to 25% per year, no overdose risk",
             "Sugarcane: +25% sugar content (Brix) at 15 kg/ha",
           ],
-          more: "EVERGREEN® and ECOSORB® are super-absorbent polymers that biodegrade completely, leaving no residue in the soil or on the plants. They absorb up to 300 to 400 times their weight in water and release it to the roots as the crop needs it, cycle after cycle, until they naturally break down (20-25% per year) into CO₂, water and assimilable nitrogen compounds. Unlike sodium-based water retainers — which, once hydrated, form a salty paste that suffocates roots — or acrylamide-based formulations, banned in many countries for their toxicity, both our references are potassium-based and compatible with food crops. On contact with water, the dry granule swells: this expansion-contraction effect loosens the soil much like an earthworm would, improves its permeability, and creates a moist microclimate that favours the microfauna and microflora behind natural soil fertility. Dissolved fertilisers are captured in passing rather than leached into groundwater, cutting pollution while making every input go further. Combined with our ECOFERT® fertilisers, EVERGREEN® and ECOSORB® form a complete system that delivered a 25% gain in sugar content (Brix) on sugarcane, using just 15 kg of product per hectare. Over 95% of plants transplanted with our water retainers survive, well above conventional rates.",
+          more: "EVERGREEN® and ECOSORB® are super-absorbent polymers that biodegrade completely, leaving no residue in the soil or on the plants. They absorb about 300 times their weight in water and release it to the roots as the crop needs it, cycle after cycle, until they naturally break down (20-25% per year) into CO₂, water and assimilable nitrogen compounds. Unlike sodium-based water retainers — which, once hydrated, form a salty paste that suffocates roots — or acrylamide-based formulations, banned in many countries for their toxicity, both our references are potassium-based and compatible with food crops. On contact with water, the dry granule swells: this expansion-contraction effect loosens the soil much like an earthworm would, improves its permeability, and creates a moist microclimate that favours the microfauna and microflora behind natural soil fertility. Dissolved fertilisers are captured in passing rather than leached into groundwater, cutting pollution while making every input go further. Combined with our ECOFERT® fertilisers, EVERGREEN® and ECOSORB® form a complete system that delivered a 25% gain in sugar content (Brix) on sugarcane, using just 15 kg of product per hectare. Over 95% of plants transplanted with our water retainers survive, well above conventional rates.",
           detail: {
             sections: [
               {
                 h: "The principle",
-                p: "EVERGREEN® and ECOSORB® are super-absorbent polymers that biodegrade completely, leaving no residue in the soil or on the plants. They absorb up to 300 to 400 times their weight in water and release it to the roots as the crop needs it, cycle after cycle, until they naturally break down (20-25% per year) into CO₂, water and assimilable nitrogen compounds. Unlike sodium-based water retainers — which, once hydrated, form a salty paste that suffocates roots — or acrylamide-based formulations, banned in many countries for their toxicity, both our references are potassium-based and compatible with food crops. Combined with our ECOFERT® fertilisers, they form a complete system that delivered a 25% gain in sugar content (Brix) on sugarcane, using just 15 kg of product per hectare.",
+                p: "EVERGREEN® and ECOSORB® are super-absorbent polymers that biodegrade completely, leaving no residue in the soil or on the plants. They absorb about 300 times their weight in water and release it to the roots as the crop needs it, cycle after cycle, until they naturally break down (20-25% per year) into CO₂, water and assimilable nitrogen compounds. Unlike sodium-based water retainers — which, once hydrated, form a salty paste that suffocates roots — or acrylamide-based formulations, banned in many countries for their toxicity, both our references are potassium-based and compatible with food crops. On contact with water the dry granule swells: this swelling and shrinking loosens the soil the way an earthworm would, improves its permeability and creates a moist microclimate that suits the soil's microfauna and microflora, the engines of natural fertility. Dissolved fertilisers are caught on the way through instead of being leached down to the water table, which reduces pollution and makes every application count. Combined with our ECOFERT® fertilisers, they form a complete system that delivered a 25% gain in sugar content (Brix) on sugarcane, using just 15 kg of product per hectare. More than 95% of seedlings transplanted with our water retainers take root, against a markedly lower rate in conventional conditions.",
               },
               {
                 h: "The mechanism, in detail",
-                p: "On contact with water — rain, irrigation, or residual soil moisture — the dry granule absorbs up to 300 to 400 times its own weight, turning into a gel that stores water right at the roots. The first three weeks of a crop cycle are critical: normal irrigation must be maintained to fully saturate the granules, during which the plant's roots intertwine with the gel and anchor into this water reserve. EVERGREEN® and ECOSORB® are not toxic to skin in any way; only their fine granulometry calls for a dust mask when handling. If spilled, blow off the residue with compressed air rather than rinsing with water, which would make the soil slippery.",
+                p: "On contact with water — rain, irrigation, or residual soil moisture — the dry granule absorbs about 300 times its own weight, turning into a gel that stores water right at the roots. The first three weeks of a crop cycle are critical: normal irrigation must be maintained to fully saturate the granules, during which the plant's roots intertwine with the gel and anchor into this water reserve. EVERGREEN® and ECOSORB® are not toxic to skin in any way; only their fine granulometry calls for a dust mask when handling. If spilled, blow off the residue with compressed air rather than rinsing with water, which would make the soil slippery.",
               },
               {
                 h: "Where and how to use it",
@@ -955,19 +955,19 @@ const baseContent = {
           num: "05",
           kicker: "Plant for the long term",
           title: "Paulownia ALTIFOLIA®",
-          text: "The world's fastest-growing tree: 13 to 15 m in six to eight years, nearly 3 m per year. Combined with our EVERGREEN® water-retaining polymer, it cuts irrigation water needs by 50%. Sterile, non-invasive hybrid varieties, supported from young plant to timber sale.",
+          text: "The world's fastest-growing tree: 13 to 15 m in six to eight years, up to 20 m later, nearly 3 m per year. Combined with our EVERGREEN® water-retaining polymer, it cuts irrigation water needs by 50%. Sterile, non-invasive hybrid varieties, supported from young plant to timber sale.",
           facts: [
             "400 to 500 trees/ha, valued at €400/450 per m³",
             "Return on investment over a six-year growing cycle",
             "Withstands −25°C to +45°C, only ignites at 426°C",
             "400 to 700 kg of honey per hectare, plus carbon credits",
           ],
-          more: "Paulownia ALTIFOLIA® is the fastest-growing tree in the world: under good conditions it reaches 13 to 15 metres in six to eight years — roughly 3 metres a year — with leaves that can exceed 80 cm in length. It is also among the most efficient trees at capturing CO₂ and releasing oxygen through photosynthesis. Our ALTIFOLIA® variety, a cross between Paulownia Elongata and Paulownia Fortunei, was selected for hot climates: it builds a wide trunk diameter in very little time. Combined with 100 g of EVERGREEN® per plant at planting, irrigation needs drop by 50%, with no exposure to water stress. Its deep root system enriches the soil with nitrogen and prevents erosion; natural resistance to pests and disease is high, and the wood only ignites above 426°C, making it useful as a fire barrier too. Plants (25-30 cm at delivery, potted, disease-free certified, replaced under warranty in case of loss) are air-freighted within 6 weeks, then need 6 weeks under cover before drip-irrigated planting. First harvest comes at the end of year six, for wood valued at €400-450 per m³; we have been growing this variety ourselves for several years, notably in Spain.",
+          more: "Paulownia ALTIFOLIA® is the fastest-growing tree in the world: under good conditions it reaches 13 to 15 metres in six to eight years, and up to 20 metres later — roughly 3 metres a year — with leaves that can exceed 80 cm in length. It is also among the most efficient trees at capturing CO₂ and releasing oxygen through photosynthesis. Our ALTIFOLIA® variety, a cross between Paulownia Elongata and Paulownia Fortunei, was selected for hot climates: it builds a wide trunk diameter in very little time. Combined with 100 g of EVERGREEN® per plant at planting, irrigation needs drop by 50%, with no exposure to water stress. Its deep root system enriches the soil with nitrogen and prevents erosion; natural resistance to pests and disease is high, and the wood only ignites above 426°C, making it useful as a fire barrier too. Plants (25-30 cm at delivery, potted, disease-free certified, replaced under warranty in case of loss) are air-freighted within 6 weeks, then need 6 weeks under cover before drip-irrigated planting. First harvest comes at the end of year six, for wood valued at €400-450 per m³; we have been growing this variety ourselves for several years, notably in Spain.",
           detail: {
             sections: [
               {
                 h: "The principle",
-                p: "Paulownia ALTIFOLIA® is the fastest-growing tree in the world: under good conditions it reaches 13 to 15 metres in six to eight years — roughly 3 metres a year — with leaves that can exceed 80 cm in length. It is also among the most efficient trees at capturing CO₂ and releasing oxygen through photosynthesis. Our ALTIFOLIA® variety, a cross between Paulownia Elongata and Paulownia Fortunei, was selected for hot climates: it builds a wide trunk diameter in very little time. Combined with 100 g of EVERGREEN® per plant at planting, irrigation needs drop by 50%, with no exposure to water stress.",
+                p: "Paulownia ALTIFOLIA® is the fastest-growing tree in the world: under good conditions it reaches 13 to 15 metres in six to eight years, and up to 20 metres later — roughly 3 metres a year — with leaves that can exceed 80 cm in length. It is also among the most efficient trees at capturing CO₂ and releasing oxygen through photosynthesis. Our ALTIFOLIA® variety, a cross between Paulownia Elongata and Paulownia Fortunei, was selected for hot climates: it builds a wide trunk diameter in very little time. Combined with 100 g of EVERGREEN® per plant at planting, irrigation needs drop by 50%, with no exposure to water stress.",
               },
               {
                 h: "A selection bred for hot climates",
@@ -1027,8 +1027,8 @@ const baseContent = {
       lede: "Agro-industrial groups, cooperatives and two American universities are currently running trials on our technologies, on their own plots and their own crops. Here they are, in September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Sugarcane", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "University of Gainesville", place: "Florida, USA", crop: "Red maple plantation", tech: ["EVERGREEN®"] },
-        { org: "University of Portland", place: "Oregon, USA", crop: "Douglas fir plantation", tech: ["EVERGREEN®"] },
+        { org: "University of Florida, Gainesville", place: "Florida, USA", crop: "Red maple plantation", tech: ["EVERGREEN®"] },
+        { org: "Oregon State University, Corvallis", place: "Oregon, USA", crop: "Douglas fir plantation", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "United Kingdom · Toledo, Spain", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "ZARROUK Group", place: "Tunisia", crop: "Tomato crop", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Corsica, France", crop: "Olive and hazelnut trees", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -1109,9 +1109,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "They work with us",
-      title: "A network across 38 countries",
+      title: "A network across 39 countries",
       lede: "Producers, cooperatives, water-treatment specialists, universities and research institutes, present across five continents.",
-      mapAriaLabel: "Map of the Green Solutions network across 38 countries",
+      mapAriaLabel: "Map of the Green Solutions network across 39 countries",
     },
     countryStudies: {
       eyebrow: "Country approach",
@@ -1237,8 +1237,8 @@ const baseContent = {
       "France", "South Africa", "Tunisia", "Italy", "United Kingdom", "Canada", "Spain", "Mali",
       "Caribbean", "United States", "Cameroon", "Guinea", "Senegal", "Morocco", "Guinea-Bissau", "Brazil",
       "Saudi Arabia", "Sultanate of Oman", "Congo", "Ivory Coast", "South Sudan", "Poland", "Greece", "Portugal",
-      "United Arab Emirates", "Mexico", "Turkey", "Indonesia", "China",
-      "Algeria", "Argentina", "Chile", "Gabon", "Ghana", "Jordan", "Kuwait", "Croatia",
+      "United Arab Emirates", "Mexico", "Turkey", "Indonesia", "China", "Egypt",
+      "Algeria", "Argentina", "Chile", "Gabon", "Ghana", "Jordan", "Kuwait", "Croatia", "Madagascar",
     ],
   },
   es: {
@@ -1360,21 +1360,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 a +100 %", label: "de rendimiento, en cantidad y calidad" },
-      { figure: "−50 a −70 %", label: "de necesidad de agua de riego" },
-      { figure: "14", label: "ensayos piloto en curso en 2026" },
+      { figure: "−40 a −70 %", label: "de necesidad de agua de riego" },
+      { figure: "15", label: "ensayos piloto en curso en 2026" },
       { figure: "SOHISCERT", label: "y EU Bio, certificaciones reales" },
     ],
     presentation: {
       eyebrow: "Nuestro enfoque",
-      title1: "Nuestras cuatro tecnologías",
+      title1: "Nuestras cinco tecnologías",
       title2: "Un objetivo",
       title3: "El crecimiento y la calidad",
       lede: "Green Solutions desarrolla y distribuye tecnologías agrícolas disruptivas, diseñadas para aumentar la productividad preservando, e incluso regenerando, los recursos naturales de los que depende esa productividad. Respuestas concretas, probadas en el campo, frente al estrés hídrico, el agotamiento de los suelos, la rentabilidad y la seguridad alimentaria.",
       tagline: "¡Todas nuestras soluciones disruptivas se pueden usar en cualquier planta o cultivo, en cualquier clima y cualquier tipo de suelo!",
       stats: [
         { num: "30", label: "socios" },
-        { num: "38", label: "países" },
-        { num: "4", label: "tecnologías de marca" },
+        { num: "39", label: "países" },
+        { num: "5", label: "tecnologías de marca" },
       ],
       distinguish: [
         { num: "01", title: "Certificado, no solo anunciado", text: "SOHISCERT · EU Bio, compatible con la agricultura ecológica." },
@@ -1386,7 +1386,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "¿Qué le trae aquí?",
       title1: "Dos direcciones posibles:",
-      title2: "Intentar sobrevivir, avanzar por el otro.",
+      title2: "Intentar sobrevivir por un lado, avanzar por el otro.",
       tabLabel: "Mantener o avanzar",
       tabTenir: "01 · No cambiar nada",
       tabAvancer: "02 · Reaccionar y ganar",
@@ -1413,7 +1413,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Hacer rentable la reforestación: el Paulownia ALTIFOLIA® alcanza entre 13 y 15 m en seis a ocho años y su madera se valora en torno a 550 €/m³, para una rentabilidad a lo largo de seis años de cultivo.",
+          text: "Hacer rentable la reforestación: el Paulownia ALTIFOLIA® alcanza entre 13 y 15 m en seis a ocho años, hasta 20 m después y su madera se valora en torno a 550 €/m³, para una rentabilidad a lo largo de seis años de cultivo.",
           linkLabel: "Ver Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -1437,22 +1437,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "Nuestros polímeros retenedores de agua captan el agua de lluvia o de riego y la almacenan en forma de gel muy cerca de las raíces, sin alterar su calidad. Un depósito permanente, accesible para la planta sea cual sea el suelo o el clima, que elimina el estrés hídrico en las fases críticas del ciclo.",
           facts: [
-            "−50 a −70 % de agua según el tipo de riego",
-            "EVERGREEN®: WAC (capacidad de absorción de agua) 300X, 3 años en el suelo",
-            "ECOSORB®: 300 veces su peso, base de almidón de maíz, 2 a 3 años",
+            "−40 a −70 % de agua según el tipo de riego",
+            "EVERGREEN®: unas 300 veces su peso en agua, 3 a 4 años en el suelo",
+            "ECOSORB®: unas 300 veces su peso, base de almidón de maíz, 2 a 3 años",
             "Se degrada de un 20 a un 25 % al año, sin riesgo de sobredosis",
             "Caña de azúcar: +25 % de contenido de azúcar (Brix) con 15 kg/ha",
           ],
-          more: "EVERGREEN® y ECOSORB® son polímeros superabsorbentes que se biodegradan por completo, sin dejar residuos en el suelo ni en las plantas. Absorben entre 300 y 400 veces su peso en agua y la liberan a las raíces según las necesidades del cultivo, ciclo tras ciclo, hasta degradarse de forma natural (20-25% al año) en CO₂, agua y compuestos nitrogenados asimilables. A diferencia de los hidrorretenedores a base de sodio —que, una vez hidratados, forman una pasta salina que asfixia las raíces— o de las formulaciones a base de acrilamida, prohibidas en muchos países por su toxicidad, nuestras dos referencias son a base de potasio y compatibles con cultivos alimentarios. Al contacto con el agua, el gránulo seco se hincha: este efecto de expansión-contracción descompacta el suelo como lo haría una lombriz, mejora su permeabilidad y crea un microclima húmedo favorable a la microfauna y microflora responsables de la fertilidad natural. Los fertilizantes disueltos quedan capturados en el trayecto en lugar de filtrarse a las aguas subterráneas, reduciendo la contaminación y aprovechando mejor cada aporte. Combinados con nuestros fertilizantes ECOFERT®, EVERGREEN® y ECOSORB® forman un sistema completo que permitió, en caña de azúcar, una ganancia del 25% en grado de azúcar (Brix) con solo 15 kg de producto por hectárea. Más del 95% de las plantas trasplantadas con nuestros hidrorretenedores sobreviven, muy por encima de las tasas convencionales.",
+          more: "EVERGREEN® y ECOSORB® son polímeros superabsorbentes que se biodegradan por completo, sin dejar residuos en el suelo ni en las plantas. Absorben unas 300 veces su peso en agua y la liberan a las raíces según las necesidades del cultivo, ciclo tras ciclo, hasta degradarse de forma natural (20-25% al año) en CO₂, agua y compuestos nitrogenados asimilables. A diferencia de los hidrorretenedores a base de sodio —que, una vez hidratados, forman una pasta salina que asfixia las raíces— o de las formulaciones a base de acrilamida, prohibidas en muchos países por su toxicidad, nuestras dos referencias son a base de potasio y compatibles con cultivos alimentarios. Al contacto con el agua, el gránulo seco se hincha: este efecto de expansión-contracción descompacta el suelo como lo haría una lombriz, mejora su permeabilidad y crea un microclima húmedo favorable a la microfauna y microflora responsables de la fertilidad natural. Los fertilizantes disueltos quedan capturados en el trayecto en lugar de filtrarse a las aguas subterráneas, reduciendo la contaminación y aprovechando mejor cada aporte. Combinados con nuestros fertilizantes ECOFERT®, EVERGREEN® y ECOSORB® forman un sistema completo que permitió, en caña de azúcar, una ganancia del 25% en grado de azúcar (Brix) con solo 15 kg de producto por hectárea. Más del 95% de las plantas trasplantadas con nuestros hidrorretenedores sobreviven, muy por encima de las tasas convencionales.",
           detail: {
             sections: [
               {
                 h: "El principio",
-                p: "EVERGREEN® y ECOSORB® son polímeros superabsorbentes que se biodegradan por completo, sin dejar residuos en el suelo ni en las plantas. Absorben entre 300 y 400 veces su peso en agua y la liberan a las raíces según las necesidades del cultivo, ciclo tras ciclo, hasta degradarse de forma natural (20-25% al año) en CO₂, agua y compuestos nitrogenados asimilables. A diferencia de los hidrorretenedores a base de sodio o de las formulaciones a base de acrilamida, prohibidas en muchos países por su toxicidad, nuestras dos referencias son a base de potasio y compatibles con cultivos alimentarios. Combinados con nuestros fertilizantes ECOFERT®, forman un sistema completo que permitió, en caña de azúcar, una ganancia del 25% en grado de azúcar (Brix) con solo 15 kg por hectárea.",
+                p: "EVERGREEN® y ECOSORB® son polímeros superabsorbentes que se biodegradan por completo, sin dejar residuos en el suelo ni en las plantas. Absorben unas 300 veces su peso en agua y la liberan a las raíces según las necesidades del cultivo, ciclo tras ciclo, hasta degradarse de forma natural (20-25% al año) en CO₂, agua y compuestos nitrogenados asimilables. A diferencia de los hidrorretenedores a base de sodio o de las formulaciones a base de acrilamida, prohibidas en muchos países por su toxicidad, nuestras dos referencias son a base de potasio y compatibles con cultivos alimentarios. Al contacto con el agua, el gránulo seco se llena y se hincha: este vaivén descompacta el suelo como lo haría una lombriz, mejora su permeabilidad y crea un microclima húmedo propicio para la microfauna y la microflora, motores de la fertilidad natural. Los fertilizantes disueltos quedan retenidos al paso en lugar de lixiviarse hacia los acuíferos, lo que reduce la contaminación y permite aprovechar mejor cada aporte. Combinados con nuestros fertilizantes ECOFERT®, forman un sistema completo que permitió, en caña de azúcar, una ganancia del 25% en grado de azúcar (Brix) con solo 15 kg por hectárea. Más del 95% de las plantas trasplantadas con nuestros hidrorretenedores arraigan, frente a una tasa claramente menor en condiciones convencionales.",
               },
               {
                 h: "El mecanismo, en detalle",
-                p: "Al contacto con el agua —de lluvia, riego o humedad residual del suelo— el gránulo seco absorbe hasta 300 o 400 veces su propio peso, transformándose en un gel que almacena el agua muy cerca de las raíces. Las tres primeras semanas de cultivo son críticas: debe mantenerse un riego normal para saturar completamente los gránulos, periodo durante el cual las raíces de las plantas se entrelazan con el gel y se anclan en esta reserva de agua. EVERGREEN® y ECOSORB® no son en absoluto tóxicos para la piel; solo su granulometría fina exige el uso de una mascarilla antipolvo al manipularlos. Si se derraman, hay que soplar los residuos con aire comprimido en lugar de enjuagar con agua, lo que dejaría el suelo resbaladizo.",
+                p: "Al contacto con el agua —de lluvia, riego o humedad residual del suelo— el gránulo seco absorbe unas 300 veces su propio peso, transformándose en un gel que almacena el agua muy cerca de las raíces. Las tres primeras semanas de cultivo son críticas: debe mantenerse un riego normal para saturar completamente los gránulos, periodo durante el cual las raíces de las plantas se entrelazan con el gel y se anclan en esta reserva de agua. EVERGREEN® y ECOSORB® no son en absoluto tóxicos para la piel; solo su granulometría fina exige el uso de una mascarilla antipolvo al manipularlos. Si se derraman, hay que soplar los residuos con aire comprimido en lugar de enjuagar con agua, lo que dejaría el suelo resbaladizo.",
               },
               {
                 h: "Dónde y cómo usarlo",
@@ -1574,19 +1574,19 @@ const baseContent = {
           num: "05",
           kicker: "Plantar para durar",
           title: "Paulownia ALTIFOLIA®",
-          text: "El árbol de crecimiento más rápido del mundo: 13 a 15 m en seis a ocho años, casi 3 m al año. Combinado con nuestro hidrorretenedor EVERGREEN®, reduce un 50 % sus necesidades de agua de riego. Variedades híbridas estériles y no invasivas, acompañadas desde el plantón joven hasta la venta de la madera.",
+          text: "El árbol de crecimiento más rápido del mundo: 13 a 15 m en seis a ocho años, hasta 20 m después, casi 3 m al año. Combinado con nuestro hidrorretenedor EVERGREEN®, reduce un 50 % sus necesidades de agua de riego. Variedades híbridas estériles y no invasivas, acompañadas desde el plantón joven hasta la venta de la madera.",
           facts: [
             "400 a 500 árboles/ha, valorados a 400/450 € por m³",
             "Rentabilidad a lo largo de seis años de cultivo",
             "Resiste de −25 °C a +45 °C, solo se incendia a 426 °C",
             "400 a 700 kg de miel por hectárea, además de créditos de carbono",
           ],
-          more: "El Paulownia ALTIFOLIA® es el árbol de crecimiento más rápido del mundo: en buenas condiciones alcanza de 13 a 15 metros en seis a ocho años —unos 3 metros al año— con hojas que pueden superar los 80 cm de largo. Es también uno de los árboles más eficientes en la captación de CO₂ y en la liberación de oxígeno por fotosíntesis. Nuestra variedad ALTIFOLIA®, cruce entre Paulownia Elongata y Paulownia Fortunei, fue seleccionada para climas cálidos: desarrolla un tronco de gran diámetro en muy poco tiempo. Combinada con 100 g de EVERGREEN® por planta en la plantación, la necesidad de riego disminuye un 50%, sin exponer nunca el árbol al estrés hídrico. Su sistema radicular profundo enriquece el suelo con nitrógeno y previene la erosión; su resistencia natural a plagas y enfermedades es alta, y la madera solo se inflama a partir de 426°C, lo que también la convierte en una barrera cortafuegos. Las plantas (25-30 cm a la entrega, en maceta, certificadas libres de enfermedad, con garantía de reposición) se transportan por avión en 6 semanas, y luego requieren 6 semanas de invernadero antes de la plantación con riego por goteo. La primera corta llega a final del sexto año, con una madera valorada en 400-450 €/m³; nosotros mismos cultivamos esta variedad desde hace varios años, especialmente en España.",
+          more: "El Paulownia ALTIFOLIA® es el árbol de crecimiento más rápido del mundo: en buenas condiciones alcanza de 13 a 15 metros en seis a ocho años, y hasta 20 metros después —unos 3 metros al año— con hojas que pueden superar los 80 cm de largo. Es también uno de los árboles más eficientes en la captación de CO₂ y en la liberación de oxígeno por fotosíntesis. Nuestra variedad ALTIFOLIA®, cruce entre Paulownia Elongata y Paulownia Fortunei, fue seleccionada para climas cálidos: desarrolla un tronco de gran diámetro en muy poco tiempo. Combinada con 100 g de EVERGREEN® por planta en la plantación, la necesidad de riego disminuye un 50%, sin exponer nunca el árbol al estrés hídrico. Su sistema radicular profundo enriquece el suelo con nitrógeno y previene la erosión; su resistencia natural a plagas y enfermedades es alta, y la madera solo se inflama a partir de 426°C, lo que también la convierte en una barrera cortafuegos. Las plantas (25-30 cm a la entrega, en maceta, certificadas libres de enfermedad, con garantía de reposición) se transportan por avión en 6 semanas, y luego requieren 6 semanas de invernadero antes de la plantación con riego por goteo. La primera corta llega a final del sexto año, con una madera valorada en 400-450 €/m³; nosotros mismos cultivamos esta variedad desde hace varios años, especialmente en España.",
           detail: {
             sections: [
               {
                 h: "El principio",
-                p: "El Paulownia ALTIFOLIA® es el árbol de crecimiento más rápido del mundo: en buenas condiciones alcanza de 13 a 15 metros en seis a ocho años —unos 3 metros al año— con hojas que pueden superar los 80 cm de largo. Es también uno de los árboles más eficientes en la captación de CO₂ y en la liberación de oxígeno por fotosíntesis. Nuestra variedad ALTIFOLIA® fue seleccionada para climas cálidos: desarrolla un tronco de gran diámetro en muy poco tiempo. Combinada con 100 g de EVERGREEN® por planta en la plantación, la necesidad de riego disminuye un 50%, sin exponer nunca el árbol al estrés hídrico.",
+                p: "El Paulownia ALTIFOLIA® es el árbol de crecimiento más rápido del mundo: en buenas condiciones alcanza de 13 a 15 metros en seis a ocho años, y hasta 20 metros después —unos 3 metros al año— con hojas que pueden superar los 80 cm de largo. Es también uno de los árboles más eficientes en la captación de CO₂ y en la liberación de oxígeno por fotosíntesis. Nuestra variedad ALTIFOLIA® fue seleccionada para climas cálidos: desarrolla un tronco de gran diámetro en muy poco tiempo. Combinada con 100 g de EVERGREEN® por planta en la plantación, la necesidad de riego disminuye un 50%, sin exponer nunca el árbol al estrés hídrico.",
               },
               {
                 h: "Una selección pensada para climas cálidos",
@@ -1646,8 +1646,8 @@ const baseContent = {
       lede: "Grupos agroindustriales, cooperativas y dos universidades estadounidenses realizan actualmente ensayos con nuestras tecnologías, en sus propias parcelas y sus propios cultivos. Estos son, en septiembre de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Caña de azúcar", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Universidad de Gainesville", place: "Florida, Estados Unidos", crop: "Plantación de arces rojos", tech: ["EVERGREEN®"] },
-        { org: "Universidad de Portland", place: "Oregón, Estados Unidos", crop: "Plantación de pinos Douglas", tech: ["EVERGREEN®"] },
+        { org: "Universidad de Florida, en Gainesville", place: "Florida, Estados Unidos", crop: "Plantación de arces rojos", tech: ["EVERGREEN®"] },
+        { org: "Universidad Estatal de Oregón, en Corvallis", place: "Oregón, Estados Unidos", crop: "Plantación de abetos de Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Reino Unido · Toledo, España", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Grupo ZARROUK", place: "Túnez", crop: "Cultivo de tomates", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Córcega, Francia", crop: "Olivos y avellanos", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -1728,9 +1728,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Trabajan con nosotros",
-      title: "Una red en 38 países",
+      title: "Una red en 39 países",
       lede: "Productores, cooperativas, especialistas en tratamiento de agua, universidades e institutos de investigación, presentes en cinco continentes.",
-      mapAriaLabel: "Mapa de la red Green Solutions en 38 países",
+      mapAriaLabel: "Mapa de la red Green Solutions en 39 países",
     },
     countryStudies: {
       eyebrow: "Enfoque por país",
@@ -1856,8 +1856,8 @@ const baseContent = {
       "Francia", "Sudáfrica", "Túnez", "Italia", "Reino Unido", "Canadá", "España", "Malí",
       "Caribe", "Estados Unidos", "Camerún", "Guinea", "Senegal", "Marruecos", "Guinea-Bisáu", "Brasil",
       "Arabia Saudita", "Sultanato de Omán", "Congo", "Costa de Marfil", "Sudán del Sur", "Polonia", "Grecia", "Portugal",
-      "Emiratos Árabes Unidos", "México", "Turquía", "Indonesia", "China",
-      "Argelia", "Argentina", "Chile", "Gabón", "Ghana", "Jordania", "Kuwait", "Croacia",
+      "Emiratos Árabes Unidos", "México", "Turquía", "Indonesia", "China", "Egipto",
+      "Argelia", "Argentina", "Chile", "Gabón", "Ghana", "Jordania", "Kuwait", "Croacia", "Madagascar",
     ],
   },
   pt: {
@@ -1979,21 +1979,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 a +100 %", label: "de rendimento, em quantidade e qualidade" },
-      { figure: "−50 a −70 %", label: "de necessidade de água de irrigação" },
-      { figure: "14", label: "ensaios piloto em curso em 2026" },
+      { figure: "−40 a −70 %", label: "de necessidade de água de irrigação" },
+      { figure: "15", label: "ensaios piloto em curso em 2026" },
       { figure: "SOHISCERT", label: "e EU Bio, certificações reais" },
     ],
     presentation: {
       eyebrow: "Nossa abordagem",
-      title1: "As nossas quatro tecnologias",
+      title1: "As nossas cinco tecnologias",
       title2: "Um objetivo",
       title3: "O crescimento e a qualidade",
       lede: "A Green Solutions desenvolve e distribui tecnologias agrícolas disruptivas, concebidas para aumentar a produtividade preservando, e até regenerando, os recursos naturais dos quais essa produtividade depende. Respostas concretas, testadas no campo, ao estresse hídrico, ao esgotamento dos solos, à rentabilidade e à segurança alimentar.",
       tagline: "Todas as nossas soluções disruptivas podem ser usadas em qualquer planta ou cultura, em qualquer clima e qualquer tipo de solo!",
       stats: [
         { num: "30", label: "parceiros" },
-        { num: "38", label: "países" },
-        { num: "4", label: "tecnologias de marca" },
+        { num: "39", label: "países" },
+        { num: "5", label: "tecnologias de marca" },
       ],
       distinguish: [
         { num: "01", title: "Certificado, não apenas anunciado", text: "SOHISCERT · EU Bio, compatível com a agricultura biológica." },
@@ -2005,7 +2005,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "O que o traz aqui?",
       title1: "Duas direções possíveis:",
-      title2: "Tentar sobreviver, avançar pelo outro lado.",
+      title2: "Tentar sobreviver de um lado, avançar do outro.",
       tabLabel: "Manter ou avançar",
       tabTenir: "01 · Não mudar nada",
       tabAvancer: "02 · Reagir e ganhar",
@@ -2032,7 +2032,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Tornar o reflorestamento rentável: o Paulownia ALTIFOLIA® atinge 13 a 15 m em seis a oito anos e a sua madeira é valorizada a cerca de 550 €/m³, para uma rentabilidade ao longo de seis anos de cultivo.",
+          text: "Tornar o reflorestamento rentável: o Paulownia ALTIFOLIA® atinge 13 a 15 m em seis a oito anos, até 20 m depois e a sua madeira é valorizada a cerca de 550 €/m³, para uma rentabilidade ao longo de seis anos de cultivo.",
           linkLabel: "Ver Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -2056,22 +2056,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "Os nossos polímeros retentores de água captam a água da chuva ou de irrigação e armazenam-na em forma de gel bem perto das raízes, sem alterar a sua qualidade. Um reservatório permanente, acessível à planta seja qual for o solo ou o clima, que elimina o estresse hídrico nas fases críticas do ciclo.",
           facts: [
-            "−50 a −70 % de água conforme o tipo de irrigação",
-            "EVERGREEN®: WAC (capacidade de absorção de água) 300X, 3 anos no solo",
-            "ECOSORB®: 300 vezes o seu peso, base de amido de milho, 2 a 3 anos",
+            "−40 a −70 % de água conforme o tipo de irrigação",
+            "EVERGREEN®: cerca de 300 vezes o seu peso em água, 3 a 4 anos no solo",
+            "ECOSORB®: cerca de 300 vezes o seu peso, base de amido de milho, 2 a 3 anos",
             "Degrada-se de 20 a 25 % ao ano, sem risco de sobredosagem",
             "Cana-de-açúcar: +25 % de teor de açúcar (Brix) com 15 kg/ha",
           ],
-          more: "O EVERGREEN® e o ECOSORB® são polímeros superabsorventes que se biodegradam por completo, sem deixar resíduos no solo nem nas plantas. Absorvem entre 300 e 400 vezes o seu peso em água e libertam-na para as raízes conforme a necessidade da cultura, ciclo após ciclo, até se degradarem naturalmente (20-25% ao ano) em CO₂, água e compostos azotados assimiláveis. Ao contrário dos hidrorretentores à base de sódio — que, uma vez hidratados, formam uma pasta salina que asfixia as raízes — ou das formulações à base de acrilamida, proibidas em muitos países pela sua toxicidade, as nossas duas referências são à base de potássio e compatíveis com culturas alimentares. Em contacto com a água, o grânulo seco incha: este efeito de expansão-contração descompacta o solo tal como faria uma minhoca, melhora a sua permeabilidade e cria um microclima húmido favorável à microfauna e microflora responsáveis pela fertilidade natural. Os fertilizantes dissolvidos são capturados de passagem em vez de se infiltrarem nos lençóis freáticos, reduzindo a poluição e aproveitando melhor cada aplicação. Combinados com os nossos fertilizantes ECOFERT®, o EVERGREEN® e o ECOSORB® formam um sistema completo que permitiu, na cana-de-açúcar, um ganho de 25% no teor de açúcar (Brix) com apenas 15 kg de produto por hectare. Mais de 95% das plantas transplantadas com os nossos hidrorretentores sobrevivem, muito acima das taxas convencionais.",
+          more: "O EVERGREEN® e o ECOSORB® são polímeros superabsorventes que se biodegradam por completo, sem deixar resíduos no solo nem nas plantas. Absorvem cerca de 300 vezes o seu peso em água e libertam-na para as raízes conforme a necessidade da cultura, ciclo após ciclo, até se degradarem naturalmente (20-25% ao ano) em CO₂, água e compostos azotados assimiláveis. Ao contrário dos hidrorretentores à base de sódio — que, uma vez hidratados, formam uma pasta salina que asfixia as raízes — ou das formulações à base de acrilamida, proibidas em muitos países pela sua toxicidade, as nossas duas referências são à base de potássio e compatíveis com culturas alimentares. Em contacto com a água, o grânulo seco incha: este efeito de expansão-contração descompacta o solo tal como faria uma minhoca, melhora a sua permeabilidade e cria um microclima húmido favorável à microfauna e microflora responsáveis pela fertilidade natural. Os fertilizantes dissolvidos são capturados de passagem em vez de se infiltrarem nos lençóis freáticos, reduzindo a poluição e aproveitando melhor cada aplicação. Combinados com os nossos fertilizantes ECOFERT®, o EVERGREEN® e o ECOSORB® formam um sistema completo que permitiu, na cana-de-açúcar, um ganho de 25% no teor de açúcar (Brix) com apenas 15 kg de produto por hectare. Mais de 95% das plantas transplantadas com os nossos hidrorretentores sobrevivem, muito acima das taxas convencionais.",
           detail: {
             sections: [
               {
                 h: "O princípio",
-                p: "O EVERGREEN® e o ECOSORB® são polímeros superabsorventes que se biodegradam por completo, sem deixar resíduos no solo nem nas plantas. Absorvem entre 300 e 400 vezes o seu peso em água e libertam-na para as raízes conforme a necessidade da cultura, ciclo após ciclo, até se degradarem naturalmente (20-25% ao ano) em CO₂, água e compostos azotados assimiláveis. Ao contrário dos hidrorretentores à base de sódio ou das formulações à base de acrilamida, proibidas em muitos países pela sua toxicidade, as nossas duas referências são à base de potássio. Combinados com os nossos fertilizantes ECOFERT®, formam um sistema completo que permitiu, na cana-de-açúcar, um ganho de 25% no teor de açúcar (Brix) com apenas 15 kg por hectare.",
+                p: "O EVERGREEN® e o ECOSORB® são polímeros superabsorventes que se biodegradam por completo, sem deixar resíduos no solo nem nas plantas. Absorvem cerca de 300 vezes o seu peso em água e libertam-na para as raízes conforme a necessidade da cultura, ciclo após ciclo, até se degradarem naturalmente (20-25% ao ano) em CO₂, água e compostos azotados assimiláveis. Ao contrário dos hidrorretentores à base de sódio ou das formulações à base de acrilamida, proibidas em muitos países pela sua toxicidade, as nossas duas referências são à base de potássio e compatíveis com culturas alimentares. Em contacto com a água, o grânulo seco enche-se e incha: este vaivém descompacta o solo como o faria uma minhoca, melhora a sua permeabilidade e cria um microclima húmido propício à microfauna e à microflora, motores da fertilidade natural. Os fertilizantes dissolvidos ficam retidos à passagem em vez de serem lixiviados para os lençóis freáticos, o que reduz a poluição e permite valorizar melhor cada aplicação. Combinados com os nossos fertilizantes ECOFERT®, formam um sistema completo que permitiu, na cana-de-açúcar, um ganho de 25% no teor de açúcar (Brix) com apenas 15 kg por hectare. Mais de 95% das plantas transplantadas com os nossos hidrorretentores vingam, contra uma taxa claramente inferior em condições convencionais.",
               },
               {
                 h: "O mecanismo, em detalhe",
-                p: "Em contacto com a água — de chuva, rega ou humidade residual do solo — o grânulo seco absorve até 300 a 400 vezes o seu próprio peso, transformando-se num gel que armazena a água bem perto das raízes. As três primeiras semanas de cultivo são críticas: deve manter-se uma rega normal para saturar completamente os grânulos, período durante o qual as raízes das plantas se entrelaçam com o gel e se ancoram nesta reserva de água. O EVERGREEN® e o ECOSORB® não são de forma alguma tóxicos para a pele; apenas a sua granulometria fina exige o uso de máscara antipoeira ao manuseá-los. Em caso de derrame, sopre os resíduos com ar comprimido em vez de enxaguar com água, o que tornaria o solo escorregadio.",
+                p: "Em contacto com a água — de chuva, rega ou humidade residual do solo — o grânulo seco absorve cerca de 300 vezes o seu próprio peso, transformando-se num gel que armazena a água bem perto das raízes. As três primeiras semanas de cultivo são críticas: deve manter-se uma rega normal para saturar completamente os grânulos, período durante o qual as raízes das plantas se entrelaçam com o gel e se ancoram nesta reserva de água. O EVERGREEN® e o ECOSORB® não são de forma alguma tóxicos para a pele; apenas a sua granulometria fina exige o uso de máscara antipoeira ao manuseá-los. Em caso de derrame, sopre os resíduos com ar comprimido em vez de enxaguar com água, o que tornaria o solo escorregadio.",
               },
               {
                 h: "Onde e como utilizar",
@@ -2193,19 +2193,19 @@ const baseContent = {
           num: "05",
           kicker: "Plantar para durar",
           title: "Paulownia ALTIFOLIA®",
-          text: "A árvore de crescimento mais rápido do mundo: 13 a 15 m em seis a oito anos, quase 3 m por ano. Associada ao nosso hidrorretentor EVERGREEN®, reduz em 50% as suas necessidades de água de rega. Variedades híbridas estéreis e não invasivas, acompanhadas desde a muda jovem até à venda da madeira.",
+          text: "A árvore de crescimento mais rápido do mundo: 13 a 15 m em seis a oito anos, até 20 m depois, quase 3 m por ano. Associada ao nosso hidrorretentor EVERGREEN®, reduz em 50% as suas necessidades de água de rega. Variedades híbridas estéreis e não invasivas, acompanhadas desde a muda jovem até à venda da madeira.",
           facts: [
             "400 a 500 árvores/ha, madeira valorizada a cerca de 400/450 €/m³",
             "Rentabilidade ao longo de seis anos de cultivo",
             "Resiste de −25 °C a +45 °C, só se incendeia a 426 °C",
             "400 a 700 kg de mel por hectare, além de créditos de carbono",
           ],
-          more: "O Paulownia ALTIFOLIA® é a árvore de crescimento mais rápido do mundo: em boas condições atinge 13 a 15 metros em seis a oito anos — cerca de 3 metros por ano — com folhas que podem ultrapassar 80 cm de comprimento. É também uma das árvores mais eficientes na captação de CO₂ e na libertação de oxigénio por fotossíntese. A nossa variedade ALTIFOLIA®, cruzamento entre Paulownia Elongata e Paulownia Fortunei, foi selecionada para climas quentes: desenvolve um tronco de grande diâmetro em pouco tempo. Combinada com 100 g de EVERGREEN® por planta na plantação, a necessidade de rega diminui 50%, sem nunca expor a árvore ao stress hídrico. O seu sistema radicular profundo enriquece o solo em azoto e previne a erosão; a resistência natural a pragas e doenças é elevada, e a madeira só se inflama a partir de 426°C, o que a torna também uma barreira corta-fogo. As plantas (25-30 cm à entrega, em vaso, certificadas isentas de doenças, com garantia de substituição) são transportadas por avião em 6 semanas, e precisam depois de 6 semanas em estufa antes da plantação com rega gota-a-gota. O primeiro corte ocorre no final do sexto ano, com madeira valorizada em 400-450 €/m³; cultivamos nós próprios esta variedade há vários anos, nomeadamente em Espanha.",
+          more: "O Paulownia ALTIFOLIA® é a árvore de crescimento mais rápido do mundo: em boas condições atinge 13 a 15 metros em seis a oito anos, e até 20 metros depois — cerca de 3 metros por ano — com folhas que podem ultrapassar 80 cm de comprimento. É também uma das árvores mais eficientes na captação de CO₂ e na libertação de oxigénio por fotossíntese. A nossa variedade ALTIFOLIA®, cruzamento entre Paulownia Elongata e Paulownia Fortunei, foi selecionada para climas quentes: desenvolve um tronco de grande diâmetro em pouco tempo. Combinada com 100 g de EVERGREEN® por planta na plantação, a necessidade de rega diminui 50%, sem nunca expor a árvore ao stress hídrico. O seu sistema radicular profundo enriquece o solo em azoto e previne a erosão; a resistência natural a pragas e doenças é elevada, e a madeira só se inflama a partir de 426°C, o que a torna também uma barreira corta-fogo. As plantas (25-30 cm à entrega, em vaso, certificadas isentas de doenças, com garantia de substituição) são transportadas por avião em 6 semanas, e precisam depois de 6 semanas em estufa antes da plantação com rega gota-a-gota. O primeiro corte ocorre no final do sexto ano, com madeira valorizada em 400-450 €/m³; cultivamos nós próprios esta variedade há vários anos, nomeadamente em Espanha.",
           detail: {
             sections: [
               {
                 h: "O princípio",
-                p: "O Paulownia ALTIFOLIA® é a árvore de crescimento mais rápido do mundo: em boas condições atinge 13 a 15 metros em seis a oito anos — cerca de 3 metros por ano — com folhas que podem ultrapassar 80 cm de comprimento. É também uma das árvores mais eficientes na captação de CO₂ e na libertação de oxigénio por fotossíntese. A nossa variedade ALTIFOLIA® foi selecionada para climas quentes: desenvolve um tronco de grande diâmetro em pouco tempo. Combinada com 100 g de EVERGREEN® por planta na plantação, a necessidade de rega diminui 50%, sem nunca expor a árvore ao stress hídrico.",
+                p: "O Paulownia ALTIFOLIA® é a árvore de crescimento mais rápido do mundo: em boas condições atinge 13 a 15 metros em seis a oito anos, e até 20 metros depois — cerca de 3 metros por ano — com folhas que podem ultrapassar 80 cm de comprimento. É também uma das árvores mais eficientes na captação de CO₂ e na libertação de oxigénio por fotossíntese. A nossa variedade ALTIFOLIA® foi selecionada para climas quentes: desenvolve um tronco de grande diâmetro em pouco tempo. Combinada com 100 g de EVERGREEN® por planta na plantação, a necessidade de rega diminui 50%, sem nunca expor a árvore ao stress hídrico.",
               },
               {
                 h: "Uma seleção pensada para climas quentes",
@@ -2265,8 +2265,8 @@ const baseContent = {
       lede: "Grupos agroindustriais, cooperativas e duas universidades americanas conduzem atualmente ensaios com as nossas tecnologias, nas suas próprias parcelas e nas suas próprias culturas. Eis quais, em setembro de 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Cana-de-açúcar", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Universidade de Gainesville", place: "Flórida, Estados Unidos", crop: "Plantação de bordos vermelhos", tech: ["EVERGREEN®"] },
-        { org: "Universidade de Portland", place: "Oregon, Estados Unidos", crop: "Plantação de pinheiros Douglas", tech: ["EVERGREEN®"] },
+        { org: "Universidade da Flórida, em Gainesville", place: "Flórida, Estados Unidos", crop: "Plantação de bordos vermelhos", tech: ["EVERGREEN®"] },
+        { org: "Universidade Estadual do Oregon, em Corvallis", place: "Oregon, Estados Unidos", crop: "Plantação de abetos de Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Reino Unido · Toledo, Espanha", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Grupo ZARROUK", place: "Tunísia", crop: "Cultivo de tomate", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Córsega, França", crop: "Oliveiras e aveleiras", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -2347,9 +2347,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Trabalham connosco",
-      title: "Uma rede em 38 países",
+      title: "Uma rede em 39 países",
       lede: "Produtores, cooperativas, especialistas em tratamento de água, universidades e institutos de investigação, presentes em cinco continentes.",
-      mapAriaLabel: "Mapa da rede Green Solutions em 38 países",
+      mapAriaLabel: "Mapa da rede Green Solutions em 39 países",
     },
     countryStudies: {
       eyebrow: "Abordagem por país",
@@ -2475,8 +2475,8 @@ const baseContent = {
       "França", "África do Sul", "Tunísia", "Itália", "Reino Unido", "Canadá", "Espanha", "Mali",
       "Caraíbas", "Estados Unidos", "Camarões", "Guiné", "Senegal", "Marrocos", "Guiné-Bissau", "Brasil",
       "Arábia Saudita", "Sultanato de Omã", "Congo", "Costa do Marfim", "Sudão do Sul", "Polónia", "Grécia", "Portugal",
-      "Emirados Árabes Unidos", "México", "Turquia", "Indonésia", "China",
-      "Argélia", "Argentina", "Chile", "Gabão", "Gana", "Jordânia", "Kuwait", "Croácia",
+      "Emirados Árabes Unidos", "México", "Turquia", "Indonésia", "China", "Egito",
+      "Argélia", "Argentina", "Chile", "Gabão", "Gana", "Jordânia", "Kuwait", "Croácia", "Madagáscar",
     ],
   },
   ar: {
@@ -2598,21 +2598,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 إلى +100%", label: "زيادة في الإنتاجية، كمًا ونوعًا" },
-      { figure: "−50 إلى −70%", label: "تخفيض في احتياجات مياه الري" },
-      { figure: "14", label: "تجربة رائدة قيد التنفيذ في 2026" },
+      { figure: "−40 إلى −70%", label: "تخفيض في احتياجات مياه الري" },
+      { figure: "15", label: "تجربة رائدة قيد التنفيذ في 2026" },
       { figure: "SOHISCERT", label: "وشهادة EU Bio، اعتمادات حقيقية" },
     ],
     presentation: {
       eyebrow: "نهجنا",
-      title1: "تقنياتنا الأربع",
+      title1: "تقنياتنا الخمس",
       title2: "هدف واحد",
       title3: "النمو والجودة",
       lede: "تطوّر شركة Green Solutions وتوزّع تقنيات زراعية مبتكرة، مصمَّمة لزيادة الإنتاجية مع الحفاظ على الموارد الطبيعية التي تعتمد عليها هذه الإنتاجية، بل وتجديدها. حلول ملموسة، مُختبرة ميدانيًا، لمواجهة الإجهاد المائي، واستنزاف التربة، والربحية، والأمن الغذائي.",
       tagline: "جميع حلولنا الابتكارية يمكن استخدامها مع كل النباتات والمحاصيل، في كل المناخات وكل أنواع التربة!",
       stats: [
         { num: "30", label: "شريك" },
-        { num: "38", label: "دولة" },
-        { num: "4", label: "تقنيات حصرية" },
+        { num: "39", label: "دولة" },
+        { num: "5", label: "تقنيات حصرية" },
       ],
       distinguish: [
         { num: "01", title: "معتمد، لا مجرد إعلان", text: "SOHISCERT · EU Bio، متوافق مع الزراعة العضوية." },
@@ -2624,7 +2624,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "ما الذي أتى بك إلى هنا؟",
       title1: "اتجاهان ممكنان:",
-      title2: "محاولة البقاء، أو التقدم إلى الأمام.",
+      title2: "محاولة البقاء من جهة، والتقدّم من جهة أخرى.",
       tabLabel: "الصمود أو التقدم",
       tabTenir: "01 · عدم تغيير أي شيء",
       tabAvancer: "02 · التفاعل والفوز",
@@ -2651,7 +2651,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "جعل إعادة التشجير مربحة: تصل شجرة Paulownia ALTIFOLIA® إلى 13 إلى 15 مترًا خلال ست إلى ثماني سنوات، وتُقدَّر قيمة خشبها بنحو 550 يورو للمتر المكعب، مما يوفر عائدًا على الاستثمار خلال دورة زراعية مدتها ست سنوات.",
+          text: "جعل إعادة التشجير مربحة: تصل شجرة Paulownia ALTIFOLIA® إلى 13 إلى 15 مترًا خلال ست إلى ثماني سنوات، وحتى 20 مترًا لاحقًا، وتُقدَّر قيمة خشبها بنحو 550 يورو للمتر المكعب، مما يوفر عائدًا على الاستثمار خلال دورة زراعية مدتها ست سنوات.",
           linkLabel: "شاهد Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -2675,22 +2675,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "تلتقط بوليمراتنا المحتفظة بالماء مياه الأمطار أو الري وتخزنها على شكل هلام قريب جدًا من الجذور، دون التأثير على جودتها. خزان دائم، متاح للنبات أيًا كانت التربة أو المناخ، يزيل الإجهاد المائي في المراحل الحرجة من دورة النمو.",
           facts: [
-            "−50 إلى −70% من المياه حسب نوع الري",
-            "EVERGREEN®: WAC (قدرة امتصاص الماء) 300 ضعف، 3 سنوات في التربة",
-            "ECOSORB®: 300 ضعف وزنه، أساسه نشا الذرة، يدوم 2 إلى 3 سنوات",
+            "−40 إلى −70% من المياه حسب نوع الري",
+            "EVERGREEN®: نحو 300 ضعف وزنه ماءً، من 3 إلى 4 سنوات في التربة",
+            "ECOSORB®: نحو 300 ضعف وزنه، أساسه نشا الذرة، يدوم 2 إلى 3 سنوات",
             "يتحلل بنسبة 20 إلى 25% سنويًا، دون خطر الجرعة الزائدة",
             "قصب السكر: +25% من نسبة السكر (بريكس) بمعدل 15 كجم/هكتار",
           ],
-          more: "إيفرغرين® وإيكوسورب® بوليمرات فائقة الامتصاص تتحلل حيوياً بالكامل، دون أن تترك أي بقايا في التربة أو على النباتات. تمتص من 300 إلى 400 ضعف وزنها ماءً وتطلقه إلى الجذور حسب احتياج المحصول، دورة بعد أخرى، إلى أن تتحلل طبيعياً (بنسبة 20 إلى 25% سنوياً) إلى ثاني أكسيد الكربون والماء ومركبات نيتروجينية قابلة للامتصاص. وخلافاً لمواد احتباس الماء القائمة على الصوديوم -التي تتحول بعد الترطيب إلى عجينة مالحة تخنق الجذور- أو التركيبات القائمة على الأكريلاميد المحظورة في العديد من الدول لسميتها، فإن منتجينا قائمان على البوتاسيوم ومتوافقان مع المحاصيل الغذائية. عند ملامسة الماء، تنتفخ الحبيبات الجافة: هذا التمدد والانكماش يفكك التربة كما تفعل ديدان الأرض تماماً، ويحسّن نفاذيتها، ويخلق مناخاً رطباً مواتياً للكائنات الدقيقة المسؤولة عن الخصوبة الطبيعية. كما تُحتجز الأسمدة الذائبة أثناء مرورها بدلاً من أن تتسرب إلى المياه الجوفية، ما يقلل التلوث ويحقق أقصى استفادة من كل تسميد. وبالجمع مع أسمدة إيكوفرت®، تشكّل هذه المنتجات نظاماً متكاملاً حقق زيادة بنسبة 25% في نسبة السكر (بريكس) في قصب السكر باستخدام 15 كغ فقط لكل هكتار. كما تنجو أكثر من 95% من الشتلات المزروعة باستخدام هذه المنتجات، وهي نسبة أعلى بكثير من الطرق التقليدية.",
+          more: "إيفرغرين® وإيكوسورب® بوليمرات فائقة الامتصاص تتحلل حيوياً بالكامل، دون أن تترك أي بقايا في التربة أو على النباتات. تمتص من نحو 300 ضعف وزنها ماءً وتطلقه إلى الجذور حسب احتياج المحصول، دورة بعد أخرى، إلى أن تتحلل طبيعياً (بنسبة 20 إلى 25% سنوياً) إلى ثاني أكسيد الكربون والماء ومركبات نيتروجينية قابلة للامتصاص. وخلافاً لمواد احتباس الماء القائمة على الصوديوم -التي تتحول بعد الترطيب إلى عجينة مالحة تخنق الجذور- أو التركيبات القائمة على الأكريلاميد المحظورة في العديد من الدول لسميتها، فإن منتجينا قائمان على البوتاسيوم ومتوافقان مع المحاصيل الغذائية. عند ملامسة الماء، تنتفخ الحبيبات الجافة: هذا التمدد والانكماش يفكك التربة كما تفعل ديدان الأرض تماماً، ويحسّن نفاذيتها، ويخلق مناخاً رطباً مواتياً للكائنات الدقيقة المسؤولة عن الخصوبة الطبيعية. كما تُحتجز الأسمدة الذائبة أثناء مرورها بدلاً من أن تتسرب إلى المياه الجوفية، ما يقلل التلوث ويحقق أقصى استفادة من كل تسميد. وبالجمع مع أسمدة إيكوفرت®، تشكّل هذه المنتجات نظاماً متكاملاً حقق زيادة بنسبة 25% في نسبة السكر (بريكس) في قصب السكر باستخدام 15 كغ فقط لكل هكتار. كما تنجو أكثر من 95% من الشتلات المزروعة باستخدام هذه المنتجات، وهي نسبة أعلى بكثير من الطرق التقليدية.",
           detail: {
             sections: [
               {
                 h: "المبدأ",
-                p: "إيفرغرين® وإيكوسورب® بوليمرات فائقة الامتصاص تتحلل حيوياً بالكامل، دون أن تترك أي بقايا في التربة أو على النباتات. تمتص من 300 إلى 400 ضعف وزنها ماءً وتطلقه إلى الجذور حسب احتياج المحصول، دورة بعد أخرى، إلى أن تتحلل طبيعياً إلى ثاني أكسيد الكربون والماء ومركبات نيتروجينية قابلة للامتصاص. وخلافاً لمواد احتباس الماء القائمة على الصوديوم أو الأكريلاميد المحظورة لسميتها، فإن منتجينا قائمان على البوتاسيوم ومتوافقان مع المحاصيل الغذائية. وبالجمع مع أسمدة إيكوفرت®، حققت هذه المنتجات زيادة بنسبة 25% في نسبة السكر في قصب السكر باستخدام 15 كغ فقط لكل هكتار.",
+                p: "إيفرغرين® وإيكوسورب® بوليمرات فائقة الامتصاص تتحلل حيوياً بالكامل، دون أن تترك أي بقايا في التربة أو على النباتات. تمتص من نحو 300 ضعف وزنها ماءً وتطلقه إلى الجذور حسب احتياج المحصول، دورة بعد أخرى، إلى أن تتحلل طبيعياً إلى ثاني أكسيد الكربون والماء ومركبات نيتروجينية قابلة للامتصاص. وخلافاً لمواد احتباس الماء القائمة على الصوديوم أو الأكريلاميد المحظورة لسميتها، فإن منتجينا قائمان على البوتاسيوم ومتوافقان مع المحاصيل الغذائية. وعند ملامسة الماء تمتلئ الحبيبة الجافة وتنتفخ: هذا التمدّد والانكماش المتكرّر يفكّك التربة كما تفعل دودة الأرض، ويحسّن نفاذيتها، ويخلق مناخاً دقيقاً رطباً ملائماً للكائنات الدقيقة في التربة، وهي محرّك الخصوبة الطبيعية. كما تُحتجز الأسمدة الذائبة في طريقها بدل أن تتسرّب إلى المياه الجوفية، ما يقلّل التلوّث ويتيح الاستفادة الأفضل من كل إضافة. وبالجمع مع أسمدة إيكوفرت®، حققت هذه المنتجات زيادة بنسبة 25% في نسبة السكر في قصب السكر باستخدام 15 كغ فقط لكل هكتار. وأكثر من 95% من الشتلات المنقولة باستخدام موادنا تنجح في التجذّر، مقابل نسبة أدنى بكثير في الظروف التقليدية.",
               },
               {
                 h: "الآلية بالتفصيل",
-                p: "عند ملامسة الماء - من المطر أو الري أو رطوبة التربة المتبقية - تمتص الحبيبة الجافة حتى 300 إلى 400 ضعف وزنها، لتتحول إلى هلام يخزّن الماء قريباً جداً من الجذور. تُعد الأسابيع الثلاثة الأولى من الزراعة حاسمة: يجب الحفاظ على ري عادي لتشبيع الحبيبات بالكامل، وخلال هذه الفترة تتشابك جذور النباتات مع الهلام وترتكز على هذا المخزون المائي. إيفرغرين® وإيكوسورب® غير سامّين إطلاقاً للجلد؛ فقط دقة حبيباتهما تستوجب ارتداء كمامة واقية من الغبار عند التداول. وفي حال انسكاب المنتج، يُنصح بنفخ البقايا بالهواء المضغوط بدلاً من شطفها بالماء الذي قد يجعل التربة زلقة.",
+                p: "عند ملامسة الماء - من المطر أو الري أو رطوبة التربة المتبقية - تمتص الحبيبة الجافة حتى نحو 300 ضعف وزنها، لتتحول إلى هلام يخزّن الماء قريباً جداً من الجذور. تُعد الأسابيع الثلاثة الأولى من الزراعة حاسمة: يجب الحفاظ على ري عادي لتشبيع الحبيبات بالكامل، وخلال هذه الفترة تتشابك جذور النباتات مع الهلام وترتكز على هذا المخزون المائي. إيفرغرين® وإيكوسورب® غير سامّين إطلاقاً للجلد؛ فقط دقة حبيباتهما تستوجب ارتداء كمامة واقية من الغبار عند التداول. وفي حال انسكاب المنتج، يُنصح بنفخ البقايا بالهواء المضغوط بدلاً من شطفها بالماء الذي قد يجعل التربة زلقة.",
               },
               {
                 h: "أين وكيف تُستخدم",
@@ -2812,19 +2812,19 @@ const baseContent = {
           num: "05",
           kicker: "الزراعة من أجل الاستمرار",
           title: "Paulownia ALTIFOLIA®",
-          text: "الشجرة الأسرع نموًا في العالم: 13 إلى 15 مترًا خلال ست إلى ثماني سنوات، بمعدل يقارب 3 أمتار سنويًا. بالاقتران مع مادة EVERGREEN® المحتفظة بالماء، تنخفض احتياجاتها من مياه الري بنسبة 50%. أصناف هجينة عقيمة وغير غازية، مصحوبة من الشتلة الصغيرة حتى بيع الخشب.",
+          text: "الشجرة الأسرع نموًا في العالم: 13 إلى 15 مترًا خلال ست إلى ثماني سنوات، وحتى 20 مترًا لاحقًا، بمعدل يقارب 3 أمتار سنويًا. بالاقتران مع مادة EVERGREEN® المحتفظة بالماء، تنخفض احتياجاتها من مياه الري بنسبة 50%. أصناف هجينة عقيمة وغير غازية، مصحوبة من الشتلة الصغيرة حتى بيع الخشب.",
           facts: [
             "400 إلى 500 شجرة/هكتار، بقيمة تتراوح بين 400 و450 يورو للمتر المكعب",
             "ربحية على مدى ست سنوات من الزراعة",
             "تتحمل من −25 إلى +45 درجة مئوية، ولا تحترق إلا عند 426 درجة",
             "400 إلى 700 كجم من العسل لكل هكتار، بالإضافة إلى أرصدة كربونية",
           ],
-          more: "شجرة الباولونيا ألتيفوليا® هي الأسرع نمواً في العالم: في الظروف المثلى تصل إلى ارتفاع 13 إلى 15 متراً خلال ست إلى ثماني سنوات، أي نحو 3 أمتار سنوياً، بأوراق قد يتجاوز طولها 80 سم. وهي أيضاً من أكثر الأشجار كفاءة في امتصاص ثاني أكسيد الكربون وإطلاق الأكسجين عبر التمثيل الضوئي. صنفنا ألتيفوليا®، وهو تهجين بين باولونيا إلونغاتا وباولونيا فورتونيي، اختير خصيصاً للمناطق الحارة: يطوّر جذعاً بقطر كبير في وقت قصير. وبإضافة 100 غرام من إيفرغرين® لكل شتلة عند الزراعة، تنخفض حاجة الري بنسبة 50% دون تعريض الشجرة لأي إجهاد مائي. جذورها العميقة تُغني التربة بالنيتروجين وتمنع التعرية؛ ومقاومتها الطبيعية للآفات والأمراض عالية، ولا تشتعل خشبتها إلا عند 426 درجة مئوية، ما يجعلها أيضاً حاجزاً طبيعياً ضد الحرائق. تُشحن الشتلات (بطول 25 إلى 30 سم عند التسليم، معلّبة، معتمدة خالية من الأمراض، ومضمونة الاستبدال) جواً خلال 6 أسابيع، ثم تحتاج 6 أسابيع أخرى في الصوبة قبل الزراعة بالري بالتنقيط. يجري أول قطع في نهاية السنة السادسة، بخشب تُقدَّر قيمته بين 400 و450 يورو للمتر المكعب؛ ونحن نزرع هذا الصنف بأنفسنا منذ عدة سنوات، خصوصاً في إسبانيا.",
+          more: "شجرة الباولونيا ألتيفوليا® هي الأسرع نمواً في العالم: في الظروف المثلى تصل إلى ارتفاع 13 إلى 15 متراً خلال ست إلى ثماني سنوات، وحتى 20 متراً لاحقاً، أي نحو 3 أمتار سنوياً، بأوراق قد يتجاوز طولها 80 سم. وهي أيضاً من أكثر الأشجار كفاءة في امتصاص ثاني أكسيد الكربون وإطلاق الأكسجين عبر التمثيل الضوئي. صنفنا ألتيفوليا®، وهو تهجين بين باولونيا إلونغاتا وباولونيا فورتونيي، اختير خصيصاً للمناطق الحارة: يطوّر جذعاً بقطر كبير في وقت قصير. وبإضافة 100 غرام من إيفرغرين® لكل شتلة عند الزراعة، تنخفض حاجة الري بنسبة 50% دون تعريض الشجرة لأي إجهاد مائي. جذورها العميقة تُغني التربة بالنيتروجين وتمنع التعرية؛ ومقاومتها الطبيعية للآفات والأمراض عالية، ولا تشتعل خشبتها إلا عند 426 درجة مئوية، ما يجعلها أيضاً حاجزاً طبيعياً ضد الحرائق. تُشحن الشتلات (بطول 25 إلى 30 سم عند التسليم، معلّبة، معتمدة خالية من الأمراض، ومضمونة الاستبدال) جواً خلال 6 أسابيع، ثم تحتاج 6 أسابيع أخرى في الصوبة قبل الزراعة بالري بالتنقيط. يجري أول قطع في نهاية السنة السادسة، بخشب تُقدَّر قيمته بين 400 و450 يورو للمتر المكعب؛ ونحن نزرع هذا الصنف بأنفسنا منذ عدة سنوات، خصوصاً في إسبانيا.",
           detail: {
             sections: [
               {
                 h: "المبدأ",
-                p: "شجرة الباولونيا ألتيفوليا® هي الأسرع نمواً في العالم: في الظروف المثلى تصل إلى ارتفاع 13 إلى 15 متراً خلال ست إلى ثماني سنوات، أي نحو 3 أمتار سنوياً. وهي أيضاً من أكثر الأشجار كفاءة في امتصاص ثاني أكسيد الكربون. اختير صنفنا ألتيفوليا® خصيصاً للمناطق الحارة: يطوّر جذعاً بقطر كبير في وقت قصير. وبإضافة 100 غرام من إيفرغرين® لكل شتلة عند الزراعة، تنخفض حاجة الري بنسبة 50% دون تعريض الشجرة لأي إجهاد مائي.",
+                p: "شجرة الباولونيا ألتيفوليا® هي الأسرع نمواً في العالم: في الظروف المثلى تصل إلى ارتفاع 13 إلى 15 متراً خلال ست إلى ثماني سنوات، وحتى 20 متراً لاحقاً، أي نحو 3 أمتار سنوياً. وهي أيضاً من أكثر الأشجار كفاءة في امتصاص ثاني أكسيد الكربون. اختير صنفنا ألتيفوليا® خصيصاً للمناطق الحارة: يطوّر جذعاً بقطر كبير في وقت قصير. وبإضافة 100 غرام من إيفرغرين® لكل شتلة عند الزراعة، تنخفض حاجة الري بنسبة 50% دون تعريض الشجرة لأي إجهاد مائي.",
               },
               {
                 h: "صنف مصمم للمناطق الحارة",
@@ -2884,8 +2884,8 @@ const baseContent = {
       lede: "تُجري مجموعات زراعية صناعية وتعاونيات وجامعتان أمريكيتان حاليًا تجارب على تقنياتنا، في أراضيها ومحاصيلها الخاصة. إليكم القائمة، في سبتمبر 2026.",
       pilots: [
         { org: "Trois Rivières", place: "مارتينيك", crop: "قصب السكر", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "جامعة Gainesville", place: "فلوريدا، الولايات المتحدة", crop: "مزرعة القيقب الأحمر", tech: ["EVERGREEN®"] },
-        { org: "جامعة Portland", place: "أوريغون، الولايات المتحدة", crop: "مزرعة صنوبر Douglas", tech: ["EVERGREEN®"] },
+        { org: "جامعة فلوريدا في غينزفيل", place: "فلوريدا، الولايات المتحدة", crop: "مزرعة القيقب الأحمر", tech: ["EVERGREEN®"] },
+        { org: "جامعة ولاية أوريغون في كورفاليس", place: "أوريغون، الولايات المتحدة", crop: "مزرعة تنّوب دوغلاس", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "المملكة المتحدة · توليدو، إسبانيا", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "مجموعة ZARROUK", place: "تونس", crop: "زراعة الطماطم", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "كورسيكا، فرنسا", crop: "أشجار الزيتون والبندق", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -2966,9 +2966,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "يعملون معنا",
-      title: "شبكة في 38 دولة",
+      title: "شبكة في 39 دولة",
       lede: "منتجون وتعاونيات ومتخصصون في معالجة المياه وجامعات ومعاهد بحثية، حاضرون في خمس قارات.",
-      mapAriaLabel: "خريطة شبكة Green Solutions في 38 دولة",
+      mapAriaLabel: "خريطة شبكة Green Solutions في 39 دولة",
     },
     countryStudies: {
       eyebrow: "النهج القطري",
@@ -3094,8 +3094,8 @@ const baseContent = {
       "فرنسا", "جنوب أفريقيا", "تونس", "إيطاليا", "المملكة المتحدة", "كندا", "إسبانيا", "مالي",
       "الكاريبي", "الولايات المتحدة", "الكاميرون", "غينيا", "السنغال", "المغرب", "غينيا بيساو", "البرازيل",
       "السعودية", "سلطنة عُمان", "الكونغو", "ساحل العاج", "جنوب السودان", "بولندا", "اليونان", "البرتغال",
-      "الإمارات العربية المتحدة", "المكسيك", "تركيا", "إندونيسيا", "الصين",
-      "الجزائر", "الأرجنتين", "تشيلي", "الغابون", "غانا", "الأردن", "الكويت", "كرواتيا",
+      "الإمارات العربية المتحدة", "المكسيك", "تركيا", "إندونيسيا", "الصين", "مصر",
+      "الجزائر", "الأرجنتين", "تشيلي", "الغابون", "غانا", "الأردن", "الكويت", "كرواتيا", "مدغشقر",
     ],
   },
   zh: {
@@ -3217,21 +3217,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 至 +100%", label: "产量提升，量与质兼顾" },
-      { figure: "−50 至 −70%", label: "灌溉用水需求" },
-      { figure: "14", label: "2026年正在进行的试点项目" },
+      { figure: "−40 至 −70%", label: "灌溉用水需求" },
+      { figure: "15", label: "2026年正在进行的试点项目" },
       { figure: "SOHISCERT", label: "及欧盟有机认证，真实认证" },
     ],
     presentation: {
       eyebrow: "我们的方法",
-      title1: "我们的四项技术",
+      title1: "我们的五项技术",
       title2: "一个目标",
       title3: "增产与提质",
       lede: "Green Solutions 研发并推广颠覆性农业技术，旨在提高生产力的同时保护乃至再生这种生产力所依赖的自然资源。这些是经过田间验证的具体解决方案，应对水分胁迫、土壤退化、盈利能力与粮食安全等挑战。",
       tagline: "我们所有的颠覆性解决方案适用于任何植物和作物、任何气候及任何类型的土壤！",
       stats: [
         { num: "30", label: "合作伙伴" },
-        { num: "38", label: "国家" },
-        { num: "4", label: "品牌技术" },
+        { num: "39", label: "国家" },
+        { num: "5", label: "品牌技术" },
       ],
       distinguish: [
         { num: "01", title: "经认证，而非空口宣称", text: "SOHISCERT · 欧盟有机认证，兼容有机农业。" },
@@ -3243,7 +3243,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "是什么促使您行动？",
       title1: "两个方向：",
-      title2: "苟且求存，或主动出击。",
+      title2: "一边苦苦求存，一边主动前行。",
       tabLabel: "维持现状还是前进",
       tabTenir: "01 · 维持现状",
       tabAvancer: "02 · 应对并取胜",
@@ -3270,7 +3270,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "让重新造林盈利：Paulownia ALTIFOLIA® 在六至八年内可长到13至15米，其木材价值约为550欧元/立方米，六年种植周期即可实现盈利。",
+          text: "让重新造林盈利：Paulownia ALTIFOLIA® 在六至八年内可长到13至15米，之后可达20米，其木材价值约为550欧元/立方米，六年种植周期即可实现盈利。",
           linkLabel: "了解 Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -3294,22 +3294,22 @@ const baseContent = {
           title: "EVERGREEN® 与 ECOSORB®",
           text: "我们的保水剂能够截留雨水或灌溉用水，并以凝胶形式储存在根系附近，且不改变其品质。无论土壤或气候如何，都能为植物提供一个持久的水源储备，消除生长关键阶段的水分胁迫。",
           facts: [
-            "根据灌溉方式不同，节水50%至70%",
-            "EVERGREEN®：WAC（吸水能力）300倍，在土壤中持续3年",
-            "ECOSORB®：吸水量达自重300倍，玉米淀粉基质，持续2至3年",
+            "根据灌溉方式不同，节水40%至70%",
+            "EVERGREEN®：吸水量约为自重300倍，在土壤中持续3至4年",
+            "ECOSORB®：吸水量约为自重300倍，玉米淀粉基质，持续2至3年",
             "每年降解20%至25%，无过量使用风险",
             "甘蔗：每公顷施用15公斤，含糖量（锤度）提高25%",
           ],
-          more: "EVERGREEN®和ECOSORB®是超强吸水性聚合物，能够完全生物降解，不会在土壤或植物上留下任何残留物。它们能够吸收相当于自身重量300至400倍的水分，并根据作物需求循环往复地将水分释放给根系，直至自然降解（每年20%至25%）为二氧化碳、水和可被吸收的含氮化合物。与钠基保水剂——一旦水合后会形成使根系窒息的咸性糊状物——或在许多国家因毒性而被禁止使用的丙烯酰胺基配方不同，我们的两款产品均以钾为基础，与食用作物兼容。颗粒干燥时接触水分会膨胀：这种膨胀-收缩效应如同蚯蚓一般疏松土壤，改善其渗透性，并为负责天然肥力的微动物群和微生物群创造湿润的微气候。溶解的肥料在流动过程中被截留，而不是渗入地下水，从而减少污染，并使每一次施肥都物尽其用。与我们的ECOFERT®肥料结合使用时，EVERGREEN®和ECOSORB®构成了一套完整的系统，在甘蔗种植中，每公顷仅使用15公斤产品即可实现含糖量（锤度）提高25%。使用我们保水剂移植的植株成活率超过95%，远高于传统方式。",
+          more: "EVERGREEN®和ECOSORB®是超强吸水性聚合物，能够完全生物降解，不会在土壤或植物上留下任何残留物。它们能够吸收相当于自身重量约300倍的水分，并根据作物需求循环往复地将水分释放给根系，直至自然降解（每年20%至25%）为二氧化碳、水和可被吸收的含氮化合物。与钠基保水剂——一旦水合后会形成使根系窒息的咸性糊状物——或在许多国家因毒性而被禁止使用的丙烯酰胺基配方不同，我们的两款产品均以钾为基础，与食用作物兼容。颗粒干燥时接触水分会膨胀：这种膨胀-收缩效应如同蚯蚓一般疏松土壤，改善其渗透性，并为负责天然肥力的微动物群和微生物群创造湿润的微气候。溶解的肥料在流动过程中被截留，而不是渗入地下水，从而减少污染，并使每一次施肥都物尽其用。与我们的ECOFERT®肥料结合使用时，EVERGREEN®和ECOSORB®构成了一套完整的系统，在甘蔗种植中，每公顷仅使用15公斤产品即可实现含糖量（锤度）提高25%。使用我们保水剂移植的植株成活率超过95%，远高于传统方式。",
           detail: {
             sections: [
               {
                 h: "原理",
-                p: "EVERGREEN®和ECOSORB®是超强吸水性聚合物，能够完全生物降解，不会在土壤或植物上留下任何残留物。它们能够吸收相当于自身重量300至400倍的水分，并根据作物需求循环往复地将水分释放给根系，直至自然降解（每年20%至25%）为二氧化碳、水和可被吸收的含氮化合物。与钠基保水剂——一旦水合后会形成使根系窒息的咸性糊状物——或在许多国家因毒性而被禁止使用的丙烯酰胺基配方不同，我们的两款产品均以钾为基础，与食用作物兼容。与我们的ECOFERT®肥料结合使用时，EVERGREEN®和ECOSORB®构成了一套完整的系统，在甘蔗种植中，每公顷仅使用15公斤产品即可实现含糖量（锤度）提高25%。",
+                p: "EVERGREEN®和ECOSORB®是超强吸水性聚合物，能够完全生物降解，不会在土壤或植物上留下任何残留物。它们能够吸收相当于自身重量约300倍的水分，并根据作物需求循环往复地将水分释放给根系，直至自然降解（每年20%至25%）为二氧化碳、水和可被吸收的含氮化合物。与钠基保水剂——一旦水合后会形成使根系窒息的咸性糊状物——或在许多国家因毒性而被禁止使用的丙烯酰胺基配方不同，我们的两款产品均以钾为基础，与食用作物兼容。与我们的ECOFERT®肥料结合使用时，EVERGREEN®和ECOSORB®构成了一套完整的系统，在甘蔗种植中，每公顷仅使用15公斤产品即可实现含糖量（锤度）提高25%。",
               },
               {
                 h: "作用机制详解",
-                p: "接触水分时——无论是雨水、灌溉水还是土壤中残留的水分——干燥的颗粒会吸收相当于自身重量300至400倍的水，转化为一种凝胶，将水分储存在最靠近根系的地方。种植的前三周至关重要：必须保持正常灌溉，使颗粒完全饱和，在此期间，植物的根系会与凝胶交织在一起，并锚定在这一水分储备中。EVERGREEN®和ECOSORB®对皮肤绝无毒性；只是由于其颗粒细小，操作时需佩戴防尘口罩。若不慎洒落，应用压缩空气吹除残留物，而不要用水冲洗，否则会使土壤变得湿滑。",
+                p: "接触水分时——无论是雨水、灌溉水还是土壤中残留的水分——干燥的颗粒会吸收相当于自身重量约300倍的水，转化为一种凝胶，将水分储存在最靠近根系的地方。种植的前三周至关重要：必须保持正常灌溉，使颗粒完全饱和，在此期间，植物的根系会与凝胶交织在一起，并锚定在这一水分储备中。EVERGREEN®和ECOSORB®对皮肤绝无毒性；只是由于其颗粒细小，操作时需佩戴防尘口罩。若不慎洒落，应用压缩空气吹除残留物，而不要用水冲洗，否则会使土壤变得湿滑。",
               },
               {
                 h: "使用场所与方法",
@@ -3431,19 +3431,19 @@ const baseContent = {
           num: "05",
           kicker: "为长远而种植",
           title: "泡桐ALTIFOLIA®",
-          text: "世界上生长速度最快的树种：六至八年内可长到13至15米，年均生长近3米。搭配我们的EVERGREEN®保水剂，可将灌溉用水需求降低50%。不育、非入侵性的杂交品种，从幼苗到木材销售全程陪伴。",
+          text: "世界上生长速度最快的树种：六至八年内可长到13至15米，之后可达20米，年均生长近3米。搭配我们的EVERGREEN®保水剂，可将灌溉用水需求降低50%。不育、非入侵性的杂交品种，从幼苗到木材销售全程陪伴。",
           facts: [
             "每公顷400至500棵树，价值为每立方米400/450欧元",
             "六年种植周期即可实现盈利",
             "耐受−25°C至+45°C，426°C才会燃烧",
             "每公顷400至700公斤蜂蜜，外加碳信用额度",
           ],
-          more: "泡桐ALTIFOLIA®是世界上生长速度最快的树种：在良好条件下，它能在六至八年内长到13至15米，即每年约3米，叶片长度可超过80厘米。它也是通过光合作用吸收二氧化碳并释放氧气效率最高的树种之一。我们的ALTIFOLIA®品种，由泡桐Elongata与泡桐Fortunei杂交而成，专为炎热地区选育：它能在短时间内长出粗大的树干。种植时每株搭配100克EVERGREEN®，灌溉需求可降低50%，且树木绝不会经历水分胁迫。其深根系统能为土壤补充氮素并防止水土流失；对病虫害的天然抗性很高，木材需达到426°C以上才会燃烧，因此也可作为防火屏障。苗木（交付时高25至30厘米，盆栽，经无病害认证，若死亡可获保证更换）在6周内空运送达，随后需在温室中度过6周，才能以滴灌方式种植。第一次采伐在第六年末进行，木材价值为每立方米400/450欧元；我们自己多年来一直在种植这一品种，尤其是在西班牙。",
+          more: "泡桐ALTIFOLIA®是世界上生长速度最快的树种：在良好条件下，它能在六至八年内长到13至15米，之后可达20米，即每年约3米，叶片长度可超过80厘米。它也是通过光合作用吸收二氧化碳并释放氧气效率最高的树种之一。我们的ALTIFOLIA®品种，由泡桐Elongata与泡桐Fortunei杂交而成，专为炎热地区选育：它能在短时间内长出粗大的树干。种植时每株搭配100克EVERGREEN®，灌溉需求可降低50%，且树木绝不会经历水分胁迫。其深根系统能为土壤补充氮素并防止水土流失；对病虫害的天然抗性很高，木材需达到426°C以上才会燃烧，因此也可作为防火屏障。苗木（交付时高25至30厘米，盆栽，经无病害认证，若死亡可获保证更换）在6周内空运送达，随后需在温室中度过6周，才能以滴灌方式种植。第一次采伐在第六年末进行，木材价值为每立方米400/450欧元；我们自己多年来一直在种植这一品种，尤其是在西班牙。",
           detail: {
             sections: [
               {
                 h: "原理",
-                p: "泡桐ALTIFOLIA®是世界上生长速度最快的树种：在良好条件下，它能在六至八年内长到13至15米，即每年约3米，叶片长度可超过80厘米。它也是通过光合作用吸收二氧化碳并释放氧气效率最高的树种之一。我们的ALTIFOLIA®品种，由泡桐Elongata与泡桐Fortunei杂交而成，专为炎热地区选育：它能在短时间内长出粗大的树干。种植时每株搭配100克EVERGREEN®，灌溉需求可降低50%，且树木绝不会经历水分胁迫。",
+                p: "泡桐ALTIFOLIA®是世界上生长速度最快的树种：在良好条件下，它能在六至八年内长到13至15米，之后可达20米，即每年约3米，叶片长度可超过80厘米。它也是通过光合作用吸收二氧化碳并释放氧气效率最高的树种之一。我们的ALTIFOLIA®品种，由泡桐Elongata与泡桐Fortunei杂交而成，专为炎热地区选育：它能在短时间内长出粗大的树干。种植时每株搭配100克EVERGREEN®，灌溉需求可降低50%，且树木绝不会经历水分胁迫。",
               },
               {
                 h: "专为炎热地区设计的品种",
@@ -3503,8 +3503,8 @@ const baseContent = {
       lede: "多家农工业集团、合作社以及两所美国大学目前正在自己的地块和作物上，对我们的技术开展试验。以下是截至2026年9月的清单。",
       pilots: [
         { org: "Trois Rivières", place: "马提尼克", crop: "甘蔗", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "盖恩斯维尔大学", place: "美国佛罗里达州", crop: "红枫种植园", tech: ["EVERGREEN®"] },
-        { org: "波特兰大学", place: "美国俄勒冈州", crop: "花旗松种植园", tech: ["EVERGREEN®"] },
+        { org: "佛罗里达大学（盖恩斯维尔）", place: "美国佛罗里达州", crop: "红枫种植园", tech: ["EVERGREEN®"] },
+        { org: "俄勒冈州立大学（科瓦利斯）", place: "美国俄勒冈州", crop: "花旗松种植园", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "英国·西班牙托莱多", crop: "泡桐Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Groupe ZARROUK", place: "突尼斯", crop: "番茄种植", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "法国科西嘉", crop: "橄榄树与榛树", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -3585,9 +3585,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "与我们合作的伙伴",
-      title: "覆盖38个国家的网络",
+      title: "覆盖39个国家的网络",
       lede: "生产者、合作社、水处理专家、高校及科研机构，遍布五大洲。",
-      mapAriaLabel: "Green Solutions覆盖38个国家的网络地图",
+      mapAriaLabel: "Green Solutions覆盖39个国家的网络地图",
     },
     countryStudies: {
       eyebrow: "国别方案",
@@ -3713,8 +3713,8 @@ const baseContent = {
       "法国", "南非", "突尼斯", "意大利", "英国", "加拿大", "西班牙", "马里",
       "加勒比地区", "美国", "喀麦隆", "几内亚", "塞内加尔", "摩洛哥", "几内亚比绍", "巴西",
       "沙特阿拉伯", "阿曼苏丹国", "刚果", "科特迪瓦", "南苏丹", "波兰", "希腊", "葡萄牙",
-      "阿拉伯联合酋长国", "墨西哥", "土耳其", "印度尼西亚", "中国",
-      "阿尔及利亚", "阿根廷", "智利", "加蓬", "加纳", "约旦", "科威特", "克罗地亚",
+      "阿拉伯联合酋长国", "墨西哥", "土耳其", "印度尼西亚", "中国", "埃及",
+      "阿尔及利亚", "阿根廷", "智利", "加蓬", "加纳", "约旦", "科威特", "克罗地亚", "马达加斯加",
     ],
   },
   id: {
@@ -3836,21 +3836,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 hingga +100%", label: "peningkatan hasil, dari segi jumlah maupun kualitas" },
-      { figure: "−50 hingga −70%", label: "kebutuhan air irigasi" },
-      { figure: "14", label: "uji coba percontohan yang sedang berjalan pada 2026" },
+      { figure: "−40 hingga −70%", label: "kebutuhan air irigasi" },
+      { figure: "15", label: "uji coba percontohan yang sedang berjalan pada 2026" },
       { figure: "SOHISCERT", label: "dan EU Bio, sertifikasi nyata" },
     ],
     presentation: {
       eyebrow: "Pendekatan Kami",
-      title1: "Empat Teknologi Kami",
+      title1: "Lima Teknologi Kami",
       title2: "Satu Tujuan",
       title3: "Pertumbuhan dan Kualitas",
       lede: "Green Solutions mengembangkan dan mendistribusikan teknologi pertanian yang disruptif, dirancang untuk meningkatkan produktivitas sekaligus menjaga, bahkan meregenerasi, sumber daya alam yang menjadi dasar produktivitas tersebut. Solusi konkret, teruji di lapangan, untuk mengatasi tekanan air, kelelahan tanah, profitabilitas, dan ketahanan pangan.",
       tagline: "Semua solusi disruptif kami dapat digunakan untuk semua tanaman dan tanaman pangan, di semua iklim dan semua jenis tanah!",
       stats: [
         { num: "30", label: "mitra" },
-        { num: "38", label: "negara" },
-        { num: "4", label: "teknologi bermerek" },
+        { num: "39", label: "negara" },
+        { num: "5", label: "teknologi bermerek" },
       ],
       distinguish: [
         { num: "01", title: "Bersertifikat, bukan sekadar klaim", text: "SOHISCERT · EU Bio, sesuai untuk pertanian organik." },
@@ -3862,7 +3862,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "Apa yang membawa Anda ke sini?",
       title1: "Dua arah yang mungkin:",
-      title2: "Bertahan hidup seadanya, atau melangkah maju.",
+      title2: "Bertahan hidup di satu sisi, melangkah maju di sisi lain.",
       tabLabel: "Bertahan atau maju",
       tabTenir: "01 · Tidak mengubah apa pun",
       tabAvancer: "02 · Bertindak dan menang",
@@ -3889,7 +3889,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Membuat reboisasi menguntungkan: Paulownia ALTIFOLIA® mencapai 13 hingga 15 m dalam enam hingga delapan tahun, dan kayunya bernilai sekitar 550 €/m³, memberikan profitabilitas dalam enam tahun masa tanam.",
+          text: "Membuat reboisasi menguntungkan: Paulownia ALTIFOLIA® mencapai 13 hingga 15 m dalam enam hingga delapan tahun, hingga 20 m setelahnya, dan kayunya bernilai sekitar 550 €/m³, memberikan profitabilitas dalam enam tahun masa tanam.",
           linkLabel: "Lihat Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -3913,22 +3913,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "Polimer penahan air kami menangkap air hujan atau irigasi dan menyimpannya dalam bentuk gel sedekat mungkin dengan akar, tanpa mengubah kualitasnya. Cadangan air permanen, dapat diakses tanaman apa pun jenis tanah atau iklimnya, yang menghilangkan tekanan air pada fase-fase kritis siklus pertumbuhan.",
           facts: [
-            "−50 hingga −70% air tergantung jenis irigasi",
-            "EVERGREEN®: WAC (Kapasitas Penyerapan Air) 300X, 3 tahun di tanah",
-            "ECOSORB®: 300 kali beratnya, berbahan dasar pati jagung, bertahan 2 hingga 3 tahun",
+            "−40 hingga −70% air tergantung jenis irigasi",
+            "EVERGREEN®: sekitar 300 kali beratnya dalam air, 3 hingga 4 tahun di tanah",
+            "ECOSORB®: sekitar 300 kali beratnya, berbahan dasar pati jagung, bertahan 2 hingga 3 tahun",
             "Terurai 20 hingga 25% per tahun, tanpa risiko overdosis",
             "Tebu: +25% kadar gula (Brix) dengan 15 kg/ha",
           ],
-          more: "EVERGREEN® dan ECOSORB® adalah polimer superabsorben yang terurai sepenuhnya secara hayati, tanpa meninggalkan residu di tanah maupun di tanaman. Keduanya menyerap air hingga 300 hingga 400 kali beratnya dan melepaskannya ke akar sesuai kebutuhan tanaman, siklus demi siklus, hingga terurai secara alami (20 hingga 25% per tahun) menjadi CO₂, air, dan senyawa nitrogen yang dapat diserap. Berbeda dengan penahan air berbasis natrium — yang setelah terhidrasi membentuk pasta yang mencekik akar — atau formulasi berbasis akrilamida yang dilarang di banyak negara karena toksisitasnya, kedua produk kami berbasis kalium dan sesuai untuk tanaman pangan. Saat bersentuhan dengan air, butiran kering membengkak: efek pengembangan-penyusutan ini menggemburkan tanah seperti cacing tanah, meningkatkan permeabilitasnya, dan menciptakan mikroklim lembap yang mendukung mikrofauna dan mikroflora penggerak kesuburan alami. Pupuk yang terlarut ditangkap saat melintas alih-alih tercuci ke air tanah, mengurangi polusi sekaligus memaksimalkan setiap pemupukan. Dikombinasikan dengan pupuk ECOFERT® kami, EVERGREEN® dan ECOSORB® membentuk sistem lengkap yang menghasilkan peningkatan kadar gula (Brix) sebesar 25% pada tebu, hanya dengan 15 kg produk per hektare. Lebih dari 95% tanaman yang dipindahkan dengan penahan air kami bertahan hidup, jauh di atas tingkat konvensional.",
+          more: "EVERGREEN® dan ECOSORB® adalah polimer superabsorben yang terurai sepenuhnya secara hayati, tanpa meninggalkan residu di tanah maupun di tanaman. Keduanya menyerap air hingga sekitar 300 kali beratnya dan melepaskannya ke akar sesuai kebutuhan tanaman, siklus demi siklus, hingga terurai secara alami (20 hingga 25% per tahun) menjadi CO₂, air, dan senyawa nitrogen yang dapat diserap. Berbeda dengan penahan air berbasis natrium — yang setelah terhidrasi membentuk pasta yang mencekik akar — atau formulasi berbasis akrilamida yang dilarang di banyak negara karena toksisitasnya, kedua produk kami berbasis kalium dan sesuai untuk tanaman pangan. Saat bersentuhan dengan air, butiran kering membengkak: efek pengembangan-penyusutan ini menggemburkan tanah seperti cacing tanah, meningkatkan permeabilitasnya, dan menciptakan mikroklim lembap yang mendukung mikrofauna dan mikroflora penggerak kesuburan alami. Pupuk yang terlarut ditangkap saat melintas alih-alih tercuci ke air tanah, mengurangi polusi sekaligus memaksimalkan setiap pemupukan. Dikombinasikan dengan pupuk ECOFERT® kami, EVERGREEN® dan ECOSORB® membentuk sistem lengkap yang menghasilkan peningkatan kadar gula (Brix) sebesar 25% pada tebu, hanya dengan 15 kg produk per hektare. Lebih dari 95% tanaman yang dipindahkan dengan penahan air kami bertahan hidup, jauh di atas tingkat konvensional.",
           detail: {
             sections: [
               {
                 h: "Prinsipnya",
-                p: "EVERGREEN® dan ECOSORB® adalah polimer superabsorben yang terurai sepenuhnya secara hayati, tanpa meninggalkan residu di tanah maupun di tanaman. Keduanya menyerap air hingga 300 hingga 400 kali beratnya dan melepaskannya ke akar sesuai kebutuhan tanaman, siklus demi siklus, hingga terurai secara alami menjadi CO₂, air, dan senyawa nitrogen yang dapat diserap. Berbeda dengan penahan air berbasis natrium atau akrilamida yang dilarang karena toksisitasnya, kedua produk kami berbasis kalium dan sesuai untuk tanaman pangan. Dikombinasikan dengan pupuk ECOFERT® kami, keduanya membentuk sistem lengkap yang menghasilkan peningkatan kadar gula (Brix) sebesar 25% pada tebu, hanya dengan 15 kg produk per hektare.",
+                p: "EVERGREEN® dan ECOSORB® adalah polimer superabsorben yang terurai sepenuhnya secara hayati, tanpa meninggalkan residu di tanah maupun di tanaman. Keduanya menyerap air hingga sekitar 300 kali beratnya dan melepaskannya ke akar sesuai kebutuhan tanaman, siklus demi siklus, hingga terurai secara alami menjadi CO₂, air, dan senyawa nitrogen yang dapat diserap. Berbeda dengan penahan air berbasis natrium atau akrilamida yang dilarang karena toksisitasnya, kedua produk kami berbasis kalium dan sesuai untuk tanaman pangan. Saat bersentuhan dengan air, butiran kering mengembang: gerakan mengembang dan menyusut ini menggemburkan tanah seperti yang dilakukan cacing tanah, memperbaiki permeabilitasnya, dan menciptakan iklim mikro lembap yang mendukung mikrofauna dan mikroflora, penggerak kesuburan alami. Pupuk yang terlarut tertahan di jalurnya alih-alih tercuci ke air tanah, sehingga pencemaran berkurang dan setiap pemberian pupuk lebih berdaya guna. Dikombinasikan dengan pupuk ECOFERT® kami, keduanya membentuk sistem lengkap yang menghasilkan peningkatan kadar gula (Brix) sebesar 25% pada tebu, hanya dengan 15 kg produk per hektare. Lebih dari 95% bibit yang dipindahkan dengan penahan air kami berhasil tumbuh, jauh di atas tingkat keberhasilan pada kondisi konvensional.",
               },
               {
                 h: "Mekanismenya, secara rinci",
-                p: "Saat bersentuhan dengan air — hujan, irigasi, atau kelembapan tanah yang tersisa — butiran kering menyerap hingga 300 hingga 400 kali beratnya sendiri, berubah menjadi gel yang menyimpan air sedekat mungkin dengan akar. Tiga minggu pertama masa tanam sangat penting: irigasi normal harus dipertahankan agar butiran benar-benar jenuh, selama periode ini akar tanaman akan menyatu dengan gel dan berlabuh pada cadangan air ini. EVERGREEN® dan ECOSORB® sama sekali tidak beracun bagi kulit; hanya butirannya yang halus sehingga mengharuskan penggunaan masker antidebu saat menanganinya. Jika tumpah secara tidak sengaja, tiup residunya dengan udara bertekanan alih-alih membilasnya dengan air, yang akan membuat tanah licin.",
+                p: "Saat bersentuhan dengan air — hujan, irigasi, atau kelembapan tanah yang tersisa — butiran kering menyerap hingga sekitar 300 kali beratnya sendiri, berubah menjadi gel yang menyimpan air sedekat mungkin dengan akar. Tiga minggu pertama masa tanam sangat penting: irigasi normal harus dipertahankan agar butiran benar-benar jenuh, selama periode ini akar tanaman akan menyatu dengan gel dan berlabuh pada cadangan air ini. EVERGREEN® dan ECOSORB® sama sekali tidak beracun bagi kulit; hanya butirannya yang halus sehingga mengharuskan penggunaan masker antidebu saat menanganinya. Jika tumpah secara tidak sengaja, tiup residunya dengan udara bertekanan alih-alih membilasnya dengan air, yang akan membuat tanah licin.",
               },
               {
                 h: "Di mana dan bagaimana menggunakannya",
@@ -4050,19 +4050,19 @@ const baseContent = {
           num: "05",
           kicker: "Menanam untuk jangka panjang",
           title: "Paulownia ALTIFOLIA®",
-          text: "Pohon dengan pertumbuhan tercepat di dunia: 13 hingga 15 m dalam enam hingga delapan tahun, hampir 3 m per tahun. Dipadukan dengan hidroretentor EVERGREEN® kami, kebutuhan air irigasinya berkurang 50%. Varietas hibrida steril dan tidak invasif, didampingi mulai dari bibit muda hingga penjualan kayu.",
+          text: "Pohon dengan pertumbuhan tercepat di dunia: 13 hingga 15 m dalam enam hingga delapan tahun, hingga 20 m setelahnya, hampir 3 m per tahun. Dipadukan dengan hidroretentor EVERGREEN® kami, kebutuhan air irigasinya berkurang 50%. Varietas hibrida steril dan tidak invasif, didampingi mulai dari bibit muda hingga penjualan kayu.",
           facts: [
             "400 hingga 500 pohon/ha, bernilai 400/450 € per m³",
             "Profitabilitas dalam enam tahun masa tanam",
             "Tahan dari −25 °C hingga +45 °C, baru terbakar pada 426 °C",
             "400 hingga 700 kg madu per hektare, ditambah kredit karbon",
           ],
-          more: "Paulownia ALTIFOLIA® adalah pohon dengan pertumbuhan tercepat di dunia: dalam kondisi baik, ia mencapai 13 hingga 15 meter dalam enam hingga delapan tahun, atau sekitar 3 meter per tahun, dengan daun yang bisa melebihi 80 cm panjangnya. Pohon ini juga salah satu yang paling efisien dalam menyerap CO₂ dan melepaskan oksigen melalui fotosintesis. Varietas ALTIFOLIA® kami, hasil persilangan antara Paulownia Elongata dan Paulownia Fortunei, dipilih khusus untuk wilayah beriklim panas: pohon ini mengembangkan batang berdiameter besar dalam waktu singkat. Dikombinasikan dengan 100 g EVERGREEN® per tanaman saat penanaman, kebutuhan irigasi turun sebesar 50%, tanpa pernah membuat pohon mengalami tekanan air. Sistem akarnya yang dalam memperkaya tanah dengan nitrogen dan mencegah erosi; ketahanannya terhadap hama dan penyakit secara alami tinggi, dan kayunya baru terbakar pada suhu di atas 426 °C, menjadikannya juga sebagai penghalang kebakaran. Bibit (25 hingga 30 cm saat pengiriman, dalam pot, bersertifikat bebas penyakit, dijamin penggantian jika mati) dikirim melalui udara dalam waktu 6 minggu, kemudian harus melalui masa 6 minggu di rumah kaca sebelum ditanam dengan irigasi tetes. Panen pertama dilakukan pada akhir tahun keenam, dengan nilai kayu 400/450 € per m³; kami sendiri telah menanam varietas ini selama beberapa tahun, khususnya di Spanyol.",
+          more: "Paulownia ALTIFOLIA® adalah pohon dengan pertumbuhan tercepat di dunia: dalam kondisi baik, ia mencapai 13 hingga 15 meter dalam enam hingga delapan tahun, dan hingga 20 meter setelahnya, atau sekitar 3 meter per tahun, dengan daun yang bisa melebihi 80 cm panjangnya. Pohon ini juga salah satu yang paling efisien dalam menyerap CO₂ dan melepaskan oksigen melalui fotosintesis. Varietas ALTIFOLIA® kami, hasil persilangan antara Paulownia Elongata dan Paulownia Fortunei, dipilih khusus untuk wilayah beriklim panas: pohon ini mengembangkan batang berdiameter besar dalam waktu singkat. Dikombinasikan dengan 100 g EVERGREEN® per tanaman saat penanaman, kebutuhan irigasi turun sebesar 50%, tanpa pernah membuat pohon mengalami tekanan air. Sistem akarnya yang dalam memperkaya tanah dengan nitrogen dan mencegah erosi; ketahanannya terhadap hama dan penyakit secara alami tinggi, dan kayunya baru terbakar pada suhu di atas 426 °C, menjadikannya juga sebagai penghalang kebakaran. Bibit (25 hingga 30 cm saat pengiriman, dalam pot, bersertifikat bebas penyakit, dijamin penggantian jika mati) dikirim melalui udara dalam waktu 6 minggu, kemudian harus melalui masa 6 minggu di rumah kaca sebelum ditanam dengan irigasi tetes. Panen pertama dilakukan pada akhir tahun keenam, dengan nilai kayu 400/450 € per m³; kami sendiri telah menanam varietas ini selama beberapa tahun, khususnya di Spanyol.",
           detail: {
             sections: [
               {
                 h: "Prinsipnya",
-                p: "Paulownia ALTIFOLIA® adalah pohon dengan pertumbuhan tercepat di dunia: dalam kondisi baik, ia mencapai 13 hingga 15 meter dalam enam hingga delapan tahun, atau sekitar 3 meter per tahun, dengan daun yang bisa melebihi 80 cm panjangnya. Pohon ini juga salah satu yang paling efisien dalam menyerap CO₂ dan melepaskan oksigen melalui fotosintesis. Varietas ALTIFOLIA® kami dipilih khusus untuk wilayah beriklim panas: pohon ini mengembangkan batang berdiameter besar dalam waktu singkat. Dikombinasikan dengan 100 g EVERGREEN® per tanaman saat penanaman, kebutuhan irigasi turun sebesar 50%, tanpa pernah membuat pohon mengalami tekanan air.",
+                p: "Paulownia ALTIFOLIA® adalah pohon dengan pertumbuhan tercepat di dunia: dalam kondisi baik, ia mencapai 13 hingga 15 meter dalam enam hingga delapan tahun, dan hingga 20 meter setelahnya, atau sekitar 3 meter per tahun, dengan daun yang bisa melebihi 80 cm panjangnya. Pohon ini juga salah satu yang paling efisien dalam menyerap CO₂ dan melepaskan oksigen melalui fotosintesis. Varietas ALTIFOLIA® kami dipilih khusus untuk wilayah beriklim panas: pohon ini mengembangkan batang berdiameter besar dalam waktu singkat. Dikombinasikan dengan 100 g EVERGREEN® per tanaman saat penanaman, kebutuhan irigasi turun sebesar 50%, tanpa pernah membuat pohon mengalami tekanan air.",
               },
               {
                 h: "Varietas yang dirancang untuk wilayah beriklim panas",
@@ -4122,8 +4122,8 @@ const baseContent = {
       lede: "Kelompok agroindustri, koperasi, dan dua universitas Amerika saat ini sedang melakukan uji coba teknologi kami, di lahan dan tanaman mereka sendiri. Berikut daftarnya, per September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Tebu", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Universitas Gainesville", place: "Florida, Amerika Serikat", crop: "Perkebunan maple merah", tech: ["EVERGREEN®"] },
-        { org: "Universitas Portland", place: "Oregon, Amerika Serikat", crop: "Perkebunan pinus Douglas", tech: ["EVERGREEN®"] },
+        { org: "Universitas Florida, Gainesville", place: "Florida, Amerika Serikat", crop: "Perkebunan maple merah", tech: ["EVERGREEN®"] },
+        { org: "Oregon State University, Corvallis", place: "Oregon, Amerika Serikat", crop: "Perkebunan cemara Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Britania Raya · Toledo, Spanyol", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Groupe ZARROUK", place: "Tunisia", crop: "Budi daya tomat", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Korsika, Prancis", crop: "Pohon zaitun dan hazelnut", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -4204,9 +4204,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Mereka bekerja sama dengan kami",
-      title: "Jaringan di 38 Negara",
+      title: "Jaringan di 39 Negara",
       lede: "Produsen, koperasi, spesialis pengolahan air, universitas, dan lembaga penelitian, hadir di lima benua.",
-      mapAriaLabel: "Peta jaringan Green Solutions di 38 negara",
+      mapAriaLabel: "Peta jaringan Green Solutions di 39 negara",
     },
     countryStudies: {
       eyebrow: "Pendekatan per Negara",
@@ -4332,8 +4332,8 @@ const baseContent = {
       "Prancis", "Afrika Selatan", "Tunisia", "Italia", "Britania Raya", "Kanada", "Spanyol", "Mali",
       "Karibia", "Amerika Serikat", "Kamerun", "Guinea", "Senegal", "Maroko", "Guinea-Bissau", "Brasil",
       "Arab Saudi", "Kesultanan Oman", "Kongo", "Pantai Gading", "Sudan Selatan", "Polandia", "Yunani", "Portugal",
-      "Uni Emirat Arab", "Meksiko", "Turki", "Indonesia", "Tiongkok",
-      "Aljazair", "Argentina", "Chili", "Gabon", "Ghana", "Yordania", "Kuwait", "Kroasia",
+      "Uni Emirat Arab", "Meksiko", "Turki", "Indonesia", "Tiongkok", "Mesir",
+      "Aljazair", "Argentina", "Chili", "Gabon", "Ghana", "Yordania", "Kuwait", "Kroasia", "Madagaskar",
     ],
   },
   de: {
@@ -4455,21 +4455,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 bis +100 %", label: "Ertragssteigerung, in Menge und Qualität" },
-      { figure: "−50 bis −70 %", label: "weniger Bewässerungsbedarf" },
-      { figure: "14", label: "laufende Pilotversuche im Jahr 2026" },
+      { figure: "−40 bis −70 %", label: "weniger Bewässerungsbedarf" },
+      { figure: "15", label: "laufende Pilotversuche im Jahr 2026" },
       { figure: "SOHISCERT", label: "und EU-Bio, echte Zertifizierungen" },
     ],
     presentation: {
       eyebrow: "Unser Ansatz",
-      title1: "Unsere vier Technologien",
+      title1: "Unsere fünf Technologien",
       title2: "Ein Ziel",
       title3: "Wachstum und Qualität",
       lede: "Green Solutions entwickelt und vertreibt disruptive Agrartechnologien, die darauf ausgelegt sind, die Produktivität zu steigern und gleichzeitig die natürlichen Ressourcen, von denen diese Produktivität abhängt, zu erhalten und sogar zu regenerieren. Konkrete, im Feld erprobte Antworten auf Wasserstress, Bodenerschöpfung, Rentabilität und Ernährungssicherheit.",
       tagline: "Alle unsere disruptiven Lösungen sind für jede Pflanze und Kultur, bei jedem Klima und jeder Bodenart einsetzbar!",
       stats: [
         { num: "30", label: "Partner" },
-        { num: "38", label: "Länder" },
-        { num: "4", label: "Markentechnologien" },
+        { num: "39", label: "Länder" },
+        { num: "5", label: "Markentechnologien" },
       ],
       distinguish: [
         { num: "01", title: "Zertifiziert, nicht nur behauptet", text: "SOHISCERT · EU-Bio, vereinbar mit ökologischem Landbau." },
@@ -4481,7 +4481,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "Was führt Sie hierher?",
       title1: "Zwei mögliche Richtungen:",
-      title2: "Ums Überleben kämpfen, oder vorankommen.",
+      title2: "Auf der einen Seite ums Überleben kämpfen, auf der anderen vorankommen.",
       tabLabel: "Stillstand oder Fortschritt",
       tabTenir: "01 · Nichts ändern",
       tabAvancer: "02 · Reagieren und gewinnen",
@@ -4508,7 +4508,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Aufforstung rentabel machen: Die Paulownia ALTIFOLIA® erreicht in sechs bis acht Jahren 13 bis 15 m Höhe, ihr Holz wird mit rund 550 €/m³ bewertet – rentabel innerhalb von sechs Anbaujahren.",
+          text: "Aufforstung rentabel machen: Die Paulownia ALTIFOLIA® erreicht in sechs bis acht Jahren 13 bis 15 m Höhe, später bis zu 20 m, ihr Holz wird mit rund 550 €/m³ bewertet – rentabel innerhalb von sechs Anbaujahren.",
           linkLabel: "Paulownia ALTIFOLIA® ansehen",
           linkHref: "#paulownia",
         },
@@ -4532,22 +4532,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "Unsere wasserspeichernden Polymere fangen Regen- oder Bewässerungswasser auf und speichern es in Gelform direkt bei den Wurzeln, ohne seine Qualität zu verändern. Ein dauerhaftes Reservoir, das der Pflanze unabhängig von Boden oder Klima zur Verfügung steht und Wasserstress in kritischen Phasen des Zyklus beseitigt.",
           facts: [
-            "−50 bis −70 % Wasser, je nach Bewässerungsart",
-            "EVERGREEN®: WAC (Wasseraufnahmekapazität) 300-fach, 3 Jahre im Boden",
-            "ECOSORB®: 300-fach sein Gewicht, auf Maisstärkebasis, 2 bis 3 Jahre",
+            "−40 bis −70 % Wasser, je nach Bewässerungsart",
+            "EVERGREEN®: etwa das 300-Fache seines Gewichts an Wasser, 3 bis 4 Jahre im Boden",
+            "ECOSORB®: etwa das 300-Fache seines Gewichts, auf Maisstärkebasis, 2 bis 3 Jahre",
             "Baut sich zu 20–25 % pro Jahr ab, kein Überdosierungsrisiko",
             "Zuckerrohr: +25 % Zuckergehalt (Brix) bei 15 kg/ha",
           ],
-          more: "EVERGREEN® und ECOSORB® sind superabsorbierende Polymere, die vollständig biologisch abbaubar sind und weder im Boden noch auf den Pflanzen Rückstände hinterlassen. Sie nehmen bis zum 300- bis 400-Fachen ihres Gewichts an Wasser auf und geben es Zyklus für Zyklus je nach Bedarf der Kultur an die Wurzeln ab, bis sie sich natürlich abbauen (20 bis 25 % pro Jahr) zu CO₂, Wasser und assimilierbaren Stickstoffverbindungen. Im Gegensatz zu Wasserspeichern auf Natriumbasis – die nach der Hydratation zu einer erstickenden, salzigen Masse für die Wurzeln werden – oder zu Formulierungen auf Acrylamidbasis, die in vielen Ländern wegen ihrer Toxizität verboten sind, basieren unsere beiden Produkte auf Kalium und sind mit Nahrungspflanzen kompatibel. Bei Kontakt mit Wasser saugt sich das trockene Korn voll und schwillt an: Dieser Ausdehnungs- und Kontraktionseffekt lockert den Boden wie ein Regenwurm, verbessert seine Durchlässigkeit und schafft ein feuchtes Mikroklima, das der für die natürliche Fruchtbarkeit verantwortlichen Mikrofauna und Mikroflora zugutekommt. Gelöste Düngemittel werden im Vorbeigehen aufgefangen, statt ins Grundwasser ausgewaschen zu werden, was die Verschmutzung verringert und jede Düngergabe optimal nutzt. In Kombination mit unseren ECOFERT®-Düngemitteln bilden EVERGREEN® und ECOSORB® ein vollständiges System, das bei Zuckerrohr mit nur 15 kg Produkt pro Hektar einen Zuckergehaltsgewinn (Brix) von 25 % ermöglichte. Über 95 % der mit unseren Wasserspeichern verpflanzten Pflanzen wachsen an, deutlich mehr als unter konventionellen Bedingungen.",
+          more: "EVERGREEN® und ECOSORB® sind superabsorbierende Polymere, die vollständig biologisch abbaubar sind und weder im Boden noch auf den Pflanzen Rückstände hinterlassen. Sie nehmen etwa das 300-Fache ihres Gewichts an Wasser auf und geben es Zyklus für Zyklus je nach Bedarf der Kultur an die Wurzeln ab, bis sie sich natürlich abbauen (20 bis 25 % pro Jahr) zu CO₂, Wasser und assimilierbaren Stickstoffverbindungen. Im Gegensatz zu Wasserspeichern auf Natriumbasis – die nach der Hydratation zu einer erstickenden, salzigen Masse für die Wurzeln werden – oder zu Formulierungen auf Acrylamidbasis, die in vielen Ländern wegen ihrer Toxizität verboten sind, basieren unsere beiden Produkte auf Kalium und sind mit Nahrungspflanzen kompatibel. Bei Kontakt mit Wasser saugt sich das trockene Korn voll und schwillt an: Dieser Ausdehnungs- und Kontraktionseffekt lockert den Boden wie ein Regenwurm, verbessert seine Durchlässigkeit und schafft ein feuchtes Mikroklima, das der für die natürliche Fruchtbarkeit verantwortlichen Mikrofauna und Mikroflora zugutekommt. Gelöste Düngemittel werden im Vorbeigehen aufgefangen, statt ins Grundwasser ausgewaschen zu werden, was die Verschmutzung verringert und jede Düngergabe optimal nutzt. In Kombination mit unseren ECOFERT®-Düngemitteln bilden EVERGREEN® und ECOSORB® ein vollständiges System, das bei Zuckerrohr mit nur 15 kg Produkt pro Hektar einen Zuckergehaltsgewinn (Brix) von 25 % ermöglichte. Über 95 % der mit unseren Wasserspeichern verpflanzten Pflanzen wachsen an, deutlich mehr als unter konventionellen Bedingungen.",
           detail: {
             sections: [
               {
                 h: "Das Prinzip",
-                p: "EVERGREEN® und ECOSORB® sind superabsorbierende Polymere, die vollständig biologisch abbaubar sind und weder im Boden noch auf den Pflanzen Rückstände hinterlassen. Sie nehmen bis zum 300- bis 400-Fachen ihres Gewichts an Wasser auf und geben es Zyklus für Zyklus je nach Bedarf der Kultur an die Wurzeln ab, bis sie sich natürlich abbauen zu CO₂, Wasser und assimilierbaren Stickstoffverbindungen. Im Gegensatz zu Wasserspeichern auf Natriumbasis oder Acrylamidbasis, die wegen ihrer Toxizität verboten sind, basieren unsere beiden Produkte auf Kalium. In Kombination mit unseren ECOFERT®-Düngemitteln bilden sie ein vollständiges System, das bei Zuckerrohr mit nur 15 kg Produkt pro Hektar einen Zuckergehaltsgewinn (Brix) von 25 % ermöglichte.",
+                p: "EVERGREEN® und ECOSORB® sind superabsorbierende Polymere, die vollständig biologisch abbaubar sind und weder im Boden noch auf den Pflanzen Rückstände hinterlassen. Sie nehmen etwa das 300-Fache ihres Gewichts an Wasser auf und geben es Zyklus für Zyklus je nach Bedarf der Kultur an die Wurzeln ab, bis sie sich natürlich abbauen zu CO₂, Wasser und assimilierbaren Stickstoffverbindungen. Im Gegensatz zu Wasserspeichern auf Natriumbasis oder Acrylamidbasis, die wegen ihrer Toxizität verboten sind, basieren unsere beiden Produkte auf Kalium und sind mit Nahrungskulturen verträglich. Bei Kontakt mit Wasser saugt sich das trockene Korn voll und quillt auf: Dieses Quellen und Schrumpfen lockert den Boden wie ein Regenwurm, verbessert seine Durchlässigkeit und schafft ein feuchtes Kleinklima, das Mikrofauna und Mikroflora zugutekommt – den Motoren der natürlichen Fruchtbarkeit. Gelöste Düngemittel werden im Vorbeigehen festgehalten, statt ins Grundwasser ausgewaschen zu werden, was die Belastung senkt und jede Gabe besser zur Geltung bringt. In Kombination mit unseren ECOFERT®-Düngemitteln bilden sie ein vollständiges System, das bei Zuckerrohr mit nur 15 kg Produkt pro Hektar einen Zuckergehaltsgewinn (Brix) von 25 % ermöglichte. Mehr als 95 % der mit unseren Wasserspeichern verpflanzten Setzlinge wachsen an – deutlich mehr als unter herkömmlichen Bedingungen.",
               },
               {
                 h: "Der Mechanismus im Detail",
-                p: "Bei Kontakt mit Wasser – Regen, Bewässerung oder Restfeuchte im Boden – nimmt das trockene Korn bis zum 300- bis 400-Fachen seines eigenen Gewichts auf und verwandelt sich in ein Gel, das Wasser direkt bei den Wurzeln speichert. Die ersten drei Wochen der Kultur sind entscheidend: Eine normale Bewässerung muss aufrechterhalten werden, um die Körner vollständig zu sättigen; währenddessen verflechten sich die Pflanzenwurzeln mit dem Gel und verankern sich in diesem Wasserreservoir. EVERGREEN® und ECOSORB® sind in keiner Weise hautgiftig; lediglich ihre feine Körnung erfordert beim Umgang eine Staubmaske. Bei versehentlichem Verschütten sollten die Rückstände mit Druckluft weggeblasen werden, statt sie mit Wasser abzuspülen, was den Boden rutschig machen würde.",
+                p: "Bei Kontakt mit Wasser – Regen, Bewässerung oder Restfeuchte im Boden – nimmt das trockene Korn etwa das 300-Fache seines eigenen Gewichts auf und verwandelt sich in ein Gel, das Wasser direkt bei den Wurzeln speichert. Die ersten drei Wochen der Kultur sind entscheidend: Eine normale Bewässerung muss aufrechterhalten werden, um die Körner vollständig zu sättigen; währenddessen verflechten sich die Pflanzenwurzeln mit dem Gel und verankern sich in diesem Wasserreservoir. EVERGREEN® und ECOSORB® sind in keiner Weise hautgiftig; lediglich ihre feine Körnung erfordert beim Umgang eine Staubmaske. Bei versehentlichem Verschütten sollten die Rückstände mit Druckluft weggeblasen werden, statt sie mit Wasser abzuspülen, was den Boden rutschig machen würde.",
               },
               {
                 h: "Wo und wie man es einsetzt",
@@ -4669,19 +4669,19 @@ const baseContent = {
           num: "05",
           kicker: "Für die Dauer pflanzen",
           title: "Paulownia ALTIFOLIA®",
-          text: "Der am schnellsten wachsende Baum der Welt: 13 bis 15 m in sechs bis acht Jahren, fast 3 m pro Jahr. In Kombination mit unserem Wasserspeicher-Polymer EVERGREEN® senkt er seinen Bewässerungsbedarf um 50 %. Sterile, nicht invasive Hybridsorten, begleitet von der Jungpflanze bis zum Holzverkauf.",
+          text: "Der am schnellsten wachsende Baum der Welt: 13 bis 15 m in sechs bis acht Jahren, später bis zu 20 m, fast 3 m pro Jahr. In Kombination mit unserem Wasserspeicher-Polymer EVERGREEN® senkt er seinen Bewässerungsbedarf um 50 %. Sterile, nicht invasive Hybridsorten, begleitet von der Jungpflanze bis zum Holzverkauf.",
           facts: [
             "400 bis 500 Bäume/ha, bewertet mit 400/450 € pro m³",
             "Rentabilität über sechs Anbaujahre",
             "Widersteht −25 °C bis +45 °C, entzündet sich erst bei 426 °C",
             "400 bis 700 kg Honig pro Hektar, plus CO₂-Zertifikate",
           ],
-          more: "Die Paulownia ALTIFOLIA® ist der am schnellsten wachsende Baum der Welt: Unter guten Bedingungen erreicht sie in sechs bis acht Jahren 13 bis 15 Meter, also etwa 3 Meter pro Jahr, mit Blättern, die 80 cm Länge überschreiten können. Sie gehört zudem zu den effizientesten Bäumen bei der CO₂-Bindung und der Sauerstofffreisetzung durch Photosynthese. Unsere Sorte ALTIFOLIA®, eine Kreuzung aus Paulownia Elongata und Paulownia Fortunei, wurde für heiße Regionen ausgewählt: Sie entwickelt in kurzer Zeit einen Stamm mit großem Durchmesser. Kombiniert mit 100 g EVERGREEN® pro Pflanze bei der Pflanzung sinkt der Bewässerungsbedarf um 50 %, ohne den Baum jemals Wasserstress auszusetzen. Sein tiefes Wurzelsystem reichert den Boden mit Stickstoff an und verhindert Erosion; seine natürliche Widerstandsfähigkeit gegen Schädlinge und Krankheiten ist hoch, und das Holz entzündet sich erst ab 426 °C, was es auch zu einer Feuerbarriere macht. Die Pflanzen (25 bis 30 cm bei Lieferung, im Topf, krankheitsfrei zertifiziert, mit Ersatzgarantie) werden innerhalb von 6 Wochen per Flugzeug geliefert und müssen dann 6 Wochen im Gewächshaus verbringen, bevor sie mit Tropfbewässerung gepflanzt werden. Die erste Ernte erfolgt am Ende des sechsten Jahres, bei einem Holzwert von 400/450 € pro m³; wir bauen diese Sorte selbst seit mehreren Jahren an, insbesondere in Spanien.",
+          more: "Die Paulownia ALTIFOLIA® ist der am schnellsten wachsende Baum der Welt: Unter guten Bedingungen erreicht sie in sechs bis acht Jahren 13 bis 15 Meter, später bis zu 20 Meter, also etwa 3 Meter pro Jahr, mit Blättern, die 80 cm Länge überschreiten können. Sie gehört zudem zu den effizientesten Bäumen bei der CO₂-Bindung und der Sauerstofffreisetzung durch Photosynthese. Unsere Sorte ALTIFOLIA®, eine Kreuzung aus Paulownia Elongata und Paulownia Fortunei, wurde für heiße Regionen ausgewählt: Sie entwickelt in kurzer Zeit einen Stamm mit großem Durchmesser. Kombiniert mit 100 g EVERGREEN® pro Pflanze bei der Pflanzung sinkt der Bewässerungsbedarf um 50 %, ohne den Baum jemals Wasserstress auszusetzen. Sein tiefes Wurzelsystem reichert den Boden mit Stickstoff an und verhindert Erosion; seine natürliche Widerstandsfähigkeit gegen Schädlinge und Krankheiten ist hoch, und das Holz entzündet sich erst ab 426 °C, was es auch zu einer Feuerbarriere macht. Die Pflanzen (25 bis 30 cm bei Lieferung, im Topf, krankheitsfrei zertifiziert, mit Ersatzgarantie) werden innerhalb von 6 Wochen per Flugzeug geliefert und müssen dann 6 Wochen im Gewächshaus verbringen, bevor sie mit Tropfbewässerung gepflanzt werden. Die erste Ernte erfolgt am Ende des sechsten Jahres, bei einem Holzwert von 400/450 € pro m³; wir bauen diese Sorte selbst seit mehreren Jahren an, insbesondere in Spanien.",
           detail: {
             sections: [
               {
                 h: "Das Prinzip",
-                p: "Die Paulownia ALTIFOLIA® ist der am schnellsten wachsende Baum der Welt: Unter guten Bedingungen erreicht sie in sechs bis acht Jahren 13 bis 15 Meter, also etwa 3 Meter pro Jahr, mit Blättern, die 80 cm Länge überschreiten können. Sie gehört zudem zu den effizientesten Bäumen bei der CO₂-Bindung. Unsere Sorte ALTIFOLIA® wurde für heiße Regionen ausgewählt: Sie entwickelt in kurzer Zeit einen Stamm mit großem Durchmesser. Kombiniert mit 100 g EVERGREEN® pro Pflanze bei der Pflanzung sinkt der Bewässerungsbedarf um 50 %, ohne den Baum jemals Wasserstress auszusetzen.",
+                p: "Die Paulownia ALTIFOLIA® ist der am schnellsten wachsende Baum der Welt: Unter guten Bedingungen erreicht sie in sechs bis acht Jahren 13 bis 15 Meter, später bis zu 20 Meter, also etwa 3 Meter pro Jahr, mit Blättern, die 80 cm Länge überschreiten können. Sie gehört zudem zu den effizientesten Bäumen bei der CO₂-Bindung. Unsere Sorte ALTIFOLIA® wurde für heiße Regionen ausgewählt: Sie entwickelt in kurzer Zeit einen Stamm mit großem Durchmesser. Kombiniert mit 100 g EVERGREEN® pro Pflanze bei der Pflanzung sinkt der Bewässerungsbedarf um 50 %, ohne den Baum jemals Wasserstress auszusetzen.",
               },
               {
                 h: "Eine für heiße Regionen konzipierte Auswahl",
@@ -4741,8 +4741,8 @@ const baseContent = {
       lede: "Agrarindustrielle Gruppen, Genossenschaften und zwei amerikanische Universitäten führen derzeit Versuche mit unseren Technologien auf ihren eigenen Parzellen und mit ihren eigenen Kulturen durch. Hier die Liste, Stand September 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinique", crop: "Zuckerrohr", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Universität Gainesville", place: "Florida, USA", crop: "Rotahorn-Plantage", tech: ["EVERGREEN®"] },
-        { org: "Universität Portland", place: "Oregon, USA", crop: "Douglasien-Plantage", tech: ["EVERGREEN®"] },
+        { org: "University of Florida, Gainesville", place: "Florida, USA", crop: "Rotahorn-Plantage", tech: ["EVERGREEN®"] },
+        { org: "Oregon State University, Corvallis", place: "Oregon, USA", crop: "Douglasien-Plantage", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Vereinigtes Königreich · Toledo, Spanien", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Groupe ZARROUK", place: "Tunesien", crop: "Tomatenanbau", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Korsika, Frankreich", crop: "Oliven- und Haselnussbäume", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -4823,9 +4823,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Sie arbeiten mit uns",
-      title: "Ein Netzwerk in 38 Ländern",
+      title: "Ein Netzwerk in 39 Ländern",
       lede: "Erzeuger, Genossenschaften, Wasseraufbereitungsspezialisten, Universitäten und Forschungsinstitute, vertreten auf fünf Kontinenten.",
-      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 38 Ländern",
+      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 39 Ländern",
     },
     countryStudies: {
       eyebrow: "Länderansatz",
@@ -4951,8 +4951,8 @@ const baseContent = {
       "Frankreich", "Südafrika", "Tunesien", "Italien", "Vereinigtes Königreich", "Kanada", "Spanien", "Mali",
       "Karibik", "Vereinigte Staaten", "Kamerun", "Guinea", "Senegal", "Marokko", "Guinea-Bissau", "Brasilien",
       "Saudi-Arabien", "Sultanat Oman", "Kongo", "Elfenbeinküste", "Südsudan", "Polen", "Griechenland", "Portugal",
-      "Vereinigte Arabische Emirate", "Mexiko", "Türkei", "Indonesien", "China",
-      "Algerien", "Argentinien", "Chile", "Gabun", "Ghana", "Jordanien", "Kuwait", "Kroatien",
+      "Vereinigte Arabische Emirate", "Mexiko", "Türkei", "Indonesien", "China", "Ägypten",
+      "Algerien", "Argentinien", "Chile", "Gabun", "Ghana", "Jordanien", "Kuwait", "Kroatien", "Madagaskar",
     ],
   },
   it: {
@@ -5074,21 +5074,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 / +100 %", label: "di resa, in quantità e qualità" },
-      { figure: "−50 / −70 %", label: "di fabbisogno idrico per l'irrigazione" },
-      { figure: "14", label: "sperimentazioni pilota in corso nel 2026" },
+      { figure: "−40 / −70 %", label: "di fabbisogno idrico per l'irrigazione" },
+      { figure: "15", label: "sperimentazioni pilota in corso nel 2026" },
       { figure: "SOHISCERT", label: "e UE Bio, certificazioni reali" },
     ],
     presentation: {
       eyebrow: "Il nostro approccio",
-      title1: "Le nostre quattro tecnologie",
+      title1: "Le nostre cinque tecnologie",
       title2: "Un obiettivo",
       title3: "Crescita e qualità",
       lede: "Green Solutions sviluppa e distribuisce tecnologie agricole dirompenti, pensate per aumentare la produttività preservando, e persino rigenerando, le risorse naturali da cui questa produttività dipende. Risposte concrete, verificate sul campo, allo stress idrico, all'impoverimento dei suoli, alla redditività e alla sicurezza alimentare.",
       tagline: "Tutte le nostre soluzioni dirompenti sono utilizzabili per ogni pianta e coltura, in ogni clima e su ogni tipo di suolo!",
       stats: [
         { num: "30", label: "partner" },
-        { num: "38", label: "paesi" },
-        { num: "4", label: "tecnologie di marca" },
+        { num: "39", label: "paesi" },
+        { num: "5", label: "tecnologie di marca" },
       ],
       distinguish: [
         { num: "01", title: "Certificato, non solo dichiarato", text: "SOHISCERT · UE Bio, compatibile con l'agricoltura biologica." },
@@ -5100,7 +5100,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "Cosa vi porta qui?",
       title1: "Due direzioni possibili:",
-      title2: "Tentare di sopravvivere, oppure avanzare.",
+      title2: "Tentare di sopravvivere da una parte, avanzare dall'altra.",
       tabLabel: "Resistere o avanzare",
       tabTenir: "01 · Non cambiare nulla",
       tabAvancer: "02 · Reagire e vincere",
@@ -5127,7 +5127,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Rendere redditizio il rimboschimento: il Paulownia ALTIFOLIA® raggiunge 13-15 m in sei-otto anni e il suo legno si valorizza intorno a 550 €/m³, per una redditività su sei anni di coltivazione.",
+          text: "Rendere redditizio il rimboschimento: il Paulownia ALTIFOLIA® raggiunge 13-15 m in sei-otto anni, fino a 20 m in seguito e il suo legno si valorizza intorno a 550 €/m³, per una redditività su sei anni di coltivazione.",
           linkLabel: "Scopri Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -5151,22 +5151,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "I nostri idroritentori catturano l'acqua piovana o di irrigazione e la immagazzinano in forma gelificata il più vicino possibile alle radici, senza alterarne la qualità. Una riserva permanente, accessibile alla pianta indipendentemente dal suolo o dal clima, che elimina lo stress idrico nelle fasi critiche del ciclo.",
           facts: [
-            "−50/−70 % di acqua a seconda del tipo di irrigazione",
-            "EVERGREEN®: WAC (capacità di assorbimento d'acqua) 300X, 3 anni nel suolo",
-            "ECOSORB®: 300 volte il proprio peso, a base di amido di mais, 2-3 anni",
+            "−40/−70 % di acqua a seconda del tipo di irrigazione",
+            "EVERGREEN®: circa 300 volte il proprio peso in acqua, 3-4 anni nel suolo",
+            "ECOSORB®: circa 300 volte il proprio peso, a base di amido di mais, 2-3 anni",
             "Si degrada del 20-25 % all'anno, nessun rischio di sovradosaggio",
             "Canna da zucchero: +25 % di tenore zuccherino (Brix) con 15 kg/ha",
           ],
-          more: "EVERGREEN® ed ECOSORB® sono polimeri superassorbenti che si biodegradano completamente, senza lasciare residui nel suolo né sulle piante. Assorbono fino a 300-400 volte il loro peso in acqua e la restituiscono alle radici secondo le esigenze della coltura, ciclo dopo ciclo, fino alla loro degradazione naturale (20-25 % all'anno) in CO₂, acqua e composti azotati assimilabili. A differenza degli idroritentori a base di sodio — che, una volta idratati, formano una pasta soffocante e salina per le radici — o delle formulazioni a base di acrilammide, vietate in molti paesi per la loro tossicità, i nostri due prodotti sono a base di potassio, compatibili con le colture alimentari. A contatto con l'acqua, il granulo secco si gonfia: questo effetto va e vieni decompatta il suolo come farebbe un lombrico, ne migliora la permeabilità e crea un microclima umido favorevole alla microfauna e alla microflora, motori della fertilità naturale. I fertilizzanti disciolti vengono catturati al passaggio anziché essere dilavati verso le falde, il che riduce l'inquinamento e permette di valorizzare meglio ogni apporto. Associati ai nostri fertilizzanti ECOFERT®, EVERGREEN® ed ECOSORB® formano un sistema completo che ha permesso, sulla canna da zucchero, un guadagno del 25 % nel tenore zuccherino (Brix) con solo 15 kg di prodotto per ettaro. Oltre il 95 % delle piante trapiantate con i nostri idroritentori attecchisce, contro un tasso nettamente inferiore in condizioni convenzionali.",
+          more: "EVERGREEN® ed ECOSORB® sono polimeri superassorbenti che si biodegradano completamente, senza lasciare residui nel suolo né sulle piante. Assorbono circa 300 volte il loro peso in acqua e la restituiscono alle radici secondo le esigenze della coltura, ciclo dopo ciclo, fino alla loro degradazione naturale (20-25 % all'anno) in CO₂, acqua e composti azotati assimilabili. A differenza degli idroritentori a base di sodio — che, una volta idratati, formano una pasta soffocante e salina per le radici — o delle formulazioni a base di acrilammide, vietate in molti paesi per la loro tossicità, i nostri due prodotti sono a base di potassio, compatibili con le colture alimentari. A contatto con l'acqua, il granulo secco si gonfia: questo effetto va e vieni decompatta il suolo come farebbe un lombrico, ne migliora la permeabilità e crea un microclima umido favorevole alla microfauna e alla microflora, motori della fertilità naturale. I fertilizzanti disciolti vengono catturati al passaggio anziché essere dilavati verso le falde, il che riduce l'inquinamento e permette di valorizzare meglio ogni apporto. Associati ai nostri fertilizzanti ECOFERT®, EVERGREEN® ed ECOSORB® formano un sistema completo che ha permesso, sulla canna da zucchero, un guadagno del 25 % nel tenore zuccherino (Brix) con solo 15 kg di prodotto per ettaro. Oltre il 95 % delle piante trapiantate con i nostri idroritentori attecchisce, contro un tasso nettamente inferiore in condizioni convenzionali.",
           detail: {
             sections: [
               {
                 h: "Il principio",
-                p: "EVERGREEN® ed ECOSORB® sono polimeri superassorbenti che si biodegradano completamente, senza lasciare residui nel suolo né sulle piante. Assorbono fino a 300-400 volte il loro peso in acqua e la restituiscono alle radici secondo le esigenze della coltura, ciclo dopo ciclo, fino alla loro degradazione naturale (20-25 % all'anno) in CO₂, acqua e composti azotati assimilabili. A differenza degli idroritentori a base di sodio — che, una volta idratati, formano una pasta soffocante e salina per le radici — o delle formulazioni a base di acrilammide, vietate in molti paesi per la loro tossicità, i nostri due prodotti sono a base di potassio, compatibili con le colture alimentari. A contatto con l'acqua, il granulo secco si gonfia: questo effetto va e vieni decompatta il suolo come farebbe un lombrico, ne migliora la permeabilità e crea un microclima umido favorevole alla microfauna e alla microflora, motori della fertilità naturale. I fertilizzanti disciolti vengono catturati al passaggio anziché essere dilavati verso le falde, il che riduce l'inquinamento e permette di valorizzare meglio ogni apporto. Associati ai nostri fertilizzanti ECOFERT®, EVERGREEN® ed ECOSORB® formano un sistema completo che ha permesso, sulla canna da zucchero, un guadagno del 25 % nel tenore zuccherino (Brix) con solo 15 kg di prodotto per ettaro. Oltre il 95 % delle piante trapiantate con i nostri idroritentori attecchisce, contro un tasso nettamente inferiore in condizioni convenzionali.",
+                p: "EVERGREEN® ed ECOSORB® sono polimeri superassorbenti che si biodegradano completamente, senza lasciare residui nel suolo né sulle piante. Assorbono circa 300 volte il loro peso in acqua e la restituiscono alle radici secondo le esigenze della coltura, ciclo dopo ciclo, fino alla loro degradazione naturale (20-25 % all'anno) in CO₂, acqua e composti azotati assimilabili. A differenza degli idroritentori a base di sodio — che, una volta idratati, formano una pasta soffocante e salina per le radici — o delle formulazioni a base di acrilammide, vietate in molti paesi per la loro tossicità, i nostri due prodotti sono a base di potassio, compatibili con le colture alimentari. A contatto con l'acqua, il granulo secco si gonfia: questo effetto va e vieni decompatta il suolo come farebbe un lombrico, ne migliora la permeabilità e crea un microclima umido favorevole alla microfauna e alla microflora, motori della fertilità naturale. I fertilizzanti disciolti vengono catturati al passaggio anziché essere dilavati verso le falde, il che riduce l'inquinamento e permette di valorizzare meglio ogni apporto. Associati ai nostri fertilizzanti ECOFERT®, EVERGREEN® ed ECOSORB® formano un sistema completo che ha permesso, sulla canna da zucchero, un guadagno del 25 % nel tenore zuccherino (Brix) con solo 15 kg di prodotto per ettaro. Oltre il 95 % delle piante trapiantate con i nostri idroritentori attecchisce, contro un tasso nettamente inferiore in condizioni convenzionali.",
               },
               {
                 h: "Il meccanismo, nel dettaglio",
-                p: "A contatto con l'acqua — pioggia, irrigazione o umidità residua del suolo — il granulo secco di idroritentore assorbe fino a 300-400 volte il proprio peso, trasformandosi in un gel che immagazzina l'acqua il più vicino possibile alle radici. Le prime tre settimane di coltivazione sono critiche: occorre mantenere un'irrigazione normale per saturare completamente i granuli, periodo durante il quale le radici delle piante si intrecciano con il gel e si ancorano a questa riserva d'acqua. EVERGREEN® ed ECOSORB® non sono in alcun modo tossici per la pelle; solo la loro granulometria fine richiede l'uso di una mascherina antipolvere durante la manipolazione. In caso di versamento accidentale, si soffiano via i residui con aria compressa piuttosto che risciacquarli con acqua, che renderebbe il suolo scivoloso.",
+                p: "A contatto con l'acqua — pioggia, irrigazione o umidità residua del suolo — il granulo secco di idroritentore assorbe circa 300 volte il proprio peso, trasformandosi in un gel che immagazzina l'acqua il più vicino possibile alle radici. Le prime tre settimane di coltivazione sono critiche: occorre mantenere un'irrigazione normale per saturare completamente i granuli, periodo durante il quale le radici delle piante si intrecciano con il gel e si ancorano a questa riserva d'acqua. EVERGREEN® ed ECOSORB® non sono in alcun modo tossici per la pelle; solo la loro granulometria fine richiede l'uso di una mascherina antipolvere durante la manipolazione. In caso di versamento accidentale, si soffiano via i residui con aria compressa piuttosto che risciacquarli con acqua, che renderebbe il suolo scivoloso.",
               },
               {
                 h: "Dove e come utilizzarli",
@@ -5288,19 +5288,19 @@ const baseContent = {
           num: "05",
           kicker: "Piantare per durare",
           title: "Paulownia ALTIFOLIA®",
-          text: "L'albero a crescita più rapida al mondo: 13-15 m in sei-otto anni, quasi 3 m all'anno. Associato al nostro idroritentore EVERGREEN®, riduce del 50 % il suo fabbisogno idrico per l'irrigazione. Varietà ibride sterili e non invasive, accompagnate dalla giovane pianta fino alla vendita del legno.",
+          text: "L'albero a crescita più rapida al mondo: 13-15 m in sei-otto anni, fino a 20 m in seguito, quasi 3 m all'anno. Associato al nostro idroritentore EVERGREEN®, riduce del 50 % il suo fabbisogno idrico per l'irrigazione. Varietà ibride sterili e non invasive, accompagnate dalla giovane pianta fino alla vendita del legno.",
           facts: [
             "400-500 alberi/ha, valorizzati a 400-450 € al m³",
             "Redditività su sei anni di coltivazione",
             "Resiste da −25 °C a +45 °C, brucia solo a 426 °C",
             "400-700 kg di miele per ettaro, e crediti di carbonio",
           ],
-          more: "Il Paulownia ALTIFOLIA® è l'albero a crescita più rapida al mondo: in buone condizioni, raggiunge 13-15 metri in sei-otto anni, circa 3 metri all'anno, con foglie che possono superare gli 80 cm di lunghezza. È anche uno degli alberi più efficaci nel catturare CO₂ e restituire ossigeno tramite fotosintesi. La nostra varietà ALTIFOLIA®, nata da un incrocio tra Paulownia Elongata e Paulownia Fortunei, è stata selezionata per le regioni calde: sviluppa un tronco di diametro importante in poco tempo. Associata a 100 g di EVERGREEN® per pianta alla messa a dimora, l'irrigazione necessaria diminuisce del 50 % senza mai esporre l'albero allo stress idrico. Il suo apparato radicale profondo arricchisce il suolo di azoto e previene l'erosione; la sua resistenza a parassiti e malattie è naturalmente elevata, e il legno si incendia solo a partire da 426 °C, il che lo rende anche una barriera antincendio. Le piante (25-30 cm alla consegna, in vaso, certificate senza malattie, garantite in caso di mortalità) vengono trasportate per via aerea entro 6 settimane, e devono poi trascorrere 6 settimane in serra prima della messa a dimora a goccia. Il primo taglio avviene alla fine del sesto anno, per un legno valorizzato a 400-450 € al m³; piantiamo noi stessi questa varietà da diversi anni, in particolare in Spagna.",
+          more: "Il Paulownia ALTIFOLIA® è l'albero a crescita più rapida al mondo: in buone condizioni, raggiunge 13-15 metri in sei-otto anni, e fino a 20 metri in seguito, circa 3 metri all'anno, con foglie che possono superare gli 80 cm di lunghezza. È anche uno degli alberi più efficaci nel catturare CO₂ e restituire ossigeno tramite fotosintesi. La nostra varietà ALTIFOLIA®, nata da un incrocio tra Paulownia Elongata e Paulownia Fortunei, è stata selezionata per le regioni calde: sviluppa un tronco di diametro importante in poco tempo. Associata a 100 g di EVERGREEN® per pianta alla messa a dimora, l'irrigazione necessaria diminuisce del 50 % senza mai esporre l'albero allo stress idrico. Il suo apparato radicale profondo arricchisce il suolo di azoto e previene l'erosione; la sua resistenza a parassiti e malattie è naturalmente elevata, e il legno si incendia solo a partire da 426 °C, il che lo rende anche una barriera antincendio. Le piante (25-30 cm alla consegna, in vaso, certificate senza malattie, garantite in caso di mortalità) vengono trasportate per via aerea entro 6 settimane, e devono poi trascorrere 6 settimane in serra prima della messa a dimora a goccia. Il primo taglio avviene alla fine del sesto anno, per un legno valorizzato a 400-450 € al m³; piantiamo noi stessi questa varietà da diversi anni, in particolare in Spagna.",
           detail: {
             sections: [
               {
                 h: "Il principio",
-                p: "Il Paulownia ALTIFOLIA® è l'albero a crescita più rapida al mondo: in buone condizioni, raggiunge 13-15 metri in sei-otto anni, circa 3 metri all'anno, con foglie che possono superare gli 80 cm di lunghezza. È anche uno degli alberi più efficaci nel catturare CO₂ e restituire ossigeno tramite fotosintesi. La nostra varietà ALTIFOLIA®, nata da un incrocio tra Paulownia Elongata e Paulownia Fortunei, è stata selezionata per le regioni calde: sviluppa un tronco di diametro importante in poco tempo. Associata a 100 g di EVERGREEN® per pianta alla messa a dimora, l'irrigazione necessaria diminuisce del 50 % senza mai esporre l'albero allo stress idrico.",
+                p: "Il Paulownia ALTIFOLIA® è l'albero a crescita più rapida al mondo: in buone condizioni, raggiunge 13-15 metri in sei-otto anni, e fino a 20 metri in seguito, circa 3 metri all'anno, con foglie che possono superare gli 80 cm di lunghezza. È anche uno degli alberi più efficaci nel catturare CO₂ e restituire ossigeno tramite fotosintesi. La nostra varietà ALTIFOLIA®, nata da un incrocio tra Paulownia Elongata e Paulownia Fortunei, è stata selezionata per le regioni calde: sviluppa un tronco di diametro importante in poco tempo. Associata a 100 g di EVERGREEN® per pianta alla messa a dimora, l'irrigazione necessaria diminuisce del 50 % senza mai esporre l'albero allo stress idrico.",
               },
               {
                 h: "Una selezione pensata per le regioni calde",
@@ -5360,8 +5360,8 @@ const baseContent = {
       lede: "Gruppi agroindustriali, cooperative e due università americane conducono attualmente sperimentazioni sulle nostre tecnologie, sui propri terreni e sulle proprie colture. Eccole, a settembre 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinica", crop: "Canna da zucchero", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Università di Gainesville", place: "Florida, Stati Uniti", crop: "Piantagione di aceri rossi", tech: ["EVERGREEN®"] },
-        { org: "Università di Portland", place: "Oregon, Stati Uniti", crop: "Piantagione di pini Douglas", tech: ["EVERGREEN®"] },
+        { org: "Università della Florida, a Gainesville", place: "Florida, Stati Uniti", crop: "Piantagione di aceri rossi", tech: ["EVERGREEN®"] },
+        { org: "Oregon State University, a Corvallis", place: "Oregon, Stati Uniti", crop: "Piantagione di abeti di Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Regno Unito · Toledo, Spagna", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Gruppo ZARROUK", place: "Tunisia", crop: "Coltivazione di pomodori", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Corsica, Francia", crop: "Ulivi e noccioli", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -5442,9 +5442,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Lavorano con noi",
-      title: "Una rete in 38 paesi",
+      title: "Una rete in 39 paesi",
       lede: "Produttori, cooperative, specialisti del trattamento dell'acqua, università e istituti di ricerca, presenti su cinque continenti.",
-      mapAriaLabel: "Mappa della rete Green Solutions in 38 paesi",
+      mapAriaLabel: "Mappa della rete Green Solutions in 39 paesi",
     },
     countryStudies: {
       eyebrow: "Approccio per paese",
@@ -5570,8 +5570,8 @@ const baseContent = {
       "Francia", "Sudafrica", "Tunisia", "Italia", "Regno Unito", "Canada", "Spagna", "Mali",
       "Caraibi", "Stati Uniti", "Camerun", "Guinea", "Senegal", "Marocco", "Guinea-Bissau", "Brasile",
       "Arabia Saudita", "Sultanato dell'Oman", "Congo", "Costa d'Avorio", "Sudan del Sud", "Polonia", "Grecia", "Portogallo",
-      "Emirati Arabi Uniti", "Messico", "Turchia", "Indonesia", "Cina",
-      "Algeria", "Argentina", "Cile", "Gabon", "Ghana", "Giordania", "Kuwait", "Croazia",
+      "Emirati Arabi Uniti", "Messico", "Turchia", "Indonesia", "Cina", "Egitto",
+      "Algeria", "Argentina", "Cile", "Gabon", "Ghana", "Giordania", "Kuwait", "Croazia", "Madagascar",
     ],
   },
   el: {
@@ -5693,21 +5693,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 έως +100 %", label: "στην απόδοση, σε ποσότητα και ποιότητα" },
-      { figure: "−50 έως −70 %", label: "στις ανάγκες άρδευσης" },
-      { figure: "14", label: "πιλοτικές δοκιμές σε εξέλιξη το 2026" },
+      { figure: "−40 έως −70 %", label: "στις ανάγκες άρδευσης" },
+      { figure: "15", label: "πιλοτικές δοκιμές σε εξέλιξη το 2026" },
       { figure: "SOHISCERT", label: "και EU Bio, πραγματικές πιστοποιήσεις" },
     ],
     presentation: {
       eyebrow: "Η προσέγγισή μας",
-      title1: "Οι τέσσερις τεχνολογίες μας",
+      title1: "Οι πέντε τεχνολογίες μας",
       title2: "Ένας στόχος",
       title3: "Ανάπτυξη και ποιότητα",
       lede: "Η Green Solutions αναπτύσσει και διανέμει ανατρεπτικές γεωργικές τεχνολογίες, σχεδιασμένες να αυξάνουν την παραγωγικότητα διατηρώντας, ακόμη και αναγεννώντας, τους φυσικούς πόρους από τους οποίους εξαρτάται αυτή η παραγωγικότητα. Συγκεκριμένες λύσεις, δοκιμασμένες στο χωράφι, για την υδατική καταπόνηση, την εξάντληση των εδαφών, την αποδοτικότητα και την επισιτιστική ασφάλεια.",
       tagline: "Όλες οι ανατρεπτικές μας λύσεις είναι κατάλληλες για κάθε φυτό και καλλιέργεια, σε κάθε κλίμα και κάθε τύπο εδάφους!",
       stats: [
         { num: "30", label: "συνεργάτες" },
-        { num: "38", label: "χώρες" },
-        { num: "4", label: "εμπορικές τεχνολογίες" },
+        { num: "39", label: "χώρες" },
+        { num: "5", label: "εμπορικές τεχνολογίες" },
       ],
       distinguish: [
         { num: "01", title: "Πιστοποιημένο, όχι απλώς διαφημισμένο", text: "SOHISCERT · EU Bio, συμβατό με τη βιολογική γεωργία." },
@@ -5719,7 +5719,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "Τι σας φέρνει εδώ;",
       title1: "Δύο πιθανές κατευθύνσεις:",
-      title2: "Προσπάθεια επιβίωσης, ή πρόοδος.",
+      title2: "Προσπάθεια επιβίωσης από τη μία, πρόοδος από την άλλη.",
       tabLabel: "Παραμονή ή πρόοδος",
       tabTenir: "01 · Να μην αλλάξει τίποτα",
       tabAvancer: "02 · Αντίδραση και κέρδος",
@@ -5746,7 +5746,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Κερδοφόρα αναδάσωση: το Paulownia ALTIFOLIA® φτάνει τα 13-15 μ. σε έξι έως οκτώ χρόνια και η ξυλεία του αποτιμάται γύρω στα 550 €/m³, για αποδοτικότητα σε έξι χρόνια καλλιέργειας.",
+          text: "Κερδοφόρα αναδάσωση: το Paulownia ALTIFOLIA® φτάνει τα 13-15 μ. σε έξι έως οκτώ χρόνια, έως 20 μ. αργότερα και η ξυλεία του αποτιμάται γύρω στα 550 €/m³, για αποδοτικότητα σε έξι χρόνια καλλιέργειας.",
           linkLabel: "Δείτε το Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -5770,22 +5770,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "Οι υδροσυγκρατητές μας συλλέγουν το βρόχινο ή αρδευτικό νερό και το αποθηκεύουν σε τζελ μορφή όσο το δυνατόν πιο κοντά στις ρίζες, χωρίς να αλλοιώνουν την ποιότητά του. Μια μόνιμη δεξαμενή, προσβάσιμη στο φυτό ανεξαρτήτως εδάφους ή κλίματος, που εξαλείφει την υδατική καταπόνηση στις κρίσιμες φάσεις του κύκλου.",
           facts: [
-            "−50 έως −70 % νερού ανάλογα με τον τύπο άρδευσης",
-            "EVERGREEN®: WAC (ικανότητα απορρόφησης νερού) 300X, 3 χρόνια στο έδαφος",
-            "ECOSORB®: 300 φορές το βάρος του, βάσει αμύλου καλαμποκιού, 2-3 χρόνια",
+            "−40 έως −70 % νερού ανάλογα με τον τύπο άρδευσης",
+            "EVERGREEN®: περίπου 300 φορές το βάρος του σε νερό, 3 έως 4 χρόνια στο έδαφος",
+            "ECOSORB®: περίπου 300 φορές το βάρος του, βάσει αμύλου καλαμποκιού, 2-3 χρόνια",
             "Αποδομείται κατά 20-25 % ετησίως, χωρίς κίνδυνο υπερδοσολογίας",
             "Ζαχαροκάλαμο: +25 % περιεκτικότητα σε ζάχαρη (Brix) με 15 kg/εκτάριο",
           ],
-          more: "Τα EVERGREEN® και ECOSORB® είναι υπεραπορροφητικά πολυμερή που βιοαποδομούνται πλήρως, χωρίς να αφήνουν κατάλοιπα στο έδαφος ή στα φυτά. Απορροφούν έως και 300-400 φορές το βάρος τους σε νερό και το αποδίδουν στις ρίζες ανάλογα με τις ανάγκες της καλλιέργειας, κύκλο μετά από κύκλο, έως την φυσική τους αποδόμηση (20-25 % ετησίως) σε CO₂, νερό και αφομοιώσιμες αζωτούχες ενώσεις. Σε αντίθεση με τους υδροσυγκρατητές με βάση το νάτριο — που, μόλις ενυδατωθούν, σχηματίζουν μια ασφυκτική και αλμυρή πάστα για τις ρίζες — ή τις φόρμουλες με βάση το ακρυλαμίδιο, απαγορευμένες σε πολλές χώρες λόγω τοξικότητας, τα δύο προϊόντα μας βασίζονται στο κάλιο, συμβατά με τις τρόφιμες καλλιέργειες. Σε επαφή με το νερό, ο ξηρός κόκκος διογκώνεται: αυτό το φαινόμενο αποσυμπιέζει το έδαφος όπως θα έκανε ένα γαιοσκώληκας, βελτιώνει τη διαπερατότητά του και δημιουργεί ένα υγρό μικροκλίμα ευνοϊκό για τη μικροπανίδα και τη μικροχλωρίδα, κινητήριες δυνάμεις της φυσικής γονιμότητας. Τα διαλυμένα λιπάσματα συλλαμβάνονται στο πέρασμά τους αντί να ξεπλένονται προς τους υδροφορείς, μειώνοντας τη ρύπανση και αξιοποιώντας καλύτερα κάθε εφαρμογή. Σε συνδυασμό με τα λιπάσματά μας ECOFERT®, τα EVERGREEN® και ECOSORB® σχηματίζουν ένα ολοκληρωμένο σύστημα που επέτρεψε, στο ζαχαροκάλαμο, κέρδος 25 % στην περιεκτικότητα σε ζάχαρη (Brix) με μόλις 15 kg προϊόντος ανά εκτάριο. Πάνω από το 95 % των φυτών που μεταφυτεύονται με τους υδροσυγκρατητές μας πιάνουν, έναντι σαφώς χαμηλότερου ποσοστού σε συμβατικές συνθήκες.",
+          more: "Τα EVERGREEN® και ECOSORB® είναι υπεραπορροφητικά πολυμερή που βιοαποδομούνται πλήρως, χωρίς να αφήνουν κατάλοιπα στο έδαφος ή στα φυτά. Απορροφούν περίπου 300 φορές το βάρος τους σε νερό και το αποδίδουν στις ρίζες ανάλογα με τις ανάγκες της καλλιέργειας, κύκλο μετά από κύκλο, έως την φυσική τους αποδόμηση (20-25 % ετησίως) σε CO₂, νερό και αφομοιώσιμες αζωτούχες ενώσεις. Σε αντίθεση με τους υδροσυγκρατητές με βάση το νάτριο — που, μόλις ενυδατωθούν, σχηματίζουν μια ασφυκτική και αλμυρή πάστα για τις ρίζες — ή τις φόρμουλες με βάση το ακρυλαμίδιο, απαγορευμένες σε πολλές χώρες λόγω τοξικότητας, τα δύο προϊόντα μας βασίζονται στο κάλιο, συμβατά με τις τρόφιμες καλλιέργειες. Σε επαφή με το νερό, ο ξηρός κόκκος διογκώνεται: αυτό το φαινόμενο αποσυμπιέζει το έδαφος όπως θα έκανε ένα γαιοσκώληκας, βελτιώνει τη διαπερατότητά του και δημιουργεί ένα υγρό μικροκλίμα ευνοϊκό για τη μικροπανίδα και τη μικροχλωρίδα, κινητήριες δυνάμεις της φυσικής γονιμότητας. Τα διαλυμένα λιπάσματα συλλαμβάνονται στο πέρασμά τους αντί να ξεπλένονται προς τους υδροφορείς, μειώνοντας τη ρύπανση και αξιοποιώντας καλύτερα κάθε εφαρμογή. Σε συνδυασμό με τα λιπάσματά μας ECOFERT®, τα EVERGREEN® και ECOSORB® σχηματίζουν ένα ολοκληρωμένο σύστημα που επέτρεψε, στο ζαχαροκάλαμο, κέρδος 25 % στην περιεκτικότητα σε ζάχαρη (Brix) με μόλις 15 kg προϊόντος ανά εκτάριο. Πάνω από το 95 % των φυτών που μεταφυτεύονται με τους υδροσυγκρατητές μας πιάνουν, έναντι σαφώς χαμηλότερου ποσοστού σε συμβατικές συνθήκες.",
           detail: {
             sections: [
               {
                 h: "Η αρχή",
-                p: "Τα EVERGREEN® και ECOSORB® είναι υπεραπορροφητικά πολυμερή που βιοαποδομούνται πλήρως, χωρίς να αφήνουν κατάλοιπα στο έδαφος ή στα φυτά. Απορροφούν έως και 300-400 φορές το βάρος τους σε νερό και το αποδίδουν στις ρίζες ανάλογα με τις ανάγκες της καλλιέργειας, κύκλο μετά από κύκλο, έως την φυσική τους αποδόμηση (20-25 % ετησίως) σε CO₂, νερό και αφομοιώσιμες αζωτούχες ενώσεις. Σε αντίθεση με τους υδροσυγκρατητές με βάση το νάτριο — που, μόλις ενυδατωθούν, σχηματίζουν μια ασφυκτική και αλμυρή πάστα για τις ρίζες — ή τις φόρμουλες με βάση το ακρυλαμίδιο, απαγορευμένες σε πολλές χώρες λόγω τοξικότητας, τα δύο προϊόντα μας βασίζονται στο κάλιο, συμβατά με τις τρόφιμες καλλιέργειες. Σε επαφή με το νερό, ο ξηρός κόκκος διογκώνεται: αυτό το φαινόμενο αποσυμπιέζει το έδαφος όπως θα έκανε ένα γαιοσκώληκας, βελτιώνει τη διαπερατότητά του και δημιουργεί ένα υγρό μικροκλίμα ευνοϊκό για τη μικροπανίδα και τη μικροχλωρίδα, κινητήριες δυνάμεις της φυσικής γονιμότητας. Τα διαλυμένα λιπάσματα συλλαμβάνονται στο πέρασμά τους αντί να ξεπλένονται προς τους υδροφορείς, μειώνοντας τη ρύπανση και αξιοποιώντας καλύτερα κάθε εφαρμογή. Σε συνδυασμό με τα λιπάσματά μας ECOFERT®, τα EVERGREEN® και ECOSORB® σχηματίζουν ένα ολοκληρωμένο σύστημα που επέτρεψε, στο ζαχαροκάλαμο, κέρδος 25 % στην περιεκτικότητα σε ζάχαρη (Brix) με μόλις 15 kg προϊόντος ανά εκτάριο. Πάνω από το 95 % των φυτών που μεταφυτεύονται με τους υδροσυγκρατητές μας πιάνουν, έναντι σαφώς χαμηλότερου ποσοστού σε συμβατικές συνθήκες.",
+                p: "Τα EVERGREEN® και ECOSORB® είναι υπεραπορροφητικά πολυμερή που βιοαποδομούνται πλήρως, χωρίς να αφήνουν κατάλοιπα στο έδαφος ή στα φυτά. Απορροφούν περίπου 300 φορές το βάρος τους σε νερό και το αποδίδουν στις ρίζες ανάλογα με τις ανάγκες της καλλιέργειας, κύκλο μετά από κύκλο, έως την φυσική τους αποδόμηση (20-25 % ετησίως) σε CO₂, νερό και αφομοιώσιμες αζωτούχες ενώσεις. Σε αντίθεση με τους υδροσυγκρατητές με βάση το νάτριο — που, μόλις ενυδατωθούν, σχηματίζουν μια ασφυκτική και αλμυρή πάστα για τις ρίζες — ή τις φόρμουλες με βάση το ακρυλαμίδιο, απαγορευμένες σε πολλές χώρες λόγω τοξικότητας, τα δύο προϊόντα μας βασίζονται στο κάλιο, συμβατά με τις τρόφιμες καλλιέργειες. Σε επαφή με το νερό, ο ξηρός κόκκος διογκώνεται: αυτό το φαινόμενο αποσυμπιέζει το έδαφος όπως θα έκανε ένα γαιοσκώληκας, βελτιώνει τη διαπερατότητά του και δημιουργεί ένα υγρό μικροκλίμα ευνοϊκό για τη μικροπανίδα και τη μικροχλωρίδα, κινητήριες δυνάμεις της φυσικής γονιμότητας. Τα διαλυμένα λιπάσματα συλλαμβάνονται στο πέρασμά τους αντί να ξεπλένονται προς τους υδροφορείς, μειώνοντας τη ρύπανση και αξιοποιώντας καλύτερα κάθε εφαρμογή. Σε συνδυασμό με τα λιπάσματά μας ECOFERT®, τα EVERGREEN® και ECOSORB® σχηματίζουν ένα ολοκληρωμένο σύστημα που επέτρεψε, στο ζαχαροκάλαμο, κέρδος 25 % στην περιεκτικότητα σε ζάχαρη (Brix) με μόλις 15 kg προϊόντος ανά εκτάριο. Πάνω από το 95 % των φυτών που μεταφυτεύονται με τους υδροσυγκρατητές μας πιάνουν, έναντι σαφώς χαμηλότερου ποσοστού σε συμβατικές συνθήκες.",
               },
               {
                 h: "Ο μηχανισμός, αναλυτικά",
-                p: "Σε επαφή με το νερό — βροχή, άρδευση ή υπολειμματική υγρασία του εδάφους — ο ξηρός κόκκος του υδροσυγκρατητή απορροφά έως και 300-400 φορές το βάρος του, μετατρεπόμενος σε τζελ που αποθηκεύει το νερό όσο το δυνατόν πιο κοντά στις ρίζες. Οι πρώτες τρεις εβδομάδες καλλιέργειας είναι κρίσιμες: πρέπει να διατηρείται κανονική άρδευση για τον πλήρη κορεσμό των κόκκων, περίοδος κατά την οποία οι ρίζες των φυτών διαπλέκονται με το τζελ και αγκυρώνονται σε αυτή τη δεξαμενή νερού. Τα EVERGREEN® και ECOSORB® δεν είναι σε καμία περίπτωση τοξικά για το δέρμα· μόνο η λεπτή κοκκομετρία τους επιβάλλει τη χρήση μάσκας κατά τη χειρισμό. Σε περίπτωση τυχαίας διαρροής, τα κατάλοιπα φυσιούνται με πεπιεσμένο αέρα αντί να ξεπλένονται με νερό, που θα έκανε το έδαφος ολισθηρό.",
+                p: "Σε επαφή με το νερό — βροχή, άρδευση ή υπολειμματική υγρασία του εδάφους — ο ξηρός κόκκος του υδροσυγκρατητή απορροφά περίπου 300 φορές το βάρος του, μετατρεπόμενος σε τζελ που αποθηκεύει το νερό όσο το δυνατόν πιο κοντά στις ρίζες. Οι πρώτες τρεις εβδομάδες καλλιέργειας είναι κρίσιμες: πρέπει να διατηρείται κανονική άρδευση για τον πλήρη κορεσμό των κόκκων, περίοδος κατά την οποία οι ρίζες των φυτών διαπλέκονται με το τζελ και αγκυρώνονται σε αυτή τη δεξαμενή νερού. Τα EVERGREEN® και ECOSORB® δεν είναι σε καμία περίπτωση τοξικά για το δέρμα· μόνο η λεπτή κοκκομετρία τους επιβάλλει τη χρήση μάσκας κατά τη χειρισμό. Σε περίπτωση τυχαίας διαρροής, τα κατάλοιπα φυσιούνται με πεπιεσμένο αέρα αντί να ξεπλένονται με νερό, που θα έκανε το έδαφος ολισθηρό.",
               },
               {
                 h: "Πού και πώς να τα χρησιμοποιήσετε",
@@ -5907,19 +5907,19 @@ const baseContent = {
           num: "05",
           kicker: "Φύτευση για διάρκεια",
           title: "Paulownia ALTIFOLIA®",
-          text: "Το δέντρο με την ταχύτερη ανάπτυξη στον κόσμο: 13-15 μ. σε έξι έως οκτώ χρόνια, σχεδόν 3 μ. τον χρόνο. Σε συνδυασμό με τον υδροσυγκρατητή μας EVERGREEN®, μειώνει κατά 50 % τις ανάγκες άρδευσης. Στείρες και μη επεμβατικές υβριδικές ποικιλίες, με συνοδεία του νεαρού φυτού έως την πώληση της ξυλείας.",
+          text: "Το δέντρο με την ταχύτερη ανάπτυξη στον κόσμο: 13-15 μ. σε έξι έως οκτώ χρόνια, έως 20 μ. αργότερα, σχεδόν 3 μ. τον χρόνο. Σε συνδυασμό με τον υδροσυγκρατητή μας EVERGREEN®, μειώνει κατά 50 % τις ανάγκες άρδευσης. Στείρες και μη επεμβατικές υβριδικές ποικιλίες, με συνοδεία του νεαρού φυτού έως την πώληση της ξυλείας.",
           facts: [
             "400-500 δέντρα/εκτάριο, με αξία 400-450 €/m³",
             "Αποδοτικότητα σε έξι χρόνια καλλιέργειας",
             "Αντέχει από −25 °C έως +45 °C, φλέγεται μόνο στους 426 °C",
             "400-700 kg μέλι ανά εκτάριο, και πιστώσεις άνθρακα",
           ],
-          more: "Το Paulownia ALTIFOLIA® είναι το δέντρο με την ταχύτερη ανάπτυξη στον κόσμο: υπό καλές συνθήκες, φτάνει τα 13-15 μέτρα σε έξι έως οκτώ χρόνια, περίπου 3 μέτρα τον χρόνο, με φύλλα που μπορούν να ξεπεράσουν τα 80 cm σε μήκος. Είναι επίσης ένα από τα πιο αποτελεσματικά δέντρα στη δέσμευση CO₂ και την απόδοση οξυγόνου μέσω φωτοσύνθεσης. Η ποικιλία μας ALTIFOLIA®, προϊόν διασταύρωσης μεταξύ Paulownia Elongata και Paulownia Fortunei, επιλέχθηκε για θερμές περιοχές: αναπτύσσει κορμό μεγάλης διαμέτρου σε σύντομο χρονικό διάστημα. Σε συνδυασμό με 100 g EVERGREEN® ανά φυτό κατά τη φύτευση, η απαιτούμενη άρδευση μειώνεται κατά 50 %, χωρίς ποτέ να εκθέτει το δέντρο σε υδατική καταπόνηση. Το βαθύ ριζικό του σύστημα εμπλουτίζει το έδαφος με άζωτο και αποτρέπει τη διάβρωση· η αντοχή του σε παράσιτα και ασθένειες είναι φυσικά υψηλή, και η ξυλεία φλέγεται μόνο από τους 426 °C, γεγονός που το καθιστά επίσης αντιπυρικό φράγμα. Τα φυτά (25-30 cm κατά την παράδοση, σε γλάστρα, πιστοποιημένα χωρίς ασθένειες, εγγυημένα σε περίπτωση θνησιμότητας) μεταφέρονται αεροπορικώς εντός 6 εβδομάδων, και πρέπει στη συνέχεια να παραμείνουν 6 εβδομάδες σε θερμοκήπιο πριν τη φύτευση με στάγδην άρδευση. Η πρώτη υλοτόμηση γίνεται στο τέλος του έκτου έτους, για ξυλεία αξίας 400-450 €/m³· καλλιεργούμε οι ίδιοι αυτή την ποικιλία εδώ και χρόνια, ιδίως στην Ισπανία.",
+          more: "Το Paulownia ALTIFOLIA® είναι το δέντρο με την ταχύτερη ανάπτυξη στον κόσμο: υπό καλές συνθήκες, φτάνει τα 13-15 μέτρα σε έξι έως οκτώ χρόνια, και έως 20 μέτρα αργότερα, περίπου 3 μέτρα τον χρόνο, με φύλλα που μπορούν να ξεπεράσουν τα 80 cm σε μήκος. Είναι επίσης ένα από τα πιο αποτελεσματικά δέντρα στη δέσμευση CO₂ και την απόδοση οξυγόνου μέσω φωτοσύνθεσης. Η ποικιλία μας ALTIFOLIA®, προϊόν διασταύρωσης μεταξύ Paulownia Elongata και Paulownia Fortunei, επιλέχθηκε για θερμές περιοχές: αναπτύσσει κορμό μεγάλης διαμέτρου σε σύντομο χρονικό διάστημα. Σε συνδυασμό με 100 g EVERGREEN® ανά φυτό κατά τη φύτευση, η απαιτούμενη άρδευση μειώνεται κατά 50 %, χωρίς ποτέ να εκθέτει το δέντρο σε υδατική καταπόνηση. Το βαθύ ριζικό του σύστημα εμπλουτίζει το έδαφος με άζωτο και αποτρέπει τη διάβρωση· η αντοχή του σε παράσιτα και ασθένειες είναι φυσικά υψηλή, και η ξυλεία φλέγεται μόνο από τους 426 °C, γεγονός που το καθιστά επίσης αντιπυρικό φράγμα. Τα φυτά (25-30 cm κατά την παράδοση, σε γλάστρα, πιστοποιημένα χωρίς ασθένειες, εγγυημένα σε περίπτωση θνησιμότητας) μεταφέρονται αεροπορικώς εντός 6 εβδομάδων, και πρέπει στη συνέχεια να παραμείνουν 6 εβδομάδες σε θερμοκήπιο πριν τη φύτευση με στάγδην άρδευση. Η πρώτη υλοτόμηση γίνεται στο τέλος του έκτου έτους, για ξυλεία αξίας 400-450 €/m³· καλλιεργούμε οι ίδιοι αυτή την ποικιλία εδώ και χρόνια, ιδίως στην Ισπανία.",
           detail: {
             sections: [
               {
                 h: "Η αρχή",
-                p: "Το Paulownia ALTIFOLIA® είναι το δέντρο με την ταχύτερη ανάπτυξη στον κόσμο: υπό καλές συνθήκες, φτάνει τα 13-15 μέτρα σε έξι έως οκτώ χρόνια, περίπου 3 μέτρα τον χρόνο, με φύλλα που μπορούν να ξεπεράσουν τα 80 cm σε μήκος. Είναι επίσης ένα από τα πιο αποτελεσματικά δέντρα στη δέσμευση CO₂ και την απόδοση οξυγόνου μέσω φωτοσύνθεσης. Η ποικιλία μας ALTIFOLIA®, προϊόν διασταύρωσης μεταξύ Paulownia Elongata και Paulownia Fortunei, επιλέχθηκε για θερμές περιοχές: αναπτύσσει κορμό μεγάλης διαμέτρου σε σύντομο χρονικό διάστημα. Σε συνδυασμό με 100 g EVERGREEN® ανά φυτό κατά τη φύτευση, η απαιτούμενη άρδευση μειώνεται κατά 50 %, χωρίς ποτέ να εκθέτει το δέντρο σε υδατική καταπόνηση.",
+                p: "Το Paulownia ALTIFOLIA® είναι το δέντρο με την ταχύτερη ανάπτυξη στον κόσμο: υπό καλές συνθήκες, φτάνει τα 13-15 μέτρα σε έξι έως οκτώ χρόνια, και έως 20 μέτρα αργότερα, περίπου 3 μέτρα τον χρόνο, με φύλλα που μπορούν να ξεπεράσουν τα 80 cm σε μήκος. Είναι επίσης ένα από τα πιο αποτελεσματικά δέντρα στη δέσμευση CO₂ και την απόδοση οξυγόνου μέσω φωτοσύνθεσης. Η ποικιλία μας ALTIFOLIA®, προϊόν διασταύρωσης μεταξύ Paulownia Elongata και Paulownia Fortunei, επιλέχθηκε για θερμές περιοχές: αναπτύσσει κορμό μεγάλης διαμέτρου σε σύντομο χρονικό διάστημα. Σε συνδυασμό με 100 g EVERGREEN® ανά φυτό κατά τη φύτευση, η απαιτούμενη άρδευση μειώνεται κατά 50 %, χωρίς ποτέ να εκθέτει το δέντρο σε υδατική καταπόνηση.",
               },
               {
                 h: "Μια ποικιλία σχεδιασμένη για θερμές περιοχές",
@@ -5979,8 +5979,8 @@ const baseContent = {
       lede: "Αγροβιομηχανικοί όμιλοι, συνεταιρισμοί και δύο αμερικανικά πανεπιστήμια διεξάγουν επί του παρόντος δοκιμές στις τεχνολογίες μας, στα δικά τους αγροτεμάχια και στις δικές τους καλλιέργειες. Ιδού ποιες, τον Σεπτέμβριο του 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Μαρτινίκα", crop: "Ζαχαροκάλαμο", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Πανεπιστήμιο Gainesville", place: "Φλόριντα, ΗΠΑ", crop: "Φυτεία κόκκινων σφενδάμων", tech: ["EVERGREEN®"] },
-        { org: "Πανεπιστήμιο Portland", place: "Όρεγκον, ΗΠΑ", crop: "Φυτεία πεύκων Douglas", tech: ["EVERGREEN®"] },
+        { org: "Πανεπιστήμιο της Φλόριντα, στο Gainesville", place: "Φλόριντα, ΗΠΑ", crop: "Φυτεία κόκκινων σφενδάμων", tech: ["EVERGREEN®"] },
+        { org: "Πολιτειακό Πανεπιστήμιο του Όρεγκον, στο Corvallis", place: "Όρεγκον, ΗΠΑ", crop: "Φυτεία ελάτων Douglas", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Ηνωμένο Βασίλειο · Τολέδο, Ισπανία", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Όμιλος ZARROUK", place: "Τυνησία", crop: "Καλλιέργεια ντομάτας", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Κορσική, Γαλλία", crop: "Ελιές και φουντουκιές", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -6061,9 +6061,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Συνεργάζονται μαζί μας",
-      title: "Ένα δίκτυο σε 38 χώρες",
+      title: "Ένα δίκτυο σε 39 χώρες",
       lede: "Παραγωγοί, συνεταιρισμοί, ειδικοί επεξεργασίας νερού, πανεπιστήμια και ερευνητικά ιδρύματα, παρόντα σε πέντε ηπείρους.",
-      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 38 χώρες",
+      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 39 χώρες",
     },
     countryStudies: {
       eyebrow: "Προσέγγιση ανά χώρα",
@@ -6189,8 +6189,8 @@ const baseContent = {
       "Γαλλία", "Νότια Αφρική", "Τυνησία", "Ιταλία", "Ηνωμένο Βασίλειο", "Καναδάς", "Ισπανία", "Μάλι",
       "Καραϊβική", "ΗΠΑ", "Καμερούν", "Γουινέα", "Σενεγάλη", "Μαρόκο", "Γουινέα-Μπισάου", "Βραζιλία",
       "Σαουδική Αραβία", "Σουλτανάτο του Ομάν", "Κονγκό", "Ακτή Ελεφαντοστού", "Νότιο Σουδάν", "Πολωνία", "Ελλάδα", "Πορτογαλία",
-      "Ηνωμένα Αραβικά Εμιράτα", "Μεξικό", "Τουρκία", "Ινδονησία", "Κίνα",
-      "Αλγερία", "Αργεντινή", "Χιλή", "Γκαμπόν", "Γκάνα", "Ιορδανία", "Κουβέιτ", "Κροατία",
+      "Ηνωμένα Αραβικά Εμιράτα", "Μεξικό", "Τουρκία", "Ινδονησία", "Κίνα", "Αίγυπτος",
+      "Αλγερία", "Αργεντινή", "Χιλή", "Γκαμπόν", "Γκάνα", "Ιορδανία", "Κουβέιτ", "Κροατία", "Μαδαγασκάρη",
     ],
   },
   tr: {
@@ -6312,21 +6312,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+%30 ila +%100", label: "verimde, hem miktar hem kalite açısından" },
-      { figure: "−%50 ila −%70", label: "sulama suyu ihtiyacında" },
-      { figure: "14", label: "2026'da devam eden pilot deneme" },
+      { figure: "−%40 ila −%70", label: "sulama suyu ihtiyacında" },
+      { figure: "15", label: "2026'da devam eden pilot deneme" },
       { figure: "SOHISCERT", label: "ve EU Bio, gerçek sertifikasyonlar" },
     ],
     presentation: {
       eyebrow: "Yaklaşımımız",
-      title1: "Dört teknolojimiz",
+      title1: "Beş teknolojimiz",
       title2: "Tek bir amaç",
       title3: "Büyüme ve kalite",
       lede: "Green Solutions, bu üretkenliğin bağlı olduğu doğal kaynakları korurken, hatta yenileyerek üretkenliği artırmak için tasarlanmış yıkıcı tarım teknolojileri geliştirir ve dağıtır. Su stresine, toprak tükenmesine, karlılığa ve gıda güvenliğine sahada kanıtlanmış somut çözümler.",
       tagline: "Yıkıcı çözümlerimizin tümü her bitki ve ürün için, her iklimde ve her toprak türünde kullanılabilir!",
       stats: [
         { num: "30", label: "ortak" },
-        { num: "38", label: "ülke" },
-        { num: "4", label: "markalı teknoloji" },
+        { num: "39", label: "ülke" },
+        { num: "5", label: "markalı teknoloji" },
       ],
       distinguish: [
         { num: "01", title: "Sadece iddia edilmiş değil, sertifikalandırılmış", text: "SOHISCERT · EU Bio, organik tarımla uyumlu." },
@@ -6338,7 +6338,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "Sizi buraya getiren ne?",
       title1: "İki olası yön:",
-      title2: "Hayatta kalmaya çalışmak, ya da ilerlemek.",
+      title2: "Bir yanda hayatta kalmaya çalışmak, diğer yanda ilerlemek.",
       tabLabel: "Direnmek ya da ilerlemek",
       tabTenir: "01 · Hiçbir şeyi değiştirmemek",
       tabAvancer: "02 · Tepki vermek ve kazanmak",
@@ -6365,7 +6365,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Ağaçlandırmayı kârlı hale getirin: Paulownia ALTIFOLIA® altı ila sekiz yılda 13-15 m'ye ulaşır ve odunu yaklaşık 550 €/m³ değer kazanır, altı yıllık yetiştiricilikte kârlılık sağlar.",
+          text: "Ağaçlandırmayı kârlı hale getirin: Paulownia ALTIFOLIA® altı ila sekiz yılda 13-15 m'ye, sonrasında 20 m'ye ulaşır ve odunu yaklaşık 550 €/m³ değer kazanır, altı yıllık yetiştiricilikte kârlılık sağlar.",
           linkLabel: "Paulownia ALTIFOLIA®'yı keşfedin",
           linkHref: "#paulownia",
         },
@@ -6389,22 +6389,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "Hidro-tutucularımız yağmur veya sulama suyunu yakalar ve kalitesini bozmadan köklere olabildiğince yakın, jel formunda depolar. Toprak veya iklimden bağımsız olarak bitkiye erişilebilir kalıcı bir rezervuar, döngünün kritik aşamalarında su stresini ortadan kaldırır.",
           facts: [
-            "Sulama türüne göre %50-70 su tasarrufu",
-            "EVERGREEN®: WAC (su emme kapasitesi) 300X, toprakta 3 yıl",
-            "ECOSORB®: kendi ağırlığının 300 katı, mısır nişastası bazlı, 2-3 yıl",
+            "Sulama türüne göre %40-70 su tasarrufu",
+            "EVERGREEN®: kendi ağırlığının yaklaşık 300 katı su, toprakta 3-4 yıl",
+            "ECOSORB®: kendi ağırlığının yaklaşık 300 katı, mısır nişastası bazlı, 2-3 yıl",
             "Yılda %20-25 oranında bozunur, aşırı doz riski yok",
             "Şeker kamışı: 15 kg/ha ile %25 şeker oranı (Brix) artışı",
           ],
-          more: "EVERGREEN® ve ECOSORB®, toprakta veya bitkilerde hiçbir kalıntı bırakmadan tamamen biyobozunan süper emici polimerlerdir. Ağırlıklarının 300-400 katına kadar su emer ve bunu, doğal bozunmalarına (yılda %20-25) yani CO₂, su ve bitkiler tarafından özümsenebilir azotlu bileşiklere dönüşene kadar, döngü döngü ürünün ihtiyaçlarına göre köklere geri verirler. Hidratlandığında köklere boğucu ve tuzlu bir macun oluşturan sodyum bazlı hidro-tutuculardan — veya toksisiteleri nedeniyle birçok ülkede yasaklanan akrilamid bazlı formülasyonlardan farklı olarak, iki ürünümüz de gıda ürünleriyle uyumlu potasyum bazlıdır. Suyla temas ettiğinde kuru tane şişer: bu ileri geri etki toprağı bir solucan gibi gevşetir, geçirgenliğini artırır ve doğal verimliliğin itici gücü olan mikrofauna ve mikroflora için nemli bir mikroiklim yaratır. Çözünmüş gübreler yeraltı sularına sızmak yerine geçişte yakalanır, bu da kirliliği azaltır ve her uygulamanın daha iyi değerlendirilmesini sağlar. ECOFERT® gübrelerimizle birlikte, EVERGREEN® ve ECOSORB® şeker kamışında hektar başına sadece 15 kg ürünle %25 şeker oranı (Brix) kazancı sağlayan eksiksiz bir sistem oluşturur. Hidro-tutucularımızla nakledilen bitkilerin %95'inden fazlası tutar, geleneksel koşullarda ise bu oran belirgin şekilde daha düşüktür.",
+          more: "EVERGREEN® ve ECOSORB®, toprakta veya bitkilerde hiçbir kalıntı bırakmadan tamamen biyobozunan süper emici polimerlerdir. Ağırlıklarının yaklaşık 300 katı su emer ve bunu, doğal bozunmalarına (yılda %20-25) yani CO₂, su ve bitkiler tarafından özümsenebilir azotlu bileşiklere dönüşene kadar, döngü döngü ürünün ihtiyaçlarına göre köklere geri verirler. Hidratlandığında köklere boğucu ve tuzlu bir macun oluşturan sodyum bazlı hidro-tutuculardan — veya toksisiteleri nedeniyle birçok ülkede yasaklanan akrilamid bazlı formülasyonlardan farklı olarak, iki ürünümüz de gıda ürünleriyle uyumlu potasyum bazlıdır. Suyla temas ettiğinde kuru tane şişer: bu ileri geri etki toprağı bir solucan gibi gevşetir, geçirgenliğini artırır ve doğal verimliliğin itici gücü olan mikrofauna ve mikroflora için nemli bir mikroiklim yaratır. Çözünmüş gübreler yeraltı sularına sızmak yerine geçişte yakalanır, bu da kirliliği azaltır ve her uygulamanın daha iyi değerlendirilmesini sağlar. ECOFERT® gübrelerimizle birlikte, EVERGREEN® ve ECOSORB® şeker kamışında hektar başına sadece 15 kg ürünle %25 şeker oranı (Brix) kazancı sağlayan eksiksiz bir sistem oluşturur. Hidro-tutucularımızla nakledilen bitkilerin %95'inden fazlası tutar, geleneksel koşullarda ise bu oran belirgin şekilde daha düşüktür.",
           detail: {
             sections: [
               {
                 h: "Temel ilke",
-                p: "EVERGREEN® ve ECOSORB®, toprakta veya bitkilerde hiçbir kalıntı bırakmadan tamamen biyobozunan süper emici polimerlerdir. Ağırlıklarının 300-400 katına kadar su emer ve bunu, doğal bozunmalarına (yılda %20-25) yani CO₂, su ve bitkiler tarafından özümsenebilir azotlu bileşiklere dönüşene kadar, döngü döngü ürünün ihtiyaçlarına göre köklere geri verirler. Hidratlandığında köklere boğucu ve tuzlu bir macun oluşturan sodyum bazlı hidro-tutuculardan — veya toksisiteleri nedeniyle birçok ülkede yasaklanan akrilamid bazlı formülasyonlardan farklı olarak, iki ürünümüz de gıda ürünleriyle uyumlu potasyum bazlıdır. Suyla temas ettiğinde kuru tane şişer: bu ileri geri etki toprağı bir solucan gibi gevşetir, geçirgenliğini artırır ve doğal verimliliğin itici gücü olan mikrofauna ve mikroflora için nemli bir mikroiklim yaratır. Çözünmüş gübreler yeraltı sularına sızmak yerine geçişte yakalanır, bu da kirliliği azaltır ve her uygulamanın daha iyi değerlendirilmesini sağlar. ECOFERT® gübrelerimizle birlikte, EVERGREEN® ve ECOSORB® şeker kamışında hektar başına sadece 15 kg ürünle %25 şeker oranı (Brix) kazancı sağlayan eksiksiz bir sistem oluşturur. Hidro-tutucularımızla nakledilen bitkilerin %95'inden fazlası tutar, geleneksel koşullarda ise bu oran belirgin şekilde daha düşüktür.",
+                p: "EVERGREEN® ve ECOSORB®, toprakta veya bitkilerde hiçbir kalıntı bırakmadan tamamen biyobozunan süper emici polimerlerdir. Ağırlıklarının yaklaşık 300 katı su emer ve bunu, doğal bozunmalarına (yılda %20-25) yani CO₂, su ve bitkiler tarafından özümsenebilir azotlu bileşiklere dönüşene kadar, döngü döngü ürünün ihtiyaçlarına göre köklere geri verirler. Hidratlandığında köklere boğucu ve tuzlu bir macun oluşturan sodyum bazlı hidro-tutuculardan — veya toksisiteleri nedeniyle birçok ülkede yasaklanan akrilamid bazlı formülasyonlardan farklı olarak, iki ürünümüz de gıda ürünleriyle uyumlu potasyum bazlıdır. Suyla temas ettiğinde kuru tane şişer: bu ileri geri etki toprağı bir solucan gibi gevşetir, geçirgenliğini artırır ve doğal verimliliğin itici gücü olan mikrofauna ve mikroflora için nemli bir mikroiklim yaratır. Çözünmüş gübreler yeraltı sularına sızmak yerine geçişte yakalanır, bu da kirliliği azaltır ve her uygulamanın daha iyi değerlendirilmesini sağlar. ECOFERT® gübrelerimizle birlikte, EVERGREEN® ve ECOSORB® şeker kamışında hektar başına sadece 15 kg ürünle %25 şeker oranı (Brix) kazancı sağlayan eksiksiz bir sistem oluşturur. Hidro-tutucularımızla nakledilen bitkilerin %95'inden fazlası tutar, geleneksel koşullarda ise bu oran belirgin şekilde daha düşüktür.",
               },
               {
                 h: "Mekanizma, ayrıntılı olarak",
-                p: "Suyla — yağmur, sulama veya toprağın kalıntı nemi — temas eden kuru hidro-tutucu tanesi, kendi ağırlığının 300-400 katına kadar emerek köklere olabildiğince yakın suyu depolayan bir jele dönüşür. İlk üç haftalık yetiştiricilik kritiktir: taneleri tamamen doyurmak için normal sulamanın sürdürülmesi gerekir, bu süre boyunca bitkilerin kökleri jelle iç içe geçer ve bu su rezervine tutunur. EVERGREEN® ve ECOSORB® cilt için hiçbir şekilde toksik değildir; sadece ince tane boyutu, kullanım sırasında toz maskesi takılmasını gerektirir. Kazara dökülme durumunda, toprağı kaygan hale getirecek suyla durulamak yerine kalıntılar basınçlı hava ile üflenir.",
+                p: "Suyla — yağmur, sulama veya toprağın kalıntı nemi — temas eden kuru hidro-tutucu tanesi, kendi ağırlığının yaklaşık 300 katı emerek köklere olabildiğince yakın suyu depolayan bir jele dönüşür. İlk üç haftalık yetiştiricilik kritiktir: taneleri tamamen doyurmak için normal sulamanın sürdürülmesi gerekir, bu süre boyunca bitkilerin kökleri jelle iç içe geçer ve bu su rezervine tutunur. EVERGREEN® ve ECOSORB® cilt için hiçbir şekilde toksik değildir; sadece ince tane boyutu, kullanım sırasında toz maskesi takılmasını gerektirir. Kazara dökülme durumunda, toprağı kaygan hale getirecek suyla durulamak yerine kalıntılar basınçlı hava ile üflenir.",
               },
               {
                 h: "Nerede ve nasıl kullanılır",
@@ -6526,19 +6526,19 @@ const baseContent = {
           num: "05",
           kicker: "Kalıcı olmak için dikmek",
           title: "Paulownia ALTIFOLIA®",
-          text: "Dünyanın en hızlı büyüyen ağacı: altı ila sekiz yılda 13-15 m, yılda neredeyse 3 m. EVERGREEN® hidro-tutucumuzla birleştiğinde, sulama suyu ihtiyacını %50 azaltır. Kısır ve istilacı olmayan hibrit çeşitler, genç fideden odun satışına kadar eşlik edilir.",
+          text: "Dünyanın en hızlı büyüyen ağacı: altı ila sekiz yılda 13-15 m, sonrasında 20 m'ye kadar, yılda neredeyse 3 m. EVERGREEN® hidro-tutucumuzla birleştiğinde, sulama suyu ihtiyacını %50 azaltır. Kısır ve istilacı olmayan hibrit çeşitler, genç fideden odun satışına kadar eşlik edilir.",
           facts: [
             "Hektar başına 400-500 ağaç, m³ başına 400-450 € değerinde",
             "Altı yıllık yetiştiricilikte kârlılık",
             "−25 °C ile +45 °C arasında dayanıklı, sadece 426 °C'de tutuşur",
             "Hektar başına 400-700 kg bal, ve karbon kredileri",
           ],
-          more: "Paulownia ALTIFOLIA®, dünyanın en hızlı büyüyen ağacıdır: iyi koşullar altında, altı ila sekiz yılda, yılda yaklaşık 3 metre olmak üzere 13-15 metreye ulaşır, yaprakları 80 cm'yi aşabilir. Ayrıca fotosentez yoluyla CO₂ tutma ve oksijen verme konusunda en verimli ağaçlardan biridir. ALTIFOLIA® çeşidimiz, Paulownia Elongata ve Paulownia Fortunei arasındaki bir melezlemeden doğmuştur ve sıcak bölgeler için seçilmiştir: kısa sürede büyük çaplı bir gövde geliştirir. Dikimde bitki başına 100 g EVERGREEN® ile birleştirildiğinde, gerekli sulama %50 azalır, ağacı hiçbir zaman su stresine maruz bırakmadan. Derin kök sistemi toprağı azotla zenginleştirir ve erozyonu önler; parazitlere ve hastalıklara karşı direnci doğal olarak yüksektir ve odun sadece 426 °C'den itibaren tutuşur, bu da onu aynı zamanda bir yangın bariyeri yapar. Fideler (teslimde 25-30 cm, saksıda, hastalıksız sertifikalı, ölüm durumunda garantili) 6 hafta içinde havayoluyla taşınır, ardından damla sulamayla dikimden önce 6 hafta serada geçirmelidir. İlk kesim altıncı yılın sonunda gerçekleşir, m³ başına 400-450 € değerinde odun için; bu çeşidi yıllardır, özellikle İspanya'da kendimiz dikiyoruz.",
+          more: "Paulownia ALTIFOLIA®, dünyanın en hızlı büyüyen ağacıdır: iyi koşullar altında, altı ila sekiz yılda, yılda yaklaşık 3 metre olmak üzere 13-15 metreye, sonrasında 20 metreye ulaşır, yaprakları 80 cm'yi aşabilir. Ayrıca fotosentez yoluyla CO₂ tutma ve oksijen verme konusunda en verimli ağaçlardan biridir. ALTIFOLIA® çeşidimiz, Paulownia Elongata ve Paulownia Fortunei arasındaki bir melezlemeden doğmuştur ve sıcak bölgeler için seçilmiştir: kısa sürede büyük çaplı bir gövde geliştirir. Dikimde bitki başına 100 g EVERGREEN® ile birleştirildiğinde, gerekli sulama %50 azalır, ağacı hiçbir zaman su stresine maruz bırakmadan. Derin kök sistemi toprağı azotla zenginleştirir ve erozyonu önler; parazitlere ve hastalıklara karşı direnci doğal olarak yüksektir ve odun sadece 426 °C'den itibaren tutuşur, bu da onu aynı zamanda bir yangın bariyeri yapar. Fideler (teslimde 25-30 cm, saksıda, hastalıksız sertifikalı, ölüm durumunda garantili) 6 hafta içinde havayoluyla taşınır, ardından damla sulamayla dikimden önce 6 hafta serada geçirmelidir. İlk kesim altıncı yılın sonunda gerçekleşir, m³ başına 400-450 € değerinde odun için; bu çeşidi yıllardır, özellikle İspanya'da kendimiz dikiyoruz.",
           detail: {
             sections: [
               {
                 h: "Temel ilke",
-                p: "Paulownia ALTIFOLIA®, dünyanın en hızlı büyüyen ağacıdır: iyi koşullar altında, altı ila sekiz yılda, yılda yaklaşık 3 metre olmak üzere 13-15 metreye ulaşır, yaprakları 80 cm'yi aşabilir. Ayrıca fotosentez yoluyla CO₂ tutma ve oksijen verme konusunda en verimli ağaçlardan biridir. ALTIFOLIA® çeşidimiz, Paulownia Elongata ve Paulownia Fortunei arasındaki bir melezlemeden doğmuştur ve sıcak bölgeler için seçilmiştir: kısa sürede büyük çaplı bir gövde geliştirir. Dikimde bitki başına 100 g EVERGREEN® ile birleştirildiğinde, gerekli sulama %50 azalır, ağacı hiçbir zaman su stresine maruz bırakmadan.",
+                p: "Paulownia ALTIFOLIA®, dünyanın en hızlı büyüyen ağacıdır: iyi koşullar altında, altı ila sekiz yılda, yılda yaklaşık 3 metre olmak üzere 13-15 metreye, sonrasında 20 metreye ulaşır, yaprakları 80 cm'yi aşabilir. Ayrıca fotosentez yoluyla CO₂ tutma ve oksijen verme konusunda en verimli ağaçlardan biridir. ALTIFOLIA® çeşidimiz, Paulownia Elongata ve Paulownia Fortunei arasındaki bir melezlemeden doğmuştur ve sıcak bölgeler için seçilmiştir: kısa sürede büyük çaplı bir gövde geliştirir. Dikimde bitki başına 100 g EVERGREEN® ile birleştirildiğinde, gerekli sulama %50 azalır, ağacı hiçbir zaman su stresine maruz bırakmadan.",
               },
               {
                 h: "Sıcak bölgeler için tasarlanmış bir seçim",
@@ -6598,8 +6598,8 @@ const baseContent = {
       lede: "Tarım-endüstri grupları, kooperatifler ve iki Amerikan üniversitesi, kendi arazilerinde ve kendi ürünlerinde teknolojilerimiz üzerinde denemeler yürütüyor. Eylül 2026 itibarıyla işte bunlar.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Şeker kamışı", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Gainesville Üniversitesi", place: "Florida, ABD", crop: "Kırmızı akçaağaç plantasyonu", tech: ["EVERGREEN®"] },
-        { org: "Portland Üniversitesi", place: "Oregon, ABD", crop: "Douglas çamı plantasyonu", tech: ["EVERGREEN®"] },
+        { org: "Florida Üniversitesi, Gainesville", place: "Florida, ABD", crop: "Kırmızı akçaağaç plantasyonu", tech: ["EVERGREEN®"] },
+        { org: "Oregon Eyalet Üniversitesi, Corvallis", place: "Oregon, ABD", crop: "Douglas çamı plantasyonu", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Birleşik Krallık · Toledo, İspanya", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "ZARROUK Grubu", place: "Tunus", crop: "Domates yetiştiriciliği", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Korsika, Fransa", crop: "Zeytin ve fındık ağaçları", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -6680,9 +6680,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Bizimle çalışıyorlar",
-      title: "38 ülkede bir ağ",
+      title: "39 ülkede bir ağ",
       lede: "Beş kıtada bulunan üreticiler, kooperatifler, su arıtma uzmanları, üniversiteler ve araştırma enstitüleri.",
-      mapAriaLabel: "Green Solutions ağının 38 ülkedeki haritası",
+      mapAriaLabel: "Green Solutions ağının 39 ülkedeki haritası",
     },
     countryStudies: {
       eyebrow: "Ülke yaklaşımı",
@@ -6808,8 +6808,8 @@ const baseContent = {
       "Fransa", "Güney Afrika", "Tunus", "İtalya", "Birleşik Krallık", "Kanada", "İspanya", "Mali",
       "Karayipler", "ABD", "Kamerun", "Gine", "Senegal", "Fas", "Gine-Bissau", "Brezilya",
       "Suudi Arabistan", "Umman Sultanlığı", "Kongo", "Fildişi Sahili", "Güney Sudan", "Polonya", "Yunanistan", "Portekiz",
-      "Birleşik Arap Emirlikleri", "Meksika", "Türkiye", "Endonezya", "Çin",
-      "Cezayir", "Arjantin", "Şili", "Gabon", "Gana", "Ürdün", "Kuveyt", "Hırvatistan",
+      "Birleşik Arap Emirlikleri", "Meksika", "Türkiye", "Endonezya", "Çin", "Mısır",
+      "Cezayir", "Arjantin", "Şili", "Gabon", "Gana", "Ürdün", "Kuveyt", "Hırvatistan", "Madagaskar",
     ],
   },
   pl: {
@@ -6931,21 +6931,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 do +100%", label: "plonu, zarówno w ilości, jak i jakości" },
-      { figure: "−50 do −70%", label: "zapotrzebowania na wodę do nawadniania" },
-      { figure: "14", label: "prób pilotażowych w toku w 2026 roku" },
+      { figure: "−40 do −70%", label: "zapotrzebowania na wodę do nawadniania" },
+      { figure: "15", label: "prób pilotażowych w toku w 2026 roku" },
       { figure: "SOHISCERT", label: "i EU Bio, prawdziwe certyfikaty" },
     ],
     presentation: {
       eyebrow: "Nasze podejście",
-      title1: "Nasze cztery technologie",
+      title1: "Nasze pięć technologii",
       title2: "Jeden cel",
       title3: "Wzrost i jakość",
       lede: "Green Solutions opracowuje i dystrybuuje przełomowe technologie rolnicze, zaprojektowane, aby zwiększać produktywność przy jednoczesnym zachowaniu, a nawet regeneracji, zasobów naturalnych, od których ta produktywność zależy. Konkretne rozwiązania, sprawdzone w terenie, na stres wodny, wyjałowienie gleb, rentowność i bezpieczeństwo żywnościowe.",
       tagline: "Wszystkie nasze przełomowe rozwiązania nadają się do każdej rośliny i uprawy, w każdym klimacie i na każdym rodzaju gleby!",
       stats: [
         { num: "30", label: "partnerów" },
-        { num: "38", label: "krajów" },
-        { num: "4", label: "opatentowane technologie" },
+        { num: "39", label: "krajów" },
+        { num: "5", label: "opatentowane technologie" },
       ],
       distinguish: [
         { num: "01", title: "Certyfikowane, nie tylko deklarowane", text: "SOHISCERT · EU Bio, zgodne z rolnictwem ekologicznym." },
@@ -6957,7 +6957,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "Co Państwa tu sprowadza?",
       title1: "Dwa możliwe kierunki:",
-      title2: "Próbować przetrwać, albo iść naprzód.",
+      title2: "Z jednej strony próbować przetrwać, z drugiej iść naprzód.",
       tabLabel: "Trwać czy iść naprzód",
       tabTenir: "01 · Nic nie zmieniać",
       tabAvancer: "02 · Reagować i wygrywać",
@@ -6984,7 +6984,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Uczynić zalesianie dochodowym: Paulownia ALTIFOLIA® osiąga 13-15 m w sześć do ośmiu lat, a jej drewno jest wyceniane na około 550 €/m³, co daje rentowność przy sześcioletniej uprawie.",
+          text: "Uczynić zalesianie dochodowym: Paulownia ALTIFOLIA® osiąga 13-15 m w sześć do ośmiu lat, później nawet 20 m, a jej drewno jest wyceniane na około 550 €/m³, co daje rentowność przy sześcioletniej uprawie.",
           linkLabel: "Zobacz Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -7008,22 +7008,22 @@ const baseContent = {
           title: "EVERGREEN® & ECOSORB®",
           text: "Nasze hydrożele retencyjne wychwytują wodę deszczową lub nawadniającą i magazynują ją w formie żelu jak najbliżej korzeni, nie zmieniając jej jakości. Stały rezerwuar, dostępny dla rośliny niezależnie od gleby czy klimatu, który eliminuje stres wodny w krytycznych fazach cyklu.",
           facts: [
-            "−50 do −70% wody w zależności od rodzaju nawadniania",
-            "EVERGREEN®: WAC (zdolność absorpcji wody) 300X, 3 lata w glebie",
-            "ECOSORB®: 300 razy więcej niż jego własna masa, na bazie skrobi kukurydzianej, 2-3 lata",
+            "−40 do −70% wody w zależności od rodzaju nawadniania",
+            "EVERGREEN®: około 300 razy więcej wody niż jego masa, 3-4 lata w glebie",
+            "ECOSORB®: około 300 razy więcej niż jego własna masa, na bazie skrobi kukurydzianej, 2-3 lata",
             "Rozkłada się w 20-25% rocznie, brak ryzyka przedawkowania",
             "Trzcina cukrowa: +25% zawartości cukru (Brix) przy 15 kg/ha",
           ],
-          more: "EVERGREEN® i ECOSORB® to superabsorbujące polimery, które ulegają całkowitej biodegradacji, nie pozostawiając żadnych pozostałości w glebie ani na roślinach. Wchłaniają do 300-400 razy więcej wody niż wynosi ich masa i oddają ją korzeniom zgodnie z potrzebami uprawy, cykl po cyklu, aż do ich naturalnego rozkładu (20-25% rocznie) na CO₂, wodę i przyswajalne związki azotowe. W przeciwieństwie do hydrożeli na bazie sodu — które po nawodnieniu tworzą duszącą i słoną pastę dla korzeni — lub formuł na bazie akryloamidu, zakazanych w wielu krajach ze względu na toksyczność, nasze dwa produkty są oparte na potasie, kompatybilne z uprawami spożywczymi. W kontakcie z wodą suche ziarno pęcznieje: ten efekt „w tę i z powrotem” rozluźnia glebę tak jak zrobiłby to dżdżownica, poprawia jej przepuszczalność i tworzy wilgotny mikroklimat sprzyjający mikrofaunie i mikroflorze, motorom naturalnej żyzności. Rozpuszczone nawozy są wychwytywane po drodze zamiast być wypłukiwane do wód gruntowych, co zmniejsza zanieczyszczenie i pozwala lepiej wykorzystać każdą aplikację. W połączeniu z naszymi nawozami ECOFERT®, EVERGREEN® i ECOSORB® tworzą kompletny system, który pozwolił, w przypadku trzciny cukrowej, uzyskać wzrost zawartości cukru (Brix) o 25% przy zaledwie 15 kg produktu na hektar. Ponad 95% sadzonek przesadzonych z naszymi hydrożelami retencyjnymi przyjmuje się, wobec wyraźnie niższego wskaźnika w warunkach konwencjonalnych.",
+          more: "EVERGREEN® i ECOSORB® to superabsorbujące polimery, które ulegają całkowitej biodegradacji, nie pozostawiając żadnych pozostałości w glebie ani na roślinach. Wchłaniają około 300 razy więcej wody niż wynosi ich masa i oddają ją korzeniom zgodnie z potrzebami uprawy, cykl po cyklu, aż do ich naturalnego rozkładu (20-25% rocznie) na CO₂, wodę i przyswajalne związki azotowe. W przeciwieństwie do hydrożeli na bazie sodu — które po nawodnieniu tworzą duszącą i słoną pastę dla korzeni — lub formuł na bazie akryloamidu, zakazanych w wielu krajach ze względu na toksyczność, nasze dwa produkty są oparte na potasie, kompatybilne z uprawami spożywczymi. W kontakcie z wodą suche ziarno pęcznieje: ten efekt „w tę i z powrotem” rozluźnia glebę tak jak zrobiłby to dżdżownica, poprawia jej przepuszczalność i tworzy wilgotny mikroklimat sprzyjający mikrofaunie i mikroflorze, motorom naturalnej żyzności. Rozpuszczone nawozy są wychwytywane po drodze zamiast być wypłukiwane do wód gruntowych, co zmniejsza zanieczyszczenie i pozwala lepiej wykorzystać każdą aplikację. W połączeniu z naszymi nawozami ECOFERT®, EVERGREEN® i ECOSORB® tworzą kompletny system, który pozwolił, w przypadku trzciny cukrowej, uzyskać wzrost zawartości cukru (Brix) o 25% przy zaledwie 15 kg produktu na hektar. Ponad 95% sadzonek przesadzonych z naszymi hydrożelami retencyjnymi przyjmuje się, wobec wyraźnie niższego wskaźnika w warunkach konwencjonalnych.",
           detail: {
             sections: [
               {
                 h: "Zasada działania",
-                p: "EVERGREEN® i ECOSORB® to superabsorbujące polimery, które ulegają całkowitej biodegradacji, nie pozostawiając żadnych pozostałości w glebie ani na roślinach. Wchłaniają do 300-400 razy więcej wody niż wynosi ich masa i oddają ją korzeniom zgodnie z potrzebami uprawy, cykl po cyklu, aż do ich naturalnego rozkładu (20-25% rocznie) na CO₂, wodę i przyswajalne związki azotowe. W przeciwieństwie do hydrożeli na bazie sodu — które po nawodnieniu tworzą duszącą i słoną pastę dla korzeni — lub formuł na bazie akryloamidu, zakazanych w wielu krajach ze względu na toksyczność, nasze dwa produkty są oparte na potasie, kompatybilne z uprawami spożywczymi. W kontakcie z wodą suche ziarno pęcznieje: ten efekt „w tę i z powrotem” rozluźnia glebę tak jak zrobiłby to dżdżownica, poprawia jej przepuszczalność i tworzy wilgotny mikroklimat sprzyjający mikrofaunie i mikroflorze, motorom naturalnej żyzności. Rozpuszczone nawozy są wychwytywane po drodze zamiast być wypłukiwane do wód gruntowych, co zmniejsza zanieczyszczenie i pozwala lepiej wykorzystać każdą aplikację. W połączeniu z naszymi nawozami ECOFERT®, EVERGREEN® i ECOSORB® tworzą kompletny system, który pozwolił, w przypadku trzciny cukrowej, uzyskać wzrost zawartości cukru (Brix) o 25% przy zaledwie 15 kg produktu na hektar. Ponad 95% sadzonek przesadzonych z naszymi hydrożelami retencyjnymi przyjmuje się, wobec wyraźnie niższego wskaźnika w warunkach konwencjonalnych.",
+                p: "EVERGREEN® i ECOSORB® to superabsorbujące polimery, które ulegają całkowitej biodegradacji, nie pozostawiając żadnych pozostałości w glebie ani na roślinach. Wchłaniają około 300 razy więcej wody niż wynosi ich masa i oddają ją korzeniom zgodnie z potrzebami uprawy, cykl po cyklu, aż do ich naturalnego rozkładu (20-25% rocznie) na CO₂, wodę i przyswajalne związki azotowe. W przeciwieństwie do hydrożeli na bazie sodu — które po nawodnieniu tworzą duszącą i słoną pastę dla korzeni — lub formuł na bazie akryloamidu, zakazanych w wielu krajach ze względu na toksyczność, nasze dwa produkty są oparte na potasie, kompatybilne z uprawami spożywczymi. W kontakcie z wodą suche ziarno pęcznieje: ten efekt „w tę i z powrotem” rozluźnia glebę tak jak zrobiłby to dżdżownica, poprawia jej przepuszczalność i tworzy wilgotny mikroklimat sprzyjający mikrofaunie i mikroflorze, motorom naturalnej żyzności. Rozpuszczone nawozy są wychwytywane po drodze zamiast być wypłukiwane do wód gruntowych, co zmniejsza zanieczyszczenie i pozwala lepiej wykorzystać każdą aplikację. W połączeniu z naszymi nawozami ECOFERT®, EVERGREEN® i ECOSORB® tworzą kompletny system, który pozwolił, w przypadku trzciny cukrowej, uzyskać wzrost zawartości cukru (Brix) o 25% przy zaledwie 15 kg produktu na hektar. Ponad 95% sadzonek przesadzonych z naszymi hydrożelami retencyjnymi przyjmuje się, wobec wyraźnie niższego wskaźnika w warunkach konwencjonalnych.",
               },
               {
                 h: "Mechanizm, szczegółowo",
-                p: "W kontakcie z wodą — deszczową, nawadniającą lub resztkową wilgocią gleby — suche ziarno hydrożelu retencyjnego wchłania do 300-400 razy więcej niż wynosi jego masa, zamieniając się w żel, który magazynuje wodę jak najbliżej korzeni. Pierwsze trzy tygodnie uprawy są krytyczne: należy utrzymać normalne nawadnianie, aby całkowicie nasycić ziarna, w tym czasie korzenie roślin splatają się z żelem i zakotwiczają się w tym rezerwuarze wody. EVERGREEN® i ECOSORB® w żaden sposób nie są toksyczne dla skóry; jedynie ich drobna granulacja wymaga noszenia maski przeciwpyłowej podczas manipulacji. W przypadku przypadkowego rozsypania, pozostałości zdmuchuje się sprężonym powietrzem, a nie spłukuje wodą, co uczyniłoby glebę śliską.",
+                p: "W kontakcie z wodą — deszczową, nawadniającą lub resztkową wilgocią gleby — suche ziarno hydrożelu retencyjnego wchłania około 300 razy więcej niż wynosi jego masa, zamieniając się w żel, który magazynuje wodę jak najbliżej korzeni. Pierwsze trzy tygodnie uprawy są krytyczne: należy utrzymać normalne nawadnianie, aby całkowicie nasycić ziarna, w tym czasie korzenie roślin splatają się z żelem i zakotwiczają się w tym rezerwuarze wody. EVERGREEN® i ECOSORB® w żaden sposób nie są toksyczne dla skóry; jedynie ich drobna granulacja wymaga noszenia maski przeciwpyłowej podczas manipulacji. W przypadku przypadkowego rozsypania, pozostałości zdmuchuje się sprężonym powietrzem, a nie spłukuje wodą, co uczyniłoby glebę śliską.",
               },
               {
                 h: "Gdzie i jak ich używać",
@@ -7145,19 +7145,19 @@ const baseContent = {
           num: "05",
           kicker: "Sadzenie na długie lata",
           title: "Paulownia ALTIFOLIA®",
-          text: "Najszybciej rosnące drzewo na świecie: 13-15 m w sześć do ośmiu lat, prawie 3 m rocznie. W połączeniu z naszym hydrożelem retencyjnym EVERGREEN®, zmniejsza zapotrzebowanie na wodę do nawadniania o 50%. Sterylne i nieinwazyjne odmiany hybrydowe, którym towarzyszymy od młodej sadzonki aż do sprzedaży drewna.",
+          text: "Najszybciej rosnące drzewo na świecie: 13-15 m w sześć do ośmiu lat, później nawet 20 m, prawie 3 m rocznie. W połączeniu z naszym hydrożelem retencyjnym EVERGREEN®, zmniejsza zapotrzebowanie na wodę do nawadniania o 50%. Sterylne i nieinwazyjne odmiany hybrydowe, którym towarzyszymy od młodej sadzonki aż do sprzedaży drewna.",
           facts: [
             "400-500 drzew/ha, wycenianych na 400-450 € za m³",
             "Rentowność przy sześcioletniej uprawie",
             "Wytrzymuje od −25 °C do +45 °C, zapala się dopiero w 426 °C",
             "400-700 kg miodu na hektar oraz kredyty węglowe",
           ],
-          more: "Paulownia ALTIFOLIA® to najszybciej rosnące drzewo na świecie: w dobrych warunkach osiąga 13-15 metrów w sześć do ośmiu lat, czyli około 3 metry rocznie, z liśćmi, które mogą przekraczać 80 cm długości. Jest to również jedno z najskuteczniejszych drzew w pochłanianiu CO₂ i oddawaniu tlenu poprzez fotosyntezę. Nasza odmiana ALTIFOLIA®, powstała ze skrzyżowania Paulownia Elongata i Paulownia Fortunei, została wyselekcjonowana pod kątem ciepłych regionów: rozwija pień o dużej średnicy w krótkim czasie. W połączeniu ze 100 g EVERGREEN® na sadzonkę przy sadzeniu wymagane nawadnianie spada o 50%, nigdy nie narażając drzewa na stres wodny. Jego głęboki system korzeniowy wzbogaca glebę w azot i zapobiega erozji; jego odporność na pasożyty i choroby jest naturalnie wysoka, a drewno zapala się dopiero od 426 °C, co czyni je również barierą przeciwpożarową. Sadzonki (25-30 cm przy dostawie, w doniczce, certyfikowane jako wolne od chorób, gwarantowane w przypadku śmiertelności) są transportowane drogą lotniczą w ciągu 6 tygodni, a następnie muszą spędzić 6 tygodni w szklarni przed posadzeniem z nawadnianiem kroplowym. Pierwsze wycinka następuje pod koniec szóstego roku, dla drewna wycenianego na 400-450 € za m³; sami uprawiamy tę odmianę od wielu lat, szczególnie w Hiszpanii.",
+          more: "Paulownia ALTIFOLIA® to najszybciej rosnące drzewo na świecie: w dobrych warunkach osiąga 13-15 metrów w sześć do ośmiu lat, a później nawet 20 metrów, czyli około 3 metry rocznie, z liśćmi, które mogą przekraczać 80 cm długości. Jest to również jedno z najskuteczniejszych drzew w pochłanianiu CO₂ i oddawaniu tlenu poprzez fotosyntezę. Nasza odmiana ALTIFOLIA®, powstała ze skrzyżowania Paulownia Elongata i Paulownia Fortunei, została wyselekcjonowana pod kątem ciepłych regionów: rozwija pień o dużej średnicy w krótkim czasie. W połączeniu ze 100 g EVERGREEN® na sadzonkę przy sadzeniu wymagane nawadnianie spada o 50%, nigdy nie narażając drzewa na stres wodny. Jego głęboki system korzeniowy wzbogaca glebę w azot i zapobiega erozji; jego odporność na pasożyty i choroby jest naturalnie wysoka, a drewno zapala się dopiero od 426 °C, co czyni je również barierą przeciwpożarową. Sadzonki (25-30 cm przy dostawie, w doniczce, certyfikowane jako wolne od chorób, gwarantowane w przypadku śmiertelności) są transportowane drogą lotniczą w ciągu 6 tygodni, a następnie muszą spędzić 6 tygodni w szklarni przed posadzeniem z nawadnianiem kroplowym. Pierwsze wycinka następuje pod koniec szóstego roku, dla drewna wycenianego na 400-450 € za m³; sami uprawiamy tę odmianę od wielu lat, szczególnie w Hiszpanii.",
           detail: {
             sections: [
               {
                 h: "Zasada działania",
-                p: "Paulownia ALTIFOLIA® to najszybciej rosnące drzewo na świecie: w dobrych warunkach osiąga 13-15 metrów w sześć do ośmiu lat, czyli około 3 metry rocznie, z liśćmi, które mogą przekraczać 80 cm długości. Jest to również jedno z najskuteczniejszych drzew w pochłanianiu CO₂ i oddawaniu tlenu poprzez fotosyntezę. Nasza odmiana ALTIFOLIA®, powstała ze skrzyżowania Paulownia Elongata i Paulownia Fortunei, została wyselekcjonowana pod kątem ciepłych regionów: rozwija pień o dużej średnicy w krótkim czasie. W połączeniu ze 100 g EVERGREEN® na sadzonkę przy sadzeniu wymagane nawadnianie spada o 50%, nigdy nie narażając drzewa na stres wodny.",
+                p: "Paulownia ALTIFOLIA® to najszybciej rosnące drzewo na świecie: w dobrych warunkach osiąga 13-15 metrów w sześć do ośmiu lat, a później nawet 20 metrów, czyli około 3 metry rocznie, z liśćmi, które mogą przekraczać 80 cm długości. Jest to również jedno z najskuteczniejszych drzew w pochłanianiu CO₂ i oddawaniu tlenu poprzez fotosyntezę. Nasza odmiana ALTIFOLIA®, powstała ze skrzyżowania Paulownia Elongata i Paulownia Fortunei, została wyselekcjonowana pod kątem ciepłych regionów: rozwija pień o dużej średnicy w krótkim czasie. W połączeniu ze 100 g EVERGREEN® na sadzonkę przy sadzeniu wymagane nawadnianie spada o 50%, nigdy nie narażając drzewa na stres wodny.",
               },
               {
                 h: "Odmiana zaprojektowana dla ciepłych regionów",
@@ -7217,8 +7217,8 @@ const baseContent = {
       lede: "Grupy agroprzemysłowe, spółdzielnie i dwa amerykańskie uniwersytety prowadzą obecnie próby naszych technologii na własnych działkach i własnych uprawach. Oto one, według stanu na wrzesień 2026 roku.",
       pilots: [
         { org: "Trois Rivières", place: "Martynika", crop: "Trzcina cukrowa", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Uniwersytet Gainesville", place: "Floryda, USA", crop: "Plantacja klonów czerwonych", tech: ["EVERGREEN®"] },
-        { org: "Uniwersytet Portland", place: "Oregon, USA", crop: "Plantacja sosny Douglasa", tech: ["EVERGREEN®"] },
+        { org: "Uniwersytet Florydy w Gainesville", place: "Floryda, USA", crop: "Plantacja klonów czerwonych", tech: ["EVERGREEN®"] },
+        { org: "Uniwersytet Stanowy Oregonu w Corvallis", place: "Oregon, USA", crop: "Plantacja daglezji", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Wielka Brytania · Toledo, Hiszpania", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Grupa ZARROUK", place: "Tunezja", crop: "Uprawa pomidorów", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Korsyka, Francja", crop: "Drzewa oliwne i leszczyny", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -7299,9 +7299,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Współpracują z nami",
-      title: "Sieć w 38 krajach",
+      title: "Sieć w 39 krajach",
       lede: "Producenci, spółdzielnie, specjaliści od uzdatniania wody, uniwersytety i instytuty badawcze, obecni na pięciu kontynentach.",
-      mapAriaLabel: "Mapa sieci Green Solutions w 38 krajach",
+      mapAriaLabel: "Mapa sieci Green Solutions w 39 krajach",
     },
     countryStudies: {
       eyebrow: "Podejście według kraju",
@@ -7427,8 +7427,8 @@ const baseContent = {
       "Francja", "Republika Południowej Afryki", "Tunezja", "Włochy", "Wielka Brytania", "Kanada", "Hiszpania", "Mali",
       "Karaiby", "Stany Zjednoczone", "Kamerun", "Gwinea", "Senegal", "Maroko", "Gwinea Bissau", "Brazylia",
       "Arabia Saudyjska", "Sułtanat Omanu", "Kongo", "Wybrzeże Kości Słoniowej", "Sudan Południowy", "Polska", "Grecja", "Portugalia",
-      "Zjednoczone Emiraty Arabskie", "Meksyk", "Turcja", "Indonezja", "Chiny",
-      "Algieria", "Argentyna", "Chile", "Gabon", "Ghana", "Jordania", "Kuwejt", "Chorwacja",
+      "Zjednoczone Emiraty Arabskie", "Meksyk", "Turcja", "Indonezja", "Chiny", "Egipt",
+      "Algieria", "Argentyna", "Chile", "Gabon", "Ghana", "Jordania", "Kuwejt", "Chorwacja", "Madagaskar",
     ],
   },
   hr: {
@@ -7550,21 +7550,21 @@ const baseContent = {
     },
     proofBar: [
       { figure: "+30 do +100 %", label: "prinosa, i u količini i u kakvoći" },
-      { figure: "−50 do −70 %", label: "potrebe za vodom za navodnjavanje" },
-      { figure: "14", label: "pilot-pokusa u tijeku u 2026." },
+      { figure: "−40 do −70 %", label: "potrebe za vodom za navodnjavanje" },
+      { figure: "15", label: "pilot-pokusa u tijeku u 2026." },
       { figure: "SOHISCERT", label: "i EU Bio, stvarni certifikati" },
     ],
     presentation: {
       eyebrow: "Naš pristup",
-      title1: "Naše četiri tehnologije",
+      title1: "Naših pet tehnologija",
       title2: "Jedan cilj",
       title3: "Rast i kakvoća",
       lede: "Green Solutions razvija i distribuira disruptivne poljoprivredne tehnologije, osmišljene da povećaju produktivnost uz očuvanje, pa i obnovu, prirodnih resursa o kojima ta produktivnost ovisi. Konkretni odgovori, provjereni na terenu, na vodni stres, iscrpljivanje tala, isplativost i sigurnost opskrbe hranom.",
       tagline: "Sva naša disruptivna rješenja primjenjiva su na sve biljke i kulture, u svim klimama i na svim tipovima tla!",
       stats: [
         { num: "30", label: "partnera" },
-        { num: "38", label: "država" },
-        { num: "4", label: "tehnologije pod markom" },
+        { num: "39", label: "država" },
+        { num: "5", label: "tehnologije pod markom" },
       ],
       distinguish: [
         { num: "01", title: "Certificirano, ne samo najavljeno", text: "SOHISCERT · EU Bio, primjenjivo u ekološkoj poljoprivredi." },
@@ -7576,7 +7576,7 @@ const baseContent = {
     tenirAvancer: {
       eyebrow: "Što vas dovodi k nama?",
       title1: "Dva moguća smjera:",
-      title2: "Pokušati preživjeti ili krenuti naprijed.",
+      title2: "S jedne strane pokušati preživjeti, s druge krenuti naprijed.",
       tabLabel: "Izdržati ili napredovati",
       tabTenir: "01 · Ne mijenjati ništa",
       tabAvancer: "02 · Reagirati i dobiti",
@@ -7603,7 +7603,7 @@ const baseContent = {
           linkHref: "#agroforesterie",
         },
         {
-          text: "Učiniti pošumljavanje isplativim: Paulownia ALTIFOLIA® doseže 13 do 15 m u šest do osam godina, a njezino se drvo vrednuje oko 550 €/m³, uz isplativost nakon šest godina uzgoja.",
+          text: "Učiniti pošumljavanje isplativim: Paulownia ALTIFOLIA® doseže 13 do 15 m u šest do osam godina, poslije i do 20 m, a njezino se drvo vrednuje oko 550 €/m³, uz isplativost nakon šest godina uzgoja.",
           linkLabel: "Pogledajte Paulownia ALTIFOLIA®",
           linkHref: "#paulownia",
         },
@@ -7627,22 +7627,22 @@ const baseContent = {
           title: "EVERGREEN® i ECOSORB®",
           text: "Naši hidroretenteri hvataju kišnicu ili vodu za navodnjavanje i pohranjuju je u obliku gela neposredno uz korijenje, ne mijenjajući joj kakvoću. Trajni spremnik, dostupan biljci bez obzira na tlo i klimu, koji uklanja vodni stres u kritičnim fazama ciklusa.",
           facts: [
-            "−50 do −70 % vode ovisno o načinu navodnjavanja",
-            "EVERGREEN®: WAC (kapacitet upijanja vode) 300 X, 3 godine u tlu",
-            "ECOSORB®: 300 puta vlastite težine, na bazi kukuruznog škroba, 2 do 3 godine",
+            "−40 do −70 % vode ovisno o načinu navodnjavanja",
+            "EVERGREEN®: oko 300 puta vlastite težine u vodi, 3 do 4 godine u tlu",
+            "ECOSORB®: oko 300 puta vlastite težine, na bazi kukuruznog škroba, 2 do 3 godine",
             "Razgrađuje se 20 do 25 % godišnje, bez opasnosti od predoziranja",
             "Šećerna trska: +25 % udjela šećera (Brix) pri 15 kg/ha",
           ],
-          more: "EVERGREEN® i ECOSORB® superapsorbirajući su polimeri koji se potpuno biorazgrađuju, bez ostatka u tlu i na biljkama. Upijaju do 300 do 400 puta vlastite težine u vodi i vraćaju je korijenju prema potrebama kulture, ciklus za ciklusom, sve do prirodne razgradnje (20 do 25 % godišnje) u CO₂, vodu i pristupačne dušikove spojeve. Za razliku od hidroretentera na bazi natrija — koji, jednom navlaženi, tvore gustu i slanu masu koja guši korijenje — ili formulacija na bazi akrilamida, zabranjenih u mnogim državama zbog toksičnosti, obje naše reference izrađene su na bazi kalija i primjerene su prehrambenim kulturama. U dodiru s vodom suho zrno se napuni i nabubri: to naizmjenično bubrenje i skupljanje rahli tlo poput gujavice, poboljšava njegovu propusnost i stvara vlažnu mikroklimu pogodnu za mikrofaunu i mikrofloru, pokretače prirodne plodnosti. Otopljena gnojiva zadržavaju se usput umjesto da se ispiru u podzemne vode, što smanjuje onečišćenje i omogućuje bolje vrednovanje svake primjene. U kombinaciji s našim gnojivima ECOFERT®, EVERGREEN® i ECOSORB® tvore cjelovit sustav koji je kod šećerne trske omogućio povećanje udjela šećera (Brix) od 25 % uz samo 15 kg proizvoda po hektaru. Više od 95 % presađenih sadnica primi se uz naše hidroretentere, naspram znatno niže stope u konvencionalnim uvjetima.",
+          more: "EVERGREEN® i ECOSORB® superapsorbirajući su polimeri koji se potpuno biorazgrađuju, bez ostatka u tlu i na biljkama. Upijaju oko 300 puta vlastite težine u vodi i vraćaju je korijenju prema potrebama kulture, ciklus za ciklusom, sve do prirodne razgradnje (20 do 25 % godišnje) u CO₂, vodu i pristupačne dušikove spojeve. Za razliku od hidroretentera na bazi natrija — koji, jednom navlaženi, tvore gustu i slanu masu koja guši korijenje — ili formulacija na bazi akrilamida, zabranjenih u mnogim državama zbog toksičnosti, obje naše reference izrađene su na bazi kalija i primjerene su prehrambenim kulturama. U dodiru s vodom suho zrno se napuni i nabubri: to naizmjenično bubrenje i skupljanje rahli tlo poput gujavice, poboljšava njegovu propusnost i stvara vlažnu mikroklimu pogodnu za mikrofaunu i mikrofloru, pokretače prirodne plodnosti. Otopljena gnojiva zadržavaju se usput umjesto da se ispiru u podzemne vode, što smanjuje onečišćenje i omogućuje bolje vrednovanje svake primjene. U kombinaciji s našim gnojivima ECOFERT® čine cjelovit sustav koji je kod šećerne trske donio 25 % više šećera (Brix) uz samo 15 kg proizvoda po hektaru. Više od 95 % presađenih sadnica s našim hidroretenterima primi se, znatno više nego u uobičajenim uvjetima. U kombinaciji s našim gnojivima ECOFERT®, EVERGREEN® i ECOSORB® tvore cjelovit sustav koji je kod šećerne trske omogućio povećanje udjela šećera (Brix) od 25 % uz samo 15 kg proizvoda po hektaru. Više od 95 % presađenih sadnica primi se uz naše hidroretentere, naspram znatno niže stope u konvencionalnim uvjetima.",
           detail: {
             sections: [
               {
                 h: "Načelo",
-                p: "EVERGREEN® i ECOSORB® superapsorbirajući su polimeri koji se potpuno biorazgrađuju, bez ostatka u tlu i na biljkama. Upijaju do 300 do 400 puta vlastite težine u vodi i vraćaju je korijenju prema potrebama kulture, ciklus za ciklusom, sve do prirodne razgradnje (20 do 25 % godišnje) u CO₂, vodu i pristupačne dušikove spojeve. Za razliku od hidroretentera na bazi natrija — koji, jednom navlaženi, tvore gustu i slanu masu koja guši korijenje — ili formulacija na bazi akrilamida, zabranjenih u mnogim državama zbog toksičnosti, obje naše reference izrađene su na bazi kalija i primjerene su prehrambenim kulturama. U dodiru s vodom suho zrno se napuni i nabubri: to naizmjenično bubrenje i skupljanje rahli tlo poput gujavice, poboljšava njegovu propusnost i stvara vlažnu mikroklimu pogodnu za mikrofaunu i mikrofloru, pokretače prirodne plodnosti. Otopljena gnojiva zadržavaju se usput umjesto da se ispiru u podzemne vode, što smanjuje onečišćenje i omogućuje bolje vrednovanje svake primjene.",
+                p: "EVERGREEN® i ECOSORB® superapsorbirajući su polimeri koji se potpuno biorazgrađuju, bez ostatka u tlu i na biljkama. Upijaju oko 300 puta vlastite težine u vodi i vraćaju je korijenju prema potrebama kulture, ciklus za ciklusom, sve do prirodne razgradnje (20 do 25 % godišnje) u CO₂, vodu i pristupačne dušikove spojeve. Za razliku od hidroretentera na bazi natrija — koji, jednom navlaženi, tvore gustu i slanu masu koja guši korijenje — ili formulacija na bazi akrilamida, zabranjenih u mnogim državama zbog toksičnosti, obje naše reference izrađene su na bazi kalija i primjerene su prehrambenim kulturama. U dodiru s vodom suho zrno se napuni i nabubri: to naizmjenično bubrenje i skupljanje rahli tlo poput gujavice, poboljšava njegovu propusnost i stvara vlažnu mikroklimu pogodnu za mikrofaunu i mikrofloru, pokretače prirodne plodnosti. Otopljena gnojiva zadržavaju se usput umjesto da se ispiru u podzemne vode, što smanjuje onečišćenje i omogućuje bolje vrednovanje svake primjene. U kombinaciji s našim gnojivima ECOFERT® čine cjelovit sustav koji je kod šećerne trske donio 25 % više šećera (Brix) uz samo 15 kg proizvoda po hektaru. Više od 95 % presađenih sadnica s našim hidroretenterima primi se, znatno više nego u uobičajenim uvjetima.",
               },
               {
                 h: "Mehanizam, potanko",
-                p: "U dodiru s vodom — kišom, navodnjavanjem ili preostalom vlagom tla — suho zrno hidroretentera upija do 300 do 400 puta vlastite težine i pretvara se u gel koji pohranjuje vodu neposredno uz korijenje. Prva tri tjedna uzgoja su ključna: treba održavati uobičajeno navodnjavanje kako bi se zrna potpuno zasitila, a za to se vrijeme korijenje biljaka isprepliće s gelom i usidruje u toj zalihi vode. EVERGREEN® i ECOSORB® ni u kojem slučaju nisu otrovni za kožu; samo njihova sitna granulacija nalaže nošenje maske protiv prašine pri rukovanju. U slučaju slučajnog prosipanja ostatke treba otpuhati komprimiranim zrakom, a ne ispirati vodom, koja bi tlo učinila skliskim.",
+                p: "U dodiru s vodom — kišom, navodnjavanjem ili preostalom vlagom tla — suho zrno hidroretentera upija oko 300 puta vlastite težine i pretvara se u gel koji pohranjuje vodu neposredno uz korijenje. Prva tri tjedna uzgoja su ključna: treba održavati uobičajeno navodnjavanje kako bi se zrna potpuno zasitila, a za to se vrijeme korijenje biljaka isprepliće s gelom i usidruje u toj zalihi vode. EVERGREEN® i ECOSORB® ni u kojem slučaju nisu otrovni za kožu; samo njihova sitna granulacija nalaže nošenje maske protiv prašine pri rukovanju. U slučaju slučajnog prosipanja ostatke treba otpuhati komprimiranim zrakom, a ne ispirati vodom, koja bi tlo učinila skliskim.",
               },
               {
                 h: "Gdje i kako ih primijeniti",
@@ -7764,19 +7764,19 @@ const baseContent = {
           num: "05",
           kicker: "Saditi da traje",
           title: "Paulownia ALTIFOLIA®",
-          text: "Najbrže rastuće stablo na svijetu: 13 do 15 m u šest do osam godina, gotovo 3 m godišnje. U kombinaciji s našim hidroretenterom EVERGREEN® smanjuje potrebu za vodom za navodnjavanje za 50 %. Sterilne i neinvazivne hibridne sorte, uz praćenje od mlade sadnice do prodaje drva.",
+          text: "Najbrže rastuće stablo na svijetu: 13 do 15 m u šest do osam godina, poslije i do 20 m, gotovo 3 m godišnje. U kombinaciji s našim hidroretenterom EVERGREEN® smanjuje potrebu za vodom za navodnjavanje za 50 %. Sterilne i neinvazivne hibridne sorte, uz praćenje od mlade sadnice do prodaje drva.",
           facts: [
             "400 do 500 stabala/ha, vrednovanih po 400/450 € po m³",
             "Isplativost nakon šest godina uzgoja",
             "Podnosi od −25 °C do +45 °C, gori tek na 426 °C",
             "400 do 700 kg meda po hektaru, uz ugljične kredite",
           ],
-          more: "Paulownia ALTIFOLIA® najbrže je rastuće stablo na svijetu: u dobrim uvjetima doseže 13 do 15 metara u šest do osam godina, otprilike 3 metra godišnje, s listovima koji mogu premašiti 80 cm duljine. Ujedno je jedno od najučinkovitijih stabala u vezivanju CO₂ i vraćanju kisika fotosintezom. Naša sorta ALTIFOLIA®, nastala križanjem vrsta Paulownia Elongata i Paulownia Fortunei, odabrana je za topla područja: u kratkom vremenu razvija deblo velikog promjera. Uz 100 g EVERGREEN®-a po sadnici pri sadnji potrebno navodnjavanje smanjuje se za 50 %, a da stablo nikada nije izloženo vodnom stresu. Njezin dubok korijenov sustav obogaćuje tlo dušikom i sprječava eroziju; otpornost na nametnike i bolesti prirodno je visoka, a drvo se zapali tek na 426 °C, što ga čini i protupožarnom preprekom. Sadnice (25 do 30 cm pri isporuci, u posudi, certificirano zdrave, uz jamstvo u slučaju uginuća) dopremaju se zrakoplovom u roku od 6 tjedana, a zatim moraju provesti 6 tjedana u stakleniku prije sadnje uz navodnjavanje kap po kap. Prva sječa dolazi na kraju šeste godine, uz drvo vrednovano po 400/450 € po m³; tu sortu i sami sadimo već nekoliko godina, osobito u Španjolskoj.",
+          more: "Paulownia ALTIFOLIA® najbrže je rastuće stablo na svijetu: u dobrim uvjetima doseže 13 do 15 metara u šest do osam godina, a poslije i do 20 metara, otprilike 3 metra godišnje, s listovima koji mogu premašiti 80 cm duljine. Ujedno je jedno od najučinkovitijih stabala u vezivanju CO₂ i vraćanju kisika fotosintezom. Naša sorta ALTIFOLIA®, nastala križanjem vrsta Paulownia Elongata i Paulownia Fortunei, odabrana je za topla područja: u kratkom vremenu razvija deblo velikog promjera. Uz 100 g EVERGREEN®-a po sadnici pri sadnji potrebno navodnjavanje smanjuje se za 50 %, a da stablo nikada nije izloženo vodnom stresu. Njezin dubok korijenov sustav obogaćuje tlo dušikom i sprječava eroziju; otpornost na nametnike i bolesti prirodno je visoka, a drvo se zapali tek na 426 °C, što ga čini i protupožarnom preprekom. Sadnice (25 do 30 cm pri isporuci, u posudi, certificirano zdrave, uz jamstvo u slučaju uginuća) dopremaju se zrakoplovom u roku od 6 tjedana, a zatim moraju provesti 6 tjedana u stakleniku prije sadnje uz navodnjavanje kap po kap. Prva sječa dolazi na kraju šeste godine, uz drvo vrednovano po 400/450 € po m³; tu sortu i sami sadimo već nekoliko godina, osobito u Španjolskoj.",
           detail: {
             sections: [
               {
                 h: "Načelo",
-                p: "Paulownia ALTIFOLIA® najbrže je rastuće stablo na svijetu: u dobrim uvjetima doseže 13 do 15 metara u šest do osam godina, otprilike 3 metra godišnje, s listovima koji mogu premašiti 80 cm duljine. Ujedno je jedno od najučinkovitijih stabala u vezivanju CO₂ i vraćanju kisika fotosintezom. Naša sorta ALTIFOLIA®, nastala križanjem vrsta Paulownia Elongata i Paulownia Fortunei, odabrana je za topla područja: u kratkom vremenu razvija deblo velikog promjera. Uz 100 g EVERGREEN®-a po sadnici pri sadnji potrebno navodnjavanje smanjuje se za 50 %, a da stablo nikada nije izloženo vodnom stresu.",
+                p: "Paulownia ALTIFOLIA® najbrže je rastuće stablo na svijetu: u dobrim uvjetima doseže 13 do 15 metara u šest do osam godina, a poslije i do 20 metara, otprilike 3 metra godišnje, s listovima koji mogu premašiti 80 cm duljine. Ujedno je jedno od najučinkovitijih stabala u vezivanju CO₂ i vraćanju kisika fotosintezom. Naša sorta ALTIFOLIA®, nastala križanjem vrsta Paulownia Elongata i Paulownia Fortunei, odabrana je za topla područja: u kratkom vremenu razvija deblo velikog promjera. Uz 100 g EVERGREEN®-a po sadnici pri sadnji potrebno navodnjavanje smanjuje se za 50 %, a da stablo nikada nije izloženo vodnom stresu.",
               },
               {
                 h: "Odabir osmišljen za topla područja",
@@ -7836,8 +7836,8 @@ const baseContent = {
       lede: "Agroindustrijske grupacije, zadruge i dva američka sveučilišta trenutačno provode pokuse s našim tehnologijama, na vlastitim parcelama i vlastitim kulturama. Evo kojih, u rujnu 2026.",
       pilots: [
         { org: "Trois Rivières", place: "Martinik", crop: "Šećerna trska", tech: ["EVERGREEN®", "Water Vital®"] },
-        { org: "Sveučilište u Gainesvilleu", place: "Florida, SAD", crop: "Nasad crvenih javora", tech: ["EVERGREEN®"] },
-        { org: "Sveučilište u Portlandu", place: "Oregon, SAD", crop: "Nasad duglazije", tech: ["EVERGREEN®"] },
+        { org: "Sveučilište Floride u Gainesvilleu", place: "Florida, SAD", crop: "Nasad crvenih javora", tech: ["EVERGREEN®"] },
+        { org: "Državno sveučilište Oregona u Corvallisu", place: "Oregon, SAD", crop: "Nasad duglazije", tech: ["EVERGREEN®"] },
         { org: "AXE CAPITAL FOREST", place: "Ujedinjeno Kraljevstvo · Toledo, Španjolska", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Grupa ZARROUK", place: "Tunis", crop: "Uzgoj rajčice", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Korzika, Francuska", crop: "Masline i lijeska", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
@@ -7918,9 +7918,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Oni rade s nama",
-      title: "Mreža u 38 država",
+      title: "Mreža u 39 država",
       lede: "Proizvođači, zadruge, stručnjaci za obradu vode, sveučilišta i istraživački instituti, prisutni na pet kontinenata.",
-      mapAriaLabel: "Karta mreže Green Solutions u 38 država",
+      mapAriaLabel: "Karta mreže Green Solutions u 39 država",
     },
     countryStudies: {
       eyebrow: "Pristup po državama",
@@ -8045,8 +8045,8 @@ const baseContent = {
       "Francuska", "Južnoafrička Republika", "Tunis", "Italija", "Ujedinjeno Kraljevstvo", "Kanada", "Španjolska", "Mali",
       "Karibi", "Sjedinjene Američke Države", "Kamerun", "Gvineja", "Senegal", "Maroko", "Gvineja Bisau", "Brazil",
       "Saudijska Arabija", "Sultanat Oman", "Kongo", "Obala Bjelokosti", "Južni Sudan", "Poljska", "Grčka", "Portugal",
-      "Ujedinjeni Arapski Emirati", "Meksiko", "Turska", "Indonezija", "Kina",
-      "Alžir", "Argentina", "Čile", "Gabon", "Gana", "Jordan", "Kuvajt", "Hrvatska",
+      "Ujedinjeni Arapski Emirati", "Meksiko", "Turska", "Indonezija", "Kina", "Egipat",
+      "Alžir", "Argentina", "Čile", "Gabon", "Gana", "Jordan", "Kuvajt", "Hrvatska", "Madagaskar",
     ],
   },
 };
@@ -8082,21 +8082,21 @@ export const content = {
     presentation: {
       ...baseContent.es.presentation,
       eyebrow: "El nostre enfocament",
-      title1: "Les nostres quatre tecnologies",
+      title1: "Les nostres cinc tecnologies",
       title2: "Un objectiu",
       title3: "Creixement i qualitat",
       tagline: "Totes les nostres solucions disruptives es poden utilitzar en totes les plantes i cultius, en qualsevol clima i tipus de sòl!",
       stats: [
         { num: "30", label: "socis" },
-        { num: "38", label: "països" },
-        { num: "4", label: "tecnologies de marca" },
+        { num: "39", label: "països" },
+        { num: "5", label: "tecnologies de marca" },
       ],
     },
     reseau: {
       ...baseContent.es.reseau,
       eyebrow: "Presència internacional",
-      title: "Una xarxa en 38 països",
-      mapAriaLabel: "Mapa de la xarxa Green Solutions en 38 països",
+      title: "Una xarxa en 39 països",
+      mapAriaLabel: "Mapa de la xarxa Green Solutions en 39 països",
     },
     countryStudies: {
       ...baseContent.es.countryStudies,
