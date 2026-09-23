@@ -36,7 +36,7 @@ export default function TestsRapportsColonnes({
         <a
           className="doc-row"
           key={item.href}
-          href={`/etudes?file=${encodeURIComponent(item.href)}&name=${encodeURIComponent(item.title)}`}
+          href={`/${language}/etudes?file=${encodeURIComponent(item.href)}&name=${encodeURIComponent(item.title)}`}
         >
           <span className="doc-tag">PDF</span>
           <span className="doc-body">
