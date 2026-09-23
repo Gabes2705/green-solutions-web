@@ -49,7 +49,7 @@ export default async function Confidentialite({ params }: Params) {
         <br />
         {t.companyId} : <mark>{t.toComplete}</mark>.
         <br />
-        Contact : <a href="mailto:contact@evergreen-ecosorb.com">contact@evergreen-ecosorb.com</a>
+        {t.email} : <a href="mailto:contact@evergreen-ecosorb.com">contact@evergreen-ecosorb.com</a>
       </p>
 
       <h2>{t.collected}</h2>
