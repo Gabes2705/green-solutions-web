@@ -25,7 +25,7 @@ const BUTTON_COLORS: Record<string, string> = {
 };
 
 export default function Produits() {
-  const { c } = useLanguage();
+  const { c, language } = useLanguage();
   const p = c.products;
 
   return (
@@ -61,14 +61,14 @@ export default function Produits() {
 
                   <div className="p-cta-row">
                     <Link
-                      href={`/technologies/${item.id}`}
+                      href={`/${language}/technologies/${item.id}`}
                       className={`p-learn btn-3d ${BUTTON_COLORS[item.id]}`}
                     >
                       {p.readMore}
                     </Link>
                     {ITEMS_WITH_VIDEO.includes(item.id) && (
                       <Link
-                        href={`/technologies/${item.id}#video`}
+                        href={`/${language}/technologies/${item.id}#video`}
                         className={`p-learn btn-3d ${BUTTON_COLORS[item.id]}`}
                       >
                         {p.watchVideo}
