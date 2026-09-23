@@ -43,13 +43,13 @@ const PARTNERS: Partner[] = [
 ];
 
 export default function PartnersPageClient() {
-  const { c } = useLanguage();
+  const { c, language } = useLanguage();
   const p = c.partnersPage;
 
   return (
     <div className="tech-page tech-blue">
       <div className="tech-bar">
-        <a href="/" className="tech-back btn-3d btn-3d-light">
+        <a href={`/${language}/`} className="tech-back btn-3d btn-3d-light">
           ← {c.countryStudies.backToSite}
         </a>
         <LanguageSwitcher />
