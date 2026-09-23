@@ -59,67 +59,72 @@ const webSiteJsonLd = {
 const translations = {
   fr: {
     title: "Green Solutions · Agriculture écologiquement intensive",
-    description: "Technologies agricoles disruptives pour l'eau, les sols, les cultures et la forêt : EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    description: "Technologies agricoles innovantes pour mieux gérer l’eau, préserver les sols, soutenir les cultures et développer l’agroforesterie : EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® et Paulownia ALTIFOLIA®.",
     locale: "fr_FR",
   },
   en: {
-    title: "Green Solutions · Ecological Intensive Agriculture",
-    description: "Disruptive agricultural technologies for water, soils, crops and forests: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    title: "Green Solutions · Ecologically Intensive Agriculture",
+    description: "Innovative agricultural technologies for water management, soil health, crop performance and agroforestry: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® and Paulownia ALTIFOLIA®.",
     locale: "en_US",
   },
   es: {
     title: "Green Solutions · Agricultura Intensiva Ecológica",
-    description: "Tecnologías agrícolas disruptivas para agua, suelos, cultivos y bosques: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    description: "Tecnologías agrícolas innovadoras para la gestión del agua, la salud del suelo, el rendimiento de los cultivos y la agroforestería: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® y Paulownia ALTIFOLIA®.",
     locale: "es_ES",
   },
   pt: {
     title: "Green Solutions · Agricultura Intensiva Ecológica",
-    description: "Tecnologias agrícolas disruptivas para água, solos, cultivos e florestas: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    description: "Tecnologias agrícolas inovadoras para a gestão da água, a saúde do solo, o desempenho das culturas e a agrofloresta: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® e Paulownia ALTIFOLIA®.",
     locale: "pt_BR",
   },
   ar: {
     title: "جرين سولوشنز · الزراعة المكثفة البيئية",
-    description: "تقنيات زراعية ثورية للمياه والتربة والمحاصيل والغابات: EVERGREEN® و ECOFERT® و NAPEMA® و Water Vital® و Paulownia ALTIFOLIA®.",
+    description: "تقنيات زراعية مبتكرة لإدارة المياه وتحسين التربة ودعم المحاصيل والزراعة الحراجية: EVERGREEN® وECOFERT® وNAPEMA® وWater Vital® وPaulownia ALTIFOLIA®.",
     locale: "ar_SA",
   },
   zh: {
     title: "绿色解决方案 · 生态集约农业",
-    description: "用于水、土壤、作物和森林的颠覆性农业技术：EVERGREEN®、ECOFERT®、NAPEMA®、Water Vital® 和 Paulownia ALTIFOLIA®。",
+    description: "面向水资源管理、土壤健康、作物表现和农林复合经营的创新农业技术：EVERGREEN®、ECOFERT®、NAPEMA®、Water Vital® 和 Paulownia ALTIFOLIA®。",
     locale: "zh_CN",
   },
   id: {
-    title: "Green Solutions · Pertanian Intensif Ekologis",
-    description: "Teknologi pertanian yang mengganggu untuk air, tanah, tanaman dan hutan: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, dan Paulownia ALTIFOLIA®.",
+    title: "Green Solutions · Pertanian Intensif Berkelanjutan",
+    description: "Teknologi pertanian inovatif untuk pengelolaan air, kesehatan tanah, kinerja tanaman, dan agroforestri: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, dan Paulownia ALTIFOLIA®.",
     locale: "id_ID",
   },
   de: {
     title: "Green Solutions · Ökologisch intensive Landwirtschaft",
-    description: "Disruptive Agrartechnologien für Wasser, Böden, Kulturen und Wälder: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® und Paulownia ALTIFOLIA®.",
+    description: "Innovative Agrartechnologien für Wassermanagement, Bodengesundheit, Pflanzenleistung und Agroforstwirtschaft: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® und Paulownia ALTIFOLIA®.",
     locale: "de_DE",
   },
   it: {
     title: "Green Solutions · Agricoltura Ecologicamente Intensiva",
-    description: "Tecnologie agricole dirompenti per acqua, suoli, colture e foreste: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    description: "Tecnologie agricole innovative per la gestione dell’acqua, la salute del suolo, le colture e l’agroforestazione: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® e Paulownia ALTIFOLIA®.",
     locale: "it_IT",
   },
   el: {
     title: "Green Solutions · Οικολογικά Εντατική Γεωργία",
-    description: "Ανατρεπτικές γεωργικές τεχνολογίες για το νερό, τα εδάφη, τις καλλιέργειες και τα δάση: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    description: "Καινοτόμες γεωργικές τεχνολογίες για τη διαχείριση του νερού, την υγεία του εδάφους, τις καλλιέργειες και την αγροδασοπονία: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® και Paulownia ALTIFOLIA®.",
     locale: "el_GR",
   },
   tr: {
     title: "Green Solutions · Ekolojik Yoğun Tarım",
-    description: "Su, toprak, ürün ve ormanlar için yıkıcı tarım teknolojileri: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    description: "Su yönetimi, toprak sağlığı, ürün performansı ve tarımsal ormancılık için yenilikçi tarım teknolojileri: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® ve Paulownia ALTIFOLIA®.",
     locale: "tr_TR",
   },
   pl: {
     title: "Green Solutions · Ekologicznie Intensywne Rolnictwo",
-    description: "Przełomowe technologie rolnicze dla wody, gleb, upraw i lasów: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital®, Paulownia ALTIFOLIA®.",
+    description: "Innowacyjne technologie rolnicze wspierające gospodarkę wodną, zdrowie gleby, uprawy i agroleśnictwo: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® i Paulownia ALTIFOLIA®.",
     locale: "pl_PL",
+  },
+  hr: {
+    title: "Green Solutions · Ekološki intenzivna poljoprivreda",
+    description: "Inovativne poljoprivredne tehnologije za upravljanje vodom, zdravlje tla, uspješnost usjeva i agrošumarstvo: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® i Paulownia ALTIFOLIA®.",
+    locale: "hr_HR",
   },
   ca: {
     title: "Green Solutions · Agricultura ecològicament intensiva",
-    description: "Tecnologies agrícoles disruptives per a l'aigua, els sòls, els cultius i els boscos: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® i Paulownia ALTIFOLIA®.",
+    description: "Tecnologies agrícoles innovadores per a la gestió de l’aigua, la salut del sòl, el rendiment dels cultius i l’agroforesteria: EVERGREEN®, ECOFERT®, NAPEMA®, Water Vital® i Paulownia ALTIFOLIA®.",
     locale: "ca_ES",
   },
 };
