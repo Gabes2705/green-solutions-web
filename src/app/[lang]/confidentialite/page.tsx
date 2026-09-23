@@ -1,143 +1,74 @@
 import type { Metadata } from "next";
-import { SITE_URL } from "@/lib/site";
+import { LANGUAGES, SITE_URL, languageAlternates } from "@/lib/site";
+import { LEGAL_TEXT } from "@/lib/legal-content";
+import type { Lang } from "@/lib/content";
 
-export const metadata: Metadata = {
-  title: "Politique de confidentialité | Green Solutions",
-  description:
-    "Quelles données le formulaire de contact collecte, qui y accède, combien de temps elles sont conservées, et comment exercer vos droits.",
-  alternates: { canonical: `${SITE_URL}/fr/confidentialite` },
-};
+export function generateStaticParams() {
+  return LANGUAGES.map((lang) => ({ lang }));
+}
 
-export default function Confidentialite() {
+type Params = { params: Promise<{ lang: string }> };
+
+function resolveLang(lang: string): Lang {
+  return (LANGUAGES as readonly string[]).includes(lang) ? (lang as Lang) : "fr";
+}
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { lang } = await params;
+  const key = resolveLang(lang);
+  const t = LEGAL_TEXT[key];
+  const canonical = `${SITE_URL}/${key}/confidentialite`;
+  return {
+    title: `${t.privacyTitle} | Green Solutions`,
+    description: t.privacyDescription,
+    alternates: {
+      canonical,
+      languages: languageAlternates("/confidentialite"),
+    },
+  };
+}
+
+export default async function Confidentialite({ params }: Params) {
+  const { lang } = await params;
+  const key = resolveLang(lang);
+  const t = LEGAL_TEXT[key];
+
   return (
     <main className="legal">
-      <a href="/fr/" className="legal-back btn-3d btn-3d-light">
-        ← Retour au site
+      <a href={`/${key}/`} className="legal-back btn-3d btn-3d-light">
+        ← {t.back}
       </a>
 
-      <h1>Politique de confidentialité</h1>
-      <p className="legal-updated">Dernière mise à jour : 20 septembre 2026</p>
+      <h1>{t.privacyTitle}</h1>
+      <p className="legal-updated">{t.privacyUpdated}</p>
+      <p className="legal-lede">{t.privacyIntro}</p>
 
-      <p className="legal-lede">
-        Ce site ne dépose aucun cookie et n&apos;utilise aucun outil de mesure
-        d&apos;audience. Les seules données personnelles que nous recevons sont
-        celles que vous nous écrivez vous-même dans nos formulaires de contact
-        et de demande de partenariat.
-        Une vidéo YouTube est intégrée à la page consacrée au Paulownia :
-        c&apos;est la seule exception, détaillée plus bas.
-      </p>
-
-      <h2>Qui est responsable de ces données</h2>
+      <h2>{t.controller}</h2>
       <p>
         GREEN SOLUTIONS GROUPE AIM SA, 46, route de la Condémine, 1475 Forel, Suisse.
         <br />
-        Numéro d&apos;identification des entreprises (IDE) : <mark>à compléter</mark>.
+        {t.companyId} : <mark>{t.toComplete}</mark>.
         <br />
-        Contact :{" "}
-        <a href="mailto:contact@evergreen-ecosorb.com">
-          contact@evergreen-ecosorb.com
-        </a>
+        Contact : <a href="mailto:contact@evergreen-ecosorb.com">contact@evergreen-ecosorb.com</a>
       </p>
 
-      <h2>Ce que le formulaire collecte</h2>
-      <p>Selon le formulaire utilisé, nous pouvons recevoir :</p>
-      <ul>
-        <li>votre nom</li>
-        <li>le nom de votre société et son site internet</li>
-        <li>votre adresse postale complète, ville, pays et code postal</li>
-        <li>votre numéro de téléphone</li>
-        <li>votre adresse électronique</li>
-        <li>le message ou commentaire que vous écrivez</li>
-      </ul>
-      <p>
-        Aucune de ces informations n&apos;est enregistrée dans une base de
-        données : le formulaire les transmet directement par courriel.
-      </p>
+      <h2>{t.collected}</h2>
+      <p>{t.collectedBody}</p>
 
-      <h2>Pourquoi nous les traitons</h2>
-      <p>
-        Uniquement pour vous répondre et poursuivre l&apos;échange que vous avez
-        engagé. Ces données ne sont ni vendues, ni cédées, ni utilisées pour de
-        la prospection non sollicitée.
-      </p>
-      <p>
-        La base légale de ce traitement est notre intérêt légitime à répondre
-        aux personnes qui nous écrivent, au sens de l&apos;article 6.1.f du
-        règlement général sur la protection des données.
-      </p>
+      <h2>{t.purpose}</h2>
+      <p>{t.purposeBody}</p>
 
-      <h2>Qui y a accès</h2>
-      <p>
-        Les messages sont reçus et lus par deux personnes : Michel-Paul Correa
-        et Gabriel Bonnat, dirigeants de Green Solutions. Personne d&apos;autre
-        n&apos;y a accès.
-      </p>
-      <p>Deux prestataires techniques interviennent dans l&apos;acheminement :</p>
-      <ul>
-        <li>
-          <strong>Resend</strong>, qui assure l&apos;envoi du courriel depuis le
-          formulaire ;
-        </li>
-        <li>
-          <strong>Vercel</strong>, qui héberge le site.
-        </li>
-      </ul>
-      <p>
-        Ces deux prestataires sont établis aux États-Unis. Les transferts
-        s&apos;effectuent dans le cadre des garanties prévues par le règlement
-        européen.
-      </p>
+      <h2>{t.access}</h2>
+      <p>{t.accessBody}</p>
 
-      <h2>Combien de temps nous les gardons</h2>
-      <p>
-        <strong>Trois ans</strong> à compter de notre dernier échange. Passé ce
-        délai, les messages sont supprimés.
-      </p>
+      <h2>{t.retention}</h2>
+      <p>{t.retentionBody}</p>
 
-      <h2>Cookies et mesure d&apos;audience</h2>
-      <p>
-        Ce site ne dépose <strong>aucun cookie de son fait</strong> : aucun
-        traceur, aucun outil statistique, aucun bouton de réseau social.
-        C&apos;est pourquoi vous ne voyez aucune fenêtre de consentement en
-        arrivant.
-      </p>
-      <p>Deux services extérieurs sont toutefois appelés par vos pages :</p>
-      <ul>
-        <li>
-          <strong>Google Fonts</strong>, qui sert les polices de caractères :
-          votre adresse IP est transmise à Google le temps du chargement.
-        </li>
-        <li>
-          <strong>YouTube</strong>, sur la page consacrée au Paulownia, où une
-          vidéo est intégrée. Nous employons le lecteur sans cookie
-          (youtube-nocookie.com) : rien n&apos;est déposé dans votre navigateur
-          tant que vous ne lancez pas la lecture. Votre adresse IP est en
-          revanche transmise à Google dès l&apos;affichage de la page, et
-          démarrer la vidéo place des données sur votre appareil.
-        </li>
-      </ul>
+      <h2>{t.cookies}</h2>
+      <p>{t.cookiesBody}</p>
 
-      <h2>Vos droits</h2>
-      <p>
-        Vous pouvez demander à accéder aux données vous concernant, les faire
-        rectifier ou effacer, en limiter le traitement, vous y opposer, ou en
-        demander la portabilité.
-      </p>
-      <p>
-        Écrivez à{" "}
-        <a href="mailto:contact@evergreen-ecosorb.com">
-          contact@evergreen-ecosorb.com
-        </a>
-        . Nous répondons dans un délai d&apos;un mois.
-      </p>
-      <p>
-        Si notre réponse ne vous satisfait pas, vous pouvez saisir la
-        Commission nationale de l&apos;informatique et des libertés (CNIL),{" "}
-        <a href="https://www.cnil.fr" target="_blank" rel="noreferrer">
-          cnil.fr
-        </a>
-        .
-      </p>
+      <h2>{t.rights}</h2>
+      <p>{t.rightsBody}</p>
     </main>
   );
 }
