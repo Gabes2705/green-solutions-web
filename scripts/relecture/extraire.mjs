@@ -6,9 +6,14 @@ function charger(fichier, exportName) {
   const source = readFileSync(fichier, "utf8");
   const js = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
   const module = { exports: {} };
-  new Function("module", "exports", "require", js)(module, module.exports, (p) => {
-    if (p.endsWith("countries")) return require0("src/lib/countries.ts", "*");
-    return {};
+  new Function("module", "exports", "require", js)(module, module.exports, (chemin) => {
+    // Les modules voisins que content.ts importe vraiment, transpilés à la volée.
+    const voisin = chemin.replace(/^\.\//, "src/lib/") + ".ts";
+    try {
+      return charger(voisin, "*");
+    } catch {
+      return {};
+    }
   });
   return exportName === "*" ? module.exports : module.exports[exportName];
 }
