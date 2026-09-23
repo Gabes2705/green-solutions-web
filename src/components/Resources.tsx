@@ -17,7 +17,7 @@ const CARD_IMAGES = [
 ];
 
 export default function Resources() {
-  const { c } = useLanguage();
+  const { c, language } = useLanguage();
   const r = c.resources;
 
   return (
@@ -67,7 +67,7 @@ export default function Resources() {
         </Reveal>
 
         <Reveal>
-          <a href="/tests-et-rapports" className="field-tests-cta">
+          <a href={`/${language}/tests-et-rapports`} className="field-tests-cta">
             {c.nav.fieldTests} →
           </a>
         </Reveal>
