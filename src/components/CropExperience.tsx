@@ -6,8 +6,6 @@ import styles from "./CropExperience.module.css";
 
 type Phase = { title: string; description: string };
 
-type CoreLang = "fr" | "en" | "es" | "pt" | "ar" | "zh" | "ca";
-
 type FilmCopy = {
   film: string;
   duration: string;
@@ -342,7 +340,7 @@ const COPY: Record<Lang, ExperienceCopy> = {
   },
 };
 
-const FILM_COPY: Record<CoreLang, FilmCopy> = {
+const FILM_COPY: Record<Lang, FilmCopy> = {
   fr: {
     film: "Film de synergie agronomique",
     duration: "4 s · comparaison accélérée",
@@ -391,6 +389,62 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
     synergyTitle: "五项方案，一套农艺协同系统",
     synergyIntro: "EVERGREEN® 与 ECOSORB® 形成互补的蓄水系统；Water Vital® 优化水质，ECOFERT® 为作物提供营养，NAPEMA® 提供保护。五项方案共同形成完整的农艺路径。",
   },
+  id: {
+    film: "Film sinergi agronomi",
+    duration: "4 dtk · perbandingan dipercepat",
+    restart: "Putar ulang film",
+    synergyEyebrow: "Sistem lengkap",
+    synergyTitle: "Lima solusi, satu sinergi agronomi",
+    synergyIntro: "EVERGREEN® dan ECOSORB® membentuk dua cadangan air yang saling melengkapi; Water Vital® menyiapkan air, ECOFERT® memberi nutrisi pada tanaman, dan NAPEMA® membantu melindunginya. Kelimanya membentuk pendekatan agronomi yang terpadu.",
+  },
+  de: {
+    film: "Film zur agronomischen Synergie",
+    duration: "4 s · beschleunigter Vergleich",
+    restart: "Film neu starten",
+    synergyEyebrow: "Das Gesamtsystem",
+    synergyTitle: "Fünf Lösungen, eine agronomische Synergie",
+    synergyIntro: "EVERGREEN® und ECOSORB® schaffen zwei sich ergänzende Wasserspeicher; Water Vital® bereitet das Wasser auf, ECOFERT® versorgt die Pflanze mit Nährstoffen und NAPEMA® unterstützt ihren Schutz. Zusammen bilden sie ein abgestimmtes agronomisches System.",
+  },
+  it: {
+    film: "Film sulla sinergia agronomica",
+    duration: "4 s · confronto accelerato",
+    restart: "Riavvia il film",
+    synergyEyebrow: "Il sistema completo",
+    synergyTitle: "Cinque soluzioni, un’unica sinergia agronomica",
+    synergyIntro: "EVERGREEN® ed ECOSORB® creano due riserve idriche complementari; Water Vital® prepara l’acqua, ECOFERT® nutre la pianta e NAPEMA® contribuisce a proteggerla. Insieme formano un sistema agronomico coerente.",
+  },
+  el: {
+    film: "Ταινία αγρονομικής συνέργειας",
+    duration: "4 δευτ. · επιταχυνόμενη σύγκριση",
+    restart: "Επανεκκίνηση της ταινίας",
+    synergyEyebrow: "Το ολοκληρωμένο σύστημα",
+    synergyTitle: "Πέντε λύσεις, μία αγρονομική συνέργεια",
+    synergyIntro: "Τα EVERGREEN® και ECOSORB® δημιουργούν δύο συμπληρωματικά αποθέματα νερού· το Water Vital® προετοιμάζει το νερό, το ECOFERT® θρέφει το φυτό και το NAPEMA® συμβάλλει στην προστασία του. Μαζί σχηματίζουν ένα συνεκτικό αγρονομικό σύστημα.",
+  },
+  tr: {
+    film: "Agronomik sinerji filmi",
+    duration: "4 sn · hızlandırılmış karşılaştırma",
+    restart: "Filmi yeniden başlat",
+    synergyEyebrow: "Bütüncül sistem",
+    synergyTitle: "Beş çözüm, tek agronomik sinerji",
+    synergyIntro: "EVERGREEN® ve ECOSORB® birbirini tamamlayan iki su rezervi oluşturur; Water Vital® suyu hazırlar, ECOFERT® bitkiyi besler ve NAPEMA® korumaya yardımcı olur. Beş çözüm birlikte tutarlı bir agronomik sistem oluşturur.",
+  },
+  pl: {
+    film: "Film o synergii agronomicznej",
+    duration: "4 s · przyspieszone porównanie",
+    restart: "Uruchom film ponownie",
+    synergyEyebrow: "Kompletny system",
+    synergyTitle: "Pięć rozwiązań, jedna synergia agronomiczna",
+    synergyIntro: "EVERGREEN® i ECOSORB® tworzą dwa uzupełniające się magazyny wody; Water Vital® przygotowuje wodę, ECOFERT® odżywia roślinę, a NAPEMA® wspiera jej ochronę. Razem tworzą spójny system agronomiczny.",
+  },
+  hr: {
+    film: "Film o agronomskoj sinergiji",
+    duration: "4 s · ubrzana usporedba",
+    restart: "Ponovno pokreni film",
+    synergyEyebrow: "Cjelovit sustav",
+    synergyTitle: "Pet rješenja, jedna agronomska sinergija",
+    synergyIntro: "EVERGREEN® i ECOSORB® stvaraju dvije komplementarne zalihe vode; Water Vital® priprema vodu, ECOFERT® hrani biljku, a NAPEMA® pomaže u njezinoj zaštiti. Zajedno čine usklađen agronomski sustav.",
+  },
   ca: {
     film: "Film de sinergia agronòmica",
     duration: "4 s · comparació accelerada",
@@ -400,8 +454,6 @@ const FILM_COPY: Record<CoreLang, FilmCopy> = {
     synergyIntro: "EVERGREEN® i ECOSORB® creen dues reserves hídriques complementàries; Water Vital® prepara l'aigua, ECOFERT® nodreix la planta i NAPEMA® la protegeix. Juntes formen un itinerari agronòmic coherent.",
   },
 };
-
-const CORE_LANGS = new Set<Lang>(["fr", "en", "es", "pt", "ar", "zh", "ca"]);
 
 
 /*
@@ -417,7 +469,7 @@ function clamp(value: number, minimum: number, maximum: number) {
 export default function CropExperience() {
   const { language, c } = useLanguage();
   const copy = COPY[language];
-  const filmCopy = FILM_COPY[CORE_LANGS.has(language) ? language as CoreLang : "en"];
+  const filmCopy = FILM_COPY[language];
   const synergyItems = [
     { ...c.products.items[0], id: "retention-eau", title: "EVERGREEN®" },
     { ...c.products.items[0], id: "retention-eau", title: "ECOSORB®" },
