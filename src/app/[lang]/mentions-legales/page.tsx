@@ -44,10 +44,6 @@ export default async function MentionsLegales({ params }: Params) {
 
       <h2>{t.publisher}</h2>
       <p>
-        <strong>GREEN SOLUTIONS GROUPE AIM SA</strong>
-        <br />
-        46, route de la Condémine, 1475 Forel, Suisse
-        <br />
         {t.publisherBody}
         <br />
         {t.companyId} : <mark>{t.toComplete}</mark>
