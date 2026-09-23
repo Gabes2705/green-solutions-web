@@ -124,7 +124,7 @@ const baseContent = {
       { figure: "+30 à +100 %", label: "de rendement, en quantité comme en qualité" },
       { figure: "−40 à −70 %", label: "de besoin en eau d'irrigation" },
       { figure: "15", label: "essais pilotes en cours en 2026" },
-      { figure: "SOHISCERT", label: "et EU Bio, certifications réelles" },
+      { figure: "SOHISCERT", label: "et EU Bio, certifications reconnues" },
     ],
     presentation: {
       eyebrow: "Notre approche",
@@ -743,7 +743,7 @@ const baseContent = {
       { figure: "+30 to +100%", label: "yield increase, in quantity and quality" },
       { figure: "−40 to −70%", label: "reduction in irrigation water needs" },
       { figure: "15", label: "pilot trials underway in 2026" },
-      { figure: "SOHISCERT", label: "and EU Bio, real certifications" },
+      { figure: "SOHISCERT", label: "and EU Bio, recognised certifications" },
     ],
     presentation: {
       eyebrow: "Our approach",
@@ -1362,7 +1362,7 @@ const baseContent = {
       { figure: "+30 a +100 %", label: "de rendimiento, en cantidad y calidad" },
       { figure: "−40 a −70 %", label: "de necesidad de agua de riego" },
       { figure: "15", label: "ensayos piloto en curso en 2026" },
-      { figure: "SOHISCERT", label: "y EU Bio, certificaciones reales" },
+      { figure: "SOHISCERT", label: "y EU Bio, certificaciones reconocidas" },
     ],
     presentation: {
       eyebrow: "Nuestro enfoque",
@@ -1981,7 +1981,7 @@ const baseContent = {
       { figure: "+30 a +100 %", label: "de rendimento, em quantidade e qualidade" },
       { figure: "−40 a −70 %", label: "de necessidade de água de irrigação" },
       { figure: "15", label: "ensaios piloto em curso em 2026" },
-      { figure: "SOHISCERT", label: "e EU Bio, certificações reais" },
+      { figure: "SOHISCERT", label: "e EU Bio, certificações reconhecidas" },
     ],
     presentation: {
       eyebrow: "Nossa abordagem",
@@ -2600,7 +2600,7 @@ const baseContent = {
       { figure: "+30 إلى +100%", label: "زيادة في الإنتاجية، كمًا ونوعًا" },
       { figure: "−40 إلى −70%", label: "تخفيض في احتياجات مياه الري" },
       { figure: "15", label: "تجربة رائدة قيد التنفيذ في 2026" },
-      { figure: "SOHISCERT", label: "وشهادة EU Bio، اعتمادات حقيقية" },
+      { figure: "SOHISCERT", label: "وشهادة EU Bio، شهادات معترف بها" },
     ],
     presentation: {
       eyebrow: "نهجنا",
@@ -3219,7 +3219,7 @@ const baseContent = {
       { figure: "+30 至 +100%", label: "产量提升，量与质兼顾" },
       { figure: "−40 至 −70%", label: "灌溉用水需求" },
       { figure: "15", label: "2026年正在进行的试点项目" },
-      { figure: "SOHISCERT", label: "及欧盟有机认证，真实认证" },
+      { figure: "SOHISCERT", label: "及欧盟有机认证，认可认证" },
     ],
     presentation: {
       eyebrow: "我们的方法",
@@ -3838,7 +3838,7 @@ const baseContent = {
       { figure: "+30 hingga +100%", label: "peningkatan hasil, dari segi jumlah maupun kualitas" },
       { figure: "−40 hingga −70%", label: "kebutuhan air irigasi" },
       { figure: "15", label: "uji coba percontohan yang sedang berjalan pada 2026" },
-      { figure: "SOHISCERT", label: "dan EU Bio, sertifikasi nyata" },
+      { figure: "SOHISCERT", label: "dan EU Bio, sertifikasi yang diakui" },
     ],
     presentation: {
       eyebrow: "Pendekatan Kami",
@@ -4457,7 +4457,7 @@ const baseContent = {
       { figure: "+30 bis +100 %", label: "Ertragssteigerung, in Menge und Qualität" },
       { figure: "−40 bis −70 %", label: "weniger Bewässerungsbedarf" },
       { figure: "15", label: "laufende Pilotversuche im Jahr 2026" },
-      { figure: "SOHISCERT", label: "und EU-Bio, echte Zertifizierungen" },
+      { figure: "SOHISCERT", label: "und EU-Bio, anerkannte Zertifizierungen" },
     ],
     presentation: {
       eyebrow: "Unser Ansatz",
@@ -5076,7 +5076,7 @@ const baseContent = {
       { figure: "+30 / +100 %", label: "di resa, in quantità e qualità" },
       { figure: "−40 / −70 %", label: "di fabbisogno idrico per l'irrigazione" },
       { figure: "15", label: "sperimentazioni pilota in corso nel 2026" },
-      { figure: "SOHISCERT", label: "e UE Bio, certificazioni reali" },
+      { figure: "SOHISCERT", label: "e UE Bio, certificazioni riconosciute" },
     ],
     presentation: {
       eyebrow: "Il nostro approccio",
@@ -5695,7 +5695,7 @@ const baseContent = {
       { figure: "+30 έως +100 %", label: "στην απόδοση, σε ποσότητα και ποιότητα" },
       { figure: "−40 έως −70 %", label: "στις ανάγκες άρδευσης" },
       { figure: "15", label: "πιλοτικές δοκιμές σε εξέλιξη το 2026" },
-      { figure: "SOHISCERT", label: "και EU Bio, πραγματικές πιστοποιήσεις" },
+      { figure: "SOHISCERT", label: "και EU Bio, αναγνωρισμένες πιστοποιήσεις" },
     ],
     presentation: {
       eyebrow: "Η προσέγγισή μας",
@@ -6314,7 +6314,7 @@ const baseContent = {
       { figure: "+%30 ila +%100", label: "verimde, hem miktar hem kalite açısından" },
       { figure: "−%40 ila −%70", label: "sulama suyu ihtiyacında" },
       { figure: "15", label: "2026'da devam eden pilot deneme" },
-      { figure: "SOHISCERT", label: "ve EU Bio, gerçek sertifikasyonlar" },
+      { figure: "SOHISCERT", label: "ve EU Bio, tanınmış sertifikalar" },
     ],
     presentation: {
       eyebrow: "Yaklaşımımız",
@@ -6933,7 +6933,7 @@ const baseContent = {
       { figure: "+30 do +100%", label: "plonu, zarówno w ilości, jak i jakości" },
       { figure: "−40 do −70%", label: "zapotrzebowania na wodę do nawadniania" },
       { figure: "15", label: "prób pilotażowych w toku w 2026 roku" },
-      { figure: "SOHISCERT", label: "i EU Bio, prawdziwe certyfikaty" },
+      { figure: "SOHISCERT", label: "i EU Bio, uznane certyfikaty" },
     ],
     presentation: {
       eyebrow: "Nasze podejście",
@@ -7552,7 +7552,7 @@ const baseContent = {
       { figure: "+30 do +100 %", label: "prinosa, i u količini i u kakvoći" },
       { figure: "−40 do −70 %", label: "potrebe za vodom za navodnjavanje" },
       { figure: "15", label: "pilot-pokusa u tijeku u 2026." },
-      { figure: "SOHISCERT", label: "i EU Bio, stvarni certifikati" },
+      { figure: "SOHISCERT", label: "i EU Bio, priznati certifikati" },
     ],
     presentation: {
       eyebrow: "Naš pristup",
