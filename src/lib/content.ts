@@ -8051,120 +8051,14 @@ const baseContent = {
   },
 };
 
+import { ca } from "./content-ca";
+
+/**
+ * Les quatorze langues. Le catalan vient de son propre fichier : il était un
+ * décalque de l'espagnol avec quelques titres traduits, il est désormais une
+ * vraie traduction.
+ */
 export const content = {
   ...baseContent,
-  ca: {
-    ...baseContent.es,
-    nav: {
-      ...baseContent.es.nav,
-      approach: "El nostre enfocament",
-      technologies: "Tecnologies",
-      trials: "Assajos",
-      proofs: "Proves",
-      network: "Xarxa",
-      resources: "Recursos",
-      fieldTests: "Proves de camp",
-      partners: "Socis",
-      contact: "Escriu-nos",
-      openMenu: "Obre el menú",
-      closeMenu: "Tanca el menú",
-    },
-    hero: {
-      ...baseContent.es.hero,
-      slogan1: "Cultivar més",
-      slogan2: "amb menys aigua",
-      slogan3: "de manera natural",
-      explore: "Explorar",
-      quoteCta: "Demanar pressupost",
-      whereTo1: "El nostre enfocament",
-      whereTo2: "Tecnologies?",
-    },
-    presentation: {
-      ...baseContent.es.presentation,
-      eyebrow: "El nostre enfocament",
-      title1: "Les nostres cinc tecnologies",
-      title2: "Un objectiu",
-      title3: "Creixement i qualitat",
-      tagline: "Totes les nostres solucions disruptives es poden utilitzar en totes les plantes i cultius, en qualsevol clima i tipus de sòl!",
-      stats: [
-        { num: "30", label: "socis" },
-        { num: "39", label: "països" },
-        { num: "5", label: "tecnologies de marca" },
-      ],
-    },
-    reseau: {
-      ...baseContent.es.reseau,
-      eyebrow: "Presència internacional",
-      title: "Una xarxa en 39 països",
-      mapAriaLabel: "Mapa de la xarxa Green Solutions en 39 països",
-    },
-    countryStudies: {
-      ...baseContent.es.countryStudies,
-      eyebrow: "Enfocament per país",
-      lede: "Economia agrícola, sectors i potencial de rendiment: els nostres equips preparen un estudi específic per a cada país on ens implantem.",
-      notCoveredTitle: "El vostre país encara no està cobert?",
-      notCoveredBody: "Busquem socis de distribució en diverses zones, amb suport tècnic i una gamma ja provada internacionalment.",
-    },
-    statement: {
-      ...baseContent.es.statement,
-      eyebrow: "L'èxit no sempre és allò que es veu",
-      title: "L'essencial passa sota terra.",
-      tag: "És aquí on treballem.",
-    },
-    contact: {
-      ...baseContent.es.contact,
-      eyebrow: "Contacteu amb nosaltres",
-      titles: [
-        "Parlem del vostre país",
-        "Parlem dels vostres cultius",
-        "Parlem d'estalvi",
-        "Parlem d'eficiència",
-        "Parlem de rendibilitat",
-      ],
-      lede: "Sigui quin sigui el cultiu, el clima o la mida de la parcel·la, el primer pas és entendre el sòl que ja teniu. La primera conversa no compromet a res.",
-      labelEmail: "Correu electrònic",
-      labelAddress: "Adreça",
-      successTitle: "Missatge enviat.",
-      successText: "Gràcies. Ens posarem en contacte amb vosaltres aviat. Per a urgències, escriviu directament a",
-      honeypotLabel: "No omplir",
-      formName: "Nom",
-      formStructure: "Empresa",
-      formCountry: "País",
-      formCity: "Ciutat",
-      formCrop: "Tipus de cultiu",
-      formArea: "Superfície cultivada",
-      formEmail: "Correu electrònic",
-      formMessage: "El vostre missatge",
-      sending: "Enviant…",
-      send: "Enviar",
-      errorDefault: "No s'ha pogut enviar. Torneu-ho a provar.",
-      errorNetwork: "No es pot contactar amb el servidor. Comproveu la connexió i torneu-ho a provar.",
-    },
-    resources: {
-      ...baseContent.es.resources,
-      eyebrow: "Voleu aprofundir-hi?",
-      title: "Alguns documents abans de prendre qualsevol decisió",
-      docsEyebrow: "Per descarregar ara",
-      cards: [
-        { num: "01", title: "Documentació tècnica", text: "Composició, dosificació, assajos de camp i certificats de cada tecnologia." },
-        { num: "02", title: "Documentació sobre paulòwnia", text: "Densitat de plantació, corba de creixement, mercats i calendari de rendibilitat." },
-        { num: "03", title: "Feu-vos soci", text: "Distribució, representació territorial i assajos conjunts: expliqueu-nos el vostre projecte." },
-      ],
-    },
-    footer: {
-      ...baseContent.es.footer,
-      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Suïssa",
-      photoCreditPrefix: "Fotografies de paulòwnia:",
-      photoCreditAnd: "i",
-    },
-    countries: [
-      "França", "Sud-àfrica", "Tunísia", "Itàlia", "Regne Unit", "Canadà", "Espanya", "Mali",
-      "Carib", "Estats Units", "Camerun", "Guinea", "Senegal", "Marroc", "Guinea Bissau", "Brasil",
-      "Aràbia Saudita", "Sultanat d'Oman", "Congo", "Costa d'Ivori", "Sudan del Sud", "Polònia", "Grècia", "Portugal",
-      "Emirats Àrabs Units", "Mèxic", "Turquia", "Indonèsia", "Xina", "Egipte", "Algèria", "Argentina", "Xile",
-      "Gabon", "Ghana", "Jordània", "Kuwait", "Croàcia", "Madagascar",
-    ],
-  },
+  ca,
 };
-
-export type Content = typeof content.fr;
