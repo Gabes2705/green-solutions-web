@@ -151,7 +151,7 @@ const baseContent = {
       title2: "Tenter de survivre d'un côté, avancer de l'autre.",
       tabLabel: "Tenir ou avancer",
       tabTenir: "01 · Ne rien changer",
-      tabAvancer: "02 · Réagir et gagner",
+      tabAvancer: "02 · Agir et avancer",
       tenirList: [
         "L'eau d'irrigation se raréfie et coûte plus cher",
         "Les sols perdent leur structure et leur fertilité",
@@ -160,7 +160,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Augmenter les rendements sans la facture d'eau : nos hydrorétenteurs et notre eau restructurée réduisent le besoin en irrigation de 50 à 70 %, tout en maintenant, voire en augmentant, vos rendements.",
+          text: "Augmenter les rendements sans alourdir la facture d'eau : nos hydrorétenteurs et notre eau restructurée réduisent le besoin en irrigation de 50 à 70 %, tout en maintenant, voire en augmentant, vos rendements.",
           linkLabel: "Voir EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -768,9 +768,9 @@ const baseContent = {
       eyebrow: "What brings you here?",
       title1: "Two possible directions:",
       title2: "Struggling to survive on one side, moving forward on the other.",
-      tabLabel: "Hold or advance",
+      tabLabel: "Stand still or move forward",
       tabTenir: "01 · Change nothing",
-      tabAvancer: "02 · React and win",
+      tabAvancer: "02 · Act and move forward",
       tenirList: [
         "Irrigation water is becoming scarce and more expensive",
         "Soils are losing their structure and fertility",
@@ -779,7 +779,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Increase yields without the water bill: our water-retaining polymers and restructured water cut irrigation needs by 50 to 70%, while maintaining — or even increasing — your yields.",
+          text: "Increase yields without increasing water costs: our water-retaining polymers and restructured water cut irrigation needs by 50 to 70%, while maintaining — or even increasing — your yields.",
           linkLabel: "See EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -1389,7 +1389,7 @@ const baseContent = {
       title2: "Intentar sobrevivir por un lado, avanzar por el otro.",
       tabLabel: "Mantener o avanzar",
       tabTenir: "01 · No cambiar nada",
-      tabAvancer: "02 · Reaccionar y ganar",
+      tabAvancer: "02 · Actuar y avanzar",
       tenirList: [
         "El agua de riego escasea y cuesta más cara",
         "Los suelos pierden su estructura y su fertilidad",
@@ -1398,7 +1398,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Aumentar los rendimientos sin la factura del agua: nuestros polímeros retenedores de agua y nuestra agua restructurada reducen la necesidad de riego entre un 50 y un 70 %, manteniendo, o incluso aumentando, sus rendimientos.",
+          text: "Aumentar los rendimientos sin aumentar el coste del agua: nuestros polímeros retenedores de agua y nuestra agua restructurada reducen la necesidad de riego entre un 50 y un 70 %, manteniendo, o incluso aumentando, sus rendimientos.",
           linkLabel: "Ver EVERGREEN® y ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -2008,7 +2008,7 @@ const baseContent = {
       title2: "Tentar sobreviver de um lado, avançar do outro.",
       tabLabel: "Manter ou avançar",
       tabTenir: "01 · Não mudar nada",
-      tabAvancer: "02 · Reagir e ganhar",
+      tabAvancer: "02 · Agir e avançar",
       tenirList: [
         "A água de irrigação escasseia e custa mais cara",
         "Os solos perdem a sua estrutura e fertilidade",
@@ -2017,7 +2017,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Aumentar os rendimentos sem a fatura da água: os nossos polímeros retentores de água e a nossa água restruturada reduzem a necessidade de irrigação em 50 a 70 %, mantendo, ou mesmo aumentando, os seus rendimentos.",
+          text: "Aumentar os rendimentos sem aumentar o custo da água: os nossos polímeros retentores de água e a nossa água restruturada reduzem a necessidade de irrigação em 50 a 70 %, mantendo, ou mesmo aumentando, os seus rendimentos.",
           linkLabel: "Ver EVERGREEN® e ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -2627,7 +2627,7 @@ const baseContent = {
       title2: "محاولة البقاء من جهة، والتقدّم من جهة أخرى.",
       tabLabel: "الصمود أو التقدم",
       tabTenir: "01 · عدم تغيير أي شيء",
-      tabAvancer: "02 · التفاعل والفوز",
+      tabAvancer: "02 · التحرك والتقدم",
       tenirList: [
         "مياه الري تزداد ندرة وتكلفتها ترتفع",
         "التربة تفقد بنيتها وخصوبتها",
@@ -3246,7 +3246,7 @@ const baseContent = {
       title2: "一边苦苦求存，一边主动前行。",
       tabLabel: "维持现状还是前进",
       tabTenir: "01 · 维持现状",
-      tabAvancer: "02 · 应对并取胜",
+      tabAvancer: "02 · 行动并前进",
       tenirList: [
         "灌溉用水日益稀缺，成本不断上升",
         "土壤结构和肥力持续退化",
@@ -3865,7 +3865,7 @@ const baseContent = {
       title2: "Bertahan hidup di satu sisi, melangkah maju di sisi lain.",
       tabLabel: "Bertahan atau maju",
       tabTenir: "01 · Tidak mengubah apa pun",
-      tabAvancer: "02 · Bertindak dan menang",
+      tabAvancer: "02 · Bertindak dan maju",
       tenirList: [
         "Air irigasi semakin langka dan mahal",
         "Tanah kehilangan struktur dan kesuburannya",
@@ -4484,7 +4484,7 @@ const baseContent = {
       title2: "Auf der einen Seite ums Überleben kämpfen, auf der anderen vorankommen.",
       tabLabel: "Stillstand oder Fortschritt",
       tabTenir: "01 · Nichts ändern",
-      tabAvancer: "02 · Reagieren und gewinnen",
+      tabAvancer: "02 · Handeln und vorankommen",
       tenirList: [
         "Bewässerungswasser wird knapper und teurer",
         "Böden verlieren ihre Struktur und Fruchtbarkeit",
@@ -5103,7 +5103,7 @@ const baseContent = {
       title2: "Tentare di sopravvivere da una parte, avanzare dall'altra.",
       tabLabel: "Resistere o avanzare",
       tabTenir: "01 · Non cambiare nulla",
-      tabAvancer: "02 · Reagire e vincere",
+      tabAvancer: "02 · Agire e progredire",
       tenirList: [
         "L'acqua di irrigazione scarseggia e costa di più",
         "I suoli perdono struttura e fertilità",
@@ -5112,7 +5112,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Aumentare le rese senza la bolletta dell'acqua: i nostri idroritentori e la nostra acqua ristrutturata riducono il fabbisogno di irrigazione del 50-70 %, mantenendo o addirittura aumentando le rese.",
+          text: "Aumentare le rese senza aumentare i costi dell'acqua: i nostri idroritentori e la nostra acqua ristrutturata riducono il fabbisogno di irrigazione del 50-70 %, mantenendo o addirittura aumentando le rese.",
           linkLabel: "Scopri EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -5722,7 +5722,7 @@ const baseContent = {
       title2: "Προσπάθεια επιβίωσης από τη μία, πρόοδος από την άλλη.",
       tabLabel: "Παραμονή ή πρόοδος",
       tabTenir: "01 · Να μην αλλάξει τίποτα",
-      tabAvancer: "02 · Αντίδραση και κέρδος",
+      tabAvancer: "02 · Δράση και πρόοδος",
       tenirList: [
         "Το νερό άρδευσης σπανίζει και κοστίζει περισσότερο",
         "Τα εδάφη χάνουν τη δομή και τη γονιμότητά τους",
@@ -5731,7 +5731,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Αύξηση των αποδόσεων χωρίς τον λογαριασμό του νερού: οι υδροσυγκρατητές μας και το αναδομημένο νερό μειώνουν τις ανάγκες άρδευσης κατά 50-70 %, διατηρώντας ή και αυξάνοντας τις αποδόσεις σας.",
+          text: "Αύξηση των αποδόσεων χωρίς αύξηση του κόστους του νερού: οι υδροσυγκρατητές μας και το αναδομημένο νερό μειώνουν τις ανάγκες άρδευσης κατά 50-70 %, διατηρώντας ή και αυξάνοντας τις αποδόσεις σας.",
           linkLabel: "Δείτε το EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -6341,7 +6341,7 @@ const baseContent = {
       title2: "Bir yanda hayatta kalmaya çalışmak, diğer yanda ilerlemek.",
       tabLabel: "Direnmek ya da ilerlemek",
       tabTenir: "01 · Hiçbir şeyi değiştirmemek",
-      tabAvancer: "02 · Tepki vermek ve kazanmak",
+      tabAvancer: "02 · Harekete geçmek ve ilerlemek",
       tenirList: [
         "Sulama suyu azalıyor ve daha pahalı hale geliyor",
         "Topraklar yapısını ve verimliliğini kaybediyor",
@@ -6350,12 +6350,12 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Su faturası olmadan verimi artırın: hidro-tutucularımız ve yeniden yapılandırılmış suyumuz sulama ihtiyacını %50-70 azaltırken, verimlerinizi koruyor hatta artırıyor.",
+          text: "Su maliyetini artırmadan verimi yükseltin: hidro-tutucularımız ve yeniden yapılandırılmış suyumuz sulama ihtiyacını %50-70 azaltırken, verimlerinizi koruyor hatta artırıyor.",
           linkLabel: "EVERGREEN® & ECOSORB®'u keşfedin",
           linkHref: "#retention-eau",
         },
         {
-          text: "Organik ve sertifikasyon gereksinimlerini karşılayın: ECOFERT®, SOHISCERT ve EU Bio sertifikalıdır, halihazırda 60 ülkede kullanılmaktadır, en katı şartnameleri verimden ödün vermeden karşılamak için.",
+          text: "Organik üretim ve sertifikasyon gerekliliklerini karşılayın: ECOFERT® SOHISCERT ve EU Bio sertifikalıdır ve hâlihazırda 60 ülkede kullanılmaktadır. En sıkı standartları verimden ödün vermeden karşılamaya yardımcı olur.",
           linkLabel: "ECOFERT®'i keşfedin",
           linkHref: "#fertilisation",
         },
@@ -6960,7 +6960,7 @@ const baseContent = {
       title2: "Z jednej strony próbować przetrwać, z drugiej iść naprzód.",
       tabLabel: "Trwać czy iść naprzód",
       tabTenir: "01 · Nic nie zmieniać",
-      tabAvancer: "02 · Reagować i wygrywać",
+      tabAvancer: "02 · Działać i iść naprzód",
       tenirList: [
         "Woda do nawadniania staje się rzadsza i droższa",
         "Gleby tracą strukturę i żyzność",
@@ -6969,7 +6969,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Zwiększyć plony bez rachunku za wodę: nasze hydrożele retencyjne i zrestrukturyzowana woda zmniejszają zapotrzebowanie na nawadnianie o 50-70%, przy jednoczesnym utrzymaniu, a nawet zwiększeniu plonów.",
+          text: "Zwiększać plony bez zwiększania kosztów wody: nasze hydrożele retencyjne i zrestrukturyzowana woda zmniejszają zapotrzebowanie na nawadnianie o 50-70%, przy jednoczesnym utrzymaniu, a nawet zwiększeniu plonów.",
           linkLabel: "Zobacz EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -7579,7 +7579,7 @@ const baseContent = {
       title2: "S jedne strane pokušati preživjeti, s druge krenuti naprijed.",
       tabLabel: "Izdržati ili napredovati",
       tabTenir: "01 · Ne mijenjati ništa",
-      tabAvancer: "02 · Reagirati i dobiti",
+      tabAvancer: "02 · Djelovati i napredovati",
       tenirList: [
         "Vode za navodnjavanje je sve manje i sve je skuplja",
         "Tla gube strukturu i plodnost",
@@ -7588,7 +7588,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Povećati prinose bez računa za vodu: naši hidroretenteri i naša restrukturirana voda smanjuju potrebu za navodnjavanjem za 50 do 70 %, uz zadržavanje, pa i povećanje vaših prinosa.",
+          text: "Povećati prinose bez povećanja troškova vode: naši hidroretenteri i naša restrukturirana voda smanjuju potrebu za navodnjavanjem za 50 do 70 %, uz zadržavanje, pa i povećanje vaših prinosa.",
           linkLabel: "Pogledajte EVERGREEN® i ECOSORB®",
           linkHref: "#retention-eau",
         },
