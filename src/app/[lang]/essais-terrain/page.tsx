@@ -1,53 +1,70 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import "@/components/DossierPage.css";
-import { ESSAIS, ESSAIS_EN_COURS } from "@/lib/essais";
 import { GUIDES } from "@/lib/guides";
 import "@/components/EssaisVisuels.css";
 import { photosDe } from "@/components/EssaisVisuels";
 import VideoPousse from "@/components/VideoPousse";
 import { FILMS } from "@/lib/films";
 import { SITE_URL } from "@/lib/site";
+import { LANGUES_ESSAIS, enCoursTraduits, essaisTraduits, habillage } from "@/lib/essais-i18n";
 
 /**
  * La liste des essais de terrain : la page qui les relie tous, et que Google
  * trouve en premier pour « essai hydrorétenteur » ou « résultats hydrogel ».
+ *
+ * Servie dans chaque langue traduite. Les guides, eux, n'existent qu'en
+ * français : la section qui les liste ne s'affiche que là.
  */
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [{ lang: "fr" }];
+  return LANGUES_ESSAIS.map((lang) => ({ lang }));
 }
 
-const TITRE = "Essais de terrain : l'hydrorétenteur EVERGREEN en conditions réelles";
-const DESCRIPTION =
-  "Résultats mesurés de l'hydrorétenteur EVERGREEN sur palmiers, pastèques, coton, maïs, canne à sucre, pommes de terre et soja : jusqu'à 82 % d'eau en moins.";
+type Params = { params: Promise<{ lang: string }> };
 
-export const metadata: Metadata = {
-  title: TITRE,
-  description: DESCRIPTION,
-  alternates: { canonical: `${SITE_URL}/fr/essais-terrain` },
-  openGraph: {
-    type: "website",
-    title: TITRE,
-    description: DESCRIPTION,
-    url: `${SITE_URL}/fr/essais-terrain`,
-    siteName: "Green Solutions",
-    locale: "fr_FR",
-  },
-};
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { lang } = await params;
+  if (!LANGUES_ESSAIS.includes(lang)) return {};
+  const h = habillage(lang);
+  const essais = essaisTraduits(lang);
+  const description = `${h.hubChapeau.split(".")[0]}. ${essais
+    .slice(0, 4)
+    .map((e) => e.culture.split(" (")[0])
+    .join(", ")}…`;
+  const url = `${SITE_URL}/${lang}/essais-terrain`;
+
+  return {
+    title: `${h.hubTitre} | Green Solutions`,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "website",
+      title: h.hubTitre,
+      description,
+      url,
+      siteName: "Green Solutions",
+    },
+  };
+}
 
 /** La palmeraie en CC0 : lumineuse, et sans crédit obligatoire. Il est donné quand même, en bas. */
 const BANDEAU = photosDe("palmiers-dattiers-emirats-icba")[1];
 
-export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+export default async function Page({ params }: Params) {
   const { lang } = await params;
-  if (lang !== "fr") notFound();
+  if (!LANGUES_ESSAIS.includes(lang)) notFound();
+
+  const h = habillage(lang);
+  const essais = essaisTraduits(lang);
+  const enCours = enCoursTraduits(lang);
+  const rtl = lang === "ar";
 
   return (
-    <article className="dossier-page" lang="fr-FR">
+    <article className="dossier-page" lang={lang} dir={rtl ? "rtl" : undefined}>
       <div className="tech-bar">
-        <a href="/fr/" className="tech-back btn-3d btn-3d-light">
+        <a href={`/${lang}/`} className="tech-back btn-3d btn-3d-light">
           ← Green Solutions
         </a>
       </div>
@@ -57,13 +74,9 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         <img className="dossier-hero-photo" src={BANDEAU.src} alt="" fetchPriority="high" />
         <div className="dossier-hero-voile" aria-hidden="true" />
         <div className="dossier-hero-texte">
-          <p className="eyebrow">Essais de terrain</p>
-          <h1>Moins d&apos;eau, plus de récolte&nbsp;: les résultats mesurés</h1>
-          <p className="dossier-hero-chapeau">
-            Universités, centres de recherche et exploitations ont testé l&apos;hydrorétenteur
-            EVERGREEN, seul ou avec le fertilisant ECOFERT, sur sept cultures et dans six pays.
-            Chaque page reprend les chiffres du rapport et renvoie au document complet.
-          </p>
+          <p className="eyebrow">{h.hubEyebrow}</p>
+          <h1>{h.hubTitre}</h1>
+          <p className="dossier-hero-chapeau">{h.hubChapeau}</p>
         </div>
       </header>
 
@@ -71,19 +84,15 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         <section className="dossier-section">
           <div className="gv-duo">
             <VideoPousse film={FILMS.racines} />
-            <p className="dossier-texte">
-              Le principe est le même partout : l&apos;hydrorétenteur garde l&apos;eau près des
-              racines et la rend à la plante peu à peu. Selon la culture et le climat, les essais
-              mesurent jusqu&apos;à 82 % d&apos;eau en moins et jusqu&apos;à 93 % de récolte en plus.
-            </p>
+            <p className="dossier-texte">{h.hubPrincipe}</p>
           </div>
         </section>
 
         <section className="dossier-section">
-          <h2 className="section-title">Les essais terminés</h2>
+          <h2 className="section-title">{h.hubTermines}</h2>
           <div className="dossier-cartes">
-            {ESSAIS.map((e) => (
-              <a key={e.slug} className="dossier-carte" href={`/fr/essais-terrain/${e.slug}`}>
+            {essais.map((e) => (
+              <a key={e.slug} className="dossier-carte" href={`/${lang}/essais-terrain/${e.slug}`}>
                 {photosDe(e.slug)[0] && (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={photosDe(e.slug)[0].src} alt="" loading="lazy" decoding="async" />
@@ -101,31 +110,32 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         </section>
 
         <section className="dossier-section">
-          <h2 className="section-title">Les essais en cours avec des universités</h2>
+          <h2 className="section-title">{h.hubEnCours}</h2>
           <ul className="dossier-puces">
-            {ESSAIS_EN_COURS.map((e) => (
+            {enCours.map((e) => (
               <li key={e.pdf}>
-                <strong>{e.titre}.</strong> {e.texte}{" "}
-                <a href={e.pdf}>Lettre de l&apos;université (PDF)</a>
+                <strong>{e.titre}.</strong> {e.texte} <a href={e.pdf}>PDF</a>
               </li>
             ))}
           </ul>
         </section>
 
-        <section className="dossier-section">
-          <h2 className="section-title">Nos guides</h2>
-          <ul className="dossier-puces">
-            {GUIDES.map((g) => (
-              <li key={g.slug}>
-                <a href={`/fr/guides/${g.slug}`}>{g.titre}</a>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {lang === "fr" && (
+          <section className="dossier-section">
+            <h2 className="section-title">{h.hubGuides}</h2>
+            <ul className="dossier-puces">
+              {GUIDES.map((g) => (
+                <li key={g.slug}>
+                  <a href={`/fr/guides/${g.slug}`}>{g.titre}</a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <section className="dossier-section">
           <p className="gv-credit">
-            Photo du bandeau : {BANDEAU.auteur} —{" "}
+            {h.hubCreditPhoto} {BANDEAU.auteur} —{" "}
             <a href={BANDEAU.page} target="_blank" rel="noreferrer">
               {BANDEAU.licence}, Wikimedia Commons
             </a>
