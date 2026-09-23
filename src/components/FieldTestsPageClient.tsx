@@ -11,7 +11,7 @@ export default function FieldTestsPageClient() {
   return (
     <div className="tech-page tech-blue">
       <div className="tech-bar">
-        <a href="/" className="tech-back btn-3d btn-3d-light">
+        <a href={`/${language}/`} className="tech-back btn-3d btn-3d-light">
           ← {ft.backToSite}
         </a>
         <LanguageSwitcher />
