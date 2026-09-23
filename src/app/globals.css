@@ -4152,6 +4152,8 @@ body li {
 /* Le bouton qui mène aux quatre exemples chiffrés : seul sur sa ligne, sous
    les trois autres, comme Gabriel l'a dessiné. */
 .hero-cta-impact-ligne {
+  /* Sur grand écran, la rangée de boutons garde sa marge basse de 1,8em :
+     on la remonte pour que le quatrième bouton la suive de près. */
   margin-top: -1em;
   margin-bottom: 1.8em;
   text-align: center;
@@ -4171,4 +4173,20 @@ body li {
   letter-spacing: 0.02em;
   background: linear-gradient(180deg, #1f8a45 0%, #1d8a96 100%);
   color: #fff;
+}
+
+/* Sur téléphone, la rangée du dessus n'a plus de marge basse : la remontée
+   ferait chevaucher les deux boutons. Ici le quatrième se range simplement
+   sous les autres, à la même taille qu'eux. */
+@media (max-width: 640px) {
+  .hero-cta-impact-ligne {
+    margin-top: 0.7em;
+    margin-bottom: 1.4em;
+  }
+  .hero-cta-impact {
+    width: 100%;
+    max-width: 340px;
+    min-height: 52px;
+    font-size: 0.95rem;
+  }
 }
