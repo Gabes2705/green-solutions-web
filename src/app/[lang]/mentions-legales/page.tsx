@@ -1,81 +1,86 @@
 import type { Metadata } from "next";
-import { SITE_URL } from "@/lib/site";
+import { LANGUAGES, SITE_URL, languageAlternates } from "@/lib/site";
+import { LEGAL_TEXT } from "@/lib/legal-content";
+import type { Lang } from "@/lib/content";
 
-export const metadata: Metadata = {
-  title: "Mentions légales | Green Solutions",
-  description:
-    "Éditeur, directeur de la publication, hébergeur et propriété intellectuelle du site Green Solutions.",
-  alternates: { canonical: `${SITE_URL}/fr/mentions-legales` },
-};
+export function generateStaticParams() {
+  return LANGUAGES.map((lang) => ({ lang }));
+}
 
-export default function MentionsLegales() {
+type Params = { params: Promise<{ lang: string }> };
+
+function resolveLang(lang: string): Lang {
+  return (LANGUAGES as readonly string[]).includes(lang) ? (lang as Lang) : "fr";
+}
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { lang } = await params;
+  const key = resolveLang(lang);
+  const t = LEGAL_TEXT[key];
+  const canonical = `${SITE_URL}/${key}/mentions-legales`;
+  return {
+    title: `${t.legalTitle} | Green Solutions`,
+    description: t.legalDescription,
+    alternates: {
+      canonical,
+      languages: languageAlternates("/mentions-legales"),
+    },
+  };
+}
+
+export default async function MentionsLegales({ params }: Params) {
+  const { lang } = await params;
+  const key = resolveLang(lang);
+  const t = LEGAL_TEXT[key];
+
   return (
     <main className="legal">
-      <a href="/fr/" className="legal-back btn-3d btn-3d-light">
-        ← Retour au site
+      <a href={`/${key}/`} className="legal-back btn-3d btn-3d-light">
+        ← {t.back}
       </a>
 
-      <h1>Mentions légales</h1>
-      <p className="legal-updated">Dernière mise à jour : 16 septembre 2026</p>
+      <h1>{t.legalTitle}</h1>
+      <p className="legal-updated">{t.legalUpdated}</p>
 
-      <h2>Éditeur du site</h2>
+      <h2>{t.publisher}</h2>
       <p>
         <strong>GREEN SOLUTIONS GROUPE AIM SA</strong>
         <br />
         46, route de la Condémine, 1475 Forel, Suisse
         <br />
-        Société anonyme de droit suisse
+        {t.publisherBody}
         <br />
-        Numéro d&apos;identification des entreprises (IDE) :{" "}
-        <mark>à compléter</mark>
+        {t.companyId} : <mark>{t.toComplete}</mark>
         <br />
-        Téléphone : +33 6 44 83 55 09
+        {t.phone} : +33 6 44 83 55 09
         <br />
-        Courriel :{" "}
-        <a href="mailto:contact@evergreen-ecosorb.com">
-          contact@evergreen-ecosorb.com
-        </a>
+        {t.email} : <a href="mailto:contact@evergreen-ecosorb.com">contact@evergreen-ecosorb.com</a>
       </p>
 
-      <h2>Directeur de la publication</h2>
-      <p>Michel-Paul Correa, en sa qualité de dirigeant.</p>
+      <h2>{t.director}</h2>
+      <p>{t.directorBody}</p>
 
-      <h2>Hébergeur</h2>
+      <h2>{t.host}</h2>
       <p>
         <strong>Vercel Inc.</strong>
         <br />
         440 N Barranca Avenue #4133
         <br />
-        Covina, CA 91723, États-Unis
+        Covina, CA 91723, United States
         <br />
-        <a href="https://vercel.com" target="_blank" rel="noreferrer">
-          vercel.com
-        </a>
+        <a href="https://vercel.com" target="_blank" rel="noreferrer">vercel.com</a>
       </p>
 
-      <h2>Propriété intellectuelle</h2>
-      <p>
-        L&apos;ensemble des contenus de ce site — textes, images, schémas,
-        marques et logos — est protégé au titre du droit de la propriété
-        intellectuelle. Les marques EVERGREEN®, ECOSORB®, ECOFERT®, NAPEMA®,
-        Water Vital® et Paulownia ALTIFOLIA® sont des marques déposées.
-      </p>
-      <p>
-        Toute reproduction ou représentation, totale ou partielle, sans
-        autorisation écrite préalable est interdite.
-      </p>
+      <h2>{t.intellectual}</h2>
+      <p>{t.intellectualBody}</p>
 
-      <h2>Crédits photographiques</h2>
-      <p>
-        Photographies de Paulownia : Zeynel Cebeci et Codex, publiées sur
-        Wikimedia Commons sous licence CC BY-SA 4.0.
-      </p>
+      <h2>{t.credits}</h2>
+      <p>{t.creditsBody}</p>
 
-      <h2>Données personnelles</h2>
+      <h2>{t.personalData}</h2>
       <p>
-        Le traitement des données transmises via le formulaire de contact est
-        décrit dans la{" "}
-        <a href="/fr/confidentialite">politique de confidentialité</a>.
+        {t.personalDataBody}{" "}
+        <a href={`/${key}/confidentialite`}>{t.privacyTitle}</a>.
       </p>
     </main>
   );
