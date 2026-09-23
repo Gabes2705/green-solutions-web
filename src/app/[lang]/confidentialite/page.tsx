@@ -45,7 +45,7 @@ export default async function Confidentialite({ params }: Params) {
 
       <h2>{t.controller}</h2>
       <p>
-        GREEN SOLUTIONS GROUPE AIM SA, 46, route de la Condémine, 1475 Forel, Suisse.
+        {t.publisherBody}
         <br />
         {t.companyId} : <mark>{t.toComplete}</mark>.
         <br />
