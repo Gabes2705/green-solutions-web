@@ -8,6 +8,7 @@ import HeroParallax from "./HeroParallax";
 import Nav from "./Nav";
 import VideoDiagnostic from "./VideoDiagnostic";
 import { useLanguage } from "@/lib/LanguageContext";
+import { TEXTES } from "@/lib/gains-i18n";
 
 export default function Hero() {
   const { c, language } = useLanguage();
@@ -72,13 +73,11 @@ export default function Hero() {
               qui y mène ne s'affiche donc que là. */}
         </div>
 
-        {language === "fr" && (
-          <div className="hero-cta-impact-ligne">
-            <a href="#gain-au-champ" className="btn-3d btn-3d-light hero-cta-impact">
-              Impact économique par hectare
-            </a>
-          </div>
-        )}
+        <div className="hero-cta-impact-ligne">
+          <a href="#gain-au-champ" className="btn-3d btn-3d-light hero-cta-impact">
+            {(TEXTES[language] ?? TEXTES.fr).bouton}
+          </a>
+        </div>
       </HeroParallax>
 
       <FloatingVideo />
