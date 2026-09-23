@@ -68,7 +68,17 @@ export default function Hero() {
           >
             {partnerLabel}
           </a>
+          {/* Les quatre exemples chiffrés n'existent qu'en français : le bouton
+              qui y mène ne s'affiche donc que là. */}
         </div>
+
+        {language === "fr" && (
+          <div className="hero-cta-impact-ligne">
+            <a href="#gain-au-champ" className="btn-3d btn-3d-light hero-cta-impact">
+              Impact économique par hectare
+            </a>
+          </div>
+        )}
       </HeroParallax>
 
       <FloatingVideo />
