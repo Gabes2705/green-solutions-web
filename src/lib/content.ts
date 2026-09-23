@@ -470,7 +470,7 @@ const baseContent = {
     techChain: {
       eyebrow: "En chemin",
       title: "Conçues pour se renforcer",
-      lede: "Les cinq technologies se vendent séparément, mais elles ont été conçues pour se renforcer. Chacune lève une contrainte sur laquelle la suivante buterait.",
+      lede: "Les cinq technologies sont proposées séparément, mais elles ont été conçues pour se renforcer. Chacune lève une contrainte sur laquelle la suivante buterait.",
       tagline: "L'ensemble des technologies proposées sont éco-responsables, durables, efficientes & rentables",
       steps: [
         "Stocker l'eau dans le sol",
