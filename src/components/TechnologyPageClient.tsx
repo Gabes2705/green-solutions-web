@@ -129,7 +129,7 @@ export default function TechnologyPageClient() {
     return (
       <div className="tech-page">
         <div className="tech-bar">
-          <a href="/" className="tech-back btn-3d btn-3d-light">
+          <a href={`/${language}/`} className="tech-back btn-3d btn-3d-light">
             ← {c.countryStudies.backToSite}
           </a>
         </div>
@@ -140,7 +140,7 @@ export default function TechnologyPageClient() {
   return (
     <div className={`tech-page ${colorClass}`}>
       <div className="tech-bar">
-        <a href="/" className="tech-back btn-3d btn-3d-light">
+        <a href={`/${language}/`} className="tech-back btn-3d btn-3d-light">
           ← {c.countryStudies.backToSite}
         </a>
         <LanguageSwitcher />
@@ -234,7 +234,7 @@ export default function TechnologyPageClient() {
         <Reveal>
           <div className="tech-cta">
             <p>{c.products.lede}</p>
-            <a href="/#contact" className={`btn-3d tech-btn-3d ${colorClass}`}>
+            <a href={`/${language}/#contact`} className={`btn-3d tech-btn-3d ${colorClass}`}>
               {c.products.moreInfo}
             </a>
           </div>
