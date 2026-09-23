@@ -14,11 +14,11 @@
  *    à l'autre. Ces derniers portent la mention « à confirmer » tant que
  *    Gabriel ne les a pas validés.
  *
- * Le prix du produit — 17 € le kilo rendu cultivateur — est celui qu'il a
- * donné le 23 septembre 2026.
+ * Le prix du produit — 12 € le kilo rendu cultivateur — est celui qu'il a
+ * donné le 24 septembre 2026, après un premier chiffre de 17 €.
  */
 
-export const PRIX_PRODUIT = 17; // € le kilo, rendu cultivateur
+export const PRIX_PRODUIT = 12; // € le kilo, rendu cultivateur
 
 export type Cas = {
   slug: string;
