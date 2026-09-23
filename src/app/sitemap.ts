@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { DOSSIER_LANGS } from "@/lib/dossiers-index";
 import { ESSAIS } from "@/lib/essais";
+import { LANGUES_ESSAIS } from "@/lib/essais-i18n";
 import { GUIDES } from "@/lib/guides";
 import { SITE_URL, LANGUAGES } from "@/lib/site";
 
@@ -67,13 +68,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // Field trials, rewritten as web pages from the PDF reports. French only.
-  ["", ...ESSAIS.map((e) => `/${e.slug}`)].forEach((suffixe) => {
-    urls.push({
-      url: `${SITE_URL}/fr/essais-terrain${suffixe}`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
+  // Field trials, rewritten as web pages from the PDF reports, in every
+  // language they have been translated into.
+  LANGUES_ESSAIS.forEach((lang) => {
+    ["", ...ESSAIS.map((e) => `/${e.slug}`)].forEach((suffixe) => {
+      urls.push({
+        url: `${SITE_URL}/${lang}/essais-terrain${suffixe}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.8,
+      });
     });
   });
 

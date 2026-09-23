@@ -5,6 +5,14 @@ import { es } from "./es";
 import { de } from "./de";
 import { it } from "./it";
 import { pt } from "./pt";
+import { ca } from "./ca";
+import { pl } from "./pl";
+import { hr } from "./hr";
+import { el } from "./el";
+import { tr } from "./tr";
+import { id } from "./id";
+import { ar } from "./ar";
+import { zh } from "./zh";
 
 /**
  * Les essais dans la langue de la page.
@@ -63,7 +71,7 @@ export const HABILLAGE_FR: Habillage = {
 };
 
 /** Les langues déjà traduites. Les autres lisent le français. */
-export const TRADUCTIONS: Record<string, Traduction> = { en, es, pt, de, it };
+export const TRADUCTIONS: Record<string, Traduction> = { en, es, pt, ar, zh, id, de, it, el, tr, pl, hr, ca };
 
 export function habillage(langue: string): Habillage {
   return TRADUCTIONS[langue] ? { ...HABILLAGE_FR, ...TRADUCTIONS[langue].habillage } : HABILLAGE_FR;

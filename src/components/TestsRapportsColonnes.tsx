@@ -3,7 +3,7 @@
 import { useLanguage } from "@/lib/LanguageContext";
 import Reveal from "@/components/Reveal";
 import CountryFlag from "@/components/CountryFlag";
-import { ESSAIS } from "@/lib/essais";
+import { essaisTraduits, habillage, LANGUES_ESSAIS } from "@/lib/essais-i18n";
 import PHOTOS from "@/lib/essais-photos.json";
 import "./FieldTestsPage.css";
 
@@ -51,9 +51,9 @@ export default function TestsRapportsColonnes({
     </Reveal>
   );
 
-  // Les résultats réécrits en pages web n'existent qu'en français : ailleurs,
-  // seule la liste des rapports PDF s'affiche.
-  if (language !== "fr") {
+  // Les résultats réécrits en pages web n'existent que dans les langues
+  // traduites : ailleurs, seule la liste des rapports PDF s'affiche.
+  if (!LANGUES_ESSAIS.includes(language)) {
     return accueil ? rapports : <div className="tech-body">{rapports}</div>;
   }
 
@@ -65,9 +65,9 @@ export default function TestsRapportsColonnes({
           Les chiffres de chaque essai expliqués simplement, avec graphiques et photos.
         </p>
         <ul className="ft-cartes">
-          {ESSAIS.map((e) => (
+          {essaisTraduits(language).map((e) => (
             <li key={e.slug}>
-              <a className="ft-carte" href={`/fr/essais-terrain/${e.slug}`}>
+              <a className="ft-carte" href={`/${language}/essais-terrain/${e.slug}`}>
                 {vignette(e.slug) && (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={vignette(e.slug)} alt="" loading="lazy" decoding="async" />
@@ -82,8 +82,8 @@ export default function TestsRapportsColonnes({
             </li>
           ))}
         </ul>
-        <a className="ft-tous" href="/fr/essais-terrain">
-          Voir tous les essais →
+        <a className="ft-tous" href={`/${language}/essais-terrain`}>
+          {habillage(language).tousLesEssais}
         </a>
       </section>
 
