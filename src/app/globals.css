@@ -4148,3 +4148,27 @@ body li {
   text-align: justify;
   hyphens: auto;
 }
+
+/* Le bouton qui mène aux quatre exemples chiffrés : seul sur sa ligne, sous
+   les trois autres, comme Gabriel l'a dessiné. */
+.hero-cta-impact-ligne {
+  margin-top: -1em;
+  margin-bottom: 1.8em;
+  text-align: center;
+  animation: hero-in 0.85s cubic-bezier(0.2, 0.8, 0.2, 1) 0.78s both;
+}
+
+.hero-cta-impact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.82em 1.4em;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: linear-gradient(180deg, #1f8a45 0%, #1d8a96 100%);
+  color: #fff;
+}

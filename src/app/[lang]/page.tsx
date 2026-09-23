@@ -15,6 +15,7 @@ import Statement from "@/components/Statement";
 import Team from "@/components/Team";
 import TechChain from "@/components/TechChain";
 import TenirAvancer from "@/components/TenirAvancer";
+import GainAuChamp from "@/components/GainAuChamp";
 import TestsRapports from "@/components/TestsRapports";
 import CropExperience from "@/components/CropExperience";
 
@@ -52,6 +53,7 @@ export default function Home() {
       <TenirAvancer />
       <Produits />
       <TestsRapports />
+      <GainAuChamp />
       <Essais />
       <Objections />
       <TechChain />

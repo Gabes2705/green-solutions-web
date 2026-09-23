@@ -8,6 +8,7 @@ import HeroParallax from "./HeroParallax";
 import Nav from "./Nav";
 import VideoDiagnostic from "./VideoDiagnostic";
 import { useLanguage } from "@/lib/LanguageContext";
+import { TEXTES } from "@/lib/gains-i18n";
 
 export default function Hero() {
   const { c, language } = useLanguage();
@@ -67,6 +68,14 @@ export default function Hero() {
             className="btn-3d btn-3d-light hero-cta-main"
           >
             {partnerLabel}
+          </a>
+          {/* Les quatre exemples chiffrés n'existent qu'en français : le bouton
+              qui y mène ne s'affiche donc que là. */}
+        </div>
+
+        <div className="hero-cta-impact-ligne">
+          <a href="#gain-au-champ" className="btn-3d btn-3d-light hero-cta-impact">
+            {(TEXTES[language] ?? TEXTES.fr).bouton}
           </a>
         </div>
       </HeroParallax>
