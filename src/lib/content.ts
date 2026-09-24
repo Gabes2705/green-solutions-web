@@ -160,7 +160,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Augmenter les rendements sans alourdir la facture d'eau : nos hydrorétenteurs et notre eau restructurée réduisent le besoin en irrigation de 50 à 70 %, tout en maintenant, voire en augmentant, vos rendements.",
+          text: "Augmenter les rendements sans alourdir la facture d'eau : nos hydrorétenteurs et notre eau restructurée réduisent le besoin en irrigation de 40 à 70 %, tout en maintenant, voire en augmentant, vos rendements.",
           linkLabel: "Voir EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -272,7 +272,7 @@ const baseContent = {
           facts: [
             "Aucun résidu dans le sol, la plante ou l'air",
             "Pollinisateurs et auxiliaires préservés",
-            "Cochenille du figuier, HLB des agrumes, nématodes",
+            "Cochenille du figuier de Barbarie, HLB des agrumes, nématodes",
           ],
           more: "NAPEMA® (Natural Pest Management) est une approche disruptive de protection des cultures : ni molécule de synthèse, ni lutte biologique classique par insectes auxiliaires — une méthode reconnue pour son intérêt écologique, mais dont l'efficacité reste limitée car les prédateurs ne sont pas toujours présents au bon moment ni en quantité suffisante, et qui ne permet presque jamais de contrôler les maladies. NAPEMA® agit par pulvérisation foliaire et racinaire, à titre préventif comme curatif, contre les maladies, parasites, champignons et ravageurs, sans laisser de résidu ni dans le sol, ni dans la plante, ni dans l'air. Sa vraie force est sur-mesure : chaque solution est formulée pour répondre à un problème précis, ponctuel ou récurrent — la cochenille des figuiers de Barbarie, le citrus greening (HLB) qui menace les agrumes, ou les nématodes qui affectent tomates et canne à sucre en sont des exemples traités avec succès. Le résultat est une protection qui préserve la faune et la flore utiles — pollinisateurs et auxiliaires compris — sans perturber le cycle naturel de fertilité du sol, à un coût qui reste accessible et qui protège, plutôt qu'il ne grève, la rentabilité de la culture.",
           detail: {
@@ -449,7 +449,7 @@ const baseContent = {
         },
         {
           q: "« Les hydrogels que j'ai essayés ont étouffé mes plants. »",
-          a: "C'est le défaut des produits à base de sodium : une fois hydratés ils forment une pâte qui asphyxie la plante. Ceux à base d'acrylamide, eux, ne sont autorisés que pour les cultures non alimentaires quand ils le sont. Nos deux formulations sont à base de potassium, compatibles avec les cultures alimentaires et avec la microfaune du sol.",
+          a: "C'est le défaut des produits à base de sodium : une fois hydratés ils forment une pâte qui asphyxie la plante. Ceux à base d'acrylamide, là où ils restent autorisés, ne le sont que pour les cultures non alimentaires. Nos deux formulations sont à base de potassium, compatibles avec les cultures alimentaires et avec la microfaune du sol.",
           proofLabel: null as string | null,
           proofHref: null as string | null,
         },
@@ -779,7 +779,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Increase yields without increasing water costs: our water-retaining polymers and restructured water cut irrigation needs by 50 to 70%, while maintaining — or even increasing — your yields.",
+          text: "Increase yields without increasing water costs: our water-retaining polymers and restructured water cut irrigation needs by 40 to 70%, while maintaining — or even increasing — your yields.",
           linkLabel: "See EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -789,7 +789,7 @@ const baseContent = {
           linkHref: "#fertilisation",
         },
         {
-          text: "Make reclaimed land pay off: our agroforestry program establishes a functional ecosystem in under 24 months, even on sandy or degraded soils, with every plant equipped from the moment it's planted.",
+          text: "Make reclaimed land pay off: our agroforestry programme establishes a functional ecosystem in under 24 months, even on sandy or degraded soils, with every plant equipped from the moment it's planted.",
           linkLabel: "See agroforestry",
           linkHref: "#agroforesterie",
         },
@@ -804,7 +804,7 @@ const baseContent = {
     products: {
       eyebrow: "The technologies",
       title: "An answer to every field constraint",
-      lede: "Five branded technologies, and the agroforestry program that combines them on land to be reclaimed.",
+      lede: "Five branded technologies, and the agroforestry programme that combines them on land to be reclaimed.",
       moreInfo: "More information",
       videosHeading: "In video",
       watchVideo: "Video",
@@ -851,8 +851,8 @@ const baseContent = {
           id: "fertilisation",
           num: "02",
           kicker: "Nourish without chemistry",
-          title: "ECOFERT® Fertilizers",
-          text: "A microdose fertilizer of amino acids, nitrogen, phosphorus and potassium, from renewable resources. Non-chelating: it doesn't deplete the soil, it enriches it. No leaching, no rise in salinity or nitrates, in the plant or in the ground.",
+          title: "ECOFERT® Fertilisers",
+          text: "A microdose fertiliser of amino acids, nitrogen, phosphorus and potassium, from renewable resources. Non-chelating: it doesn't deplete the soil, it enriches it. No leaching, no rise in salinity or nitrates, in the plant or in the ground.",
           facts: [
             "Up to +100% production, in quantity and quality",
             "+60% documented yield in the Sahel with ECOSORB®",
@@ -891,7 +891,7 @@ const baseContent = {
           facts: [
             "No residue in the soil, the plant or the air",
             "Pollinators and beneficial insects preserved",
-            "Fig scale, citrus HLB, nematodes",
+            "Prickly-pear cochineal, citrus HLB, nematodes",
           ],
           more: "NAPEMA® (Natural Pest Management) is a disruptive approach to crop protection: no synthetic molecules, and no reliance on classic biological control by predator insects — a method valued ecologically, but of limited efficiency, since predators are not always present in the right numbers at the right time, and it almost never controls plant diseases. NAPEMA® works through foliar and root spraying, both preventively and curatively, against diseases, pests, fungi and other threats, leaving no residue in the soil, the plant or the air. Its real strength is customisation: each solution is formulated for a specific, one-off or recurring problem — prickly-pear cochineal, citrus greening (HLB), or nematodes affecting tomatoes and sugarcane are examples successfully treated. The result is protection that spares beneficial fauna and flora — pollinators included — without disrupting the soil's natural fertility cycle, at a cost that stays accessible and protects, rather than erodes, the crop's profitability.",
           detail: {
@@ -921,18 +921,18 @@ const baseContent = {
           num: "04",
           kicker: "Restructure water",
           title: "Water Vital®",
-          text: "Restructuring by molecular resonance turns 'dead' water, disorganized at the atomic level, into living water that regains its natural properties. The system runs with no energy, no maintenance and no consumables.",
+          text: "Restructuring by molecular resonance turns “dead” water, disorganised at the atomic level, into living water that regains its natural properties. The system runs with no energy, no maintenance and no consumables.",
           facts: [
             "−30% water, immediate effect",
             "Up to −70% combined with water-retaining polymers",
             "Less corrosion and limescale, adopted in 55 countries",
           ],
-          more: "Water Vital® restructures water through molecular resonance: \"dead\" water, disorganised at the atomic level after passing through pipes or boreholes, regains a structure close to that of natural water. The system is purely physical — no power, no maintenance, no consumables or chemicals — and fits directly onto existing pipework, at the pump outlets. In the field, at the EL HILAL Group (Sidi Moussa, Tipaza, Algeria), Water Vital® was selected to drip-irrigate 350 hectares of fruit trees (figs, apples, peaches, pomegranates), fed by a 200 x 100 x 12-metre reservoir and several boreholes, through three pump sets with flow rates of 42 to 180 m³/h. The solution was installed directly at the pump outlets, with no change to the existing irrigation network. Measured effects: up to -30% water consumption from day one, and up to -70% when combined with our EVERGREEN® or ECOSORB® water retainers; less corrosion and limescale in pipes and drip emitters. The technology is now adopted in 55 countries.",
+          more: "Water Vital® restructures water through molecular resonance: \"dead\" water, disorganised at the atomic level after passing through pipes or boreholes, regains a structure close to that of natural water. The system is purely physical — no power, no maintenance, no consumables or chemicals — and fits directly onto existing pipework, at the pump outlets. In the field, at the EL HILAL Group (Sidi Moussa, Tipaza, Algeria), Water Vital® was selected to drip-irrigate 350 hectares of fruit trees (figs, apples, peaches, pomegranates), fed by a 200 x 100 x 12-metre reservoir and several boreholes, through three pump sets with flow rates of 42 to 180 m³/h. The solution was installed directly at the pump outlets, with no change to the existing irrigation network. Measured effects: up to −30% water consumption from day one, and up to −70% when combined with our EVERGREEN® or ECOSORB® water retainers; less corrosion and limescale in pipes and drip emitters. The technology is now adopted in 55 countries.",
           detail: {
             sections: [
               {
                 h: "The principle",
-                p: "Water Vital® restructures water through molecular resonance: \"dead\" water, disorganised at the atomic level after passing through pipes or boreholes, regains a structure close to that of natural water. The system is purely physical — no power, no maintenance, no consumables or chemicals — and fits directly onto existing pipework, at the pump outlets. Measured effects: up to -30% water consumption from day one, and up to -70% when combined with our EVERGREEN® or ECOSORB® water retainers; less corrosion and limescale in pipes and drip emitters. The technology is now adopted in 55 countries.",
+                p: "Water Vital® restructures water through molecular resonance: \"dead\" water, disorganised at the atomic level after passing through pipes or boreholes, regains a structure close to that of natural water. The system is purely physical — no power, no maintenance, no consumables or chemicals — and fits directly onto existing pipework, at the pump outlets. Measured effects: up to −30% water consumption from day one, and up to −70% when combined with our EVERGREEN® or ECOSORB® water retainers; less corrosion and limescale in pipes and drip emitters. The technology is now adopted in 55 countries.",
               },
               {
                 h: "Molecular resonance, explained",
@@ -940,7 +940,7 @@ const baseContent = {
               },
               {
                 h: "Case study: the EL HILAL Group, Algeria",
-                p: "In August 2025, our team visited Sidi Moussa, in the Tipaza province, at SARL EL HILAL Development and Industrial Agriculture. The site: around 350 hectares of fruit trees (figs, apples, peaches, pomegranates), already fitted with drip irrigation, fed by a 200 x 100 x 12-metre irrigation reservoir and several boreholes. Three pump sets, with flow rates from 42 to 180 m³/h, irrigate the estate around four hours a day. Water Vital® was installed directly at the three pump outlets. Result: up to -30% water consumption from day one, and up to -70% when combined with our water retainers.",
+                p: "In August 2025, our team visited Sidi Moussa, in the Tipaza province, at SARL EL HILAL Development and Industrial Agriculture. The site: around 350 hectares of fruit trees (figs, apples, peaches, pomegranates), already fitted with drip irrigation, fed by a 200 x 100 x 12-metre irrigation reservoir and several boreholes. Three pump sets, with flow rates from 42 to 180 m³/h, irrigate the estate around four hours a day. Water Vital® was installed directly at the three pump outlets. Result: up to −30% water consumption from day one, and up to −70% when combined with our water retainers.",
               },
             ],
             gallery: [
@@ -990,11 +990,11 @@ const baseContent = {
           num: "06",
           kicker: "The application · reclaiming land",
           title: "Agroforestry & reforestation",
-          text: "Agroforestry ecosystems established in under 24 months, for reforestation programs and the fight against desertification. Each plant goes into the ground with its own water-retaining polymer and fertilizer dose, so it takes even on sandy or degraded soils.",
+          text: "Agroforestry ecosystems established in under 24 months, for reforestation programmes and the fight against desertification. Each plant goes into the ground with its own water-retaining polymer and fertiliser dose, so it takes even on sandy or degraded soils.",
           facts: [
             "Functional ecosystem within 24 months",
             "Every plant equipped from the moment it's planted",
-            "Stabilization of sandy and degraded soils",
+            "Stabilisation of sandy and degraded soils",
           ],
           more: "Agroforestry is where all our technologies come together. Every reforestation or land-recovery programme combines Paulownia ALTIFOLIA® or local species, our EVERGREEN®/ECOSORB® water retainers applied at planting, and our ECOFERT® fertilisers to support rooting — enough to establish a functioning agroforestry ecosystem in under 24 months, even on sandy or heavily degraded soils where conventional tree-growing fails. Every plant leaves the nursery already equipped with its dose of water retainer, removing the risk of water stress during the critical establishment period and pushing survival rates above 95%. Beyond the wood and the revenue it eventually generates, this kind of programme durably stabilises soil against erosion and desertification, restores below- and above-ground biodiversity, and opens access to carbon credits and honey production (up to 400-700 kg per hectare with Paulownia) that diversify income for the farms involved.",
           detail: {
@@ -1033,13 +1033,13 @@ const baseContent = {
         { org: "ZARROUK Group", place: "Tunisia", crop: "Tomato crop", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Corsica, France", crop: "Olive and hazelnut trees", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "Moreau-Daverne Institute", place: "France", crop: "Market gardening", tech: ["ECOSORB®", "ECOFERT®"] },
-        { org: "BEEN AGRO", place: "Guinea Conakry", crop: "Corn and peanuts", tech: ["ECOSORB®", "ECOFERT®"] },
+        { org: "BEEN AGRO", place: "Guinea Conakry", crop: "Maize and peanuts", tech: ["ECOSORB®", "ECOFERT®"] },
         { org: "GOUDARAS Group", place: "Greece", crop: "Chestnut plantation", tech: ["EVERGREEN®", "ECOFERT®"] },
-        { org: "AGRO COMPLEX", place: "Poland", crop: "Corn and potatoes", tech: ["EVERGREEN®"] },
+        { org: "AGRO COMPLEX", place: "Poland", crop: "Maize and potatoes", tech: ["EVERGREEN®"] },
         { org: "CEHPAPE Institute", place: "Haiti", crop: "Market gardening / plantain banana / rice", tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"] },
         { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Phenix turf", tech: ["EVERGREEN®"] },
         { org: "Green Dream", place: "Chichaoua, Morocco", crop: "Organic clementines (Afourer variety), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
-        { org: "ARAFA Cie", place: "Egypt", crop: "Corn / Clover / Olive tree", tech: ["EVERGREEN®", "ECOFERT®"] },
+        { org: "ARAFA Cie", place: "Egypt", crop: "Maize / Clover / Olive tree", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Eden Ecolodge — Jean-Philippe Durand", place: "Madagascar", crop: "Market gardening / Paulownia", tech: ["ECOSORB®", "ECOFERT®"] },
       ],
     },
@@ -1068,13 +1068,13 @@ const baseContent = {
         },
         {
           q: "\"The hydrogels I tried suffocated my plants.\"",
-          a: "That's the flaw of sodium-based products: once hydrated they form a paste that suffocates the plant. Acrylamide-based ones, where still allowed, are only authorized for non-food crops. Both our formulations are potassium-based, compatible with food crops and soil microfauna.",
+          a: "That's the flaw of sodium-based products: once hydrated they form a paste that suffocates the plant. Acrylamide-based ones, where still allowed, are only authorised for non-food crops. Both our formulations are potassium-based, compatible with food crops and soil microfauna.",
           proofLabel: null as string | null,
           proofHref: null as string | null,
         },
         {
           q: "\"Will it work on my soil and my crop?\"",
-          a: "The dosage rule is the same everywhere: 3 grams per liter of usable soil. Trials currently under way cover corn, potato, sugarcane, tomato, olive, hazelnut, peanut, chestnut, turf, red maple and Douglas fir, across climates from Poland to Guinea. Tell us about your plot, and we'll tell you what's already been done in a comparable situation.",
+          a: "The dosage rule is the same everywhere: 3 grams per litre of usable soil. Trials currently under way cover maize, potato, sugarcane, tomato, olive, hazelnut, peanut, chestnut, turf, red maple and Douglas fir, across climates from Poland to Guinea. Tell us about your plot, and we'll tell you what's already been done in a comparable situation.",
           proofLabel: null as string | null,
           proofHref: null as string | null,
         },
@@ -1144,7 +1144,7 @@ const baseContent = {
     partnersPage: {
       eyebrow: "Ecosystem",
       title: "Our partners",
-      lede: "Producers, research institutes, distributors and organizations building this network with us.",
+      lede: "Producers, research institutes, distributors and organisations building this network with us.",
       hint: "Click a logo to see its website.",
     },
     team: {
@@ -1199,7 +1199,7 @@ const baseContent = {
       successText: "Thank you, we'll get back to you shortly. For anything urgent, write directly to",
       honeypotLabel: "Leave this blank",
       formName: "Name",
-      formStructure: "Organization",
+      formStructure: "Organisation",
       formCountry: "Country",
       formCity: "City",
       formCrop: "Crop type",
@@ -1224,7 +1224,7 @@ const baseContent = {
         { title: "SOHISCERT organic certificate", meta: "Inputs usable in organic plant production · valid until September 4, 2027" },
         { title: "ECOSORB® acrylamide analysis", meta: "Polymex laboratory, ISO 9001 certified · December 2024 · content < 3.0 µg/g" },
         { title: "EVERGREEN® REACH / SVHC screening", meta: "SGS · June 2023 · 233 substances of very high concern, all ≤ 0.1%" },
-        { title: "ECOSORB® test report", meta: "SGS · November 2024 · super-absorbent polymer characterization" },
+        { title: "ECOSORB® test report", meta: "SGS · November 2024 · super-absorbent polymer characterisation" },
       ],
     },
     footer: {
@@ -1398,7 +1398,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Aumentar los rendimientos sin aumentar el coste del agua: nuestros polímeros retenedores de agua y nuestra agua restructurada reducen la necesidad de riego entre un 50 y un 70 %, manteniendo, o incluso aumentando, sus rendimientos.",
+          text: "Aumentar los rendimientos sin aumentar el coste del agua: nuestros polímeros retenedores de agua y nuestra agua restructurada reducen la necesidad de riego entre un 40 y un 70 %, manteniendo, o incluso aumentando, sus rendimientos.",
           linkLabel: "Ver EVERGREEN® y ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -1510,7 +1510,7 @@ const baseContent = {
           facts: [
             "Sin residuos en el suelo, la planta o el aire",
             "Polinizadores y auxiliares preservados",
-            "Cochinilla de la higuera, HLB de los cítricos, nematodos",
+            "Cochinilla de la chumbera, HLB de los cítricos, nematodos",
           ],
           more: "NAPEMA® (Natural Pest Management) es un enfoque disruptivo de protección de cultivos: sin moléculas de síntesis, y sin depender del control biológico clásico con insectos depredadores —un método valioso desde el punto de vista ecológico, pero de eficacia limitada, ya que los depredadores no siempre están presentes en el momento ni en la cantidad necesarios, y casi nunca permite controlar enfermedades. NAPEMA® actúa mediante pulverización foliar y radicular, con efecto preventivo y curativo, contra enfermedades, plagas, hongos y otras amenazas, sin dejar residuos en el suelo, la planta ni el aire. Su verdadera fortaleza está en la personalización: cada solución se formula para un problema concreto, puntual o recurrente —la cochinilla de la chumbera, el citrus greening (HLB) de los cítricos, o los nematodos que afectan al tomate y la caña de azúcar son ejemplos tratados con éxito. El resultado es una protección que respeta la fauna y flora útiles —incluidos los polinizadores— sin alterar el ciclo natural de fertilidad del suelo, a un coste accesible que protege, en lugar de erosionar, la rentabilidad del cultivo.",
           detail: {
@@ -1546,12 +1546,12 @@ const baseContent = {
             "Hasta −70 % combinado con los polímeros retenedores de agua",
             "Menos corrosión y cal, adoptado en 55 países",
           ],
-          more: "Water Vital® reestructura el agua mediante resonancia molecular: un agua «muerta», desorganizada a nivel atómico tras pasar por tuberías o pozos, recupera una estructura próxima a la del agua natural. El sistema es puramente físico —sin energía, sin mantenimiento, sin consumibles ni productos químicos— y se instala directamente sobre la red existente, a la salida de las bombas. Sobre el terreno, en el Grupo EL HILAL (Sidi Moussa, Tipaza, Argelia), Water Vital® fue la solución elegida para regar por goteo 350 hectáreas de árboles frutales (higueras, manzanos, melocotoneros, granados), alimentadas por un embalse de 200 x 100 x 12 metros y varios pozos, a través de tres grupos de bombeo con caudales de 42 a 180 m³/h. La solución se instaló directamente en las salidas de las bombas, sin modificar la red de riego existente. Efectos medidos: hasta -30% de consumo de agua desde la puesta en marcha, y hasta -70% combinado con nuestros hidrorretenedores EVERGREEN® o ECOSORB®; menos corrosión y cal en tuberías y goteros. La tecnología está hoy adoptada en 55 países.",
+          more: "Water Vital® reestructura el agua mediante resonancia molecular: un agua «muerta», desorganizada a nivel atómico tras pasar por tuberías o pozos, recupera una estructura próxima a la del agua natural. El sistema es puramente físico —sin energía, sin mantenimiento, sin consumibles ni productos químicos— y se instala directamente sobre la red existente, a la salida de las bombas. Sobre el terreno, en el Grupo EL HILAL (Sidi Moussa, Tipaza, Argelia), Water Vital® fue la solución elegida para regar por goteo 350 hectáreas de árboles frutales (higueras, manzanos, melocotoneros, granados), alimentadas por un embalse de 200 x 100 x 12 metros y varios pozos, a través de tres grupos de bombeo con caudales de 42 a 180 m³/h. La solución se instaló directamente en las salidas de las bombas, sin modificar la red de riego existente. Efectos medidos: hasta −30% de consumo de agua desde la puesta en marcha, y hasta −70% combinado con nuestros hidrorretenedores EVERGREEN® o ECOSORB®; menos corrosión y cal en tuberías y goteros. La tecnología está hoy adoptada en 55 países.",
           detail: {
             sections: [
               {
                 h: "El principio",
-                p: "Water Vital® reestructura el agua mediante resonancia molecular: un agua «muerta», desorganizada a nivel atómico tras pasar por tuberías o pozos, recupera una estructura próxima a la del agua natural. El sistema es puramente físico —sin energía, sin mantenimiento, sin consumibles ni productos químicos— y se instala directamente sobre la red existente, a la salida de las bombas. Efectos medidos: hasta -30% de consumo de agua desde la puesta en marcha, y hasta -70% combinado con nuestros hidrorretenedores. La tecnología está hoy adoptada en 55 países.",
+                p: "Water Vital® reestructura el agua mediante resonancia molecular: un agua «muerta», desorganizada a nivel atómico tras pasar por tuberías o pozos, recupera una estructura próxima a la del agua natural. El sistema es puramente físico —sin energía, sin mantenimiento, sin consumibles ni productos químicos— y se instala directamente sobre la red existente, a la salida de las bombas. Efectos medidos: hasta −30% de consumo de agua desde la puesta en marcha, y hasta −70% combinado con nuestros hidrorretenedores. La tecnología está hoy adoptada en 55 países.",
               },
               {
                 h: "La resonancia molecular, explicada",
@@ -1559,7 +1559,7 @@ const baseContent = {
               },
               {
                 h: "Caso de estudio: Grupo EL HILAL, Argelia",
-                p: "En agosto de 2025, nuestro equipo visitó Sidi Moussa, en la provincia de Tipaza, en la SARL EL HILAL Desarrollo y Agricultura Industrial. El emplazamiento: unas 350 hectáreas de árboles frutales (higueras, manzanos, melocotoneros, granados), ya equipadas con riego por goteo, alimentadas por un embalse de riego de 200 x 100 x 12 metros y varios pozos. Tres grupos de bombeo, con caudales de 42 a 180 m³/h, riegan la finca unas cuatro horas al día. Water Vital® se instaló directamente en las tres salidas de bomba. Resultado: hasta -30% de consumo de agua desde la puesta en marcha, y hasta -70% combinado con nuestros hidrorretenedores.",
+                p: "En agosto de 2025, nuestro equipo visitó Sidi Moussa, en la provincia de Tipaza, en la SARL EL HILAL Desarrollo y Agricultura Industrial. El emplazamiento: unas 350 hectáreas de árboles frutales (higueras, manzanos, melocotoneros, granados), ya equipadas con riego por goteo, alimentadas por un embalse de riego de 200 x 100 x 12 metros y varios pozos. Tres grupos de bombeo, con caudales de 42 a 180 m³/h, riegan la finca unas cuatro horas al día. Water Vital® se instaló directamente en las tres salidas de bomba. Resultado: hasta −30% de consumo de agua desde la puesta en marcha, y hasta −70% combinado con nuestros hidrorretenedores.",
               },
             ],
             gallery: [
@@ -1615,12 +1615,12 @@ const baseContent = {
             "Cada planta equipada desde la siembra",
             "Estabilización de suelos arenosos y degradados",
           ],
-          more: "La agroforestería es donde todas nuestras tecnologías se combinan. Cada programa de reforestación o recuperación de tierras une el Paulownia ALTIFOLIA® o especies locales, nuestros hidrorretenedores EVERGREEN®/ECOSORB® aplicados en la plantación, y nuestros fertilizantes ECOFERT® para acompañar el enraizamiento —lo suficiente para instalar un ecosistema agroforestal funcional en menos de 24 meses, incluso en suelos arenosos o muy degradados donde la arboricultura convencional fracasa. Cada planta sale ya equipada con su dosis de hidrorretenedor, lo que elimina el riesgo de estrés hídrico durante el período crítico de arraigo y eleva la tasa de supervivencia por encima del 95%. Más allá de la madera y los ingresos que genera a largo plazo, este tipo de programa estabiliza de forma duradera el suelo frente a la erosión y la desertificación, restaura la biodiversidad subterránea y aérea, y abre acceso a créditos de carbono y a producción de miel (hasta 400-700 kg por hectárea con el Paulownia) que diversifican los ingresos de las explotaciones implicadas.",
+          more: "La agrosilvicultura es donde todas nuestras tecnologías se combinan. Cada programa de reforestación o recuperación de tierras une el Paulownia ALTIFOLIA® o especies locales, nuestros hidrorretenedores EVERGREEN®/ECOSORB® aplicados en la plantación, y nuestros fertilizantes ECOFERT® para acompañar el enraizamiento —lo suficiente para instalar un ecosistema agroforestal funcional en menos de 24 meses, incluso en suelos arenosos o muy degradados donde la arboricultura convencional fracasa. Cada planta sale ya equipada con su dosis de hidrorretenedor, lo que elimina el riesgo de estrés hídrico durante el período crítico de arraigo y eleva la tasa de supervivencia por encima del 95%. Más allá de la madera y los ingresos que genera a largo plazo, este tipo de programa estabiliza de forma duradera el suelo frente a la erosión y la desertificación, restaura la biodiversidad subterránea y aérea, y abre acceso a créditos de carbono y a producción de miel (hasta 400-700 kg por hectárea con el Paulownia) que diversifican los ingresos de las explotaciones implicadas.",
           detail: {
             sections: [
               {
                 h: "El principio",
-                p: "La agroforestería es donde todas nuestras tecnologías se combinan. Cada programa de reforestación o recuperación de tierras une el Paulownia ALTIFOLIA® o especies locales, nuestros hidrorretenedores EVERGREEN®/ECOSORB® aplicados en la plantación, y nuestros fertilizantes ECOFERT® para acompañar el enraizamiento —lo suficiente para instalar un ecosistema agroforestal funcional en menos de 24 meses, incluso en suelos arenosos o muy degradados donde la arboricultura convencional fracasa.",
+                p: "La agrosilvicultura es donde todas nuestras tecnologías se combinan. Cada programa de reforestación o recuperación de tierras une el Paulownia ALTIFOLIA® o especies locales, nuestros hidrorretenedores EVERGREEN®/ECOSORB® aplicados en la plantación, y nuestros fertilizantes ECOFERT® para acompañar el enraizamiento —lo suficiente para instalar un ecosistema agroforestal funcional en menos de 24 meses, incluso en suelos arenosos o muy degradados donde la arboricultura convencional fracasa.",
               },
               {
                 h: "Un método, no solo una plantación",
@@ -2017,7 +2017,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Aumentar os rendimentos sem aumentar o custo da água: os nossos polímeros retentores de água e a nossa água restruturada reduzem a necessidade de irrigação em 50 a 70 %, mantendo, ou mesmo aumentando, os seus rendimentos.",
+          text: "Aumentar os rendimentos sem aumentar o custo da água: os nossos polímeros retentores de água e a nossa água restruturada reduzem a necessidade de irrigação em 40 a 70 %, mantendo, ou mesmo aumentando, os seus rendimentos.",
           linkLabel: "Ver EVERGREEN® e ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -2636,7 +2636,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "زيادة الإنتاجية دون فاتورة مياه إضافية: بوليمراتنا المحتفظة بالماء ومياهنا المعاد هيكلتها تقلل احتياجات الري بنسبة 50 إلى 70%، مع الحفاظ على إنتاجيتك أو حتى زيادتها.",
+          text: "زيادة الإنتاجية دون فاتورة مياه إضافية: بوليمراتنا المحتفظة بالماء ومياهنا المعاد هيكلتها تقلل احتياجات الري بنسبة 40 إلى 70%، مع الحفاظ على إنتاجيتك أو حتى زيادتها.",
           linkLabel: "شاهد EVERGREEN® و ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -3255,7 +3255,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "在不增加水费的情况下提高产量：我们的保水剂和重构水可将灌溉需求降低50%至70%，同时保持甚至提高产量。",
+          text: "在不增加水费的情况下提高产量：我们的保水剂和重构水可将灌溉需求降低40%至70%，同时保持甚至提高产量。",
           linkLabel: "了解 EVERGREEN® 与 ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -3874,7 +3874,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Meningkatkan hasil panen tanpa menambah biaya air: polimer penahan air dan air terestrukturisasi kami mengurangi kebutuhan irigasi sebesar 50 hingga 70%, sambil mempertahankan atau bahkan meningkatkan hasil panen Anda.",
+          text: "Meningkatkan hasil panen tanpa menambah biaya air: polimer penahan air dan air terestrukturisasi kami mengurangi kebutuhan irigasi sebesar 40 hingga 70%, sambil mempertahankan atau bahkan meningkatkan hasil panen Anda.",
           linkLabel: "Lihat EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -4493,7 +4493,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Erträge steigern, ohne die Wasserrechnung zu erhöhen: Unsere Wasserspeicher-Polymere und unser restrukturiertes Wasser senken den Bewässerungsbedarf um 50 bis 70 %, bei gleichbleibenden oder sogar höheren Erträgen.",
+          text: "Erträge steigern, ohne die Wasserrechnung zu erhöhen: Unsere Wasserspeicher-Polymere und unser restrukturiertes Wasser senken den Bewässerungsbedarf um 40 bis 70 %, bei gleichbleibenden oder sogar höheren Erträgen.",
           linkLabel: "EVERGREEN® & ECOSORB® ansehen",
           linkHref: "#retention-eau",
         },
@@ -4582,7 +4582,7 @@ const baseContent = {
               },
               {
                 h: "Eine Formel, die den Boden nie erschöpft",
-                p: "Im Gegensatz zu klassischen Chelat-Düngemitteln, deren langfristiger Einsatz die Bodenstruktur verarmt, wirkt ECOFERT® in Mikrodosen direkt assimilierbarer Aminosäuren – ohne Auswaschung, ohne Anstieg von Salzgehalt oder Nitraten, weder in der Pflanze noch im Boden. Das Produkt ist nicht entflammbar, birgt keine nennenswerte Gefahr für den Anwender (im schlimmsten Fall eine leichte Reizung bei sehr längerem Hautkontakt) und stellt kein Problem für Transport, Lagerung oder Versand dar, auch nicht auf dem Luftweg gemäß IATA- und ICAO-Normen.",
+                p: "Im Gegensatz zu klassischen Chelat-Düngemitteln, deren langfristiger Einsatz die Bodenstruktur verarmt, wirkt ECOFERT® in Mikrodosen direkt assimilierbarer Aminosäuren – ohne Auswaschung, ohne Anstieg von Salzgehalt oder Nitraten, weder in der Pflanze noch im Boden. Das Produkt ist nicht entflammbar, birgt keine nennenswerte Gefahr für den Anwender (im schlimmsten Fall eine leichte Reizung bei sehr langem Hautkontakt) und stellt kein Problem für Transport, Lagerung oder Versand dar, auch nicht auf dem Luftweg gemäß IATA- und ICAO-Normen.",
               },
               {
                 h: "Ein einfaches, an jede Kultur angepasstes Protokoll",
@@ -5112,7 +5112,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Aumentare le rese senza aumentare i costi dell'acqua: i nostri idroritentori e la nostra acqua ristrutturata riducono il fabbisogno di irrigazione del 50-70 %, mantenendo o addirittura aumentando le rese.",
+          text: "Aumentare le rese senza aumentare i costi dell'acqua: i nostri idroritentori e la nostra acqua ristrutturata riducono il fabbisogno di irrigazione del 40-70 %, mantenendo o addirittura aumentando le rese.",
           linkLabel: "Scopri EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -5157,12 +5157,12 @@ const baseContent = {
             "Si degrada del 20-25 % all'anno, nessun rischio di sovradosaggio",
             "Canna da zucchero: +25 % di tenore zuccherino (Brix) con 15 kg/ha",
           ],
-          more: "EVERGREEN® ed ECOSORB® sono polimeri superassorbenti che si biodegradano completamente, senza lasciare residui nel suolo né sulle piante. Assorbono circa 300 volte il loro peso in acqua e la restituiscono alle radici secondo le esigenze della coltura, ciclo dopo ciclo, fino alla loro degradazione naturale (20-25 % all'anno) in CO₂, acqua e composti azotati assimilabili. A differenza degli idroritentori a base di sodio — che, una volta idratati, formano una pasta soffocante e salina per le radici — o delle formulazioni a base di acrilammide, vietate in molti paesi per la loro tossicità, i nostri due prodotti sono a base di potassio, compatibili con le colture alimentari. A contatto con l'acqua, il granulo secco si gonfia: questo effetto va e vieni decompatta il suolo come farebbe un lombrico, ne migliora la permeabilità e crea un microclima umido favorevole alla microfauna e alla microflora, motori della fertilità naturale. I fertilizzanti disciolti vengono catturati al passaggio anziché essere dilavati verso le falde, il che riduce l'inquinamento e permette di valorizzare meglio ogni apporto. Associati ai nostri fertilizzanti ECOFERT®, EVERGREEN® ed ECOSORB® formano un sistema completo che ha permesso, sulla canna da zucchero, un guadagno del 25 % nel tenore zuccherino (Brix) con solo 15 kg di prodotto per ettaro. Oltre il 95 % delle piante trapiantate con i nostri idroritentori attecchisce, contro un tasso nettamente inferiore in condizioni convenzionali.",
+          more: "EVERGREEN® ed ECOSORB® sono polimeri superassorbenti che si biodegradano completamente, senza lasciare residui nel suolo né sulle piante. Assorbono circa 300 volte il loro peso in acqua e la restituiscono alle radici secondo le esigenze della coltura, ciclo dopo ciclo, fino alla loro degradazione naturale (20-25 % all'anno) in CO₂, acqua e composti azotati assimilabili. A differenza degli idroritentori a base di sodio — che, una volta idratati, formano una pasta soffocante e salina per le radici — o delle formulazioni a base di acrilammide, vietate in molti paesi per la loro tossicità, i nostri due prodotti sono a base di potassio, compatibili con le colture alimentari. A contatto con l'acqua, il granulo secco si gonfia: questo andirivieni decompatta il suolo come farebbe un lombrico, ne migliora la permeabilità e crea un microclima umido favorevole alla microfauna e alla microflora, motori della fertilità naturale. I fertilizzanti disciolti vengono catturati al passaggio anziché essere dilavati verso le falde, il che riduce l'inquinamento e permette di valorizzare meglio ogni apporto. Associati ai nostri fertilizzanti ECOFERT®, EVERGREEN® ed ECOSORB® formano un sistema completo che ha permesso, sulla canna da zucchero, un guadagno del 25 % nel tenore zuccherino (Brix) con solo 15 kg di prodotto per ettaro. Oltre il 95 % delle piante trapiantate con i nostri idroritentori attecchisce, contro un tasso nettamente inferiore in condizioni convenzionali.",
           detail: {
             sections: [
               {
                 h: "Il principio",
-                p: "EVERGREEN® ed ECOSORB® sono polimeri superassorbenti che si biodegradano completamente, senza lasciare residui nel suolo né sulle piante. Assorbono circa 300 volte il loro peso in acqua e la restituiscono alle radici secondo le esigenze della coltura, ciclo dopo ciclo, fino alla loro degradazione naturale (20-25 % all'anno) in CO₂, acqua e composti azotati assimilabili. A differenza degli idroritentori a base di sodio — che, una volta idratati, formano una pasta soffocante e salina per le radici — o delle formulazioni a base di acrilammide, vietate in molti paesi per la loro tossicità, i nostri due prodotti sono a base di potassio, compatibili con le colture alimentari. A contatto con l'acqua, il granulo secco si gonfia: questo effetto va e vieni decompatta il suolo come farebbe un lombrico, ne migliora la permeabilità e crea un microclima umido favorevole alla microfauna e alla microflora, motori della fertilità naturale. I fertilizzanti disciolti vengono catturati al passaggio anziché essere dilavati verso le falde, il che riduce l'inquinamento e permette di valorizzare meglio ogni apporto. Associati ai nostri fertilizzanti ECOFERT®, EVERGREEN® ed ECOSORB® formano un sistema completo che ha permesso, sulla canna da zucchero, un guadagno del 25 % nel tenore zuccherino (Brix) con solo 15 kg di prodotto per ettaro. Oltre il 95 % delle piante trapiantate con i nostri idroritentori attecchisce, contro un tasso nettamente inferiore in condizioni convenzionali.",
+                p: "EVERGREEN® ed ECOSORB® sono polimeri superassorbenti che si biodegradano completamente, senza lasciare residui nel suolo né sulle piante. Assorbono circa 300 volte il loro peso in acqua e la restituiscono alle radici secondo le esigenze della coltura, ciclo dopo ciclo, fino alla loro degradazione naturale (20-25 % all'anno) in CO₂, acqua e composti azotati assimilabili. A differenza degli idroritentori a base di sodio — che, una volta idratati, formano una pasta soffocante e salina per le radici — o delle formulazioni a base di acrilammide, vietate in molti paesi per la loro tossicità, i nostri due prodotti sono a base di potassio, compatibili con le colture alimentari. A contatto con l'acqua, il granulo secco si gonfia: questo andirivieni decompatta il suolo come farebbe un lombrico, ne migliora la permeabilità e crea un microclima umido favorevole alla microfauna e alla microflora, motori della fertilità naturale. I fertilizzanti disciolti vengono catturati al passaggio anziché essere dilavati verso le falde, il che riduce l'inquinamento e permette di valorizzare meglio ogni apporto. Associati ai nostri fertilizzanti ECOFERT®, EVERGREEN® ed ECOSORB® formano un sistema completo che ha permesso, sulla canna da zucchero, un guadagno del 25 % nel tenore zuccherino (Brix) con solo 15 kg di prodotto per ettaro. Oltre il 95 % delle piante trapiantate con i nostri idroritentori attecchisce, contro un tasso nettamente inferiore in condizioni convenzionali.",
               },
               {
                 h: "Il meccanismo, nel dettaglio",
@@ -5365,7 +5365,7 @@ const baseContent = {
         { org: "AXE CAPITAL FOREST", place: "Regno Unito · Toledo, Spagna", crop: "Paulownia Phenix One", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "Gruppo ZARROUK", place: "Tunisia", crop: "Coltivazione di pomodori", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "FICILIA", place: "Corsica, Francia", crop: "Ulivi e noccioli", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
-        { org: "Institut Moreau-Daverne", place: "Francia", crop: "Orticoltura", tech: ["ECOSORB®", "ECOFERT®"] },
+        { org: "Istituto Moreau-Daverne", place: "Francia", crop: "Orticoltura", tech: ["ECOSORB®", "ECOFERT®"] },
         { org: "BEEN AGRO", place: "Guinea Conakry", crop: "Mais e arachidi", tech: ["ECOSORB®", "ECOFERT®"] },
         { org: "Gruppo GOUDARAS", place: "Grecia", crop: "Piantagione di castagni", tech: ["EVERGREEN®", "ECOFERT®"] },
         { org: "AGRO COMPLEX", place: "Polonia", crop: "Mais e patate", tech: ["EVERGREEN®"] },
@@ -5401,13 +5401,13 @@ const baseContent = {
         },
         {
           q: "«Gli idrogel che ho provato hanno soffocato le mie piante.»",
-          a: "È il difetto dei prodotti a base di sodio: una volta idratati formano una pasta che soffoca la pianta. Quelli a base di acrilammide, invece, sono autorizzati solo per colture non alimentari quando lo sono. Le nostre due formulazioni sono a base di potassio, compatibili con le colture alimentari e con la microfauna del suolo.",
+          a: "È il difetto dei prodotti a base di sodio: una volta idratati formano una pasta che soffoca la pianta. Quelli a base di acrilammide, dove ancora consentiti, sono autorizzati solo per colture non alimentari. Le nostre due formulazioni sono a base di potassio, compatibili con le colture alimentari e con la microfauna del suolo.",
           proofLabel: null as string | null,
           proofHref: null as string | null,
         },
         {
           q: "«Funziona sul mio suolo e sulla mia coltura?»",
-          a: "La regola di dosaggio è la stessa ovunque: 3 grammi per litro di terra utile. Le sperimentazioni in corso riguardano mais, patata, canna da zucchero, pomodoro, ulivo, nocciolo, arachide, castagno, tappeto erboso, acero rosso e pino Douglas, in climi che vanno dalla Polonia alla Guinea. Diteci il vostro terreno, vi diremo cosa è già stato fatto in una situazione comparabile.",
+          a: "La regola di dosaggio è la stessa ovunque: 3 grammi per litro di terra utile. Le sperimentazioni in corso riguardano mais, patata, canna da zucchero, pomodoro, ulivo, nocciolo, arachide, castagno, tappeto erboso, acero rosso e abete di Douglas, in climi che vanno dalla Polonia alla Guinea. Diteci il vostro terreno, vi diremo cosa è già stato fatto in una situazione comparabile.",
           proofLabel: null as string | null,
           proofHref: null as string | null,
         },
@@ -5731,7 +5731,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Αύξηση των αποδόσεων χωρίς αύξηση του κόστους του νερού: οι υδροσυγκρατητές μας και το αναδομημένο νερό μειώνουν τις ανάγκες άρδευσης κατά 50-70 %, διατηρώντας ή και αυξάνοντας τις αποδόσεις σας.",
+          text: "Αύξηση των αποδόσεων χωρίς αύξηση του κόστους του νερού: οι υδροσυγκρατητές μας και το αναδομημένο νερό μειώνουν τις ανάγκες άρδευσης κατά 40-70 %, διατηρώντας ή και αυξάνοντας τις αποδόσεις σας.",
           linkLabel: "Δείτε το EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -6350,7 +6350,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Su maliyetini artırmadan verimi yükseltin: hidro-tutucularımız ve yeniden yapılandırılmış suyumuz sulama ihtiyacını %50-70 azaltırken, verimlerinizi koruyor hatta artırıyor.",
+          text: "Su maliyetini artırmadan verimi yükseltin: hidro-tutucularımız ve yeniden yapılandırılmış suyumuz sulama ihtiyacını %40-70 azaltırken, verimlerinizi koruyor hatta artırıyor.",
           linkLabel: "EVERGREEN® & ECOSORB®'u keşfedin",
           linkHref: "#retention-eau",
         },
@@ -6969,7 +6969,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Zwiększać plony bez zwiększania kosztów wody: nasze hydrożele retencyjne i zrestrukturyzowana woda zmniejszają zapotrzebowanie na nawadnianie o 50-70%, przy jednoczesnym utrzymaniu, a nawet zwiększeniu plonów.",
+          text: "Zwiększać plony bez zwiększania kosztów wody: nasze hydrożele retencyjne i zrestrukturyzowana woda zmniejszają zapotrzebowanie na nawadnianie o 40-70%, przy jednoczesnym utrzymaniu, a nawet zwiększeniu plonów.",
           linkLabel: "Zobacz EVERGREEN® & ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -7588,7 +7588,7 @@ const baseContent = {
       ],
       avancerList: [
         {
-          text: "Povećati prinose bez povećanja troškova vode: naši hidroretenteri i naša restrukturirana voda smanjuju potrebu za navodnjavanjem za 50 do 70 %, uz zadržavanje, pa i povećanje vaših prinosa.",
+          text: "Povećati prinose bez povećanja troškova vode: naši hidroretenteri i naša restrukturirana voda smanjuju potrebu za navodnjavanjem za 40 do 70 %, uz zadržavanje, pa i povećanje vaših prinosa.",
           linkLabel: "Pogledajte EVERGREEN® i ECOSORB®",
           linkHref: "#retention-eau",
         },
@@ -8051,120 +8051,14 @@ const baseContent = {
   },
 };
 
+import { ca } from "./content-ca";
+
+/**
+ * Les quatorze langues. Le catalan vient de son propre fichier : il était un
+ * décalque de l'espagnol avec quelques titres traduits, il est désormais une
+ * vraie traduction.
+ */
 export const content = {
   ...baseContent,
-  ca: {
-    ...baseContent.es,
-    nav: {
-      ...baseContent.es.nav,
-      approach: "El nostre enfocament",
-      technologies: "Tecnologies",
-      trials: "Assajos",
-      proofs: "Proves",
-      network: "Xarxa",
-      resources: "Recursos",
-      fieldTests: "Proves de camp",
-      partners: "Socis",
-      contact: "Escriu-nos",
-      openMenu: "Obre el menú",
-      closeMenu: "Tanca el menú",
-    },
-    hero: {
-      ...baseContent.es.hero,
-      slogan1: "Cultivar més",
-      slogan2: "amb menys aigua",
-      slogan3: "de manera natural",
-      explore: "Explorar",
-      quoteCta: "Demanar pressupost",
-      whereTo1: "El nostre enfocament",
-      whereTo2: "Tecnologies?",
-    },
-    presentation: {
-      ...baseContent.es.presentation,
-      eyebrow: "El nostre enfocament",
-      title1: "Les nostres cinc tecnologies",
-      title2: "Un objectiu",
-      title3: "Creixement i qualitat",
-      tagline: "Totes les nostres solucions disruptives es poden utilitzar en totes les plantes i cultius, en qualsevol clima i tipus de sòl!",
-      stats: [
-        { num: "30", label: "socis" },
-        { num: "39", label: "països" },
-        { num: "5", label: "tecnologies de marca" },
-      ],
-    },
-    reseau: {
-      ...baseContent.es.reseau,
-      eyebrow: "Presència internacional",
-      title: "Una xarxa en 39 països",
-      mapAriaLabel: "Mapa de la xarxa Green Solutions en 39 països",
-    },
-    countryStudies: {
-      ...baseContent.es.countryStudies,
-      eyebrow: "Enfocament per país",
-      lede: "Economia agrícola, sectors i potencial de rendiment: els nostres equips preparen un estudi específic per a cada país on ens implantem.",
-      notCoveredTitle: "El vostre país encara no està cobert?",
-      notCoveredBody: "Busquem socis de distribució en diverses zones, amb suport tècnic i una gamma ja provada internacionalment.",
-    },
-    statement: {
-      ...baseContent.es.statement,
-      eyebrow: "L'èxit no sempre és allò que es veu",
-      title: "L'essencial passa sota terra.",
-      tag: "És aquí on treballem.",
-    },
-    contact: {
-      ...baseContent.es.contact,
-      eyebrow: "Contacteu amb nosaltres",
-      titles: [
-        "Parlem del vostre país",
-        "Parlem dels vostres cultius",
-        "Parlem d'estalvi",
-        "Parlem d'eficiència",
-        "Parlem de rendibilitat",
-      ],
-      lede: "Sigui quin sigui el cultiu, el clima o la mida de la parcel·la, el primer pas és entendre el sòl que ja teniu. La primera conversa no compromet a res.",
-      labelEmail: "Correu electrònic",
-      labelAddress: "Adreça",
-      successTitle: "Missatge enviat.",
-      successText: "Gràcies. Ens posarem en contacte amb vosaltres aviat. Per a urgències, escriviu directament a",
-      honeypotLabel: "No omplir",
-      formName: "Nom",
-      formStructure: "Empresa",
-      formCountry: "País",
-      formCity: "Ciutat",
-      formCrop: "Tipus de cultiu",
-      formArea: "Superfície cultivada",
-      formEmail: "Correu electrònic",
-      formMessage: "El vostre missatge",
-      sending: "Enviant…",
-      send: "Enviar",
-      errorDefault: "No s'ha pogut enviar. Torneu-ho a provar.",
-      errorNetwork: "No es pot contactar amb el servidor. Comproveu la connexió i torneu-ho a provar.",
-    },
-    resources: {
-      ...baseContent.es.resources,
-      eyebrow: "Voleu aprofundir-hi?",
-      title: "Alguns documents abans de prendre qualsevol decisió",
-      docsEyebrow: "Per descarregar ara",
-      cards: [
-        { num: "01", title: "Documentació tècnica", text: "Composició, dosificació, assajos de camp i certificats de cada tecnologia." },
-        { num: "02", title: "Documentació sobre paulòwnia", text: "Densitat de plantació, corba de creixement, mercats i calendari de rendibilitat." },
-        { num: "03", title: "Feu-vos soci", text: "Distribució, representació territorial i assajos conjunts: expliqueu-nos el vostre projecte." },
-      ],
-    },
-    footer: {
-      ...baseContent.es.footer,
-      address: "Green Solutions Groupe AIM SA · 46, route de la Condémine, 1475 Forel, Suïssa",
-      photoCreditPrefix: "Fotografies de paulòwnia:",
-      photoCreditAnd: "i",
-    },
-    countries: [
-      "França", "Sud-àfrica", "Tunísia", "Itàlia", "Regne Unit", "Canadà", "Espanya", "Mali",
-      "Carib", "Estats Units", "Camerun", "Guinea", "Senegal", "Marroc", "Guinea Bissau", "Brasil",
-      "Aràbia Saudita", "Sultanat d'Oman", "Congo", "Costa d'Ivori", "Sudan del Sud", "Polònia", "Grècia", "Portugal",
-      "Emirats Àrabs Units", "Mèxic", "Turquia", "Indonèsia", "Xina", "Egipte", "Algèria", "Argentina", "Xile",
-      "Gabon", "Ghana", "Jordània", "Kuwait", "Croàcia", "Madagascar",
-    ],
-  },
+  ca,
 };
-
-export type Content = typeof content.fr;
