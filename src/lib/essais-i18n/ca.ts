@@ -14,6 +14,10 @@ export const ca: Traduction = {
     mecaniqueTitre: "L'aigua es queda on la planta la necessita",
     mecaniqueTexte:
       "Barrejat amb el sòl a prop de les arrels, l'hidroretenidor s'omple d'aigua a cada reg o a cada pluja, en lloc de deixar-la evaporar o filtrar-se en profunditat. Després la retorna a la planta, dia rere dia. Es rega menys sovint i la planta no passa set entre dos regs.",
+    videoLegende: "Unes llavors germinen: les arrels baixen a buscar l'aigua al sòl.",
+    videoAlt: "Vídeo accelerat de llavors de fesol mungo que germinen, amb les arrels visibles a la terra",
+    videoMot: "Vídeo",
+    videoAccelere: "accelerat",
     ficheEyebrow: "Fitxa de l'assaig",
     ficheTitre: "On, quan i qui",
     culture: "Conreu",

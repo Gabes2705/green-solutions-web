@@ -19,6 +19,11 @@ export type Habillage = {
   mecaniqueEyebrow: string;
   mecaniqueTitre: string;
   mecaniqueTexte: string;
+  /* La vidéo de germination, sous la mécanique. */
+  videoLegende: string;
+  videoAlt: string;
+  videoMot: string;
+  videoAccelere: string;
   ficheEyebrow: string;
   ficheTitre: string;
   culture: string;

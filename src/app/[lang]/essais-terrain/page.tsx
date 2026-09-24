@@ -83,7 +83,10 @@ export default async function Page({ params }: Params) {
       <div className="dossier-corps">
         <section className="dossier-section">
           <div className="gv-duo">
-            <VideoPousse film={FILMS.racines} />
+            <VideoPousse
+              film={FILMS.racines}
+              mots={{ legende: h.videoLegende, alt: h.videoAlt, video: h.videoMot, accelere: h.videoAccelere }}
+            />
             <p className="dossier-texte">{h.hubPrincipe}</p>
           </div>
         </section>

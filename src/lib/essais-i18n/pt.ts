@@ -14,6 +14,10 @@ export const pt: Traduction = {
     mecaniqueTitre: "A água fica onde a planta precisa dela",
     mecaniqueTexte:
       "Misturado ao solo junto às raízes, o hidrorretentor enche-se de água em cada rega ou chuvada, em vez de a deixar evaporar ou infiltrar-se em profundidade. Depois devolve-a à planta, dia após dia. Rega-se menos vezes e a planta não passa sede entre duas regas.",
+    videoLegende: "Sementes germinam: as raízes descem à procura da água no solo.",
+    videoAlt: "Vídeo acelerado de sementes de feijão-mungo a germinar, com as raízes visíveis na terra",
+    videoMot: "Vídeo",
+    videoAccelere: "acelerado",
     ficheEyebrow: "Ficha do ensaio",
     ficheTitre: "Onde, quando, por quem",
     culture: "Cultura",

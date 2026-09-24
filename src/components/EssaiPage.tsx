@@ -75,7 +75,10 @@ export default function EssaiPage({ essai, langue }: { essai: Essai; langue: str
           <p className="eyebrow">{h.mecaniqueEyebrow}</p>
           <h2 className="section-title">{h.mecaniqueTitre}</h2>
           <div className="gv-duo">
-            <VideoPousse film={FILMS.racines} />
+            <VideoPousse
+              film={FILMS.racines}
+              mots={{ legende: h.videoLegende, alt: h.videoAlt, video: h.videoMot, accelere: h.videoAccelere }}
+            />
             <p className="dossier-texte">{h.mecaniqueTexte}</p>
           </div>
         </section>

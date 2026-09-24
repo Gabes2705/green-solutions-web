@@ -14,6 +14,10 @@ export const zh: Traduction = {
     mecaniqueTitre: "水留在植物需要的位置",
     mecaniqueTexte:
       "保水剂拌入根系附近的土壤后，每次灌溉或降雨都会吸满水，而不是让水蒸发或渗入深层。随后它把水一天天还给植物。灌溉次数减少，植物在两次灌溉之间也不会缺水。",
+    videoLegende: "种子发芽：根系向下深入土壤寻找水分。",
+    videoAlt: "绿豆种子发芽的快进视频，可见土中的根系",
+    videoMot: "视频",
+    videoAccelere: "快进",
     ficheEyebrow: "试验概况",
     ficheTitre: "地点、时间、执行方",
     culture: "作物",

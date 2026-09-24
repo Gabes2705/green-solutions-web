@@ -14,6 +14,10 @@ export const pl: Traduction = {
     mecaniqueTitre: "Woda zostaje tam, gdzie roślina jej potrzebuje",
     mecaniqueTexte:
       "Wymieszany z glebą przy korzeniach hydrożel retencyjny nasiąka wodą przy każdym nawodnieniu i każdym deszczu, zamiast pozwolić jej wyparować lub przesiąknąć w głąb. Potem oddaje ją roślinie, dzień po dniu. Podlewa się rzadziej, a roślina nie cierpi z pragnienia między dwoma nawodnieniami.",
+    videoLegende: "Nasiona kiełkują: korzenie schodzą w głąb po wodę w glebie.",
+    videoAlt: "Przyspieszone nagranie kiełkujących nasion fasoli mung, korzenie widoczne w ziemi",
+    videoMot: "Wideo",
+    videoAccelere: "przyspieszone",
     ficheEyebrow: "Karta próby",
     ficheTitre: "Gdzie, kiedy, przez kogo",
     culture: "Uprawa",

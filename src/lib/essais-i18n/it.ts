@@ -14,6 +14,10 @@ export const it: Traduction = {
     mecaniqueTitre: "L'acqua resta dove la pianta ne ha bisogno",
     mecaniqueTexte:
       "Mescolato al suolo vicino alle radici, l'idroritentore si riempie d'acqua a ogni irrigazione o pioggia, invece di lasciarla evaporare o scendere in profondità. Poi la restituisce alla pianta, giorno dopo giorno. Si irriga meno spesso e la pianta non soffre la sete tra due irrigazioni.",
+    videoLegende: "Dei semi germinano: le radici scendono a cercare l'acqua nel suolo.",
+    videoAlt: "Video accelerato di semi di fagiolo mungo che germinano, con le radici visibili nella terra",
+    videoMot: "Video",
+    videoAccelere: "accelerato",
     ficheEyebrow: "Scheda della prova",
     ficheTitre: "Dove, quando, da chi",
     culture: "Coltura",

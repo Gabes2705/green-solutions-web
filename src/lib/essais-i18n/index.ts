@@ -34,6 +34,10 @@ export const HABILLAGE_FR: Habillage = {
   mecaniqueTitre: "L'eau reste là où la plante en a besoin",
   mecaniqueTexte:
     "Mélangé au sol près des racines, l'hydrorétenteur se gorge d'eau à chaque arrosage ou à chaque pluie, au lieu de la laisser s'évaporer ou filer en profondeur. Il la rend ensuite à la plante, jour après jour. On arrose moins souvent, et la plante ne subit pas de coup de soif entre deux arrosages.",
+  videoLegende: "Des graines germent : les racines descendent chercher l'eau dans le sol.",
+  videoAlt: "Vidéo accélérée de graines de haricot mungo qui germent, racines visibles dans la terre",
+  videoMot: "Vidéo",
+  videoAccelere: "accélérée",
   ficheEyebrow: "Fiche de l'essai",
   ficheTitre: "Où, quand, par qui",
   culture: "Culture",

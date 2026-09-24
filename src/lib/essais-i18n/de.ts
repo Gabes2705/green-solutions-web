@@ -14,6 +14,10 @@ export const de: Traduction = {
     mecaniqueTitre: "Das Wasser bleibt dort, wo die Pflanze es braucht",
     mecaniqueTexte:
       "In den Boden nahe den Wurzeln eingemischt, saugt sich der Wasserspeicher bei jeder Bewässerung und bei jedem Regen voll, statt das Wasser verdunsten oder versickern zu lassen. Danach gibt er es der Pflanze zurück, Tag für Tag. Man gießt seltener, und die Pflanze leidet zwischen zwei Wassergaben keinen Durst.",
+    videoLegende: "Samen keimen: Die Wurzeln wachsen nach unten, dem Wasser im Boden entgegen.",
+    videoAlt: "Zeitrafferaufnahme keimender Mungbohnen, die Wurzeln sind in der Erde zu sehen",
+    videoMot: "Video",
+    videoAccelere: "im Zeitraffer",
     ficheEyebrow: "Versuchsblatt",
     ficheTitre: "Wo, wann, durch wen",
     culture: "Kultur",

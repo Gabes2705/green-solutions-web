@@ -14,6 +14,10 @@ export const hr: Traduction = {
     mecaniqueTitre: "Voda ostaje ondje gdje je biljci treba",
     mecaniqueTexte:
       "Pomiješan s tlom uz korijenje, hidroretenter upija vodu pri svakom navodnjavanju i svakoj kiši, umjesto da ona ispari ili otekne u dubinu. Zatim je vraća biljci, dan za danom. Navodnjava se rjeđe, a biljka ne žeđa između dva navodnjavanja.",
+    videoLegende: "Sjemenke klijaju: korijenje se spušta po vodu u tlu.",
+    videoAlt: "Ubrzani videozapis klijanja sjemenki mung graha, korijenje se vidi u zemlji",
+    videoMot: "Videozapis",
+    videoAccelere: "ubrzano",
     ficheEyebrow: "Podaci o pokusu",
     ficheTitre: "Gdje, kada, tko",
     culture: "Kultura",

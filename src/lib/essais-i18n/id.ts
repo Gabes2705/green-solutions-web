@@ -14,6 +14,10 @@ export const id: Traduction = {
     mecaniqueTitre: "Air tetap berada di tempat tanaman membutuhkannya",
     mecaniqueTexte:
       "Dicampur ke tanah dekat akar, penahan air menyerap air pada setiap penyiraman dan setiap hujan, alih-alih membiarkannya menguap atau meresap ke dalam. Setelah itu air dikembalikan ke tanaman, hari demi hari. Penyiraman menjadi lebih jarang, dan tanaman tidak kehausan di antara dua penyiraman.",
+    videoLegende: "Biji berkecambah: akarnya turun mencari air di dalam tanah.",
+    videoAlt: "Video dipercepat tentang biji kacang hijau yang berkecambah, akar terlihat di dalam tanah",
+    videoMot: "Video",
+    videoAccelere: "dipercepat",
     ficheEyebrow: "Data uji coba",
     ficheTitre: "Di mana, kapan, oleh siapa",
     culture: "Tanaman",

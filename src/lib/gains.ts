@@ -32,8 +32,10 @@ export type Cas = {
   rendementAvant: number;
   /** Hausse de récolte, en pourcentage. */
   hausse: number;
-  /** Page de l'essai correspondant, s'il existe (français seulement). */
+  /** Page de l'essai correspondant, s'il existe. */
   essai?: string;
+  /** Page de détail propre à ce cas, quand l'essai ne porte pas sur la culture. */
+  page?: string;
   /** Prix payé au producteur, en euros le kilo. */
   prixVente: number;
 };
@@ -44,6 +46,10 @@ export const CAS: Cas[] = [
     kgParHa: 75,
     rendementAvant: 90,
     hausse: 30,
+    // La tomate n'a pas d'essai à elle : le bouton menait à la pastèque, et on
+    // cliquait sur tomate pour tomber sur pastèque. Il mène désormais à une
+    // page qui refait le calcul et dit d'où vient chaque chiffre.
+    page: "tomate-espagne",
     essai: "pasteques-mexique",
     prixVente: 0.11,
   },

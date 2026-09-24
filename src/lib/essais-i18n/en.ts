@@ -14,6 +14,10 @@ export const en: Traduction = {
     mecaniqueTitre: "The water stays where the plant needs it",
     mecaniqueTexte:
       "Mixed into the soil near the roots, the water retainer fills up at every watering or rainfall instead of letting the water evaporate or drain away. It then hands the water back to the plant, day after day. You water less often, and the plant never goes thirsty between two waterings.",
+    videoLegende: "Seeds germinate: the roots reach down for the water in the soil.",
+    videoAlt: "Time-lapse video of mung bean seeds germinating, roots visible in the soil",
+    videoMot: "Video",
+    videoAccelere: "sped up",
     ficheEyebrow: "Trial sheet",
     ficheTitre: "Where, when, by whom",
     culture: "Crop",

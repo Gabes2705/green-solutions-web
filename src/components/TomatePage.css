@@ -1,0 +1,35 @@
+/* « Tomate d'industrie en Espagne ».
+ *
+ * La carte de calcul est dessinée pour une demi-colonne de la page d'accueil.
+ * Laissée pleine largeur ici, ses nombres partaient à un mètre de leurs
+ * libellés. Elle garde donc sa largeur d'origine, et les deux graphiques
+ * occupent la place qui reste : rien de vide, et la page reste large, comme
+ * Gabriel l'a demandé pour toutes celles-ci. */
+
+.tomate-calcul {
+  display: grid;
+  gap: 1.75rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 62rem) {
+  .tomate-calcul {
+    grid-template-columns: minmax(0, 32rem) minmax(0, 1fr);
+  }
+}
+
+.tomate-images h3 {
+  margin: 0.15rem 0 1rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+/* Les deux graphiques l'un sous l'autre dans leur colonne : côte à côte, ils
+   seraient plus étroits que les barres qu'ils portent. */
+.tomate-images .gv-graphiques {
+  grid-template-columns: minmax(0, 1fr);
+}

@@ -14,6 +14,10 @@ export const tr: Traduction = {
     mecaniqueTitre: "Su, bitkinin ihtiyaç duyduğu yerde kalır",
     mecaniqueTexte:
       "Köklerin yakınında toprağa karıştırılan hidro-tutucu, her sulamada ve her yağmurda suyla dolar; su buharlaşıp gitmez, derine de sızmaz. Sonra bu suyu bitkiye gün be gün geri verir. Daha seyrek sulanır ve bitki iki sulama arasında susuz kalmaz.",
+    videoLegende: "Tohumlar çimleniyor: kökler topraktaki suyu aramak için aşağı iniyor.",
+    videoAlt: "Maş fasulyesi tohumlarının çimlenmesini gösteren hızlandırılmış video, kökler toprakta görünüyor",
+    videoMot: "Video",
+    videoAccelere: "hızlandırılmış",
     ficheEyebrow: "Deneme künyesi",
     ficheTitre: "Nerede, ne zaman, kim tarafından",
     culture: "Ürün",

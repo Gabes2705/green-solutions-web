@@ -11,8 +11,19 @@ import type { Film } from "@/lib/films";
  * Muette et en boucle, elle démarre seule. Pour qui a demandé à son système de
  * limiter les animations, elle reste arrêtée sur sa dernière image, où la
  * plante est déjà grande.
+ *
+ * La légende et le mot « Vidéo » suivent la langue de la page : sans eux, une
+ * page allemande gardait une phrase française sous la vidéo. Le nom de
+ * l'auteur et la licence, eux, ne se traduisent pas.
  */
-export default function VideoPousse({ film }: { film: Film }) {
+export type MotsVideo = {
+  legende: string;
+  alt: string;
+  video: string;
+  accelere: string;
+};
+
+export default function VideoPousse({ film, mots }: { film: Film; mots?: MotsVideo }) {
   const ref = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -35,16 +46,21 @@ export default function VideoPousse({ film }: { film: Film }) {
         loop
         playsInline
         preload="metadata"
-        aria-label={film.alt}
+        aria-label={mots?.alt ?? film.alt}
       />
       <figcaption>
-        {film.legende}{" "}
+        {mots?.legende ?? film.legende}{" "}
         <span className="gv-credit">
-          Vidéo : {film.auteur}
-          {film.accelere ? ", accélérée" : ""} —{" "}
-          <a href={film.page} target="_blank" rel="noreferrer">
-            {film.licence}, Wikimedia Commons
-          </a>
+          {mots?.video ?? "Vidéo"} : {film.auteur}
+          {film.accelere ? `, ${mots?.accelere ?? "accélérée"}` : ""}
+          {film.page && (
+            <>
+              {" — "}
+              <a href={film.page} target="_blank" rel="noreferrer">
+                {film.licence}, Wikimedia Commons
+              </a>
+            </>
+          )}
         </span>
       </figcaption>
     </figure>

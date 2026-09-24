@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { DOSSIER_LANGS } from "@/lib/dossiers-index";
 import { ESSAIS } from "@/lib/essais";
 import { LANGUES_ESSAIS } from "@/lib/essais-i18n";
+import { LANGUES_TOMATE } from "@/lib/tomate-i18n";
 import { GUIDES } from "@/lib/guides";
 import { SITE_URL, LANGUAGES } from "@/lib/site";
 
@@ -78,6 +79,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly",
         priority: 0.8,
       });
+    });
+  });
+
+  // The processing-tomato page: the long form of the one economics example
+  // that has no trial of its own, in every language the site speaks.
+  LANGUES_TOMATE.forEach((lang) => {
+    urls.push({
+      url: `${SITE_URL}/${lang}/tomate-espagne`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
     });
   });
 

@@ -14,6 +14,10 @@ export const es: Traduction = {
     mecaniqueTitre: "El agua se queda donde la planta la necesita",
     mecaniqueTexte:
       "Mezclado con el suelo junto a las raíces, el hidrorretenedor se llena de agua en cada riego o cada lluvia, en lugar de dejar que se evapore o se filtre en profundidad. Después se la devuelve a la planta, día tras día. Se riega menos a menudo, y la planta no pasa sed entre dos riegos.",
+    videoLegende: "Unas semillas germinan: las raíces bajan a buscar el agua en el suelo.",
+    videoAlt: "Vídeo acelerado de semillas de judía mungo germinando, con las raíces visibles en la tierra",
+    videoMot: "Vídeo",
+    videoAccelere: "acelerado",
     ficheEyebrow: "Ficha del ensayo",
     ficheTitre: "Dónde, cuándo y quién",
     culture: "Cultivo",

@@ -142,5 +142,21 @@
       "page": "https://commons.wikimedia.org/wiki/File:Orange_orchard,_Karaisal%C4%B1_01.JPG",
       "titre": "File:Orange orchard, Karaisalı 01.JPG"
     }
+  ],
+  "tomate-espagne": [
+    {
+      "src": "/images/essais/tomate-espagne/0.webp",
+      "auteur": "Σ64",
+      "licence": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Tomato_field_in_Namegata,_Ibaraki_01.jpg",
+      "titre": "File:Tomato field in Namegata, Ibaraki 01.jpg"
+    },
+    {
+      "src": "/images/essais/tomate-espagne/1.webp",
+      "auteur": "Σ64",
+      "licence": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Tomato_field_in_Namegata,_Ibaraki_03.jpg",
+      "titre": "File:Tomato field in Namegata, Ibaraki 03.jpg"
+    }
   ]
 }
