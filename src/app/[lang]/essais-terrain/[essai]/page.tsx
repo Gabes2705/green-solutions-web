@@ -2,23 +2,25 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import EssaiPage from "@/components/EssaiPage";
 import { ESSAIS } from "@/lib/essais";
+import { LANGUES_ESSAIS, essaiTraduit, habillage } from "@/lib/essais-i18n";
 import { SITE_URL } from "@/lib/site";
 
-/** Rédigés en français seulement : servis sous /fr, nulle part ailleurs. */
+/** Servis dans les langues traduites, et nulle part ailleurs. */
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return ESSAIS.map((e) => ({ lang: "fr", essai: e.slug }));
+  return LANGUES_ESSAIS.flatMap((lang) => ESSAIS.map((e) => ({ lang, essai: e.slug })));
 }
 
 type Params = { params: Promise<{ lang: string; essai: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { lang, essai: slug } = await params;
-  const essai = ESSAIS.find((e) => e.slug === slug);
-  if (!essai || lang !== "fr") return {};
+  const { lang, essai: base } = await params;
+  const trouve = ESSAIS.find((e) => e.slug === base);
+  if (!trouve || !LANGUES_ESSAIS.includes(lang)) return {};
+  const essai = essaiTraduit(lang, trouve);
 
-  const url = `${SITE_URL}/fr/essais-terrain/${slug}`;
+  const url = `${SITE_URL}/${lang}/essais-terrain/${base}`;
   return {
     title: essai.titre,
     description: essai.description,
@@ -29,7 +31,6 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       description: essai.description,
       url,
       siteName: "Green Solutions",
-      locale: "fr_FR",
     },
     twitter: { card: "summary", title: essai.titre, description: essai.description },
   };
@@ -37,16 +38,17 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 export default async function Page({ params }: Params) {
   const { lang, essai: slug } = await params;
-  const essai = ESSAIS.find((e) => e.slug === slug);
-  if (!essai || lang !== "fr") notFound();
+  const trouve = ESSAIS.find((e) => e.slug === slug);
+  if (!trouve || !LANGUES_ESSAIS.includes(lang)) notFound();
+  const essai = essaiTraduit(lang, trouve);
 
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Green Solutions", item: `${SITE_URL}/fr/` },
-      { "@type": "ListItem", position: 2, name: "Essais de terrain", item: `${SITE_URL}/fr/essais-terrain` },
-      { "@type": "ListItem", position: 3, name: essai.titre, item: `${SITE_URL}/fr/essais-terrain/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Green Solutions", item: `${SITE_URL}/${lang}/` },
+      { "@type": "ListItem", position: 2, name: habillage(lang).hubEyebrow, item: `${SITE_URL}/${lang}/essais-terrain` },
+      { "@type": "ListItem", position: 3, name: essai.titre, item: `${SITE_URL}/${lang}/essais-terrain/${slug}` },
     ],
   };
 
@@ -57,7 +59,7 @@ export default async function Page({ params }: Params) {
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <EssaiPage essai={essai} />
+      <EssaiPage essai={essai} langue={lang} />
     </>
   );
 }

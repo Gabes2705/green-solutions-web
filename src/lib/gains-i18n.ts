@@ -26,6 +26,7 @@ export type TextesGain = {
   gainNet: string;
   retour: string;
   voirEssai: string;
+  voirDetail: string;
   avertissement: string;
   aConfirmer: string;
   cas: Record<
@@ -60,6 +61,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "de gain net par hectare",
     retour: "{n} € gagnés pour 1 € dépensé",
     voirEssai: "Voir l'essai →",
+    voirDetail: "Voir le détail du calcul →",
     avertissement:
       "Les gains de récolte viennent de nos essais de terrain. Les rendements de référence et les prix payés au producteur sont des moyennes de marché, qui changent d'une région et d'une année à l'autre : ces chiffres sont donnés pour l'ordre de grandeur, et non comme un engagement. Nous refaisons le calcul avec vos propres chiffres sur demande.",
     aConfirmer: "à confirmer",
@@ -120,6 +122,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "net gain per hectare",
     retour: "{n} € earned for every 1 € spent",
     voirEssai: "See the trial →",
+    voirDetail: "See the full sums →",
     avertissement:
       "The yield gains come from our field trials. The reference yields and the prices paid to growers are market averages, which change from one region and one year to the next: these figures give an order of magnitude, not a commitment. We will redo the sums with your own figures on request.",
     aConfirmer: "to be confirmed",
@@ -180,6 +183,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "de ganancia neta por hectárea",
     retour: "{n} € ganados por cada 1 € gastado",
     voirEssai: "Ver el ensayo →",
+    voirDetail: "Ver el cálculo detallado →",
     avertissement:
       "Los aumentos de cosecha provienen de nuestros ensayos de campo. Los rendimientos de referencia y los precios pagados al productor son medias de mercado, que cambian de una región y de un año a otro: estas cifras dan un orden de magnitud, no un compromiso. Rehacemos el cálculo con sus propias cifras si lo solicita.",
     aConfirmer: "por confirmar",
@@ -240,6 +244,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "de ganho líquido por hectare",
     retour: "{n} € ganhos por cada 1 € gasto",
     voirEssai: "Ver o ensaio →",
+    voirDetail: "Ver o cálculo detalhado →",
     avertissement:
       "Os ganhos de colheita vêm dos nossos ensaios de campo. Os rendimentos de referência e os preços pagos ao produtor são médias de mercado, que mudam de região para região e de ano para ano: estes números dão uma ordem de grandeza, não um compromisso. Refazemos as contas com os seus próprios números a pedido.",
     aConfirmer: "a confirmar",
@@ -300,6 +305,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "ربح صافٍ لكل هكتار",
     retour: "{n} يورو مكسب لكل 1 يورو منفق",
     voirEssai: "← اطّلع على التجربة",
+    voirDetail: "انظر تفاصيل الحساب ←",
     avertissement:
       "زيادات المحصول مأخوذة من تجاربنا الحقلية. أما المحاصيل المرجعية والأسعار المدفوعة للمزارعين فهي متوسطات سوقية تتغيّر من منطقة إلى أخرى ومن سنة إلى أخرى: هذه الأرقام تعطي ترتيب المقدار، لا التزاماً. ونعيد الحساب بأرقامكم عند الطلب.",
     aConfirmer: "بانتظار التأكيد",
@@ -360,6 +366,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "每公顷净收益",
     retour: "每投入 1 欧元获得 {n} 欧元",
     voirEssai: "查看试验 →",
+    voirDetail: "查看详细计算 →",
     avertissement:
       "增产数据来自我们的田间试验。参考产量和农户收购价为市场平均值，会因地区和年份而变化：这些数字仅供估算参考，并非承诺。如有需要，我们可用您自己的数据重新计算。",
     aConfirmer: "待确认",
@@ -420,6 +427,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "keuntungan bersih per hektare",
     retour: "{n} € diperoleh untuk setiap 1 € yang dikeluarkan",
     voirEssai: "Lihat uji cobanya →",
+    voirDetail: "Lihat rincian perhitungan →",
     avertissement:
       "Kenaikan panen berasal dari uji coba lapangan kami. Hasil acuan dan harga yang diterima petani adalah rata-rata pasar, yang berubah menurut wilayah dan tahun: angka-angka ini memberi gambaran besaran, bukan janji. Kami menghitung ulang dengan angka Anda sendiri bila diminta.",
     aConfirmer: "perlu dikonfirmasi",
@@ -480,6 +488,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "Reingewinn pro Hektar",
     retour: "{n} € Gewinn je 1 € Einsatz",
     voirEssai: "Zum Versuch →",
+    voirDetail: "Die Rechnung im Detail →",
     avertissement:
       "Die Ertragsgewinne stammen aus unseren Feldversuchen. Referenzerträge und Erzeugerpreise sind Marktmittelwerte, die von Region zu Region und von Jahr zu Jahr schwanken: Diese Zahlen geben eine Größenordnung, keine Zusage. Auf Wunsch rechnen wir mit Ihren eigenen Zahlen.",
     aConfirmer: "noch zu bestätigen",
@@ -540,6 +549,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "di guadagno netto per ettaro",
     retour: "{n} € guadagnati per ogni 1 € speso",
     voirEssai: "Vedi la sperimentazione →",
+    voirDetail: "Vedere il calcolo nel dettaglio →",
     avertissement:
       "I guadagni di raccolto vengono dalle nostre sperimentazioni in campo. Le rese di riferimento e i prezzi pagati al produttore sono medie di mercato, che cambiano da una regione e da un anno all'altro: queste cifre danno un ordine di grandezza, non un impegno. Su richiesta rifacciamo il conto con i vostri numeri.",
     aConfirmer: "da confermare",
@@ -600,6 +610,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "καθαρό κέρδος ανά εκτάριο",
     retour: "{n} € κέρδος για κάθε 1 € δαπάνης",
     voirEssai: "Δείτε τη δοκιμή →",
+    voirDetail: "Δείτε τον αναλυτικό υπολογισμό →",
     avertissement:
       "Τα κέρδη παραγωγής προέρχονται από τις δοκιμές μας στο χωράφι. Οι αποδόσεις αναφοράς και οι τιμές παραγωγού είναι μέσοι όροι αγοράς, που αλλάζουν από περιοχή σε περιοχή και από χρονιά σε χρονιά: τα νούμερα δίνουν τάξη μεγέθους, όχι δέσμευση. Κατόπιν αιτήματος ξανακάνουμε τον λογαριασμό με τα δικά σας νούμερα.",
     aConfirmer: "προς επιβεβαίωση",
@@ -660,6 +671,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "hektar başına net kazanç",
     retour: "Harcanan 1 € için {n} € kazanç",
     voirEssai: "Denemeyi gör →",
+    voirDetail: "Hesabın ayrıntısını görün →",
     avertissement:
       "Verim artışları tarla denemelerimizden gelir. Referans verimler ve üreticiye ödenen fiyatlar, bölgeye ve yıla göre değişen piyasa ortalamalarıdır: bu rakamlar bir büyüklük fikri verir, taahhüt değildir. İstek üzerine hesabı sizin rakamlarınızla yeniden yaparız.",
     aConfirmer: "teyit edilecek",
@@ -720,6 +732,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "zysku netto na hektar",
     retour: "{n} € zysku na każde wydane 1 €",
     voirEssai: "Zobacz próbę →",
+    voirDetail: "Zobacz szczegóły wyliczenia →",
     avertissement:
       "Przyrosty plonu pochodzą z naszych prób polowych. Plony odniesienia i ceny płacone rolnikom to średnie rynkowe, zmienne w zależności od regionu i roku: te liczby dają rząd wielkości, a nie zobowiązanie. Na życzenie przeliczymy wszystko na Państwa danych.",
     aConfirmer: "do potwierdzenia",
@@ -780,6 +793,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "neto dobiti po hektaru",
     retour: "{n} € zarade na svaki uloženi 1 €",
     voirEssai: "Pogledaj pokus →",
+    voirDetail: "Pogledajte razrađeni izračun →",
     avertissement:
       "Povećanja prinosa dolaze iz naših poljskih pokusa. Referentni prinosi i cijene za proizvođače tržišni su prosjeci koji se mijenjaju od regije do regije i od godine do godine: ove brojke daju red veličine, ne obvezu. Na zahtjev račun ponavljamo s vašim brojkama.",
     aConfirmer: "za potvrdu",
@@ -840,6 +854,7 @@ export const TEXTES: Record<string, TextesGain> = {
     gainNet: "de guany net per hectàrea",
     retour: "{n} € guanyats per cada 1 € gastat",
     voirEssai: "Veure l'assaig →",
+    voirDetail: "Veure el detall del càlcul →",
     avertissement:
       "Els augments de collita venen dels nostres assajos de camp. Els rendiments de referència i els preus pagats al productor són mitjanes de mercat, que canvien d'una regió i d'un any a l'altre: aquestes xifres donen un ordre de magnitud, no un compromís. A petició, refem el càlcul amb les vostres pròpies xifres.",
     aConfirmer: "per confirmar",

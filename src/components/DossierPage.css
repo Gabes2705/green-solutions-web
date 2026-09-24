@@ -95,9 +95,18 @@
   text-align: justify;
 }
 
+/* Le bouton du héros n'avait que le dégradé de .btn-3d-light, sans le creux
+   ni l'arrondi : le vert s'arrêtait au ras des lettres et ça ne ressemblait
+   pas à un bouton. Il prend ici la même forme que le bouton « Retour ». */
 .dossier-pdf {
-  margin-top: 0.5rem;
-  display: inline-block;
+  margin-top: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7em 1.3em;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
   text-decoration: none;
 }
 

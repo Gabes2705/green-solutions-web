@@ -105,9 +105,13 @@ export default function GainAuChamp() {
                 <footer className="gc-pied">
                   <p>{mots.origineHausse}.</p>
                   <p>{mots.bonus}.</p>
-                  {/* Les pages d'essai n'existent qu'en français. */}
-                  {cas.essai && language === "fr" && (
-                    <a href={`/fr/essais-terrain/${cas.essai}`}>{t.voirEssai}</a>
+                  {/* La tomate n'a pas d'essai à elle : son bouton mène à la page
+                      qui refait le calcul, pas à l'essai d'une autre culture.
+                      Les essais, eux, existent maintenant dans les quatorze langues. */}
+                  {cas.page ? (
+                    <a href={`/${language}/${cas.page}`}>{t.voirDetail}</a>
+                  ) : (
+                    cas.essai && <a href={`/${language}/essais-terrain/${cas.essai}`}>{t.voirEssai}</a>
                   )}
                 </footer>
               </article>

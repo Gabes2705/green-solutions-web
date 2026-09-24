@@ -25,6 +25,7 @@ const PAGES = {
   "pommes-de-terre-afrique-du-sud": ["potato field", "potato harvest field", "potato plants field"],
   "soja-chine-shandong": ["soybean plants", "soybean field green", "soybean pods plant"],
   "protection-naturelle-des-cultures": ["Opuntia ficus-indica fruits", "orange orchard fruit trees", "Citrus sinensis tree fruits"],
+  "tomate-espagne": ["tomato field", "tomato plantation field", "tomato plants growing field"],
   "engrais-bio-liquide-biostimulant": ["tomato plants greenhouse", "foliar spraying crop", "organic farm vegetables field"],
 };
 

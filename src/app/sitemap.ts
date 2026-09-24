@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { DOSSIER_LANGS } from "@/lib/dossiers-index";
 import { ESSAIS } from "@/lib/essais";
+import { LANGUES_ESSAIS } from "@/lib/essais-i18n";
+import { LANGUES_TOMATE } from "@/lib/tomate-i18n";
 import { GUIDES } from "@/lib/guides";
 import { SITE_URL, LANGUAGES } from "@/lib/site";
 
@@ -67,10 +69,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // Field trials, rewritten as web pages from the PDF reports. French only.
-  ["", ...ESSAIS.map((e) => `/${e.slug}`)].forEach((suffixe) => {
+  // Field trials, rewritten as web pages from the PDF reports, in every
+  // language they have been translated into.
+  LANGUES_ESSAIS.forEach((lang) => {
+    ["", ...ESSAIS.map((e) => `/${e.slug}`)].forEach((suffixe) => {
+      urls.push({
+        url: `${SITE_URL}/${lang}/essais-terrain${suffixe}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.8,
+      });
+    });
+  });
+
+  // The processing-tomato page: the long form of the one economics example
+  // that has no trial of its own, in every language the site speaks.
+  LANGUES_TOMATE.forEach((lang) => {
     urls.push({
-      url: `${SITE_URL}/fr/essais-terrain${suffixe}`,
+      url: `${SITE_URL}/${lang}/tomate-espagne`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
