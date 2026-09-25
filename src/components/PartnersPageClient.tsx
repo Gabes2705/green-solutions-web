@@ -38,7 +38,7 @@ const PARTNERS: Partner[] = [
   { slug: "mcfi", name: "MCFI Ingenia", url: "https://ingenia.mu/" },
   { slug: "ete-europeenne-traitement-eaux", name: "ETE - Européenne de Traitement des Eaux", url: "https://www.etefrance.com/la-societe/" },
   { slug: "green-dream", name: "Green Dream", url: "https://www.greendream.bio/" },
-  { slug: "green-solutions", name: "Green Solutions", url: "/" },
+  { slug: "sabeco", name: "SABECO" },
   { slug: "globe-sdg-emblem", name: "Objectifs de développement durable", url: "https://sdgs.un.org" },
 ];
 
