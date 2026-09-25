@@ -39,6 +39,7 @@ const PARTNERS: Partner[] = [
   { slug: "ete-europeenne-traitement-eaux", name: "ETE - Européenne de Traitement des Eaux", url: "https://www.etefrance.com/la-societe/" },
   { slug: "green-dream", name: "Green Dream", url: "https://www.greendream.bio/" },
   { slug: "sabeco", name: "SABECO" },
+  { slug: "marcellus-developpement", name: "Marcellus Développement", url: "https://www.marcellusdeveloppement.com/" },
   { slug: "globe-sdg-emblem", name: "Objectifs de développement durable", url: "https://sdgs.un.org" },
 ];
 
