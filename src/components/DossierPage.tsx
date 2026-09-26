@@ -344,8 +344,8 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
   return (
     <article className="dossier-page" dir={rtl ? "rtl" : undefined} lang={dossier.locale}>
       <div className="tech-bar">
-        <a href={`/${dossier.langue}/`} className="tech-back btn-3d btn-3d-light">
-          ← Green Solutions
+        <a href={`/${dossier.langue}/etudes`} className="tech-back btn-3d btn-3d-light">
+          ← Retour
         </a>
       </div>
 
