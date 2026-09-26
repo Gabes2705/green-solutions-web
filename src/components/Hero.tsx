@@ -30,6 +30,23 @@ export default function Hero() {
     ca: "Feu-vos soci",
   }[language];
 
+  const partnersListLabel = {
+    fr: "Nos partenaires",
+    en: "Our partners",
+    es: "Nuestros socios",
+    pt: "Nossos parceiros",
+    ar: "شركاؤنا",
+    zh: "我们的合作伙伴",
+    id: "Mitra kami",
+    de: "Unsere Partner",
+    it: "I nostri partner",
+    el: "Οι συνεργάτες μας",
+    tr: "İş ortaklarımız",
+    pl: "Nasi partnerzy",
+    hr: "Naši partneri",
+    ca: "Els nostres socis",
+  }[language];
+
   return (
     <div className="stage">
       <div className="hero-photo">
@@ -60,8 +77,8 @@ export default function Hero() {
           <a href="#contact" className="btn-3d btn-3d-light hero-cta-main">
             {c.hero.quoteCta}
           </a>
-          <a href="#experience" className="btn-3d btn-3d-dark hero-cta-alt">
-            {c.hero.explore}
+          <a href={`/${language}/partenaires`} className="btn-3d btn-3d-dark hero-cta-alt">
+            {partnersListLabel}
           </a>
           <a
             href={`/${language}/devenir-partenaire`}
