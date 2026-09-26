@@ -50,13 +50,15 @@ export default function Hero() {
   return (
     <div className="stage">
       <div className="hero-photo">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <video
           className="hero-photo-img"
-          src="/images/hero-cover-clean.jpg"
-          alt=""
-          fetchPriority="high"
-          decoding="async"
+          src="/videos/hero-cover-macro.mp4"
+          poster="/images/hero-cover-clean.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
         />
         <div className="water-glint" aria-hidden="true" />
       </div>
