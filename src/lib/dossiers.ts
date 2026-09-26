@@ -1641,7 +1641,28 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "note": "Le Bénin cherche à transformer davantage de ses cultures de rente sur place plutôt qu'à les exporter brutes, en particulier via la zone industrielle de Glo-Djigbé. Cette stratégie suppose un approvisionnement agricole régulier, d'un bout à l'autre de l'année, ce qui remet la question du rendement et de l'eau au centre."
     },
-    "productions": null,
+    "productions": {
+      "kicker": "PRODUCTIONS AGRICOLES",
+      "title": "Coton et soja, deux volumes proches",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Production 2024–2025 (milliers de tonnes)",
+          "labels": [
+            "Coton produit",
+            "Soja attendu"
+          ],
+          "values": [
+            637,
+            652
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Lecture",
+        "body": "Les valeurs reprennent les chiffres du dossier : 637 000 tonnes de coton produites et 652 000 tonnes de soja attendues pour la campagne 2024–2025. La seconde valeur est une prévision."
+      }
+    },
     "filieres": [
       {
         "kicker": "FILIÈRE PHARE",
@@ -1681,7 +1702,21 @@ export const DOSSIERS: Record<string, Dossier> = {
       "note": "Les deux produits se vendent séparément mais ont été conçus pour se renforcer : l'hydro-rétenteur prolonge la disponibilité de l'eau, le fertilisant valorise cette eau sans dégrader un sol que l'extension des surfaces met déjà sous pression."
     },
     "economies": null,
-    "regions": null,
+    "regions": {
+      "kicker": "SUR LE TERRAIN",
+      "title": "Du diagnostic à l'essai en conditions locales",
+      "items": [
+        {
+          "head": "Parcelle pilote",
+          "metric": null,
+          "lines": [
+            "Choisir une culture et une zone de production avec un partenaire local.",
+            "Mesurer la levée, l'eau apportée et la récolte face à une parcelle témoin."
+          ],
+          "photo": 3
+        }
+      ]
+    },
     "deploiement": {
       "kicker": "COMMENT NOUS PROCÉDONS",
       "title": "Un déploiement par étapes, mesuré à chaque palier",
@@ -4757,7 +4792,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
       }
     },
-    "usages": null,
+    "usages": {
+      "kicker": "L'EAU EN CHIFFRES",
+      "title": "Sur 100 litres produits, 60 se perdent dans le réseau",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Part de l'eau potable produite (%)",
+          "labels": [
+            "Pertes",
+            "Volume restant"
+          ],
+          "values": [
+            60,
+            40
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Lecture",
+        "body": "Le volume restant est le complément arithmétique des 60 % de pertes annoncées dans le dossier. Il ne mesure pas la part effectivement consommée par l'agriculture."
+      }
+    },
     "economie": {
       "kicker": "ÉCONOMIE AGRICOLE",
       "title": "Banane et canne à sucre, deux filières d'export sous tension",
@@ -4781,7 +4837,28 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "note": "La banane et la canne à sucre restent les deux piliers de l'agriculture d'exportation guadeloupéenne, commercialisées via des structures collectives établies (UGPBAN pour la banane, filière sucre-rhum pour la canne). La crise de l'eau de 2026 touche les deux filières en même temps : la sécheresse au champ, les fuites dans le réseau."
     },
-    "productions": null,
+    "productions": {
+      "kicker": "PLUIES DE JUIN 2026",
+      "title": "Grande-Terre : un quart des pluies habituelles",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Pluie relative à la normale (%)",
+          "labels": [
+            "Grande-Terre",
+            "Normale"
+          ],
+          "values": [
+            25,
+            100
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Lecture",
+        "body": "25 % est le complément du déficit de 75 % indiqué dans le dossier pour la Grande-Terre en juin 2026. Ce chiffre ne représente pas toute la Guadeloupe."
+      }
+    },
     "filieres": [
       {
         "kicker": "FILIÈRE PHARE",
@@ -4821,7 +4898,21 @@ export const DOSSIERS: Record<string, Dossier> = {
       "note": "Sur une île où l'eau se perd autant dans le réseau qu'au champ, l'intérêt de nos deux produits n'est pas seulement agronomique : c'est de rendre chaque exploitation moins dépendante d'une ressource publique déjà sous tension."
     },
     "economies": null,
-    "regions": null,
+    "regions": {
+      "kicker": "SUR LE TERRAIN",
+      "title": "Une réponse à adapter à chaque parcelle",
+      "items": [
+        {
+          "head": "Essai local",
+          "metric": null,
+          "lines": [
+            "Observer le sol, la culture et l'accès à l'eau avant de définir le protocole.",
+            "Comparer une parcelle traitée à une parcelle témoin sur un cycle complet."
+          ],
+          "photo": 3
+        }
+      ]
+    },
     "deploiement": {
       "kicker": "COMMENT NOUS PROCÉDONS",
       "title": "Un déploiement par étapes, mesuré à chaque palier",
@@ -6311,7 +6402,28 @@ export const DOSSIERS: Record<string, Dossier> = {
         "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
       }
     },
-    "usages": null,
+    "usages": {
+      "kicker": "L'EAU EN CHIFFRES",
+      "title": "Une dépendance marquée aux rivières",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Part de l'eau consommée (%)",
+          "labels": [
+            "Rivières",
+            "Autres ressources"
+          ],
+          "values": [
+            94,
+            6
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Lecture",
+        "body": "Répartition arithmétique du chiffre de 94 % présenté dans le dossier. Les 6 % restants regroupent les autres ressources sans détailler leur origine."
+      }
+    },
     "economie": {
       "kicker": "ÉCONOMIE AGRICOLE",
       "title": "Banane et canne à sucre, sous alerte sécheresse territoriale",
@@ -6335,7 +6447,30 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "note": "Banane et canne à sucre restent les deux piliers de l'agriculture d'exportation martiniquaise, commercialisées via des structures collectives établies (Banamart pour la banane, SICA Canne-Union pour la canne et le rhum). L'absence quasi totale de réserve d'eau rend chaque semaine sans pluie immédiatement visible sur les deux filières."
     },
-    "productions": null,
+    "productions": {
+      "kicker": "PLUIES DE JUIN 2026",
+      "title": "Des cumuls très inférieurs à la normale",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Part de la normale saisonnière (%)",
+          "labels": [
+            "Borne basse",
+            "Borne haute",
+            "Normale"
+          ],
+          "values": [
+            20,
+            60,
+            100
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Lecture",
+        "body": "Le dossier indique une fourchette de 20 à 60 % des normales en juin 2026. Les deux bornes représentent cette fourchette, pas deux stations de mesure."
+      }
+    },
     "filieres": [
       {
         "kicker": "FILIÈRE PHARE",
