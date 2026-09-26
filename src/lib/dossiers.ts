@@ -1525,8 +1525,33 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-BJ",
     "langue": "fr",
     "pdf": null,
-    "photos": 0,
-    "credits": null,
+    "photos": 4,
+    "credits": [
+      {
+        "titre": "Bénin-Champ de coton.jpg",
+        "auteur": "Ji-Elle",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Bénin-Récolte de coton (1).jpg",
+        "auteur": "Ji-Elle",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Bénin-Transport du coton (1).jpg",
+        "auteur": "Ji-Elle",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Atakora-Champ de coton.jpg",
+        "auteur": "Ji-Elle",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Bénin",
@@ -4640,8 +4665,33 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-GP",
     "langue": "fr",
     "pdf": null,
-    "photos": 0,
-    "credits": null,
+    "photos": 4,
+    "credits": [
+      {
+        "titre": "CHAMPS DE CANNE, nord Basse-Terre, Guadeloupe.jpg",
+        "auteur": "FreeProuilhe",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Champ de canne à sucre.jpg",
+        "auteur": "Camille Gévaudan",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Champ de canne à sucre 2.jpg",
+        "auteur": "Camille Gévaudan",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Banana tree flower.jpg",
+        "auteur": "Pkraemer",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Guadeloupe",
@@ -6175,8 +6225,27 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-MQ",
     "langue": "fr",
     "pdf": null,
-    "photos": 0,
-    "credits": null,
+    "photos": 3,
+    "credits": [
+      {
+        "titre": "Martinique - panoramio - georama (9).jpg",
+        "auteur": "georama",
+        "licence": "CC BY 3.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Martinique - panoramio - georama (11).jpg",
+        "auteur": "georama",
+        "licence": "CC BY 3.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Martinique - panoramio - georama (13).jpg",
+        "auteur": "georama",
+        "licence": "CC BY 3.0",
+        "source": "commons"
+      }
+    ],
     "cover": {
       "eyebrow": "DOSSIER DE MARCHÉ",
       "title": "Martinique",
