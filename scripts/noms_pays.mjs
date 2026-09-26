@@ -45,6 +45,9 @@ const ISO = {
   argentine: "AR",
   croatie: "HR",
   madagascar: "MG",
+  benin: "BJ",
+  guadeloupe: "GP",
+  martinique: "MQ",
 };
 
 const LANGUES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"];

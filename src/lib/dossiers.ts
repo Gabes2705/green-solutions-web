@@ -1520,6 +1520,199 @@ export const DOSSIERS: Record<string, Dossier> = {
       "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
     }
   },
+  "benin": {
+    "slug": "benin",
+    "locale": "fr-BJ",
+    "langue": "fr",
+    "pdf": null,
+    "photos": 0,
+    "credits": null,
+    "cover": {
+      "eyebrow": "DOSSIER DE MARCHÉ",
+      "title": "Bénin",
+      "officiel": "RÉPUBLIQUE DU BÉNIN",
+      "lieu": "Cotonou · 2026",
+      "subtitle": "1er producteur de coton d'Afrique de l'Ouest, sur une seule saison des pluies au nord.\nCe que l'hydro-rétention change quand la surface cultivée grandit plus vite que le rendement."
+    },
+    "chiffres": {
+      "kicker": "LE MARCHÉ EN BREF",
+      "title": "Un pays agricole, tiré par le coton et le soja",
+      "items": [
+        {
+          "value": "≈ 15 M",
+          "label": "d'habitants, une population jeune en forte croissance"
+        },
+        {
+          "value": "≈ 24 %",
+          "label": "du PIB provient de l'agriculture (2,3 M d'actifs)"
+        },
+        {
+          "value": "637 000 t",
+          "label": "de coton produites en 2024-2025, 1er rang en Afrique de l'Ouest"
+        },
+        {
+          "value": "652 000 t",
+          "label": "de soja attendues sur la même campagne, filière en plein essor"
+        }
+      ],
+      "note": "L'agriculture reste le premier employeur du pays. Les cultures vivrières (manioc, igname, maïs, riz) progressent, mais surtout parce que la surface cultivée augmente : les rendements, eux, reculent globalement. Les cultures de rente — coton, anacarde, ananas, palmier à huile — sont en plein développement et concentrent l'essentiel des recettes d'exportation."
+    },
+    "contrainte": {
+      "kicker": "LA CONTRAINTE",
+      "title": "Une seule saison des pluies au nord, des rendements qui reculent",
+      "caption": null,
+      "bullets": [
+        "Le pays a un climat tropical gouverné par la mousson ouest-africaine : une seule saison des pluies au nord, qui démarre autour de la mi-mars, contre un régime plus arrosé et mieux réparti au sud.",
+        "Au nord et au centre, la pluviométrie descend sous les 700 à 800 mm par an, et moins encore à l'extrême nord : chaque pause pluvieuse pèse directement sur la levée du coton et des céréales.",
+        "Sur la période récente, la production vivrière augmente surtout parce que les surfaces cultivées s'étendent — le rendement à l'hectare, lui, est globalement en baisse.",
+        "Le coton, culture de rente n°1 du pays, est conduit très majoritairement en pluvial dans le nord : un aléa sur la saison touche directement la principale source de devises agricoles.",
+        "La zone industrielle de Glo-Djigbé (GDIZ) pousse à transformer davantage sur place plutôt qu'à exporter brut, ce qui suppose un approvisionnement régulier en matière première agricole."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": null,
+    "economie": {
+      "kicker": "ÉCONOMIE ET TRANSFORMATION LOCALE",
+      "title": "Le coton porte l'économie, la transformation prend le relais",
+      "items": [
+        {
+          "value": "1er",
+          "label": "producteur de coton d'Afrique de l'Ouest (637 000 t, 2024-2025)"
+        },
+        {
+          "value": "≈ 63 %",
+          "label": "du territoire est considéré cultivable"
+        },
+        {
+          "value": "135 hab./km²",
+          "label": "densité moyenne, en forte croissance démographique"
+        },
+        {
+          "value": "GDIZ",
+          "label": "la zone industrielle de Glo-Djigbé, moteur de la transformation locale"
+        }
+      ],
+      "note": "Le Bénin cherche à transformer davantage de ses cultures de rente sur place plutôt qu'à les exporter brutes, en particulier via la zone industrielle de Glo-Djigbé. Cette stratégie suppose un approvisionnement agricole régulier, d'un bout à l'autre de l'année, ce qui remet la question du rendement et de l'eau au centre."
+    },
+    "productions": null,
+    "filieres": [
+      {
+        "kicker": "FILIÈRE PHARE",
+        "title": "Le coton du nord : une culture pluviale, une seule saison",
+        "caption": null,
+        "bullets": [
+          "Le coton béninois est cultivé très majoritairement en pluvial, dans le nord et le centre du pays, sur la seule saison des pluies de la région.",
+          "Un démarrage tardif ou une pause de pluie en début de cycle compromet directement la levée, sans irrigation de secours sur la plupart des parcelles.",
+          "La filière est structurée autour de sociétés cotonnières et de coopératives, un circuit qui facilite le déploiement d'un essai groupé.",
+          "Anacarde et ananas, cultures de rente en forte croissance, partagent la même contrainte pluviale sur des sols souvent moins profonds.",
+          "Sur ces cultures de diversification, EVERGREEN® se teste en une saison ; le calendrier du coton lui-même dépend des campagnes de la filière."
+        ],
+        "photo": 2
+      }
+    ],
+    "solutions": {
+      "kicker": "NOTRE RÉPONSE",
+      "title": "Retenir l'eau, nourrir sans épuiser",
+      "left": {
+        "head": "EVERGREEN® — retenir l'eau",
+        "lines": [
+          "Hydro-rétenteur à base de potassium, placé dans la zone racinaire au semis, à la plantation ou à la reprise.",
+          "Capte l'eau de pluie ou d'irrigation et la restitue progressivement, ce qui amortit une pause de pluie en début de saison.",
+          "Capacité d'absorption de l'ordre de 300 fois son poids ; durée d'effet utile de 3 à 4 ans dans le sol.",
+          "Se dégrade de 20 à 25 % par an, sans accumulation ni risque de surdosage."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® — nourrir sans épuiser",
+        "lines": [
+          "Fertilisant en microdoses d'acides aminés, azote, phosphore et potassium, issu de ressources renouvelables.",
+          "Non chélatant : il n'appauvrit pas le complexe argilo-humique, déjà sollicité par l'extension des surfaces cultivées.",
+          "Certifié SOHISCERT et EU Bio, utilisé dans 60 pays — argument utile pour les filières coton et anacarde tournées vers l'export.",
+          "1 à 4 flacons de 140 ml par hectare, compatibles avec un pulvérisateur à dos comme avec la fertirrigation."
+        ]
+      },
+      "note": "Les deux produits se vendent séparément mais ont été conçus pour se renforcer : l'hydro-rétenteur prolonge la disponibilité de l'eau, le fertilisant valorise cette eau sans dégrader un sol que l'extension des surfaces met déjà sous pression."
+    },
+    "economies": null,
+    "regions": null,
+    "deploiement": {
+      "kicker": "COMMENT NOUS PROCÉDONS",
+      "title": "Un déploiement par étapes, mesuré à chaque palier",
+      "items": [
+        {
+          "head": "Diagnostic",
+          "body": "Analyse du sol, du mode d'arrosage et de la culture. Aucun engagement à ce stade."
+        },
+        {
+          "head": "Parcelle témoin",
+          "body": "Un essai comparatif sur un bloc, avec parcelle témoin conduite à l'identique."
+        },
+        {
+          "head": "Mesure",
+          "body": "Relevés de levée, de consommation d'eau et de rendement sur une campagne complète."
+        },
+        {
+          "head": "Extension",
+          "body": "Généralisation progressive aux autres parcelles sur la base des résultats constatés."
+        }
+      ],
+      "note": "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Ce qui change d'un terrain à l'autre, c'est le volume de terre effectivement exploré par les racines."
+    },
+    "risques": {
+      "kicker": "CE QU'IL FAUT ANTICIPER",
+      "title": "Risques identifiés et réponses",
+      "left": {
+        "head": "Risques",
+        "lines": [
+          "Filière coton très structurée autour de circuits d'intrants existants, avec des habitudes déjà installées.",
+          "Trésorerie limitée des petits producteurs vivriers, qui rend un achat d'intrant difficile à engager seul.",
+          "Variabilité de la saison unique du nord : une bonne année masque l'intérêt du produit, une mauvaise année fragilise la trésorerie du producteur.",
+          "Produit peu connu localement, homologation des intrants à instruire avant toute vente commerciale."
+        ]
+      },
+      "right": {
+        "head": "Réponses",
+        "lines": [
+          "Commencer par les cultures de rente à plus forte valeur (anacarde, ananas) où le gain se chiffre plus vite qu'en vivrier pur.",
+          "Passer par les coopératives et sociétés cotonnières déjà organisées plutôt que par le producteur isolé.",
+          "Mesurer sur une campagne complète avec parcelle témoin, même en bonne année.",
+          "Ouvrir le dossier d'homologation en parallèle des premiers essais, avec un partenaire local."
+        ]
+      },
+      "note": "Analyse acrylamide (laboratoire Polymex, ISO 9001, teneur inférieure à 3,0 µg/g) et screening REACH / SVHC (SGS) disponibles sur demande, ainsi que le certificat SOHISCERT valable jusqu'au 4 septembre 2027."
+    },
+    "sources": [
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Dites-nous votre parcelle",
+      "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
+      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
   "cameroun": {
     "slug": "cameroun",
     "locale": "fr-CM",
@@ -4442,6 +4635,199 @@ export const DOSSIERS: Record<string, Dossier> = {
       "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Ελβετία"
     }
   },
+  "guadeloupe": {
+    "slug": "guadeloupe",
+    "locale": "fr-GP",
+    "langue": "fr",
+    "pdf": null,
+    "photos": 0,
+    "credits": null,
+    "cover": {
+      "eyebrow": "DOSSIER DE MARCHÉ",
+      "title": "Guadeloupe",
+      "officiel": "RÉGION GUADELOUPE",
+      "lieu": "Basse-Terre · 2026",
+      "subtitle": "Une île tropicale qui manque d'eau : 60 % de l'eau potable perdue dans un réseau qui fuit, une sécheresse qui s'ajoute par-dessus.\nCe que l'hydro-rétention change quand chaque litre retenu au champ est un litre qui n'a pas à transiter par le réseau."
+    },
+    "chiffres": {
+      "kicker": "LE MARCHÉ EN BREF",
+      "title": "Une agriculture tropicale, un réseau d'eau à bout de souffle",
+      "items": [
+        {
+          "value": "≈ 384 000",
+          "label": "habitants (2023), population en léger recul"
+        },
+        {
+          "value": "60 %",
+          "label": "de l'eau potable perdue avant d'arriver au robinet, à cause des fuites du réseau"
+        },
+        {
+          "value": "-75 %",
+          "label": "de déficit de pluie sur la Grande-Terre en juin 2026, deuxième juin le plus sec depuis 1991"
+        },
+        {
+          "value": "1 hab./4",
+          "label": "n'a pas l'eau au robinet tous les jours, hors même tout épisode de sécheresse"
+        }
+      ],
+      "note": "La Guadeloupe cumule deux crises de l'eau distinctes : une sécheresse climatique qui s'aggrave, et un réseau de distribution vieillissant qui perd plus de la moitié de l'eau potable produite avant qu'elle n'atteigne un robinet. Les autorités locales ont dû imposer des tours d'eau — des coupures tournantes — dès juillet 2026."
+    },
+    "contrainte": {
+      "kicker": "LA CONTRAINTE",
+      "title": "Climat tropical, mais l'eau ne suit plus",
+      "caption": null,
+      "bullets": [
+        "Le déficit de pluie n'est pas anecdotique : jusqu'à -75 % sur la Grande-Terre en juin 2026, dans un contexte de Super El Niño qui touche l'ensemble de l'Atlantique.",
+        "Le réseau public perd environ 60 % de l'eau potable qu'il produit avant qu'elle n'arrive chez l'usager : la ressource se perd autant dans les canalisations qu'au champ.",
+        "Les cultures d'exportation historiques — banane, canne à sucre — sont directement affectées : la campagne de replantation de la canne a été compromise par la sécheresse de 2026.",
+        "La qualité de l'eau se dégrade en parallèle : moins de 30 % des sites en rivière sont d'excellente qualité, ce qui limite aussi les prélèvements agricoles en aval.",
+        "Sur une île volcanique aux reliefs marqués, la capacité de stockage est structurellement limitée : il n'y a pas de grand réservoir capable d'absorber plusieurs mois de déficit."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": null,
+    "economie": {
+      "kicker": "ÉCONOMIE AGRICOLE",
+      "title": "Banane et canne à sucre, deux filières d'export sous tension",
+      "items": [
+        {
+          "value": "60 %",
+          "label": "de l'eau potable perdue dans le réseau avant d'arriver au robinet"
+        },
+        {
+          "value": "29,4 %",
+          "label": "seulement des sites en rivière jugés d'excellente qualité"
+        },
+        {
+          "value": "2026",
+          "label": "campagne de replantation de la canne compromise par la sécheresse"
+        },
+        {
+          "value": "UGPBAN",
+          "label": "l'union de producteurs qui commercialise la banane des Antilles françaises"
+        }
+      ],
+      "note": "La banane et la canne à sucre restent les deux piliers de l'agriculture d'exportation guadeloupéenne, commercialisées via des structures collectives établies (UGPBAN pour la banane, filière sucre-rhum pour la canne). La crise de l'eau de 2026 touche les deux filières en même temps : la sécheresse au champ, les fuites dans le réseau."
+    },
+    "productions": null,
+    "filieres": [
+      {
+        "kicker": "FILIÈRE PHARE",
+        "title": "Banane et canne : deux cultures qui encaissent le déficit hydrique",
+        "caption": null,
+        "bullets": [
+          "La banane, principale culture d'export de l'île, est sensible à tout déficit hydrique prolongé, en particulier sur les parcelles les moins bien exposées.",
+          "La canne à sucre, conduite pour l'essentiel vers l'industrie sucrière, a vu sa campagne de replantation 2026 directement compromise par le manque de pluie.",
+          "Les deux filières sont structurées autour d'organisations de producteurs, ce qui facilite un essai groupé plutôt qu'exploitation par exploitation.",
+          "Le maraîchage de diversification, plus fragile en trésorerie, est le segment où un gain d'eau se traduit le plus vite en résultat visible.",
+          "Sur ces cultures, EVERGREEN® se teste en une saison ; la canne, cultivée sur plusieurs cycles, demande un suivi sur au moins une replantation complète."
+        ],
+        "photo": 2
+      }
+    ],
+    "solutions": {
+      "kicker": "NOTRE RÉPONSE",
+      "title": "Retenir l'eau à la parcelle, avant qu'elle ne se perde",
+      "left": {
+        "head": "EVERGREEN® — retenir l'eau",
+        "lines": [
+          "Hydro-rétenteur à base de potassium, placé dans la zone racinaire à la plantation ou à la reprise.",
+          "Capte l'eau de pluie ou d'irrigation et la restitue progressivement : un levier qui ne dépend pas de la pression du réseau public.",
+          "Capacité d'absorption de l'ordre de 300 fois son poids ; durée d'effet utile de 3 à 4 ans dans le sol.",
+          "Se dégrade de 20 à 25 % par an, sans accumulation ni risque de surdosage."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® — nourrir sans épuiser",
+        "lines": [
+          "Fertilisant en microdoses d'acides aminés, azote, phosphore et potassium, issu de ressources renouvelables.",
+          "Non chélatant : il n'appauvrit pas le complexe argilo-humique des sols déjà sollicités par la banane et la canne.",
+          "Certifié SOHISCERT et EU Bio, utilisé dans 60 pays — un atout pour des filières d'export déjà très réglementées.",
+          "1 à 4 flacons de 140 ml par hectare, compatibles avec un pulvérisateur à dos comme avec la fertirrigation."
+        ]
+      },
+      "note": "Sur une île où l'eau se perd autant dans le réseau qu'au champ, l'intérêt de nos deux produits n'est pas seulement agronomique : c'est de rendre chaque exploitation moins dépendante d'une ressource publique déjà sous tension."
+    },
+    "economies": null,
+    "regions": null,
+    "deploiement": {
+      "kicker": "COMMENT NOUS PROCÉDONS",
+      "title": "Un déploiement par étapes, mesuré à chaque palier",
+      "items": [
+        {
+          "head": "Diagnostic",
+          "body": "Analyse du sol, du mode d'arrosage et de la culture. Aucun engagement à ce stade."
+        },
+        {
+          "head": "Parcelle témoin",
+          "body": "Un essai comparatif sur un bloc, avec parcelle témoin conduite à l'identique."
+        },
+        {
+          "head": "Mesure",
+          "body": "Relevés de levée, de consommation d'eau et de rendement sur une campagne complète."
+        },
+        {
+          "head": "Extension",
+          "body": "Généralisation progressive aux autres parcelles sur la base des résultats constatés."
+        }
+      ],
+      "note": "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Ce qui change d'un terrain à l'autre, c'est le volume de terre effectivement exploré par les racines."
+    },
+    "risques": {
+      "kicker": "CE QU'IL FAUT ANTICIPER",
+      "title": "Risques identifiés et réponses",
+      "left": {
+        "head": "Risques",
+        "lines": [
+          "Filières banane et canne déjà structurées autour de coopératives (UGPBAN, SICA Canne-Union), avec des pratiques établies.",
+          "Pression foncière forte : peu de surfaces disponibles pour de nouveaux essais à grande échelle.",
+          "Une bonne saison des pluies peut masquer temporairement l'intérêt du produit auprès des exploitants.",
+          "Contexte réglementaire européen (DOM) : toute homologation d'intrant doit s'instruire selon les règles applicables en France et dans l'UE."
+        ]
+      },
+      "right": {
+        "head": "Réponses",
+        "lines": [
+          "Passer par les coopératives et interprofessions déjà en place plutôt que par l'exploitant isolé.",
+          "Documenter le lien direct entre le gain d'eau retenue et la crise du réseau, un argument concret pour les exploitants.",
+          "Mesurer sur une campagne complète avec parcelle témoin, y compris lors d'une saison plus arrosée.",
+          "Vérifier au cas par cas le statut réglementaire des produits en France métropolitaine et dans les DOM avant toute commercialisation."
+        ]
+      },
+      "note": "Analyse acrylamide (laboratoire Polymex, ISO 9001, teneur inférieure à 3,0 µg/g) et screening REACH / SVHC (SGS) disponibles sur demande, ainsi que le certificat SOHISCERT valable jusqu'au 4 septembre 2027."
+    },
+    "sources": [
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Dites-nous votre parcelle",
+      "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
+      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
   "haiti": {
     "slug": "haiti",
     "locale": "fr-HT",
@@ -5781,6 +6167,199 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'irrigation, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
+      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
+  "martinique": {
+    "slug": "martinique",
+    "locale": "fr-MQ",
+    "langue": "fr",
+    "pdf": null,
+    "photos": 0,
+    "credits": null,
+    "cover": {
+      "eyebrow": "DOSSIER DE MARCHÉ",
+      "title": "Martinique",
+      "officiel": "RÉGION MARTINIQUE",
+      "lieu": "Fort-de-France · 2026",
+      "subtitle": "94 % de l'eau consommée vient directement des rivières, avec trois jours de réserve.\nCe que l'hydro-rétention change quand la moindre semaine sans pluie se lit sur tout le territoire."
+    },
+    "chiffres": {
+      "kicker": "LE MARCHÉ EN BREF",
+      "title": "Une île sous alerte sécheresse, une réserve d'eau de trois jours",
+      "items": [
+        {
+          "value": "≈ 360 000",
+          "label": "habitants (2023), population en recul"
+        },
+        {
+          "value": "94 %",
+          "label": "de l'eau consommée provient directement des rivières"
+        },
+        {
+          "value": "≈ 3 jours",
+          "label": "de capacité de stockage disponible pour l'ensemble du territoire"
+        },
+        {
+          "value": "20–60 %",
+          "label": "des normales saisonnières de pluie seulement, en juin 2026"
+        }
+      ],
+      "note": "La Martinique n'a quasiment pas de marge de manœuvre hydraulique : sans grand réservoir, l'essentiel de l'eau consommée vient directement des rivières, dont le débit dépend de la pluie de la semaine. En 2026, la préfecture a placé l'île en alerte sécheresse sur l'ensemble du territoire et engagé une procédure de calamité agricole."
+    },
+    "contrainte": {
+      "kicker": "LA CONTRAINTE",
+      "title": "Pas de réserve : l'eau du jour dépend de la pluie du jour",
+      "caption": null,
+      "bullets": [
+        "Avec une capacité de stockage limitée à environ trois jours, la Martinique ne peut pas absorber une séquence sèche de plusieurs semaines comme le ferait un territoire doté de grands barrages.",
+        "En juin 2026, les cumuls de pluie n'ont représenté que 20 à 60 % des normales saisonnières, dans un contexte de Super El Niño touchant l'ensemble de l'Atlantique.",
+        "Le Bureau de recherches géologiques et minières a constaté des niveaux de nappes souterraines inférieurs à la moyenne dès fin juin 2026, un signal qui s'ajoute au déficit de surface.",
+        "Face à la gravité de la situation, la préfecture a engagé fin août 2026 une procédure de calamité agricole pour l'ensemble des filières.",
+        "Les restrictions imposées à la population (arrosage, remplissage de piscines) montrent l'ampleur de la tension, bien au-delà du seul usage agricole."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": null,
+    "economie": {
+      "kicker": "ÉCONOMIE AGRICOLE",
+      "title": "Banane et canne à sucre, sous alerte sécheresse territoriale",
+      "items": [
+        {
+          "value": "94 %",
+          "label": "de l'eau consommée vient directement des rivières"
+        },
+        {
+          "value": "≈ 3 jours",
+          "label": "de capacité de stockage pour tout le territoire"
+        },
+        {
+          "value": "2026",
+          "label": "procédure de calamité agricole engagée par la préfecture"
+        },
+        {
+          "value": "Banamart",
+          "label": "la structure qui fédère l'essentiel des producteurs de banane"
+        }
+      ],
+      "note": "Banane et canne à sucre restent les deux piliers de l'agriculture d'exportation martiniquaise, commercialisées via des structures collectives établies (Banamart pour la banane, SICA Canne-Union pour la canne et le rhum). L'absence quasi totale de réserve d'eau rend chaque semaine sans pluie immédiatement visible sur les deux filières."
+    },
+    "productions": null,
+    "filieres": [
+      {
+        "kicker": "FILIÈRE PHARE",
+        "title": "Banane et canne : deux cultures exposées à l'absence de réserve",
+        "caption": null,
+        "bullets": [
+          "La banane, principale culture d'export de l'île, encaisse directement tout déficit hydrique prolongé faute de réserve territoriale.",
+          "La canne à sucre, destinée pour l'essentiel à la distillerie agricole et au sucre, est également concernée par la procédure de calamité agricole 2026.",
+          "Les deux filières sont structurées autour d'organisations de producteurs, ce qui facilite un essai groupé plutôt qu'exploitation par exploitation.",
+          "Le maraîchage de diversification, plus fragile en trésorerie, est le segment où un gain d'eau se traduit le plus vite en résultat visible.",
+          "Sur ces cultures, EVERGREEN® se teste en une saison ; la canne, cultivée sur plusieurs cycles, demande un suivi sur au moins une replantation complète."
+        ],
+        "photo": 2
+      }
+    ],
+    "solutions": {
+      "kicker": "NOTRE RÉPONSE",
+      "title": "Amortir l'absence de réserve, à l'échelle de la parcelle",
+      "left": {
+        "head": "EVERGREEN® — retenir l'eau",
+        "lines": [
+          "Hydro-rétenteur à base de potassium, placé dans la zone racinaire à la plantation ou à la reprise.",
+          "Capte l'eau de pluie ou d'irrigation et la restitue progressivement : une réserve locale, là où le territoire n'en a pas.",
+          "Capacité d'absorption de l'ordre de 300 fois son poids ; durée d'effet utile de 3 à 4 ans dans le sol.",
+          "Se dégrade de 20 à 25 % par an, sans accumulation ni risque de surdosage."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® — nourrir sans épuiser",
+        "lines": [
+          "Fertilisant en microdoses d'acides aminés, azote, phosphore et potassium, issu de ressources renouvelables.",
+          "Non chélatant : il n'appauvrit pas le complexe argilo-humique des sols déjà sollicités par la banane et la canne.",
+          "Certifié SOHISCERT et EU Bio, utilisé dans 60 pays — un atout pour des filières d'export déjà très réglementées.",
+          "1 à 4 flacons de 140 ml par hectare, compatibles avec un pulvérisateur à dos comme avec la fertirrigation."
+        ]
+      },
+      "note": "Quand le territoire n'a que trois jours de réserve, retenir l'eau à la racine plutôt que de compter sur le réseau ou la rivière devient un levier direct, pas seulement un gain de confort."
+    },
+    "economies": null,
+    "regions": null,
+    "deploiement": {
+      "kicker": "COMMENT NOUS PROCÉDONS",
+      "title": "Un déploiement par étapes, mesuré à chaque palier",
+      "items": [
+        {
+          "head": "Diagnostic",
+          "body": "Analyse du sol, du mode d'arrosage et de la culture. Aucun engagement à ce stade."
+        },
+        {
+          "head": "Parcelle témoin",
+          "body": "Un essai comparatif sur un bloc, avec parcelle témoin conduite à l'identique."
+        },
+        {
+          "head": "Mesure",
+          "body": "Relevés de levée, de consommation d'eau et de rendement sur une campagne complète."
+        },
+        {
+          "head": "Extension",
+          "body": "Généralisation progressive aux autres parcelles sur la base des résultats constatés."
+        }
+      ],
+      "note": "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Ce qui change d'un terrain à l'autre, c'est le volume de terre effectivement exploré par les racines."
+    },
+    "risques": {
+      "kicker": "CE QU'IL FAUT ANTICIPER",
+      "title": "Risques identifiés et réponses",
+      "left": {
+        "head": "Risques",
+        "lines": [
+          "Filières banane et canne déjà structurées autour de coopératives (Banamart, SICA Canne-Union), avec des pratiques établies.",
+          "Forte pression foncière : peu de surfaces disponibles pour de nouveaux essais à grande échelle.",
+          "Une procédure de calamité agricole en cours peut détourner l'attention des exploitants vers l'urgence plutôt que vers un essai de fond.",
+          "Contexte réglementaire européen (DOM) : toute homologation d'intrant doit s'instruire selon les règles applicables en France et dans l'UE."
+        ]
+      },
+      "right": {
+        "head": "Réponses",
+        "lines": [
+          "Passer par les coopératives et interprofessions déjà en place plutôt que par l'exploitant isolé.",
+          "Positionner l'essai comme une réponse concrète à la calamité en cours plutôt que comme un projet à part.",
+          "Mesurer sur une campagne complète avec parcelle témoin, y compris lors d'une saison plus arrosée.",
+          "Vérifier au cas par cas le statut réglementaire des produits en France métropolitaine et dans les DOM avant toute commercialisation."
+        ]
+      },
+      "note": "Analyse acrylamide (laboratoire Polymex, ISO 9001, teneur inférieure à 3,0 µg/g) et screening REACH / SVHC (SGS) disponibles sur demande, ainsi que le certificat SOHISCERT valable jusqu'au 4 septembre 2027."
+    },
+    "sources": [
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Dites-nous votre parcelle",
+      "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
       "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
