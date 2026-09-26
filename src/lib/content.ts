@@ -527,6 +527,7 @@ const baseContent = {
       title: "Nos partenaires",
       lede: "Producteurs, instituts de recherche, distributeurs et organisations qui construisent ce réseau avec nous.",
       hint: "Cliquez sur les logos pour voir le site internet.",
+      backToPartners: "← Retour aux partenaires",
     },
     team: {
       eyebrow: "L'entreprise",
@@ -1146,6 +1147,7 @@ const baseContent = {
       title: "Our partners",
       lede: "Producers, research institutes, distributors and organisations building this network with us.",
       hint: "Click a logo to see its website.",
+      backToPartners: "← Back to partners",
     },
     team: {
       eyebrow: "The company",
@@ -1765,6 +1767,7 @@ const baseContent = {
       title: "Nuestros socios",
       lede: "Productores, institutos de investigación, distribuidores y organizaciones que construyen esta red con nosotros.",
       hint: "Haz clic en un logo para ver su sitio web.",
+      backToPartners: "← Volver a los socios",
     },
     team: {
       eyebrow: "La empresa",
@@ -2384,6 +2387,7 @@ const baseContent = {
       title: "Os nossos parceiros",
       lede: "Produtores, institutos de investigação, distribuidores e organizações que constroem esta rede connosco.",
       hint: "Clique num logótipo para ver o site.",
+      backToPartners: "← Voltar aos parceiros",
     },
     team: {
       eyebrow: "A empresa",
@@ -3003,6 +3007,7 @@ const baseContent = {
       title: "شركاؤنا",
       lede: "منتجون، معاهد بحثية، موزعون ومنظمات تبني هذه الشبكة معنا.",
       hint: "انقر على أحد الشعارات لمشاهدة موقعه الإلكتروني.",
+      backToPartners: "← العودة إلى الشركاء",
     },
     team: {
       eyebrow: "الشركة",
@@ -3622,6 +3627,7 @@ const baseContent = {
       title: "我们的合作伙伴",
       lede: "与我们共同构建这一网络的生产者、研究机构、经销商和组织。",
       hint: "点击标志即可查看其官网。",
+      backToPartners: "← 返回合作伙伴",
     },
     team: {
       eyebrow: "企业",
@@ -4241,6 +4247,7 @@ const baseContent = {
       title: "Mitra Kami",
       lede: "Produsen, lembaga penelitian, distributor, dan organisasi yang membangun jaringan ini bersama kami.",
       hint: "Klik logo untuk melihat situs webnya.",
+      backToPartners: "← Kembali ke mitra",
     },
     team: {
       eyebrow: "Perusahaan",
@@ -4860,6 +4867,7 @@ const baseContent = {
       title: "Unsere Partner",
       lede: "Erzeuger, Forschungsinstitute, Vertriebspartner und Organisationen, die dieses Netzwerk gemeinsam mit uns aufbauen.",
       hint: "Klicken Sie auf ein Logo, um die Website zu sehen.",
+      backToPartners: "← Zurück zu den Partnern",
     },
     team: {
       eyebrow: "Das Unternehmen",
@@ -5479,6 +5487,7 @@ const baseContent = {
       title: "I nostri partner",
       lede: "Produttori, istituti di ricerca, distributori e organizzazioni che costruiscono questa rete con noi.",
       hint: "Clicca sui loghi per vedere il sito web.",
+      backToPartners: "← Torna ai partner",
     },
     team: {
       eyebrow: "L'azienda",
@@ -6098,6 +6107,7 @@ const baseContent = {
       title: "Οι συνεργάτες μας",
       lede: "Παραγωγοί, ερευνητικά ιδρύματα, διανομείς και οργανισμοί που χτίζουν αυτό το δίκτυο μαζί μας.",
       hint: "Κάντε κλικ στα λογότυπα για να δείτε τον ιστότοπο.",
+      backToPartners: "← Επιστροφή στους συνεργάτες",
     },
     team: {
       eyebrow: "Η εταιρεία",
@@ -6717,6 +6727,7 @@ const baseContent = {
       title: "Ortaklarımız",
       lede: "Bizimle bu ağı inşa eden üreticiler, araştırma enstitüleri, distribütörler ve kuruluşlar.",
       hint: "Web sitesini görmek için logolara tıklayın.",
+      backToPartners: "← Ortaklara dön",
     },
     team: {
       eyebrow: "Şirket",
@@ -7336,6 +7347,7 @@ const baseContent = {
       title: "Nasi partnerzy",
       lede: "Producenci, instytuty badawcze, dystrybutorzy i organizacje, które budują tę sieć razem z nami.",
       hint: "Kliknij loga, aby zobaczyć stronę internetową.",
+      backToPartners: "← Powrót do partnerów",
     },
     team: {
       eyebrow: "Firma",
@@ -7955,6 +7967,7 @@ const baseContent = {
       title: "Naši partneri",
       lede: "Proizvođači, istraživački instituti, distributeri i organizacije koje s nama grade ovu mrežu.",
       hint: "Kliknite na logotipe za pregled internetskih stranica.",
+      backToPartners: "← Povratak na partnere",
     },
     team: {
       eyebrow: "Tvrtka",

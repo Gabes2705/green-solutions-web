@@ -677,6 +677,7 @@ export const ca = {
     title: "Els nostres socis",
     lede: "Productors, instituts de recerca, distribuïdors i organitzacions que construeixen aquesta xarxa amb nosaltres.",
     hint: "Feu clic als logotips per veure'n el lloc web.",
+    backToPartners: "← Tornar als socis",
   },
   team: {
     eyebrow: "L'empresa",

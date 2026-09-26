@@ -1732,6 +1732,26 @@ body li {
   height: 100%;
   color: var(--ink);
 }
+
+.partner-visit-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8em;
+  padding: 3em 1.5em;
+  text-align: center;
+}
+.partner-visit-logo {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.partner-visit-link {
+  text-decoration: none;
+}
 /* pre-line so a lede can force its own break where the sense turns. The line
    before a forced break counts as a last line and is not stretched, so this
    costs the justification nothing. */
