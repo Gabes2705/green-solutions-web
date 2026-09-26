@@ -80,13 +80,7 @@ export default function PartnersPageClient() {
               </>
             );
             return partner.url ? (
-              <a
-                className="partner-card partner-card-link"
-                key={partner.slug}
-                href={partner.url}
-                target={partner.url.startsWith("/") ? undefined : "_blank"}
-                rel={partner.url.startsWith("/") ? undefined : "noreferrer"}
-              >
+              <a className="partner-card partner-card-link" key={partner.slug} href={partner.url}>
                 {logo}
               </a>
             ) : (
