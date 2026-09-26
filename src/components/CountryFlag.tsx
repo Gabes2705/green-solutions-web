@@ -307,6 +307,13 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect x="10" y="10" width="20" height="10" fill="#007E3A" />
     </>
   ),
+  benin: () => (
+    <>
+      <rect width="12" height="20" fill="#008751" />
+      <rect x="12" width="18" height="10" fill="#FCD116" />
+      <rect x="12" y="10" width="18" height="10" fill="#E8112D" />
+    </>
+  ),
   portugal: () => (
     <>
       <rect width="30" height="20" fill="#DA291C" />
@@ -320,6 +327,10 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
 const ALIASES: Record<string, string> = {
   usa: "etats-unis",
   "etats-unis-amerique": "etats-unis",
+  // La Guadeloupe et la Martinique sont des départements français : leur
+  // drapeau officiel est le tricolore, pas un emblème régional.
+  guadeloupe: "france",
+  martinique: "france",
 };
 
 /**

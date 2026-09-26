@@ -42,6 +42,9 @@ export const COUNTRY_SLUGS = [
   "argentine",
   "croatie",
   "madagascar",
+  "benin",
+  "guadeloupe",
+  "martinique",
 ] as const;
 
 export type CountrySlug = (typeof COUNTRY_SLUGS)[number];
@@ -76,6 +79,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Argentine",
     croatie: "Croatie",
     madagascar: "Madagascar",
+    benin: "Bénin",
+    guadeloupe: "Guadeloupe",
+    martinique: "Martinique",
   },
   en: {
     "cote-divoire": "Côte d’Ivoire",
@@ -98,6 +104,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Argentina",
     croatie: "Croatia",
     madagascar: "Madagascar",
+    benin: "Benin",
+    guadeloupe: "Guadeloupe",
+    martinique: "Martinique",
   },
   es: {
     "cote-divoire": "Côte d’Ivoire",
@@ -120,6 +129,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Argentina",
     croatie: "Croacia",
     madagascar: "Madagascar",
+    benin: "Benín",
+    guadeloupe: "Guadalupe",
+    martinique: "Martinica",
   },
   pt: {
     "cote-divoire": "Costa do Marfim",
@@ -142,6 +154,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Argentina",
     croatie: "Croácia",
     madagascar: "Madagascar",
+    benin: "Benin",
+    guadeloupe: "Guadalupe",
+    martinique: "Martinica",
   },
   ar: {
     "cote-divoire": "ساحل العاج",
@@ -164,6 +179,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "الأرجنتين",
     croatie: "كرواتيا",
     madagascar: "مدغشقر",
+    benin: "بنين",
+    guadeloupe: "غوادلوب",
+    martinique: "جزر المارتينيك",
   },
   zh: {
     "cote-divoire": "科特迪瓦",
@@ -186,6 +204,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "阿根廷",
     croatie: "克罗地亚",
     madagascar: "马达加斯加",
+    benin: "贝宁",
+    guadeloupe: "瓜德罗普",
+    martinique: "马提尼克",
   },
   id: {
     "cote-divoire": "Côte d’Ivoire",
@@ -208,6 +229,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Argentina",
     croatie: "Kroasia",
     madagascar: "Madagaskar",
+    benin: "Benin",
+    guadeloupe: "Guadeloupe",
+    martinique: "Martinik",
   },
   de: {
     "cote-divoire": "Côte d’Ivoire",
@@ -230,6 +254,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Argentinien",
     croatie: "Kroatien",
     madagascar: "Madagaskar",
+    benin: "Benin",
+    guadeloupe: "Guadeloupe",
+    martinique: "Martinique",
   },
   it: {
     "cote-divoire": "Costa d’Avorio",
@@ -252,6 +279,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Argentina",
     croatie: "Croazia",
     madagascar: "Madagascar",
+    benin: "Benin",
+    guadeloupe: "Guadalupa",
+    martinique: "Martinica",
   },
   el: {
     "cote-divoire": "Ακτή Ελεφαντοστού",
@@ -274,6 +304,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Αργεντινή",
     croatie: "Κροατία",
     madagascar: "Μαδαγασκάρη",
+    benin: "Μπενίν",
+    guadeloupe: "Γουαδελούπη",
+    martinique: "Μαρτινίκα",
   },
   tr: {
     "cote-divoire": "Côte d’Ivoire",
@@ -296,6 +329,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Arjantin",
     croatie: "Hırvatistan",
     madagascar: "Madagaskar",
+    benin: "Benin",
+    guadeloupe: "Guadeloupe",
+    martinique: "Martinik",
   },
   pl: {
     "cote-divoire": "Côte d’Ivoire",
@@ -318,6 +354,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Argentyna",
     croatie: "Chorwacja",
     madagascar: "Madagaskar",
+    benin: "Benin",
+    guadeloupe: "Gwadelupa",
+    martinique: "Martynika",
   },
   hr: {
     "cote-divoire": "Obala Bjelokosti",
@@ -340,6 +379,9 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     argentine: "Argentina",
     croatie: "Hrvatska",
     madagascar: "Madagaskar",
+    benin: "Benin",
+    guadeloupe: "Guadalupe",
+    martinique: "Martinik",
   },
 };
 

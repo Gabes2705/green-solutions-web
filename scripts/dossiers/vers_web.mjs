@@ -49,8 +49,14 @@ function photosInstallees(slug) {
   return { nombre, credits };
 }
 
-/** Dossiers temporairement non distribués, le cas échéant. */
-const RETIRES = new Set();
+/**
+ * Dossiers temporairement non distribués, le cas échéant.
+ *
+ * Bénin, Guadeloupe et Martinique n'ont pas encore de photo libre identifiée
+ * ni de PowerPoint généré : la page web existe et tient debout sans photo,
+ * mais proposer un PDF qui n'a jamais été fabriqué enverrait un lien mort.
+ */
+const RETIRES = new Set(["benin", "guadeloupe", "martinique"]);
 
 /** Un graphique de dossier, réduit à ce qu'une page web sait redessiner. */
 function graphique(bloc) {
