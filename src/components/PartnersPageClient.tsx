@@ -80,7 +80,11 @@ export default function PartnersPageClient() {
               </>
             );
             return partner.url ? (
-              <a className="partner-card partner-card-link" key={partner.slug} href={partner.url}>
+              <a
+                className="partner-card partner-card-link"
+                key={partner.slug}
+                href={`/${language}/partenaires/visiter?slug=${partner.slug}&url=${encodeURIComponent(partner.url)}&name=${encodeURIComponent(partner.name)}`}
+              >
                 {logo}
               </a>
             ) : (
