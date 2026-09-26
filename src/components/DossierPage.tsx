@@ -345,12 +345,12 @@ function Credits({ dossier }: { dossier: Dossier }) {
  * cliquer.
  */
 const RETOUR: Record<string, string> = {
-  fr: "← Tous les pays",
-  en: "← All countries",
-  es: "← Todos los países",
-  ar: "← كل الدول",
-  el: "← Όλες οι χώρες",
-  hr: "← Sve zemlje",
+  fr: "← Retour",
+  en: "← Back",
+  es: "← Volver",
+  ar: "← رجوع",
+  el: "← Πίσω",
+  hr: "← Natrag",
 };
 
 export default function DossierPage({ dossier }: { dossier: Dossier }) {
@@ -362,7 +362,7 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
   return (
     <article className="dossier-page" dir={rtl ? "rtl" : undefined} lang={dossier.locale}>
       <div className="tech-bar">
-        <a href={`/${dossier.langue}/etudes`} className="tech-back btn-3d btn-3d-light">
+        <a href={`/${dossier.langue}/#etudes-pays`} className="tech-back btn-3d btn-3d-light">
           {RETOUR[dossier.langue] ?? RETOUR.fr}
         </a>
       </div>
