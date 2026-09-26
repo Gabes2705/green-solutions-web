@@ -335,6 +335,24 @@ function Credits({ dossier }: { dossier: Dossier }) {
   );
 }
 
+/**
+ * Le bouton de retour, dans la langue de la fiche.
+ *
+ * Une fiche pays est ecrite dans la langue de son marche : douze des vingt ne
+ * sont pas en francais. Un « Retour » francais en haut de la fiche
+ * sud-africaine ou saoudienne se remarquait tout de suite. Le libelle nomme
+ * aussi la page d'arrivee, comme sur les essais : on sait ou l'on va avant de
+ * cliquer.
+ */
+const RETOUR: Record<string, string> = {
+  fr: "← Tous les pays",
+  en: "← All countries",
+  es: "← Todos los países",
+  ar: "← كل الدول",
+  el: "← Όλες οι χώρες",
+  hr: "← Sve zemlje",
+};
+
 export default function DossierPage({ dossier }: { dossier: Dossier }) {
   const { cover } = dossier;
   const rtl = dossier.langue === "ar";
@@ -345,7 +363,7 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
     <article className="dossier-page" dir={rtl ? "rtl" : undefined} lang={dossier.locale}>
       <div className="tech-bar">
         <a href={`/${dossier.langue}/etudes`} className="tech-back btn-3d btn-3d-light">
-          ← Retour
+          {RETOUR[dossier.langue] ?? RETOUR.fr}
         </a>
       </div>
 
