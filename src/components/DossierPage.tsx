@@ -162,7 +162,7 @@ function BlocGraphique({ bloc }: { bloc: Graphique }) {
         ))}
       </div>
 
-      {bloc.series.length > 1 && (
+      {bloc.series.length > 0 && (
         <p className="dossier-legende">
           {bloc.series.map((serie, j) => (
             <span key={j} className="dossier-legende-item">
@@ -291,6 +291,11 @@ function Credits({ dossier }: { dossier: Dossier }) {
       conceptual:
         "Conceptual illustrations are identified as such and do not document a real site or trial.",
     },
+    pt: {
+      titre: "Créditos das fotografias",
+      commons: "Fotografias de contexto do Wikimedia Commons, reutilizadas conforme as licenças indicadas. Não documentam ensaios Green Solutions.",
+      conceptual: "As ilustrações conceituais são identificadas como tais.",
+    },
     es: {
       titre: "Créditos fotográficos",
       commons: "Fotografías de Wikimedia Commons, reutilizadas conforme a sus licencias.",
@@ -323,8 +328,9 @@ function Credits({ dossier }: { dossier: Dossier }) {
       <ul>
         {uniques.map((c, i) => (
           <li key={i}>
-            {c.auteur}
-            {c.licence ? ` — ${c.licence}` : ""}
+            {c.url ? <a href={c.url} target="_blank" rel="noopener noreferrer">{c.auteur}</a> : c.auteur}
+            {c.licenceUrl ? <> — <a href={c.licenceUrl} target="_blank" rel="noopener noreferrer">{c.licence}</a></> : c.licence ? ` — ${c.licence}` : ""}
+            {c.modifications ? ` (${c.modifications})` : ""}
             {c.titre ? `, « ${c.titre.replace(/\.(jpe?g|png|svg)$/i, "")} »` : ""}
           </li>
         ))}
@@ -348,6 +354,7 @@ const RETOUR: Record<string, string> = {
   fr: "← Retour",
   en: "← Back",
   es: "← Volver",
+  pt: "← Voltar",
   ar: "← رجوع",
   el: "← Πίσω",
   hr: "← Natrag",
@@ -393,7 +400,7 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
           )}
           {dossier.pdf && (
             <a className="dossier-pdf btn-3d btn-3d-light" href={dossier.pdf}>
-              Télécharger le dossier (PDF)
+              {dossier.langue === "pt" ? "Baixar o estudo (PDF)" : dossier.langue === "es" ? "Descargar el dossier (PDF)" : "Télécharger le dossier (PDF)"}
             </a>
           )}
         </div>
@@ -419,10 +426,14 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
 
         {dossier.sources && (
           <section className="dossier-section">
-            <h2 className="section-title">Sources</h2>
+            <h2 className="section-title">{dossier.langue === "pt" ? "Fontes" : dossier.langue === "es" ? "Fuentes" : "Sources"}</h2>
             <ul className="dossier-sources">
               {dossier.sources.map((source, i) => (
-                <li key={i}>{source}</li>
+                <li key={i}>
+                  {source.split(/(https:\/\/[^\s]+)/g).map((part, j) =>
+                    part.startsWith("https://") ? <a key={j} href={part} target="_blank" rel="noopener noreferrer">{new URL(part).hostname}</a> : part
+                  )}
+                </li>
               ))}
             </ul>
           </section>

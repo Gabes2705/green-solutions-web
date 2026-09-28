@@ -86,6 +86,10 @@ function photosOf(slug) {
 }
 
 export async function build(spec) {
+  if (spec.documented) {
+    const { buildDocumented } = await import("./documented.mjs");
+    return buildDocumented(spec);
+  }
   const pics = photosOf(spec.slug);
   if (pics.length === 0) throw new Error(`aucune photo pour ${spec.slug}`);
   const pic = (i) => pics[i % pics.length];

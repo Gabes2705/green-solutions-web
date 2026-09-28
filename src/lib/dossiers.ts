@@ -69,7 +69,7 @@ export type Dossier = {
   pdf: string | null;
   /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
   photos: number;
-  credits: { titre: string | null; auteur: string | null; licence: string | null; source: string }[] | null;
+  credits: { titre: string | null; auteur: string | null; licence: string | null; source: string; url?: string; licenceUrl?: string; modifications?: string }[] | null;
   cover: {
     eyebrow: string;
     title: string;
@@ -1735,6 +1735,222 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
+      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
+  "bresil": {
+    "slug": "bresil",
+    "locale": "pt-BR",
+    "langue": "pt",
+    "pdf": "/documents/countries/bresil.pdf",
+    "photos": 2,
+    "credits": [
+      {
+        "titre": "Café plantação Altinópolis",
+        "auteur": "Jonathan Wilkins",
+        "licence": "CC BY-SA 3.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_planta%C3%A7%C3%A3o_Altin%C3%B3polis.jpg",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modifications": "Redimensionamento e recorte de apresentação"
+      },
+      {
+        "titre": "Vinícola Rio Sol, Lagoa Grande, Pernambuco",
+        "auteur": "Rosanetur",
+        "licence": "CC BY 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Vin%C3%ADcola_Rio_Sol_-_Vale_do_S%C3%A3o_Francisco_-_Lagoa_Grande_-_Pernambuco.jpg",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "modifications": "Redimensionamento e recorte de apresentação"
+      }
+    ],
+    "cover": {
+      "eyebrow": "ESTUDO DE MERCADO",
+      "title": "Brasil",
+      "officiel": "REPÚBLICA FEDERATIVA DO BRASIL",
+      "lieu": "Brasília · 2026",
+      "subtitle": "Eficiência da água em uma potência agrícola.\nFruticultura irrigada e implantação de culturas perenes."
+    },
+    "chiffres": {
+      "kicker": "O MERCADO",
+      "title": "Escala nacional, decisões por propriedade",
+      "items": [
+        {
+          "value": "8,2 M ha",
+          "label": "área equipada para irrigação, base 2019 [1]"
+        },
+        {
+          "value": "5,3 M ha",
+          "label": "irrigação com água de mananciais, base 2019 [1]"
+        },
+        {
+          "value": "US$ 169,2 bi",
+          "label": "exportações do agronegócio em 2025 [2]"
+        }
+      ],
+      "note": "Os anos de referência diferem. O Atlas Irrigação 2021 descreve a base de 2019. O agronegócio inclui cadeias agroindustriais e pecuárias, além das lavouras. Os números dimensionam o mercado, sem representar vendas potenciais da Green Solutions."
+    },
+    "contrainte": {
+      "kicker": "ÁGUA E PRODUÇÃO",
+      "title": "A disponibilidade varia entre bacias e safras",
+      "caption": "Vinhas em Lagoa Grande, Pernambuco. Rosanetur, CC BY 4.0. Fotografia de contexto.",
+      "bullets": [
+        "A seca de 2024 levou a ANA a declarar escassez em importantes bacias. Esse episódio mostra a necessidade de planejar a produção por bacia, com dados locais [3].",
+        "No Vale do São Francisco, a Embrapa destaca a uva e a manga como culturas centrais da fruticultura irrigada [4].",
+        "Nossa proposta prioriza propriedades capazes de comparar o manejo atual com a incorporação de um hidrorretentor na zona radicular.",
+        "O objetivo do ensaio é verificar a água aplicada por quilograma comercializável, mantendo a qualidade exigida pelo comprador."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "BASE HÍDRICA",
+      "title": "Irrigação: duas origens de água",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Milhões de hectares, base 2019",
+          "labels": [
+            "Mananciais",
+            "Reúso / fertirrigação"
+          ],
+          "values": [
+            5.3,
+            2.9
+          ]
+        }
+      ],
+      "reading": {
+        "head": "O que o dado permite concluir",
+        "body": "Fonte: ANA, Atlas Irrigação 2021 [1]. Áreas equipadas, não volumes de água. A segunda categoria inclui o aproveitamento de efluentes na fertirrigação. Cada sistema exige diagnóstico próprio."
+      }
+    },
+    "usages": null,
+    "economie": null,
+    "productions": {
+      "kicker": "COMÉRCIO EXTERIOR",
+      "title": "Exportações do agronegócio",
+      "type": "bar",
+      "series": [
+        {
+          "name": "US$ bilhões, valores nominais",
+          "labels": [
+            "2024",
+            "2025"
+          ],
+          "values": [
+            164.3,
+            169.2
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Uma cadeia com compradores exigentes",
+        "body": "Fonte: MAPA, balanço de 2025 [2], que informa a base comparativa de 2024. O crescimento nominal não mede produtividade nem disponibilidade de água. A escolha comercial proposta recai sobre culturas em que se possa medir o valor por hectare."
+      }
+    },
+    "filieres": [
+      {
+        "kicker": "CADEIA PRIORITÁRIA",
+        "title": "Uva e manga no Vale do São Francisco",
+        "caption": "Lagoa Grande, PE. Rosanetur, CC BY 4.0.",
+        "bullets": [
+          "A caracterização regional da Embrapa identifica um polo especializado em fruticultura irrigada [4].",
+          "Propomos um ensaio em renovação de pomar ou implantação de mudas, com avaliação de sobrevivência e crescimento.",
+          "Em área produtiva, o protocolo deve preservar os parâmetros de qualidade comercial e registrar o volume de irrigação.",
+          "Petrolina e Juazeiro são uma área de prospecção, sem instalação ou contrato local anunciado."
+        ],
+        "photo": 1
+      },
+      {
+        "kicker": "OUTRA APLICAÇÃO A AVALIAR",
+        "title": "Implantação de café e viveiros",
+        "caption": "Cafezal em Altinópolis, São Paulo. Jonathan Wilkins, CC BY-SA 3.0.",
+        "bullets": [
+          "A fase de implantação oferece uma unidade de comparação simples: custo por muda estabelecida.",
+          "Nossa proposta é acompanhar umidade na zona radicular, sobrevivência, crescimento e frequência de irrigação.",
+          "O orçamento inclui produto, mão de obra e reposição de mudas, além de água e energia.",
+          "A fotografia mostra uma paisagem agrícola brasileira. Não documenta um ensaio Green Solutions."
+        ],
+        "photo": 0
+      }
+    ],
+    "solutions": {
+      "kicker": "PROPOSTA GREEN SOLUTIONS",
+      "title": "Retenção de água e manejo da nutrição",
+      "left": {
+        "head": "EVERGREEN® / ECOSORB®",
+        "lines": [
+          "Avaliar hidrorretenção junto às raízes, com dose definida para o solo, a salinidade da água e o volume radicular.",
+          "Comparar com o mesmo manejo sem produto, incluindo diferentes turnos de irrigação quando o protocolo permitir.",
+          "Priorizar implantação de mudas e áreas instrumentadas, onde o efeito possa ser acompanhado."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT®",
+        "lines": [
+          "Avaliar a integração ao programa nutricional a partir de análises de solo e folha.",
+          "Manter o orçamento de nutrientes explícito para separar efeitos de água e fertilização.",
+          "Confirmar a adequação da formulação, a documentação e as condições de uso para cada operação."
+        ]
+      },
+      "note": "Aplicações propostas para validação local. Este dossier não apresenta resultados de ensaios Green Solutions realizados no Brasil nem garante percentuais de economia."
+    },
+    "economies": null,
+    "regions": null,
+    "deploiement": {
+      "kicker": "COOPERAÇÃO",
+      "title": "Um piloto com decisão econômica ao final",
+      "items": [
+        {
+          "head": "Diagnóstico",
+          "body": "Selecionar cultura e talhão. Analisar solo e água, histórico de irrigação e custos de bombeamento."
+        },
+        {
+          "head": "Comparação",
+          "body": "Definir parcelas testemunhas e tratadas, repetições e critérios de sucesso com o responsável agronômico."
+        },
+        {
+          "head": "Medição",
+          "body": "Registrar m³/ha, kg comercializáveis/ha, qualidade e custo total durante um ciclo completo."
+        },
+        {
+          "head": "Decisão",
+          "body": "Calcular custo por kg e margem incremental. Ampliar apenas onde o resultado justificar o investimento."
+        }
+      ],
+      "note": "Cooperativas, produtores e equipes de pesquisa são interlocutores potenciais. Nenhuma parceria institucional é anunciada neste documento."
+    },
+    "risques": {
+      "kicker": "CONDIÇÕES DE SUCESSO",
+      "title": "O que validar antes de ampliar",
+      "left": {
+        "head": "Pontos de atenção",
+        "lines": [
+          "Salinidade e textura podem alterar o comportamento do hidrorretentor.",
+          "Uma safra favorável pode ocultar diferenças entre tratamentos.",
+          "O custo de aplicação e a logística precisam entrar na conta."
+        ]
+      },
+      "right": {
+        "head": "Respostas propostas",
+        "lines": [
+          "Caracterizar solo e água antes da instalação.",
+          "Manter testemunhas, repetições e registros meteorológicos.",
+          "Comparar a margem líquida com o manejo existente, por cultura."
+        ]
+      },
+      "note": "A verificação documental e regulatória local antecede qualquer fornecimento. As fontes públicas descrevem o mercado e não constituem endosso aos produtos."
+    },
+    "sources": [
+      "[1] ANA. Atlas Irrigação, 2021, base 2019. Área equipada e origem da água. https://www.gov.br/ana/pt-br/assuntos/noticias-e-eventos/noticias/atlas-irrigacao-atualiza-area-irrigada-total-no-brasil-em-8-2-milhoes-de-hectares",
+      "[2] MAPA. Balanço das exportações do agronegócio, 2025. US$ 169,2 bilhões, base 2024 de US$ 164,3 bilhões. https://www.gov.br/agricultura/pt-br/assuntos/noticias/agronegocio-brasileiro-fecha-2025-com-recorde-em-exportacoes-de-us-169-bilhoes-e-superavit-de-us-149-07-bilhoes",
+      "[3] MIDR. Seca histórica, 2024. Contexto de escassez hídrica. https://www.gov.br/mdr/pt-br/noticias/seca-historica-reconhecimento-de-emergencia-facilita-liberacao-de-recursos",
+      "[4] Embrapa. Estado atual da cultura da videira no Vale do São Francisco, 2018. https://www.infoteca.cnptia.embrapa.br/handle/doc/1092832",
+      "Consulta: 28/09/2026. As prioridades comerciais e o protocolo são propostas da Green Solutions."
+    ],
+    "closing": {
+      "title": "Um projeto adequado à sua propriedade",
+      "body": "Informe a cultura, o tipo de solo, o sistema de irrigação e o objetivo do projeto. A Green Solutions propõe um protocolo comparativo e os indicadores que orientarão a decisão.\n\nUma oportunidade concreta: avaliar a retenção de água onde cada metro cúbico e cada muda têm valor.",
       "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
@@ -6801,6 +7017,228 @@ export const DOSSIERS: Record<string, Dossier> = {
       "title": "Tell us about your farm",
       "body": "Crop, irrigation method, soil type, the volume of water you use today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable situations.\n\nA first conversation commits you to nothing.",
       "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
+    }
+  },
+  "perou": {
+    "slug": "perou",
+    "locale": "es-PE",
+    "langue": "es",
+    "pdf": "/documents/countries/perou.pdf",
+    "photos": 2,
+    "credits": [
+      {
+        "titre": "Oasis de Huacachina, Ica, Perú",
+        "auteur": "Diego Delso, delso.photo",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Oasis_de_Huacachina,_Ica,_Per%C3%BA,_2015-07-29,_DD_18.JPG",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modifications": "Redimensionado y recortado para la presentación"
+      },
+      {
+        "titre": "Terrace farming in the Ande mountains Pisac Peru",
+        "auteur": "James Santangelo",
+        "licence": "CC0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Terrace_farming_in_the_Ande_mountains_Pisac_Peru.jpg",
+        "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "modifications": "Redimensionado y recortado para la presentación"
+      }
+    ],
+    "cover": {
+      "eyebrow": "ESTUDIO DE MERCADO",
+      "title": "Perú",
+      "officiel": "REPÚBLICA DEL PERÚ",
+      "lieu": "Lima · 2026",
+      "subtitle": "Agroexportación y seguridad hídrica.\nUna propuesta para evaluar la eficiencia del agua en cada predio."
+    },
+    "chiffres": {
+      "kicker": "EL MERCADO",
+      "title": "Exportaciones agrícolas y exposición climática",
+      "items": [
+        {
+          "value": "US$ 15 013 M",
+          "label": "agroexportaciones al cierre de 2025 [1]"
+        },
+        {
+          "value": "+17,3 %",
+          "label": "crecimiento nominal frente a 2024, según MIDAGRI [1]"
+        },
+        {
+          "value": "46 %",
+          "label": "del territorio con vulnerabilidad alta o muy alta a El Niño y al cambio climático [2]"
+        }
+      ],
+      "note": "La cifra comercial corresponde a 2025. El indicador territorial procede del informe del Banco Mundial de 2023 y no representa el porcentaje de cultivos afectados en una campaña concreta."
+    },
+    "contrainte": {
+      "kicker": "LA RESTRICCIÓN",
+      "title": "Costa árida, riego y variabilidad del agua",
+      "caption": "Terrazas históricas de Písac. James Santangelo, CC0. Fotografía de contexto.",
+      "bullets": [
+        "El Banco Mundial identifica la seguridad hídrica como un factor decisivo para la economía y la agricultura peruanas [2].",
+        "La costa concentra agricultura irrigada en un entorno árido. El diagnóstico debe considerar la cuenca y el acceso real al agua de cada predio.",
+        "El inventario INAIGEM de 2023 registra una pérdida del 56 % de la superficie glaciar en unas seis décadas [3].",
+        "El retroceso glaciar no se traduce directamente en el mismo porcentaje de reducción de agua de riego. Se requieren datos de la cuenca."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "CAMBIO EN LA CRIÓSFERA",
+      "title": "Pérdida de superficie glaciar",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Índice de superficie, base histórica = 100",
+          "labels": [
+            "Base histórica",
+            "Inventario 2023"
+          ],
+          "values": [
+            100,
+            44
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Alcance del indicador",
+        "body": "El valor 44 se calcula como 100 − 56, a partir de la pérdida comunicada por INAIGEM [3] para unas seis décadas. Es una comparación de superficie glaciar, no una serie anual ni una medida de caudal o ahorro agrícola."
+      }
+    },
+    "usages": null,
+    "economie": null,
+    "productions": {
+      "kicker": "PRODUCTOS DE EXPORTACIÓN",
+      "title": "Cuatro productos de alto valor",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Exportaciones 2024, US$ millones",
+          "labels": [
+            "Arándanos",
+            "Uvas",
+            "Paltas",
+            "Cacao en grano"
+          ],
+          "values": [
+            2270,
+            1705,
+            1248,
+            740
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Una selección, no el total nacional",
+        "body": "Fuente: MIDAGRI, cierre de 2024 [4]. Valores redondeados de cuatro productos. Sirven para identificar posibles interlocutores comerciales. No representan ventas ni rendimientos de Green Solutions."
+      }
+    },
+    "filieres": [
+      {
+        "kicker": "PRIMERA CADENA",
+        "title": "Uva en Ica, Piura y Lambayeque",
+        "caption": "Huacachina, Ica. Diego Delso, delso.photo, CC BY-SA 4.0. Paisaje árido, no parcela de ensayo.",
+        "bullets": [
+          "SENASA identifica Ica, Piura y Lambayeque como las principales regiones productoras de uva [5].",
+          "Proponemos seleccionar un predio con medición de caudal y registros de calidad comercial.",
+          "La evaluación debe observar calibre, rendimiento comercial y agua aplicada, además del costo de incorporación.",
+          "La localización se plantea para prospección. No se anuncia una alianza ni un ensayo ya instalado."
+        ],
+        "photo": 0
+      },
+      {
+        "kicker": "SEGUNDA CADENA",
+        "title": "Arándanos y nuevas plantaciones",
+        "caption": "Písac, Cusco. Fotografía del patrimonio agrícola, sin relación con ensayos del producto.",
+        "bullets": [
+          "MIDAGRI menciona La Libertad, Lambayeque e Ica entre las regiones vinculadas al crecimiento del arándano en 2024 [6].",
+          "Los arándanos lideran la selección de productos exportados presentada en este dossier [4].",
+          "En plantaciones nuevas, proponemos medir establecimiento de plantas y uniformidad de humedad.",
+          "Los sistemas en suelo y en sustrato requieren protocolos separados. La compatibilidad debe comprobarse antes de extender el tratamiento."
+        ],
+        "photo": 1
+      }
+    ],
+    "solutions": {
+      "kicker": "PROPUESTA GREEN SOLUTIONS",
+      "title": "Un complemento al manejo del predio",
+      "left": {
+        "head": "EVERGREEN® / ECOSORB®",
+        "lines": [
+          "Evaluar la retención de agua en la zona de raíces, con dosis ajustadas al sustrato y al volumen radicular.",
+          "Comparar tratamientos con el programa de riego existente, manteniendo una parcela testigo.",
+          "Priorizar plantaciones nuevas y viveros donde la aplicación pueda documentarse."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT®",
+        "lines": [
+          "Evaluar su incorporación al programa nutricional según análisis de suelo, agua y tejido vegetal.",
+          "Separar los tratamientos para identificar el aporte de cada producto.",
+          "Confirmar compatibilidad con el sistema de aplicación y documentación para el uso previsto."
+        ]
+      },
+      "note": "Aplicaciones propuestas para ensayos locales. Este dossier no presenta resultados Green Solutions obtenidos en Perú ni promete una reducción fija del riego."
+    },
+    "economies": null,
+    "regions": null,
+    "deploiement": {
+      "kicker": "MÉTODO DE TRABAJO",
+      "title": "Un ensayo que permita decidir",
+      "items": [
+        {
+          "head": "Selección",
+          "body": "Elegir predio y cultivo. Caracterizar suelo, salinidad, sistema de riego y costo del agua."
+        },
+        {
+          "head": "Diseño",
+          "body": "Acordar testigos, repeticiones y criterios de éxito con el responsable agronómico."
+        },
+        {
+          "head": "Seguimiento",
+          "body": "Medir m³/ha, rendimiento comercial, calibre, calidad y costo durante una campaña completa."
+        },
+        {
+          "head": "Evaluación",
+          "body": "Comparar costo por kilogramo comercializable y margen. Ampliar según resultados comprobados."
+        }
+      ],
+      "note": "El protocolo debe respetar la disponibilidad de agua del predio. Una mayor eficiencia por hectárea no implica automáticamente un ahorro de agua a escala de cuenca."
+    },
+    "risques": {
+      "kicker": "CONDICIONES DE ÉXITO",
+      "title": "Aspectos que deben resolverse en campo",
+      "left": {
+        "head": "Riesgos a evaluar",
+        "lines": [
+          "Salinidad y variabilidad de suelos o sustratos.",
+          "Cambios de clima y disponibilidad de agua entre campañas.",
+          "Costos de aplicación y exigencias del comprador."
+        ]
+      },
+      "right": {
+        "head": "Respuesta propuesta",
+        "lines": [
+          "Análisis previo y prueba de compatibilidad.",
+          "Registro climático, testigos y seguimiento de una campaña completa.",
+          "Presupuesto integral y control de calidad de la cosecha."
+        ]
+      },
+      "note": "La revisión documental y de los requisitos locales precede a cualquier suministro. Las instituciones citadas aportan datos de contexto y no avalan los productos."
+    },
+    "sources": [
+      "[1] MIDAGRI. Cierre de agroexportaciones 2025, publicado en febrero de 2026. https://www.gob.pe/institucion/midagri/noticias/1350416-midagri-peru-supero-ventas-por-agroexportaciones-en-mas-de-usd-15-mil-millones-al-cierre-del-2025",
+      "[2] Banco Mundial. Peru: Strategic Actions Toward Water Security, 2023. https://www.worldbank.org/en/topic/water/publication/peru-strategic-actions-toward-water-security",
+      "[3] INAIGEM. Inventario Nacional de Glaciares y Lagunas de Origen Glaciar, 2023. https://repositorio.inaigem.gob.pe/items/7029db53-5118-4e93-8b2a-71e6e26db5f6",
+      "[4] MIDAGRI. Cierre de agroexportaciones 2024, publicado en febrero de 2025. Valores por producto. https://www.gob.pe/institucion/midagri/noticias/1107223-record-historico-gobierno-agroexportaciones-cierran-el-2024-con-un-record-de-us-12-700-mil-millones-en-ventas",
+      "[5] SENASA. Ica, Piura y Lambayeque: principales regiones productoras de uva, 2024. https://www.gob.pe/institucion/senasa/noticias/962524-ica-piura-y-lambayeque-son-las-principales-regiones-productoras-de-uva",
+      "[6] MIDAGRI. Crecimiento del sector agropecuario en 2024. https://www.gob.pe/institucion/midagri/noticias/1103728-midagri-sector-agropecuario-crecio-4-9-el-2024-impulsado-por-el-subsector-agricola-y-pecuario",
+      "Consulta: 28/09/2026. Las prioridades comerciales y el protocolo son propuestas de Green Solutions."
+    ],
+    "closing": {
+      "title": "Hablemos de su predio",
+      "body": "Cultivo, superficie, origen del agua, tipo de suelo y objetivo económico. Con esos datos podemos preparar una propuesta de ensayo y un presupuesto verificable.\n\nEl punto de partida es concreto: medir el agua utilizada por kilogramo comercializable y la rentabilidad del manejo.",
+      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "senegal": {

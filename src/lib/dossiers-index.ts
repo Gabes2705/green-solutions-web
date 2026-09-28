@@ -15,6 +15,7 @@ export const DOSSIER_LANGS: Record<string, string> = {
   "arabie-saoudite": "ar",
   "argentine": "es",
   "benin": "fr",
+  "bresil": "pt",
   "cameroun": "fr",
   "chili": "es",
   "cote-divoire": "fr",
@@ -30,6 +31,7 @@ export const DOSSIER_LANGS: Record<string, string> = {
   "maroc": "fr",
   "martinique": "fr",
   "oman": "en",
+  "perou": "es",
   "senegal": "fr",
   "soudan-sud": "en",
   "usa": "en"

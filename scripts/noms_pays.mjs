@@ -42,6 +42,8 @@ const ISO = {
   espagne: "ES",
   grece: "GR",
   chili: "CL",
+  bresil: "BR",
+  perou: "PE",
   argentine: "AR",
   croatie: "HR",
   madagascar: "MG",
