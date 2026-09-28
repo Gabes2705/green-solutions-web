@@ -44,6 +44,7 @@ function photosInstallees(slug) {
         auteur: c.auteur ?? null,
         licence: c.licence ?? null,
         source: c.source ?? "commons",
+        ...(c.url ? { url: c.url, licenceUrl: c.licenceUrl, modifications: c.modifications } : {}),
       }))
     : null;
   return { nombre, credits };
@@ -171,7 +172,7 @@ for (const slug of slugs) {
     regions: cartes(spec.regions),
     deploiement: etapes(spec.deploiement),
     risques: colonnes(spec.risques),
-    sources: [...(plus.sources ?? []), ...sourcesStress(spec.locale)],
+    sources: [...(plus.sources ?? []), ...(spec.stress ? [] : sourcesStress(spec.locale))],
     closing: {
       title: spec.closing.title,
       body: spec.closing.body,
@@ -251,7 +252,7 @@ export type Dossier = {
   pdf: string | null;
   /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
   photos: number;
-  credits: { titre: string | null; auteur: string | null; licence: string | null; source: string }[] | null;
+  credits: { titre: string | null; auteur: string | null; licence: string | null; source: string; url?: string; licenceUrl?: string; modifications?: string }[] | null;
   cover: {
     eyebrow: string;
     title: string;

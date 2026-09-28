@@ -362,6 +362,8 @@ const ALIASES: Record<string, string> = {
  * portant 42 de détails qu'une vignette de 52px ne montrera jamais.
  */
 const OFFICIELS = new Set([
+  "bresil",
+  "perou",
   "afrique-du-sud",
   "arabie-saoudite",
   "congo",
