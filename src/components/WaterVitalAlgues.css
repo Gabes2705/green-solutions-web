@@ -1,0 +1,299 @@
+/* Section « Cas d'application : algues vertes dans les lacs d'un golf », sur la
+   page Water Vital®. Elle réutilise le style des pages « technologie »
+   (.tech-section, .tech-figure) ; ici seulement ce qui leur manque. */
+
+/* Le lien du haut de page qui descend jusqu'ici. */
+.wv-saut {
+  margin-bottom: 1.8em;
+}
+
+.wv-algues {
+  margin-top: 4.5em;
+  padding-top: 3em;
+  border-top: 1px solid var(--hairline);
+}
+
+.wv-algues h3 {
+  margin: 1.8em 0 0.5em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.wv-algues .tech-section > h3:first-child,
+.wv-algues .tech-section-texte > h3:first-child {
+  margin-top: 0;
+}
+
+.wv-entete h2 {
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  line-height: 1.15;
+}
+.wv-algues .tech-section .wv-lede {
+  max-width: 62ch;
+  font-size: 1.15rem;
+}
+
+/* Deux colonnes sur grand écran : le golf et le problème, puis les remèdes. */
+.wv-colonnes {
+  display: grid;
+  gap: 0 3rem;
+}
+@media (min-width: 1000px) {
+  .wv-colonnes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.wv-liste {
+  list-style: none;
+  margin: 0 0 1.2em;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+.wv-liste li {
+  position: relative;
+  padding-inline-start: 1.5em;
+  font-size: 1.04rem;
+  line-height: 1.65;
+  color: var(--muted);
+  text-align: start;
+  hyphens: auto;
+}
+.wv-liste li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--leaf-light);
+}
+
+/* Les quatre temps de l'application : photo, puce du jour, légende. */
+.wv-etapes {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.8rem 1.4rem;
+  margin-top: 1em;
+}
+@media (min-width: 520px) {
+  .wv-etapes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 880px) {
+  .wv-etapes {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.wv-etape {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+.wv-etape-photo {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--bg-mid);
+  box-shadow: 0 14px 30px -10px rgba(30, 70, 40, 0.24);
+}
+.wv-etape-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wv-badge {
+  position: absolute;
+  top: 0.7em;
+  inset-inline-start: 0.7em;
+  padding: 0.3em 0.85em;
+  border-radius: 999px;
+  background: #157983;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+}
+.wv-etape figcaption {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+  text-align: start;
+  hyphens: auto;
+}
+
+/* Notes de bas de section : plus petites, jamais justifiées. */
+.wv-notes {
+  margin: 0 0 3.2em;
+  max-width: 78ch;
+}
+.wv-algues .wv-notes p {
+  margin: 0 0 0.5em;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--muted);
+  text-align: start;
+}
+.wv-algues .wv-notes p:last-child {
+  margin-top: 0.9em;
+  font-style: italic;
+}
+
+/* L'évaluation : une carte à part, au fin contour turquoise, comme le bouton de la page. */
+.wv-evaluation {
+  padding: 2em 1.5em;
+  border: 1px solid rgba(29, 138, 150, 0.35);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff 0%, #eef6f6 100%);
+}
+@media (min-width: 720px) {
+  .wv-evaluation {
+    padding: 2.4em 2.6em;
+  }
+}
+.wv-algues .tech-section .wv-sous-titre {
+  margin-bottom: 0.9em;
+  font-style: italic;
+}
+.wv-evaluation > p:not(.wv-sous-titre) {
+  max-width: 78ch;
+}
+.wv-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0 3rem;
+}
+.wv-points p {
+  margin-bottom: 0.4em;
+}
+.wv-sources {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55em;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.wv-sources li {
+  display: flex;
+  gap: 0.7em;
+  color: var(--muted);
+}
+.wv-sources a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.wv-sources a:hover {
+  color: var(--navy);
+}
+
+/* Le plan : texte à mesure de lecture, tableau pleine largeur. */
+.wv-plan > p,
+.wv-plan > div > p {
+  max-width: 78ch;
+}
+.wv-table-wrap {
+  overflow-x: auto;
+  margin: 1.8em 0 1.8em;
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  background: #fff;
+}
+.wv-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+.wv-table th,
+.wv-table td {
+  padding: 0.85em 1em;
+  text-align: start;
+  vertical-align: top;
+  border-bottom: 1px solid var(--hairline);
+}
+.wv-table thead th {
+  background: #157983;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-bottom: 0;
+}
+.wv-table tbody th {
+  width: 24%;
+  font-weight: 700;
+  color: var(--ink);
+}
+.wv-table tbody td {
+  color: var(--muted);
+}
+.wv-table tbody tr:nth-child(even) {
+  background: #f3f8ed;
+}
+.wv-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+/* Sur téléphone, chaque ligne devient une petite carte : l'intitulé de la
+   colonne passe au-dessus de sa valeur, plus rien à faire défiler de côté. */
+@media (max-width: 640px) {
+  .wv-table {
+    min-width: 0;
+  }
+  .wv-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .wv-table,
+  .wv-table tbody,
+  .wv-table tr,
+  .wv-table th,
+  .wv-table td {
+    display: block;
+    width: auto;
+  }
+  .wv-table tbody tr {
+    padding: 0.95em 1em;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .wv-table tbody tr:last-child {
+    border-bottom: 0;
+  }
+  .wv-table tbody th {
+    width: auto;
+    padding: 0 0 0.3em;
+    border: 0;
+    font-size: 1rem;
+  }
+  .wv-table tbody td {
+    padding: 0.4em 0 0;
+    border: 0;
+  }
+  .wv-table tbody td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #157983;
+  }
+}
