@@ -528,6 +528,7 @@ const baseContent = {
       lede: "Producteurs, instituts de recherche, distributeurs et organisations qui construisent ce réseau avec nous.",
       hint: "Cliquez sur les logos pour voir le site internet.",
       backToPartners: "← Retour aux partenaires",
+      mvCaption: "Martinique & Guadeloupe. Distributeur agréé Green\u00A0Solutions",
     },
     team: {
       eyebrow: "L'entreprise",
@@ -1149,6 +1150,7 @@ const baseContent = {
       lede: "Producers, research institutes, distributors and organisations building this network with us.",
       hint: "Click a logo to see its website.",
       backToPartners: "← Back to partners",
+      mvCaption: "Martinique & Guadeloupe. Authorised Green\u00A0Solutions distributor",
     },
     team: {
       eyebrow: "The company",
@@ -1770,6 +1772,7 @@ const baseContent = {
       lede: "Productores, institutos de investigación, distribuidores y organizaciones que construyen esta red con nosotros.",
       hint: "Haz clic en un logo para ver su sitio web.",
       backToPartners: "← Volver a los socios",
+      mvCaption: "Martinica & Guadalupe. Distribuidor autorizado de Green\u00A0Solutions",
     },
     team: {
       eyebrow: "La empresa",
@@ -2391,6 +2394,7 @@ const baseContent = {
       lede: "Produtores, institutos de investigação, distribuidores e organizações que constroem esta rede connosco.",
       hint: "Clique num logótipo para ver o site.",
       backToPartners: "← Voltar aos parceiros",
+      mvCaption: "Martinica & Guadalupe. Distribuidor autorizado da Green\u00A0Solutions",
     },
     team: {
       eyebrow: "A empresa",
@@ -3012,6 +3016,7 @@ const baseContent = {
       lede: "منتجون، معاهد بحثية، موزعون ومنظمات تبني هذه الشبكة معنا.",
       hint: "انقر على أحد الشعارات لمشاهدة موقعه الإلكتروني.",
       backToPartners: "← العودة إلى الشركاء",
+      mvCaption: "جزر المارتينيك وغوادلوب. موزع معتمد لشركة Green\u00A0Solutions",
     },
     team: {
       eyebrow: "الشركة",
@@ -3633,6 +3638,7 @@ const baseContent = {
       lede: "与我们共同构建这一网络的生产者、研究机构、经销商和组织。",
       hint: "点击标志即可查看其官网。",
       backToPartners: "← 返回合作伙伴",
+      mvCaption: "马提尼克和瓜德罗普。Green\u00A0Solutions 授权经销商",
     },
     team: {
       eyebrow: "企业",
@@ -4254,6 +4260,7 @@ const baseContent = {
       lede: "Produsen, lembaga penelitian, distributor, dan organisasi yang membangun jaringan ini bersama kami.",
       hint: "Klik logo untuk melihat situs webnya.",
       backToPartners: "← Kembali ke mitra",
+      mvCaption: "Martinik & Guadeloupe. Distributor resmi Green\u00A0Solutions",
     },
     team: {
       eyebrow: "Perusahaan",
@@ -4875,6 +4882,7 @@ const baseContent = {
       lede: "Erzeuger, Forschungsinstitute, Vertriebspartner und Organisationen, die dieses Netzwerk gemeinsam mit uns aufbauen.",
       hint: "Klicken Sie auf ein Logo, um die Website zu sehen.",
       backToPartners: "← Zurück zu den Partnern",
+      mvCaption: "Martinique & Guadeloupe. Autorisierter Vertriebspartner von Green\u00A0Solutions",
     },
     team: {
       eyebrow: "Das Unternehmen",
@@ -5496,6 +5504,7 @@ const baseContent = {
       lede: "Produttori, istituti di ricerca, distributori e organizzazioni che costruiscono questa rete con noi.",
       hint: "Clicca sui loghi per vedere il sito web.",
       backToPartners: "← Torna ai partner",
+      mvCaption: "Martinica & Guadalupa. Distributore autorizzato Green\u00A0Solutions",
     },
     team: {
       eyebrow: "L'azienda",
@@ -6117,6 +6126,7 @@ const baseContent = {
       lede: "Παραγωγοί, ερευνητικά ιδρύματα, διανομείς και οργανισμοί που χτίζουν αυτό το δίκτυο μαζί μας.",
       hint: "Κάντε κλικ στα λογότυπα για να δείτε τον ιστότοπο.",
       backToPartners: "← Επιστροφή στους συνεργάτες",
+      mvCaption: "Μαρτινίκα & Γουαδελούπη. Εξουσιοδοτημένος διανομέας της Green\u00A0Solutions",
     },
     team: {
       eyebrow: "Η εταιρεία",
@@ -6738,6 +6748,7 @@ const baseContent = {
       lede: "Bizimle bu ağı inşa eden üreticiler, araştırma enstitüleri, distribütörler ve kuruluşlar.",
       hint: "Web sitesini görmek için logolara tıklayın.",
       backToPartners: "← Ortaklara dön",
+      mvCaption: "Martinik & Guadeloupe. Green\u00A0Solutions yetkili distribütörü",
     },
     team: {
       eyebrow: "Şirket",
@@ -7359,6 +7370,7 @@ const baseContent = {
       lede: "Producenci, instytuty badawcze, dystrybutorzy i organizacje, które budują tę sieć razem z nami.",
       hint: "Kliknij loga, aby zobaczyć stronę internetową.",
       backToPartners: "← Powrót do partnerów",
+      mvCaption: "Martynika & Gwadelupa. Autoryzowany dystrybutor Green\u00A0Solutions",
     },
     team: {
       eyebrow: "Firma",
@@ -7980,6 +7992,7 @@ const baseContent = {
       lede: "Proizvođači, istraživački instituti, distributeri i organizacije koje s nama grade ovu mrežu.",
       hint: "Kliknite na logotipe za pregled internetskih stranica.",
       backToPartners: "← Povratak na partnere",
+      mvCaption: "Martinik & Guadalupe. Ovlašteni distributer Green\u00A0Solutions",
     },
     team: {
       eyebrow: "Tvrtka",

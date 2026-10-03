@@ -678,6 +678,7 @@ export const ca = {
     lede: "Productors, instituts de recerca, distribuïdors i organitzacions que construeixen aquesta xarxa amb nosaltres.",
     hint: "Feu clic als logotips per veure'n el lloc web.",
     backToPartners: "← Tornar als socis",
+    mvCaption: "Martinica & Guadalupe. Distribuïdor autoritzat de Green\u00A0Solutions",
   },
   team: {
     eyebrow: "L'empresa",
