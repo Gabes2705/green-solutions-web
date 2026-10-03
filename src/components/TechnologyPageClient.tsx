@@ -4,6 +4,8 @@ import { useParams } from "next/navigation";
 import { useLanguage } from "@/lib/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Reveal from "@/components/Reveal";
+import WaterVitalAlgues from "@/components/WaterVitalAlgues";
+import { algues } from "@/lib/water-vital-algues-i18n";
 
 const TECH_IMAGES: Record<string, { hero: string; gallery: string[] }> = {
   "retention-eau": {
@@ -167,6 +169,12 @@ export default function TechnologyPageClient() {
           </ul>
         </Reveal>
 
+        {id === "eau-restructuree" && (
+          <a href="#algues-golf" className="field-tests-cta wv-saut">
+            {algues(language).title} ↓
+          </a>
+        )}
+
         {language === "fr" && id && GUIDE_FR[id] && (
           <a href={GUIDE_FR[id].href} className="field-tests-cta">
             {GUIDE_FR[id].label}
@@ -230,6 +238,8 @@ export default function TechnologyPageClient() {
             </Reveal>
           );
         })}
+
+        {id === "eau-restructuree" && <WaterVitalAlgues langue={language} />}
 
         <Reveal>
           <div className="tech-cta">
