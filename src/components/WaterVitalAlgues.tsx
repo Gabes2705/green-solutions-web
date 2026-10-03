@@ -8,11 +8,15 @@ import "./WaterVitalAlgues.css";
  * Water Vital®. Le rapport d'application Green Solutions, repris avec son
  * évaluation technique : voir lib/water-vital-algues-i18n.ts pour les mots.
  *
- * Les cinq photos de terrain sont celles de ce rapport (parcours de Gapyeong
- * Benest, Corée du Sud). Elles sont petites : elles viennent d'une capture
- * d'écran du rapport d'origine, découpées à leur taille réelle. Celles du
- * jour 8 et du lac ont été lissées et éclaircies un peu, sans rien changer à
- * ce qu'elles montrent. Aucune image n'est créée par ordinateur.
+ * Les quatre photos de terrain (installation, jours 2, 6 et 8) sont celles de
+ * ce rapport (parcours de Gapyeong Benest, Corée du Sud). Elles sont petites :
+ * elles viennent d'une capture d'écran du rapport d'origine, découpées à leur
+ * taille réelle ; celle du jour 8 a seulement été lissée et éclaircie un peu.
+ *
+ * La vue d'ensemble du lac n'est PAS la photo : c'est une image retravaillée
+ * par ordinateur à partir d'elle (agrandie, couleurs renforcées : l'eau y est
+ * bleue, elle est verte sur la photo). Sa légende le dit, dans les 14 langues :
+ * ne jamais la retirer, ni présenter cette image comme le cliché réel.
  *
  * La photo du green, en tête de section, n'est pas celle du Gapyeong Benest :
  * c'est une illustration libre de droits (Wikimedia Commons, crédit affiché).
@@ -24,7 +28,7 @@ const PHOTOS_ETAPES = [
   { src: "/images/tech/algues-golf-jour6.jpg", w: 508, h: 280 },
   { src: "/images/tech/algues-golf-jour8.jpg", w: 624, h: 387 },
 ];
-const PHOTO_LAC = { src: "/images/tech/algues-golf-lac.jpg", w: 1311, h: 654 };
+const PHOTO_LAC = { src: "/images/tech/algues-golf-lac.jpg", w: 1200, h: 597 };
 
 const PHOTO_GREEN = { src: "/images/tech/algues-golf-green.jpg", w: 1200, h: 798 };
 /** Crédit de la photo du green : CC BY-SA 4.0 exige l'auteur, la licence et un lien vers la source. */
