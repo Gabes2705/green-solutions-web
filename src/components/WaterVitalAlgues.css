@@ -149,13 +149,12 @@
   font-style: italic;
 }
 
-/* L'évaluation : une carte à part, bordée de turquoise, comme le bouton de la page. */
+/* L'évaluation : une carte à part, au fin contour turquoise, comme le bouton de la page. */
 .wv-evaluation {
   padding: 2em 1.5em;
-  border: 1px solid var(--hairline);
-  border-inline-start: 4px solid var(--teal);
+  border: 1px solid rgba(29, 138, 150, 0.35);
   border-radius: 16px;
-  background: linear-gradient(180deg, #fff 0%, #f3f8ed 100%);
+  background: linear-gradient(180deg, #fff 0%, #eef6f6 100%);
 }
 @media (min-width: 720px) {
   .wv-evaluation {
