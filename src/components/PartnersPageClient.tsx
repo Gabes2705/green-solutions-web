@@ -5,7 +5,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Reveal from "@/components/Reveal";
 
-type Partner = { slug: string; name: string; url?: string };
+type Partner = { slug: string; name: string; url?: string; captionKey?: "mvCaption" };
 
 const PARTNERS: Partner[] = [
   { slug: "ecole-maraichage-urbain", name: "École de Maraîchage Urbain", url: "https://moreau-daverne.fr/" },
@@ -40,6 +40,7 @@ const PARTNERS: Partner[] = [
   { slug: "green-dream", name: "Green Dream", url: "https://www.greendream.bio/" },
   { slug: "sabeco", name: "SABECO" },
   { slug: "marcellus-developpement", name: "Marcellus Développement", url: "https://www.marcellusdeveloppement.com/" },
+  { slug: "mangouss-ve-a-ka-bay-chabon", name: "Mangouss Vê-a Ka Bay Chabon (MV)", captionKey: "mvCaption" },
   { slug: "globe-sdg-emblem", name: "Objectifs de développement durable", url: "https://sdgs.un.org" },
 ];
 
@@ -76,7 +77,7 @@ export default function PartnersPageClient() {
                     height={175}
                   />
                 </div>
-                <p className="partner-name">{partner.name}</p>
+                <p className="partner-name">{partner.captionKey ? p[partner.captionKey] : partner.name}</p>
               </>
             );
             return partner.url ? (

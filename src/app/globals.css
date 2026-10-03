@@ -3380,7 +3380,7 @@ body li {
   height: 100%;
   object-fit: contain;
 }
-.partner-name {
+.tech-body .partner-name {
   margin: 0;
   font-size: 0.82rem;
   text-align: center;
