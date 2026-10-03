@@ -314,6 +314,24 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect x="12" y="10" width="18" height="10" fill="#E8112D" />
     </>
   ),
+  "coree-du-sud": () => (
+    <>
+      <rect width="30" height="20" fill="#fff" />
+      <g transform="translate(15 10) scale(0.416667)">
+        <g transform="rotate(-56.3099)">
+          <path d="M-6-25H6M-6-22H6M-6-19H6M-6 19H6M-6 22H6M-6 25H6" stroke="#000" strokeWidth="2" />
+          <path d="M0 17v10" stroke="#fff" strokeWidth="1.6" />
+          <path d="M0-12A12 12 0 0 1 0 12z" fill="#CD2E3A" />
+          <path d="M0-12A12 12 0 0 0 0 12A6 6 0 0 0 0 0z" fill="#0047A0" />
+          <circle cy="-6" r="6" fill="#CD2E3A" />
+        </g>
+        <g transform="rotate(-123.6901)">
+          <path d="M-6-25H6M-6-22H6M-6-19H6M-6 19H6M-6 22H6M-6 25H6" stroke="#000" strokeWidth="2" />
+          <path d="M0-23.5v3M0 17v3.5M0 23.5v3" stroke="#fff" strokeWidth="1.6" />
+        </g>
+      </g>
+    </>
+  ),
   portugal: () => (
     <>
       <rect width="30" height="20" fill="#DA291C" />

@@ -22,6 +22,8 @@ export type TextesAlgues = {
   eyebrow: string;
   title: string;
   lede: string;
+  greenAlt: string;
+  greenCaption: string;
   clubTitle: string;
   clubText: string;
   problemTitle: string;
@@ -63,6 +65,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Cas d'application · Corée du Sud",
     title: "Algues vertes dans les lacs d'un parcours de golf",
     lede: "Rapport d'application Green Solutions : un parcours de golf sud-coréen, des lacs envahis par les algues et une observation jour après jour.",
+    greenAlt: "Un green de golf avec son drapeau jaune, au bord d'un étang",
+    greenCaption: "Illustration : un green de golf.",
     clubTitle: "Le golf",
     clubText:
       "Ouvert en 2000, le Gapyeong Benest Golf Club, classé numéro un, se trouve en Corée du Sud. C'est un prestigieux parcours Jack Nicklaus Signature. La beauté de ses greens vallonnés est entretenue grâce à l'irrigation par plusieurs lacs et étangs.",
@@ -117,7 +121,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Comme on le voit, les résultats parlent d'eux-mêmes. Un lac autrefois fortement pollué par des proliférations d'algues a retrouvé son état d'origine en très peu de temps. L'un des « Water Restorers » Water Vital® reste dans le lac pour assurer un traitement continu de l'eau.",
     lakeAlt: "Vue d'ensemble du lac après l'application",
-    lakeCaption: "Le lac au terme de l'application.",
+    lakeCaption: "Le lac au terme de l'application (image retravaillée par ordinateur à partir de la photo d'origine).",
     turfTitle: "Observation complémentaire sur le gazon irrigué",
     turfText:
       "Une observation de terrain complémentaire indique que le gazon irrigué avec de l'eau traitée par Water Vital paraissait plus sain et prenait une couleur vert plus profond. Cette amélioration pourrait être liée à une plus grande disponibilité des minéraux du sol pour les plantes et à une meilleure absorption par les racines. Des analyses du sol et des plantes sont recommandées pour vérifier le lien proposé avec la disponibilité et l'absorption des minéraux.",
@@ -189,6 +193,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Application case · South Korea",
     title: "Green algae in the lakes of a golf course",
     lede: "A Green Solutions application report: a South Korean golf course, lakes overrun by algae, and a day-by-day observation.",
+    greenAlt: "A golf green with its yellow flag, beside a pond",
+    greenCaption: "Illustration: a golf green.",
     clubTitle: "The golf club",
     clubText:
       "Opened for play in 2000, the number one ranking Gapyeong Benest Golf Club, in South Korea, is a prestigious Jack Nicklaus Signature Golf Course. The beauty of its rolling greens is maintained by irrigation from several lakes and ponds.",
@@ -242,7 +248,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "As can be seen, the results speak for themselves. A lake once heavily polluted by algal blooms has been restored to its original condition in a very short time. One of the Water Vital® “Water Restorers” remains in the lake to provide continuous water treatment.",
     lakeAlt: "Wide view of the lake after the application",
-    lakeCaption: "The lake at the end of the application.",
+    lakeCaption: "The lake at the end of the application (computer-enhanced image based on the original photo).",
     turfTitle: "Additional field observation on irrigated turf",
     turfText:
       "An additional field observation reported that turf irrigated with Water Vital-treated water appeared healthier and developed a deeper green colour. This improvement may be associated with increased plant availability of soil minerals and greater uptake by roots. Soil and plant analyses are recommended to verify the proposed connection with mineral availability and uptake.",
@@ -314,6 +320,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Caso de aplicación · Corea del Sur",
     title: "Algas verdes en los lagos de un campo de golf",
     lede: "Informe de aplicación de Green Solutions: un campo de golf surcoreano, lagos invadidos por las algas y una observación día a día.",
+    greenAlt: "Un green de golf con su bandera amarilla, junto a un estanque",
+    greenCaption: "Ilustración: un green de golf.",
     clubTitle: "El club de golf",
     clubText:
       "Inaugurado en 2000, el Gapyeong Benest Golf Club, clasificado número uno, se encuentra en Corea del Sur. Es un prestigioso campo Jack Nicklaus Signature. La belleza de sus greens ondulados se mantiene gracias al riego con agua de varios lagos y estanques.",
@@ -367,7 +375,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Como se puede ver, los resultados hablan por sí solos. Un lago antes muy contaminado por floraciones de algas ha recuperado su estado original en muy poco tiempo. Uno de los «Water Restorers» de Water Vital® permanece en el lago para garantizar un tratamiento continuo del agua.",
     lakeAlt: "Vista general del lago tras la aplicación",
-    lakeCaption: "El lago al final de la aplicación.",
+    lakeCaption: "El lago al final de la aplicación (imagen retocada por ordenador a partir de la foto original).",
     turfTitle: "Observación de campo adicional sobre el césped regado",
     turfText:
       "Una observación de campo adicional indicó que el césped regado con agua tratada con Water Vital parecía más sano y adquiría un verde más intenso. Esta mejora podría estar asociada a una mayor disponibilidad de los minerales del suelo para las plantas y a una mayor absorción por las raíces. Se recomiendan análisis de suelo y de plantas para verificar la relación propuesta con la disponibilidad y la absorción de minerales.",
@@ -439,6 +447,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Caso de aplicação · Coreia do Sul",
     title: "Algas verdes nos lagos de um campo de golfe",
     lede: "Relatório de aplicação da Green Solutions: um campo de golfe sul-coreano, lagos invadidos por algas e uma observação dia a dia.",
+    greenAlt: "Um green de golfe com a sua bandeira amarela, junto a uma lagoa",
+    greenCaption: "Ilustração: um green de golfe.",
     clubTitle: "O clube de golfe",
     clubText:
       "Inaugurado em 2000, o Gapyeong Benest Golf Club, classificado em primeiro lugar, situa-se na Coreia do Sul. É um prestigiado campo Jack Nicklaus Signature. A beleza dos seus greens ondulados é mantida graças à rega com água de vários lagos e lagoas.",
@@ -492,7 +502,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Como se pode ver, os resultados falam por si. Um lago outrora muito poluído por proliferações de algas voltou ao seu estado original em muito pouco tempo. Um dos «Water Restorers» Water Vital® permanece no lago para assegurar um tratamento contínuo da água.",
     lakeAlt: "Vista geral do lago após a aplicação",
-    lakeCaption: "O lago no final da aplicação.",
+    lakeCaption: "O lago no final da aplicação (imagem retocada por computador a partir da foto original).",
     turfTitle: "Observação de campo adicional sobre o relvado regado",
     turfText:
       "Uma observação de campo adicional indicou que o relvado regado com água tratada pelo Water Vital parecia mais saudável e adquiria um verde mais intenso. Esta melhoria pode estar associada a uma maior disponibilidade dos minerais do solo para as plantas e a uma maior absorção pelas raízes. Recomendam-se análises de solo e de plantas para verificar a relação proposta com a disponibilidade e a absorção de minerais.",
@@ -564,6 +574,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Anwendungsfall · Südkorea",
     title: "Grüne Algen in den Seen eines Golfplatzes",
     lede: "Anwendungsbericht von Green Solutions: ein südkoreanischer Golfplatz, von Algen überwucherte Seen und eine Beobachtung Tag für Tag.",
+    greenAlt: "Ein Golf-Green mit gelber Fahne an einem Teich",
+    greenCaption: "Illustration: ein Golf-Green.",
     clubTitle: "Der Golfclub",
     clubText:
       "Der 2000 eröffnete, als Nummer eins eingestufte Gapyeong Benest Golf Club liegt in Südkorea. Er ist ein renommierter Jack Nicklaus Signature Golfplatz. Die Schönheit seiner hügeligen Grüns wird durch die Bewässerung aus mehreren Seen und Teichen erhalten.",
@@ -617,7 +629,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Wie man sieht, sprechen die Ergebnisse für sich. Ein See, der einst durch Algenblüten stark verschmutzt war, wurde in sehr kurzer Zeit in seinen ursprünglichen Zustand zurückversetzt. Einer der Water Vital®-„Water Restorer“ bleibt im See und sorgt für eine kontinuierliche Wasserbehandlung.",
     lakeAlt: "Gesamtansicht des Sees nach der Anwendung",
-    lakeCaption: "Der See am Ende der Anwendung.",
+    lakeCaption: "Der See am Ende der Anwendung (am Computer bearbeitetes Bild nach dem Originalfoto).",
     turfTitle: "Zusätzliche Feldbeobachtung am bewässerten Rasen",
     turfText:
       "Eine zusätzliche Feldbeobachtung berichtete, dass mit Water Vital-behandeltem Wasser bewässerter Rasen gesünder aussah und ein tieferes Grün entwickelte. Diese Verbesserung könnte mit einer höheren Pflanzenverfügbarkeit von Bodenmineralien und einer stärkeren Aufnahme durch die Wurzeln zusammenhängen. Boden- und Pflanzenanalysen werden empfohlen, um den vermuteten Zusammenhang mit der Verfügbarkeit und Aufnahme von Mineralstoffen zu überprüfen.",
@@ -689,6 +701,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Caso applicativo · Corea del Sud",
     title: "Alghe verdi nei laghi di un campo da golf",
     lede: "Rapporto applicativo di Green Solutions: un campo da golf sudcoreano, laghi invasi dalle alghe e un'osservazione giorno per giorno.",
+    greenAlt: "Un green da golf con la sua bandiera gialla, accanto a uno stagno",
+    greenCaption: "Illustrazione: un green da golf.",
     clubTitle: "Il golf club",
     clubText:
       "Aperto nel 2000, il Gapyeong Benest Golf Club, classificato al primo posto, si trova in Corea del Sud. È un prestigioso campo Jack Nicklaus Signature. La bellezza dei suoi green ondulati è mantenuta grazie all'irrigazione con l'acqua di diversi laghi e stagni.",
@@ -742,7 +756,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Come si può vedere, i risultati parlano da soli. Un lago un tempo fortemente inquinato da fioriture algali è stato riportato alle condizioni originali in pochissimo tempo. Uno dei «Water Restorer» Water Vital® resta nel lago per garantire un trattamento continuo dell'acqua.",
     lakeAlt: "Veduta d'insieme del lago dopo l'applicazione",
-    lakeCaption: "Il lago al termine dell'applicazione.",
+    lakeCaption: "Il lago al termine dell'applicazione (immagine elaborata al computer a partire dalla foto originale).",
     turfTitle: "Osservazione di campo aggiuntiva sul tappeto erboso irrigato",
     turfText:
       "Un'osservazione di campo aggiuntiva ha riferito che il tappeto erboso irrigato con acqua trattata con Water Vital appariva più sano e assumeva un verde più intenso. Questo miglioramento potrebbe essere associato a una maggiore disponibilità dei minerali del suolo per le piante e a un maggiore assorbimento da parte delle radici. Si raccomandano analisi del suolo e delle piante per verificare il legame proposto con la disponibilità e l'assorbimento dei minerali.",
@@ -814,6 +828,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Cas d'aplicació · Corea del Sud",
     title: "Algues verdes als llacs d'un camp de golf",
     lede: "Informe d'aplicació de Green Solutions: un camp de golf sud-coreà, llacs envaïts per les algues i una observació dia a dia.",
+    greenAlt: "Un green de golf amb la seva bandera groga, vora un estany",
+    greenCaption: "Il·lustració: un green de golf.",
     clubTitle: "El club de golf",
     clubText:
       "Inaugurat l'any 2000, el Gapyeong Benest Golf Club, classificat en primer lloc, es troba a Corea del Sud. És un prestigiós camp Jack Nicklaus Signature. La bellesa dels seus greens ondulats es manté gràcies al reg amb aigua de diversos llacs i estanys.",
@@ -867,7 +883,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Com es pot veure, els resultats parlen per si sols. Un llac abans molt contaminat per proliferacions d'algues ha recuperat el seu estat original en molt poc temps. Un dels «Water Restorers» de Water Vital® roman al llac per garantir un tractament continu de l'aigua.",
     lakeAlt: "Vista general del llac després de l'aplicació",
-    lakeCaption: "El llac al final de l'aplicació.",
+    lakeCaption: "El llac al final de l'aplicació (imatge retocada per ordinador a partir de la foto original).",
     turfTitle: "Observació de camp addicional sobre la gespa regada",
     turfText:
       "Una observació de camp addicional va indicar que la gespa regada amb aigua tractada amb Water Vital semblava més sana i adquiria un verd més intens. Aquesta millora podria estar associada a una major disponibilitat dels minerals del sòl per a les plantes i a una major absorció per part de les arrels. Es recomanen anàlisis de sòl i de plantes per verificar la relació proposada amb la disponibilitat i l'absorció de minerals.",
@@ -939,6 +955,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Przypadek zastosowania · Korea Południowa",
     title: "Zielone glony w jeziorach pola golfowego",
     lede: "Raport z zastosowania Green Solutions: południowokoreańskie pole golfowe, jeziora opanowane przez glony i obserwacja dzień po dniu.",
+    greenAlt: "Green pola golfowego z żółtą flagą, nad stawem",
+    greenCaption: "Ilustracja: green pola golfowego.",
     clubTitle: "Klub golfowy",
     clubText:
       "Otwarty w 2000 roku Gapyeong Benest Golf Club, sklasyfikowany jako numer jeden, znajduje się w Korei Południowej. To prestiżowe pole Jack Nicklaus Signature. Piękno jego pofałdowanych greenów utrzymuje się dzięki nawadnianiu wodą z kilku jezior i stawów.",
@@ -992,7 +1010,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Jak widać, wyniki mówią same za siebie. Jezioro, które było silnie zanieczyszczone zakwitami glonów, w bardzo krótkim czasie wróciło do pierwotnego stanu. Jeden z „Water Restorers” Water Vital® pozostaje w jeziorze, zapewniając ciągłe uzdatnianie wody.",
     lakeAlt: "Widok ogólny jeziora po zastosowaniu",
-    lakeCaption: "Jezioro po zakończeniu zastosowania.",
+    lakeCaption: "Jezioro po zakończeniu zastosowania (obraz przetworzony komputerowo na podstawie oryginalnego zdjęcia).",
     turfTitle: "Dodatkowa obserwacja polowa na nawadnianej murawie",
     turfText:
       "Dodatkowa obserwacja polowa wykazała, że murawa nawadniana wodą uzdatnianą Water Vital wyglądała zdrowiej i nabierała głębszej zieleni. Poprawa ta może wiązać się z większą dostępnością minerałów glebowych dla roślin i większym ich pobieraniem przez korzenie. Zaleca się analizy gleby i roślin, aby zweryfikować proponowany związek z dostępnością i pobieraniem minerałów.",
@@ -1064,6 +1082,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Primjer primjene · Južna Koreja",
     title: "Zelene alge u jezerima golf terena",
     lede: "Izvješće o primjeni tvrtke Green Solutions: južnokorejski golf teren, jezera obrasla algama i promatranje iz dana u dan.",
+    greenAlt: "Green golf terena sa žutom zastavicom, uz ribnjak",
+    greenCaption: "Ilustracija: green golf terena.",
     clubTitle: "Golf klub",
     clubText:
       "Gapyeong Benest Golf Club, otvoren 2000. godine i rangiran kao broj jedan, nalazi se u Južnoj Koreji. To je ugledan teren Jack Nicklaus Signature. Ljepota njegovih valovitih greenova održava se navodnjavanjem iz nekoliko jezera i ribnjaka.",
@@ -1117,7 +1137,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Kao što se vidi, rezultati govore sami za sebe. Jezero koje je nekoć bilo jako onečišćeno cvjetanjem algi u vrlo je kratkom roku vraćeno u izvorno stanje. Jedan od uređaja „Water Restorers” Water Vital® ostaje u jezeru kako bi osigurao neprekidnu obradu vode.",
     lakeAlt: "Opći pogled na jezero nakon primjene",
-    lakeCaption: "Jezero na kraju primjene.",
+    lakeCaption: "Jezero na kraju primjene (računalno obrađena slika prema izvornoj fotografiji).",
     turfTitle: "Dodatno terensko promatranje na navodnjavanom travnjaku",
     turfText:
       "Dodatno terensko promatranje pokazalo je da je travnjak navodnjavan vodom obrađenom Water Vitalom izgledao zdravije i razvio dublju zelenu boju. To bi poboljšanje moglo biti povezano s većom dostupnošću minerala iz tla biljkama i većim unosom korijenjem. Preporučuju se analize tla i biljaka kako bi se provjerila predložena veza s dostupnošću i unosom minerala.",
@@ -1189,6 +1209,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Uygulama örneği · Güney Kore",
     title: "Bir golf sahasının göllerinde yeşil algler",
     lede: "Green Solutions uygulama raporu: Güney Kore'de bir golf sahası, alglerle kaplanan göller ve gün gün yapılan gözlem.",
+    greenAlt: "Sarı bayraklı bir golf green'i, bir göletin yanında",
+    greenCaption: "Temsili görsel: bir golf green'i.",
     clubTitle: "Golf kulübü",
     clubText:
       "2000 yılında açılan ve bir numara olarak derecelendirilen Gapyeong Benest Golf Club, Güney Kore'de yer alır. Prestijli bir Jack Nicklaus Signature sahasıdır. Dalgalı greenlerinin güzelliği, birkaç göl ve göletten yapılan sulamayla korunur.",
@@ -1242,7 +1264,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Görüldüğü gibi sonuçlar kendi adına konuşuyor. Bir zamanlar alg patlamalarıyla ağır biçimde kirlenmiş bir göl, çok kısa sürede özgün haline döndürüldü. Water Vital® “Water Restorer” cihazlarından biri, sürekli su arıtımı sağlamak için gölde kalıyor.",
     lakeAlt: "Uygulamadan sonra gölün genel görünümü",
-    lakeCaption: "Uygulamanın sonunda göl.",
+    lakeCaption: "Uygulamanın sonunda göl (özgün fotoğraftan yola çıkılarak bilgisayarla işlenmiş görüntü).",
     turfTitle: "Sulanan çim üzerinde ek saha gözlemi",
     turfText:
       "Ek bir saha gözlemi, Water Vital ile arıtılmış suyla sulanan çimin daha sağlıklı göründüğünü ve daha koyu bir yeşil renk aldığını bildirdi. Bu iyileşme, toprak minerallerinin bitkiler için daha elverişli hale gelmesi ve köklerce daha fazla alınmasıyla ilişkili olabilir. Mineral elverişliliği ve alımıyla önerilen bağlantıyı doğrulamak için toprak ve bitki analizleri önerilir.",
@@ -1314,6 +1336,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Kasus penerapan · Korea Selatan",
     title: "Alga hijau di danau-danau lapangan golf",
     lede: "Laporan penerapan Green Solutions: sebuah lapangan golf di Korea Selatan, danau yang dipenuhi alga, dan pengamatan hari demi hari.",
+    greenAlt: "Sebuah green golf dengan bendera kuning, di tepi kolam",
+    greenCaption: "Ilustrasi: sebuah green golf.",
     clubTitle: "Klub golf",
     clubText:
       "Gapyeong Benest Golf Club, yang dibuka pada tahun 2000 dan berperingkat nomor satu, terletak di Korea Selatan. Ini adalah lapangan Jack Nicklaus Signature yang bergengsi. Keindahan green-nya yang berbukit dijaga melalui irigasi dari beberapa danau dan kolam.",
@@ -1367,7 +1391,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Seperti terlihat, hasilnya berbicara sendiri. Danau yang dulu tercemar berat oleh ledakan alga telah dipulihkan ke kondisi semula dalam waktu yang sangat singkat. Salah satu “Water Restorer” Water Vital® tetap berada di danau untuk memberikan pengolahan air yang berkelanjutan.",
     lakeAlt: "Pemandangan umum danau setelah penerapan",
-    lakeCaption: "Danau di akhir penerapan.",
+    lakeCaption: "Danau di akhir penerapan (gambar yang diolah dengan komputer dari foto aslinya).",
     turfTitle: "Pengamatan lapangan tambahan pada rumput yang diirigasi",
     turfText:
       "Pengamatan lapangan tambahan melaporkan bahwa rumput yang diirigasi dengan air hasil olahan Water Vital tampak lebih sehat dan berwarna hijau lebih pekat. Perbaikan ini mungkin terkait dengan meningkatnya ketersediaan mineral tanah bagi tanaman dan penyerapan yang lebih besar oleh akar. Analisis tanah dan tanaman disarankan untuk memverifikasi hubungan yang diusulkan dengan ketersediaan dan penyerapan mineral.",
@@ -1439,6 +1463,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Περίπτωση εφαρμογής · Νότια Κορέα",
     title: "Πράσινα φύκια στις λίμνες ενός γηπέδου γκολφ",
     lede: "Έκθεση εφαρμογής της Green Solutions: ένα γήπεδο γκολφ στη Νότια Κορέα, λίμνες γεμάτες φύκια και παρατήρηση μέρα με τη μέρα.",
+    greenAlt: "Ένα γκριν γκολφ με την κίτρινη σημαία του, δίπλα σε λιμνούλα",
+    greenCaption: "Εικονογράφηση: ένα γκριν γκολφ.",
     clubTitle: "Το γκολφ κλαμπ",
     clubText:
       "Το Gapyeong Benest Golf Club, που άνοιξε το 2000 και κατατάσσεται στην πρώτη θέση, βρίσκεται στη Νότια Κορέα. Είναι ένα διάσημο γήπεδο Jack Nicklaus Signature. Η ομορφιά των κυματιστών γκριν του διατηρείται με άρδευση από αρκετές λίμνες και λιμνούλες.",
@@ -1493,7 +1519,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "Όπως φαίνεται, τα αποτελέσματα μιλούν από μόνα τους. Μια λίμνη που κάποτε ήταν βαριά μολυσμένη από ανθίσεις φυκιών επανήλθε στην αρχική της κατάσταση σε πολύ σύντομο χρόνο. Ένα από τα «Water Restorers» Water Vital® παραμένει στη λίμνη για να εξασφαλίζει συνεχή επεξεργασία του νερού.",
     lakeAlt: "Γενική άποψη της λίμνης μετά την εφαρμογή",
-    lakeCaption: "Η λίμνη στο τέλος της εφαρμογής.",
+    lakeCaption: "Η λίμνη στο τέλος της εφαρμογής (εικόνα επεξεργασμένη με υπολογιστή από την αρχική φωτογραφία).",
     turfTitle: "Πρόσθετη παρατήρηση πεδίου στον αρδευόμενο χλοοτάπητα",
     turfText:
       "Μια πρόσθετη παρατήρηση πεδίου ανέφερε ότι ο χλοοτάπητας που αρδευόταν με νερό επεξεργασμένο με Water Vital φαινόταν πιο υγιής και απέκτησε βαθύτερο πράσινο χρώμα. Η βελτίωση αυτή μπορεί να συνδέεται με μεγαλύτερη διαθεσιμότητα των ορυκτών του εδάφους για τα φυτά και μεγαλύτερη πρόσληψη από τις ρίζες. Συνιστώνται αναλύσεις εδάφους και φυτών για να επαληθευτεί η προτεινόμενη σύνδεση με τη διαθεσιμότητα και την πρόσληψη ορυκτών.",
@@ -1565,6 +1591,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "حالة تطبيق · كوريا الجنوبية",
     title: "الطحالب الخضراء في بحيرات ملعب غولف",
     lede: "تقرير تطبيق من Green Solutions: ملعب غولف في كوريا الجنوبية، وبحيرات اجتاحتها الطحالب، وملاحظة يومًا بيوم.",
+    greenAlt: "منطقة خضراء (غرين) في ملعب غولف بعلمها الأصفر، بجوار بركة",
+    greenCaption: "صورة توضيحية: غرين في ملعب غولف.",
     clubTitle: "نادي الغولف",
     clubText:
       "افتُتح نادي Gapyeong Benest Golf Club عام 2000، وهو مصنّف في المرتبة الأولى، ويقع في كوريا الجنوبية. وهو ملعب مرموق يحمل توقيع Jack Nicklaus. ويُحافظ على جمال مساحاته الخضراء المتموجة بالري من عدة بحيرات وبرك.",
@@ -1618,7 +1646,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "كما يتضح، النتائج تتحدث عن نفسها. فقد أعيدت بحيرة كانت ملوثة بشدة بتكاثر الطحالب إلى حالتها الأصلية في وقت قصير جدًا. ولا يزال أحد أجهزة «Water Restorers» من Water Vital® في البحيرة لضمان معالجة مستمرة للمياه.",
     lakeAlt: "منظر عام للبحيرة بعد التطبيق",
-    lakeCaption: "البحيرة في نهاية التطبيق.",
+    lakeCaption: "البحيرة في نهاية التطبيق (صورة معالجة بالحاسوب انطلاقًا من الصورة الأصلية).",
     turfTitle: "ملاحظة ميدانية إضافية على العشب المروي",
     turfText:
       "أفادت ملاحظة ميدانية إضافية بأن العشب المروي بمياه معالجة بـ Water Vital بدا أكثر صحة واكتسب لونًا أخضر أعمق. وقد يرتبط هذا التحسن بزيادة توافر معادن التربة للنباتات وزيادة امتصاص الجذور لها. يُوصى بإجراء تحاليل للتربة والنباتات للتحقق من الصلة المقترحة بتوافر المعادن وامتصاصها.",
@@ -1690,6 +1718,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "应用案例 · 韩国",
     title: "高尔夫球场湖泊中的绿藻",
     lede: "Green Solutions 应用报告：韩国的一座高尔夫球场、被藻类侵占的湖泊，以及逐日观察。",
+    greenAlt: "高尔夫球场的果岭，插着黄色旗帜，旁边是一个池塘",
+    greenCaption: "示意图：高尔夫球场的果岭。",
     clubTitle: "高尔夫俱乐部",
     clubText:
       "Gapyeong Benest Golf Club 于 2000 年开业，排名第一，位于韩国。这是一座享有盛誉的 Jack Nicklaus Signature 球场。其起伏果岭的美景，靠多个湖泊和池塘的灌溉来维持。",
@@ -1742,7 +1772,7 @@ export const ALGUES: Record<string, TextesAlgues> = {
     resultsText:
       "可以看到，结果不言自明。一个曾被藻华严重污染的湖泊，在很短的时间内恢复了原貌。其中一台 Water Vital® “Water Restorers” 仍留在湖中，持续处理湖水。",
     lakeAlt: "应用后湖泊的全景",
-    lakeCaption: "应用结束时的湖泊。",
+    lakeCaption: "应用结束时的湖泊（根据原始照片经计算机处理的图像）。",
     turfTitle: "对灌溉草坪的补充田间观察",
     turfText:
       "一项补充田间观察报告称，用经 Water Vital 处理的水灌溉的草坪看起来更健康，绿色更深。这种改善可能与土壤矿物质对植物的有效性提高以及根系吸收增加有关。建议进行土壤和植物分析，以验证其与矿物质有效性和吸收之间的假定联系。",
