@@ -1,3 +1,4 @@
+import CountryFlag from "@/components/CountryFlag";
 import Reveal from "@/components/Reveal";
 import { algues } from "@/lib/water-vital-algues-i18n";
 import "./WaterVitalAlgues.css";
@@ -7,18 +8,33 @@ import "./WaterVitalAlgues.css";
  * Water Vital®. Le rapport d'application Green Solutions, repris avec son
  * évaluation technique : voir lib/water-vital-algues-i18n.ts pour les mots.
  *
- * Les cinq photos sont celles de ce rapport (parcours de Gapyeong Benest,
- * Corée du Sud). Elles sont petites : elles viennent d'une capture d'écran du
- * rapport d'origine, découpées à leur taille réelle puis doublées.
+ * Les cinq photos de terrain sont celles de ce rapport (parcours de Gapyeong
+ * Benest, Corée du Sud). Elles sont petites : elles viennent d'une capture
+ * d'écran du rapport d'origine, découpées à leur taille réelle. Celles du
+ * jour 8 et du lac ont été lissées et éclaircies un peu, sans rien changer à
+ * ce qu'elles montrent. Aucune image n'est créée par ordinateur.
+ *
+ * La photo du green, en tête de section, n'est pas celle du Gapyeong Benest :
+ * c'est une illustration libre de droits (Wikimedia Commons, crédit affiché).
  */
 
 const PHOTOS_ETAPES = [
   { src: "/images/tech/algues-golf-installation.jpg", w: 474, h: 330 },
   { src: "/images/tech/algues-golf-jour2.jpg", w: 488, h: 326 },
   { src: "/images/tech/algues-golf-jour6.jpg", w: 508, h: 280 },
-  { src: "/images/tech/algues-golf-jour8.jpg", w: 416, h: 258 },
+  { src: "/images/tech/algues-golf-jour8.jpg", w: 624, h: 387 },
 ];
-const PHOTO_LAC = { src: "/images/tech/algues-golf-lac.jpg", w: 874, h: 436 };
+const PHOTO_LAC = { src: "/images/tech/algues-golf-lac.jpg", w: 1311, h: 654 };
+
+const PHOTO_GREEN = { src: "/images/tech/algues-golf-green.jpg", w: 1200, h: 798 };
+/** Crédit de la photo du green : CC BY-SA 4.0 exige l'auteur, la licence et un lien vers la source. */
+const GREEN_CREDIT = {
+  auteur: "PattayaPatrol",
+  source:
+    "https://commons.wikimedia.org/wiki/File:DZ6_2525_Sunny_day_on_the_green_a_yellow_flag_flutters_as_golfers_line_up_their_next_putt.jpg",
+  licence: "CC BY-SA 4.0",
+  licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+};
 
 /** Les six sources de l'évaluation, numérotées [1] à [6] dans le texte. Les titres restent ceux des pages d'origine, en anglais. */
 const SOURCES = [
@@ -48,10 +64,35 @@ export default function WaterVitalAlgues({ langue }: { langue: string }) {
   return (
     <div className="wv-algues" id="algues-golf">
       <Reveal>
-        <section className="tech-section wv-entete">
-          <p className="eyebrow">{x.eyebrow}</p>
-          <h2>{x.title}</h2>
-          <p className="wv-lede">{x.lede}</p>
+        <section className="tech-section tech-section-duo wv-entete">
+          <div className="tech-section-texte">
+            <div className="wv-eyebrow">
+              <span className="wv-drapeau">
+                <CountryFlag id="coree-du-sud" />
+              </span>
+              <p className="eyebrow">{x.eyebrow}</p>
+            </div>
+            <h2>{x.title}</h2>
+            <p className="wv-lede">{x.lede}</p>
+          </div>
+          <figure className="tech-figure">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={PHOTO_GREEN.src} width={PHOTO_GREEN.w} height={PHOTO_GREEN.h} alt={x.greenAlt} decoding="async" />
+            <figcaption>
+              {x.greenCaption}{" "}
+              <span className="wv-credit" dir="ltr">
+                ©{" "}
+                <a href={GREEN_CREDIT.source} target="_blank" rel="noopener noreferrer">
+                  {GREEN_CREDIT.auteur}
+                </a>{" "}
+                ·{" "}
+                <a href={GREEN_CREDIT.licenceUrl} target="_blank" rel="noopener noreferrer">
+                  {GREEN_CREDIT.licence}
+                </a>{" "}
+                · Wikimedia Commons
+              </span>
+            </figcaption>
+          </figure>
         </section>
       </Reveal>
 
@@ -96,7 +137,7 @@ export default function WaterVitalAlgues({ langue }: { langue: string }) {
                     width={PHOTOS_ETAPES[i].w}
                     height={PHOTOS_ETAPES[i].h}
                     alt={e.alt}
-                    loading="lazy"
+                    decoding="async"
                   />
                   <span className="wv-badge">{e.label}</span>
                 </div>
@@ -117,7 +158,7 @@ export default function WaterVitalAlgues({ langue }: { langue: string }) {
           </div>
           <figure className="tech-figure">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={PHOTO_LAC.src} width={PHOTO_LAC.w} height={PHOTO_LAC.h} alt={x.lakeAlt} loading="lazy" />
+            <img src={PHOTO_LAC.src} width={PHOTO_LAC.w} height={PHOTO_LAC.h} alt={x.lakeAlt} decoding="async" />
             <figcaption>{x.lakeCaption}</figcaption>
           </figure>
         </section>

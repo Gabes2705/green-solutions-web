@@ -22,6 +22,8 @@ export type TextesAlgues = {
   eyebrow: string;
   title: string;
   lede: string;
+  greenAlt: string;
+  greenCaption: string;
   clubTitle: string;
   clubText: string;
   problemTitle: string;
@@ -63,6 +65,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Cas d'application · Corée du Sud",
     title: "Algues vertes dans les lacs d'un parcours de golf",
     lede: "Rapport d'application Green Solutions : un parcours de golf sud-coréen, des lacs envahis par les algues et une observation jour après jour.",
+    greenAlt: "Un green de golf avec son drapeau jaune, au bord d'un étang",
+    greenCaption: "Illustration : un green de golf.",
     clubTitle: "Le golf",
     clubText:
       "Ouvert en 2000, le Gapyeong Benest Golf Club, classé numéro un, se trouve en Corée du Sud. C'est un prestigieux parcours Jack Nicklaus Signature. La beauté de ses greens vallonnés est entretenue grâce à l'irrigation par plusieurs lacs et étangs.",
@@ -189,6 +193,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Application case · South Korea",
     title: "Green algae in the lakes of a golf course",
     lede: "A Green Solutions application report: a South Korean golf course, lakes overrun by algae, and a day-by-day observation.",
+    greenAlt: "A golf green with its yellow flag, beside a pond",
+    greenCaption: "Illustration: a golf green.",
     clubTitle: "The golf club",
     clubText:
       "Opened for play in 2000, the number one ranking Gapyeong Benest Golf Club, in South Korea, is a prestigious Jack Nicklaus Signature Golf Course. The beauty of its rolling greens is maintained by irrigation from several lakes and ponds.",
@@ -314,6 +320,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Caso de aplicación · Corea del Sur",
     title: "Algas verdes en los lagos de un campo de golf",
     lede: "Informe de aplicación de Green Solutions: un campo de golf surcoreano, lagos invadidos por las algas y una observación día a día.",
+    greenAlt: "Un green de golf con su bandera amarilla, junto a un estanque",
+    greenCaption: "Ilustración: un green de golf.",
     clubTitle: "El club de golf",
     clubText:
       "Inaugurado en 2000, el Gapyeong Benest Golf Club, clasificado número uno, se encuentra en Corea del Sur. Es un prestigioso campo Jack Nicklaus Signature. La belleza de sus greens ondulados se mantiene gracias al riego con agua de varios lagos y estanques.",
@@ -439,6 +447,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Caso de aplicação · Coreia do Sul",
     title: "Algas verdes nos lagos de um campo de golfe",
     lede: "Relatório de aplicação da Green Solutions: um campo de golfe sul-coreano, lagos invadidos por algas e uma observação dia a dia.",
+    greenAlt: "Um green de golfe com a sua bandeira amarela, junto a uma lagoa",
+    greenCaption: "Ilustração: um green de golfe.",
     clubTitle: "O clube de golfe",
     clubText:
       "Inaugurado em 2000, o Gapyeong Benest Golf Club, classificado em primeiro lugar, situa-se na Coreia do Sul. É um prestigiado campo Jack Nicklaus Signature. A beleza dos seus greens ondulados é mantida graças à rega com água de vários lagos e lagoas.",
@@ -564,6 +574,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Anwendungsfall · Südkorea",
     title: "Grüne Algen in den Seen eines Golfplatzes",
     lede: "Anwendungsbericht von Green Solutions: ein südkoreanischer Golfplatz, von Algen überwucherte Seen und eine Beobachtung Tag für Tag.",
+    greenAlt: "Ein Golf-Green mit gelber Fahne an einem Teich",
+    greenCaption: "Illustration: ein Golf-Green.",
     clubTitle: "Der Golfclub",
     clubText:
       "Der 2000 eröffnete, als Nummer eins eingestufte Gapyeong Benest Golf Club liegt in Südkorea. Er ist ein renommierter Jack Nicklaus Signature Golfplatz. Die Schönheit seiner hügeligen Grüns wird durch die Bewässerung aus mehreren Seen und Teichen erhalten.",
@@ -689,6 +701,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Caso applicativo · Corea del Sud",
     title: "Alghe verdi nei laghi di un campo da golf",
     lede: "Rapporto applicativo di Green Solutions: un campo da golf sudcoreano, laghi invasi dalle alghe e un'osservazione giorno per giorno.",
+    greenAlt: "Un green da golf con la sua bandiera gialla, accanto a uno stagno",
+    greenCaption: "Illustrazione: un green da golf.",
     clubTitle: "Il golf club",
     clubText:
       "Aperto nel 2000, il Gapyeong Benest Golf Club, classificato al primo posto, si trova in Corea del Sud. È un prestigioso campo Jack Nicklaus Signature. La bellezza dei suoi green ondulati è mantenuta grazie all'irrigazione con l'acqua di diversi laghi e stagni.",
@@ -814,6 +828,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Cas d'aplicació · Corea del Sud",
     title: "Algues verdes als llacs d'un camp de golf",
     lede: "Informe d'aplicació de Green Solutions: un camp de golf sud-coreà, llacs envaïts per les algues i una observació dia a dia.",
+    greenAlt: "Un green de golf amb la seva bandera groga, vora un estany",
+    greenCaption: "Il·lustració: un green de golf.",
     clubTitle: "El club de golf",
     clubText:
       "Inaugurat l'any 2000, el Gapyeong Benest Golf Club, classificat en primer lloc, es troba a Corea del Sud. És un prestigiós camp Jack Nicklaus Signature. La bellesa dels seus greens ondulats es manté gràcies al reg amb aigua de diversos llacs i estanys.",
@@ -939,6 +955,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Przypadek zastosowania · Korea Południowa",
     title: "Zielone glony w jeziorach pola golfowego",
     lede: "Raport z zastosowania Green Solutions: południowokoreańskie pole golfowe, jeziora opanowane przez glony i obserwacja dzień po dniu.",
+    greenAlt: "Green pola golfowego z żółtą flagą, nad stawem",
+    greenCaption: "Ilustracja: green pola golfowego.",
     clubTitle: "Klub golfowy",
     clubText:
       "Otwarty w 2000 roku Gapyeong Benest Golf Club, sklasyfikowany jako numer jeden, znajduje się w Korei Południowej. To prestiżowe pole Jack Nicklaus Signature. Piękno jego pofałdowanych greenów utrzymuje się dzięki nawadnianiu wodą z kilku jezior i stawów.",
@@ -1064,6 +1082,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Primjer primjene · Južna Koreja",
     title: "Zelene alge u jezerima golf terena",
     lede: "Izvješće o primjeni tvrtke Green Solutions: južnokorejski golf teren, jezera obrasla algama i promatranje iz dana u dan.",
+    greenAlt: "Green golf terena sa žutom zastavicom, uz ribnjak",
+    greenCaption: "Ilustracija: green golf terena.",
     clubTitle: "Golf klub",
     clubText:
       "Gapyeong Benest Golf Club, otvoren 2000. godine i rangiran kao broj jedan, nalazi se u Južnoj Koreji. To je ugledan teren Jack Nicklaus Signature. Ljepota njegovih valovitih greenova održava se navodnjavanjem iz nekoliko jezera i ribnjaka.",
@@ -1189,6 +1209,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Uygulama örneği · Güney Kore",
     title: "Bir golf sahasının göllerinde yeşil algler",
     lede: "Green Solutions uygulama raporu: Güney Kore'de bir golf sahası, alglerle kaplanan göller ve gün gün yapılan gözlem.",
+    greenAlt: "Sarı bayraklı bir golf green'i, bir göletin yanında",
+    greenCaption: "Temsili görsel: bir golf green'i.",
     clubTitle: "Golf kulübü",
     clubText:
       "2000 yılında açılan ve bir numara olarak derecelendirilen Gapyeong Benest Golf Club, Güney Kore'de yer alır. Prestijli bir Jack Nicklaus Signature sahasıdır. Dalgalı greenlerinin güzelliği, birkaç göl ve göletten yapılan sulamayla korunur.",
@@ -1314,6 +1336,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Kasus penerapan · Korea Selatan",
     title: "Alga hijau di danau-danau lapangan golf",
     lede: "Laporan penerapan Green Solutions: sebuah lapangan golf di Korea Selatan, danau yang dipenuhi alga, dan pengamatan hari demi hari.",
+    greenAlt: "Sebuah green golf dengan bendera kuning, di tepi kolam",
+    greenCaption: "Ilustrasi: sebuah green golf.",
     clubTitle: "Klub golf",
     clubText:
       "Gapyeong Benest Golf Club, yang dibuka pada tahun 2000 dan berperingkat nomor satu, terletak di Korea Selatan. Ini adalah lapangan Jack Nicklaus Signature yang bergengsi. Keindahan green-nya yang berbukit dijaga melalui irigasi dari beberapa danau dan kolam.",
@@ -1439,6 +1463,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "Περίπτωση εφαρμογής · Νότια Κορέα",
     title: "Πράσινα φύκια στις λίμνες ενός γηπέδου γκολφ",
     lede: "Έκθεση εφαρμογής της Green Solutions: ένα γήπεδο γκολφ στη Νότια Κορέα, λίμνες γεμάτες φύκια και παρατήρηση μέρα με τη μέρα.",
+    greenAlt: "Ένα γκριν γκολφ με την κίτρινη σημαία του, δίπλα σε λιμνούλα",
+    greenCaption: "Εικονογράφηση: ένα γκριν γκολφ.",
     clubTitle: "Το γκολφ κλαμπ",
     clubText:
       "Το Gapyeong Benest Golf Club, που άνοιξε το 2000 και κατατάσσεται στην πρώτη θέση, βρίσκεται στη Νότια Κορέα. Είναι ένα διάσημο γήπεδο Jack Nicklaus Signature. Η ομορφιά των κυματιστών γκριν του διατηρείται με άρδευση από αρκετές λίμνες και λιμνούλες.",
@@ -1565,6 +1591,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "حالة تطبيق · كوريا الجنوبية",
     title: "الطحالب الخضراء في بحيرات ملعب غولف",
     lede: "تقرير تطبيق من Green Solutions: ملعب غولف في كوريا الجنوبية، وبحيرات اجتاحتها الطحالب، وملاحظة يومًا بيوم.",
+    greenAlt: "منطقة خضراء (غرين) في ملعب غولف بعلمها الأصفر، بجوار بركة",
+    greenCaption: "صورة توضيحية: غرين في ملعب غولف.",
     clubTitle: "نادي الغولف",
     clubText:
       "افتُتح نادي Gapyeong Benest Golf Club عام 2000، وهو مصنّف في المرتبة الأولى، ويقع في كوريا الجنوبية. وهو ملعب مرموق يحمل توقيع Jack Nicklaus. ويُحافظ على جمال مساحاته الخضراء المتموجة بالري من عدة بحيرات وبرك.",
@@ -1690,6 +1718,8 @@ export const ALGUES: Record<string, TextesAlgues> = {
     eyebrow: "应用案例 · 韩国",
     title: "高尔夫球场湖泊中的绿藻",
     lede: "Green Solutions 应用报告：韩国的一座高尔夫球场、被藻类侵占的湖泊，以及逐日观察。",
+    greenAlt: "高尔夫球场的果岭，插着黄色旗帜，旁边是一个池塘",
+    greenCaption: "示意图：高尔夫球场的果岭。",
     clubTitle: "高尔夫俱乐部",
     clubText:
       "Gapyeong Benest Golf Club 于 2000 年开业，排名第一，位于韩国。这是一座享有盛誉的 Jack Nicklaus Signature 球场。其起伏果岭的美景，靠多个湖泊和池塘的灌溉来维持。",
