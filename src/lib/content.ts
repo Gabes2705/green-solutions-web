@@ -558,6 +558,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Avocat international" },
         { name: "David James", role: "Expert international en Paulownia · plus de 20 ans d'expérience" },
         { name: "Emile Grac", role: "Conseil en Paulownia et Agrumes · Maroc" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Expert en ingénierie financière et structuration de projets pour l'Afrique" },
       ],
     },
     statement: {
@@ -1180,6 +1181,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "International lawyer" },
         { name: "David James", role: "International Paulownia expert · 20+ years of experience" },
         { name: "Emile Grac", role: "Paulownia & citrus advisor · Morocco" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Expert in Financial Engineering and projects structuring for Africa" },
       ],
     },
     statement: {
@@ -1802,6 +1804,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Abogado internacional" },
         { name: "David James", role: "Experto internacional en Paulownia · más de 20 años de experiencia" },
         { name: "Emile Grac", role: "Asesor en Paulownia y cítricos · Marruecos" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Experto en ingeniería financiera y estructuración de proyectos para África" },
       ],
     },
     statement: {
@@ -2424,6 +2427,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Advogado internacional" },
         { name: "David James", role: "Especialista internacional em Paulownia · mais de 20 anos de experiência" },
         { name: "Emile Grac", role: "Consultor em Paulownia e citrinos · Marrocos" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Especialista em engenharia financeira e estruturação de projetos para África" },
       ],
     },
     statement: {
@@ -3046,6 +3050,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "محامٍ دولي" },
         { name: "David James", role: "خبير دولي في شجرة الباولونيا · أكثر من 20 عامًا من الخبرة" },
         { name: "Emile Grac", role: "مستشار في الباولونيا والحمضيات · المغرب" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "خبير في الهندسة المالية وهيكلة المشاريع لأفريقيا" },
       ],
     },
     statement: {
@@ -3668,6 +3673,7 @@ const baseContent = {
         { name: "Yves Haddad 律师", role: "国际律师" },
         { name: "David James", role: "泡桐国际专家 · 20余年经验" },
         { name: "Emile Grac", role: "泡桐与柑橘顾问 · 摩洛哥" },
+        { name: "NOBOUDEM TANDA MODESTE 博士 (PhD)", role: "面向非洲的金融工程与项目结构设计专家" },
       ],
     },
     statement: {
@@ -4290,6 +4296,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Pengacara Internasional" },
         { name: "David James", role: "Pakar internasional Paulownia · pengalaman lebih dari 20 tahun" },
         { name: "Emile Grac", role: "Konsultan Paulownia & jeruk · Maroko" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Pakar rekayasa keuangan dan penyusunan struktur proyek untuk Afrika" },
       ],
     },
     statement: {
@@ -4912,6 +4919,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Internationaler Rechtsanwalt" },
         { name: "David James", role: "Internationaler Paulownia-Experte · über 20 Jahre Erfahrung" },
         { name: "Emile Grac", role: "Berater für Paulownia & Zitrusfrüchte · Marokko" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Experte für Financial Engineering und Projektstrukturierung für Afrika" },
       ],
     },
     statement: {
@@ -5534,6 +5542,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Avvocato internazionale" },
         { name: "David James", role: "Esperto internazionale in Paulownia · oltre 20 anni di esperienza" },
         { name: "Emile Grac", role: "Consulente in Paulownia e agrumi · Marocco" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Esperto in ingegneria finanziaria e strutturazione di progetti per l'Africa" },
       ],
     },
     statement: {
@@ -6156,6 +6165,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Διεθνής δικηγόρος" },
         { name: "David James", role: "Διεθνής ειδικός σε Paulownia · πάνω από 20 χρόνια εμπειρίας" },
         { name: "Emile Grac", role: "Σύμβουλος για Paulownia & εσπεριδοειδή · Μαρόκο" },
+        { name: "Δρ NOBOUDEM TANDA MODESTE (PhD)", role: "Ειδικός σε χρηματοοικονομική μηχανική και διάρθρωση έργων για την Αφρική" },
       ],
     },
     statement: {
@@ -6778,6 +6788,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Uluslararası avukat" },
         { name: "David James", role: "Uluslararası Paulownia uzmanı · 20 yıldan fazla deneyim" },
         { name: "Emile Grac", role: "Paulownia ve narenciye danışmanı · Fas" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Afrika için finansal mühendislik ve proje yapılandırma uzmanı" },
       ],
     },
     statement: {
@@ -7400,6 +7411,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Prawnik międzynarodowy" },
         { name: "David James", role: "Międzynarodowy ekspert ds. Paulownii · ponad 20 lat doświadczenia" },
         { name: "Emile Grac", role: "Doradca ds. Paulownii i cytrusów · Maroko" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Ekspert ds. inżynierii finansowej i strukturyzacji projektów dla Afryki" },
       ],
     },
     statement: {
@@ -8022,6 +8034,7 @@ const baseContent = {
         { name: "Me Yves Haddad", role: "Međunarodni odvjetnik" },
         { name: "David James", role: "Međunarodni stručnjak za paulovniju · više od 20 godina iskustva" },
         { name: "Emile Grac", role: "Savjetnik za paulovniju i agrume · Maroko" },
+        { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Stručnjak za financijski inženjering i strukturiranje projekata za Afriku" },
       ],
     },
     statement: {
