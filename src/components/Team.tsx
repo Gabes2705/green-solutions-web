@@ -38,6 +38,7 @@ const PHOTOS_BY_SURNAME: [RegExp, string][] = [
   [/haddad/i, "yves-haddad"],
   [/\bjames\b/i, "david-james"],
   [/\bgrac\b/i, "emile-grac"],
+  [/noboudem/i, "noboudem-tanda-modeste"],
 ];
 
 function photoSlug(name: string) {

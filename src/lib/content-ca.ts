@@ -708,6 +708,7 @@ export const ca = {
       { name: "Me Yves Haddad", role: "Advocat internacional" },
       { name: "David James", role: "Expert internacional en Paulownia · més de 20 anys d'experiència" },
       { name: "Emile Grac", role: "Assessor en Paulownia i cítrics · Marroc" },
+      { name: "Dr NOBOUDEM TANDA MODESTE (PhD)", role: "Expert en enginyeria financera i estructuració de projectes per a l'Àfrica" },
     ],
   },
   statement: {
