@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import EssaiPage from "@/components/EssaiPage";
 import { ESSAIS } from "@/lib/essais";
 import { LANGUES_ESSAIS, essaiTraduit, habillage } from "@/lib/essais-i18n";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, languageAlternates } from "@/lib/site";
 
 /** Servis dans les langues traduites, et nulle part ailleurs. */
 export const dynamicParams = false;
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   return {
     title: essai.titre,
     description: essai.description,
-    alternates: { canonical: url },
+    alternates: { canonical: url, languages: languageAlternates(`/essais-terrain/${base}`) },
     openGraph: {
       type: "article",
       title: essai.titre,
