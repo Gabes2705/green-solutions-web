@@ -14,7 +14,7 @@ export default {
     "marques": "EVERGREEN® · ECOSORB® · ECOFERT®",
     "mention": "Septiembre de 2026 · Propuesta de cooperación agrícola",
     "subtitle": "Agroexportación y seguridad hídrica.\nUna propuesta para evaluar la eficiencia del agua en cada predio.",
-    "footer": "Green Solutions · contact@evergreen-ecosorb.com",
+    "footer": "Green Solutions · contact@green-solutions-group.com",
     "photo": 0
   },
   "chiffres": {
@@ -177,6 +177,6 @@ export default {
     "photo": 0,
     "title": "Hablemos de su predio",
     "body": "Cultivo, superficie, origen del agua, tipo de suelo y objetivo económico. Con esos datos podemos preparar una propuesta de ensayo y un presupuesto verificable.\n\nEl punto de partida es concreto: medir el agua utilizada por kilogramo comercializable y la rentabilidad del manejo.",
-    "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
   }
 };

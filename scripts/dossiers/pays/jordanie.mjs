@@ -16,7 +16,7 @@ export default {
     mention: "سبتمبر 2026 · وثيقة سرية · للاستخدام الحصري للمرسل إليه",
     subtitle:
       "خضار الأغوار وزيتون المرتفعات تحت ندرة مائية هيكلية.\nما الذي يغيّره الاحتفاظ بالماء في التربة على مستوى الحقل.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 0,
   },
 
@@ -226,6 +226,6 @@ export default {
     title: "حدّثونا عن قطعتكم",
     body:
       "المحصول، وأسلوب الري، وطبيعة التربة، وحجم المياه المستهلك اليوم. نعود إليكم بتركيبة التقنيات المناسبة، والجرعات، والتجارب التي أُجريت في أوضاع مشابهة.\n\nالتواصل الأول لا يرتّب أي التزام.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
   },
 };

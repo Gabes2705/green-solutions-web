@@ -16,7 +16,7 @@ export default {
     mention: "سبتمبر 2026 · وثيقة سرية · للاستخدام الحصري للمرسل إليه",
     subtitle:
       "زراعة مروية بالكامل تعتمد على نهر واحد وحصة مائية ثابتة.\nما الذي يغيّره احتباس الماء في التربة لمنتج يصدّر إلى أوروبا والخليج.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 0,
   },
 
@@ -226,6 +226,6 @@ export default {
     title: "احكِ لنا عن أرضك",
     body:
       "المحصول، أسلوب الري، طبيعة التربة، كمية الماء المستهلكة اليوم. نعود إليك بتركيبة التقنيات المناسبة، والجرعات، والتجارب التي أُجريت في أوضاع مشابهة.\n\nأول تبادل لا يلزمك بشيء.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
   },
 };

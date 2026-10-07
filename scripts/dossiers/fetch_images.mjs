@@ -10,7 +10,7 @@
 import { mkdirSync, writeFileSync, existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
-const UA = "GreenSolutionsDossiers/1.0 (contact@evergreen-ecosorb.com)";
+const UA = "GreenSolutionsDossiers/1.0 (contact@green-solutions-group.com)";
 const API = "https://commons.wikimedia.org/w/api.php";
 
 const outDir = process.argv[2];

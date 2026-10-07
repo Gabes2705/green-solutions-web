@@ -15,7 +15,7 @@ export default {
     mention: "September 2026 · Confidential · For the sole use of the recipient",
     subtitle:
       "Dates, vegetables and fodder grown on shrinking aquifers and under 100 mm of rain.\nWhat hydro-retention changes when every cubic metre is pumped.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 5,
   },
 
@@ -224,6 +224,6 @@ export default {
     title: "Tell us about your farm",
     body:
       "Crop, irrigation method, soil type, the volume of water you use today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable situations.\n\nA first conversation commits you to nothing.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
   },
 };

@@ -15,7 +15,7 @@ export default {
     mention: "Σεπτέμβριος 2026 · Εμπιστευτικό · Αποκλειστικά για τον παραλήπτη",
     subtitle:
       "Ελαιόλαδο, βαμβάκι, αμπέλι και οπωροφόρα με όλο και λιγότερο νερό.\nΤι αλλάζει η συγκράτηση νερού στο έδαφος σε μια εξαγωγική γεωργία.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 6,
   },
 
@@ -224,6 +224,6 @@ export default {
     title: "Πείτε μας για το χωράφι σας",
     body:
       "Καλλιέργεια, μέθοδος άρδευσης, τύπος εδάφους, όγκος νερού που χρησιμοποιείτε σήμερα. Επιστρέφουμε με τον κατάλληλο συνδυασμό τεχνολογιών, τις δόσεις και τις δοκιμές που έχουν ήδη γίνει σε παρόμοιες συνθήκες.\n\nΜια πρώτη συζήτηση δεν σας δεσμεύει σε τίποτα.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Ελβετία",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Ελβετία",
   },
 };

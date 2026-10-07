@@ -9,7 +9,7 @@
 import { mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
 import sharp from "sharp";
 
-const UA = "GreenSolutionsSite/1.0 (contact@evergreen-ecosorb.com)";
+const UA = "GreenSolutionsSite/1.0 (contact@green-solutions-group.com)";
 const API = "https://commons.wikimedia.org/w/api.php";
 const LICENCE_OK = /^(cc0|public domain|pd|cc by(-sa)? \d(\.\d)?)/i;
 const MOTS_KO =

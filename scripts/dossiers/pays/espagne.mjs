@@ -15,7 +15,7 @@ export default {
     mention: "Septiembre de 2026 · Documento confidencial · Para uso exclusivo del destinatario",
     subtitle:
       "Olivar, hortícola bajo plástico y cítricos con el mayor regadío de Europa.\nLo que cambia la hidrorretención donde el método de riego ya no deja margen.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 3,
   },
 
@@ -225,6 +225,6 @@ export default {
     title: "Cuéntenos cómo es su finca",
     body:
       "Cultivo, método de riego, tipo de suelo, volumen de agua que consume hoy. Volvemos con la combinación de tecnologías correspondiente, las dosis y los ensayos ya realizados en situaciones comparables.\n\nUna primera conversación no compromete a nada.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza",
   },
 };

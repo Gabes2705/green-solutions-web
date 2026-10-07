@@ -15,7 +15,7 @@ export default {
     mention: "Septembre 2026 · Document confidentiel · À l'usage exclusif du destinataire",
     subtitle:
       "Cacao, coton, banane et vivrier, du Sud humide au Grand Nord sahélien.\nCe que l'hydro-rétention change quand la saison sèche s'allonge.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 8,
   },
 
@@ -224,6 +224,6 @@ export default {
     title: "Dites-nous votre parcelle",
     body:
       "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse",
   },
 };

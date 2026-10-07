@@ -79,8 +79,8 @@ export default function Contact() {
           <ul className="contact-details">
             <li>
               <span>{ct.labelEmail}</span>
-              <a href="mailto:contact@evergreen-ecosorb.com">
-                contact@evergreen-ecosorb.com
+              <a href="mailto:contact@green-solutions-group.com">
+                contact@green-solutions-group.com
               </a>
             </li>
             <li>
@@ -101,8 +101,8 @@ export default function Contact() {
             <p className="contact-success-title">{ct.successTitle}</p>
             <p>
               {ct.successText}{" "}
-              <a href="mailto:contact@evergreen-ecosorb.com">
-                contact@evergreen-ecosorb.com
+              <a href="mailto:contact@green-solutions-group.com">
+                contact@green-solutions-group.com
               </a>
               .
             </p>

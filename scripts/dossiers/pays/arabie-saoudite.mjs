@@ -16,7 +16,7 @@ export default {
     mention: "سبتمبر 2026 · وثيقة سرية · للاستخدام الحصري للمرسل إليه",
     subtitle:
       "التمور والخضروات المحمية والزراعة المروية تحت قيد مائي دائم.\nما الذي يغيّره احتباس الماء في التربة على مستوى الحقل.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 0,
   },
 
@@ -250,6 +250,6 @@ export default {
     title: "أخبرنا عن أرضك",
     body:
       "المحصول، وأسلوب الري، وطبيعة التربة، وحجم الماء المستهلك اليوم. نعود إليكم بالتركيبة المناسبة من التقنيات، والجرعات، والتجارب التي أُجريت في ظروف مشابهة.\n\nالتواصل الأول لا يُلزم بشيء.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
   },
 };

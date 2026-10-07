@@ -451,7 +451,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Tell us about your block",
       "body": "Crop, irrigation method, soil type, the volume of water you use today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable situations.\n\nA first conversation commits you to nothing.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   },
   "algerie": {
@@ -811,7 +811,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'irrigation, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "arabie-saoudite": {
@@ -1175,7 +1175,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "أخبرنا عن أرضك",
       "body": "المحصول، وأسلوب الري، وطبيعة التربة، وحجم الماء المستهلك اليوم. نعود إليكم بالتركيبة المناسبة من التقنيات، والجرعات، والتجارب التي أُجريت في ظروف مشابهة.\n\nالتواصل الأول لا يُلزم بشيء.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   },
   "argentine": {
@@ -1517,7 +1517,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Cuéntenos cómo es su lote",
       "body": "Cultivo, método de riego, tipo de suelo y volumen de agua que aplica hoy. Volvemos con la combinación de tecnologías correspondiente, las dosis, y los ensayos ya conducidos en situaciones comparables.\n\nUna primera conversación no compromete a nada.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
     }
   },
   "benin": {
@@ -1735,7 +1735,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "bresil": {
@@ -1951,7 +1951,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Um projeto adequado à sua propriedade",
       "body": "Informe a cultura, o tipo de solo, o sistema de irrigação e o objetivo do projeto. A Green Solutions propõe um protocolo comparativo e os indicadores que orientarão a decisão.\n\nUma oportunidade concreta: avaliar a retenção de água onde cada metro cúbico e cada muda têm valor.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "cameroun": {
@@ -2324,7 +2324,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "chili": {
@@ -2674,7 +2674,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Cuéntenos cómo es su predio",
       "body": "Cultivo, método de riego, tipo de suelo, volumen de agua que consume hoy. Volvemos con la combinación de tecnologías correspondiente, las dosis y los ensayos ya realizados en situaciones comparables.\n\nUna primera conversación no compromete a nada.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
     }
   },
   "cote-divoire": {
@@ -3076,7 +3076,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "croatie": {
@@ -3442,7 +3442,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Recite nam kakvo je vaše gospodarstvo",
       "body": "Kultura, način navodnjavanja, tip tla, količina vode koju danas trošite. Vraćamo se s odgovarajućom kombinacijom tehnologija, s dozama i s pokusima već provedenima u usporedivim situacijama.\n\nPrvi razgovor ni na što ne obvezuje.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Švicarska"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Švicarska"
     }
   },
   "egypte": {
@@ -3786,7 +3786,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "احكِ لنا عن أرضك",
       "body": "المحصول، أسلوب الري، طبيعة التربة، كمية الماء المستهلكة اليوم. نعود إليك بتركيبة التقنيات المناسبة، والجرعات، والتجارب التي أُجريت في أوضاع مشابهة.\n\nأول تبادل لا يلزمك بشيء.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   },
   "espagne": {
@@ -4146,7 +4146,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Cuéntenos cómo es su finca",
       "body": "Cultivo, método de riego, tipo de suelo, volumen de agua que consume hoy. Volvemos con la combinación de tecnologías correspondiente, las dosis y los ensayos ya realizados en situaciones comparables.\n\nUna primera conversación no compromete a nada.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
     }
   },
   "gabon": {
@@ -4506,7 +4506,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "grece": {
@@ -4873,7 +4873,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Πείτε μας για το χωράφι σας",
       "body": "Καλλιέργεια, μέθοδος άρδευσης, τύπος εδάφους, όγκος νερού που χρησιμοποιείτε σήμερα. Επιστρέφουμε με τον κατάλληλο συνδυασμό τεχνολογιών, τις δόσεις και τις δοκιμές που έχουν ήδη γίνει σε παρόμοιες συνθήκες.\n\nΜια πρώτη συζήτηση δεν σας δεσμεύει σε τίποτα.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Ελβετία"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Ελβετία"
     }
   },
   "guadeloupe": {
@@ -5091,7 +5091,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "haiti": {
@@ -5445,7 +5445,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, pente, nature du sol, mode d'irrigation s'il y en a un. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les résultats déjà relevés en Haïti et dans la Caraïbe.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "jordanie": {
@@ -5789,7 +5789,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "حدّثونا عن قطعتكم",
       "body": "المحصول، وأسلوب الري، وطبيعة التربة، وحجم المياه المستهلك اليوم. نعود إليكم بتركيبة التقنيات المناسبة، والجرعات، والتجارب التي أُجريت في أوضاع مشابهة.\n\nالتواصل الأول لا يرتّب أي التزام.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   },
   "madagascar": {
@@ -6087,7 +6087,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Choisissons une parcelle pilote",
       "body": "Culture, type de sol, calendrier des pluies, accès à l’eau, coût de l’irrigation et prix de vente. À partir de ces données, nous préparons un protocole simple avec témoin, critères de réussite et budget à compléter par l’équipe locale.\n\nUne première étude n’engage pas à un déploiement.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "maroc": {
@@ -6433,7 +6433,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'irrigation, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "martinique": {
@@ -6645,7 +6645,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "oman": {
@@ -7016,7 +7016,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Tell us about your farm",
       "body": "Crop, irrigation method, soil type, the volume of water you use today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable situations.\n\nA first conversation commits you to nothing.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   },
   "perou": {
@@ -7238,7 +7238,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Hablemos de su predio",
       "body": "Cultivo, superficie, origen del agua, tipo de suelo y objetivo económico. Con esos datos podemos preparar una propuesta de ensayo y un presupuesto verificable.\n\nEl punto de partida es concreto: medir el agua utilizada por kilogramo comercializable y la rentabilidad del manejo.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "senegal": {
@@ -7593,7 +7593,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Dites-nous votre parcelle",
       "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "soudan-sud": {
@@ -7940,7 +7940,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Tell us about your plot",
       "body": "Crop, drainage, soil type and how you water today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable situations.\n\nA first conversation commits you to nothing.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   },
   "usa": {
@@ -8288,7 +8288,7 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Tell us about your field",
       "body": "Crop, irrigation method, soil type, and the water volume you apply today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable conditions.\n\nA first conversation commits you to nothing.",
-      "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   }
 };

@@ -15,7 +15,7 @@ export default {
     mention: "Septembre 2026 · Document confidentiel · À l'usage exclusif du destinataire",
     subtitle:
       "Une île tropicale qui manque d'eau : 60 % de l'eau potable perdue dans un réseau qui fuit, une sécheresse qui s'ajoute par-dessus.\nCe que l'hydro-rétention change quand chaque litre retenu au champ est un litre qui n'a pas à transiter par le réseau.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 0,
   },
 
@@ -125,6 +125,6 @@ export default {
     title: "Dites-nous votre parcelle",
     body:
       "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse",
   },
 };

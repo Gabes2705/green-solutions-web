@@ -15,7 +15,7 @@ export default {
     mention: "Septiembre de 2026 · Documento confidencial · Para uso exclusivo del destinatario",
     subtitle:
       "Granos, vid y fruta de exportación bajo una restricción hídrica creciente.\nLo que la hidro-retención cambia para una agricultura exportadora.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 4,
   },
 
@@ -225,6 +225,6 @@ export default {
     title: "Cuéntenos cómo es su lote",
     body:
       "Cultivo, método de riego, tipo de suelo y volumen de agua que aplica hoy. Volvemos con la combinación de tecnologías correspondiente, las dosis, y los ensayos ya conducidos en situaciones comparables.\n\nUna primera conversación no compromete a nada.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza",
   },
 };
