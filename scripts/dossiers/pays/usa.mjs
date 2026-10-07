@@ -15,7 +15,7 @@ export default {
     mention: "September 2026 · Confidential · For the sole use of the recipient",
     subtitle:
       "Row crops, permanent plantings and specialty produce on a shrinking water budget.\nWhat hydro-retention changes for irrigated acres.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 1,
   },
 
@@ -225,6 +225,6 @@ export default {
     title: "Tell us about your field",
     body:
       "Crop, irrigation method, soil type, and the water volume you apply today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable conditions.\n\nA first conversation commits you to nothing.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
   },
 };

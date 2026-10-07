@@ -15,7 +15,7 @@ export default {
     mention: "Septembre 2026 · Document confidentiel · À l'usage exclusif du destinataire",
     subtitle:
       "Vivrier, riz irrigué et cultures de rente sur des sols en érosion.\nCe que l'hydro-rétention change là où la pluie ruisselle au lieu d'entrer.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 0,
   },
 
@@ -225,6 +225,6 @@ export default {
     title: "Dites-nous votre parcelle",
     body:
       "Culture, pente, nature du sol, mode d'irrigation s'il y en a un. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les résultats déjà relevés en Haïti et dans la Caraïbe.\n\nUn premier échange n'engage à rien.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse",
   },
 };

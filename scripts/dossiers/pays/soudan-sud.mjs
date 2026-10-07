@@ -15,7 +15,7 @@ export default {
     mention: "September 2026 · Confidential · For the sole use of the recipient",
     subtitle:
       "Sorghum, maize, cassava and vegetables in a country of floods and dry spells.\nWhere hydro-retention helps, and where drainage must come first.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 1,
   },
 
@@ -224,6 +224,6 @@ export default {
     title: "Tell us about your plot",
     body:
       "Crop, drainage, soil type and how you water today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable situations.\n\nA first conversation commits you to nothing.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland",
   },
 };

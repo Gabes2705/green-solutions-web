@@ -15,7 +15,7 @@ export default {
     mention: "Septembre 2026 · Document confidentiel · À l'usage exclusif du destinataire",
     subtitle:
       "Riz des Hautes Terres, cultures vivrières du Grand Sud et filières de valeur exposées à des chocs climatiques très contrastés.\nCe que la rétention d’eau change quand la moyenne nationale masque les crises locales.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 0,
   },
 
@@ -171,6 +171,6 @@ export default {
     body:
       "Culture, type de sol, calendrier des pluies, accès à l’eau, coût de l’irrigation et prix de vente. À partir de ces données, nous préparons un protocole simple avec témoin, critères de réussite et budget à compléter par l’équipe locale.\n\nUne première étude n’engage pas à un déploiement.",
     contact:
-      "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse",
+      "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse",
   },
 };

@@ -15,7 +15,7 @@ export default {
     mention: "Rujan 2026. · Povjerljiv dokument · Isključivo za primatelja",
     subtitle:
       "Ratarstvo, masline i mandarine u zemlji bogatoj vodom, a bez navodnjavanja.\nŠto hidroretencija mijenja ondje gdje infrastrukture nema.",
-    footer: "Green Solutions · contact@evergreen-ecosorb.com",
+    footer: "Green Solutions · contact@green-solutions-group.com",
     photo: 0,
   },
 
@@ -225,6 +225,6 @@ export default {
     title: "Recite nam kakvo je vaše gospodarstvo",
     body:
       "Kultura, način navodnjavanja, tip tla, količina vode koju danas trošite. Vraćamo se s odgovarajućom kombinacijom tehnologija, s dozama i s pokusima već provedenima u usporedivim situacijama.\n\nPrvi razgovor ni na što ne obvezuje.",
-    contact: "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Švicarska",
+    contact: "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Švicarska",
   },
 };

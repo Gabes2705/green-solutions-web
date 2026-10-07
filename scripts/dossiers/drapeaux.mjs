@@ -11,7 +11,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const UA = "GreenSolutionsDossiers/1.0 (contact@evergreen-ecosorb.com)";
+const UA = "GreenSolutionsDossiers/1.0 (contact@green-solutions-group.com)";
 const API = "https://commons.wikimedia.org/w/api.php";
 const out = join(dirname(fileURLToPath(import.meta.url)), "drapeaux");
 

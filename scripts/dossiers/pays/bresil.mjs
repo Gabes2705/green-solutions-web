@@ -14,7 +14,7 @@ export default {
     "marques": "EVERGREEN® · ECOSORB® · ECOFERT®",
     "mention": "Setembro de 2026 · Proposta de cooperação agrícola",
     "subtitle": "Eficiência da água em uma potência agrícola.\nFruticultura irrigada e implantação de culturas perenes.",
-    "footer": "Green Solutions · contact@evergreen-ecosorb.com",
+    "footer": "Green Solutions · contact@green-solutions-group.com",
     "photo": 0
   },
   "chiffres": {
@@ -173,6 +173,6 @@ export default {
     "photo": 0,
     "title": "Um projeto adequado à sua propriedade",
     "body": "Informe a cultura, o tipo de solo, o sistema de irrigação e o objetivo do projeto. A Green Solutions propõe um protocolo comparativo e os indicadores que orientarão a decisão.\n\nUma oportunidade concreta: avaliar a retenção de água onde cada metro cúbico e cada muda têm valor.",
-    "contact": "contact@evergreen-ecosorb.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
   }
 };

@@ -50,7 +50,7 @@ export default async function MentionsLegales({ params }: Params) {
         <br />
         {t.phone} : +33 6 44 83 55 09
         <br />
-        {t.email} : <a href="mailto:contact@evergreen-ecosorb.com">contact@evergreen-ecosorb.com</a>
+        {t.email} : <a href="mailto:contact@green-solutions-group.com">contact@green-solutions-group.com</a>
       </p>
 
       <h2>{t.director}</h2>

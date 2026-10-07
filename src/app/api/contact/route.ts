@@ -3,8 +3,8 @@ import { Resend } from "resend";
 
 export const runtime = "nodejs";
 
-const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "contact@evergreen-ecosorb.com";
-const FROM_EMAIL = "contact@evergreen-ecosorb.com";
+const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "contact@green-solutions-group.com";
+const FROM_EMAIL = "contact@green-solutions-group.com";
 
 type Payload = {
   type?: "contact" | "partner";
@@ -83,7 +83,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error:
-          "L'envoi n'est pas encore configuré côté serveur. Contactez-nous directement à contact@evergreen-ecosorb.com.",
+          "L'envoi n'est pas encore configuré côté serveur. Contactez-nous directement à contact@green-solutions-group.com.",
       },
       { status: 503 }
     );
