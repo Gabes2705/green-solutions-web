@@ -403,6 +403,16 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
               {dossier.langue === "pt" ? "Baixar o estudo (PDF)" : dossier.langue === "es" ? "Descargar el dossier (PDF)" : "Télécharger le dossier (PDF)"}
             </a>
           )}
+          {dossier.slug === "egypte" && (
+            <div lang="fr" dir="ltr">
+              <a
+                className="dossier-pdf btn-3d btn-3d-light"
+                href="/documents/countries/egypte-fr.pdf"
+              >
+                Dossier technique en français (18 pages)
+              </a>
+            </div>
+          )}
         </div>
       </header>
 
