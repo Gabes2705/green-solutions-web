@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T00:00:00Z",
+  "title": "Design System: Green Solutions, home cover",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Mineral Paper", "canonical": "#f3f6f1", "tonalRamp": ["#1d2620", "#37423a", "#5a665d", "#8a958c", "#b4beb5", "#d0d8d1", "#e4eae4", "#f3f6f1"] },
+      "ink": { "role": "neutral", "displayName": "Bottle-Green Ink", "canonical": "#0b2a1f", "tonalRamp": ["#0b2a1f", "#1a3e30", "#2c5442", "#476b5a", "#6a8a79", "#93ad9f", "#bfd0c6", "#e3ece6"] },
+      "action": { "role": "primary", "displayName": "Action Green", "canonical": "#0e6f3f", "tonalRamp": ["#0a4a2b", "#0a5a33", "#0e6f3f", "#2a8656", "#4f9f76", "#7fba9a", "#b0d6c0", "#e0f0e7"] },
+      "action-hover": { "role": "primary", "displayName": "Action Green Pressed", "canonical": "#0a5a33", "tonalRamp": ["#06301c", "#08442a", "#0a5a33", "#1f7249", "#438c68", "#74ab90", "#a9cbb8", "#dcebe2"] },
+      "field-a": { "role": "secondary", "displayName": "Field Green, lit", "canonical": "#17804e", "tonalRamp": ["#0d4a2d", "#11633c", "#17804e", "#3a9769", "#5fad87", "#8cc6a7", "#b9ddc9", "#e3f2ea"] },
+      "field-b": { "role": "secondary", "displayName": "Field Green, deep", "canonical": "#0a4a2e", "tonalRamp": ["#062b1a", "#083a24", "#0a4a2e", "#2a6247", "#4d7c63", "#7a9d89", "#a9c0b2", "#d9e5de"] },
+      "water": { "role": "tertiary", "displayName": "Water Teal", "canonical": "#9be8df", "tonalRamp": ["#2a6f69", "#3d8f88", "#59b0a8", "#7ccdc5", "#9be8df", "#b5efe8", "#d0f5f1", "#e9fbf9"] },
+      "water-ink": { "role": "tertiary", "displayName": "Water Ink", "canonical": "#167c86", "tonalRamp": ["#0b3f45", "#0f5760", "#167c86", "#3a959e", "#62adb5", "#8dc6cb", "#b7dde0", "#e0f1f2"] },
+      "plate-green": { "role": "neutral", "displayName": "Plate Green", "canonical": "rgba(8, 58, 36, 0.8)", "tonalRamp": [] },
+      "film-black": { "role": "neutral", "displayName": "Film Black", "canonical": "#06150e", "tonalRamp": [] }
+    },
+    "typographyMeta": {
+      "claim": { "displayName": "Claim", "purpose": "Three-line cover headline, sized to the room and the longest line (Bricolage Grotesque 700)." },
+      "claim-ar": { "displayName": "Arabic Claim", "purpose": "Arabic headline in IBM Plex Sans Arabic 700, no tracking." },
+      "figure": { "displayName": "Figure", "purpose": "Proof figures in the title block." },
+      "button": { "displayName": "Button", "purpose": "Quote and calculator link." },
+      "body": { "displayName": "Body", "purpose": "Proof descriptions." },
+      "label": { "displayName": "Label", "purpose": "Door tabs, nav and partner links." },
+      "dimension": { "displayName": "Dimension", "purpose": "The figure on the claim's dimension line." }
+    },
+    "shadows": [
+      { "name": "menu-ambient", "value": "0 14px 30px -14px rgba(11, 42, 31, 0.4)", "purpose": "Language menu popup only; every other surface is flat." }
+    ],
+    "motion": [
+      { "name": "ease-expo-out", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Roots, stems, leaves, swell, nav underline, burger." },
+      { "name": "grow-root", "value": "1100ms", "purpose": "Root drawing; stems 760ms, leaves 650ms." },
+      { "name": "water-cycle", "value": "9000ms linear, 3 iterations", "purpose": "Drop, ripple arc, flow dashes and light pulse, then still." },
+      { "name": "state-fast", "value": "0.2s ease", "purpose": "Button, door and film button hover; part dimming 0.25s." },
+      { "name": "reduced-motion", "value": "all drawing animation, nav transition, underline and burger transform removed", "purpose": "prefers-reduced-motion: reduce." }
+    ],
+    "breakpoints": [
+      { "name": "short-or-narrow-desktop", "value": "min-width 1101px and (max-height 899px or max-width 1399px)" },
+      { "name": "burger", "value": "max-width 1240px" },
+      { "name": "stacked", "value": "max-width 1100px" },
+      { "name": "phone", "value": "max-width 700px" },
+      { "name": "small-phone", "value": "max-width 420px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single solid action: ask for a quote.",
+      "html": "<a class=\"ds-primary\" href=\"#\">Faire un devis</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border:1.5px solid #0e6f3f;border-radius:2px;background:#0e6f3f;color:#fff;font:700 16px/1.15 Manrope,system-ui,sans-serif;text-decoration:none;transition:background-color .2s ease,border-color .2s ease}.ds-primary:hover{background:#0a5a33;border-color:#0a5a33}.ds-primary:focus-visible{outline:3px solid #0e6f3f;outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Hairline ink outline for the calculator link; fills on hover.",
+      "html": "<a class=\"ds-secondary\" href=\"#\">Impact par hectare</a>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border:1.5px solid #0b2a1f;border-radius:2px;background:transparent;color:#0b2a1f;font:700 16px/1.15 Manrope,system-ui,sans-serif;text-decoration:none;transition:background-color .2s ease,color .2s ease}.ds-secondary:hover{background:#0b2a1f;color:#fff}.ds-secondary:focus-visible{outline:3px solid #0e6f3f;outline-offset:3px}"
+    },
+    {
+      "name": "Nav Quote",
+      "kind": "nav",
+      "refersTo": "nav-cta",
+      "description": "Compact hairline quote button in the 72px nav.",
+      "html": "<a class=\"ds-cta\" href=\"#\">Devis</a>",
+      "css": ".ds-cta{display:inline-flex;align-items:center;height:42px;padding:0 18px;border:1.5px solid #0b2a1f;border-radius:2px;color:#0b2a1f;font:700 14px Manrope,system-ui,sans-serif;text-decoration:none;transition:background-color .2s ease,color .2s ease}.ds-cta:hover{background:#0b2a1f;color:#fff}.ds-cta:focus-visible{outline:3px solid #0e6f3f;outline-offset:3px}"
+    },
+    {
+      "name": "Door Tab",
+      "kind": "custom",
+      "refersTo": "door-tab",
+      "description": "One of five entry points to the technologies; inverts to white on hover.",
+      "html": "<div style=\"background:#0a4a2e;padding:16px\"><a class=\"ds-door\" href=\"#\"><svg class=\"ds-door-mark\" viewBox=\"0 0 22 22\"><path d=\"M11 3c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10z\"/></svg><span class=\"ds-door-label\">Rétention d'eau</span></a></div>",
+      "css": ".ds-door{display:flex;align-items:center;gap:10px;min-height:56px;padding:0 16px;border:1.5px solid rgba(255,255,255,.78);border-radius:2px;background:rgba(8,58,36,.78);color:#fff;text-decoration:none;transition:background-color .2s ease,color .2s ease}.ds-door:hover,.ds-door:focus-visible{background:#fff;color:#0b2a1f}.ds-door:focus-visible{outline:3px solid #fff;outline-offset:3px}.ds-door-mark{flex:none;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.ds-door-label{font:700 15px/1.15 Manrope,system-ui,sans-serif}"
+    },
+    {
+      "name": "Title Block",
+      "kind": "card",
+      "refersTo": "title-block",
+      "description": "Ruled cartouche carrying the proof figures, in white hairlines over the green field.",
+      "html": "<div style=\"background:#0a4a2e;padding:16px\"><div class=\"ds-block\"><dl class=\"ds-proof\"><div class=\"ds-row\"><dt>-40 à -70 %</dt><dd>besoin en eau d'irrigation</dd></div><div class=\"ds-row\"><dt>15</dt><dd>essais pilotes en 2026</dd></div></dl></div></div>",
+      "css": ".ds-block{width:min(450px,100%);border:1.5px solid rgba(255,255,255,.78);background:rgba(8,58,36,.8);color:#fff}.ds-proof{margin:0}.ds-row{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:14px;align-items:baseline;padding:9px 14px;border-top:1px solid rgba(255,255,255,.4)}.ds-row:first-child{border-top:0}.ds-row dt{margin:0;font:700 17px/1.2 'Bricolage Grotesque',Manrope,system-ui,sans-serif;font-variant-numeric:tabular-nums}.ds-row dd{margin:0;font:400 13.5px/1.35 Manrope,system-ui,sans-serif;color:rgba(255,255,255,.94)}"
+    },
+    {
+      "name": "Claim with Dimension Line",
+      "kind": "custom",
+      "refersTo": "claim",
+      "description": "The headline's second line is dimensioned with the proof figure in Action Green.",
+      "html": "<h1 class=\"ds-claim\"><span class=\"ds-line\">Plus de récolte,</span><span class=\"ds-line ds-dimline\">moins d'eau<span class=\"ds-dim\">-40 à -70 %</span></span></h1>",
+      "css": ".ds-claim{margin:0;font:700 4.5rem/1 'Bricolage Grotesque',Manrope,system-ui,sans-serif;letter-spacing:-.03em;color:#0b2a1f}.ds-line{display:block}.ds-dimline{position:relative;width:fit-content;padding-bottom:.52em}.ds-dim{position:absolute;inset-inline:0;bottom:.08em;display:flex;align-items:center;gap:.5em;font-size:max(.27em,12px);font-weight:600;letter-spacing:0;line-height:1;color:#0e6f3f;white-space:nowrap}.ds-dim::before,.ds-dim::after{content:'';flex:1;height:.95em;background:linear-gradient(currentColor,currentColor) 0 50%/100% 1.5px no-repeat}.ds-dim::before{border-inline-start:1.5px solid currentColor}.ds-dim::after{border-inline-end:1.5px solid currentColor}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Soil Plate",
+    "overview": "The cover is one engineering plate: mineral-white paper above a ground line, a committed field of living green below it, and a soil section drawn in white hairlines that shows irrigation water caught by gel at the roots. The mechanism is meant to be understood before any copy is read. The type is deep bottle-green ink on paper; every control is a square-cornered hairline box, like a part on a drawing sheet.\n\nDensity is calm. The first viewport carries one claim, two actions, one drawing, one ruled title block and five door tabs. There are no shadows on surfaces, no gradients except the field, and no decorative colour: teal appears only where water flows.",
+    "keyCharacteristics": [
+      "Two grounds: paper above the ground line, a green field below it. White hairlines live only on the green; ink lines only on the paper.",
+      "Square controls (2px corner), 1.5px strokes, solid fill only for the single quote action.",
+      "The claim is dimensioned like a part: its second line carries a dimension line and the proof figure.",
+      "Motion tells the mechanism once (drop, ripple, flow, swelling gel, pulse) and then stays still.",
+      "Right-to-left is solved by mirroring the whole drawing; text inside it is counter-mirrored."
+    ],
+    "rules": [
+      { "name": "The Water Rule", "body": "Teal is for moving water and nothing else. It is never a button, a heading or a decoration.", "section": "colors" },
+      { "name": "The Two Grounds Rule", "body": "Ink on paper, white on green. A control crossing the ground line keeps the ground it sits on; it never mixes ink and white.", "section": "colors" },
+      { "name": "The One Solid Rule", "body": "Only the quote button is a solid colour fill at rest. Every other control is a hairline outline that fills on hover.", "section": "colors" },
+      { "name": "The Fit Rule", "body": "The claim is sized to its room, never to a fixed step. Do not hand-set a headline size per language or per breakpoint.", "section": "typography" },
+      { "name": "The Own Face Rule", "body": "Arabic gets its own display face; Chinese uses the visitor's system sans. Never let Bricolage fall back for Arabic glyphs.", "section": "typography" },
+      { "name": "The Flat Plate Rule", "body": "Surfaces carry no shadow at rest; separation is a 1.5px line or a change of ground.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do set ink on paper and white on green, with Action Green for the single solid action.",
+      "Do build new controls as 2px-cornered, 1.5px-hairline boxes that fill on hover.",
+      "Do keep teal for flowing water only.",
+      "Do use logical properties (`inset-inline`, `padding-inline`) and counter-mirror any text placed inside the mirrored drawing.",
+      "Do draw new depth with a line or a ground change, and keep an outline of 3px with 3px offset for keyboard focus.",
+      "Do add any new cover wording in all fourteen languages and size it with the fit rule."
+    ],
+    "donts": [
+      "Don't return to the incumbent cover idiom: blurred video ground, glass droplet, rotating 3D badge, glossy buttons, floating film widget.",
+      "Don't use a stock field photo hero or a dark neon dashboard look.",
+      "Don't round controls beyond 2px, except the photo circle.",
+      "Don't put shadows on resting surfaces, or fill soil with solid colour.",
+      "Don't colour a word of the claim to emphasise it; dimension it instead.",
+      "Don't loop the water cycle past three runs, or animate under reduced motion."
+    ]
+  }
+}
