@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope, Bricolage_Grotesque } from "next/font/google";
+import { Fraunces, Manrope, Bricolage_Grotesque, IBM_Plex_Sans_Arabic } from "next/font/google";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import "../globals.css";
 import { SITE_URL, languageAlternates } from "@/lib/site";
@@ -21,6 +21,15 @@ const bricolage = Bricolage_Grotesque({
   variable: "--font-claim",
   subsets: ["latin"],
   weight: ["600", "700", "800"],
+});
+
+/* The cover's headline in Arabic: Bricolage has no Arabic letters. Not
+   preloaded, so the other languages never fetch it. */
+const plexArabic = IBM_Plex_Sans_Arabic({
+  variable: "--font-claim-ar",
+  subsets: ["arabic"],
+  weight: ["700"],
+  preload: false,
 });
 
 export const viewport = {
@@ -199,7 +208,7 @@ export default async function LangLayout({
     <html
       lang={lang}
       dir={isRtl ? "rtl" : "ltr"}
-      className={`${fraunces.variable} ${manrope.variable} ${bricolage.variable}`}
+      className={`${fraunces.variable} ${manrope.variable} ${bricolage.variable} ${plexArabic.variable}`}
       suppressHydrationWarning
     >
       <head>

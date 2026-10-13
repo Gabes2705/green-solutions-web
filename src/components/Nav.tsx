@@ -4,9 +4,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "@/lib/LanguageContext";
+import styles from "./Hero.module.css";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { c } = useLanguage();
 
   const LINKS = [
@@ -19,6 +21,15 @@ export default function Nav() {
     { href: "#tests-et-rapports", label: c.nav.fieldTests },
     { href: "/partenaires", label: c.nav.partners },
   ];
+
+  /* The bar is bare over the white of the cover and takes a ground of its own
+     as soon as the page moves, so it stays readable over the dark sections. */
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -49,8 +60,8 @@ export default function Nav() {
   }, [open]);
 
   return (
-    <nav className="topnav">
-      <div className="brand-mark">
+    <nav className={`${styles.nav}${scrolled || open ? ` ${styles.navSolid}` : ""}`}>
+      <div className={styles.brand}>
         <Image
           src="/images/logo-icon-small.png"
           alt="Green Solutions"
@@ -63,7 +74,7 @@ export default function Nav() {
         </span>
       </div>
 
-      <div className="nav-links">
+      <div className={styles.links}>
         {LINKS.map((l) => (
           <a href={l.href} key={l.href}>
             {l.label}
@@ -71,29 +82,28 @@ export default function Nav() {
         ))}
       </div>
 
-      <div className="nav-right">
+      <div className={styles.right}>
         <LanguageSwitcher />
-        <a href="#contact" className="nav-cta btn-3d btn-3d-light">
+        <a href="#contact" className={styles.cta}>
           {c.nav.contact}
         </a>
+        <button
+          type="button"
+          className={styles.burger}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
+          aria-label={open ? c.nav.closeMenu : c.nav.openMenu}
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
-
-      <button
-        type="button"
-        className="nav-burger btn-3d btn-3d-dark"
-        aria-expanded={open}
-        aria-controls="mobile-menu"
-        aria-label={open ? c.nav.closeMenu : c.nav.openMenu}
-        onClick={() => setOpen((v) => !v)}
-      >
-        <span />
-        <span />
-        <span />
-      </button>
 
       <div
         id="mobile-menu"
-        className={`mobile-menu${open ? " open" : ""}`}
+        className={`${styles.menu}${open ? ` ${styles.menuOpen}` : ""}`}
         /* Only a link closes the panel. Closing on any click inside it meant
            the language switcher shut the whole menu the moment it was
            tapped, so the language could not be changed from a phone at all:
@@ -108,7 +118,7 @@ export default function Nav() {
           </a>
         ))}
         <LanguageSwitcher />
-        <a href="#contact" className="nav-cta btn-3d btn-3d-light">
+        <a href="#contact" className={styles.cta}>
           {c.nav.contact}
         </a>
       </div>
