@@ -59,6 +59,17 @@ function weigh(text: string) {
   return w;
 }
 
+/* A figure like "-40 إلى -70 %" mixes words and numbers. On a right-to-left
+   line the sign and the percent mark of each number drift to the wrong side,
+   so every number is set apart as its own left-to-right run. */
+function Figure({ text }: { text: string }) {
+  return (
+    <span>
+      {text.split(/([+\-−]?\d[\d.,]*(?:\s?%)?)/).map((part, i) => (i % 2 ? <bdi key={i}>{part}</bdi> : part))}
+    </span>
+  );
+}
+
 export default function Hero() {
   const { c, language } = useLanguage();
   const [part, setPart] = useState<string | null>(null);
@@ -84,7 +95,7 @@ export default function Hero() {
             {slogan2}
             {saving && (
               <span className={styles.dim} aria-hidden="true">
-                {saving}
+                <Figure text={saving} />
               </span>
             )}
           </span>
@@ -122,7 +133,9 @@ export default function Hero() {
           <dl className={styles.proof}>
             {c.proofBar.map((p) => (
               <div className={styles.row} key={p.label}>
-                <dt>{p.figure}</dt>
+                <dt>
+                  <Figure text={p.figure} />
+                </dt>
                 <dd>{p.label}</dd>
               </div>
             ))}

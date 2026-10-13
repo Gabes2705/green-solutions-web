@@ -97,7 +97,7 @@ export default function HeroPlate() {
         {/* the soil runs past both sides of the artboard (the page can be wider than the drawing) */}
         <rect x="-1200" y={GROUND} width={ART_W + 2400} height="140" fill="url(#hatch-a)" />
         <rect x="-1200" y="680" width={ART_W + 2400} height="160" fill="url(#hatch-b)" />
-        <rect x="-1200" y="840" width={ART_W + 2400} height="160" fill="url(#hatch-c)" />
+        <rect x="-1200" y="840" width={ART_W + 2400} height="460" fill="url(#hatch-c)" />
         <path className={styles.horizon} d="M-1200 680H0C200 672 420 690 640 681S1040 671 1240 682 1500 691 1600 681H2800" />
         <path className={styles.horizon} d="M-1200 840H0C230 832 400 850 700 841S1100 831 1300 843 1520 850 1600 841H2800" />
         <path className={styles.ticks} d={GROUND_TICKS} />
