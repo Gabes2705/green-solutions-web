@@ -20,6 +20,12 @@
         ],
         "createdAt": "2026-09-26T11:08:30.570Z",
         "reason": "3px border-left on .legal-lede is the same lede/callout text accent pattern as .dossier-note (see DossierPage.css ignore), not a decorative card border"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "times new roman",
+        "createdAt": "2026-10-13T14:34:48.479Z",
+        "reason": "Agent: .figure-serif in globals.css is an older section-title accent outside the cover; DESIGN.md documents the cover only"
       }
     ]
   }
