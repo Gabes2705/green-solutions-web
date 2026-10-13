@@ -121,6 +121,7 @@ export default function Hero() {
               src="/images/hero-plant.jpg"
               alt=""
               fill
+              loading="eager"
               sizes="(max-width: 700px) 1px, 16vw"
               className={styles.detailImg}
             />

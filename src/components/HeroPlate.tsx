@@ -187,9 +187,10 @@ export default function HeroPlate() {
       </g>
 
       <g data-p="eau-restructuree">
-        <path className={styles.wire} d="M990 100V150M1560 100V150" />
-        <rect className={styles.tube} x="975" y="150" width="600" height="9" rx="4.5" />
-        <path className={styles.emitter} d={`M${EMITTER_X - 10} 159h20l-4 15h-12z`} />
+        {/* the wires start low enough to clear the nav's "contact" button on a short laptop screen */}
+        <path className={styles.wire} d="M990 130V180M1560 130V180" />
+        <rect className={styles.tube} x="975" y="180" width="600" height="9" rx="4.5" />
+        <path className={styles.emitter} d={`M${EMITTER_X - 10} 189h20l-4 15h-12z`} />
         <g transform={`translate(${EMITTER_X} ${DROP_TOP})`}>
           <g className={styles.drop} style={css({ "--fall": `${DROP_FALL}px` })}>
             <path d="M0 -17C7 -8 11 -1 11 5a11 11 0 1 1-22 0C-11 -1 -7 -8 0 -17Z" />

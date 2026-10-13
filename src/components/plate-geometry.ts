@@ -12,7 +12,7 @@ export const GROUND = 540;
 export const EMITTER_X = 1156;
 
 /** Where the drop hangs, and how far it falls to reach the ground. */
-export const DROP_TOP = 206;
+export const DROP_TOP = 236;
 export const DROP_FALL = GROUND - 16 - DROP_TOP;
 
 type Pt = [number, number];
