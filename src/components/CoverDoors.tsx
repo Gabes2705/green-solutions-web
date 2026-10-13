@@ -2,7 +2,9 @@
 
 import type { ReactNode } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
+import { COVER_TEXT } from "@/lib/cover-i18n";
 import { doorsFor } from "@/lib/doors";
+import styles from "./Hero.module.css";
 
 /* One mark per door, drawn as a stroke so the five read as a set. Keyed by
    door id rather than by position: the labels are translated, the ids are not. */
@@ -36,36 +38,31 @@ const MARKS: Record<string, ReactNode> = {
 };
 
 /**
- * The row of five buttons along the foot of the cover.
+ * The row of five entry points along the foot of the cover.
  *
- * The row sits in the band of soil below the water drop, which reaches 81% of
- * the artwork's height - anything spanning higher than that cut through it.
- *
- * The numbers that used to precede each label are gone: these five are not a
- * sequence, so numbering them stated something untrue and took room from the
- * words that carry the meaning.
+ * They are not a sequence, so they carry no numbers. Pointing at one lights
+ * the part of the drawing that stands for that technology.
  */
-export default function CoverDoors() {
+export default function CoverDoors({ onPart }: { onPart: (id: string | null) => void }) {
   const { language } = useLanguage();
   const doors = doorsFor(language);
 
   return (
-    <nav className="cover-doors" aria-label="Nos domaines">
+    <nav className={styles.doors} aria-label={COVER_TEXT[language].doors}>
       {doors.map((d) => (
-        <a key={d.id} href={`/${language}/technologies/${d.id}`}>
-          <svg
-            className="cover-doors-mark"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
+        <a
+          key={d.id}
+          href={`/${language}/technologies/${d.id}`}
+          className={styles.door}
+          onMouseEnter={() => onPart(d.id)}
+          onMouseLeave={() => onPart(null)}
+          onFocus={() => onPart(d.id)}
+          onBlur={() => onPart(null)}
+        >
+          <svg className={styles.doorMark} viewBox="0 0 24 24" aria-hidden="true">
             {MARKS[d.id]}
           </svg>
-          <span className="cover-doors-label">{d.label}</span>
+          <span className={styles.doorLabel}>{d.label}</span>
         </a>
       ))}
     </nav>
