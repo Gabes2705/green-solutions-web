@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useLanguage } from "@/lib/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Reveal from "@/components/Reveal";
+import EvergreenTomate from "@/components/EvergreenTomate";
 import WaterVitalAlgues from "@/components/WaterVitalAlgues";
 import { algues } from "@/lib/water-vital-algues-i18n";
 
@@ -238,6 +239,8 @@ export default function TechnologyPageClient() {
             </Reveal>
           );
         })}
+
+        {id === "retention-eau" && <EvergreenTomate langue={language} />}
 
         {id === "eau-restructuree" && <WaterVitalAlgues langue={language} />}
 
