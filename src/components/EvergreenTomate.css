@@ -58,19 +58,20 @@
   hyphens: auto;
 }
 
-/* La phrase de résultat : une ligne à part, au filet vert, qui suit le sens de lecture. */
+/* La phrase de résultat : un encadré centré, au fond vert très pâle et au filet
+   fin tout autour (pas de barre sur un seul côté). */
 .et-tomate .et-resultat {
   max-width: 44rem;
   margin: 2.4rem auto 0;
   padding: 1.1em 1.5em;
-  border-inline-start: 4px solid var(--leaf-strong);
-  border-start-end-radius: 14px;
-  border-end-end-radius: 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
   background: rgba(75, 139, 88, 0.08);
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(1.2rem, 2.4vw, 1.55rem);
   line-height: 1.4;
   color: var(--leaf-deep);
-  text-align: start;
+  text-align: center;
+  text-wrap: balance;
 }
