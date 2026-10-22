@@ -19,7 +19,6 @@ const PARTNERS: Partner[] = [
   { slug: "ziha-fresh", name: "Zina Fresh", url: "https://zinafresh.com/" },
   { slug: "eterna", name: "Eterna" },
   { slug: "ems-services", name: "EMS Services" },
-  { slug: "cehpape", name: "CEHPAPE", url: "https://www.helloasso.com/associations/centre-haitien-de-la-promotion-de-l-agriculture-et-la-protection-de-l-environnement-cehpape" },
   { slug: "university-florida-ifas", name: "University of Florida IFAS", url: "https://ifas.ufl.edu" },
   { slug: "saic-industries", name: "SAIC Industries", url: "https://saicindustries.cm/" },
   { slug: "oregon-state-university", name: "Oregon State University", url: "https://oregonstate.edu" },

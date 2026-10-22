@@ -19,7 +19,6 @@ MAPPING = [
     ("ziha-fresh", "10_ziha_fresh.png", "Ziha Fresh"),
     ("eterna", "11_eterna.png", "Eterna"),
     ("ems-services", "12_ems_services.png", "EMS Services"),
-    ("cehpape", "13_cehpape.png", "CEHPAPE"),
     ("university-florida-ifas", "14_university_florida_ifas.png", "University of Florida IFAS"),
     ("saic-industries", "15_saic_industries.png", "SAIC Industries"),
     ("oregon-state-university", "16_oregon_state_university.png", "Oregon State University"),
