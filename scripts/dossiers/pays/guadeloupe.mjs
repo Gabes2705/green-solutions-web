@@ -32,6 +32,24 @@ export default {
       "La Guadeloupe cumule deux crises de l'eau distinctes : une sécheresse climatique qui s'aggrave, et un réseau de distribution vieillissant qui perd plus de la moitié de l'eau potable produite avant qu'elle n'atteigne un robinet. Les autorités locales ont dû imposer des tours d'eau — des coupures tournantes — dès juillet 2026.",
   },
 
+  usages: {
+    kicker: "L'EAU EN CHIFFRES",
+    title: "Sur 100 litres produits, 60 se perdent dans le réseau",
+    type: "bar",
+    data: [{ name: "Part de l'eau potable produite (%)", labels: ["Pertes", "Volume restant"], values: [60, 40] }],
+    opts: { barDir: "bar", showLegend: false, showValue: true, valAxisMinVal: 0, valAxisMaxVal: 100 },
+    reading: { head: "Lecture", body: "Le volume restant est le complément arithmétique des 60 % de pertes annoncées dans le dossier. Il ne mesure pas la part effectivement consommée par l'agriculture." },
+  },
+
+  productions: {
+    kicker: "PLUIES DE JUIN 2026",
+    title: "Grande-Terre : un quart des pluies habituelles",
+    type: "bar",
+    data: [{ name: "Pluie relative à la normale (%)", labels: ["Grande-Terre", "Normale"], values: [25, 100] }],
+    opts: { barDir: "bar", showLegend: false, showValue: true, valAxisMinVal: 0, valAxisMaxVal: 100 },
+    reading: { head: "Lecture", body: "25 % est le complément du déficit de 75 % indiqué dans le dossier pour la Grande-Terre en juin 2026. Ce chiffre ne représente pas toute la Guadeloupe." },
+  },
+
   contrainte: {
     kicker: "LA CONTRAINTE",
     title: "Climat tropical, mais l'eau ne suit plus",
@@ -93,6 +111,12 @@ export default {
     ],
     note:
       "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Ce qui change d'un terrain à l'autre, c'est le volume de terre effectivement exploré par les racines.",
+  },
+
+  regions: {
+    kicker: "SUR LE TERRAIN",
+    title: "Une réponse à adapter à chaque parcelle",
+    items: [{ head: "Essai local", photo: 3, lines: ["Observer le sol, la culture et l'accès à l'eau avant de définir le protocole.", "Comparer une parcelle traitée à une parcelle témoin sur un cycle complet."] }],
   },
 
   risques: {

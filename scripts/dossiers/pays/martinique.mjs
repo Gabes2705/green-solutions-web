@@ -32,6 +32,24 @@ export default {
       "La Martinique n'a quasiment pas de marge de manœuvre hydraulique : sans grand réservoir, l'essentiel de l'eau consommée vient directement des rivières, dont le débit dépend de la pluie de la semaine. En 2026, la préfecture a placé l'île en alerte sécheresse sur l'ensemble du territoire et engagé une procédure de calamité agricole.",
   },
 
+  usages: {
+    kicker: "L'EAU EN CHIFFRES",
+    title: "Une dépendance marquée aux rivières",
+    type: "bar",
+    data: [{ name: "Part de l'eau consommée (%)", labels: ["Rivières", "Autres ressources"], values: [94, 6] }],
+    opts: { barDir: "bar", showLegend: false, showValue: true, valAxisMinVal: 0, valAxisMaxVal: 100 },
+    reading: { head: "Lecture", body: "Répartition arithmétique du chiffre de 94 % présenté dans le dossier. Les 6 % restants regroupent les autres ressources sans détailler leur origine." },
+  },
+
+  productions: {
+    kicker: "PLUIES DE JUIN 2026",
+    title: "Des cumuls très inférieurs à la normale",
+    type: "bar",
+    data: [{ name: "Part de la normale saisonnière (%)", labels: ["Borne basse", "Borne haute", "Normale"], values: [20, 60, 100] }],
+    opts: { barDir: "bar", showLegend: false, showValue: true, valAxisMinVal: 0, valAxisMaxVal: 100 },
+    reading: { head: "Lecture", body: "Le dossier indique une fourchette de 20 à 60 % des normales en juin 2026. Les deux bornes représentent cette fourchette, pas deux stations de mesure." },
+  },
+
   contrainte: {
     kicker: "LA CONTRAINTE",
     title: "Pas de réserve : l'eau du jour dépend de la pluie du jour",

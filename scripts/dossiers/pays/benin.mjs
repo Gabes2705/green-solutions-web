@@ -32,6 +32,15 @@ export default {
       "L'agriculture reste le premier employeur du pays. Les cultures vivrières (manioc, igname, maïs, riz) progressent, mais surtout parce que la surface cultivée augmente : les rendements, eux, reculent globalement. Les cultures de rente — coton, anacarde, ananas, palmier à huile — sont en plein développement et concentrent l'essentiel des recettes d'exportation.",
   },
 
+  productions: {
+    kicker: "PRODUCTIONS AGRICOLES",
+    title: "Coton et soja, deux volumes proches",
+    type: "bar",
+    data: [{ name: "Production 2024–2025 (milliers de tonnes)", labels: ["Coton produit", "Soja attendu"], values: [637, 652] }],
+    opts: { barDir: "bar", showLegend: false, showValue: true, valAxisMinVal: 0, valAxisMaxVal: 700 },
+    reading: { head: "Lecture", body: "Les valeurs reprennent les chiffres du dossier : 637 000 tonnes de coton produites et 652 000 tonnes de soja attendues pour la campagne 2024–2025. La seconde valeur est une prévision." },
+  },
+
   contrainte: {
     kicker: "LA CONTRAINTE",
     title: "Une seule saison des pluies au nord, des rendements qui reculent",
@@ -93,6 +102,12 @@ export default {
     ],
     note:
       "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Ce qui change d'un terrain à l'autre, c'est le volume de terre effectivement exploré par les racines.",
+  },
+
+  regions: {
+    kicker: "SUR LE TERRAIN",
+    title: "Du diagnostic à l'essai en conditions locales",
+    items: [{ head: "Parcelle pilote", photo: 3, lines: ["Choisir une culture et une zone de production avec un partenaire local.", "Mesurer la levée, l'eau apportée et la récolte face à une parcelle témoin."] }],
   },
 
   risques: {
