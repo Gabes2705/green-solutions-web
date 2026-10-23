@@ -490,12 +490,6 @@ export const ca = {
         crop: "Blat de moro i patates",
         tech: ["EVERGREEN®"],
       },
-      {
-        org: "Institut CEHPAPE",
-        place: "Haití",
-        crop: "Horticultura / plàtan mascle / arròs",
-        tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"],
-      },
       { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Gespa Phenix", tech: ["EVERGREEN®"] },
       {
         org: "Green Dream",

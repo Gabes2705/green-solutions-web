@@ -22,7 +22,6 @@ MAPPING = {
     "ken-arian": "Ken ARIAN.png",
     "ahmed-elashrry": "Ahmed ELHASRRY.png",
     "alfredo-curina": "Alfredo CURINA.png",
-    "jean-camille-bissereth": "Jean-Camille BISSEREHT.png",
     "daniel-baloche": "Daniel BALLOCHE.png",
     "yves-haddad": "Ma\u00eetre Yves HADDAD.png",
 }
