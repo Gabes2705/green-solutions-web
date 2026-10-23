@@ -6,7 +6,7 @@ import "@/components/EssaisVisuels.css";
 import { photosDe } from "@/components/EssaisVisuels";
 import VideoPousse from "@/components/VideoPousse";
 import { FILMS } from "@/lib/films";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, languageAlternates } from "@/lib/site";
 import { LANGUES_ESSAIS, enCoursTraduits, essaisTraduits, habillage } from "@/lib/essais-i18n";
 
 /**
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   return {
     title: `${h.hubTitre} | Green Solutions`,
     description,
-    alternates: { canonical: url },
+    alternates: { canonical: url, languages: languageAlternates("/essais-terrain") },
     openGraph: {
       type: "website",
       title: h.hubTitre,
