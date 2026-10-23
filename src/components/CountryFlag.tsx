@@ -214,12 +214,6 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect y="13.33" width="30" height="6.67" fill="#3A75C4" />
     </>
   ),
-  haiti: () => (
-    <>
-      <rect width="30" height="10" fill="#003DA5" />
-      <rect y="10" width="30" height="10" fill="#CE1126" />
-    </>
-  ),
   chili: () => (
     <>
       <rect x="10" width="20" height="10" fill="#FFF" />
