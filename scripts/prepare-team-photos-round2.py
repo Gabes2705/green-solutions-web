@@ -14,7 +14,6 @@ MAPPING = {
     "franck-petain": "Franck Petain.png",
     "gabriel-bonnat": "Gabriel E. Bonnat.png",
     "jean-michel-foucher": "Jean Michel Fouchet.png",
-    "jean-camille-bissereth": "Jean-Camille Bissereth.png",
     "jean-guy-ongono": "Jean-Guy Ongono.png",
     "ken-arian": "Ken Arian.png",
     "lionel-lhommet": "Lionel Lhommet.png",

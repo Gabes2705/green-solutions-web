@@ -490,12 +490,6 @@ export const ca = {
         crop: "Blat de moro i patates",
         tech: ["EVERGREEN®"],
       },
-      {
-        org: "Institut CEHPAPE",
-        place: "Haití",
-        crop: "Horticultura / plàtan mascle / arròs",
-        tech: ["ECOSORB®", "ECOFERT®", "EVERGREEN®", "NAPEMA®"],
-      },
       { org: "EUROMEDITERRANEE", place: "Portugal", crop: "Gespa Phenix", tech: ["EVERGREEN®"] },
       {
         org: "Green Dream",
@@ -703,7 +697,7 @@ export const ca = {
       { name: "Ken Arian", role: "Oceà Índic i Àfrica" },
       { name: "Ahmed Elashrry", role: "Egipte i Jordània" },
       { name: "Alfrédo Curina", role: "Itàlia · Especialista en tabac" },
-      { name: "Jean-Camille Bissereth", role: "President, CEHPAPE · Haití i el Carib" },
+      { name: "Valena RA", role: "Ambaixadora oficial de Green Solutions als EUA" },
       { name: "Daniel Baloche", role: "Estats Units" },
       { name: "Me Yves Haddad", role: "Advocat internacional" },
       { name: "David James", role: "Expert internacional en Paulownia · més de 20 anys d'experiència" },

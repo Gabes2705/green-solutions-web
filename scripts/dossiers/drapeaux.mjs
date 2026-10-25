@@ -29,7 +29,6 @@ const FICHIERS = {
   bresil: "Flag of Brazil.svg",
   perou: "Flag of Peru.svg",
   argentine: "Flag of Argentina.svg",
-  haiti: "Flag of Haiti.svg",
   espagne: "Flag of Spain.svg",
   croatie: "Flag of Croatia.svg",
   cameroun: "Flag of Cameroon.svg",

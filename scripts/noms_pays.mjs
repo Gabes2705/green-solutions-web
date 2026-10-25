@@ -32,7 +32,6 @@ const ISO = {
   gabon: "GA",
   egypte: "EG",
   jordanie: "JO",
-  haiti: "HT",
   usa: "US",
   "arabie-saoudite": "SA",
   cameroun: "CM",
