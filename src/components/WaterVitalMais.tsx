@@ -10,8 +10,9 @@ import "./WaterVitalMais.css";
  *
  * Les trois images viennent de sa fiche : la photo des racines (l'original la
  * marque « image illustrative », la mention reste dessous), la photo d'ensilage
- * et le logo, détouré du fond blanc. Le bandeau du bas de la fiche (courriel et
- * site d'un tiers) n'est pas repris : le bouton mène au formulaire de contact.
+ * et le logo, détouré du fond blanc. Le bandeau du bas de la fiche (un courriel
+ * et un site) n'est pas repris, à la demande de Gabriel : le bouton mène au
+ * formulaire de contact.
  *
  * Les pictogrammes sont tracés ici, sur une grille de 24 et d'un seul trait,
  * pour prendre la couleur du site au lieu du bleu marine de la fiche.

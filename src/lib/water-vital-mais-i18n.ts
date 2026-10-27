@@ -9,8 +9,9 @@
  *
  * Deux choix d'écriture : le produit s'écrit « Water Vital® » comme sur le reste
  * du site (le logo de la fiche l'écrit « WaterVital », en un mot) ; et les
- * adresses du bandeau du bas de la fiche (courriel et site d'un tiers) ne sont
- * pas reprises : le bouton mène au formulaire de contact du site.
+ * adresses du bandeau du bas de la fiche (un courriel et un site) ne sont pas
+ * reprises, à la demande de Gabriel : le bouton mène au formulaire de contact
+ * du site.
  *
  * En arabe, « ® » est suivi d'une marque gauche-à-droite (‎) : sans elle,
  * le signe se détache du nom et passe à sa gauche.
