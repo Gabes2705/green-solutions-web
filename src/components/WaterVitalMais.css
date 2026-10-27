@@ -1,0 +1,238 @@
+/* Bloc « Water Vital® pour le maïs ensilage », sur la page Water Vital®. Il
+   réutilise le style des pages « technologie » (.tech-section, .tech-figure,
+   .tech-btn-3d) ; ici seulement ce qui lui manque. Le vert-bleu est celui du
+   bouton .tech-teal de la page, pas le bleu marine de la fiche d'origine. */
+
+.wvm {
+  --wvm-teal: #157983;
+  --wvm-texte: #4a5a52;
+  margin-top: 4.5em;
+  padding-top: 3em;
+  border-top: 1px solid var(--hairline);
+}
+
+.wvm h2,
+.wvm h3,
+.wvm h4 {
+  /* Les mots longs (« Bewässerungsmanagement ») se coupent plutôt que de déborder. */
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.wvm h3 {
+  margin: 0 0 0.5em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  line-height: 1.25;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+/* Le logo devant le titre. */
+.wvm-marque {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin: 0 0 1.4rem;
+}
+.wvm-logo {
+  flex: none;
+  width: 76px;
+  height: auto;
+}
+.wvm .wvm-marque h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.wvm .wvm-sous-titre {
+  margin: 0.45em 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.35;
+  color: var(--wvm-teal);
+  text-align: start;
+}
+.wvm .wvm-lede {
+  max-width: 62ch;
+  margin: 0 0 1.8rem;
+  font-size: 1.15rem;
+  text-align: start;
+}
+.wvm .wvm-photo {
+  margin: 0 0 0.4rem;
+}
+@media (max-width: 640px) {
+  /* Le bandeau est très large : sur téléphone on garde la tige et ses racines. */
+  .wvm .wvm-photo img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: 78% 50%;
+  }
+  .wvm-marque {
+    gap: 1rem;
+  }
+  .wvm-logo {
+    width: 60px;
+  }
+}
+
+/* Les six pistes : pas de cartes, un filet fin au-dessus de chacune. */
+.wvm-pistes {
+  list-style: none;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0 3rem;
+}
+@media (min-width: 760px) {
+  .wvm-pistes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.wvm-piste {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  padding: 1.35rem 0;
+  border-top: 1px solid var(--hairline);
+  text-align: start;
+}
+.wvm-rond {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(160deg, #35b8c4 0%, #157983 55%, #063339 100%);
+  box-shadow: 0 6px 12px -6px rgba(2, 20, 22, 0.55);
+}
+.wvm-picto {
+  width: 28px;
+  height: 28px;
+}
+.wvm .wvm-piste h4 {
+  margin: 0.15em 0 0.3em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.wvm .wvm-piste p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--wvm-texte);
+  text-align: start;
+}
+
+/* « Comment vérifier » : un encadré teinté, le texte puis la photo d'ensilage. */
+.wvm .wvm-verif {
+  display: grid;
+  gap: 1.6rem;
+  align-items: center;
+  margin: 1.6rem 0 1.4rem;
+  padding: 1.7rem 1.6rem;
+  border: 1px solid rgba(21, 121, 131, 0.28);
+  border-radius: 14px;
+  background: rgba(21, 121, 131, 0.07);
+}
+@media (min-width: 760px) {
+  .wvm .wvm-verif {
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: 2.4rem;
+    padding: 2rem 2.2rem;
+  }
+  .wvm .wvm-verif img {
+    justify-self: end;
+  }
+}
+.wvm .wvm-verif h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.wvm-picto-titre {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  color: var(--wvm-teal);
+}
+.wvm .wvm-verif p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--wvm-texte);
+  text-align: start;
+}
+.wvm .wvm-verif img {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px -12px rgba(30, 70, 40, 0.4);
+}
+
+/* L'avertissement : un filet fin tout autour (pas de barre sur un seul côté). */
+.wvm .wvm-important {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0 0 2.8rem;
+  padding: 1.15rem 1.4rem;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+}
+.wvm-picto-alerte {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  margin-top: 0.1em;
+  color: var(--wvm-teal);
+}
+.wvm .wvm-important p {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--wvm-texte);
+  text-align: start;
+}
+.wvm .wvm-important strong {
+  color: var(--ink);
+}
+
+/* Le bouton qui mène au formulaire de contact, en fin de page d'accueil. */
+.wvm-appel {
+  display: flex;
+  justify-content: center;
+}
+.wvm .wvm-appel a {
+  justify-content: center;
+  gap: 0.85em;
+  max-width: 100%;
+  padding: 1em 2.2em;
+  font-size: 1.02rem;
+  line-height: 1.3;
+  text-align: center;
+}
+.wvm-goutte {
+  flex: none;
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 480px) {
+  /* Sur petit écran, le texte passe avant les gouttes : il tient sur deux lignes. */
+  .wvm .wvm-appel a {
+    padding-inline: 1.4em;
+  }
+  .wvm-goutte {
+    display: none;
+  }
+}

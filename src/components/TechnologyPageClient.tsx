@@ -6,7 +6,9 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Reveal from "@/components/Reveal";
 import EvergreenTomate from "@/components/EvergreenTomate";
 import WaterVitalAlgues from "@/components/WaterVitalAlgues";
+import WaterVitalMais from "@/components/WaterVitalMais";
 import { algues } from "@/lib/water-vital-algues-i18n";
+import { mais } from "@/lib/water-vital-mais-i18n";
 
 const TECH_IMAGES: Record<string, { hero: string; gallery: string[] }> = {
   "retention-eau": {
@@ -171,9 +173,14 @@ export default function TechnologyPageClient() {
         </Reveal>
 
         {id === "eau-restructuree" && (
-          <a href="#algues-golf" className="field-tests-cta wv-saut">
-            {algues(language).title} ↓
-          </a>
+          <div className="wv-sauts">
+            <a href="#mais-ensilage" className="field-tests-cta">
+              {mais(language).title} ↓
+            </a>
+            <a href="#algues-golf" className="field-tests-cta">
+              {algues(language).title} ↓
+            </a>
+          </div>
         )}
 
         {language === "fr" && id && GUIDE_FR[id] && (
@@ -241,6 +248,8 @@ export default function TechnologyPageClient() {
         })}
 
         {id === "retention-eau" && <EvergreenTomate langue={language} />}
+
+        {id === "eau-restructuree" && <WaterVitalMais langue={language} />}
 
         {id === "eau-restructuree" && <WaterVitalAlgues langue={language} />}
 
