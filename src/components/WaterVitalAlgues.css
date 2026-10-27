@@ -2,8 +2,12 @@
    page Water Vital®. Elle réutilise le style des pages « technologie »
    (.tech-section, .tech-figure) ; ici seulement ce qui leur manque. */
 
-/* Le lien du haut de page qui descend jusqu'ici. */
-.wv-saut {
+/* Les liens du haut de page qui descendent jusqu'aux deux blocs (maïs
+   ensilage, puis algues). */
+.wv-sauts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2.2em;
   margin-bottom: 1.8em;
 }
 
