@@ -34,8 +34,9 @@ function detectLanguage(header: string | null): string {
   return DEFAULT_LANGUAGE;
 }
 
-/* Les six pages de l'ancien site WordPress, servi sur evergreen-ecosorb.com
-   jusqu'au jour où ce domaine pointera ici. Google les a indexées : sans cette
+/* Les six pages de l'ancien site WordPress, qui était servi sur
+   evergreen-ecosorb.com (ce domaine renvoie maintenant ici : voir
+   next.config.ts). Google les a indexées : sans cette
    table, la détection de langue ci-dessous les enverrait sur /fr/nos-solutions
    et consorts, qui n'existent pas — chaque résultat de recherche mènerait à une
    page introuvable, et le crédit accumulé par l'ancienne adresse serait perdu.
