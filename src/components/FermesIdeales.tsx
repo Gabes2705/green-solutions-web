@@ -209,11 +209,7 @@ export default function FermesIdeales() {
               height={1000}
               sizes="(max-width: 860px) 100vw, 45vw"
               priority
-            />
-            <figcaption className="fi-legende">
-              Christian Carnavalet.
-            </figcaption>
-          </figure>
+            />          </figure>
         </div>
       </section>
 
