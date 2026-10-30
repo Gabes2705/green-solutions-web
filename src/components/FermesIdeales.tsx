@@ -232,12 +232,7 @@ export default function FermesIdeales() {
             preload="metadata"
           >
             Votre navigateur ne lit pas cette vidéo.
-          </video>
-          <p className="fi-video-legende">
-            Image de synthèse, utilisée à titre illustratif. Elle ne montre pas une prise de vue réelle sur la
-            ferme.
-          </p>
-        </div>
+          </video>        </div>
       </section>
 
       <section id="partenaire" className="fi-section">
