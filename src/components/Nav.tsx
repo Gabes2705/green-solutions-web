@@ -7,7 +7,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
-  const { c } = useLanguage();
+  const { c, language } = useLanguage();
 
   const LINKS = [
     { href: "#approche", label: c.nav.approach },
@@ -18,6 +18,8 @@ export default function Nav() {
     { href: "#ressources", label: c.nav.resources },
     { href: "#tests-et-rapports", label: c.nav.fieldTests },
     { href: "/partenaires", label: c.nav.partners },
+    // Rubrique française pour l'instant : elle ne s'annonce pas dans les autres langues.
+    ...(language === "fr" ? [{ href: "/fr/fermes-ideales", label: "Fermes idéales" }] : []),
   ];
 
   useEffect(() => {
