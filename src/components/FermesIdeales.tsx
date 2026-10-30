@@ -203,17 +203,13 @@ export default function FermesIdeales() {
           </div>
           <figure className="fi-portrait">
             <Image
-              src="/images/fermes-ideales/portrait.webp"
-              alt="Christian Carnavalet, debout dans une parcelle de la ferme-école, une serre blanche derrière lui"
+              src="/images/fermes-ideales/portrait-carnavalet.webp"
+              alt="Christian Carnavalet, souriant, en plan rapproché devant un fond de verdure"
               width={800}
               height={1000}
               sizes="(max-width: 860px) 100vw, 45vw"
               priority
-            />
-            <figcaption className="fi-legende">
-              Christian Carnavalet dans les parcelles de la ferme-école. Photo : Olivia Chaber.
-            </figcaption>
-          </figure>
+            />          </figure>
         </div>
       </section>
 
