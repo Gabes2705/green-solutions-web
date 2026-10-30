@@ -422,6 +422,12 @@
   gap: clamp(22px, 3vw, 36px);
 }
 
+/* Légendes alignées à gauche : la règle du site pour les paragraphes et les listes les justifie. */
+
+.fi-livre {
+  text-align: left;
+}
+
 .fi-livre figure {
   margin: 0;
 }
@@ -465,6 +471,7 @@
 }
 
 .fi-partenaires li {
+  text-align: left;
   padding: 0.42rem 0.85rem;
   border-radius: 999px;
   border: 1px solid var(--hairline);
