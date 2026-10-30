@@ -578,7 +578,10 @@ body {
   display: none;
 }
 
-@media (max-width: 1300px) {
+/* Under 1600px the links, the language switch and the contact button no longer
+   fit on one bar beside the logo: they move into the burger menu. Between 1300
+   and 1600px the bar overlapped the logo and the contact button. */
+@media (max-width: 1599px) {
   .nav-links {
     display: none;
   }
