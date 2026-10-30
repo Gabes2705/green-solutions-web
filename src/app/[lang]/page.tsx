@@ -1,6 +1,7 @@
 import Contact from "@/components/Contact";
 import CountryStudies from "@/components/CountryStudies";
 import Essais from "@/components/Essais";
+import FermesAcces from "@/components/FermesAcces";
 import CtaBand from "@/components/CtaBand";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -52,6 +53,7 @@ export default function Home() {
       <Presentation />
       <TenirAvancer />
       <Produits />
+      <FermesAcces />
       <TestsRapports />
       <GainAuChamp />
       <Essais />
