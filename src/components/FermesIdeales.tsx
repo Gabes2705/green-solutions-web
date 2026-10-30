@@ -381,7 +381,7 @@ export default function FermesIdeales() {
                 height={900}
                 sizes="(max-width: 640px) 100vw, 50vw"
               />
-              <figcaption className="fi-legende">Image d’illustration, non prise sur la ferme.</figcaption>
+              <figcaption className="fi-legende">Photos d’illustration</figcaption>
             </figure>
             <figure className="fi-carre">
               <Image
@@ -391,7 +391,7 @@ export default function FermesIdeales() {
                 height={900}
                 sizes="(max-width: 640px) 100vw, 50vw"
               />
-              <figcaption className="fi-legende">Image d’illustration, non prise sur la ferme.</figcaption>
+              <figcaption className="fi-legende">Photos d’illustration</figcaption>
             </figure>
           </div>
         </div>
