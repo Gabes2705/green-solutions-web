@@ -17,6 +17,76 @@ const SOMMAIRE = [
   { id: "rendez-vous", label: "Rendez-vous" },
 ];
 
+/* Ouvrages de Christian Carnavalet, du plus récent au plus ancien. */
+const LIVRES = [
+  {
+    src: "/images/fermes-ideales/livre-agriculture-2024.webp",
+    alt: "Couverture d’Agriculture biologique, une approche scientifique, 3e édition",
+    titre: "Agriculture biologique, une approche scientifique",
+    detail: "3e édition · France Agricole · 2024 · 620 p.",
+    width: 425,
+    height: 600,
+  },
+  {
+    src: "/images/fermes-ideales/livre-french-method-2020.webp",
+    alt: "Couverture de Le maraîchage sur petite surface : La French Method",
+    titre: "Le maraîchage sur petite surface : La French Method",
+    detail: "Éditions du Terran · 2020 · 320 p.",
+    width: 401,
+    height: 600,
+  },
+  {
+    src: "/images/fermes-ideales/livre-agriculture-2018.webp",
+    alt: "Couverture d’Agriculture biologique, une approche scientifique, 2e édition",
+    titre: "Agriculture biologique, une approche scientifique",
+    detail: "2e édition revue et augmentée · France Agricole · 2018 · 574 p.",
+    width: 436,
+    height: 600,
+  },
+  {
+    src: "/images/fermes-ideales/livre-agriculture-2011.webp",
+    alt: "Couverture d’Agriculture biologique : une approche scientifique, édition de 2011",
+    titre: "Agriculture biologique : une approche scientifique",
+    detail: "France Agricole · 2011 · 472 p. · préface de Claude et Lydia Bourguignon",
+    width: 439,
+    height: 600,
+  },
+];
+
+/* Cartes de la ferme-école, d'après la plaquette de l’Institut (édition de février 2022). */
+const FORMATION = [
+  {
+    titre: "Une formation longue d’un an",
+    texte:
+      "La pratique représente 85 % du temps d’apprentissage de la formation longue, qui dure une année. Des formations courtes permettent de découvrir la French Method et les démarches pour créer une petite ferme maraîchère.",
+  },
+  {
+    titre: "Des marais confiés aux stagiaires",
+    texte:
+      "La pratique se déroule chez « Les Fermiers Bio Associés » : 2 ha de surface, dont 1,5 ha divisé en marais de 1 000 m². Ces marais sont attribués aux stagiaires, qui en ont la responsabilité. Le matériel, les semences et le transport des livraisons sont mis à disposition.",
+  },
+  {
+    titre: "Vers l’installation",
+    texte:
+      "Au terme de la formation, les stagiaires qui le souhaitent peuvent devenir chefs d’entreprise en maraîchage sur petite surface. L’Institut favorise leur inscription à la MSA, pour l’obtention de leur SIRET, et leur permet d’intégrer une coopérative agricole de production.",
+  },
+];
+
+/* Partenaires cités dans la plaquette de l’Institut (édition de février 2022). */
+const PARTENAIRES = [
+  "Pôle Emploi",
+  "Pôle Vert Azur d’Antibes",
+  "Balicco",
+  "Ville de Cannes",
+  "Communauté d’agglomération Cannes-Pays de Lérins",
+  "Mycophyto",
+  "Agence 3C Agro Conseil",
+  "Conseil départemental 06",
+  "Initiative Terre d’Azur",
+  "France Active",
+  "Banque Populaire Méditerranée",
+];
+
 const METHODE = [
   {
     titre: "Associer les cultures",
@@ -152,7 +222,7 @@ export default function FermesIdeales() {
           <p className="eyebrow">En vidéo</p>
           <video
             className="fi-video"
-            src="/videos/fermes-ideales/christian-carnavalet-synthese.mp4"
+            src="/videos/fermes-ideales/christian-carnavalet.mp4"
             poster="/images/fermes-ideales/video-poster.webp"
             autoPlay
             muted
@@ -191,23 +261,51 @@ export default function FermesIdeales() {
             <h2 className="fi-h2">Un partenaire de terrain</h2>
             <p className="fi-texte">
               Green Solutions s’associe à Christian Carnavalet pour rapprocher les technologies agricoles de leur
-              usage quotidien. Son école de maraîchage à Cannes offre un cadre concret : des sols cultivés, des
-              professionnels en formation et des récoltes destinées à des débouchés locaux.
+              usage quotidien. Son école de maraîchage urbain, à Cannes-La Bocca, offre un cadre concret : des
+              parcelles cultivées, des stagiaires en formation et un accompagnement à l’installation de petites
+              fermes.
             </p>
           </div>
           <div>
             <h3 className="fi-h3">Christian Carnavalet</h3>
             <p className="fi-texte">
-              Agriculteur, paysagiste et formateur, Christian Carnavalet consacre son travail à la culture des sols
-              et à la transmission du métier. Il a fondé les Petites Fermes d’Azur et l’Institut Moreau-Daverne, à
-              Cannes, pour permettre à des adultes d’apprendre le maraîchage par la pratique.
+              Agronome, paysagiste conseil et agriculteur, Christian Carnavalet a obtenu en 1991 le titre de
+              « Meilleur Ouvrier de France » en Art des Jardins.
             </p>
             <p className="fi-texte">
-              Dans son entretien publié par le réseau Balicco en septembre 2025, il rappelle son titre de Meilleur
-              Ouvrier de France en Art des Jardins. Auteur de plusieurs ouvrages, dont <em>Le maraîchage sur petite
-              surface : La French Method</em>, il défend une agriculture qui exige autant de précision dans
-              l’organisation que d’attention portée à la terre.
+              Il préside l’agence 3C Agro Conseil, spécialisée dans l’agriculture biologique, la biologie des sols et
+              la fertilisation organique. Il préside aussi l’Institut Moreau-Daverne et la coopérative « Les Petites
+              Fermes d’Azur ». Il est également maraîcher, sous la forme de la SAS « Les Fermiers Bio Associés ».
             </p>
+          </div>
+        </div>
+        <div className="fi-wrap">
+          <div className="fi-livres-bloc">
+            <h3 className="fi-h3">Ses ouvrages</h3>
+            <p className="fi-texte">
+              Christian Carnavalet a publié plusieurs livres sur l’agriculture biologique et le maraîchage sur petite
+              surface. Il a aussi publié « Biologie du sol et agriculture durable » en 2015, puis en 2e édition
+              revue et augmentée en 2021.
+            </p>
+            <ul className="fi-livres">
+              {LIVRES.map((l) => (
+                <li className="fi-livre" key={l.src}>
+                  <figure>
+                    <Image
+                      src={l.src}
+                      alt={l.alt}
+                      width={l.width}
+                      height={l.height}
+                      sizes="(max-width: 640px) 45vw, 260px"
+                    />
+                    <figcaption>
+                      {l.titre}
+                      <span className="fi-livre-detail">{l.detail}</span>
+                    </figcaption>
+                  </figure>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -217,67 +315,109 @@ export default function FermesIdeales() {
           <div className="fi-split">
             <div>
               <p className="eyebrow">La ferme-école</p>
-              <h2 className="fi-h2">Une transmission au contact des cultures</h2>
+              <h2 className="fi-h2">Une école de maraîchage urbain</h2>
               <p className="fi-texte">
-                Son enseignement relie la préparation des semis, les associations de plantes et le calendrier des
-                récoltes à la réalité d’une exploitation. Les élèves apprennent les gestes du métier, mais aussi la
-                manière d’organiser leur activité et de trouver une place dans une filière locale.
+                L’Institut Moreau-Daverne forme aux métiers du maraîchage sur petite surface, selon la French Method.
+                Il est installé à Cannes-La Bocca. Ses formations sont accessibles à tout public : aucune connaissance
+                agricole n’est indispensable.
               </p>
               <p className="fi-texte">
-                Pour Green Solutions, ce partenariat permet de confronter l’application des produits aux contraintes
-                du terrain et de nourrir le dialogue entre agronomie, formation et exploitation.
+                Les parcours sont individualisés. Les stagiaires travaillent sur de petites surfaces, avec des cultures
+                associées, et apprennent à diriger une petite entreprise maraîchère.
               </p>
             </div>
             <figure className="fi-carre">
               <Image
-                src="/images/fermes-ideales/cultures.webp"
-                alt="Christian Carnavalet présente les cultures de la ferme-école, une serre blanche à l’arrière-plan"
-                width={900}
-                height={900}
+                src="/images/fermes-ideales/plaquette-intro.webp"
+                alt="Assemblage de photos : fruits rouges, légumes, fleurs comestibles et rangs de tuteurs en bambou"
+                width={1156}
+                height={1059}
                 sizes="(max-width: 860px) 100vw, 50vw"
               />
               <figcaption className="fi-legende">
-                Christian Carnavalet présente les cultures de la ferme-école. Photo : Olivia Chaber.
+                Extrait de la plaquette de l’Institut Moreau-Daverne, édition de février 2022.
               </figcaption>
             </figure>
           </div>
 
+          <figure className="fi-banniere">
+            <Image
+              src="/images/fermes-ideales/plaquette-parcelles.webp"
+              alt="Rangs de cultures au pied de collines, avec des personnes au travail"
+              width={937}
+              height={454}
+              sizes="(max-width: 860px) 100vw, 1180px"
+            />
+            <figcaption className="fi-legende">
+              Photo tirée de la plaquette de l’Institut, édition de février 2022.
+            </figcaption>
+          </figure>
+
+          <div className="fi-cartes">
+            {FORMATION.map((f) => (
+              <article className="fi-carte" key={f.titre}>
+                <h3 className="fi-h3">{f.titre}</h3>
+                <p className="fi-texte">{f.texte}</p>
+              </article>
+            ))}
+          </div>
+
           <div className="fi-split fi-split--suite">
+            <figure className="fi-image-43">
+              <Image
+                src="/images/fermes-ideales/plaquette-formation.webp"
+                alt="Personnes réunies autour d’une table, en extérieur, dans le jardin"
+                width={1013}
+                height={432}
+                sizes="(max-width: 860px) 100vw, 50vw"
+              />
+              <figcaption className="fi-legende">
+                Photo tirée de la plaquette de l’Institut, édition de février 2022.
+              </figcaption>
+            </figure>
             <div>
-              <h3 className="fi-h3">Une ferme qui forme et produit</h3>
+              <h3 className="fi-h3">Une coopérative qui accueille les stagiaires</h3>
               <p className="fi-texte">
-                L’Institut Moreau-Daverne est installé dans la basse vallée de la Siagne, à Cannes-La Bocca. Les
-                reportages consacrés à son installation décrivent un terrain municipal de 14 000 m², exploité par la
-                coopérative des Petites Fermes d’Azur, près des jardins familiaux de la Plaine de Laval.
-              </p>
-            </div>
-            <div>
-              <h3 className="fi-h3">Apprendre un métier sur une parcelle réelle</h3>
-              <p className="fi-texte">
-                La formation s’adresse notamment aux adultes en reconversion. Elle fait travailler les élèves sur de
-                petites surfaces pour leur apprendre à planifier les cultures, préparer les plants et suivre la
-                production. L’organisation du travail et les débouchés font partie de l’apprentissage.
+                La formation pratique a lieu au sein de la coopérative « Les Petites Fermes d’Azur ». Elle fonctionne
+                comme une entreprise classique, avec ses charges, ses recettes et sa gestion économique et sociale.
               </p>
             </div>
           </div>
 
           <div className="fi-split fi-split--suite">
             <div>
-              <h3 className="fi-h3">Relier la récolte à son débouché</h3>
+              <h3 className="fi-h3">Des projets pour le territoire</h3>
               <p className="fi-texte">
-                Dans l’entretien de 2025, Christian Carnavalet indique que la majeure partie des récoltes est vendue
-                à Balicco, grossiste situé à proximité. Ce témoignage illustre une dimension essentielle du modèle :
-                concevoir la commercialisation en même temps que la production.
+                L’Institut recense des espaces agricoles et travaille avec les élus locaux pour accueillir des
+                installations. Il vise aussi à organiser des productions pour les repas des écoles et des
+                administrations.
               </p>
+              <p className="fi-legende">Partenaires cités dans la plaquette :</p>
+              <ul className="fi-partenaires">
+                {PARTENAIRES.map((p) => (
+                  <li key={p}>{p}</li>
+                ))}
+              </ul>
             </div>
-            <div>
-              <p className="fi-texte">
-                Les articles plus anciens évoquent aussi l’approvisionnement des familles et des cantines. Ces
-                perspectives appartiennent à l’histoire du projet ; elles ne constituent pas, à elles seules, un bilan
-                des volumes livrés aujourd’hui.
-              </p>
-            </div>
+            <figure className="fi-carre">
+              <Image
+                src="/images/fermes-ideales/plaquette-vue-aerienne.webp"
+                alt="Vue aérienne du site de l’Institut, avec le repère « Institut »"
+                width={903}
+                height={616}
+                sizes="(max-width: 860px) 100vw, 50vw"
+              />
+              <figcaption className="fi-legende">
+                Vue aérienne du site, extraite de la plaquette de février 2022.
+              </figcaption>
+            </figure>
           </div>
+
+          <p className="fi-note">
+            Les informations de cette section viennent de la plaquette de l’Institut, édition de février 2022. Selon
+            cette plaquette, 29 producteurs avaient été formés, et 97 % des stagiaires ayant donné un avis se
+            disaient satisfaits (depuis mai 2021).
+          </p>
         </div>
       </section>
 

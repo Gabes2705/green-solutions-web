@@ -414,6 +414,106 @@
   margin: 0 0 2rem;
 }
 
+/* Ouvrages : couvertures d’un même format, avec une ombre douce. */
+
+.fi-livres-bloc {
+  margin-top: clamp(56px, 7vw, 88px);
+}
+
+.fi-livres {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: clamp(22px, 3vw, 36px);
+}
+
+.fi-livre figure {
+  margin: 0;
+}
+
+.fi-livre img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 6px 14px 14px 6px;
+  box-shadow: 0 26px 40px -24px rgba(7, 22, 15, 0.6);
+}
+
+.fi-livre figcaption {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--leaf-deep);
+}
+
+.fi-livre-detail {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* Partenaires cités : des pastilles, comme celles du sommaire. */
+
+.fi-partenaires {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.fi-partenaires li {
+  padding: 0.42rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--leaf-deep);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+/* Photo en 4:3, à côté d’un texte. */
+
+.fi-image-43 {
+  margin: 0;
+}
+
+.fi-image-43 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 26px;
+  box-shadow: 0 30px 60px -32px rgba(7, 22, 15, 0.5);
+}
+
+/* Bandeau qui suit un bloc à deux colonnes : il respire comme les autres sections. */
+
+.fi-split + .fi-banniere {
+  margin-top: clamp(48px, 6vw, 80px);
+}
+
+/* Sélection et focus clavier aux couleurs de la rubrique, et non à celles du navigateur. */
+
+.fi ::selection {
+  background: rgba(31, 138, 69, 0.22);
+}
+
+.fi :focus-visible {
+  outline: 2px solid var(--leaf-strong);
+  outline-offset: 3px;
+}
+
 /* ——— Téléphone ——— */
 
 @media (max-width: 860px) {
