@@ -104,6 +104,9 @@
   font-size: 0.85rem;
   line-height: 1.5;
   color: var(--muted);
+  text-align: justify;
+  hyphens: auto;
+  text-wrap: pretty;
 }
 
 /* ——— Vidéo ——— */
@@ -241,8 +244,8 @@
 .fi-note {
   margin: 1.6rem 0 0;
   max-width: 70ch;
-  padding-left: 14px;
-  border-left: 3px solid var(--hairline);
+  padding-inline-start: 14px;
+  border-inline-start: 3px solid var(--hairline);
   font-size: 0.88rem;
   line-height: 1.6;
   color: var(--muted);
@@ -422,12 +425,6 @@
   gap: clamp(22px, 3vw, 36px);
 }
 
-/* Légendes alignées à gauche : la règle du site pour les paragraphes et les listes les justifie. */
-
-.fi-livre {
-  text-align: left;
-}
-
 .fi-livre figure {
   margin: 0;
 }
@@ -471,7 +468,7 @@
 }
 
 .fi-partenaires li {
-  text-align: left;
+  text-align: start;
   padding: 0.42rem 0.85rem;
   border-radius: 999px;
   border: 1px solid var(--hairline);
@@ -512,6 +509,13 @@
 .fi :focus-visible {
   outline: 2px solid var(--leaf-strong);
   outline-offset: 3px;
+}
+
+/* Flèche du rendez-vous : elle pointe vers l’avant, donc vers la gauche en arabe. */
+
+[dir="rtl"] .fi-rdv > span {
+  display: inline-block;
+  transform: scaleX(-1);
 }
 
 /* ——— Téléphone ——— */

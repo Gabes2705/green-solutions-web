@@ -1,51 +1,66 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import FermesIdeales from "@/components/FermesIdeales";
-import { SITE_URL } from "@/lib/site";
+import type { Lang } from "@/lib/content";
+import { FERMES } from "@/lib/fermes-i18n";
+import { LANGUAGES, SITE_URL, languageAlternates } from "@/lib/site";
 
 /**
  * « Notre partenaire et les fermes idéales » : une rubrique autonome, dans la
  * navigation principale, et non une fiche pays ni une fiche produit.
  *
- * Française pour l'instant. Les autres langues viendront après la relecture du
- * texte français, comme le prévoit le dossier de préparation ; d'ici là, la
- * page n'existe que sous /fr et les autres chemins répondent 404.
+ * Servie dans les quatorze langues du site. Les textes sont dans
+ * src/lib/fermes-i18n. Seul le texte français a été relu : les autres langues
+ * sont à relire avant publication.
  */
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [{ lang: "fr" }];
+  return LANGUAGES.map((lang) => ({ lang }));
 }
 
-const URL_PAGE = `${SITE_URL}/fr/fermes-ideales`;
-const TITRE = "Christian Carnavalet et la French Method | Green Solutions";
-const DESCRIPTION =
-  "Découvrez notre partenariat avec Christian Carnavalet, l’Institut Moreau-Daverne et la French Method pour concevoir des fermes adaptées à leur territoire.";
+type Params = { params: Promise<{ lang: string }> };
 
-export const metadata: Metadata = {
-  title: TITRE,
-  description: DESCRIPTION,
-  alternates: {
-    canonical: URL_PAGE,
-    languages: { fr: URL_PAGE, "x-default": URL_PAGE },
-  },
-  openGraph: {
-    type: "article",
-    title: TITRE,
-    description: DESCRIPTION,
-    url: URL_PAGE,
-    siteName: "Green Solutions",
-    locale: "fr_FR",
-  },
-  twitter: { card: "summary_large_image", title: TITRE, description: DESCRIPTION },
-};
+function estLangue(lang: string): lang is Lang {
+  return (LANGUAGES as readonly string[]).includes(lang);
+}
 
-export default function Page() {
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { lang } = await params;
+  if (!estLangue(lang)) return {};
+  const c = FERMES[lang];
+  const url = `${SITE_URL}/${lang}/fermes-ideales`;
+
+  return {
+    title: c.meta.titre,
+    description: c.meta.description,
+    alternates: {
+      canonical: url,
+      languages: languageAlternates("/fermes-ideales"),
+    },
+    openGraph: {
+      type: "article",
+      title: c.meta.titre,
+      description: c.meta.description,
+      url,
+      siteName: "Green Solutions",
+      locale: c.locale,
+    },
+    twitter: { card: "summary_large_image", title: c.meta.titre, description: c.meta.description },
+  };
+}
+
+export default async function Page({ params }: Params) {
+  const { lang } = await params;
+  if (!estLangue(lang)) notFound();
+  const c = FERMES[lang];
+
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Green Solutions", item: `${SITE_URL}/fr/` },
-      { "@type": "ListItem", position: 2, name: "Fermes idéales", item: URL_PAGE },
+      { "@type": "ListItem", position: 1, name: "Green Solutions", item: `${SITE_URL}/${lang}/` },
+      { "@type": "ListItem", position: 2, name: c.meta.fil, item: `${SITE_URL}/${lang}/fermes-ideales` },
     ],
   };
 
@@ -55,7 +70,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <FermesIdeales />
+      <FermesIdeales lang={lang} />
     </>
   );
 }

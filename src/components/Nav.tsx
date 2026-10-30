@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "@/lib/LanguageContext";
+import { FERMES } from "@/lib/fermes-i18n";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -18,8 +19,7 @@ export default function Nav() {
     { href: "#ressources", label: c.nav.resources },
     { href: "#tests-et-rapports", label: c.nav.fieldTests },
     { href: "/partenaires", label: c.nav.partners },
-    // Rubrique française pour l'instant : elle ne s'annonce pas dans les autres langues.
-    ...(language === "fr" ? [{ href: "/fr/fermes-ideales", label: "Fermes idéales" }] : []),
+    { href: `/${language}/fermes-ideales`, label: FERMES[language].nav },
   ];
 
   useEffect(() => {
