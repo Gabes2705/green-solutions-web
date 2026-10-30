@@ -29,12 +29,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // « Fermes idéales » : française pour l'instant, listée une seule fois.
-  urls.push({
-    url: `${SITE_URL}/fr/fermes-ideales`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.7,
+  // « Fermes idéales » : une page par langue du site.
+  LANGUAGES.forEach((lang) => {
+    urls.push({
+      url: `${SITE_URL}/${lang}/fermes-ideales`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    });
   });
 
   // Technology pages for each language
