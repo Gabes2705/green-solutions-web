@@ -368,6 +368,35 @@ export default function FermesIdeales() {
         </div>
       </section>
 
+      <section id="galerie" className="fi-section">
+        <div className="fi-wrap">
+          <p className="eyebrow">Galerie</p>
+          <h2 className="fi-h2">Le potager, en images</h2>
+          <div className="fi-galerie">
+            <figure className="fi-carre">
+              <Image
+                src="/images/fermes-ideales/legumes-caisse.webp"
+                alt="Caisse en bois pleine de légumes : carottes, aubergines, oignons et betteraves"
+                width={900}
+                height={900}
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+              <figcaption className="fi-legende">Image d’illustration, non prise sur la ferme.</figcaption>
+            </figure>
+            <figure className="fi-carre">
+              <Image
+                src="/images/fermes-ideales/carottes-potager.webp"
+                alt="Mains gantées qui récoltent des carottes dans un bac de potager"
+                width={900}
+                height={900}
+                sizes="(max-width: 640px) 100vw, 50vw"
+              />
+              <figcaption className="fi-legende">Image d’illustration, non prise sur la ferme.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section id="questions" className="fi-section fi-section--alt">
         <div className="fi-wrap">
           <p className="eyebrow">Questions</p>
