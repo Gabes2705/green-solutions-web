@@ -171,6 +171,20 @@ export default function FermesIdeales() {
       </section>
 
       <section id="partenaire" className="fi-section">
+        <div className="fi-wrap">
+          <figure className="fi-banniere">
+            <Image
+              src="/images/fermes-ideales/equipe-ecole.webp"
+              alt="Michel-Paul Correa et Christian Carnavalet devant l’entrée de l’École de maraîchage urbain"
+              width={1024}
+              height={572}
+              sizes="(max-width: 860px) 100vw, 1180px"
+            />
+            <figcaption className="fi-legende">
+              Michel-Paul Correa et Christian Carnavalet, devant l’École de maraîchage urbain. Photo : Gabriel Bonnat.
+            </figcaption>
+          </figure>
+        </div>
         <div className="fi-wrap fi-split">
           <div>
             <p className="eyebrow">Notre partenaire</p>
@@ -276,6 +290,16 @@ export default function FermesIdeales() {
             utilisant avec précision l’espace disponible et le temps entre deux récoltes. Christian Carnavalet en
             transmet les principes à l’Institut Moreau-Daverne.
           </p>
+          <figure className="fi-banniere">
+            <Image
+              src="/images/fermes-ideales/ia-serres-banniere.webp"
+              alt="Serre lumineuse avec des plants en caisses de bois"
+              width={1600}
+              height={900}
+              sizes="(max-width: 860px) 100vw, 1180px"
+            />
+            <figcaption className="fi-legende">Image générée par IA, à titre d’illustration.</figcaption>
+          </figure>
           <div className="fi-cartes">
             {METHODE.map((m) => (
               <article className="fi-carte" key={m.titre}>
@@ -318,10 +342,22 @@ export default function FermesIdeales() {
                 préparer le sol ni d’organiser les rotations, les semis et les récoltes.
               </p>
             </div>
-            <div className="fi-actions">
+            <div>
+              <figure className="fi-portrait-ia">
+                <Image
+                  src="/images/fermes-ideales/ia-champ-tomates.webp"
+                  alt="Rangs de tomates et de haricots tenus par des tuteurs en bambou, sous un ciel bleu"
+                  width={800}
+                  height={1000}
+                  sizes="(max-width: 860px) 100vw, 50vw"
+                />
+                <figcaption className="fi-legende">Image générée par IA, à titre d’illustration.</figcaption>
+              </figure>
+              <div className="fi-actions">
               <a href="/fr#contact" className="btn-3d btn-3d-light fi-btn">
                 Échanger avec notre service technique
               </a>
+              </div>
             </div>
           </div>
         </div>
@@ -401,6 +437,16 @@ export default function FermesIdeales() {
         <div className="fi-wrap">
           <p className="eyebrow">Questions</p>
           <h2 className="fi-h2">Comprendre et préparer son projet</h2>
+          <figure className="fi-carre fi-carre--petit">
+            <Image
+              src="/images/fermes-ideales/ia-salade-semis.webp"
+              alt="Jeune plant de laitue couvert de gouttes de rosée, dans une terre sombre"
+              width={900}
+              height={900}
+              sizes="(max-width: 640px) 100vw, 440px"
+            />
+            <figcaption className="fi-legende">Image générée par IA, à titre d’illustration.</figcaption>
+          </figure>
           <div className="fi-cartes">
             {QUESTIONS.map((x) => (
               <article className="fi-carte" key={x.q}>

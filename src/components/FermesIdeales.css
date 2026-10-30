@@ -379,6 +379,41 @@
   }
 }
 
+/* Images de la rubrique : bandeau large, portrait et petit carré. */
+
+.fi-banniere {
+  margin: 0 0 clamp(36px, 5vw, 56px);
+}
+
+.fi-banniere img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 26px;
+  box-shadow: 0 30px 60px -32px rgba(7, 22, 15, 0.5);
+}
+
+.fi-portrait-ia {
+  margin: 0 0 1.4rem;
+}
+
+.fi-portrait-ia img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 30px 60px -32px rgba(7, 22, 15, 0.5);
+}
+
+.fi-carre--petit {
+  max-width: 440px;
+  margin: 0 0 2rem;
+}
+
 /* ——— Téléphone ——— */
 
 @media (max-width: 860px) {
