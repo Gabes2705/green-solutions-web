@@ -413,16 +413,6 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
               </a>
             </div>
           )}
-          {dossier.slug === "gabon" && (
-            <div lang="fr" dir="ltr">
-              <a
-                className="dossier-pdf btn-3d btn-3d-light"
-                href="/documents/countries/gabon-2026.pdf"
-              >
-                Dossier complet, octobre 2026 (PDF, 19 pages)
-              </a>
-            </div>
-          )}
         </div>
       </header>
 
