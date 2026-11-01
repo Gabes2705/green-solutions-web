@@ -421,7 +421,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Maroc", crop: "Clémentines bio (variété Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Égypte", crop: "Maïs / Trèfle / Olivier", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagascar",
           crop: "Maraîchage / Paulownia",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -1053,7 +1053,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Morocco", crop: "Organic clementines (Afourer variety), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egypt", crop: "Maize / Clover / Olive tree", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagascar",
           crop: "Market gardening / Paulownia",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -1685,7 +1685,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Marruecos", crop: "Clementinas ecológicas (variedad Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egipto", crop: "Maíz / Trébol / Olivo", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagascar",
           crop: "Horticultura / Paulownia",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -2317,7 +2317,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Marrocos", crop: "Clementinas biológicas (variedade Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egito", crop: "Milho / Trevo / Oliveira", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagascar",
           crop: "Horticultura / Paulownia",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -2949,7 +2949,7 @@ const baseContent = {
         { org: "Green Dream", place: "شيشاوة، المغرب", crop: "يوسفي عضوي (صنف أفوري)، الباولونيا", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "مصر", crop: "الذرة / البرسيم / الزيتون", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "مدغشقر",
           crop: "الزراعة البستانية / الباولونيا",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -3581,7 +3581,7 @@ const baseContent = {
         { org: "Green Dream", place: "摩洛哥希沙瓦", crop: "有机小柑橘（Afourer品种）、泡桐", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "埃及", crop: "玉米 / 三叶草 / 橄榄树", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "马达加斯加",
           crop: "蔬菜种植 / 泡桐",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -4213,7 +4213,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Klementin organik (varietas Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Mesir", crop: "Jagung / Semanggi / Zaitun", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagaskar",
           crop: "Budi daya sayuran / Paulownia",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -4845,7 +4845,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Marokko", crop: "Bio-Clementinen (Sorte Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Ägypten", crop: "Mais / Klee / Olivenbaum", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagaskar",
           crop: "Gemüsebau / Paulownia",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -5477,7 +5477,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Marocco", crop: "Clementine bio (varietà Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egitto", crop: "Mais / Trifoglio / Olivo", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagascar",
           crop: "Orticoltura / Paulownia",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -6109,7 +6109,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Μαρόκο", crop: "Βιολογικά κλημεντίνια (ποικιλία Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Αίγυπτος", crop: "Καλαμπόκι / Τριφύλλι / Ελιά", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Μαδαγασκάρη",
           crop: "Κηπευτικές καλλιέργειες / Paulownia",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -6741,7 +6741,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Fas", crop: "Organik klemantin (Afourer çeşidi), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Mısır", crop: "Mısır / Yonca / Zeytin ağacı", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagaskar",
           crop: "Sebze yetiştiriciliği / Pavlonya",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -7373,7 +7373,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Ekologiczne klementynki (odmiana Afourer), Paulownia", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egipt", crop: "Kukurydza / Koniczyna / Oliwka", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagaskar",
           crop: "Uprawa warzyw / Paulownia",
           tech: ["ECOSORB®", "ECOFERT®"],
@@ -8005,7 +8005,7 @@ const baseContent = {
         { org: "Green Dream", place: "Chichaoua, Maroko", crop: "Ekološke klementine (sorta Afourer), paulovnija", tech: ["ECOSORB®", "ECOFERT®", "Water Vital®"] },
         { org: "ARAFA Cie", place: "Egipat", crop: "Kukuruz / djetelina / maslina", tech: ["EVERGREEN®", "ECOFERT®"] },
         {
-          org: "Eden Ecolodge — Mada Green Solutions",
+          org: "Mada Green Solutions",
           place: "Madagaskar",
           crop: "Povrtlarstvo / paulovnija",
           tech: ["ECOSORB®", "ECOFERT®"],

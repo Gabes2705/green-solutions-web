@@ -504,7 +504,7 @@ export const ca = {
         tech: ["EVERGREEN®", "ECOFERT®"],
       },
       {
-        org: "Eden Ecolodge — Mada Green Solutions",
+        org: "Mada Green Solutions",
         place: "Madagascar",
         crop: "Horticultura / Paulownia",
         tech: ["ECOSORB®", "ECOFERT®"],
