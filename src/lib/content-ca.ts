@@ -504,10 +504,15 @@ export const ca = {
         tech: ["EVERGREEN®", "ECOFERT®"],
       },
       {
-        org: "Eden Ecolodge — Jean-Philippe Durand",
+        org: "Eden Ecolodge — Mada Green Solutions",
         place: "Madagascar",
         crop: "Horticultura / Paulownia",
         tech: ["ECOSORB®", "ECOFERT®"],
+        contact: [
+          "Ambaixador i distribuïdor: Jean Philippe DURAND",
+          "Mòbil: +261 32 64 013 95",
+          "Correu: jpdurand3362@gmail.com",
+        ],
       },
     ],
   },
