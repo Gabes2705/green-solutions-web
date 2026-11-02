@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "Our partner",
     titre: "Our partner and ideal farms",
     texte:
-      "A market-gardening school in Cannes, where Christian Carnavalet teaches the French Method and where our products are applied in the field.",
+      "A cooperative that welcomes newly established market gardeners. A market-gardening school in Cannes, where Christian Carnavalet teaches the French Method and where our products are applied in the field.",
     bouton: "Discover ideal farms →",
     alt: "Christian Carnavalet, smiling, in a close-up in front of greenery",
   },

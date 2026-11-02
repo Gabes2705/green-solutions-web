@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "Naš partner",
     titre: "Naš partner i idealne farme",
     texte:
-      "Škola povrćarstva u Cannesu, u kojoj Christian Carnavalet podučava French Method i u kojoj se naši proizvodi primjenjuju na terenu.",
+      "Zadruga koja prima nove povrtlare koji su se tek nastanili. Škola povrćarstva u Cannesu, u kojoj Christian Carnavalet podučava French Method i u kojoj se naši proizvodi primjenjuju na terenu.",
     bouton: "Otkrijte idealne farme →",
     alt: "Nasmiješeni Christian Carnavalet, u krupnom planu, ispred zelenila",
   },

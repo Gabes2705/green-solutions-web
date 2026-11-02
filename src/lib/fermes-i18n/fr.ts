@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "Notre partenaire",
     titre: "Notre partenaire et les fermes idéales",
     texte:
-      "Une école de maraîchage à Cannes, où Christian Carnavalet transmet la French Method et où nos produits sont appliqués au terrain.",
+      "Une coopérative qui accueille les nouveaux maraîchers ou maraîchères installés. Une école de maraîchage à Cannes, où Christian Carnavalet transmet la French Method et où nos produits sont appliqués au terrain.",
     bouton: "Découvrir les fermes idéales →",
     alt: "Christian Carnavalet, souriant, en plan rapproché devant un fond de verdure",
   },

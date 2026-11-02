@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "Unser Partner",
     titre: "Unser Partner und die idealen Höfe",
     texte:
-      "Eine Gemüsebauschule in Cannes, an der Christian Carnavalet die French Method unterrichtet und an der unsere Produkte im Feld angewendet werden.",
+      "Eine Genossenschaft, die neu niedergelassene Gemüsebauern aufnimmt. Eine Gemüsebauschule in Cannes, an der Christian Carnavalet die French Method unterrichtet und an der unsere Produkte im Feld angewendet werden.",
     bouton: "Die idealen Höfe entdecken →",
     alt: "Christian Carnavalet, lächelnd, in Nahaufnahme vor grünem Hintergrund",
   },

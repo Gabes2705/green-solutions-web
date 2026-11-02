@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "Mitra kami",
     titre: "Mitra kami dan pertanian ideal",
     texte:
-      "Sebuah sekolah berkebun sayur di Cannes, tempat Christian Carnavalet mengajarkan French Method dan produk kami diterapkan di lapangan.",
+      "Sebuah koperasi yang menerima petani hortikultura yang baru menetap. Sebuah sekolah berkebun sayur di Cannes, tempat Christian Carnavalet mengajarkan French Method dan produk kami diterapkan di lapangan.",
     bouton: "Temukan pertanian ideal →",
     alt: "Christian Carnavalet, tersenyum, dalam bidikan dekat di depan latar hijau",
   },

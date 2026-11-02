@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "O nosso parceiro",
     titre: "O nosso parceiro e as quintas ideais",
     texte:
-      "Uma escola de horticultura em Cannes, onde Christian Carnavalet ensina o French Method e onde os nossos produtos são aplicados no terreno.",
+      "Uma cooperativa que acolhe os hortelãos recém-instalados. Uma escola de horticultura em Cannes, onde Christian Carnavalet ensina o French Method e onde os nossos produtos são aplicados no terreno.",
     bouton: "Descobrir as quintas ideais →",
     alt: "Christian Carnavalet, a sorrir, em grande plano diante de um fundo de vegetação",
   },

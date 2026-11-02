@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "Ortağımız",
     titre: "Ortağımız ve ideal çiftlikler",
     texte:
-      "Cannes'da bir sebze yetiştiriciliği okulu; Christian Carnavalet burada French Method'u öğretiyor ve ürünlerimiz sahada uygulanıyor.",
+      "Yeni yerleşen sebzecileri kabul eden bir kooperatif. Cannes'da bir sebze yetiştiriciliği okulu; Christian Carnavalet burada French Method'u öğretiyor ve ürünlerimiz sahada uygulanıyor.",
     bouton: "İdeal çiftlikleri keşfedin →",
     alt: "Gülümseyen Christian Carnavalet, yeşilliklerin önünde yakın plan",
   },
