@@ -206,6 +206,10 @@ const copy: FermesCopy = {
     legendeAerien: "Vue aérienne du site, extraite de la plaquette de février 2022.",
     note: "Les informations de cette section viennent de la plaquette de l’Institut Moreau-Daverne, édition de juin 2026. * Stagiaires ayant donné une appréciation de satisfaction globale de la formation depuis mai 2021.",
   },
+  plaquette: {
+    texte: "Télécharger la plaquette (PDF)",
+    href: "/documents/fermes-ideales/plaquette-institut-moreau-daverne.pdf",
+  },
   methode: {
     eyebrow: "La méthode",
     titre: "La French Method",

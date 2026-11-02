@@ -203,6 +203,13 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
                   {p}
                 </p>
               ))}
+              {c.plaquette && (
+                <div className="fi-actions">
+                  <a href={c.plaquette.href} className="btn-3d btn-3d-light fi-btn" download>
+                    {c.plaquette.texte}
+                  </a>
+                </div>
+              )}
             </div>
             <figure className="fi-carre">
               <Image

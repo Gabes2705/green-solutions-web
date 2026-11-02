@@ -56,6 +56,8 @@ export type FermesCopy = {
     legendeAerien: string;
     note: string;
   };
+  /* Présente seulement sur la page française : la plaquette à télécharger. */
+  plaquette?: { texte: string; href: string };
   methode: { eyebrow: string; titre: string; texte: string; altBanniere: string; cartes: Carte[] };
   produits: {
     eyebrow: string;
