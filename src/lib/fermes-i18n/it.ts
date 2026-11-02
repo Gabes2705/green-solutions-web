@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "Il nostro partner",
     titre: "Il nostro partner e le fattorie ideali",
     texte:
-      "Una scuola di orticoltura a Cannes, dove Christian Carnavalet insegna il French Method e dove i nostri prodotti vengono applicati sul campo.",
+      "Una cooperativa che accoglie gli orticoltori appena insediati. Una scuola di orticoltura a Cannes, dove Christian Carnavalet insegna il French Method e dove i nostri prodotti vengono applicati sul campo.",
     bouton: "Scopra le fattorie ideali →",
     alt: "Christian Carnavalet, sorridente, in primo piano davanti al verde",
   },

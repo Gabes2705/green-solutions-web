@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "Nasz partner",
     titre: "Nasz partner i idealne gospodarstwa",
     texte:
-      "Szkoła warzywnictwa w Cannes, w której Christian Carnavalet naucza French Method, a nasze produkty są stosowane w terenie.",
+      "Spółdzielnia, która przyjmuje nowo osiadłych warzywników. Szkoła warzywnictwa w Cannes, w której Christian Carnavalet naucza French Method, a nasze produkty są stosowane w terenie.",
     bouton: "Odkryj idealne gospodarstwa →",
     alt: "Uśmiechnięty Christian Carnavalet w zbliżeniu, przed zielenią",
   },

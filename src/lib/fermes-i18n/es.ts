@@ -15,7 +15,7 @@ const copy: FermesCopy = {
     eyebrow: "Nuestro socio",
     titre: "Nuestro socio y las granjas ideales",
     texte:
-      "Una escuela de horticultura en Cannes, donde Christian Carnavalet enseña el French Method y donde nuestros productos se aplican sobre el terreno.",
+      "Una cooperativa que acoge a los horticultores recién instalados. Una escuela de horticultura en Cannes, donde Christian Carnavalet enseña el French Method y donde nuestros productos se aplican sobre el terreno.",
     bouton: "Descubrir las granjas ideales →",
     alt: "Christian Carnavalet, sonriente, en primer plano frente a un fondo de vegetación",
   },
