@@ -67,40 +67,144 @@ const copy: FermesCopy = {
   ferme: {
     eyebrow: "The farm school",
     titre: "An urban market-gardening school",
-    p1: "The Institut Moreau-Daverne trains people for market-gardening careers on small areas, following the French Method. It is based in Cannes-La Bocca. Its courses are open to everyone: no prior farming knowledge is required.",
-    p2: "Training paths are tailored to each person. Trainees work on small plots, with companion crops, and learn to run a small market-gardening business.",
+    presentation: [
+      "The Institut Moreau-Daverne contributes to training people for the farming sector, mainly market gardening in open field and in unheated greenhouses, with a wide range of produce. Its courses help people improve their performance, adapt to technological and economic changes, and meet quality requirements.",
+      "Alongside practical teaching that meets the demands of the trade, the Institut trains people in agronomy, botany, and the economic, financial and social management of a business, so that they can rise to positions of responsibility and, where possible, be supported in setting up as a farmer registered with the MSA.",
+      "As farming changes, the Institut also trains people in welcoming visitors to the farm and in events, and in opening up to the local area together with local elected officials.",
+      "The Institut promotes learning market gardening through the traditional French method (French Method) and the skills needed to run a small-scale market-gardening business. Its training is open to everyone. No prior farming knowledge is required.",
+    ],
     legendeIntro: "Extract from the Institut Moreau-Daverne brochure, February 2022 edition.",
-    altIntro: "Montage of photos: red fruit, vegetables, edible flowers and bamboo stakes between rows",
+    altIntro: "Collage of photos: red fruit, vegetables, edible flowers and rows of bamboo stakes",
     altBanniere: "Rows of crops at the foot of hills, with people at work",
-    legendeBanniere: "Photo taken from the Institute’s brochure, February 2022 edition.",
+    legendeBanniere: "Photo from the Institut’s brochure, February 2022 edition.",
     cartes: [
       {
-        titre: "A one-year long course",
-        texte:
-          "Hands-on practice accounts for 85% of the learning time in the long course, which lasts one year. Short courses let people discover the French Method and the steps needed to set up a small market-gardening farm.",
+        titre: "Teaching system",
+        texte: [
+          "Training leading to the different qualifications offered by the Institut Moreau-Daverne focuses on professional practice, which makes up 85% of learning time in the long course, and on the short courses that lead to recognised professional levels.",
+          "The training body supervises this practice within the host business “Les Fermiers Bio Associés”, which has 2 ha of land, including 1.5 ha divided into market gardens of 1,000 m² that trainees are responsible for, growing vegetables, edible flowers, mini-vegetables and aromatic plants. All the farm equipment, seeds, watering equipment and delivery transport, etc., is made available to the Institut for its practical training and for assessing trainees’ skills.",
+          "Training paths are individualised. To cater for the diversity of trainees, the training body offers placement assessments and tools at entry, so that candidates’ profiles are taken into account and course lengths can be adjusted.",
+          "Teaching is progressive, in the long course (one year), through levels No. 1 to 12. These match the job-recognition tools set out in the new national agricultural collective agreement of 15 September 2020, IDCC 7024. People who already hold a diploma or have agricultural training will have a shorter personalised path to becoming a business owner registered with the MSA.",
+          "The short courses introduce market gardening through the French Method and explain the steps needed to create a small market-gardening farm.",
+        ],
       },
       {
-        titre: "Plots entrusted to trainees",
-        texte:
-          "Practice takes place at “Les Fermiers Bio Associés”: 2 ha in total, including 1.5 ha divided into plots of 1,000 m². These plots are assigned to trainees, who are responsible for them. Equipment, seeds and transport for deliveries are provided.",
+        titre: "Distinctive feature",
+        texte: [
+          "After a year of training, the Institut Moreau-Daverne lets trainees who wish to do so become small-scale market-gardening business owners and join a farm production cooperative. It helps them register with the MSA to obtain their SIRET number.",
+          "At every stage of your career, the Institut Moreau-Daverne’s courses can contribute to your personal projects:",
+        ],
+        puces: [
+          "Find a job in agricultural production or create your own business",
+          "Improve your skills and qualifications to progress in your trade and reach higher grades",
+          "Discover new approaches to market gardening: edible flowers, mini-vegetables, small fruit and orchards",
+          "Understand farm cooperation by joining, for a time, a producers’ cooperative, “Les Petites Fermes d’Azur”",
+        ],
+        apres: [
+          "The Institut Moreau-Daverne’s teaching project places each person in full professional immersion within small market-gardening businesses with companion planting.",
+        ],
       },
       {
-        titre: "Towards setting up",
-        texte:
-          "At the end of the course, trainees who wish to can become business owners in small-scale market gardening. The Institute helps them register with the MSA to obtain their SIRET number, and allows them to join an agricultural production cooperative.",
+        titre: "Our commitments",
+        texte: [
+          "Commitment No. 1: ensure a real understanding of how viable a small market-gardening business is under the traditional production method.",
+        ],
+        puces: [
+          "Through practical training in the field, in real production conditions.",
+          "Through theory on agronomy, botany, soil biology, cropping systems, and the economic, legal and social management of small farm businesses.",
+        ],
+      },
+      {
+        titre: "Long and short courses",
+        texte: [
+          "Long course, one year:",
+        ],
+        puces: [
+          "1. Support the person in their learning, to build the skills and responsibilities needed for the job, as set out in the different levels of the national agricultural production agreement and of the Cuma agreement of 15 September 2020.",
+          "2. Help them set up their own business during their training.",
+          "3. Secure a city plot and their own local customers at the end of the course, if they decide to stay on site or in the PACA region.",
+        ],
+        apres: [
+          "Short courses: give trainees a full picture of the technical, economic, legal and local aspects of running a small market-gardening business in their area.",
+          "Note: all courses are open to people with mild hearing or visual impairments.",
+          "“Teaching can do anything, since it makes bears dance.” G.W. Leibniz",
+        ],
+      },
+      {
+        titre: "Our experience",
+        texte: [],
+        puces: [
+          "Solid agronomic training and more than 50 years of professional practice.",
+          "Books and lectures on organic farming, soil biology and small-scale market gardening.",
+          "Running an agricultural cooperative and an association of organic farmers.",
+          "Original knowledge and continuous practice of the traditional market gardening known as the “French Method”, around the world for a century.",
+          "Close links with the regional business community, local elected officials and the administrations of the Sud PACA region.",
+          "Trainer training and training in Qualiopi support.",
+        ],
+      },
+      {
+        titre: "Our facilities",
+        texte: [],
+        puces: [
+          "A 2.2 ha plot in Cannes, organic-certified (AB) by Ecocert, shared by several cooperating small-scale market gardeners, with fruit tree and edible flower plantings, table grapes, small fruit, greenhouses and farm equipment.",
+          "A 5,000 m² orchard in Cannes, with standard and half-standard fruit trees.",
+          "A 220 m² building for classrooms, with professional post-harvest equipment, and all farm and event equipment.",
+          "All manual and motorised farm equipment, tunnels, work and meeting rooms, organic inputs, seeds, sales equipment…",
+        ],
+      },
+      {
+        titre: "Information about the courses",
+        texte: [],
+        puces: [
+          "Teaching objectives",
+          "Theoretical programmes",
+          "Practical programmes",
+          "Skills assessment tables",
+          "Organisation of training cycles",
+          "Certification of professional skills",
+          "Daily life at the Institut Moreau-Daverne",
+          "Practical life in the Cannes-Pays de Lérins area",
+          "Admission conditions for long courses",
+          "Fees, funding and sponsorship",
+          "Other information about the urban market-gardening school",
+        ],
+      },
+      {
+        titre: "Organisation of the institute",
+        texte: [
+          "Institut Moreau-Daverne, Chemin de la Plaine de Laval, 06150 Cannes-la-Bocca.",
+          "E-mail: contact@moreau-daverne.fr. Websites: www.moreau-daverne.fr and www.agro-conseil-carnavalet.eu.",
+        ],
+        puces: [
+          "Administrative manager for information and registration: Christian Carnavalet",
+          "Educational manager for the training and programmes: Christian Carnavalet",
+          "Manager for disability and reception of people with impairments: Christian Carnavalet",
+        ],
+        apres: [
+          "Facebook: Les Petites Fermes d’Azur.",
+        ],
       },
     ],
+    chiffres: [
+      {
+        valeur: "65",
+        libelle: "producers already trained",
+      },
+      {
+        valeur: "97 %",
+        libelle: "of producers satisfied with the training *",
+      },
+      {
+        valeur: "March 2019",
+        libelle: "opening of the continuing vocational training body",
+      },
+    ],
+    slogan: "A passion for the trade. Energy. Time for passing on knowledge. Resources to support teaching.",
+    partenairesTitre: "Our partners",
     altFormation: "People gathered around a table, outdoors, in the garden",
-    coopTitre: "A cooperative that hosts trainees",
-    coopTexte:
-      "Practical training takes place within the “Les Petites Fermes d’Azur” cooperative. It operates like a conventional business, with its costs, revenues and economic and social management.",
-    projetsTitre: "Projects for the area",
-    projetsTexte:
-      "The Institute surveys farmland and works with local elected officials to host new farm set-ups. It also aims to organise production for school and administrative catering.",
-    partenairesLabel: "Partners named in the brochure:",
-    altAerien: "Aerial view of the Institute’s site, with the “Institut” marker",
-    legendeAerien: "Aerial view of the site, taken from the February 2022 brochure.",
-    note: "The information in this section comes from the Institute’s brochure, February 2022 edition. According to this brochure, 29 producers had been trained, and 97% of trainees who gave an opinion said they were satisfied (since May 2021).",
+    altAerien: "Aerial view of the Institut’s site, with the “Institut” marker",
+    legendeAerien: "Aerial view of the site, from the February 2022 brochure.",
+    note: "The information in this section comes from the Institut Moreau-Daverne brochure, June 2026 edition. * Trainees who gave an overall satisfaction rating for the training since May 2021.",
   },
   methode: {
     eyebrow: "The method",
@@ -164,6 +268,7 @@ const copy: FermesCopy = {
   concevoir: {
     eyebrow: "Design",
     titre: "Designing ideal farms",
+    ouverture: "A cooperative that welcomes newly established market gardeners. It lets them sell their produce straight away and take on their new trade more easily.",
     texte:
       "An ideal farm responds to its territory. It takes into account the water available, the land, the people who work there and the customers it will sell to. Our ambition with Christian Carnavalet is to bring these elements together from the design stage of the project.",
     etapes: [
@@ -198,6 +303,17 @@ const copy: FermesCopy = {
     legende: "Illustrative photos",
     altCaisse: "Wooden crate full of vegetables: carrots, aubergines, onions and beetroot",
     altCarottes: "Gloved hands harvesting carrots from a kitchen garden bed",
+    credit: "Photos: Institut Moreau-Daverne.",
+    altNouvelles: [
+      "Rows of cabbages and fennel in a field, with trees in the background",
+      "Yellow turnips in a wooden crate, with their leaves",
+      "Bunches of red and white radishes",
+      "Bunches of green fennel in a wooden crate",
+      "Bunches of orange carrots with their leaves in a wooden crate, with a knife on top",
+      "Long, curved squash piled up",
+      "Bunch of multicoloured chard held in a hand",
+      "White chard bunches in a crate",
+    ],
   },
   questions: {
     eyebrow: "Questions",

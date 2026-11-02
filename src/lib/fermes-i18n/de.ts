@@ -65,42 +65,146 @@ const copy: FermesCopy = {
     ],
   },
   ferme: {
-    eyebrow: "Die Hofschule",
-    titre: "Eine Schule für städtischen Gemüsebau",
-    p1: "Das Institut Moreau-Daverne bildet Menschen für Berufe im Gemüsebau auf kleiner Fläche aus, nach der French Method. Es befindet sich in Cannes-La Bocca. Seine Kurse stehen allen offen: Landwirtschaftliche Vorkenntnisse sind nicht erforderlich.",
-    p2: "Die Ausbildungswege werden individuell gestaltet. Die Auszubildenden arbeiten auf kleinen Flächen mit Mischkulturen und lernen, einen kleinen Gemüsebaubetrieb zu führen.",
-    legendeIntro: "Auszug aus der Broschüre des Institut Moreau-Daverne, Ausgabe Februar 2022.",
-    altIntro: "Fotomontage: rote Früchte, Gemüse, essbare Blüten und Bambusstäbe zwischen den Reihen",
-    altBanniere: "Reihen von Kulturen am Fuß von Hügeln, mit arbeitenden Menschen",
+    eyebrow: "Die Lehrfarm",
+    titre: "Eine Schule für urbanen Gemüsebau",
+    presentation: [
+      "Das Institut Moreau-Daverne trägt zur Qualifizierung von Menschen im Agrarsektor bei, vor allem im Freiland- und Kaltgewächshaus-Gemüsebau mit einer großen Vielfalt an Erzeugnissen. Die angebotenen Ausbildungen helfen, die Leistungsfähigkeit der Menschen zu steigern, sie an technologische und wirtschaftliche Entwicklungen anzupassen und den Qualitätsanforderungen gerecht zu werden.",
+      "Neben einer praxisnahen Ausbildung, die den Anforderungen des Berufs entspricht, vermittelt das Institut Kenntnisse in Agronomie, Botanik sowie in der wirtschaftlichen, finanziellen und sozialen Führung eines Betriebs, damit die Menschen Verantwortung übernehmen können und, wenn möglich, bei der Niederlassung als in der MSA gemeldete landwirtschaftliche Betriebsleiter begleitet werden.",
+      "Im Rahmen des Wandels der Landwirtschaft bildet das Institut auch für die Gästebetreuung auf dem Hof und für Veranstaltungen aus sowie für die Öffnung zur Region in Zusammenarbeit mit den gewählten Vertretern vor Ort.",
+      "Das Institut fördert das Erlernen des Gemüsebaus nach der traditionellen französischen Methode (French Method) und den Erwerb der Fähigkeiten, die für die Leitung eines kleinflächigen Gemüsebaubetriebs nötig sind. Die Ausbildungen des Instituts Moreau-Daverne stehen allen offen. Landwirtschaftliche Vorkenntnisse sind nicht erforderlich.",
+    ],
+    legendeIntro: "Auszug aus der Broschüre des Instituts Moreau-Daverne, Ausgabe Februar 2022.",
+    altIntro: "Fotocollage: rote Früchte, Gemüse, essbare Blüten und Reihen von Bambusstäben",
+    altBanniere: "Kulturreihen am Fuß von Hügeln, mit arbeitenden Menschen",
     legendeBanniere: "Foto aus der Broschüre des Instituts, Ausgabe Februar 2022.",
     cartes: [
       {
-        titre: "Eine einjährige Langausbildung",
-        texte:
-          "Die praktische Arbeit macht 85 % der Lernzeit in der Langausbildung aus, die ein Jahr dauert. Kurzkurse ermöglichen es, die French Method und die Schritte zur Gründung eines kleinen Gemüsebaubetriebs kennenzulernen.",
+        titre: "Didaktisches System",
+        texte: [
+          "Die Ausbildungen, die zu den verschiedenen Abschlüssen des Instituts Moreau-Daverne führen, konzentrieren sich auf die berufliche Praxis, die in der langen Ausbildung 85 % der Lernzeit ausmacht, sowie auf die Kurzausbildungen, die zu anerkannten beruflichen Qualifikationen führen.",
+          "Der Ausbildungsträger begleitet diese Praxis im Aufnahmebetrieb «Les Fermiers Bio Associés», der über 2 ha verfügt, davon 1,5 ha in Gemüsegärten zu je 1.000 m², die den Lernenden zur eigenverantwortlichen Bewirtschaftung übergeben werden und auf denen Gemüse, essbare Blüten, Miniaturgemüse und Aromapflanzen angebaut werden. Sämtliche Betriebsausrüstung, Saatgut, Bewässerungsmaterial, Transportmittel für die Lieferungen usw. werden dem Institut für die praktische Ausbildung und für die Bewertung der Kenntnisse der Lernenden zur Verfügung gestellt.",
+          "Die Ausbildungswege sind individuell gestaltet. Um der Vielfalt der Zielgruppen gerecht zu werden, bietet der Ausbildungsträger bei Eintritt Einstufungsverfahren und Hilfsmittel an, die das Profil der Bewerber berücksichtigen und die Dauer der Ausbildung anpassen können.",
+          "Der Unterricht in der langen Ausbildung (ein Jahr) ist stufenweise aufgebaut (Stufe 1 bis 12). Die Stufen entsprechen den Instrumenten zur Anerkennung der beruflichen Fähigkeiten, die im neuen nationalen landwirtschaftlichen Tarifvertrag vom 15. September 2020 (IDCC 7024) festgelegt sind. Personen mit bereits vorhandenem Abschluss oder landwirtschaftlicher Ausbildung haben einen verkürzten, persönlichen Weg, um Betriebsleiter mit Meldung bei der MSA zu werden.",
+          "Die Kurzausbildungen vermitteln einen Zugang zum Gemüsebau nach der French Method und erläutern die Schritte, die zur Gründung eines kleinen Gemüsebaubetriebs nötig sind.",
+        ],
       },
       {
-        titre: "Auszubildenden anvertraute Beete",
-        texte:
-          "Die Praxis findet bei „Les Fermiers Bio Associés“ statt: insgesamt 2 ha, davon 1,5 ha, aufgeteilt in Beete zu je 1.000 m². Diese Beete werden den Auszubildenden zugewiesen, die dafür verantwortlich sind. Gerät, Saatgut und Transport für die Lieferungen werden bereitgestellt.",
+        titre: "Besonderheit",
+        texte: [
+          "Nach einem Ausbildungsjahr ermöglicht das Institut Moreau-Daverne den Lernenden, die dies wünschen, Betriebsleiter im kleinflächigen Gemüsebau zu werden und einer landwirtschaftlichen Erzeugergenossenschaft beizutreten. Es unterstützt sie bei der Anmeldung bei der MSA, um ihre SIRET-Nummer zu erhalten.",
+          "In jeder Phase Ihres beruflichen Werdegangs können die Ausbildungen des Instituts Moreau-Daverne zu Ihren persönlichen Projekten beitragen:",
+        ],
+        puces: [
+          "In einen landwirtschaftlichen Beruf einsteigen, um eine Arbeitsstelle zu finden oder das eigene Unternehmen zu gründen",
+          "Sich weiterbilden und qualifizieren, um im Beruf voranzukommen und höhere Stufen zu erreichen",
+          "Neue Ansätze im Gemüsebau entdecken: essbare Blüten, Miniaturgemüse, Kleinobst und Obstgärten",
+          "Die landwirtschaftliche Zusammenarbeit verstehen, indem man zeitweise einer Erzeugergenossenschaft angehört: «Les Petites Fermes d’Azur»",
+        ],
+        apres: [
+          "Das pädagogische Konzept des Instituts Moreau-Daverne stellt die Person in eine vollständige berufliche Praxis in kleinen Gemüsebaubetrieben mit Mischkulturen.",
+        ],
       },
       {
-        titre: "Auf dem Weg zur Selbstständigkeit",
-        texte:
-          "Nach der Ausbildung können Auszubildende, die dies wünschen, Unternehmer im Gemüsebau auf kleiner Fläche werden. Das Institut unterstützt sie bei der Anmeldung bei der MSA zur Erlangung ihrer SIRET-Nummer und ermöglicht ihnen den Beitritt zu einer landwirtschaftlichen Erzeugergenossenschaft.",
+        titre: "Unsere Verpflichtungen",
+        texte: [
+          "Verpflichtung Nr. 1: ein echtes Verständnis dafür schaffen, wie tragfähig ein kleiner Gemüsebaubetrieb nach der traditionellen Anbaumethode ist.",
+        ],
+        puces: [
+          "Durch praktische Ausbildung im Feld unter realen Produktionsbedingungen.",
+          "Durch theoretische Ausbildung in Agronomie, Botanik, Bodenbiologie, Anbausystemen sowie in der wirtschaftlichen, rechtlichen und sozialen Führung kleiner landwirtschaftlicher Betriebe.",
+        ],
+      },
+      {
+        titre: "Lange und kurze Ausbildungen",
+        texte: [
+          "Lange Ausbildung von einem Jahr:",
+        ],
+        puces: [
+          "1. Die Person in ihrem Lernprozess begleiten, damit sie die Fähigkeiten und die für die Stelle nötigen Verantwortlichkeiten entwickelt, wie sie in den verschiedenen Stufen des nationalen Tarifvertrags für die landwirtschaftliche Produktion und die Cuma vom 15. September 2020 festgelegt sind.",
+          "2. Ihr ermöglichen, während der Ausbildung ihren eigenen Betrieb zu gründen.",
+          "3. Ihr am Ende der Ausbildung die Pacht einer städtischen Parzelle und einen eigenen lokalen Kundenkreis sichern, wenn sie sich entscheidet, vor Ort oder in der Region PACA zu bleiben.",
+        ],
+        apres: [
+          "Kurze Ausbildungen: den Lernenden über alle technischen, wirtschaftlichen, rechtlichen und lokalen Aspekte eines kleinen Gemüsebaubetriebs in ihrem Gebiet informieren.",
+          "Hinweis: Alle Ausbildungen stehen Menschen mit leichten Hör- oder Sehbeeinträchtigungen offen.",
+          "«Die Pädagogik kann alles, denn sie bringt die Bären zum Tanzen.» G. W. Leibniz",
+        ],
+      },
+      {
+        titre: "Unsere Erfahrung",
+        texte: [],
+        puces: [
+          "Eine solide agronomische Ausbildung und über 50 Jahre berufliche Praxis.",
+          "Veröffentlichung von Büchern und Vorträge zu ökologischem Landbau, Bodenbiologie und kleinflächigem Gemüsebau.",
+          "Leitung einer landwirtschaftlichen Genossenschaft und eines Vereins ökologisch wirtschaftender Landwirte.",
+          "Das ursprüngliche Wissen und die fortlaufende Praxis des traditionellen Gemüsebaus, «French Method» genannt, weltweit seit einem Jahrhundert.",
+          "Enge Beziehungen zur regionalen Berufswelt, zu den gewählten Vertretern vor Ort und zu den Verwaltungen der Region Sud PACA.",
+          "Ausbildung von Ausbildern und Ausbildung zur Begleitung nach Qualiopi.",
+        ],
+      },
+      {
+        titre: "Unsere Ausstattung",
+        texte: [],
+        puces: [
+          "Eine 2,2 ha große Parzelle in Cannes, nach AB durch Ecocert zertifiziert, die mehrere kooperierende Kleingärtner gemeinsam nutzen, mit Obstbäumen und essbaren Blüten, Tafeltrauben, Kleinobst, Gewächshäusern und Betriebsausrüstung.",
+          "Ein 5.000 m² großer Obstgarten in Cannes mit Hoch- und Halbstamm-Obstbäumen.",
+          "Ein 220 m² großes Gebäude mit Unterrichtsräumen und professioneller Ausstattung für die Nachernte sowie sämtlichem Betriebs- und Veranstaltungsmaterial.",
+          "Gesamtes manuelles und motorisiertes Betriebsmaterial, Tunnel, Arbeits- und Besprechungsräume, organische Betriebsmittel, Saatgut, Verkaufsmaterial …",
+        ],
+      },
+      {
+        titre: "Informationen zu den Ausbildungen",
+        texte: [],
+        puces: [
+          "Lernziele",
+          "Theorieprogramme",
+          "Praxisprogramme",
+          "Bewertungsbögen für berufliche Kompetenzen",
+          "Organisation der Ausbildungszyklen",
+          "Zertifizierung beruflicher Kompetenzen",
+          "Alltag im Institut Moreau-Daverne",
+          "Praktisches Leben im Gebiet Cannes-Pays de Lérins",
+          "Aufnahmebedingungen für die langen Ausbildungen",
+          "Kosten, Finanzierung und Kostenübernahme",
+          "Weitere Informationen zur Schule für urbanen Gemüsebau",
+        ],
+      },
+      {
+        titre: "Organisation des Instituts",
+        texte: [
+          "Institut Moreau-Daverne, Chemin de la Plaine de Laval, 06150 Cannes-la-Bocca.",
+          "E-Mail: contact@moreau-daverne.fr. Websites: www.moreau-daverne.fr und www.agro-conseil-carnavalet.eu.",
+        ],
+        puces: [
+          "Verwaltungsverantwortlicher für Auskunft und Anmeldung: Christian Carnavalet",
+          "Pädagogischer Verantwortlicher für Ausbildung und Programme: Christian Carnavalet",
+          "Verantwortlicher für Behinderung und Aufnahme von Menschen mit Beeinträchtigungen: Christian Carnavalet",
+        ],
+        apres: [
+          "Facebook: Les Petites Fermes d’Azur.",
+        ],
       },
     ],
-    altFormation: "Menschen, die draußen im Garten an einem Tisch zusammensitzen",
-    coopTitre: "Eine Genossenschaft, die Auszubildende aufnimmt",
-    coopTexte:
-      "Die praktische Ausbildung findet innerhalb der Genossenschaft „Les Petites Fermes d’Azur“ statt. Sie arbeitet wie ein klassisches Unternehmen, mit eigenen Kosten, Einnahmen sowie wirtschaftlicher und sozialer Verwaltung.",
-    projetsTitre: "Projekte für die Region",
-    projetsTexte:
-      "Das Institut erfasst landwirtschaftliche Flächen und arbeitet mit den örtlichen Gewählten zusammen, um die Ansiedlung neuer Betriebe zu ermöglichen. Ziel ist außerdem, Produktion für die Verpflegung von Schulen und Verwaltungen zu organisieren.",
-    partenairesLabel: "In der Broschüre genannte Partner:",
-    altAerien: "Luftaufnahme des Institutsgeländes mit der Markierung „Institut“",
-    legendeAerien: "Luftaufnahme des Geländes, aus der Broschüre vom Februar 2022.",
-    note: "Die Angaben in diesem Abschnitt stammen aus der Broschüre des Instituts, Ausgabe Februar 2022. Laut dieser Broschüre waren 29 Erzeuger ausgebildet worden, und 97 % der Auszubildenden, die eine Einschätzung abgaben, zeigten sich zufrieden (seit Mai 2021).",
+    chiffres: [
+      {
+        valeur: "65",
+        libelle: "bereits ausgebildete Erzeuger",
+      },
+      {
+        valeur: "97 %",
+        libelle: "der Erzeuger, die mit der Ausbildung zufrieden sind *",
+      },
+      {
+        valeur: "März 2019",
+        libelle: "Eröffnung der Einrichtung für berufliche Weiterbildung",
+      },
+    ],
+    slogan: "Leidenschaft für den Beruf. Energie. Zeit zum Weitergeben. Pädagogische Mittel zur Unterstützung.",
+    partenairesTitre: "Unsere Partner",
+    altFormation: "Menschen an einem Tisch im Freien, im Garten",
+    altAerien: "Luftaufnahme des Geländes des Instituts mit der Markierung „Institut“",
+    legendeAerien: "Luftaufnahme des Geländes, aus der Broschüre von Februar 2022.",
+    note: "Die Angaben in diesem Abschnitt stammen aus der Broschüre des Instituts Moreau-Daverne, Ausgabe Juni 2026. * Lernende, die seit Mai 2021 eine Gesamtbewertung der Zufriedenheit mit der Ausbildung abgegeben haben.",
   },
   methode: {
     eyebrow: "Die Methode",
@@ -164,6 +268,7 @@ const copy: FermesCopy = {
   concevoir: {
     eyebrow: "Planung",
     titre: "Ideale Höfe gestalten",
+    ouverture: "Eine Genossenschaft, die neu niedergelassene Gemüsebauern aufnimmt. Sie ermöglicht ihnen, ihre Erzeugnisse sofort zu verkaufen, und erleichtert den Einstieg in ihren neuen Beruf.",
     texte:
       "Ein idealer Hof passt zu seinem Gebiet. Er berücksichtigt das verfügbare Wasser, das Land, die Menschen, die dort arbeiten, und die Kundschaft, an die er verkaufen wird. Unser Anspruch mit Christian Carnavalet ist, diese Elemente bereits bei der Planung des Projekts zusammenzubringen.",
     etapes: [
@@ -198,6 +303,17 @@ const copy: FermesCopy = {
     legende: "Illustrationsfotos",
     altCaisse: "Holzkiste voller Gemüse: Karotten, Auberginen, Zwiebeln und Rote Bete",
     altCarottes: "Behandschuhte Hände ernten Karotten aus einem Gartenbeet",
+    credit: "Fotos: Institut Moreau-Daverne.",
+    altNouvelles: [
+      "Reihen von Kohl und Fenchel auf einem Feld, im Hintergrund Bäume",
+      "Gelbe Speiserüben in einer Holzkiste, mit ihrem Laub",
+      "Bündel roter und weißer Radieschen",
+      "Bündel von grünem Fenchel in einer Holzkiste",
+      "Bündel orangefarbener Karotten mit Laub in einer Holzkiste, darauf ein Messer",
+      "Lange, gebogene Kürbisse, aufgehäuft",
+      "Bund bunter Mangold, in der Hand gehalten",
+      "Weiße Mangold-Bündel in einer Kiste",
+    ],
   },
   questions: {
     eyebrow: "Fragen",

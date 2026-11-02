@@ -39,19 +39,33 @@ const LIVRES = [
   },
 ];
 
-/* Partenaires cités dans la plaquette : des noms propres, donnés tels quels. */
+/* Partenaires cités dans la plaquette de juin 2026 : des noms propres, donnés tels quels. */
 const PARTENAIRES = [
   "Pôle Emploi",
-  "Pôle Vert Azur d’Antibes",
+  "Ville de Mougins",
   "Balicco",
   "Ville de Cannes",
   "Communauté d’agglomération Cannes-Pays de Lérins",
   "Mycophyto",
-  "Agence 3C Agro Conseil",
-  "Conseil départemental 06",
+  "La coopérative « Les Petites Fermes d’Azur »",
+  "L’agence 3C Agro Conseil",
+  "Le conseil départemental 06",
   "Initiative Terre d’Azur",
-  "France Active",
+  "CIC",
   "Banque Populaire Méditerranée",
+];
+
+/* Les photos de l’Institut, dans l’ordre de la galerie. Les dimensions sont celles des
+   fichiers ; la grille les recadre toutes au même format. */
+const PHOTOS_INSTITUT = [
+  { src: "/images/fermes-ideales/institut-rangs-choux-fenouil.webp", width: 486, height: 1000 },
+  { src: "/images/fermes-ideales/institut-navets-jaunes.webp", width: 1000, height: 486 },
+  { src: "/images/fermes-ideales/institut-radis.webp", width: 683, height: 1000 },
+  { src: "/images/fermes-ideales/institut-fenouil.webp", width: 655, height: 1000 },
+  { src: "/images/fermes-ideales/institut-carottes.webp", width: 1000, height: 486 },
+  { src: "/images/fermes-ideales/institut-courges.webp", width: 1000, height: 571 },
+  { src: "/images/fermes-ideales/institut-bettes-couleurs.webp", width: 750, height: 1000 },
+  { src: "/images/fermes-ideales/institut-bettes-blanches.webp", width: 750, height: 1000 },
 ];
 
 /* La rubrique « Fermes idéales », dans la langue demandée. Les textes viennent de
@@ -184,8 +198,11 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
             <div>
               <p className="eyebrow">{c.ferme.eyebrow}</p>
               <h2 className="fi-h2">{c.ferme.titre}</h2>
-              <p className="fi-texte">{c.ferme.p1}</p>
-              <p className="fi-texte">{c.ferme.p2}</p>
+              {c.ferme.presentation.map((p) => (
+                <p className="fi-texte" key={p}>
+                  {p}
+                </p>
+              ))}
             </div>
             <figure className="fi-carre">
               <Image
@@ -211,10 +228,26 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
           </figure>
 
           <div className="fi-cartes">
-            {c.ferme.cartes.map((f) => (
-              <article className="fi-carte" key={f.titre}>
-                <h3 className="fi-h3">{f.titre}</h3>
-                <p className="fi-texte">{f.texte}</p>
+            {c.ferme.cartes.map((b) => (
+              <article className="fi-carte" key={b.titre}>
+                <h3 className="fi-h3">{b.titre}</h3>
+                {b.texte.map((t) => (
+                  <p className="fi-texte" key={t}>
+                    {t}
+                  </p>
+                ))}
+                {b.puces && (
+                  <ul className="fi-puces">
+                    {b.puces.map((u) => (
+                      <li key={u}>{u}</li>
+                    ))}
+                  </ul>
+                )}
+                {b.apres?.map((t) => (
+                  <p className="fi-texte" key={t}>
+                    {t}
+                  </p>
+                ))}
               </article>
             ))}
           </div>
@@ -231,16 +264,21 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
               <figcaption className="fi-legende">{c.ferme.legendeBanniere}</figcaption>
             </figure>
             <div>
-              <h3 className="fi-h3">{c.ferme.coopTitre}</h3>
-              <p className="fi-texte">{c.ferme.coopTexte}</p>
+              <ul className="fi-chiffres">
+                {c.ferme.chiffres.map((ch) => (
+                  <li key={ch.libelle}>
+                    <strong>{ch.valeur}</strong>
+                    <span>{ch.libelle}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="fi-texte fi-texte--large">{c.ferme.slogan}</p>
             </div>
           </div>
 
           <div className="fi-split fi-split--suite">
             <div>
-              <h3 className="fi-h3">{c.ferme.projetsTitre}</h3>
-              <p className="fi-texte">{c.ferme.projetsTexte}</p>
-              <p className="fi-legende">{c.ferme.partenairesLabel}</p>
+              <h3 className="fi-h3">{c.ferme.partenairesTitre}</h3>
               <ul className="fi-partenaires">
                 {PARTENAIRES.map((p) => (
                   <li key={p}>{p}</li>
@@ -333,6 +371,7 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
         <div className="fi-wrap">
           <p className="eyebrow">{c.concevoir.eyebrow}</p>
           <h2 className="fi-h2">{c.concevoir.titre}</h2>
+          <p className="fi-texte fi-texte--large">{c.concevoir.ouverture}</p>
           <p className="fi-texte fi-texte--large">{c.concevoir.texte}</p>
           <div className="fi-split">
             <ol className="fi-etapes">
@@ -386,6 +425,20 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
               <figcaption className="fi-legende">{c.galerie.legende}</figcaption>
             </figure>
           </div>
+          <div className="fi-photos">
+            {PHOTOS_INSTITUT.map((ph, i) => (
+              <figure key={ph.src}>
+                <Image
+                  src={ph.src}
+                  alt={c.galerie.altNouvelles[i]}
+                  width={ph.width}
+                  height={ph.height}
+                  sizes="(max-width: 860px) 50vw, 25vw"
+                />
+              </figure>
+            ))}
+          </div>
+          <p className="fi-legende">{c.galerie.credit}</p>
         </div>
       </section>
 

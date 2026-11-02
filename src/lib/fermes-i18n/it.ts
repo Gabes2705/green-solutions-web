@@ -67,40 +67,144 @@ const copy: FermesCopy = {
   ferme: {
     eyebrow: "La fattoria-scuola",
     titre: "Una scuola di orticoltura urbana",
-    p1: "L'Institut Moreau-Daverne forma alle professioni dell'orticoltura su piccola superficie, secondo il French Method. Ha sede a Cannes-La Bocca. I suoi corsi sono aperti a tutti: non sono richieste conoscenze agricole preliminari.",
-    p2: "I percorsi formativi sono personalizzati. Gli allievi lavorano su piccoli appezzamenti, con colture associate, e imparano a dirigere una piccola impresa orticola.",
-    legendeIntro: "Estratto dalla brochure dell'Institut Moreau-Daverne, edizione di febbraio 2022.",
-    altIntro: "Montaggio di foto: frutti rossi, ortaggi, fiori commestibili e tutori di bambù tra i filari",
-    altBanniere: "Filari di colture ai piedi di colline, con persone al lavoro",
-    legendeBanniere: "Foto tratta dalla brochure dell'Institut, edizione di febbraio 2022.",
+    presentation: [
+      "L’Istituto Moreau-Daverne contribuisce alla qualificazione delle persone nel settore agricolo, soprattutto nell’orticoltura in pieno campo e in serra fredda, con una grande varietà di produzioni. Le formazioni proposte permettono di migliorare le prestazioni delle persone, di adattarle alle evoluzioni tecnologiche ed economiche e di soddisfare le esigenze di qualità.",
+      "Oltre all’insegnamento pratico richiesto dal mestiere, l’Istituto forma le persone in agronomia, botanica e gestione economica, finanziaria e sociale dell’impresa, in modo da farle salire ai livelli di responsabilità e, se possibile, accompagnarle nell’insediamento come imprenditori agricoli iscritti alla MSA.",
+      "Nel quadro dell’evoluzione del mondo agricolo, l’Istituto forma all’accoglienza in fattoria e all’organizzazione di eventi, nonché all’apertura al territorio in collaborazione con gli eletti locali.",
+      "L’Istituto favorisce l’apprendimento dell’orticoltura secondo il metodo tradizionale francese (French Method) e l’acquisizione delle competenze necessarie a dirigere un’impresa orticola su piccola superficie. Le formazioni erogate dall’Istituto Moreau-Daverne sono accessibili a tutti. Non sono indispensabili conoscenze agricole pregresse.",
+    ],
+    legendeIntro: "Estratto dalla brochure dell’Istituto Moreau-Daverne, edizione di febbraio 2022.",
+    altIntro: "Composizione di foto: frutti rossi, ortaggi, fiori commestibili e file di tutori di bambù",
+    altBanniere: "File di colture ai piedi delle colline, con persone al lavoro",
+    legendeBanniere: "Foto tratta dalla brochure dell’Istituto, edizione di febbraio 2022.",
     cartes: [
       {
-        titre: "Un corso lungo di un anno",
-        texte:
-          "La pratica rappresenta l'85% del tempo di apprendimento nel corso lungo, che dura un anno. I corsi brevi permettono di scoprire il French Method e i passaggi necessari per creare una piccola fattoria orticola.",
+        titre: "Sistema didattico",
+        texte: [
+          "Le formazioni che portano ai diversi apprendimenti proposti dall’Istituto Moreau-Daverne si concentrano sulla pratica professionale, che rappresenta l’85 % del tempo di apprendimento nella formazione lunga, e sulle formazioni brevi che permettono di convalidare livelli professionali riconosciuti.",
+          "L’ente di formazione segue questa pratica presso l’azienda ospitante «Les Fermiers Bio Associés», che dispone di 2 ha di superficie, di cui 1,5 ha suddivisi in orti di 1.000 m² affidati agli allievi, responsabili della produzione di ortaggi, fiori commestibili, miniortaggi e piante aromatiche. Tutte le attrezzature agricole, le sementi, il materiale per l’irrigazione, il trasporto per le consegne, ecc., sono messi a disposizione dell’Istituto per le sue formazioni pratiche e per la valutazione delle competenze acquisite dagli allievi.",
+          "I percorsi formativi sono individualizzati. Per gestire la diversità dei destinatari, l’ente di formazione propone modalità e strumenti di orientamento all’ingresso in formazione, che permettono di tenere conto del profilo dei candidati e di modulare la durata della formazione.",
+          "La progressività dell’insegnamento, nella formazione lunga (un anno), avviene per livelli (dal n. 1 al n. 12). Corrispondono agli strumenti di valorizzazione nell’impiego previsti dal nuovo contratto collettivo nazionale agricolo-Cuma del 15 settembre 2020, IDCC 7024. Le persone già diplomate o formate in agricoltura avranno un percorso personalizzato più breve per accedere allo status di imprenditore agricolo iscritto alla MSA.",
+          "Le formazioni brevi permettono di avvicinarsi all’orticoltura secondo la French Method e di comprendere i passi da compiere per creare una piccola azienda orticola.",
+        ],
       },
       {
-        titre: "Appezzamenti affidati agli allievi",
-        texte:
-          "La pratica si svolge presso «Les Fermiers Bio Associés»: 2 ha di superficie, di cui 1,5 ha suddivisi in appezzamenti di 1.000 m². Questi appezzamenti sono assegnati agli allievi, che ne sono responsabili. Attrezzature, sementi e trasporto per le consegne sono messi a disposizione.",
+        titre: "Particolarità",
+        texte: [
+          "Al termine di un anno di formazione, l’Istituto Moreau-Daverne permette agli allievi che lo desiderano di diventare imprenditori orticoli su piccola superficie e di entrare in una cooperativa agricola di produzione. Facilita la loro iscrizione alla MSA per ottenere il codice SIRET.",
+          "In ogni momento del suo percorso professionale, le formazioni dell’Istituto Moreau-Daverne possono contribuire ai suoi progetti personali:",
+        ],
+        puces: [
+          "Inserirsi in un mestiere della produzione agricola per trovare un impiego o creare la propria impresa",
+          "Perfezionarsi e qualificarsi per progredire nel proprio mestiere e raggiungere livelli superiori",
+          "Scoprire nuovi approcci alla produzione orticola: fiori commestibili, miniortaggi, piccoli frutti e frutteto",
+          "Comprendere la cooperazione agricola inserendosi temporaneamente in una cooperativa di produttori, «Les Petites Fermes d’Azur»",
+        ],
+        apres: [
+          "Il progetto pedagogico dell’Istituto Moreau-Daverne colloca la persona in un’immersione professionale totale all’interno di piccole aziende orticole con colture associate.",
+        ],
       },
       {
-        titre: "Verso l'avvio di un'attività",
-        texte:
-          "Al termine del corso, gli allievi che lo desiderano possono diventare imprenditori nell'orticoltura su piccola superficie. L'Institut li aiuta a iscriversi alla MSA per ottenere il numero SIRET e permette loro di entrare in una cooperativa agricola di produzione.",
+        titre: "I nostri impegni",
+        texte: [
+          "Impegno n. 1: garantire una reale comprensione della sostenibilità della piccola impresa orticola con il metodo tradizionale di produzione.",
+        ],
+        puces: [
+          "Attraverso una formazione pratica sul campo, in condizioni reali di produzione.",
+          "Attraverso una formazione teorica in agronomia, botanica, biologia del suolo, sistemi colturali e gestione economica, giuridica e sociale delle piccole aziende agricole.",
+        ],
+      },
+      {
+        titre: "Formazione lunga e formazioni brevi",
+        texte: [
+          "Formazione lunga di un anno:",
+        ],
+        puces: [
+          "1. Accompagnare la persona nel suo apprendimento, per valorizzare le sue competenze e le responsabilità necessarie a ricoprire il posto di lavoro previsto dai diversi livelli del CCN della produzione agricola e delle Cuma del 15 settembre 2020.",
+          "2. Permetterle di creare la sua impresa durante il percorso formativo.",
+          "3. Garantirle, alla fine del percorso, l’affitto di un appezzamento urbano e una clientela locale propria, se decide di restare sul posto o nella regione PACA.",
+        ],
+        apres: [
+          "Formazioni brevi: informare l’allievo su tutti gli aspetti tecnici, economici, giuridici e di inserimento locale di una piccola impresa orticola nel suo territorio.",
+          "Nota: tutte le formazioni sono accessibili alle persone con disabilità uditive o visive lievi.",
+          "«La pedagogia può tutto, perché fa ballare gli orsi». G.W. Leibniz",
+        ],
+      },
+      {
+        titre: "La nostra esperienza",
+        texte: [],
+        puces: [
+          "Una solida formazione agronomica e una lunga pratica professionale di oltre 50 anni.",
+          "Pubblicazioni di libri e conferenze sull’agricoltura biologica, la biologia del suolo e l’orticoltura su piccola superficie.",
+          "La gestione di una cooperativa agricola e di un’associazione di agricoltori biologici.",
+          "La conoscenza originale e la continuità della pratica dell’orticoltura tradizionale chiamata «French Method», in tutto il mondo da un secolo.",
+          "Rapporti privilegiati con il mondo professionale regionale, gli eletti locali e le amministrazioni della regione Sud PACA.",
+          "Una formazione per formatori e una formazione all’accompagnamento Qualiopi.",
+        ],
+      },
+      {
+        titre: "Le nostre attrezzature",
+        texte: [],
+        puces: [
+          "Un appezzamento di 2,2 ha a Cannes, certificato biologico (AB) da Ecocert, che riunisce diversi orticoltori cooperatori su piccola superficie, con impianti di alberi da frutto e di fiori commestibili, uva da tavola, piccoli frutti, serre e attrezzature agricole.",
+          "Un frutteto di 5.000 m² a Cannes, con alberi da frutto a tronco alto e a mezzo tronco.",
+          "Un edificio di 220 m² per le aule, con attrezzature professionali per il post-raccolta, e tutte le attrezzature agricole e per eventi.",
+          "L’insieme delle attrezzature agricole manuali e a motore, tunnel, sale di lavoro e riunioni, input organici, sementi, materiale di vendita…",
+        ],
+      },
+      {
+        titre: "Informazioni sulle formazioni",
+        texte: [],
+        puces: [
+          "Obiettivi didattici",
+          "Programmi teorici",
+          "Programmi pratici",
+          "Tabelle di valutazione delle competenze professionali",
+          "Organizzazione dei cicli di formazione",
+          "Certificazione delle competenze professionali",
+          "Vita quotidiana presso l’Istituto Moreau-Daverne",
+          "Vita pratica nel territorio Cannes-Pays de Lérins",
+          "Condizioni di accoglienza nelle formazioni lunghe",
+          "Tariffe, finanziamento e presa in carico",
+          "Altre informazioni sulla scuola di orticoltura urbana",
+        ],
+      },
+      {
+        titre: "Organizzazione dell’istituto",
+        texte: [
+          "Istituto Moreau-Daverne, Chemin de la Plaine de Laval, 06150 Cannes-la-Bocca.",
+          "E-mail: contact@moreau-daverne.fr. Siti: www.moreau-daverne.fr e www.agro-conseil-carnavalet.eu.",
+        ],
+        puces: [
+          "Responsabile amministrativo per informazioni e iscrizioni: Christian Carnavalet",
+          "Responsabile pedagogico della formazione e dei programmi: Christian Carnavalet",
+          "Responsabile per la disabilità e l’accoglienza delle persone con disabilità: Christian Carnavalet",
+        ],
+        apres: [
+          "Facebook: Les Petites Fermes d’Azur.",
+        ],
       },
     ],
-    altFormation: "Persone riunite intorno a un tavolo, all'aperto, nel giardino",
-    coopTitre: "Una cooperativa che accoglie gli allievi",
-    coopTexte:
-      "La formazione pratica si svolge all'interno della cooperativa «Les Petites Fermes d'Azur». Funziona come un'impresa tradizionale, con i suoi costi, i suoi ricavi e la sua gestione economica e sociale.",
-    projetsTitre: "Progetti per il territorio",
-    projetsTexte:
-      "L'Institut censisce gli spazi agricoli e collabora con gli eletti locali per accogliere nuovi insediamenti agricoli. Mira inoltre a organizzare produzioni per le mense scolastiche e amministrative.",
-    partenairesLabel: "Partner citati nella brochure:",
-    altAerien: "Veduta aerea del sito dell'Institut, con l'indicazione «Institut»",
+    chiffres: [
+      {
+        valeur: "65",
+        libelle: "produttori già formati",
+      },
+      {
+        valeur: "97 %",
+        libelle: "dei produttori soddisfatti della formazione *",
+      },
+      {
+        valeur: "Marzo 2019",
+        libelle: "apertura dell’ente di formazione professionale continua",
+      },
+    ],
+    slogan: "La passione per il mestiere. Energia. Tempo per trasmettere. Mezzi di supporto didattico.",
+    partenairesTitre: "I nostri partner",
+    altFormation: "Persone riunite attorno a un tavolo, all’aperto, in giardino",
+    altAerien: "Veduta aerea del sito dell’Istituto, con il riferimento «Institut»",
     legendeAerien: "Veduta aerea del sito, tratta dalla brochure di febbraio 2022.",
-    note: "Le informazioni di questa sezione provengono dalla brochure dell'Institut, edizione di febbraio 2022. Secondo tale brochure, erano stati formati 29 produttori e il 97% degli allievi che hanno espresso un parere si è dichiarato soddisfatto (da maggio 2021).",
+    note: "Le informazioni di questa sezione provengono dalla brochure dell’Istituto Moreau-Daverne, edizione di giugno 2026. * Allievi che hanno espresso una valutazione complessiva di soddisfazione per la formazione dal maggio 2021.",
   },
   methode: {
     eyebrow: "Il metodo",
@@ -164,6 +268,7 @@ const copy: FermesCopy = {
   concevoir: {
     eyebrow: "Progettazione",
     titre: "Progettare fattorie ideali",
+    ouverture: "Una cooperativa che accoglie gli orticoltori appena insediati. Permette loro di vendere subito i prodotti e di impegnarsi più facilmente nel loro nuovo mestiere.",
     texte:
       "Una fattoria ideale risponde al suo territorio. Tiene conto dell'acqua disponibile, della terra, delle persone che vi lavorano e dei clienti ai quali venderà. La nostra ambizione, con Christian Carnavalet, è riunire questi elementi fin dalla progettazione del progetto.",
     etapes: [
@@ -198,6 +303,17 @@ const copy: FermesCopy = {
     legende: "Foto illustrative",
     altCaisse: "Cassetta di legno piena di ortaggi: carote, melanzane, cipolle e barbabietole",
     altCarottes: "Mani guantate che raccolgono carote da un'aiuola dell'orto",
+    credit: "Foto: Istituto Moreau-Daverne.",
+    altNouvelles: [
+      "File di cavoli e finocchi in un campo, con alberi sullo sfondo",
+      "Rape gialle in una cassetta di legno, con le foglie",
+      "Mazzi di ravanelli rossi e bianchi",
+      "Mazzi di finocchio verde in una cassetta di legno",
+      "Mazzi di carote arancioni con le foglie in una cassetta di legno, con un coltello sopra",
+      "Zucche lunghe e ricurve ammucchiate",
+      "Mazzo di bietole multicolori tenuto in mano",
+      "Mazzi di bietole bianche in una cassetta",
+    ],
   },
   questions: {
     eyebrow: "Domande",

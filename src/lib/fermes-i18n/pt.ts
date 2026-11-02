@@ -67,40 +67,144 @@ const copy: FermesCopy = {
   ferme: {
     eyebrow: "A quinta-escola",
     titre: "Uma escola de horticultura urbana",
-    p1: "O Institut Moreau-Daverne forma para as profissões da horticultura em pequena superfície, segundo o French Method. Está instalado em Cannes-La Bocca. As suas formações são acessíveis a todos: não são necessários conhecimentos agrícolas prévios.",
-    p2: "Os percursos de formação são personalizados. Os formandos trabalham em pequenas parcelas, com culturas associadas, e aprendem a dirigir uma pequena empresa hortícola.",
-    legendeIntro: "Extrato do folheto do Institut Moreau-Daverne, edição de fevereiro de 2022.",
-    altIntro: "Montagem de fotos: frutos vermelhos, legumes, flores comestíveis e tutores de bambu entre as linhas",
-    altBanniere: "Linhas de culturas ao pé de colinas, com pessoas a trabalhar",
-    legendeBanniere: "Foto retirada do folheto do Institut, edição de fevereiro de 2022.",
+    presentation: [
+      "O Instituto Moreau-Daverne contribui para a formação de pessoas no setor agrícola, sobretudo na horticultura de campo aberto e em estufa fria, com uma grande diversidade de produções. As formações permitem melhorar o desempenho das pessoas, adaptá-las às mudanças tecnológicas e económicas e cumprir as exigências de qualidade.",
+      "Para além do ensino prático exigido pela profissão, o Instituto forma em agronomia, botânica e gestão económica, financeira e social da empresa, para que as pessoas possam chegar a níveis de responsabilidade e, se possível, ser acompanhadas na instalação como agricultoras ou agricultores declarados na MSA.",
+      "No quadro da evolução do mundo agrícola, o Instituto forma para o acolhimento na quinta e para a organização de eventos, bem como para a abertura ao território em articulação com os eleitos locais.",
+      "O Instituto promove a aprendizagem da horticultura segundo o método tradicional francês (French Method) e a aquisição das competências que levam à direção de uma empresa hortícola de pequena dimensão. As formações ministradas pelo Instituto Moreau-Daverne são acessíveis a qualquer público. Não são indispensáveis conhecimentos agrícolas prévios.",
+    ],
+    legendeIntro: "Extrato do folheto do Instituto Moreau-Daverne, edição de fevereiro de 2022.",
+    altIntro: "Montagem de fotografias: frutos vermelhos, legumes, flores comestíveis e linhas de tutores de bambu",
+    altBanniere: "Linhas de culturas ao sopé de colinas, com pessoas a trabalhar",
+    legendeBanniere: "Fotografia retirada do folheto do Instituto, edição de fevereiro de 2022.",
     cartes: [
       {
-        titre: "Uma formação longa de um ano",
-        texte:
-          "A prática representa 85 % do tempo de aprendizagem da formação longa, que dura um ano. As formações curtas permitem descobrir o French Method e os passos necessários para criar uma pequena quinta hortícola.",
+        titre: "Sistema pedagógico",
+        texte: [
+          "As formações que conduzem às diferentes aprendizagens propostas pelo Instituto Moreau-Daverne centram-se na prática profissional, que representa 85 % do tempo de aprendizagem na formação longa, e nas formações curtas que permitem validar níveis profissionais reconhecidos.",
+          "O organismo de formação acompanha esta prática na empresa de acolhimento «Les Fermiers Bio Associés», que dispõe de 2 ha, dos quais 1,5 ha estão divididos em hortas de 1 000 m² entregues aos formandos, que são responsáveis por elas, com produção de legumes, flores comestíveis, minilegumes e plantas aromáticas. Todo o material agrícola, as sementes, o material de rega, o transporte para as entregas, etc., são disponibilizados ao Instituto para as suas formações práticas e para a avaliação das aquisições dos formandos.",
+          "Os percursos de formação são individualizados. Para gerir a diversidade dos públicos, o organismo de formação propõe modalidades e instrumentos de posicionamento à entrada na formação, que permitem ter em conta o perfil dos candidatos e ajustar a duração da formação.",
+          "A progressividade do ensino, na formação longa (um ano), faz-se por patamares (n.º 1 a 12). Correspondem aos instrumentos de valorização no emprego previstos pela nova convenção coletiva nacional agrícola-Cuma de 15 de setembro de 2020, IDCC 7024. As pessoas já diplomadas ou formadas em agricultura terão um percurso personalizado mais curto para aceder ao estatuto de chefe de empresa declarada na MSA.",
+          "As formações curtas permitem abordar a horticultura segundo a French Method e compreender os passos a dar para criar uma pequena quinta hortícola.",
+        ],
       },
       {
-        titre: "Canteiros confiados aos formandos",
-        texte:
-          "A prática decorre em « Les Fermiers Bio Associés »: 2 ha de superfície, dos quais 1,5 ha divididos em canteiros de 1000 m². Estes canteiros são atribuídos aos formandos, que são responsáveis por eles. O equipamento, as sementes e o transporte das entregas são disponibilizados.",
+        titre: "Particularidade",
+        texte: [
+          "No fim de um ano de formação, o Instituto Moreau-Daverne permite aos formandos que o desejem tornar-se chefes de empresas de horticultura de pequena dimensão e integrar uma cooperativa agrícola de produção. Favorece a sua inscrição na MSA para obter o SIRET.",
+          "Em todos os momentos do seu percurso profissional, as formações do Instituto Moreau-Daverne podem contribuir para os seus projetos pessoais:",
+        ],
+        puces: [
+          "Inserir-se numa profissão de produção agrícola para encontrar emprego ou criar a sua empresa",
+          "Aperfeiçoar-se e qualificar-se para progredir na profissão e atingir escalões superiores",
+          "Descobrir as novas abordagens da produção hortícola: flores comestíveis, minilegumes, pequenos frutos e pomar",
+          "Compreender a cooperação agrícola, integrando temporariamente uma cooperativa de produtores, «Les Petites Fermes d’Azur»",
+        ],
+        apres: [
+          "O projeto pedagógico do Instituto Moreau-Daverne coloca a pessoa em imersão profissional total em pequenas empresas hortícolas de culturas associadas.",
+        ],
       },
       {
-        titre: "Rumo à instalação",
-        texte:
-          "No fim da formação, os formandos que o desejarem podem tornar-se empresários em horticultura de pequena superfície. O Institut facilita a sua inscrição na MSA, para a obtenção do seu SIRET, e permite-lhes integrar uma cooperativa agrícola de produção.",
+        titre: "Os nossos compromissos",
+        texte: [
+          "Compromisso n.º 1: garantir uma compreensão real da viabilidade da pequena empresa hortícola no método tradicional de produção.",
+        ],
+        puces: [
+          "Através de uma formação prática no terreno, em condições reais de produção.",
+          "Através de uma formação teórica em agronomia, botânica, biologia do solo, sistemas culturais e enquadramento económico, jurídico e social das pequenas explorações agrícolas.",
+        ],
+      },
+      {
+        titre: "Formação longa e formações curtas",
+        texte: [
+          "Formação longa de um ano:",
+        ],
+        puces: [
+          "1. Acompanhar a pessoa na sua aprendizagem para valorizar as suas competências e as responsabilidades necessárias ao exercício do emprego referenciado pelos diferentes patamares da CCN da produção agrícola e das Cuma de 15 de setembro de 2020.",
+          "2. Permitir-lhe criar a sua empresa durante o percurso de formação.",
+          "3. Assegurar-lhe o arrendamento de uma parcela urbana e uma clientela local própria no fim do percurso de formação, se decidir ficar no local ou na região PACA.",
+        ],
+        apres: [
+          "Formações curtas: esclarecer o formando sobre todas as vertentes técnicas, económicas, jurídicas e de integração local de uma pequena empresa hortícola no seu território.",
+          "Nota: todas as formações são acessíveis a pessoas com deficiência auditiva ou visual ligeira.",
+          "«A pedagogia pode tudo, pois faz dançar os ursos». G.W. Leibniz",
+        ],
+      },
+      {
+        titre: "A nossa experiência",
+        texte: [],
+        puces: [
+          "Uma sólida formação agronómica e uma longa prática profissional de mais de 50 anos.",
+          "A publicação de livros e conferências sobre agricultura biológica, biologia do solo e horticultura de pequena dimensão.",
+          "A gestão de uma cooperativa agrícola e de uma associação de agricultores biológicos.",
+          "O conhecimento original e a continuidade da prática da horticultura tradicional designada «French Method», em todo o mundo, há um século.",
+          "Relações privilegiadas com o meio profissional regional, os eleitos locais e as administrações da região Sul PACA.",
+          "Uma formação de formadores e uma formação no acompanhamento Qualiopi.",
+        ],
+      },
+      {
+        titre: "Os nossos equipamentos",
+        texte: [],
+        puces: [
+          "Uma parcela de 2,2 ha em Cannes, certificada em agricultura biológica (AB) pela Ecocert, que reúne vários hortelãos cooperadores de pequena dimensão, com plantações de árvores de fruto e de flores comestíveis, uva de mesa, pequenos frutos, estufas e material de exploração.",
+          "Um pomar de 5 000 m² em Cannes, com árvores de fruto de tronco e de meio-tronco.",
+          "Um edifício de 220 m² para as salas de aula, com equipamentos profissionais para o pós-colheita, e todo o material de exploração e de eventos.",
+          "Todo o material de exploração manual e motorizado, túneis, salas de trabalho e de reunião, fertilizantes orgânicos, sementes, material de venda…",
+        ],
+      },
+      {
+        titre: "Informações sobre as formações",
+        texte: [],
+        puces: [
+          "Objetivos pedagógicos",
+          "Programas teóricos",
+          "Programas práticos",
+          "Quadros de avaliação das competências profissionais",
+          "Organização dos ciclos de formação",
+          "Certificação das competências profissionais",
+          "A vida quotidiana no Instituto Moreau-Daverne",
+          "A vida prática no território Cannes-Pays de Lérins",
+          "Condições de acolhimento nas formações longas",
+          "Propinas, financiamento e apoios",
+          "Outras informações sobre a escola de horticultura urbana",
+        ],
+      },
+      {
+        titre: "Organização do instituto",
+        texte: [
+          "Instituto Moreau-Daverne, Chemin de la Plaine de Laval, 06150 Cannes-la-Bocca.",
+          "Correio eletrónico: contact@moreau-daverne.fr. Sítios: www.moreau-daverne.fr e www.agro-conseil-carnavalet.eu.",
+        ],
+        puces: [
+          "Responsável administrativo para informações e inscrições: Christian Carnavalet",
+          "Responsável pedagógico da formação e dos programas: Christian Carnavalet",
+          "Responsável pela deficiência e pelo acolhimento de pessoas com deficiência: Christian Carnavalet",
+        ],
+        apres: [
+          "Facebook: Les Petites Fermes d’Azur.",
+        ],
       },
     ],
-    altFormation: "Pessoas reunidas à volta de uma mesa, ao ar livre, no horto",
-    coopTitre: "Uma cooperativa que acolhe os formandos",
-    coopTexte:
-      "A formação prática decorre na cooperativa « Les Petites Fermes d’Azur ». Funciona como uma empresa clássica, com os seus custos, as suas receitas e a sua gestão económica e social.",
-    projetsTitre: "Projetos para o território",
-    projetsTexte:
-      "O Institut faz o levantamento de espaços agrícolas e trabalha com os eleitos locais para acolher novas instalações. Pretende também organizar produções para as refeições escolares e administrativas.",
-    partenairesLabel: "Parceiros citados no folheto:",
-    altAerien: "Vista aérea do local do Institut, com a marca « Institut »",
-    legendeAerien: "Vista aérea do local, extraída do folheto de fevereiro de 2022.",
-    note: "As informações desta secção provêm do folheto do Institut, edição de fevereiro de 2022. Segundo este folheto, 29 produtores tinham sido formados, e 97 % dos formandos que deram a sua opinião declararam-se satisfeitos (desde maio de 2021).",
+    chiffres: [
+      {
+        valeur: "65",
+        libelle: "produtores já formados",
+      },
+      {
+        valeur: "97 %",
+        libelle: "dos produtores satisfeitos com a formação *",
+      },
+      {
+        valeur: "Março de 2019",
+        libelle: "abertura do organismo de formação profissional contínua",
+      },
+    ],
+    slogan: "A paixão pelo ofício. Energia. Tempo para transmitir. Meios de apoio pedagógico.",
+    partenairesTitre: "Os nossos parceiros",
+    altFormation: "Pessoas reunidas à volta de uma mesa, ao ar livre, no jardim",
+    altAerien: "Vista aérea do local do Instituto, com a marca «Institut»",
+    legendeAerien: "Vista aérea do local, retirada do folheto de fevereiro de 2022.",
+    note: "As informações desta secção vêm do folheto do Instituto Moreau-Daverne, edição de junho de 2026. * Formandos que deram uma apreciação global de satisfação com a formação desde maio de 2021.",
   },
   methode: {
     eyebrow: "O método",
@@ -164,6 +268,7 @@ const copy: FermesCopy = {
   concevoir: {
     eyebrow: "Conceber",
     titre: "Conceber quintas ideais",
+    ouverture: "Uma cooperativa que acolhe os hortelãos recém-instalados. Permite-lhes vender a produção logo de imediato e empenhar-se mais facilmente na sua nova profissão.",
     texte:
       "Uma quinta ideal responde ao seu território. Tem em conta a água disponível, a terra, as pessoas que nela trabalham e os clientes a quem vai vender. A nossa ambição, com Christian Carnavalet, é reunir estes elementos desde a conceção do projeto.",
     etapes: [
@@ -198,6 +303,17 @@ const copy: FermesCopy = {
     legende: "Fotos ilustrativas",
     altCaisse: "Caixa de madeira cheia de legumes: cenouras, beringelas, cebolas e beterrabas",
     altCarottes: "Mãos enluvadas a colher cenouras num canteiro de horta",
+    credit: "Fotografias: Instituto Moreau-Daverne.",
+    altNouvelles: [
+      "Linhas de couves e de funcho num campo, com árvores ao fundo",
+      "Nabos amarelos numa caixa de madeira, com as folhas",
+      "Molhos de rabanetes vermelhos e brancos",
+      "Molhos de funcho verde numa caixa de madeira",
+      "Molhos de cenouras cor de laranja com as folhas numa caixa de madeira, com uma faca em cima",
+      "Abóboras compridas e curvas amontoadas",
+      "Molho de acelgas multicolores seguro na mão",
+      "Molhos de acelgas brancas numa caixa",
+    ],
   },
   questions: {
     eyebrow: "Perguntas",

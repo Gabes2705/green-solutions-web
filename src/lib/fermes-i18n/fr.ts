@@ -67,40 +67,144 @@ const copy: FermesCopy = {
   ferme: {
     eyebrow: "La ferme-école",
     titre: "Une école de maraîchage urbain",
-    p1: "L’Institut Moreau-Daverne forme aux métiers du maraîchage sur petite surface, selon la French Method. Il est installé à Cannes-La Bocca. Ses formations sont accessibles à tout public : aucune connaissance agricole n’est indispensable.",
-    p2: "Les parcours sont individualisés. Les stagiaires travaillent sur de petites surfaces, avec des cultures associées, et apprennent à diriger une petite entreprise maraîchère.",
+    presentation: [
+      "L’Institut Moreau-Daverne participe au développement de la qualification des personnes dans le secteur agricole, et principalement celui du maraîchage de plein champ et de serre froide, avec une diversité de productions. Les formations proposées permettent d’augmenter les performances des personnes, de les adapter aux évolutions technologiques et économiques, et aux exigences de qualité.",
+      "En complément de l’enseignement aux exigences pratiques du métier, l’Institut forme les personnes à l’agronomie, à la botanique, ainsi qu’à la gestion économique, financière et sociale de l’entreprise, afin de leur faire gravir les échelons des responsabilités et, si possible, de les accompagner à l’installation comme exploitant agricole déclaré à la MSA.",
+      "Dans le cadre de l’évolution du monde agricole, l’Institut forme à l’accueil à la ferme ainsi qu’à l’événementiel, et à l’ouverture sur le territoire en relation avec les élus locaux.",
+      "L’Institut favorise l’apprentissage du maraîchage selon la méthode traditionnelle française (French Method) et l’acquisition des compétences conduisant à la direction d’une entreprise maraîchère sur petite surface. Les formations dispensées par l’Institut Moreau-Daverne sont accessibles à tout public. Des connaissances agricoles ne sont pas indispensables.",
+    ],
     legendeIntro: "Extrait de la plaquette de l’Institut Moreau-Daverne, édition de février 2022.",
     altIntro: "Assemblage de photos : fruits rouges, légumes, fleurs comestibles et rangs de tuteurs en bambou",
     altBanniere: "Rangs de cultures au pied de collines, avec des personnes au travail",
     legendeBanniere: "Photo tirée de la plaquette de l’Institut, édition de février 2022.",
     cartes: [
       {
-        titre: "Une formation longue d’un an",
-        texte:
-          "La pratique représente 85 % du temps d’apprentissage de la formation longue, qui dure une année. Des formations courtes permettent de découvrir la French Method et les démarches pour créer une petite ferme maraîchère.",
+        titre: "Système pédagogique",
+        texte: [
+          "Les formations conduisant aux divers apprentissages proposés par l’Institut Moreau-Daverne sont centrées sur la pratique professionnelle, qui représente 85 % du temps d’apprentissage dans la formation longue, et sur les formations courtes conduisant à valider des niveaux professionnels reconnus.",
+          "L’organisme de formation réalise le suivi de cette pratique au sein de l’entreprise d’accueil « Les Fermiers Bio Associés », qui offre 2 ha de surface, dont 1,5 ha de terrain divisé en marais de 1 000 m² attribués en responsabilité aux apprenants, en production de légumes, fleurs comestibles, mini-légumes et plantes aromatiques. Tout le matériel d’exploitation, les semences, le matériel d’arrosage, le transport pour les livraisons, etc., est mis à disposition de l’Institut pour ses formations pratiques et pour l’évaluation des acquis par les stagiaires.",
+          "Les parcours de formation sont individualisés. Pour gérer la diversité des publics, l’organisme de formation propose des modalités et des outils de positionnement à l’entrée en formation, qui permettent de tenir compte des profils des candidats et de moduler les durées de formation.",
+          "La progressivité de l’enseignement, en formation longue (un an), se fait par paliers (n° 1 à 12). Ils correspondent aux outils de valorisation dans l’emploi précisés par la nouvelle convention collective nationale agricole-Cuma du 15 septembre 2020, IDCC 7024. Les personnes déjà diplômées ou formées en agriculture auront un parcours personnalisé raccourci pour l’accession au statut de chef d’entreprise déclarée à la MSA.",
+          "Les formations courtes permettent l’approche du maraîchage selon la French Method et la compréhension des démarches à accomplir pour la création d’une petite ferme maraîchère.",
+        ],
       },
       {
-        titre: "Des marais confiés aux stagiaires",
-        texte:
-          "La pratique se déroule chez « Les Fermiers Bio Associés » : 2 ha de surface, dont 1,5 ha divisé en marais de 1 000 m². Ces marais sont attribués aux stagiaires, qui en ont la responsabilité. Le matériel, les semences et le transport des livraisons sont mis à disposition.",
+        titre: "Particularité",
+        texte: [
+          "L’Institut Moreau-Daverne permet aux stagiaires qui le désirent, au terme d’une année de formation, de devenir chefs d’entreprise en maraîchage sur petite surface et d’intégrer une coopérative agricole de production. Il favorise leur inscription auprès de la MSA pour l’obtention de leur SIRET.",
+          "À tous les moments de votre parcours professionnel, les formations de l’Institut Moreau-Daverne peuvent apporter leur contribution à vos projets personnels :",
+        ],
+        puces: [
+          "S’insérer dans un métier de production agricole pour trouver un emploi ou créer son entreprise",
+          "Se perfectionner, se qualifier pour progresser dans son métier et atteindre des coefficients supérieurs",
+          "Découvrir les nouvelles approches de la production maraîchère, les fleurs comestibles, les mini-légumes, les petits fruits, le verger",
+          "Comprendre la coopération agricole en intégrant momentanément une coopérative de producteurs « Les Petites Fermes d’Azur »",
+        ],
+        apres: [
+          "Le projet pédagogique de l’Institut Moreau-Daverne place l’individu en immersion professionnelle totale au sein de petites entreprises maraîchères à cultures associées.",
+        ],
       },
       {
-        titre: "Vers l’installation",
-        texte:
-          "Au terme de la formation, les stagiaires qui le souhaitent peuvent devenir chefs d’entreprise en maraîchage sur petite surface. L’Institut favorise leur inscription à la MSA, pour l’obtention de leur SIRET, et leur permet d’intégrer une coopérative agricole de production.",
+        titre: "Nos engagements",
+        texte: [
+          "Engagement n° 1 : assurer une réelle compréhension de la viabilité de la petite entreprise maraîchère en méthode traditionnelle de production.",
+        ],
+        puces: [
+          "Par une formation pratique sur le terrain, en conditions réelles de production.",
+          "Par une formation théorique sur l’agronomie, la botanique, la biologie des sols, les systèmes culturaux et l’encadrement économique, juridique et social des petites entreprises agricoles.",
+        ],
+      },
+      {
+        titre: "Formation longue et formations courtes",
+        texte: [
+          "Formation longue d’une année :",
+        ],
+        puces: [
+          "1. Accompagner la personne dans son apprentissage pour valoriser ses compétences et les responsabilités nécessaires à la tenue de l’emploi référencé par les différents paliers de la CCN de la production agricole et des Cuma du 15 septembre 2020.",
+          "2. Lui permettre la création de son entreprise durant son parcours de formation.",
+          "3. Lui assurer la location d’une parcelle urbaine et sa propre clientèle locale en fin de parcours de formation, si elle décide de rester sur site ou en région PACA.",
+        ],
+        apres: [
+          "Formations courtes : éclairer le stagiaire sur toutes les facettes techniques, économiques, juridiques et d’insertion locale d’une petite entreprise maraîchère sur son territoire.",
+          "À noter : toutes les formations sont accessibles aux personnes en situation de handicaps auditifs ou visuels légers.",
+          "« La pédagogie peut tout puisqu’elle fait danser les ours » G.W. Leibniz",
+        ],
+      },
+      {
+        titre: "Notre expérience",
+        texte: [],
+        puces: [
+          "Une solide formation agronomique et une longue pratique professionnelle de plus de 50 ans.",
+          "La publication de livres et des conférences sur l’agriculture biologique, la biologie des sols et le maraîchage sur petite surface.",
+          "La gestion d’une coopérative agricole et d’une association d’agriculteurs biologiques.",
+          "La connaissance originelle et la continuité de la pratique du maraîchage traditionnel nommé « French Method », dans le monde entier depuis un siècle.",
+          "Des relations privilégiées avec le monde professionnel régional, les élus locaux et les administrations de la région Sud PACA.",
+          "Une formation de formateur et une formation à l’accompagnement Qualiopi.",
+        ],
+      },
+      {
+        titre: "Nos équipements",
+        texte: [],
+        puces: [
+          "Une parcelle de 2,2 ha à Cannes, labélisée AB par Ecocert, qui regroupe plusieurs maraîchers coopérateurs sur petite surface, des plantations de fruitiers et de fleurs comestibles, du raisin de table, des petits fruits, des serres et du matériel d’exploitation.",
+          "Un verger de 5 000 m² à Cannes, en fruitiers tige et demi-tige.",
+          "Un bâtiment de 220 m² pour les salles de cours, avec des équipements professionnels pour l’après-récolte, et tout le matériel d’exploitation et d’événementiel.",
+          "L’ensemble du matériel d’exploitation manuel et à moteur, tunnels, salles de travail et de réunions, intrants organiques, graines, matériel de vente…",
+        ],
+      },
+      {
+        titre: "Renseignements sur les formations",
+        texte: [],
+        puces: [
+          "Objectifs pédagogiques",
+          "Programmes théoriques",
+          "Programmes pratiques",
+          "Tableaux d’évaluation des compétences professionnelles",
+          "Organisation des cycles de formations",
+          "Certification des compétences professionnelles",
+          "Vie quotidienne au sein de l’Institut Moreau-Daverne",
+          "Vie pratique sur le territoire Cannes-Pays de Lérins",
+          "Conditions d’accueil aux formations longues",
+          "Tarifs, financement et prise en charge",
+          "Autres renseignements sur l’école de maraîchage urbain",
+        ],
+      },
+      {
+        titre: "Organisation de l’institut",
+        texte: [
+          "Institut Moreau-Daverne, chemin de la Plaine de Laval, 06150 Cannes-la-Bocca.",
+          "E-mail : contact@moreau-daverne.fr. Sites : www.moreau-daverne.fr et www.agro-conseil-carnavalet.eu.",
+        ],
+        puces: [
+          "Responsable administratif pour renseignement et inscription : Christian Carnavalet",
+          "Responsable pédagogique de la formation et des programmes : Christian Carnavalet",
+          "Responsable du handicap et de l’accueil des personnes en situation de déficience : Christian Carnavalet",
+        ],
+        apres: [
+          "Facebook : Les Petites Fermes d’Azur.",
+        ],
       },
     ],
+    chiffres: [
+      {
+        valeur: "65",
+        libelle: "producteurs déjà formés",
+      },
+      {
+        valeur: "97 %",
+        libelle: "des producteurs satisfaits de la formation *",
+      },
+      {
+        valeur: "Mars 2019",
+        libelle: "ouverture de l’organisme de formation professionnelle continue",
+      },
+    ],
+    slogan: "La passion du métier. En énergie. Du temps pour la transmission. Des moyens en appui pédagogiques.",
+    partenairesTitre: "Nos partenaires",
     altFormation: "Personnes réunies autour d’une table, en extérieur, dans le jardin",
-    coopTitre: "Une coopérative qui accueille les stagiaires",
-    coopTexte:
-      "La formation pratique a lieu au sein de la coopérative « Les Petites Fermes d’Azur ». Elle fonctionne comme une entreprise classique, avec ses charges, ses recettes et sa gestion économique et sociale.",
-    projetsTitre: "Des projets pour le territoire",
-    projetsTexte:
-      "L’Institut recense des espaces agricoles et travaille avec les élus locaux pour accueillir des installations. Il vise aussi à organiser des productions pour les repas des écoles et des administrations.",
-    partenairesLabel: "Partenaires cités dans la plaquette :",
     altAerien: "Vue aérienne du site de l’Institut, avec le repère « Institut »",
     legendeAerien: "Vue aérienne du site, extraite de la plaquette de février 2022.",
-    note: "Les informations de cette section viennent de la plaquette de l’Institut, édition de février 2022. Selon cette plaquette, 29 producteurs avaient été formés, et 97 % des stagiaires ayant donné un avis se disaient satisfaits (depuis mai 2021).",
+    note: "Les informations de cette section viennent de la plaquette de l’Institut Moreau-Daverne, édition de juin 2026. * Stagiaires ayant donné une appréciation de satisfaction globale de la formation depuis mai 2021.",
   },
   methode: {
     eyebrow: "La méthode",
@@ -164,6 +268,7 @@ const copy: FermesCopy = {
   concevoir: {
     eyebrow: "Concevoir",
     titre: "Concevoir des fermes idéales",
+    ouverture: "Une coopérative qui accueille les nouveaux maraîchers ou maraîchères installés. Elle leur permet de vendre leurs productions immédiatement et de s’engager dans leur nouveau métier plus facilement.",
     texte:
       "Une ferme idéale répond à son territoire. Elle tient compte de l’eau disponible, de la terre, des personnes qui y travaillent et des clients auxquels elle vendra. Notre ambition avec Christian Carnavalet est de rapprocher ces éléments dès la conception du projet.",
     etapes: [
@@ -198,6 +303,17 @@ const copy: FermesCopy = {
     legende: "Photos d’illustration",
     altCaisse: "Caisse en bois pleine de légumes : carottes, aubergines, oignons et betteraves",
     altCarottes: "Mains gantées qui récoltent des carottes dans un bac de potager",
+    credit: "Photos : Institut Moreau-Daverne.",
+    altNouvelles: [
+      "Rangs de choux et de fenouil dans un champ, avec des arbres en arrière-plan",
+      "Navets jaunes dans une caisse en bois, avec leurs fanes",
+      "Bouquets de radis rouges et blancs",
+      "Bottes de fenouil vert dans une caisse en bois",
+      "Carottes en bottes dans une caisse en bois, avec un couteau posé dessus",
+      "Courges longues et courbes, en tas",
+      "Bouquet de bettes multicolores tenu à la main",
+      "Bettes blanches en bottes dans une caisse",
+    ],
   },
   questions: {
     eyebrow: "Questions",

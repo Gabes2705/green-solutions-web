@@ -66,41 +66,145 @@ const copy: FermesCopy = {
   },
   ferme: {
     eyebrow: "Sekolah pertanian",
-    titre: "Sekolah berkebun sayur perkotaan",
-    p1: "Institut Moreau-Daverne melatih orang untuk karier berkebun sayur di lahan kecil, mengikuti French Method. Institut ini berlokasi di Cannes-La Bocca. Kursusnya terbuka untuk semua orang: tidak diperlukan pengetahuan pertanian sebelumnya.",
-    p2: "Jalur pelatihan disesuaikan untuk setiap orang. Peserta bekerja di petak kecil dengan tanaman pendamping, dan belajar menjalankan usaha berkebun sayur kecil.",
+    titre: "Sekolah hortikultura perkotaan",
+    presentation: [
+      "Institut Moreau-Daverne berperan dalam pengembangan kualifikasi orang-orang di sektor pertanian, terutama hortikultura lahan terbuka dan rumah kaca dingin, dengan beragam produksi. Pelatihan yang ditawarkan membantu meningkatkan kinerja, menyesuaikan diri dengan perubahan teknologi dan ekonomi, serta memenuhi tuntutan mutu.",
+      "Selain pengajaran praktis sesuai tuntutan profesi, Institut melatih orang-orang dalam agronomi, botani, serta pengelolaan ekonomi, keuangan, dan sosial suatu usaha, agar mereka dapat naik ke jenjang tanggung jawab dan, jika memungkinkan, didampingi dalam pendirian usaha tani yang terdaftar di MSA.",
+      "Seiring perkembangan dunia pertanian, Institut juga melatih penerimaan tamu di peternakan dan penyelenggaraan acara, serta keterbukaan kepada wilayah setempat bersama pejabat daerah.",
+      "Institut mendorong pembelajaran hortikultura menurut metode Prancis tradisional (French Method) dan penguasaan keterampilan untuk memimpin usaha hortikultura skala kecil. Pelatihan Institut Moreau-Daverne terbuka untuk semua orang. Pengetahuan pertanian sebelumnya tidak diperlukan.",
+    ],
     legendeIntro: "Kutipan dari brosur Institut Moreau-Daverne, edisi Februari 2022.",
-    altIntro: "Kolase foto: buah merah, sayuran, bunga yang dapat dimakan, dan tiang bambu di antara barisan",
-    altBanniere: "Barisan tanaman di kaki bukit, dengan orang-orang yang sedang bekerja",
+    altIntro: "Kolase foto: buah merah, sayuran, bunga yang dapat dimakan, dan barisan ajir bambu",
+    altBanniere: "Barisan tanaman di kaki bukit, dengan orang-orang sedang bekerja",
     legendeBanniere: "Foto dari brosur Institut, edisi Februari 2022.",
     cartes: [
       {
-        titre: "Kursus panjang selama satu tahun",
-        texte:
-          "Praktik mencakup 85 % dari waktu belajar pada kursus panjang, yang berlangsung selama satu tahun. Kursus singkat memungkinkan orang mengenal French Method dan langkah-langkah untuk mendirikan pertanian sayur kecil.",
+        titre: "Sistem pengajaran",
+        texte: [
+          "Pelatihan yang mengarah pada berbagai kualifikasi yang ditawarkan Institut Moreau-Daverne berfokus pada praktik profesional, yang mencakup 85 % waktu belajar dalam pelatihan panjang, dan pada pelatihan singkat yang mengarah pada tingkat profesional yang diakui.",
+          "Lembaga pelatihan mengawasi praktik ini di perusahaan mitra «Les Fermiers Bio Associés», yang memiliki lahan 2 ha, termasuk 1,5 ha yang dibagi menjadi kebun seluas 1.000 m² yang dipercayakan kepada peserta pelatihan untuk dikelola, untuk menanam sayuran, bunga yang dapat dimakan, sayuran mini, dan tanaman aromatik. Seluruh peralatan pertanian, benih, peralatan penyiraman, transportasi pengiriman, dan lainnya, disediakan bagi Institut untuk pelatihan praktik dan penilaian keterampilan peserta.",
+          "Jalur pelatihan bersifat individual. Untuk mengakomodasi keragaman peserta, lembaga pelatihan menawarkan penilaian dan alat penempatan pada awal pelatihan, sehingga profil kandidat diperhitungkan dan durasi pelatihan dapat disesuaikan.",
+          "Pengajaran bertahap dalam pelatihan panjang (satu tahun) melalui tingkat No. 1 hingga 12. Tingkatan ini sesuai dengan alat pengakuan kerja dalam perjanjian kerja bersama pertanian nasional yang baru tertanggal 15 September 2020, IDCC 7024. Orang yang sudah berijazah atau pernah mengikuti pelatihan pertanian akan memiliki jalur pribadi yang lebih singkat untuk menjadi pemilik usaha yang terdaftar di MSA.",
+          "Pelatihan singkat memperkenalkan hortikultura melalui French Method dan menjelaskan langkah-langkah yang diperlukan untuk mendirikan peternakan hortikultura kecil.",
+        ],
       },
       {
-        titre: "Petak yang dipercayakan kepada peserta",
-        texte:
-          "Praktik dilakukan di «Les Fermiers Bio Associés»: luas total 2 ha, termasuk 1,5 ha yang dibagi menjadi petak-petak seluas 1.000 m². Petak-petak ini diberikan kepada peserta, yang bertanggung jawab atasnya. Peralatan, benih, dan transportasi pengiriman disediakan.",
+        titre: "Keistimewaan",
+        texte: [
+          "Setelah satu tahun pelatihan, Institut Moreau-Daverne memungkinkan peserta yang berminat untuk menjadi pemilik usaha hortikultura skala kecil dan bergabung dengan koperasi produksi pertanian. Institut membantu mereka mendaftar di MSA untuk memperoleh nomor SIRET.",
+          "Di setiap tahap karier Anda, pelatihan Institut Moreau-Daverne dapat berkontribusi pada proyek pribadi Anda:",
+        ],
+        puces: [
+          "Bekerja di bidang produksi pertanian atau mendirikan usaha sendiri",
+          "Meningkatkan keterampilan dan kualifikasi untuk maju dalam profesi dan mencapai tingkat yang lebih tinggi",
+          "Menemukan pendekatan baru dalam hortikultura: bunga yang dapat dimakan, sayuran mini, buah kecil, dan kebun buah",
+          "Memahami kerja sama pertanian dengan bergabung sementara dalam koperasi produsen «Les Petites Fermes d’Azur»",
+        ],
+        apres: [
+          "Proyek pedagogis Institut Moreau-Daverne menempatkan setiap orang dalam imersi profesional penuh di dalam usaha hortikultura kecil dengan tanaman tumpang sari.",
+        ],
       },
       {
-        titre: "Menuju pendirian usaha",
-        texte:
-          "Setelah kursus selesai, peserta yang menginginkannya dapat menjadi pengusaha berkebun sayur skala kecil. Institut membantu mereka mendaftar ke MSA untuk memperoleh nomor SIRET, dan memungkinkan mereka bergabung dengan koperasi produksi pertanian.",
+        titre: "Komitmen kami",
+        texte: [
+          "Komitmen No. 1: memastikan pemahaman nyata tentang kelayakan usaha hortikultura kecil dengan metode produksi tradisional.",
+        ],
+        puces: [
+          "Melalui pelatihan praktik di lapangan, dalam kondisi produksi yang sebenarnya.",
+          "Melalui teori agronomi, botani, biologi tanah, sistem budidaya, serta pengelolaan ekonomi, hukum, dan sosial usaha pertanian kecil.",
+        ],
+      },
+      {
+        titre: "Pelatihan panjang dan pelatihan singkat",
+        texte: [
+          "Pelatihan panjang selama satu tahun:",
+        ],
+        puces: [
+          "1. Mendampingi orang tersebut dalam pembelajarannya untuk mengembangkan keterampilan dan tanggung jawab yang dibutuhkan untuk pekerjaan, sebagaimana diatur dalam berbagai tingkatan perjanjian kerja bersama produksi pertanian nasional dan Cuma tanggal 15 September 2020.",
+          "2. Membantunya mendirikan usaha sendiri selama masa pelatihan.",
+          "3. Menjamin sewa sebidang lahan kota dan pelanggan lokal sendiri di akhir pelatihan, jika ia memutuskan untuk tetap di lokasi atau di wilayah PACA.",
+        ],
+        apres: [
+          "Pelatihan singkat: memberikan gambaran lengkap kepada peserta tentang aspek teknis, ekonomi, hukum, dan integrasi lokal dalam menjalankan usaha hortikultura kecil di wilayahnya.",
+          "Catatan: semua pelatihan terbuka bagi orang dengan gangguan pendengaran atau penglihatan ringan.",
+          "«Pengajaran bisa melakukan segalanya, karena membuat beruang menari». G.W. Leibniz",
+        ],
+      },
+      {
+        titre: "Pengalaman kami",
+        texte: [],
+        puces: [
+          "Pelatihan agronomi yang kuat dan lebih dari 50 tahun praktik profesional.",
+          "Penerbitan buku dan ceramah tentang pertanian organik, biologi tanah, dan hortikultura skala kecil.",
+          "Mengelola koperasi pertanian dan asosiasi petani organik.",
+          "Pengetahuan asli dan kesinambungan praktik hortikultura tradisional yang disebut «French Method», di seluruh dunia selama satu abad.",
+          "Hubungan istimewa dengan dunia usaha regional, pejabat daerah, dan administrasi wilayah Sud PACA.",
+          "Pelatihan pelatih dan pelatihan pendampingan Qualiopi.",
+        ],
+      },
+      {
+        titre: "Fasilitas kami",
+        texte: [],
+        puces: [
+          "Sebidang lahan 2,2 ha di Cannes, bersertifikat organik AB oleh Ecocert, digunakan bersama beberapa petani hortikultura kecil yang bekerja sama, dengan penanaman pohon buah dan bunga yang dapat dimakan, anggur meja, buah kecil, rumah kaca, dan peralatan pertanian.",
+          "Kebun buah seluas 5.000 m² di Cannes, dengan pohon buah batang tinggi dan batang setengah tinggi.",
+          "Gedung seluas 220 m² untuk ruang kelas, dengan peralatan profesional pascapanen, serta seluruh peralatan pertanian dan acara.",
+          "Seluruh peralatan pertanian manual dan bermotor, terowongan, ruang kerja dan rapat, input organik, benih, peralatan penjualan…",
+        ],
+      },
+      {
+        titre: "Informasi tentang pelatihan",
+        texte: [],
+        puces: [
+          "Tujuan pembelajaran",
+          "Program teori",
+          "Program praktik",
+          "Tabel penilaian kompetensi profesional",
+          "Penyelenggaraan siklus pelatihan",
+          "Sertifikasi kompetensi profesional",
+          "Kehidupan sehari-hari di Institut Moreau-Daverne",
+          "Kehidupan praktis di wilayah Cannes-Pays de Lérins",
+          "Syarat penerimaan pada pelatihan panjang",
+          "Biaya, pembiayaan, dan penanggungan",
+          "Informasi lain tentang sekolah hortikultura perkotaan",
+        ],
+      },
+      {
+        titre: "Organisasi institut",
+        texte: [
+          "Institut Moreau-Daverne, Chemin de la Plaine de Laval, 06150 Cannes-la-Bocca.",
+          "E-mail: contact@moreau-daverne.fr. Situs web: www.moreau-daverne.fr dan www.agro-conseil-carnavalet.eu.",
+        ],
+        puces: [
+          "Penanggung jawab administrasi untuk informasi dan pendaftaran: Christian Carnavalet",
+          "Penanggung jawab pedagogis pelatihan dan program: Christian Carnavalet",
+          "Penanggung jawab disabilitas dan penerimaan orang dengan disabilitas: Christian Carnavalet",
+        ],
+        apres: [
+          "Facebook: Les Petites Fermes d’Azur.",
+        ],
       },
     ],
-    altFormation: "Orang-orang berkumpul mengelilingi meja, di luar ruangan, di kebun",
-    coopTitre: "Koperasi yang menerima peserta",
-    coopTexte:
-      "Pelatihan praktik berlangsung di dalam koperasi «Les Petites Fermes d’Azur». Koperasi ini beroperasi seperti perusahaan biasa, dengan biaya, pendapatan, dan pengelolaan ekonomi serta sosialnya sendiri.",
-    projetsTitre: "Proyek untuk wilayah",
-    projetsTexte:
-      "Institut mendata lahan pertanian dan bekerja sama dengan pejabat terpilih setempat untuk menyambut pendirian pertanian baru. Institut juga bertujuan mengatur produksi untuk katering sekolah dan kantor-kantor pemerintah.",
-    partenairesLabel: "Mitra yang disebut dalam brosur:",
-    altAerien: "Pandangan udara lokasi Institut, dengan penanda «Institut»",
-    legendeAerien: "Pandangan udara lokasi, dari brosur Februari 2022.",
-    note: "Informasi dalam bagian ini berasal dari brosur Institut, edisi Februari 2022. Menurut brosur ini, 29 produsen telah dilatih, dan 97% peserta yang memberikan pendapat menyatakan puas (sejak Mei 2021).",
+    chiffres: [
+      {
+        valeur: "65",
+        libelle: "produsen yang sudah dilatih",
+      },
+      {
+        valeur: "97 %",
+        libelle: "produsen yang puas dengan pelatihan *",
+      },
+      {
+        valeur: "Maret 2019",
+        libelle: "pembukaan lembaga pelatihan vokasi berkelanjutan",
+      },
+    ],
+    slogan: "Semangat terhadap profesi. Energi. Waktu untuk meneruskan pengetahuan. Sarana pendukung pengajaran.",
+    partenairesTitre: "Mitra kami",
+    altFormation: "Orang-orang berkumpul di sekitar meja, di luar ruangan, di kebun",
+    altAerien: "Pemandangan udara lokasi Institut, dengan penanda «Institut»",
+    legendeAerien: "Pemandangan udara lokasi, dari brosur Februari 2022.",
+    note: "Informasi di bagian ini berasal dari brosur Institut Moreau-Daverne, edisi Juni 2026. * Peserta yang memberikan penilaian kepuasan keseluruhan terhadap pelatihan sejak Mei 2021.",
   },
   methode: {
     eyebrow: "Metode",
@@ -164,6 +268,7 @@ const copy: FermesCopy = {
   concevoir: {
     eyebrow: "Rancangan",
     titre: "Merancang pertanian ideal",
+    ouverture: "Sebuah koperasi yang menerima petani hortikultura yang baru menetap. Koperasi ini membantu mereka menjual hasil panen segera dan memulai profesi barunya dengan lebih mudah.",
     texte:
       "Pertanian ideal menanggapi wilayahnya. Ia memperhitungkan air yang tersedia, tanah, orang-orang yang bekerja di dalamnya, dan pelanggan yang akan dilayaninya. Ambisi kami bersama Christian Carnavalet adalah menghubungkan unsur-unsur ini sejak tahap perancangan proyek.",
     etapes: [
@@ -198,6 +303,17 @@ const copy: FermesCopy = {
     legende: "Foto ilustrasi",
     altCaisse: "Peti kayu penuh sayuran: wortel, terung, bawang, dan bit",
     altCarottes: "Tangan bersarung tangan memanen wortel dari bak kebun",
+    credit: "Foto: Institut Moreau-Daverne.",
+    altNouvelles: [
+      "Barisan kubis dan adas di ladang, dengan pepohonan di latar belakang",
+      "Lobak kuning dalam peti kayu, dengan daunnya",
+      "Ikat lobak merah dan putih",
+      "Ikat adas hijau dalam peti kayu",
+      "Ikat wortel oranye dengan daunnya dalam peti kayu, dengan pisau di atasnya",
+      "Labu panjang dan melengkung yang ditumpuk",
+      "Ikat sawi berwarna-warni yang dipegang di tangan",
+      "Ikat sawi putih dalam peti",
+    ],
   },
   questions: {
     eyebrow: "Pertanyaan",

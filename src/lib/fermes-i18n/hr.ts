@@ -65,42 +65,146 @@ const copy: FermesCopy = {
     ],
   },
   ferme: {
-    eyebrow: "Farma-škola",
-    titre: "Škola urbanog povrćarstva",
-    p1: "Institut Moreau-Daverne osposobljava ljude za zanimanja u povrćarstvu na maloj površini, prema French Methodu. Smješten je u Cannesu-La Bocci. Tečajevi su otvoreni svima: nije potrebno prethodno poljoprivredno znanje.",
-    p2: "Obrazovni putovi prilagođeni su svakoj osobi. Polaznici rade na malim parcelama s međuusjevima i uče voditi malo povrtlarsko gospodarstvo.",
-    legendeIntro: "Odlomak iz brošure Instituta Moreau-Daverne, izdanje veljača 2022.",
-    altIntro: "Kolaž fotografija: crveno voće, povrće, jestivo cvijeće i bambusovi kolci između redova",
-    altBanniere: "Redovi usjeva u podnožju brežuljaka, s ljudima na poslu",
+    eyebrow: "Škola-farma",
+    titre: "Škola urbanog povrtlarstva",
+    presentation: [
+      "Institut Moreau-Daverne doprinosi osposobljavanju osoba u poljoprivrednom sektoru, prvenstveno u povrtlarstvu na otvorenom polju i u hladnom stakleniku, uz veliku raznolikost proizvodnje. Ponuđeni programi pomažu osobama da poboljšaju svoju učinkovitost, prilagode se tehnološkim i gospodarskim promjenama te ispune zahtjeve kvalitete.",
+      "Uz praktičnu nastavu koju zahtijeva zanimanje, Institut osposobljava osobe za agronomiju, botaniku te gospodarsko, financijsko i društveno upravljanje poduzećem, kako bi mogle napredovati na odgovorna mjesta i, kada je to moguće, dobiti podršku pri pokretanju vlastitog poljoprivrednog gospodarstva registriranog u MSA.",
+      "U okviru promjena u poljoprivrednom svijetu, Institut osposobljava i za prihvat posjetitelja na gospodarstvu i organizaciju događanja, kao i za otvaranje prema lokalnoj zajednici u suradnji s lokalnim izabranim predstavnicima.",
+      "Institut potiče učenje povrtlarstva tradicionalnom francuskom metodom (French Method) i stjecanje vještina potrebnih za vođenje malog povrtlarskog poduzeća. Programi Instituta Moreau-Daverne dostupni su svima. Prethodno poznavanje poljoprivrede nije potrebno.",
+    ],
+    legendeIntro: "Izvadak iz brošure Instituta Moreau-Daverne, izdanje veljača 2022.",
+    altIntro: "Kolaž fotografija: crveno voće, povrće, jestivo cvijeće i redovi bambusovih kolčića",
+    altBanniere: "Redovi usjeva u podnožju brežuljaka, s ljudima na radu",
     legendeBanniere: "Fotografija iz brošure Instituta, izdanje veljača 2022.",
     cartes: [
       {
-        titre: "Jednogodišnje dugo osposobljavanje",
-        texte:
-          "Praksa čini 85 % vremena učenja u dugom osposobljavanju, koje traje godinu dana. Kratki tečajevi omogućuju upoznavanje s French Methodom i koracima za osnivanje male povrtlarske farme.",
+        titre: "Sustav poučavanja",
+        texte: [
+          "Programi koji vode do različitih vještina koje nudi Institut Moreau-Daverne usmjereni su na stručnu praksu, koja čini 85 % vremena učenja u dugom programu, te na kratke programe koji vode do priznatih stručnih razina.",
+          "Obrazovna ustanova prati tu praksu u matičnom poduzeću «Les Fermiers Bio Associés», koje raspolaže površinom od 2 ha, od čega je 1,5 ha podijeljeno na vrtove od 1.000 m² koji se polaznicima dodjeljuju na odgovornost, za uzgoj povrća, jestivog cvijeća, mini povrća i aromatičnih biljaka. Sva poljoprivredna oprema, sjeme, oprema za zalijevanje, prijevoz za isporuke i sl. stavljaju se na raspolaganje Institutu za praktične programe i za vrednovanje stečenih znanja polaznika.",
+          "Obrazovni putovi su individualizirani. Kako bi se zadovoljila raznolikost polaznika, obrazovna ustanova na početku nudi postupke i alate za procjenu razine, koji omogućuju uzimanje u obzir profila kandidata te prilagodbu trajanja programa.",
+          "Napredovanje u dugom programu (jedna godina) odvija se kroz razine (od 1. do 12.). Odgovaraju alatima za vrednovanje u zapošljavanju predviđenima novim nacionalnim kolektivnim ugovorom za poljoprivredu i Cuma od 15. rujna 2020., IDCC 7024. Osobe koje već imaju diplomu ili poljoprivredno obrazovanje imat će skraćeni, personalizirani put do statusa vlasnika poduzeća registriranog u MSA.",
+          "Kratki programi omogućuju upoznavanje s povrtlarstvom prema French Method i razumijevanje koraka potrebnih za osnivanje malog povrtlarskog gospodarstva.",
+        ],
       },
       {
-        titre: "Parcele povjerene polaznicima",
-        texte:
-          "Praksa se odvija na „Les Fermiers Bio Associés”: 2 ha površine, od čega je 1,5 ha podijeljeno na parcele od 1000 m². Te parcele dodjeljuju se polaznicima, koji za njih odgovaraju. Oprema, sjeme i prijevoz za isporuke osigurani su.",
+        titre: "Posebnost",
+        texte: [
+          "Nakon godine osposobljavanja, Institut Moreau-Daverne polaznicima koji to žele omogućuje da postanu vlasnici malih povrtlarskih poduzeća i da se pridruže poljoprivrednoj proizvodnoj zadruzi. Pomaže im pri upisu u MSA radi dobivanja broja SIRET.",
+          "U svakoj fazi vašeg profesionalnog puta, programi Instituta Moreau-Daverne mogu pridonijeti vašim osobnim projektima:",
+        ],
+        puces: [
+          "Zaposliti se u poljoprivrednoj proizvodnji ili osnovati vlastito poduzeće",
+          "Usavršiti se i kvalificirati kako biste napredovali u zanimanju i dosegnuli više razine",
+          "Otkriti nove pristupe povrtlarskoj proizvodnji: jestivo cvijeće, mini povrće, sitno voće i voćnjake",
+          "Razumjeti poljoprivrednu suradnju privremenim uključivanjem u zadrugu proizvođača «Les Petites Fermes d’Azur»",
+        ],
+        apres: [
+          "Pedagoški projekt Instituta Moreau-Daverne osobu stavlja u potpunu profesionalnu uronjenost u malim povrtlarskim poduzećima s kombiniranim usjevima.",
+        ],
       },
       {
-        titre: "Prema osnivanju vlastitog posla",
-        texte:
-          "Nakon završetka osposobljavanja, polaznici koji to žele mogu postati poduzetnici u povrćarstvu na maloj površini. Institut im pomaže da se upišu u MSA radi dobivanja broja SIRET i omogućuje im ulazak u poljoprivrednu proizvodnu zadrugu.",
+        titre: "Naše obveze",
+        texte: [
+          "Obveza br. 1: osigurati stvarno razumijevanje održivosti malog povrtlarskog poduzeća u tradicionalnoj metodi proizvodnje.",
+        ],
+        puces: [
+          "Kroz praktičnu nastavu na terenu, u stvarnim uvjetima proizvodnje.",
+          "Kroz teorijsku nastavu iz agronomije, botanike, biologije tla, sustava uzgoja te gospodarskog, pravnog i društvenog upravljanja malim poljoprivrednim poduzećima.",
+        ],
+      },
+      {
+        titre: "Dugi i kratki programi",
+        texte: [
+          "Dugi program u trajanju od godinu dana:",
+        ],
+        puces: [
+          "1. Pratiti osobu u učenju, kako bi razvila vještine i odgovornosti potrebne za obavljanje posla, kako je utvrđeno u različitim razinama nacionalnog kolektivnog ugovora za poljoprivrednu proizvodnju i Cuma od 15. rujna 2020.",
+          "2. Omogućiti joj osnivanje vlastitog poduzeća tijekom programa.",
+          "3. Na kraju programa osigurati zakup gradske parcele i vlastite lokalne kupce, ako se odluči ostati na mjestu ili u regiji PACA.",
+        ],
+        apres: [
+          "Kratki programi: polazniku pružiti potpun uvid u tehničke, gospodarske, pravne i lokalne aspekte vođenja malog povrtlarskog poduzeća na njegovom području.",
+          "Napomena: svi programi dostupni su osobama s blagim oštećenjem sluha ili vida.",
+          "„Pedagogija može sve, jer tjera medvjede da plešu.” G. W. Leibniz",
+        ],
+      },
+      {
+        titre: "Naše iskustvo",
+        texte: [],
+        puces: [
+          "Solidno agronomsko obrazovanje i više od 50 godina stručne prakse.",
+          "Objavljivanje knjiga i predavanja o ekološkoj poljoprivredi, biologiji tla i povrtlarstvu na maloj površini.",
+          "Vođenje poljoprivredne zadruge i udruge ekoloških poljoprivrednika.",
+          "Izvorno znanje i kontinuitet prakse tradicionalnog povrtlarstva zvanog „French Method”, u svijetu već stoljeće.",
+          "Povlaštene veze s regionalnim stručnim okruženjem, lokalnim izabranim predstavnicima i upravama regije Sud PACA.",
+          "Obuka trenera i obuka u području podrške Qualiopi.",
+        ],
+      },
+      {
+        titre: "Naša oprema",
+        texte: [],
+        puces: [
+          "Parcela od 2,2 ha u Cannesu, certificirana za ekološku poljoprivredu (AB) od strane Ecocerta, koju dijele surađujući mali povrtlari, s nasadima voćki i jestivog cvijeća, stolnim grožđem, sitnim voćem, staklenicima i poljoprivrednom opremom.",
+          "Voćnjak od 5.000 m² u Cannesu, s voćkama na visokoj i polu-visokoj stabljici.",
+          "Zgrada od 220 m² za učionice, s profesionalnom opremom za doradu nakon berbe te sva poljoprivredna i oprema za događanja.",
+          "Sva ručna i motorna poljoprivredna oprema, tuneli, radne i sastanačke prostorije, organski inputi, sjeme, oprema za prodaju…",
+        ],
+      },
+      {
+        titre: "Informacije o programima",
+        texte: [],
+        puces: [
+          "Obrazovni ciljevi",
+          "Teorijski programi",
+          "Praktični programi",
+          "Tablice za vrednovanje stručnih vještina",
+          "Organizacija ciklusa osposobljavanja",
+          "Certifikacija stručnih vještina",
+          "Svakodnevni život u Institutu Moreau-Daverne",
+          "Praktični život na području Cannes-Pays de Lérins",
+          "Uvjeti prijma u dugim programima",
+          "Cijena, financiranje i snošenje troškova",
+          "Ostale informacije o školi urbanog povrtlarstva",
+        ],
+      },
+      {
+        titre: "Organizacija instituta",
+        texte: [
+          "Institut Moreau-Daverne, Chemin de la Plaine de Laval, 06150 Cannes-la-Bocca.",
+          "E-pošta: contact@moreau-daverne.fr. Web stranice: www.moreau-daverne.fr i www.agro-conseil-carnavalet.eu.",
+        ],
+        puces: [
+          "Administrativni odgovorni za informacije i upis: Christian Carnavalet",
+          "Pedagoški odgovorni za programe i obrazovanje: Christian Carnavalet",
+          "Odgovorni za invaliditet i prihvat osoba s invaliditetom: Christian Carnavalet",
+        ],
+        apres: [
+          "Facebook: Les Petites Fermes d’Azur.",
+        ],
       },
     ],
+    chiffres: [
+      {
+        valeur: "65",
+        libelle: "već osposobljenih proizvođača",
+      },
+      {
+        valeur: "97 %",
+        libelle: "proizvođača zadovoljnih obukom *",
+      },
+      {
+        valeur: "Ožujak 2019.",
+        libelle: "otvaranje ustanove za stalno strukovno obrazovanje",
+      },
+    ],
+    slogan: "Strast prema zanimanju. Energija. Vrijeme za prenošenje znanja. Sredstva potpore u nastavi.",
+    partenairesTitre: "Naši partneri",
     altFormation: "Ljudi okupljeni oko stola, na otvorenom, u vrtu",
-    coopTitre: "Zadruga koja prima polaznike",
-    coopTexte:
-      "Praktična obuka odvija se unutar zadruge „Les Petites Fermes d’Azur”. Ona radi kao klasično poduzeće, sa svojim troškovima, prihodima i gospodarskim i društvenim upravljanjem.",
-    projetsTitre: "Projekti za područje",
-    projetsTexte:
-      "Institut popisuje poljoprivredno zemljište i surađuje s lokalnim izabranim dužnosnicima kako bi primio nove farme. Također ima za cilj organizirati proizvodnju za školske i upravne kuhinje.",
-    partenairesLabel: "Partneri navedeni u brošuri:",
-    altAerien: "Zračni pogled na područje Instituta, s oznakom „Institut”",
-    legendeAerien: "Zračni pogled na područje, iz brošure iz veljače 2022.",
-    note: "Podaci u ovom odjeljku dolaze iz brošure Instituta, izdanje veljača 2022. Prema toj brošuri, osposobljeno je bilo 29 proizvođača, a 97 % polaznika koji su dali mišljenje izjavilo je da je zadovoljno (od svibnja 2021.).",
+    altAerien: "Pogled iz zraka na prostor Instituta, s oznakom „Institut”",
+    legendeAerien: "Pogled iz zraka na prostor, iz brošure veljače 2022.",
+    note: "Podaci u ovom odjeljku dolaze iz brošure Instituta Moreau-Daverne, izdanje lipanj 2026. * Polaznici koji su od svibnja 2021. dali ukupnu ocjenu zadovoljstva obukom.",
   },
   methode: {
     eyebrow: "Metoda",
@@ -164,6 +268,7 @@ const copy: FermesCopy = {
   concevoir: {
     eyebrow: "Osmišljavanje",
     titre: "Osmišljavanje idealnih farmi",
+    ouverture: "Zadruga koja prima nove povrtlare koji su se tek nastanili. Omogućuje im da odmah prodaju svoje proizvode i lakše se posvete novom zanimanju.",
     texte:
       "Idealna farma odgovara svom području. Uzima u obzir dostupnu vodu, zemlju, ljude koji u njoj rade i kupce kojima će prodavati. Naša ambicija, zajedno s Christianom Carnavaletom, jest spojiti te elemente već u fazi osmišljavanja projekta.",
     etapes: [
@@ -198,6 +303,17 @@ const copy: FermesCopy = {
     legende: "Ilustrativne fotografije",
     altCaisse: "Drvena kutija puna povrća: mrkve, patlidžani, luk i cikla",
     altCarottes: "Ruke u rukavicama beru mrkvu s gredice u vrtu",
+    credit: "Fotografije: Institut Moreau-Daverne.",
+    altNouvelles: [
+      "Redovi kupusa i komorača na polju, s drvećem u pozadini",
+      "Žute repe u drvenoj kutiji, s lišćem",
+      "Snopovi crvenih i bijelih rotkvica",
+      "Snopovi zelenog komorača u drvenoj kutiji",
+      "Snopovi narančastih mrkvi s lišćem u drvenoj kutiji, s nožem na vrhu",
+      "Dugačke, zakrivljene tikve nagomilane",
+      "Snop šarene blitve u ruci",
+      "Snopovi bijele blitve u kutiji",
+    ],
   },
   questions: {
     eyebrow: "Pitanja",

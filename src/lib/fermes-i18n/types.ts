@@ -4,6 +4,11 @@
 
 export type Carte = { titre: string; texte: string };
 
+/* Une carte de la ferme-école : des paragraphes, une liste facultative, puis des paragraphes. */
+export type Bloc = { titre: string; texte: string[]; puces?: string[]; apres?: string[] };
+
+export type Chiffre = { valeur: string; libelle: string };
+
 export type FermesCopy = {
   /** Locale Open Graph, par exemple fr_FR. */
   locale: string;
@@ -37,19 +42,16 @@ export type FermesCopy = {
   ferme: {
     eyebrow: string;
     titre: string;
-    p1: string;
-    p2: string;
+    presentation: string[];
     legendeIntro: string;
     altIntro: string;
     altBanniere: string;
     legendeBanniere: string;
-    cartes: Carte[];
+    cartes: Bloc[];
     altFormation: string;
-    coopTitre: string;
-    coopTexte: string;
-    projetsTitre: string;
-    projetsTexte: string;
-    partenairesLabel: string;
+    chiffres: Chiffre[];
+    slogan: string;
+    partenairesTitre: string;
     altAerien: string;
     legendeAerien: string;
     note: string;
@@ -69,13 +71,22 @@ export type FermesCopy = {
   concevoir: {
     eyebrow: string;
     titre: string;
+    ouverture: string;
     texte: string;
     etapes: Carte[];
     altSerres: string;
     legendeSerres: string;
     note: string;
   };
-  galerie: { eyebrow: string; titre: string; legende: string; altCaisse: string; altCarottes: string };
+  galerie: {
+    eyebrow: string;
+    titre: string;
+    legende: string;
+    altCaisse: string;
+    altCarottes: string;
+    credit: string;
+    altNouvelles: string[];
+  };
   questions: { eyebrow: string; titre: string; altSalade: string; cartes: { q: string; r: string }[] };
   rendezVous: { eyebrow: string; titre: string; texte: string; rdv: string; presenter: string; note: string };
   pied: { phrase: string; mentions: string; confidentialite: string; accueil: string; aria: string };

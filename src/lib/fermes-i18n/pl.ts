@@ -65,42 +65,146 @@ const copy: FermesCopy = {
     ],
   },
   ferme: {
-    eyebrow: "Gospodarstwo-szkoła",
+    eyebrow: "Szkoła-gospodarstwo",
     titre: "Szkoła miejskiego warzywnictwa",
-    p1: "Institut Moreau-Daverne kształci w zawodach warzywnika na małej powierzchni, zgodnie z French Method. Mieści się w Cannes-La Bocca. Jego kursy są otwarte dla wszystkich: nie jest wymagana wcześniejsza wiedza rolnicza.",
-    p2: "Ścieżki szkoleniowe są indywidualizowane. Uczestnicy pracują na małych poletkach, z uprawami towarzyszącymi, i uczą się prowadzić małe gospodarstwo warzywnicze.",
-    legendeIntro: "Fragment broszury Institut Moreau-Daverne, wydanie z lutego 2022.",
-    altIntro: "Kolaż zdjęć: czerwone owoce, warzywa, jadalne kwiaty i bambusowe palik między rzędami",
-    altBanniere: "Rzędy upraw u podnóża wzgórz, z pracującymi ludźmi",
+    presentation: [
+      "Instytut Moreau-Daverne uczestniczy w podnoszeniu kwalifikacji osób w sektorze rolniczym, przede wszystkim w warzywnictwie na otwartym polu i w zimnych szklarniach, przy dużej różnorodności produkcji. Oferowane szkolenia pomagają zwiększać wydajność osób, dostosowywać je do zmian technologicznych i ekonomicznych oraz spełniać wymagania jakościowe.",
+      "Oprócz praktycznej nauki wymaganej w zawodzie Instytut kształci w zakresie agronomii, botaniki oraz zarządzania ekonomicznego, finansowego i społecznego przedsiębiorstwem, aby osoby te mogły awansować na stanowiska odpowiedzialności i, jeśli to możliwe, być wspierane przy zakładaniu gospodarstwa rolnego zarejestrowanego w MSA.",
+      "W ramach zmian w świecie rolnictwa Instytut kształci również w zakresie przyjmowania gości w gospodarstwie i organizacji wydarzeń, a także otwierania się na lokalne środowisko we współpracy z samorządowcami.",
+      "Instytut promuje naukę warzywnictwa według tradycyjnej francuskiej metody (French Method) oraz zdobywanie umiejętności potrzebnych do prowadzenia przedsiębiorstwa warzywniczego na małej powierzchni. Szkolenia Instytutu Moreau-Daverne są dostępne dla każdego. Wiedza rolnicza nie jest wymagana.",
+    ],
+    legendeIntro: "Fragment broszury Instytutu Moreau-Daverne, wydanie z lutego 2022.",
+    altIntro: "Kolaż zdjęć: czerwone owoce, warzywa, jadalne kwiaty i rzędy bambusowych palików",
+    altBanniere: "Rzędy upraw u stóp wzgórz, z pracującymi ludźmi",
     legendeBanniere: "Zdjęcie z broszury Instytutu, wydanie z lutego 2022.",
     cartes: [
       {
-        titre: "Roczne kształcenie długie",
-        texte:
-          "Praktyka stanowi 85 % czasu nauki w kształceniu długim, które trwa rok. Kursy krótkie pozwalają poznać French Method oraz etapy zakładania małego gospodarstwa warzywniczego.",
+        titre: "System kształcenia",
+        texte: [
+          "Szkolenia prowadzące do różnych kwalifikacji oferowanych przez Instytut Moreau-Daverne koncentrują się na praktyce zawodowej, która stanowi 85 % czasu nauki w długim kursie, oraz na krótkich kursach prowadzących do uznanych poziomów zawodowych.",
+          "Ośrodek szkoleniowy nadzoruje tę praktykę w przedsiębiorstwie przyjmującym „Les Fermiers Bio Associés”, które dysponuje 2 ha, z czego 1,5 ha podzielono na ogrody po 1000 m², powierzone uczniom pod ich odpowiedzialność, z uprawą warzyw, jadalnych kwiatów, miniwarzyw i roślin aromatycznych. Cały sprzęt rolniczy, nasiona, sprzęt do nawadniania, transport do dostaw itd. są udostępniane Instytutowi na potrzeby szkoleń praktycznych i oceny umiejętności kursantów.",
+          "Ścieżki szkoleniowe są zindywidualizowane. Aby uwzględnić różnorodność odbiorców, ośrodek szkoleniowy oferuje na wejściu narzędzia i metody oceny poziomu, które pozwalają uwzględnić profil kandydatów i dostosować długość szkolenia.",
+          "Nauczanie w długim kursie (jeden rok) jest stopniowane, na poziomach (od nr 1 do nr 12). Odpowiadają one narzędziom uznawania kwalifikacji zawodowych przewidzianym w nowym krajowym układzie zbiorowym rolnictwa-Cuma z 15 września 2020 r., IDCC 7024. Osoby, które już posiadają dyplom lub wykształcenie rolnicze, będą miały krótszą, zindywidualizowaną ścieżkę do uzyskania statusu kierownika gospodarstwa zarejestrowanego w MSA.",
+          "Krótkie kursy umożliwiają poznanie warzywnictwa według French Method oraz zrozumienie kroków potrzebnych do założenia małego gospodarstwa warzywniczego.",
+        ],
       },
       {
-        titre: "Poletka powierzone uczestnikom",
-        texte:
-          "Praktyka odbywa się w „Les Fermiers Bio Associés”: 2 ha powierzchni, w tym 1,5 ha podzielone na poletka po 1000 m². Poletka te są przydzielane uczestnikom, którzy ponoszą za nie odpowiedzialność. Sprzęt, nasiona i transport dostaw są zapewnione.",
+        titre: "Wyróżnik",
+        texte: [
+          "Po roku szkolenia Instytut Moreau-Daverne umożliwia chętnym kursantom zostanie kierownikami małych przedsiębiorstw warzywniczych oraz przystąpienie do spółdzielni rolniczej produkcji. Pomaga im zarejestrować się w MSA w celu uzyskania numeru SIRET.",
+          "Na każdym etapie kariery zawodowej szkolenia Instytutu Moreau-Daverne mogą przyczynić się do realizacji Państwa osobistych projektów:",
+        ],
+        puces: [
+          "Podjęcie pracy w zawodzie produkcji rolnej lub założenie własnej firmy",
+          "Doskonalenie i kwalifikowanie się, aby awansować w zawodzie i osiągać wyższe stopnie",
+          "Odkrywanie nowych podejść do produkcji warzywniczej: jadalne kwiaty, miniwarzywa, drobne owoce i sady",
+          "Zrozumienie współpracy rolniczej poprzez czasowe przystąpienie do spółdzielni producentów „Les Petites Fermes d’Azur”",
+        ],
+        apres: [
+          "Projekt pedagogiczny Instytutu Moreau-Daverne stawia osobę w pełnym zanurzeniu zawodowym w małych przedsiębiorstwach warzywniczych z uprawami towarzyszącymi.",
+        ],
       },
       {
-        titre: "W stronę zakładania działalności",
-        texte:
-          "Po zakończeniu szkolenia uczestnicy, którzy tego chcą, mogą zostać przedsiębiorcami w małoobszarowym warzywnictwie. Instytut pomaga im zarejestrować się w MSA w celu uzyskania numeru SIRET i pozwala im przystąpić do spółdzielni produkcji rolnej.",
+        titre: "Nasze zobowiązania",
+        texte: [
+          "Zobowiązanie nr 1: zapewnić prawdziwe zrozumienie opłacalności małego przedsiębiorstwa warzywniczego w tradycyjnej metodzie produkcji.",
+        ],
+        puces: [
+          "Poprzez praktyczne szkolenie w terenie, w rzeczywistych warunkach produkcji.",
+          "Poprzez teoretyczne szkolenie z agronomii, botaniki, biologii gleby, systemów uprawy oraz z ekonomicznego, prawnego i społecznego zarządzania małymi gospodarstwami rolnymi.",
+        ],
+      },
+      {
+        titre: "Długi i krótkie kursy",
+        texte: [
+          "Długi kurs jednoroczny:",
+        ],
+        puces: [
+          "1. Wspieranie osoby w nauce, aby rozwijała swoje umiejętności i odpowiedzialność niezbędne do wykonywania pracy zgodnie z różnymi poziomami krajowego układu zbiorowego produkcji rolnej i Cuma z 15 września 2020 r.",
+          "2. Umożliwienie jej założenia własnej firmy w trakcie szkolenia.",
+          "3. Zapewnienie jej na koniec kursu dzierżawy miejskiej działki i własnej lokalnej klienteli, jeśli zdecyduje się pozostać na miejscu lub w regionie PACA.",
+        ],
+        apres: [
+          "Krótkie kursy: przedstawienie kursantowi wszystkich technicznych, ekonomicznych, prawnych i lokalnych aspektów prowadzenia małego przedsiębiorstwa warzywniczego na jego terenie.",
+          "Uwaga: wszystkie szkolenia są dostępne dla osób z lekką niepełnosprawnością słuchu lub wzroku.",
+          "„Pedagogika może wszystko, bo sprawia, że niedźwiedzie tańczą”. G.W. Leibniz",
+        ],
+      },
+      {
+        titre: "Nasze doświadczenie",
+        texte: [],
+        puces: [
+          "Solidne wykształcenie agronomiczne i ponad 50 lat praktyki zawodowej.",
+          "Publikacje książek i wykłady o rolnictwie ekologicznym, biologii gleby i warzywnictwie na małej powierzchni.",
+          "Prowadzenie spółdzielni rolniczej i stowarzyszenia rolników ekologicznych.",
+          "Oryginalna wiedza i ciągłość praktyki tradycyjnego warzywnictwa zwanego „French Method”, na całym świecie od stu lat.",
+          "Uprzywilejowane relacje ze środowiskiem zawodowym regionu, samorządowcami i administracją regionu Sud PACA.",
+          "Szkolenie trenerów i szkolenie w zakresie wsparcia Qualiopi.",
+        ],
+      },
+      {
+        titre: "Nasze wyposażenie",
+        texte: [],
+        puces: [
+          "Działka o powierzchni 2,2 ha w Cannes, certyfikowana w rolnictwie ekologicznym (AB) przez Ecocert, na której współpracujący drobni warzywnicy dzielą uprawy drzew owocowych i jadalnych kwiatów, winogrona stołowe, drobne owoce, szklarnie i sprzęt rolniczy.",
+          "Sad o powierzchni 5000 m² w Cannes, z drzewami owocowymi na pniu wysokim i półwysokim.",
+          "Budynek o powierzchni 220 m² na sale wykładowe, z profesjonalnym wyposażeniem do obróbki po zbiorach oraz cały sprzęt rolniczy i eventowy.",
+          "Cały sprzęt rolniczy ręczny i mechaniczny, tunele, sale pracy i spotkań, nawozy organiczne, nasiona, sprzęt sprzedażowy…",
+        ],
+      },
+      {
+        titre: "Informacje o szkoleniach",
+        texte: [],
+        puces: [
+          "Cele kształcenia",
+          "Programy teoretyczne",
+          "Programy praktyczne",
+          "Tabele oceny kompetencji zawodowych",
+          "Organizacja cykli szkoleniowych",
+          "Certyfikacja kompetencji zawodowych",
+          "Życie codzienne w Instytucie Moreau-Daverne",
+          "Życie praktyczne na terenie Cannes-Pays de Lérins",
+          "Warunki przyjęcia na długie kursy",
+          "Opłaty, finansowanie i pokrycie kosztów",
+          "Inne informacje o szkole miejskiego warzywnictwa",
+        ],
+      },
+      {
+        titre: "Organizacja instytutu",
+        texte: [
+          "Instytut Moreau-Daverne, Chemin de la Plaine de Laval, 06150 Cannes-la-Bocca.",
+          "E-mail: contact@moreau-daverne.fr. Strony: www.moreau-daverne.fr oraz www.agro-conseil-carnavalet.eu.",
+        ],
+        puces: [
+          "Kierownik administracyjny ds. informacji i zapisów: Christian Carnavalet",
+          "Kierownik pedagogiczny szkolenia i programów: Christian Carnavalet",
+          "Kierownik ds. niepełnosprawności i przyjmowania osób z niepełnosprawnościami: Christian Carnavalet",
+        ],
+        apres: [
+          "Facebook: Les Petites Fermes d’Azur.",
+        ],
       },
     ],
-    altFormation: "Ludzie zgromadzeni przy stole na świeżym powietrzu, w ogrodzie",
-    coopTitre: "Spółdzielnia przyjmująca uczestników",
-    coopTexte:
-      "Praktyczne szkolenie odbywa się w ramach spółdzielni „Les Petites Fermes d’Azur”. Działa ona jak zwykłe przedsiębiorstwo, z własnymi kosztami, przychodami oraz zarządzaniem gospodarczym i społecznym.",
-    projetsTitre: "Projekty dla regionu",
-    projetsTexte:
-      "Instytut ewidencjonuje tereny rolnicze i współpracuje z lokalnymi wybranymi przedstawicielami, aby przyjmować nowe gospodarstwa. Dąży także do organizowania produkcji dla stołówek szkolnych i urzędowych.",
-    partenairesLabel: "Partnerzy wymienieni w broszurze:",
+    chiffres: [
+      {
+        valeur: "65",
+        libelle: "producentów już przeszkolonych",
+      },
+      {
+        valeur: "97 %",
+        libelle: "producentów zadowolonych ze szkolenia *",
+      },
+      {
+        valeur: "Marzec 2019",
+        libelle: "otwarcie ośrodka ustawicznego kształcenia zawodowego",
+      },
+    ],
+    slogan: "Pasja do zawodu. Energia. Czas na przekazywanie wiedzy. Środki wsparcia dydaktycznego.",
+    partenairesTitre: "Nasi partnerzy",
+    altFormation: "Ludzie zebrani przy stole, na zewnątrz, w ogrodzie",
     altAerien: "Widok z lotu ptaka na teren Instytutu, z oznaczeniem „Institut”",
     legendeAerien: "Widok z lotu ptaka na teren, z broszury z lutego 2022.",
-    note: "Informacje w tej sekcji pochodzą z broszury Instytutu, wydanie z lutego 2022. Według tej broszury przeszkolono 29 producentów, a 97 % uczestników, którzy wyrazili opinię, deklarowało zadowolenie (od maja 2021).",
+    note: "Informacje w tej sekcji pochodzą z broszury Instytutu Moreau-Daverne, wydanie z czerwca 2026 r. * Kursanci, którzy od maja 2021 r. wystawili ogólną ocenę zadowolenia ze szkolenia.",
   },
   methode: {
     eyebrow: "Metoda",
@@ -164,6 +268,7 @@ const copy: FermesCopy = {
   concevoir: {
     eyebrow: "Projektowanie",
     titre: "Projektowanie idealnych gospodarstw",
+    ouverture: "Spółdzielnia, która przyjmuje nowo osiadłych warzywników. Pozwala im od razu sprzedawać plony i łatwiej zaangażować się w nowy zawód.",
     texte:
       "Idealne gospodarstwo odpowiada swojemu terytorium. Uwzględnia dostępną wodę, ziemię, osoby, które w nim pracują, i klientów, do których będzie sprzedawać. Naszą ambicją, wspólnie z Christianem Carnavaletem, jest połączenie tych elementów już na etapie projektowania.",
     etapes: [
@@ -198,6 +303,17 @@ const copy: FermesCopy = {
     legende: "Zdjęcia poglądowe",
     altCaisse: "Drewniana skrzynia pełna warzyw: marchew, bakłażany, cebula i buraki",
     altCarottes: "Dłonie w rękawicach zbierające marchew z grządki ogrodu",
+    credit: "Zdjęcia: Instytut Moreau-Daverne.",
+    altNouvelles: [
+      "Rzędy kapusty i kopru w polu, z drzewami w tle",
+      "Żółte rzepy w drewnianej skrzynce, z liśćmi",
+      "Pęczki czerwonych i białych rzodkiewek",
+      "Pęczki zielonego kopru w drewnianej skrzynce",
+      "Pęczki pomarańczowych marchewek z liśćmi w drewnianej skrzynce, z nożem na wierzchu",
+      "Długie, zakrzywione dynie ułożone w stos",
+      "Pęk kolorowego szpinaku buraczanego trzymany w dłoni",
+      "Pęczki białego szpinaku buraczanego w skrzynce",
+    ],
   },
   questions: {
     eyebrow: "Pytania",
