@@ -4,14 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
 import { useLanguage } from "@/lib/LanguageContext";
+import { FERMES } from "@/lib/fermes-i18n";
 import "./FermesAcces.css";
 
 /* Accès direct à la rubrique « Notre partenaire et les fermes idéales », placé
-   juste après « Les technologies ». La rubrique n'existe qu'en français pour
-   l'instant : le bloc ne s'affiche donc que sur l'accueil français. */
+   juste après « Les technologies ». Le bloc suit la langue du visiteur, comme la
+   rubrique elle-même. */
 export default function FermesAcces() {
   const { language } = useLanguage();
-  if (language !== "fr") return null;
+  const c = FERMES[language];
 
   return (
     <section id="fermes-ideales-acces" className="fa-section">
@@ -20,7 +21,7 @@ export default function FermesAcces() {
           <figure className="fa-image">
             <Image
               src="/images/fermes-ideales/portrait-carnavalet.webp"
-              alt="Christian Carnavalet, souriant, en plan rapproché devant un fond de verdure"
+              alt={c.accueil.alt}
               width={800}
               height={1000}
               sizes="(max-width: 860px) 100vw, 45vw"
@@ -28,14 +29,11 @@ export default function FermesAcces() {
           </figure>
         </Reveal>
         <Reveal>
-          <p className="eyebrow">Notre partenaire</p>
-          <h2 className="fa-title">Notre partenaire et les fermes idéales</h2>
-          <p className="fa-lede">
-            Une école de maraîchage à Cannes, où Christian Carnavalet transmet la French Method et où nos produits
-            sont appliqués au terrain.
-          </p>
-          <Link href="/fr/fermes-ideales" className="btn-3d btn-3d-light fa-btn">
-            Découvrir les fermes idéales →
+          <p className="eyebrow">{c.accueil.eyebrow}</p>
+          <h2 className="fa-title">{c.accueil.titre}</h2>
+          <p className="fa-lede">{c.accueil.texte}</p>
+          <Link href={`/${language}/fermes-ideales`} className="btn-3d btn-3d-light fa-btn">
+            {c.accueil.bouton}
           </Link>
         </Reveal>
       </div>
