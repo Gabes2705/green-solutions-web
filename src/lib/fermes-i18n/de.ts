@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "Das Institut fördert das Erlernen des Gemüsebaus nach der traditionellen französischen Methode (French Method) und den Erwerb der Fähigkeiten, die für die Leitung eines kleinflächigen Gemüsebaubetriebs nötig sind. Die Ausbildungen des Instituts Moreau-Daverne stehen allen offen. Landwirtschaftliche Vorkenntnisse sind nicht erforderlich.",
     ],
     legendeIntro: "Auszug aus der Broschüre des Instituts Moreau-Daverne, Ausgabe Februar 2022.",
-    altIntro: "Fotocollage: rote Früchte, Gemüse, essbare Blüten und Reihen von Bambusstäben",
+    altIntro: "Korb mit Obst und Gemüse der Saison",
     altBanniere: "Kulturreihen am Fuß von Hügeln, mit arbeitenden Menschen",
     legendeBanniere: "Foto aus der Broschüre des Instituts, Ausgabe Februar 2022.",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook: Les Petites Fermes d’Azur.",
         ],
       },
+    ],
+    altCartes: [
+      "Frisches Gemüse auf einem Tablett: Karotten, Radieschen und Rüben",
+      "Essbare blaue Blüten, aus der Nähe",
+      "Reihen von Bambusstäben auf einem Gemüsefeld",
+      "Kleine rote, schwarze und blaue Früchte",
     ],
     chiffres: [
       {

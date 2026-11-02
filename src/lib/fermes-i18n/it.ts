@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "L’Istituto favorisce l’apprendimento dell’orticoltura secondo il metodo tradizionale francese (French Method) e l’acquisizione delle competenze necessarie a dirigere un’impresa orticola su piccola superficie. Le formazioni erogate dall’Istituto Moreau-Daverne sono accessibili a tutti. Non sono indispensabili conoscenze agricole pregresse.",
     ],
     legendeIntro: "Estratto dalla brochure dell’Istituto Moreau-Daverne, edizione di febbraio 2022.",
-    altIntro: "Composizione di foto: frutti rossi, ortaggi, fiori commestibili e file di tutori di bambù",
+    altIntro: "Cesta di frutta e verdura di stagione",
     altBanniere: "File di colture ai piedi delle colline, con persone al lavoro",
     legendeBanniere: "Foto tratta dalla brochure dell’Istituto, edizione di febbraio 2022.",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook: Les Petites Fermes d’Azur.",
         ],
       },
+    ],
+    altCartes: [
+      "Verdure fresche in un vassoio: carote, ravanelli e rape",
+      "Fiori blu commestibili, da vicino",
+      "File di tutori di bambù in un campo di orticoltura",
+      "Piccoli frutti rossi, neri e blu",
     ],
     chiffres: [
       {

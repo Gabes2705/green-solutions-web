@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "学院推广以传统法国方法（French Method）学习园艺，并培养经营小规模园艺企业所需的技能。Moreau-Daverne 学院的培训面向所有人，无需具备事先的农业知识。",
     ],
     legendeIntro: "摘自 Moreau-Daverne 学院宣传册，2022 年 2 月版。",
-    altIntro: "照片拼贴：红色水果、蔬菜、食用花以及成排的竹竿",
+    altIntro: "当季水果和蔬菜篮",
     altBanniere: "山丘脚下的作物行，有人在劳作",
     legendeBanniere: "摘自学院宣传册，2022 年 2 月版。",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook：Les Petites Fermes d’Azur。",
         ],
       },
+    ],
+    altCartes: [
+      "托盘中的新鲜蔬菜：胡萝卜、萝卜和芜菁",
+      "可食用蓝色花朵，近景",
+      "市场园艺田地里的竹竿排列",
+      "红色、黑色和蓝色的小型水果",
     ],
     chiffres: [
       {

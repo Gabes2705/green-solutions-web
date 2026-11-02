@@ -45,6 +45,7 @@ export type FermesCopy = {
     presentation: string[];
     legendeIntro: string;
     altIntro: string;
+  altCartes: string[];
     altBanniere: string;
     legendeBanniere: string;
     cartes: Bloc[];

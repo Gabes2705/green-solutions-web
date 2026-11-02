@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "Institut mendorong pembelajaran hortikultura menurut metode Prancis tradisional (French Method) dan penguasaan keterampilan untuk memimpin usaha hortikultura skala kecil. Pelatihan Institut Moreau-Daverne terbuka untuk semua orang. Pengetahuan pertanian sebelumnya tidak diperlukan.",
     ],
     legendeIntro: "Kutipan dari brosur Institut Moreau-Daverne, edisi Februari 2022.",
-    altIntro: "Kolase foto: buah merah, sayuran, bunga yang dapat dimakan, dan barisan ajir bambu",
+    altIntro: "Keranjang buah dan sayur musiman",
     altBanniere: "Barisan tanaman di kaki bukit, dengan orang-orang sedang bekerja",
     legendeBanniere: "Foto dari brosur Institut, edisi Februari 2022.",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook: Les Petites Fermes d’Azur.",
         ],
       },
+    ],
+    altCartes: [
+      "Sayuran segar dalam nampan: wortel, lobak merah dan lobak putih",
+      "Bunga biru yang dapat dimakan, dari dekat",
+      "Barisan ajir bambu di kebun hortikultura",
+      "Buah kecil merah, hitam dan biru",
     ],
     chiffres: [
       {

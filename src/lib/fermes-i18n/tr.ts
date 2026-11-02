@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "Institut, geleneksel Fransız yöntemiyle (French Method) sebzeciliğin öğrenilmesini ve küçük ölçekli bir sebzecilik işletmesini yönetmek için gerekli becerilerin kazanılmasını teşvik eder. Institut Moreau-Daverne eğitimleri herkese açıktır. Tarımsal bilgi ön koşul değildir.",
     ],
     legendeIntro: "Institut Moreau-Daverne broşüründen alıntı, Şubat 2022 baskısı.",
-    altIntro: "Fotoğraf kolajı: kırmızı meyveler, sebzeler, yenilebilir çiçekler ve bambu direk sıraları",
+    altIntro: "Mevsimlik meyve ve sebzelerden bir sepet",
     altBanniere: "Tepe eteklerinde ekin sıraları, çalışan insanlarla",
     legendeBanniere: "Institut broşüründen fotoğraf, Şubat 2022 baskısı.",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook: Les Petites Fermes d’Azur.",
         ],
       },
+    ],
+    altCartes: [
+      "Bir tepsideki taze sebzeler: havuç, turp ve şalgam",
+      "Yenilebilir mavi çiçekler, yakından",
+      "Bir sebzecilik tarlasında bambu direk sıraları",
+      "Kırmızı, siyah ve mavi küçük meyveler",
     ],
     chiffres: [
       {

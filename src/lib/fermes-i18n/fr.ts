@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "L’Institut favorise l’apprentissage du maraîchage selon la méthode traditionnelle française (French Method) et l’acquisition des compétences conduisant à la direction d’une entreprise maraîchère sur petite surface. Les formations dispensées par l’Institut Moreau-Daverne sont accessibles à tout public. Des connaissances agricoles ne sont pas indispensables.",
     ],
     legendeIntro: "Extrait de la plaquette de l’Institut Moreau-Daverne, édition de février 2022.",
-    altIntro: "Assemblage de photos : fruits rouges, légumes, fleurs comestibles et rangs de tuteurs en bambou",
+    altIntro: "Panier de fruits et de légumes de saison",
     altBanniere: "Rangs de cultures au pied de collines, avec des personnes au travail",
     legendeBanniere: "Photo tirée de la plaquette de l’Institut, édition de février 2022.",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook : Les Petites Fermes d’Azur.",
         ],
       },
+    ],
+    altCartes: [
+      "Légumes frais en panier : carottes, radis et navets",
+      "Fleurs bleues comestibles, en gros plan",
+      "Rangs de tuteurs en bambou dans un champ de maraîchage",
+      "Petits fruits rouges, noirs et bleus",
     ],
     chiffres: [
       {

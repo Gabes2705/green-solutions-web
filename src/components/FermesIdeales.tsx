@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { Lang } from "@/lib/content";
-import { FERMES } from "@/lib/fermes-i18n";
+import { FERMES, type FermesCopy } from "@/lib/fermes-i18n";
 import "./FermesIdeales.css";
 
 /* Les identifiants du sommaire, dans l’ordre des libellés de chaque langue. */
@@ -55,18 +55,52 @@ const PARTENAIRES = [
   "Banque Populaire Méditerranée",
 ];
 
-/* Les photos de l’Institut, dans l’ordre de la galerie. Les dimensions sont celles des
-   fichiers ; la grille les recadre toutes au même format. */
-const PHOTOS_INSTITUT = [
-  { src: "/images/fermes-ideales/institut-rangs-choux-fenouil.webp", width: 486, height: 1000 },
-  { src: "/images/fermes-ideales/institut-navets-jaunes.webp", width: 1000, height: 486 },
-  { src: "/images/fermes-ideales/institut-radis.webp", width: 683, height: 1000 },
-  { src: "/images/fermes-ideales/institut-fenouil.webp", width: 655, height: 1000 },
-  { src: "/images/fermes-ideales/institut-carottes.webp", width: 1000, height: 486 },
-  { src: "/images/fermes-ideales/institut-courges.webp", width: 1000, height: 571 },
-  { src: "/images/fermes-ideales/institut-bettes-couleurs.webp", width: 750, height: 1000 },
-  { src: "/images/fermes-ideales/institut-bettes-blanches.webp", width: 750, height: 1000 },
+/* Une photo placée en haut d’une carte. Le format (ratio) recadre la photo sans la déformer. */
+type Photo = {
+  src: string;
+  width: number;
+  height: number;
+  ratio: string;
+  alt: (c: FermesCopy) => string;
+};
+
+/* Les huit cartes de la ferme-école, dans l’ordre : quatre photos séparées de la plaquette,
+   quatre photos de l’Institut. Une case vide signifie : pas de photo sur cette carte. */
+const CARTES_PHOTOS: (Photo | undefined)[] = [
+  { src: "/images/fermes-ideales/plaquette-legumes.webp", width: 574, height: 427, ratio: "4 / 3", alt: (c) => c.ferme.altCartes[0] },
+  { src: "/images/fermes-ideales/plaquette-fleurs.webp", width: 574, height: 283, ratio: "2 / 1", alt: (c) => c.ferme.altCartes[1] },
+  { src: "/images/fermes-ideales/plaquette-champ.webp", width: 770, height: 1052, ratio: "4 / 5", alt: (c) => c.ferme.altCartes[2] },
+  { src: "/images/fermes-ideales/institut-fenouil.webp", width: 655, height: 1000, ratio: "4 / 5", alt: (c) => c.galerie.altNouvelles[3] },
+  { src: "/images/fermes-ideales/institut-navets-jaunes.webp", width: 1000, height: 486, ratio: "2 / 1", alt: (c) => c.galerie.altNouvelles[1] },
+  { src: "/images/fermes-ideales/plaquette-baies.webp", width: 574, height: 330, ratio: "7 / 4", alt: (c) => c.ferme.altCartes[3] },
+  { src: "/images/fermes-ideales/institut-rangs-choux-fenouil.webp", width: 486, height: 1000, ratio: "4 / 5", alt: (c) => c.galerie.altNouvelles[0] },
+  { src: "/images/fermes-ideales/institut-bettes-blanches.webp", width: 750, height: 1000, ratio: "3 / 4", alt: (c) => c.galerie.altNouvelles[7] },
 ];
+
+/* Les quatre cartes de la méthode : des photos de l’Institut, dans l’ordre des cartes. */
+const METHODE_PHOTOS: (Photo | undefined)[] = [
+  { src: "/images/fermes-ideales/institut-radis.webp", width: 683, height: 1000, ratio: "4 / 3", alt: (c) => c.galerie.altNouvelles[2] },
+  { src: "/images/fermes-ideales/institut-carottes.webp", width: 1000, height: 486, ratio: "4 / 3", alt: (c) => c.galerie.altNouvelles[4] },
+  { src: "/images/fermes-ideales/institut-courges.webp", width: 1000, height: 571, ratio: "4 / 3", alt: (c) => c.galerie.altNouvelles[5] },
+  { src: "/images/fermes-ideales/institut-bettes-couleurs.webp", width: 750, height: 1000, ratio: "4 / 3", alt: (c) => c.galerie.altNouvelles[6] },
+];
+
+/* La photo de la carte à la position i, s’il y en a une. */
+function photoCarte(photos: (Photo | undefined)[], i: number, c: FermesCopy) {
+  const photo = photos[i];
+  if (!photo) return null;
+  return (
+    <figure className="fi-carte-photo" style={{ aspectRatio: photo.ratio }}>
+      <Image
+        src={photo.src}
+        alt={photo.alt(c)}
+        width={photo.width}
+        height={photo.height}
+        sizes="(max-width: 860px) 100vw, 50vw"
+      />
+    </figure>
+  );
+}
 
 /* La rubrique « Fermes idéales », dans la langue demandée. Les textes viennent de
    src/lib/fermes-i18n ; la mise en page est la même dans toutes les langues. */
@@ -213,10 +247,10 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
             </div>
             <figure className="fi-carre">
               <Image
-                src="/images/fermes-ideales/plaquette-intro.webp"
+                src="/images/fermes-ideales/plaquette-fruits.webp"
                 alt={c.ferme.altIntro}
-                width={1156}
-                height={1059}
+                width={574}
+                height={394}
                 sizes="(max-width: 860px) 100vw, 50vw"
               />
               <figcaption className="fi-legende">{c.ferme.legendeIntro}</figcaption>
@@ -234,9 +268,10 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
             <figcaption className="fi-legende">{c.ferme.legendeBanniere}</figcaption>
           </figure>
 
-          <div className="fi-cartes">
-            {c.ferme.cartes.map((b) => (
+          <div className="fi-cartes fi-cartes--deux">
+            {c.ferme.cartes.map((b, i) => (
               <article className="fi-carte" key={b.titre}>
+                {photoCarte(CARTES_PHOTOS, i, c)}
                 <h3 className="fi-h3">{b.titre}</h3>
                 {b.texte.map((t) => (
                   <p className="fi-texte" key={t}>
@@ -258,6 +293,7 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
               </article>
             ))}
           </div>
+          <p className="fi-legende">{c.galerie.credit}</p>
 
           <div className="fi-split fi-split--suite">
             <figure className="fi-image-43">
@@ -323,14 +359,16 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
             />
             <figcaption className="fi-legende">{c.iaLegende}</figcaption>
           </figure>
-          <div className="fi-cartes">
-            {c.methode.cartes.map((m) => (
+          <div className="fi-cartes fi-cartes--deux">
+            {c.methode.cartes.map((m, i) => (
               <article className="fi-carte" key={m.titre}>
+                {photoCarte(METHODE_PHOTOS, i, c)}
                 <h3 className="fi-h3">{m.titre}</h3>
                 <p className="fi-texte">{m.texte}</p>
               </article>
             ))}
           </div>
+          <p className="fi-legende">{c.galerie.credit}</p>
         </div>
       </section>
 
@@ -432,20 +470,6 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
               <figcaption className="fi-legende">{c.galerie.legende}</figcaption>
             </figure>
           </div>
-          <div className="fi-photos">
-            {PHOTOS_INSTITUT.map((ph, i) => (
-              <figure key={ph.src}>
-                <Image
-                  src={ph.src}
-                  alt={c.galerie.altNouvelles[i]}
-                  width={ph.width}
-                  height={ph.height}
-                  sizes="(max-width: 860px) 50vw, 25vw"
-                />
-              </figure>
-            ))}
-          </div>
-          <p className="fi-legende">{c.galerie.credit}</p>
         </div>
       </section>
 

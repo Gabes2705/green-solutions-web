@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "Instytut promuje naukę warzywnictwa według tradycyjnej francuskiej metody (French Method) oraz zdobywanie umiejętności potrzebnych do prowadzenia przedsiębiorstwa warzywniczego na małej powierzchni. Szkolenia Instytutu Moreau-Daverne są dostępne dla każdego. Wiedza rolnicza nie jest wymagana.",
     ],
     legendeIntro: "Fragment broszury Instytutu Moreau-Daverne, wydanie z lutego 2022.",
-    altIntro: "Kolaż zdjęć: czerwone owoce, warzywa, jadalne kwiaty i rzędy bambusowych palików",
+    altIntro: "Kosz owoców i warzyw sezonowych",
     altBanniere: "Rzędy upraw u stóp wzgórz, z pracującymi ludźmi",
     legendeBanniere: "Zdjęcie z broszury Instytutu, wydanie z lutego 2022.",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook: Les Petites Fermes d’Azur.",
         ],
       },
+    ],
+    altCartes: [
+      "Świeże warzywa na tacy: marchew, rzodkiewki i rzepa",
+      "Jadalne niebieskie kwiaty z bliska",
+      "Rzędy bambusowych palików na polu warzywniczym",
+      "Drobne owoce czerwone, czarne i niebieskie",
     ],
     chiffres: [
       {

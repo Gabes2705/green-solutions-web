@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "El Instituto fomenta el aprendizaje de la horticultura según el método tradicional francés (French Method) y la adquisición de las competencias necesarias para dirigir una empresa hortícola de pequeña superficie. Las formaciones impartidas por el Instituto Moreau-Daverne están abiertas a cualquier público. No son imprescindibles los conocimientos agrícolas previos.",
     ],
     legendeIntro: "Extracto del folleto del Instituto Moreau-Daverne, edición de febrero de 2022.",
-    altIntro: "Composición de fotos: frutos rojos, verduras, flores comestibles y filas de tutores de bambú",
+    altIntro: "Cesta de frutas y verduras de temporada",
     altBanniere: "Hileras de cultivos al pie de unas colinas, con personas trabajando",
     legendeBanniere: "Foto extraída del folleto del Instituto, edición de febrero de 2022.",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook: Les Petites Fermes d’Azur.",
         ],
       },
+    ],
+    altCartes: [
+      "Verduras frescas en una bandeja: zanahorias, rábanos y nabos",
+      "Flores azules comestibles, de cerca",
+      "Filas de tutores de bambú en un campo de horticultura",
+      "Frutos pequeños rojos, negros y azules",
     ],
     chiffres: [
       {

@@ -208,10 +208,15 @@
   margin-bottom: 0;
 }
 
-/* Colonnes étroites : la césure évite les espaces trop larges du texte justifié. */
+/* Colonnes étroites : un texte un peu plus petit et la césure évitent les espaces trop larges du texte justifié. */
 .fi-carte .fi-texte,
 .fi-puces li {
   hyphens: auto;
+}
+
+.fi-carte .fi-texte {
+  font-size: 0.92rem;
+  line-height: 1.62;
 }
 
 /* Étapes numérotées, en grands chiffres. */
@@ -545,31 +550,35 @@
   line-height: 1.45;
 }
 
-/* Photos de l’Institut : une grille régulière, chaque photo recadrée au même format. */
-.fi-photos {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 18px;
+/* Deux colonnes de cartes : des lignes plus longues, donc moins d’espaces entre les mots. */
+.fi-cartes--deux {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.fi-photos figure {
-  margin: 0;
+@media (max-width: 860px) {
+  .fi-cartes--deux {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
-.fi-photos img {
+/* Une photo en haut de certaines cartes, recadrée selon son format. */
+.fi-carte-photo {
+  margin: 0 0 1.1rem;
+}
+
+.fi-carte-photo img {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
+  height: 100%;
   object-fit: cover;
   border-radius: 14px;
 }
 
-@media (max-width: 860px) {
-  .fi-photos {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+/* Titres, puces et chiffres alignés à gauche : pas d’espaces forcés entre les mots. */
+.fi-carte .fi-h3,
+.fi-puces li,
+.fi-chiffres li {
+  text-align: start;
 }
 
 /* Photo en 4:3, à côté d’un texte. */

@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "Institut potiče učenje povrtlarstva tradicionalnom francuskom metodom (French Method) i stjecanje vještina potrebnih za vođenje malog povrtlarskog poduzeća. Programi Instituta Moreau-Daverne dostupni su svima. Prethodno poznavanje poljoprivrede nije potrebno.",
     ],
     legendeIntro: "Izvadak iz brošure Instituta Moreau-Daverne, izdanje veljača 2022.",
-    altIntro: "Kolaž fotografija: crveno voće, povrće, jestivo cvijeće i redovi bambusovih kolčića",
+    altIntro: "Košarica sezonskog voća i povrća",
     altBanniere: "Redovi usjeva u podnožju brežuljaka, s ljudima na radu",
     legendeBanniere: "Fotografija iz brošure Instituta, izdanje veljača 2022.",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook: Les Petites Fermes d’Azur.",
         ],
       },
+    ],
+    altCartes: [
+      "Svježe povrće na pladnju: mrkva, rotkvice i repa",
+      "Jestivo plavo cvijeće, izbliza",
+      "Redovi bambusovih kolčića na povrtlarskom polju",
+      "Sitno voće crveno, crno i plavo",
     ],
     chiffres: [
       {

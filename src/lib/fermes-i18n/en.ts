@@ -74,7 +74,7 @@ const copy: FermesCopy = {
       "The Institut promotes learning market gardening through the traditional French method (French Method) and the skills needed to run a small-scale market-gardening business. Its training is open to everyone. No prior farming knowledge is required.",
     ],
     legendeIntro: "Extract from the Institut Moreau-Daverne brochure, February 2022 edition.",
-    altIntro: "Collage of photos: red fruit, vegetables, edible flowers and rows of bamboo stakes",
+    altIntro: "Basket of seasonal fruit and vegetables",
     altBanniere: "Rows of crops at the foot of hills, with people at work",
     legendeBanniere: "Photo from the Institut’s brochure, February 2022 edition.",
     cartes: [
@@ -184,6 +184,12 @@ const copy: FermesCopy = {
           "Facebook: Les Petites Fermes d’Azur.",
         ],
       },
+    ],
+    altCartes: [
+      "Fresh vegetables in a tray: carrots, radishes and turnips",
+      "Close-up of edible blue flowers",
+      "Rows of bamboo stakes in a market-garden field",
+      "Small red, black and blue fruits",
     ],
     chiffres: [
       {
