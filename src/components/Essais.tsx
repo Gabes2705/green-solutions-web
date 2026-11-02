@@ -27,6 +27,13 @@ export default function Essais() {
                   <li key={t}>{t}</li>
                 ))}
               </ul>
+              {p.contact && (
+                <ul className="pilot-contact">
+                  {p.contact.map((line) => (
+                    <li key={line}>{line}</li>
+                  ))}
+                </ul>
+              )}
             </article>
           ))}
         </Reveal>
