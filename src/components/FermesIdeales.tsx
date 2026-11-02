@@ -67,12 +67,12 @@ type Photo = {
 /* Les huit cartes de la ferme-école, dans l’ordre : quatre photos séparées de la plaquette,
    quatre photos de l’Institut. Une case vide signifie : pas de photo sur cette carte. */
 const CARTES_PHOTOS: (Photo | undefined)[] = [
-  { src: "/images/fermes-ideales/plaquette-legumes.webp", width: 574, height: 427, ratio: "4 / 3", alt: (c) => c.ferme.altCartes[0] },
+  { src: "/images/fermes-ideales/plaquette-legumes.webp", width: 1024, height: 762, ratio: "4 / 3", alt: (c) => c.ferme.altCartes[0] },
   { src: "/images/fermes-ideales/plaquette-fleurs.webp", width: 574, height: 283, ratio: "2 / 1", alt: (c) => c.ferme.altCartes[1] },
-  { src: "/images/fermes-ideales/plaquette-champ.webp", width: 770, height: 1052, ratio: "4 / 5", alt: (c) => c.ferme.altCartes[2] },
+  { src: "/images/fermes-ideales/plaquette-champ.webp", width: 750, height: 1024, ratio: "4 / 5", alt: (c) => c.ferme.altCartes[2] },
   { src: "/images/fermes-ideales/institut-fenouil.webp", width: 655, height: 1000, ratio: "4 / 5", alt: (c) => c.galerie.altNouvelles[3] },
   { src: "/images/fermes-ideales/institut-navets-jaunes.webp", width: 1000, height: 486, ratio: "2 / 1", alt: (c) => c.galerie.altNouvelles[1] },
-  { src: "/images/fermes-ideales/plaquette-baies.webp", width: 574, height: 330, ratio: "7 / 4", alt: (c) => c.ferme.altCartes[3] },
+  { src: "/images/fermes-ideales/plaquette-baies.webp", width: 1024, height: 589, ratio: "7 / 4", alt: (c) => c.ferme.altCartes[3] },
   { src: "/images/fermes-ideales/institut-rangs-choux-fenouil.webp", width: 486, height: 1000, ratio: "4 / 5", alt: (c) => c.galerie.altNouvelles[0] },
   { src: "/images/fermes-ideales/institut-bettes-blanches.webp", width: 750, height: 1000, ratio: "3 / 4", alt: (c) => c.galerie.altNouvelles[7] },
 ];
@@ -249,8 +249,8 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
               <Image
                 src="/images/fermes-ideales/plaquette-fruits.webp"
                 alt={c.ferme.altIntro}
-                width={574}
-                height={394}
+                width={1024}
+                height={703}
                 sizes="(max-width: 860px) 100vw, 50vw"
               />
               <figcaption className="fi-legende">{c.ferme.legendeIntro}</figcaption>
@@ -261,8 +261,8 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
             <Image
               src="/images/fermes-ideales/plaquette-parcelles.webp"
               alt={c.ferme.altBanniere}
-              width={937}
-              height={454}
+              width={1024}
+              height={496}
               sizes="(max-width: 860px) 100vw, 1180px"
             />
             <figcaption className="fi-legende">{c.ferme.legendeBanniere}</figcaption>
@@ -300,8 +300,8 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
               <Image
                 src="/images/fermes-ideales/plaquette-formation.webp"
                 alt={c.ferme.altFormation}
-                width={1013}
-                height={432}
+                width={1024}
+                height={437}
                 sizes="(max-width: 860px) 100vw, 50vw"
               />
               <figcaption className="fi-legende">{c.ferme.legendeBanniere}</figcaption>
@@ -396,8 +396,8 @@ export default function FermesIdeales({ lang }: { lang: Lang }) {
                 <Image
                   src="/images/fermes-ideales/ia-champ-tomates.webp"
                   alt={c.produits.altChamp}
-                  width={800}
-                  height={1000}
+                  width={820}
+                  height={1024}
                   sizes="(max-width: 860px) 100vw, 50vw"
                 />
                 <figcaption className="fi-legende">{c.iaLegende}</figcaption>
