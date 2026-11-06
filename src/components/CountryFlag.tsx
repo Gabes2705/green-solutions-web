@@ -382,6 +382,7 @@ const OFFICIELS = new Set([
   "egypte",
   "jordanie",
   "koweit",
+  "liban",
   "oman",
 ]);
 

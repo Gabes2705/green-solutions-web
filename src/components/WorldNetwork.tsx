@@ -47,6 +47,7 @@ const NODES = [
   { lat: -0.8, lng: 11.6, label: "Gabon" },
   { lat: 7.9, lng: -1.0, label: "Ghana" },
   { lat: 30.6, lng: 36.2, label: "Jordanie" },
+  { lat: 33.9, lng: 35.9, label: "Liban" },
   { lat: 29.3, lng: 47.5, label: "Koweït" },
   { lat: 45.1, lng: 15.2, label: "Croatie" },
   { lat: -20.0, lng: 47.0, label: "Madagascar" },

@@ -26,6 +26,7 @@ export const DOSSIER_LANGS: Record<string, string> = {
   "grece": "el",
   "guadeloupe": "fr",
   "jordanie": "ar",
+  "liban": "fr",
   "madagascar": "fr",
   "maroc": "fr",
   "martinique": "fr",

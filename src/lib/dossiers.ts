@@ -5438,6 +5438,376 @@ export const DOSSIERS: Record<string, Dossier> = {
       "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   },
+  "liban": {
+    "slug": "liban",
+    "locale": "fr-LB",
+    "langue": "fr",
+    "pdf": "/documents/countries/liban.pdf",
+    "photos": 7,
+    "credits": [
+      {
+        "titre": "Crops are harvested in fields at the International Center for Agricultural Research in the Dry Areas, or ICARDA, site in Terbol, Bekaa Valley. (J.jpg",
+        "auteur": "J. Owens / VOA",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ACrops_are_harvested_in_fields_at_the_International_Center_for_Agricultural_Research_in_the_Dry_Areas%2C_or_ICARDA%2C_site_in_Terbol%2C_Bekaa_Valley._%28J.jpg"
+      },
+      {
+        "titre": "Beqaa-vineyard.JPG",
+        "auteur": "Not home (Wikipédia en anglais)",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ABeqaa-vineyard.JPG"
+      },
+      {
+        "titre": "JVBLitaniRiverDam.jpg",
+        "auteur": "Jonathanvarunbenjamin",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AJVBLitaniRiverDam.jpg"
+      },
+      {
+        "titre": "Locally grown tomatoes with the valley in the background.JPG",
+        "auteur": "Surreallogic",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ALocally_grown_tomatoes_with_the_valley_in_the_background.JPG"
+      },
+      {
+        "titre": "South litani river.JPG",
+        "auteur": "Eternalsleeper (Wikipédia en anglais)",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ASouth_litani_river.JPG"
+      },
+      {
+        "titre": "Ali Shehadeh, a scientist at ICARDA, in shown in one of the greenhouses at the International Center for Agricultural Research in the Dry Areas, or ICARDA, site in Lebanon's Bekaa Valley.jpg",
+        "auteur": "J. Owens / VOA",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AAli_Shehadeh%2C_a_scientist_at_ICARDA%2C_in_shown_in_one_of_the_greenhouses_at_the_International_Center_for_Agricultural_Research_in_the_Dry_Areas%2C_or_ICARDA%2C_site_in_Lebanon%27s_Bekaa_Valley.jpg"
+      },
+      {
+        "titre": "ISS013-E-75031 - View of Lebanon - Litani valley - Lake Qaraoun - Saghbine - Khirbat Qanafar - Joub Jannine - Lala - Baalaoul - Qaraoun - Majdal Balhiss - Sohmor (cropped).jpg",
+        "auteur": "NASA, Johnson Space Center",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AISS013-E-75031_-_View_of_Lebanon_-_Litani_valley_-_Lake_Qaraoun_-_Saghbine_-_Khirbat_Qanafar_-_Joub_Jannine_-_Lala_-_Baalaoul_-_Qaraoun_-_Majdal_Balhiss_-_Sohmor_%28cropped%29.jpg",
+        "modifications": "Recadrée"
+      }
+    ],
+    "cover": {
+      "eyebrow": "DOSSIER DE MARCHÉ",
+      "title": "Liban",
+      "officiel": "RÉPUBLIQUE LIBANAISE",
+      "lieu": "Beyrouth",
+      "subtitle": "Pommes de terre, légumes, vergers et céréales irrigués dans la Békaa et l'Akkar.\nCe que l'hydro-rétention change quand l'été ne donne plus une goutte de pluie."
+    },
+    "chiffres": {
+      "kicker": "LE MARCHÉ EN BREF",
+      "title": "La moitié des terres cultivées dépend de l'irrigation",
+      "items": [
+        {
+          "value": "≈ 880 Mm³",
+          "label": "d'eau demandés chaque année pour l'irrigation (stratégie nationale, 2020)"
+        },
+        {
+          "value": "≈ 49 %",
+          "label": "de la surface agricole utilisée est irriguée (recensement de 2010)"
+        },
+        {
+          "value": "350 à 700 mm",
+          "label": "de pluie par an selon les régions, presque rien de juin à septembre"
+        },
+        {
+          "value": "≈ 45 Mm³",
+          "label": "d'apports au lac de Qaraoun en 2025, contre 350 millions en moyenne"
+        }
+      ],
+      "note": "La Békaa et Baalbek-Hermel concentrent 55 % des surfaces irriguées. Les eaux souterraines fournissent plus de la moitié de l'eau prélevée : Une grande partie de l'irrigation dépend de puits privés, et chaque mètre cube pompé se paie en énergie."
+    },
+    "contrainte": {
+      "kicker": "LA CONTRAINTE",
+      "title": "Une pluie d'hiver pour des cultures d'été",
+      "caption": "Le lac de retenue du Litani (Qaraoun)",
+      "bullets": [
+        "Il tombe environ 350 mm de pluie par an à Baalbek et 700 mm à Tripoli, mais presque rien de juin à septembre, quand l'atmosphère demande 150 à 200 mm d'eau par mois.",
+        "La Békaa, première région irriguée du pays, est aussi la plus sèche : Pommes de terre, légumes, céréales et vergers y dépendent des nappes et du Litani.",
+        "Les eaux souterraines fournissent plus de la moitié de l'eau prélevée : Le coût du pompage pèse sur chaque arrosage.",
+        "La sécheresse de 2025 a fait tomber les apports au lac de Qaraoun à environ 45 millions de m³, contre 350 millions en moyenne.",
+        "Les projections nationales annoncent 10 à 20 % de pluie en moins d'ici 2040. Garder l'eau dans la zone racinaire devient un levier d'adaptation."
+      ],
+      "photo": 2
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": {
+      "kicker": "OÙ PART L'EAU",
+      "title": "L'irrigation prend sept litres sur dix",
+      "type": "doughnut",
+      "series": [
+        {
+          "name": "Demande en eau",
+          "labels": [
+            "Irrigation",
+            "Ménages, industrie et tourisme"
+          ],
+          "values": [
+            72,
+            28
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Ce que cela implique",
+        "body": "La stratégie nationale de l'eau estime la demande d'irrigation à 882 millions de m³ par an, contre environ 350 millions pour les autres usages.\n\nLe déficit en eau du pays, estimé à 373 millions de m³ par an par la Banque mondiale, se réduit d'abord dans les champs."
+      }
+    },
+    "economie": {
+      "kicker": "ÉCONOMIE ET SÉCURITÉ ALIMENTAIRE",
+      "title": "Un pays qui importe l'essentiel de ses céréales",
+      "items": [
+        {
+          "value": "≈ 5,8 M",
+          "label": "d'habitants, sur un peu plus de 10 000 km²"
+        },
+        {
+          "value": "≈ 2,7 Md$",
+          "label": "d'importations agricoles en 2024, pour 0,5 Md$ d'exportations"
+        },
+        {
+          "value": "≈ 500 000 t",
+          "label": "de blé importées en 2024, trois fois la production nationale"
+        },
+        {
+          "value": "≈ 170 000",
+          "label": "exploitations agricoles, de 1,4 ha en moyenne (recensement de 2010)"
+        }
+      ],
+      "note": "Depuis la crise de 2019, la facture alimentaire pèse sur une économie fortement contractée. Le pays exporte de l'huile d'olive, du raisin, des pommes de terre, des bananes, des pommes et des avocats, et importe ses céréales, ses huiles, son sucre et une partie de sa viande. Produire plus avec la même eau réduit directement cette dépendance."
+    },
+    "productions": {
+      "kicker": "LES CULTURES IRRIGUÉES",
+      "title": "Ce que le Liban irrigue",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Surface récoltée sous irrigation (milliers d'hectares, 2003)",
+          "labels": [
+            "Pommes de terre",
+            "Céréales",
+            "Agrumes",
+            "Légumes",
+            "Tabac"
+          ],
+          "values": [
+            23,
+            22,
+            16,
+            14,
+            9
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Lecture",
+        "body": "Pommes de terre, céréales, agrumes et légumes occupent près des trois quarts de la surface récoltée sous irrigation (FAO AQUASTAT, d'après le ministère de l'Agriculture).\n\nC'est sur la pomme de terre et les légumes que les essais publiés donnent les économies d'eau les plus nettes : Ce sont les premières cultures à tester."
+      }
+    },
+    "filieres": [
+      {
+        "kicker": "FILIÈRE PRIORITAIRE",
+        "title": "La pomme de terre irriguée de la Békaa et de l'Akkar",
+        "caption": null,
+        "bullets": [
+          "Première culture du pays en valeur de production, sur environ 27 600 ha (FAOSTAT, 2023).",
+          "Irriguée par pompage ou par les canaux du Litani ; en 2025, 70 % des producteurs de la Békaa n'ont pas semé faute d'eau fiable, selon l'union nationale des agriculteurs.",
+          "Le pays exporte environ 36 000 t de pommes de terre et en importe 83 000 t (2024) : La production locale ne couvre pas toute l'année.",
+          "Un essai publié en Afrique du Sud a mesuré 52 % d'eau en moins et 31 % de rendement en plus avec EVERGREEN® et ECOFERT®.",
+          "EVERGREEN® posé dans le sillon de plantation retient l'eau de chaque arrosage autour des tubercules."
+        ],
+        "photo": 0
+      }
+    ],
+    "solutions": {
+      "kicker": "NOTRE RÉPONSE",
+      "title": "Retenir l'eau, nourrir sans lessiver",
+      "left": {
+        "head": "EVERGREEN® — retenir l'eau",
+        "lines": [
+          "Hydro-rétenteur à base de potassium, placé dans la zone racinaire à la plantation ou à la reprise.",
+          "Capte l'eau de pluie ou d'irrigation et la restitue progressivement, ce qui espace les arrosages pendant l'été sec.",
+          "Capacité d'absorption de l'ordre de 300 fois son poids ; durée d'effet utile de 3 à 4 ans dans le sol.",
+          "Se dégrade de 20 à 25 % par an, sans accumulation ni risque de surdosage."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® — nourrir sans épuiser",
+        "lines": [
+          "Fertilisant en microdoses d'acides aminés, azote, phosphore et potassium, issu de ressources renouvelables.",
+          "Non chélatant : Il n'appauvrit pas le complexe argilo-humique et n'ajoute pas de salinité à l'eau d'irrigation.",
+          "Certifié SOHISCERT et EU Bio, utilisé dans 60 pays — argument utile pour les filières exportatrices : Raisin, pomme, avocat, huile d'olive.",
+          "1 à 4 flacons de 140 ml par hectare, compatibles avec un pulvérisateur comme avec la fertirrigation."
+        ]
+      },
+      "note": "Les deux produits se vendent séparément mais ont été conçus pour se renforcer : L'hydro-rétenteur prolonge la disponibilité de l'eau, le fertilisant valorise cette eau sans ajouter à la charge saline du sol."
+    },
+    "economies": {
+      "kicker": "ORDRES DE GRANDEUR",
+      "title": "Économie d'eau attendue selon le mode d'arrosage",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Fourchette basse (%)",
+          "labels": [
+            "Goutte-à-goutte",
+            "Micro-aspersion",
+            "Aspersion",
+            "Gravitaire"
+          ],
+          "values": [
+            40,
+            45,
+            50,
+            55
+          ]
+        },
+        {
+          "name": "Fourchette haute (%)",
+          "labels": [
+            "Goutte-à-goutte",
+            "Micro-aspersion",
+            "Aspersion",
+            "Gravitaire"
+          ],
+          "values": [
+            55,
+            60,
+            65,
+            70
+          ]
+        }
+      ],
+      "reading": {
+        "head": "À lire avec prudence",
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : Ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+      }
+    },
+    "regions": {
+      "kicker": "TROIS TERRAINS PRIORITAIRES",
+      "title": "Où engager les premiers essais",
+      "items": [
+        {
+          "head": "Békaa et Baalbek-Hermel",
+          "metric": "55 % des surfaces irriguées",
+          "lines": [
+            "Pommes de terre, légumes, céréales, vigne et vergers sur la plaine intérieure la plus sèche du pays.",
+            "Irrigation par pompage dans les nappes et par les canaux du Litani : L'économie d'eau se lit sur la facture d'énergie.",
+            "Grandes exploitations et stations de recherche, comme Terbol, capables d'accueillir un essai comparatif."
+          ],
+          "photo": 1
+        },
+        {
+          "head": "Akkar",
+          "metric": "≈ 1 600 ha de serres",
+          "lines": [
+            "Plaine côtière irriguée : Légumes de plein champ et sous serre, pommes de terre.",
+            "Premières surfaces de serres du pays, où l'eau et l'engrais se pilotent au plant.",
+            "Cultures à cycle court : Un essai se conclut en une saison."
+          ],
+          "photo": 3
+        },
+        {
+          "head": "Liban-Sud et Nabatieh",
+          "metric": "Agrumes, bananes, oliviers",
+          "lines": [
+            "Vergers d'agrumes et bananeraies sur la côte, oliviers et cultures pluviales à l'intérieur.",
+            "Périmètre de Qasmieh, environ 6 000 ha alimentés par le Litani.",
+            "Cultures pérennes : L'effet de 3 à 4 ans de l'hydro-rétenteur se juge à la plantation et à la replantation."
+          ],
+          "photo": 4
+        }
+      ]
+    },
+    "deploiement": {
+      "kicker": "COMMENT NOUS PROCÉDONS",
+      "title": "Un déploiement par étapes, mesuré à chaque palier",
+      "items": [
+        {
+          "head": "Diagnostic",
+          "body": "Analyse du sol, du mode d'arrosage et de la culture. Aucun engagement à ce stade."
+        },
+        {
+          "head": "Parcelle témoin",
+          "body": "Un essai comparatif sur un bloc, avec parcelle témoin conduite à l'identique."
+        },
+        {
+          "head": "Mesure",
+          "body": "Relevés de consommation d'eau et de rendement sur une saison complète, été compris."
+        },
+        {
+          "head": "Extension",
+          "body": "Généralisation progressive aux autres parcelles sur la base des résultats constatés."
+        }
+      ],
+      "note": "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Ce qui change d'un terrain à l'autre, c'est le volume de terre effectivement exploré par les racines."
+    },
+    "risques": {
+      "kicker": "CE QU'IL FAUT ANTICIPER",
+      "title": "Risques identifiés et réponses",
+      "left": {
+        "head": "Risques",
+        "lines": [
+          "Crise économique et monétaire : Trésorerie des exploitations réduite, financement difficile.",
+          "Exploitations très petites : 70 % font moins d'un hectare selon le recensement de 2010.",
+          "Été sans pluie : Un essai doit couvrir toute la saison chaude pour être probant.",
+          "Enregistrement des fertilisants et amendements auprès du ministère de l'Agriculture avant toute vente."
+        ]
+      },
+      "right": {
+        "head": "Réponses",
+        "lines": [
+          "Commencer par les grandes exploitations, les coopératives et les projets d'irrigation financés par les bailleurs.",
+          "Grouper les achats par coopérative ou par périmètre irrigué.",
+          "Programmer l'essai de mai à octobre, avec une parcelle témoin conduite à l'identique.",
+          "Préparer tôt le dossier réglementaire : Analyses et certificats avant la négociation."
+        ]
+      },
+      "note": "Analyse acrylamide (laboratoire Polymex, ISO 9001, teneur inférieure à 3,0 µg/g) et screening REACH / SVHC (SGS) disponibles sur demande, ainsi que le certificat SOHISCERT valable jusqu'au 4 septembre 2027."
+    },
+    "sources": [
+      "Ministère de l'Agriculture et FAO : Recensement agricole 2010.",
+      "Ministère de l'Énergie et de l'Eau : Stratégie nationale du secteur de l'eau, mise à jour 2020.",
+      "FAO (FAOSTAT, AQUASTAT) et Banque mondiale (WDI) ; Office national du Litani.",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Dites-nous votre parcelle",
+      "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
   "madagascar": {
     "slug": "madagascar",
     "locale": "fr-MG",

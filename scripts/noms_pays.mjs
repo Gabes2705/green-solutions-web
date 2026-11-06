@@ -32,6 +32,7 @@ const ISO = {
   gabon: "GA",
   egypte: "EG",
   jordanie: "JO",
+  liban: "LB",
   usa: "US",
   "arabie-saoudite": "SA",
   cameroun: "CM",
@@ -99,7 +100,7 @@ sortie += "] as const;\n\nexport type CountrySlug = (typeof COUNTRY_SLUGS)[numbe
 sortie += `/**
  * Le nom de chaque pays dans chaque langue, d'après CLDR.
  *
- * Le type impose les vingt-quatre clés : ajouter un pays à la liste ci-dessus
+ * Le type impose toutes les clés : ajouter un pays à la liste ci-dessus
  * sans le nommer ici ne compile pas. C'est ce contrôle qui manquait.
  */
 type NameTable = Record<CountrySlug, string>;
@@ -121,7 +122,7 @@ export type CountryItem = {
   href: string;
 };
 
-/** Les vingt-quatre pays, nommés dans la langue demandée. */
+/** Les pays des dossiers, nommés dans la langue demandée. */
 export function countryItems(langue: string): CountryItem[] {
   const noms = COUNTRY_NAMES[langue] ?? COUNTRY_NAMES.fr;
   return COUNTRY_SLUGS.map((slug) => ({
