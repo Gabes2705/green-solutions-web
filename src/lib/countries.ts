@@ -29,6 +29,7 @@ export const COUNTRY_SLUGS = [
   "gabon",
   "egypte",
   "jordanie",
+  "liban",
   "usa",
   "arabie-saoudite",
   "cameroun",
@@ -53,7 +54,7 @@ export type CountrySlug = (typeof COUNTRY_SLUGS)[number];
 /**
  * Le nom de chaque pays dans chaque langue, d'après CLDR.
  *
- * Le type impose les vingt-quatre clés : ajouter un pays à la liste ci-dessus
+ * Le type impose toutes les clés : ajouter un pays à la liste ci-dessus
  * sans le nommer ici ne compile pas. C'est ce contrôle qui manquait.
  */
 type NameTable = Record<CountrySlug, string>;
@@ -67,6 +68,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabon",
     egypte: "Égypte",
     jordanie: "Jordanie",
+    liban: "Liban",
     usa: "États-Unis",
     "arabie-saoudite": "Arabie saoudite",
     cameroun: "Cameroun",
@@ -93,6 +95,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabon",
     egypte: "Egypt",
     jordanie: "Jordan",
+    liban: "Lebanon",
     usa: "United States",
     "arabie-saoudite": "Saudi Arabia",
     cameroun: "Cameroon",
@@ -119,6 +122,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabón",
     egypte: "Egipto",
     jordanie: "Jordania",
+    liban: "Líbano",
     usa: "Estados Unidos",
     "arabie-saoudite": "Arabia Saudí",
     cameroun: "Camerún",
@@ -145,6 +149,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabão",
     egypte: "Egito",
     jordanie: "Jordânia",
+    liban: "Líbano",
     usa: "Estados Unidos",
     "arabie-saoudite": "Arábia Saudita",
     cameroun: "Camarões",
@@ -171,6 +176,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "الغابون",
     egypte: "مصر",
     jordanie: "الأردن",
+    liban: "لبنان",
     usa: "الولايات المتحدة",
     "arabie-saoudite": "المملكة العربية السعودية",
     cameroun: "الكاميرون",
@@ -197,6 +203,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "加蓬",
     egypte: "埃及",
     jordanie: "约旦",
+    liban: "黎巴嫩",
     usa: "美国",
     "arabie-saoudite": "沙特阿拉伯",
     cameroun: "喀麦隆",
@@ -223,6 +230,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabon",
     egypte: "Mesir",
     jordanie: "Yordania",
+    liban: "Lebanon",
     usa: "Amerika Serikat",
     "arabie-saoudite": "Arab Saudi",
     cameroun: "Kamerun",
@@ -249,6 +257,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabun",
     egypte: "Ägypten",
     jordanie: "Jordanien",
+    liban: "Libanon",
     usa: "Vereinigte Staaten",
     "arabie-saoudite": "Saudi-Arabien",
     cameroun: "Kamerun",
@@ -275,6 +284,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabon",
     egypte: "Egitto",
     jordanie: "Giordania",
+    liban: "Libano",
     usa: "Stati Uniti",
     "arabie-saoudite": "Arabia Saudita",
     cameroun: "Camerun",
@@ -301,6 +311,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Γκαμπόν",
     egypte: "Αίγυπτος",
     jordanie: "Ιορδανία",
+    liban: "Λίβανος",
     usa: "Ηνωμένες Πολιτείες",
     "arabie-saoudite": "Σαουδική Αραβία",
     cameroun: "Καμερούν",
@@ -327,6 +338,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabon",
     egypte: "Mısır",
     jordanie: "Ürdün",
+    liban: "Lübnan",
     usa: "Amerika Birleşik Devletleri",
     "arabie-saoudite": "Suudi Arabistan",
     cameroun: "Kamerun",
@@ -353,6 +365,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabon",
     egypte: "Egipt",
     jordanie: "Jordania",
+    liban: "Liban",
     usa: "Stany Zjednoczone",
     "arabie-saoudite": "Arabia Saudyjska",
     cameroun: "Kamerun",
@@ -379,6 +392,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     gabon: "Gabon",
     egypte: "Egipat",
     jordanie: "Jordan",
+    liban: "Libanon",
     usa: "Sjedinjene Američke Države",
     "arabie-saoudite": "Saudijska Arabija",
     cameroun: "Kamerun",
@@ -405,7 +419,7 @@ export type CountryItem = {
   href: string;
 };
 
-/** Les vingt-quatre pays, nommés dans la langue demandée. */
+/** Les pays des dossiers, nommés dans la langue demandée. */
 export function countryItems(langue: string): CountryItem[] {
   const noms = COUNTRY_NAMES[langue] ?? COUNTRY_NAMES.fr;
   return COUNTRY_SLUGS.map((slug) => ({
