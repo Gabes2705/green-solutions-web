@@ -1079,7 +1079,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "تُقرأ بتحفّظ",
-        "body": "هذه النطاقات تقديرية واسترشادية، مبنية على المكاسب الموثّقة لموادنا الحابسة للماء.\n\nتتوقف النتيجة الفعلية على التربة والمناخ والمحصول. وهي تعطي ترتيب حجم فحسب، ولا تشكّل بأي حال قيمة مضمونة أو تعاقدية أو مطلقة."
+        "body": "هذه النطاقات تقديرية واسترشادية، مبنية على المكاسب الموثّقة لموادنا الحابسة للماء.\n\nتتوقف النتيجة الفعلية على التربة والمناخ والمحصول. وهي تعطي ترتيب حجم فحسب."
       }
     },
     "regions": {
@@ -3346,7 +3346,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Čitati s oprezom",
-        "body": "Ovi su rasponi okvirni i oslanjaju se na dokumentirane uštede naših hidroretentera.\n\nNa oborinskoj parceli mjerilo nije ušteda vode, nego zadržan prinos u sušnoj godini. Stvarni rezultat ovisi o tlu, klimi i kulturi: ove brojke daju red veličine i ni u kojem slučaju ne predstavljaju zajamčenu, ugovornu ni apsolutnu vrijednost."
+        "body": "Ovi su rasponi okvirni i oslanjaju se na dokumentirane uštede naših hidroretentera.\n\nNa oborinskoj parceli mjerilo nije ušteda vode, nego zadržan prinos u sušnoj godini. Stvarni rezultat ovisi o tlu, klimi i kulturi. Ove brojke daju red veličine."
       }
     },
     "regions": {
@@ -3690,7 +3690,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "تُقرأ بتحفّظ",
-        "body": "هذه النطاقات تقديرية إرشادية، مبنية على المكاسب الموثقة لموادنا الحابسة للماء.\n\nالنتيجة الفعلية تتوقف على التربة والمناخ والمحصول. الأرقام تعطي ترتيب حجم فقط، وهي ليست بأي حال قيمة مضمونة أو تعاقدية أو مطلقة."
+        "body": "هذه النطاقات تقديرية إرشادية، مبنية على المكاسب الموثقة لموادنا الحابسة للماء.\n\nالنتيجة الفعلية تتوقف على التربة والمناخ والمحصول. الأرقام تعطي ترتيب حجم فقط."
       }
     },
     "regions": {
@@ -4781,7 +4781,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Να διαβάζονται με προσοχή",
-        "body": "Τα εύρη είναι ενδεικτικά και βασίζονται στα τεκμηριωμένα αποτελέσματα των υδροσυγκρατητών μας.\n\nΤο πραγματικό αποτέλεσμα εξαρτάται από το έδαφος, το κλίμα και την καλλιέργεια. Δίνουν μια τάξη μεγέθους και σε καμία περίπτωση δεν αποτελούν εγγυημένη, συμβατική ή απόλυτη τιμή."
+        "body": "Τα εύρη είναι ενδεικτικά και βασίζονται στα τεκμηριωμένα αποτελέσματα των υδροσυγκρατητών μας.\n\nΤο πραγματικό αποτέλεσμα εξαρτάται από το έδαφος, το κλίμα και την καλλιέργεια. Δίνουν μια τάξη μεγέθους."
       }
     },
     "regions": {
@@ -5339,7 +5339,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "تُقرأ بحذر",
-        "body": "هذه النطاقات تقديرية استرشادية، مبنية على المكاسب الموثقة لموادنا المحتفظة بالماء.\n\nالنتيجة الفعلية تتوقف على التربة والمناخ والمحصول. الأرقام تعطي حجماً تقريبياً لا أكثر، وهي لا تشكّل بأي حال قيمة مضمونة أو تعاقدية أو مطلقة."
+        "body": "هذه النطاقات تقديرية استرشادية، مبنية على المكاسب الموثقة لموادنا المحتفظة بالماء.\n\nالنتيجة الفعلية تتوقف على التربة والمناخ والمحصول. الأرقام تعطي حجماً تقريبياً لا أكثر."
       }
     },
     "regions": {
@@ -6008,7 +6008,7 @@ export const DOSSIERS: Record<string, Dossier> = {
           "Le rendement, la consommation d’eau et la marge sont mesurés séparément avant toute généralisation."
         ]
       },
-      "note": "Le choix des produits et leur dosage restent conditionnés par l’analyse de sol, la qualité de l’eau, la culture et un essai local. Aucun gain de rendement ou d’économie n’est garanti avant mesure sur le terrain."
+      "note": "Le choix des produits et leur dosage restent conditionnés par l’analyse de sol, la qualité de l’eau, la culture et un essai local."
     },
     "economies": null,
     "regions": {
