@@ -355,7 +355,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Read with caution",
-        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude and are in no case a guaranteed, contractual or absolute value."
+        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude."
       }
     },
     "regions": {
@@ -715,7 +715,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -1079,7 +1079,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "تُقرأ بتحفّظ",
-        "body": "هذه النطاقات تقديرية واسترشادية، مبنية على المكاسب الموثّقة لموادنا الحابسة للماء.\n\nتتوقف النتيجة الفعلية على التربة والمناخ والمحصول. وهي تعطي ترتيب حجم فحسب، ولا تشكّل بأي حال قيمة مضمونة أو تعاقدية أو مطلقة."
+        "body": "هذه النطاقات تقديرية واسترشادية، مبنية على المكاسب الموثّقة لموادنا الحابسة للماء.\n\nتتوقف النتيجة الفعلية على التربة والمناخ والمحصول. وهي تعطي ترتيب حجم فحسب."
       }
     },
     "regions": {
@@ -1421,7 +1421,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Leer con prudencia",
-        "body": "Estos rangos son indicativos y se apoyan en las mejoras documentadas de nuestros hidro-retenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Las cifras dan un orden de magnitud: en ningún caso constituyen un valor garantizado, contractual ni absoluto."
+        "body": "Estos rangos son indicativos y se apoyan en las mejoras documentadas de nuestros hidro-retenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Las cifras dan un orden de magnitud."
       }
     },
     "regions": {
@@ -2232,7 +2232,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -2578,7 +2578,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Leer con prudencia",
-        "body": "Estos rangos son indicativos y se apoyan en las ganancias documentadas de nuestros hidrorretenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Estas cifras dan un orden de magnitud: en ningún caso constituyen un valor garantizado, contractual ni absoluto."
+        "body": "Estos rangos son indicativos y se apoyan en las ganancias documentadas de nuestros hidrorretenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Estas cifras dan un orden de magnitud."
       }
     },
     "regions": {
@@ -2980,7 +2980,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -3346,7 +3346,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Čitati s oprezom",
-        "body": "Ovi su rasponi okvirni i oslanjaju se na dokumentirane uštede naših hidroretentera.\n\nNa oborinskoj parceli mjerilo nije ušteda vode, nego zadržan prinos u sušnoj godini. Stvarni rezultat ovisi o tlu, klimi i kulturi: ove brojke daju red veličine i ni u kojem slučaju ne predstavljaju zajamčenu, ugovornu ni apsolutnu vrijednost."
+        "body": "Ovi su rasponi okvirni i oslanjaju se na dokumentirane uštede naših hidroretentera.\n\nNa oborinskoj parceli mjerilo nije ušteda vode, nego zadržan prinos u sušnoj godini. Stvarni rezultat ovisi o tlu, klimi i kulturi. Ove brojke daju red veličine."
       }
     },
     "regions": {
@@ -3690,7 +3690,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "تُقرأ بتحفّظ",
-        "body": "هذه النطاقات تقديرية إرشادية، مبنية على المكاسب الموثقة لموادنا الحابسة للماء.\n\nالنتيجة الفعلية تتوقف على التربة والمناخ والمحصول. الأرقام تعطي ترتيب حجم فقط، وهي ليست بأي حال قيمة مضمونة أو تعاقدية أو مطلقة."
+        "body": "هذه النطاقات تقديرية إرشادية، مبنية على المكاسب الموثقة لموادنا الحابسة للماء.\n\nالنتيجة الفعلية تتوقف على التربة والمناخ والمحصول. الأرقام تعطي ترتيب حجم فقط."
       }
     },
     "regions": {
@@ -4050,7 +4050,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Leer con prudencia",
-        "body": "Estos rangos son indicativos y se apoyan en las ganancias documentadas de nuestros hidrorretenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Estas cifras dan un orden de magnitud: en ningún caso constituyen un valor garantizado, contractual ni absoluto."
+        "body": "Estos rangos son indicativos y se apoyan en las ganancias documentadas de nuestros hidrorretenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Estas cifras dan un orden de magnitud."
       }
     },
     "regions": {
@@ -4147,6 +4147,377 @@ export const DOSSIERS: Record<string, Dossier> = {
       "title": "Cuéntenos cómo es su finca",
       "body": "Cultivo, método de riego, tipo de suelo, volumen de agua que consume hoy. Volvemos con la combinación de tecnologías correspondiente, las dosis y los ensayos ya realizados en situaciones comparables.\n\nUna primera conversación no compromete a nada.",
       "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
+    }
+  },
+  "france": {
+    "slug": "france",
+    "locale": "fr-FR",
+    "langue": "fr",
+    "pdf": "/documents/countries/france.pdf",
+    "photos": 7,
+    "credits": [
+      {
+        "titre": "Les Ormes (Vienne) Irrigation.JPG",
+        "auteur": "Havang(nl)",
+        "licence": "CC0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Les_Ormes_(Vienne)_Irrigation.JPG"
+      },
+      {
+        "titre": "Pivot otech 003.JPG",
+        "auteur": "Tsogni",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pivot_otech_003.JPG"
+      },
+      {
+        "titre": "ISS007-E-13114 - View of France.jpg",
+        "auteur": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:ISS007-E-13114_-_View_of_France.jpg"
+      },
+      {
+        "titre": "Beauce France 1.jpg",
+        "auteur": "Urban",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Beauce_France_1.jpg"
+      },
+      {
+        "titre": "Van Gogh - Die Ebene \"La Crau\" bei Arles mit Montmajour im Hintergrund.jpeg",
+        "auteur": "Vincent van Gogh",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Die_Ebene_\"La_Crau\"_bei_Arles_mit_Montmajour_im_Hintergrund.jpeg"
+      },
+      {
+        "titre": "DSC02591Pont de Gimaux (Bouches-du-Rhône, Fr) un étang, champs de riz.JPG",
+        "auteur": "Havang(nl)",
+        "licence": "CC0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:DSC02591Pont_de_Gimaux_(Bouches-du-Rhône,_Fr)_un_étang,_champs_de_riz.JPG"
+      },
+      {
+        "titre": "ISS002-E-6640 - View of France.jpg",
+        "auteur": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:ISS002-E-6640_-_View_of_France.jpg"
+      }
+    ],
+    "cover": {
+      "eyebrow": "DOSSIER DE MARCHÉ",
+      "title": "France",
+      "officiel": "RÉPUBLIQUE FRANÇAISE",
+      "lieu": "Paris",
+      "subtitle": "Maïs, légumes, pommes de terre et vergers irrigués, des plaines du Sud-Ouest à la Provence.\nCe que l'hydro-rétention change quand l'été demande plus d'eau que la pluie n'en apporte."
+    },
+    "chiffres": {
+      "kicker": "LE MARCHÉ EN BREF",
+      "title": "Une irrigation minoritaire, mais concentrée sur l'été",
+      "items": [
+        {
+          "value": "≈ 2 900 Mm³",
+          "label": "d'eau douce prélevés pour l'agriculture en 2023 (Eurostat)"
+        },
+        {
+          "value": "≈ 1,5 M ha",
+          "label": "irrigués en 2023, soit 5,6 % de la surface agricole utilisée"
+        },
+        {
+          "value": "116 à 438 mm",
+          "label": "de déficit d'eau de juin à août selon les régions, de Strasbourg à Marseille"
+        },
+        {
+          "value": "≈ 450 Mm³",
+          "label": "d'eau économisés par an au scénario central, soit 15 % de l'eau agricole"
+        }
+      ],
+      "note": "Le maïs grain occupe un tiers des surfaces irriguées. La Nouvelle-Aquitaine, l'Occitanie et la Provence-Alpes-Côte d'Azur prélèvent à elles seules plus de la moitié de l'eau d'irrigation : C'est là que l'économie d'eau pèse le plus."
+    },
+    "contrainte": {
+      "kicker": "LA CONTRAINTE",
+      "title": "Une eau prélevée au plus mauvais moment",
+      "caption": "La France vue de la Station spatiale internationale",
+      "bullets": [
+        "L'essentiel de l'eau d'irrigation est prélevé de juin à août, quand les rivières et les nappes sont au plus bas.",
+        "De juin à août, l'atmosphère demande 116 mm d'eau de plus que la pluie à Strasbourg, 246 mm à Toulouse et 438 mm à Marseille.",
+        "Les prélèvements agricoles suivent la météo : Ils ont atteint leur maximum de la série en 2022, année très sèche, avec plus de 3,5 milliards de m³.",
+        "La trajectoire de réchauffement retenue par l'État prévoit +2,7 °C en 2050 et +4 °C en 2100 en France métropolitaine.",
+        "Garder dans le sol l'eau de l'hiver et de chaque arrosage réduit directement le volume à prélever en été."
+      ],
+      "photo": 2
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": {
+      "kicker": "OÙ PART L'EAU",
+      "title": "L'agriculture prélève une eau surtout consommée",
+      "type": "doughnut",
+      "series": [
+        {
+          "name": "Prélèvements d'eau douce",
+          "labels": [
+            "Agriculture",
+            "Énergie, eau potable et industrie"
+          ],
+          "values": [
+            12.5,
+            87.5
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Ce que cela implique",
+        "body": "L'agriculture prélève 12,5 % de l'eau douce du pays (2 924 Mm³ sur 23 391 Mm³ en 2023), mais cette eau est en grande partie évaporée par les plantes, et prélevée en été.\n\nChaque mètre cube gardé dans la zone des racines allège la pression sur les rivières et les nappes au moment où elles sont le plus basses."
+      }
+    },
+    "economie": {
+      "kicker": "ÉCONOMIE ET AGRICULTURE",
+      "title": "Un grand pays agricole et exportateur",
+      "items": [
+        {
+          "value": "≈ 68,7 M",
+          "label": "d'habitants (2025)"
+        },
+        {
+          "value": "≈ 85 Md€",
+          "label": "de production agricole en 2024, dont 44 Md€ de productions végétales"
+        },
+        {
+          "value": "≈ 83,5 Md$",
+          "label": "d'exportations agricoles en 2024, pour 74,6 Md$ d'importations"
+        },
+        {
+          "value": "≈ 27,2 M ha",
+          "label": "de surface agricole utilisée (2023)"
+        }
+      ],
+      "note": "Vins, spiritueux, fromages, blé, orge, maïs et pommes de terre dominent les exportations. Plusieurs de ces productions dépendent d'une eau disponible au bon moment : Garder l'eau dans le sol protège aussi le chiffre d'affaires à l'export lors des étés secs."
+    },
+    "productions": {
+      "kicker": "LES CULTURES IRRIGUÉES",
+      "title": "Ce que la France irrigue",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Surface irriguée (milliers d'hectares, 2023)",
+          "labels": [
+            "Maïs grain",
+            "Céréales à paille",
+            "Fourrages verts",
+            "Vergers",
+            "Légumes",
+            "Pommes de terre"
+          ],
+          "values": [
+            497,
+            168,
+            117,
+            114,
+            93,
+            88
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Lecture",
+        "body": "Le maïs grain occupe un tiers des surfaces irriguées, loin devant les céréales à paille, les fourrages, les vergers, les légumes et les pommes de terre (Eurostat, enquête 2023).\n\nC'est sur le maïs, la pomme de terre et les légumes que les essais publiés donnent les économies d'eau les plus nettes : Ce sont les premières cultures à tester."
+      }
+    },
+    "filieres": [
+      {
+        "kicker": "FILIÈRE PRIORITAIRE",
+        "title": "Le maïs irrigué du Sud-Ouest et du Centre",
+        "caption": null,
+        "bullets": [
+          "Première culture irriguée du pays : Environ 497 000 ha de maïs grain irrigués en 2023 (Eurostat), un tiers des surfaces irriguées.",
+          "Au scénario central, le maïs donne environ 42 % de l'eau économisée par nos produits en France.",
+          "Un essai publié en Turquie a mesuré 39 % d'eau en moins et 17 % de rendement en plus avec nos hydro-rétenteurs.",
+          "Le maïs est aussi un produit d'exportation : Chaque mètre cube économisé protège la récolte lors des étés secs.",
+          "EVERGREEN® posé au semis retient l'eau de chaque arrosage autour des racines."
+        ],
+        "photo": 0
+      }
+    ],
+    "solutions": {
+      "kicker": "NOTRE RÉPONSE",
+      "title": "Retenir l'eau, nourrir sans lessiver",
+      "left": {
+        "head": "EVERGREEN® — retenir l'eau",
+        "lines": [
+          "Hydro-rétenteur à base de potassium, placé dans la zone racinaire au semis, à la plantation ou à la reprise.",
+          "Capte l'eau de pluie ou d'irrigation et la restitue progressivement, ce qui espace les arrosages pendant l'été.",
+          "Capacité d'absorption de l'ordre de 300 fois son poids ; durée d'effet utile de 3 à 4 ans dans le sol.",
+          "Se dégrade de 20 à 25 % par an, sans accumulation ni risque de surdosage."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® — nourrir sans épuiser",
+        "lines": [
+          "Fertilisant en microdoses d'acides aminés, azote, phosphore et potassium, issu de ressources renouvelables.",
+          "Non chélatant : Il n'appauvrit pas le complexe argilo-humique et limite les pertes d'éléments vers les nappes.",
+          "Certifié SOHISCERT et EU Bio, utilisé dans 60 pays — argument utile pour les filières sous signe de qualité et en agriculture biologique.",
+          "1 à 4 flacons de 140 ml par hectare, compatibles avec un pulvérisateur comme avec la fertirrigation."
+        ]
+      },
+      "note": "Les deux produits se vendent séparément mais ont été conçus pour se renforcer : L'hydro-rétenteur prolonge la disponibilité de l'eau, le fertilisant valorise cette eau sans ajouter à la charge du sol."
+    },
+    "economies": {
+      "kicker": "ORDRES DE GRANDEUR",
+      "title": "Économie d'eau attendue selon le mode d'arrosage",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Fourchette basse (%)",
+          "labels": [
+            "Goutte-à-goutte",
+            "Micro-aspersion",
+            "Aspersion",
+            "Gravitaire"
+          ],
+          "values": [
+            40,
+            45,
+            50,
+            55
+          ]
+        },
+        {
+          "name": "Fourchette haute (%)",
+          "labels": [
+            "Goutte-à-goutte",
+            "Micro-aspersion",
+            "Aspersion",
+            "Gravitaire"
+          ],
+          "values": [
+            55,
+            60,
+            65,
+            70
+          ]
+        }
+      ],
+      "reading": {
+        "head": "À lire avec prudence",
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
+      }
+    },
+    "regions": {
+      "kicker": "TROIS TERRAINS PRIORITAIRES",
+      "title": "Où engager les premiers essais",
+      "items": [
+        {
+          "head": "Nouvelle-Aquitaine",
+          "metric": "346 000 ha irrigués",
+          "lines": [
+            "Première région irriguée de France : Maïs des Landes, du Béarn et des Charentes, vergers et légumes de la vallée de la Garonne.",
+            "Environ 92 Mm³ d'eau économisés par an au scénario central.",
+            "Grandes exploitations et coopératives capables de conduire un essai sur un pivot."
+          ],
+          "photo": 1
+        },
+        {
+          "head": "Occitanie",
+          "metric": "268 000 ha irrigués",
+          "lines": [
+            "Maïs et semences du Gers et de la Haute-Garonne, vergers du Tarn-et-Garonne, vignes du Languedoc.",
+            "Environ 91 Mm³ d'eau économisés par an au scénario central.",
+            "Été chaud et sec : 246 mm de déficit d'eau de juin à août à Toulouse."
+          ],
+          "photo": 3
+        },
+        {
+          "head": "Provence-Alpes-Côte d'Azur",
+          "metric": "13,8 % de la SAU irriguée",
+          "lines": [
+            "Foin de Crau, vergers et maraîchage de la Durance, riz de Camargue.",
+            "Le déficit d'été le plus fort du pays : 438 mm de juin à août à Marseille.",
+            "Cultures pérennes : L'effet de 3 à 4 ans de l'hydro-rétenteur se juge à la plantation et à la replantation."
+          ],
+          "photo": 4
+        }
+      ]
+    },
+    "deploiement": {
+      "kicker": "COMMENT NOUS PROCÉDONS",
+      "title": "Un déploiement par étapes, mesuré à chaque palier",
+      "items": [
+        {
+          "head": "Diagnostic",
+          "body": "Analyse du sol, du mode d'arrosage et de la culture. Aucun engagement à ce stade."
+        },
+        {
+          "head": "Parcelle témoin",
+          "body": "Un essai comparatif sur un bloc, avec parcelle témoin conduite à l'identique."
+        },
+        {
+          "head": "Mesure",
+          "body": "Relevés de consommation d'eau et de rendement sur une saison complète, été compris."
+        },
+        {
+          "head": "Extension",
+          "body": "Généralisation progressive aux autres parcelles sur la base des résultats constatés."
+        }
+      ],
+      "note": "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Ce qui change d'un terrain à l'autre, c'est le volume de terre effectivement exploré par les racines."
+    },
+    "risques": {
+      "kicker": "CE QU'IL FAUT ANTICIPER",
+      "title": "Risques identifiés et réponses",
+      "left": {
+        "head": "Risques",
+        "lines": [
+          "Eau agricole peu chère dans les réseaux collectifs : L'argument porte autant sur le rendement que sur le volume d'eau.",
+          "Restrictions d'eau en été : Un essai doit couvrir toute la saison chaude pour être probant.",
+          "Mise sur le marché des matières fertilisantes selon les règles françaises et européennes.",
+          "Grandes cultures à faible marge : Le coût par hectare doit rester proportionné au gain."
+        ]
+      },
+      "right": {
+        "head": "Réponses",
+        "lines": [
+          "Commencer par le maïs, la pomme de terre, les légumes et les vergers, où l'eau et le rendement pèsent le plus.",
+          "Travailler avec les coopératives et les gestionnaires de réseaux collectifs d'irrigation.",
+          "Programmer l'essai de mai à septembre, avec une parcelle témoin conduite à l'identique.",
+          "Préparer tôt le dossier réglementaire : Analyses et certificats avant la négociation."
+        ]
+      },
+      "note": "Analyse acrylamide (laboratoire Polymex, ISO 9001, teneur inférieure à 3,0 µg/g) et screening REACH / SVHC (SGS) disponibles sur demande, ainsi que le certificat SOHISCERT valable jusqu'au 4 septembre 2027."
+    },
+    "sources": [
+      "Eurostat : Enquête sur la structure des exploitations 2023, prélèvements d'eau, comptes de l'agriculture.",
+      "Office français de la biodiversité : Banque nationale des prélèvements (BNPE), irrigation.",
+      "FAO (FAOSTAT) et Banque mondiale (WDI) ; ministère de la Transition écologique (prix de l'eau, TRACC).",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Dites-nous votre parcelle",
+      "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
   "gabon": {
@@ -4410,7 +4781,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -4781,7 +5152,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Να διαβάζονται με προσοχή",
-        "body": "Τα εύρη είναι ενδεικτικά και βασίζονται στα τεκμηριωμένα αποτελέσματα των υδροσυγκρατητών μας.\n\nΤο πραγματικό αποτέλεσμα εξαρτάται από το έδαφος, το κλίμα και την καλλιέργεια. Δίνουν μια τάξη μεγέθους και σε καμία περίπτωση δεν αποτελούν εγγυημένη, συμβατική ή απόλυτη τιμή."
+        "body": "Τα εύρη είναι ενδεικτικά και βασίζονται στα τεκμηριωμένα αποτελέσματα των υδροσυγκρατητών μας.\n\nΤο πραγματικό αποτέλεσμα εξαρτάται από το έδαφος, το κλίμα και την καλλιέργεια. Δίνουν μια τάξη μεγέθους."
       }
     },
     "regions": {
@@ -5339,7 +5710,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "تُقرأ بحذر",
-        "body": "هذه النطاقات تقديرية استرشادية، مبنية على المكاسب الموثقة لموادنا المحتفظة بالماء.\n\nالنتيجة الفعلية تتوقف على التربة والمناخ والمحصول. الأرقام تعطي حجماً تقريبياً لا أكثر، وهي لا تشكّل بأي حال قيمة مضمونة أو تعاقدية أو مطلقة."
+        "body": "هذه النطاقات تقديرية استرشادية، مبنية على المكاسب الموثقة لموادنا المحتفظة بالماء.\n\nالنتيجة الفعلية تتوقف على التربة والمناخ والمحصول. الأرقام تعطي حجماً تقريبياً لا أكثر."
       }
     },
     "regions": {
@@ -5710,7 +6081,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : Ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -6008,7 +6379,7 @@ export const DOSSIERS: Record<string, Dossier> = {
           "Le rendement, la consommation d’eau et la marge sont mesurés séparément avant toute généralisation."
         ]
       },
-      "note": "Le choix des produits et leur dosage restent conditionnés par l’analyse de sol, la qualité de l’eau, la culture et un essai local. Aucun gain de rendement ou d’économie n’est garanti avant mesure sur le terrain."
+      "note": "Le choix des produits et leur dosage restent conditionnés par l’analyse de sol, la qualité de l’eau, la culture et un essai local."
     },
     "economies": null,
     "regions": {
@@ -6353,7 +6724,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -6940,7 +7311,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Read with caution",
-        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude and are in no case a guaranteed, contractual or absolute value."
+        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude."
       }
     },
     "regions": {
@@ -7517,7 +7888,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -7864,7 +8235,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Read with caution",
-        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude and are in no case a guaranteed, contractual or absolute value."
+        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude."
       }
     },
     "regions": {
@@ -8208,7 +8579,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Read with care",
-        "body": "These ranges are indicative and rest on documented gains from our hydro-retainers.\n\nActual results depend on the soil, the climate and the crop. The figures give an order of magnitude only: they are in no case a guaranteed, contractual or absolute value."
+        "body": "These ranges are indicative and rest on documented gains from our hydro-retainers.\n\nActual results depend on the soil, the climate and the crop. The figures give an order of magnitude."
       }
     },
     "regions": {

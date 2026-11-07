@@ -87,7 +87,7 @@ export default {
       ],
     },
     note:
-      "Le choix des produits et leur dosage restent conditionnés par l’analyse de sol, la qualité de l’eau, la culture et un essai local. Aucun gain de rendement ou d’économie n’est garanti avant mesure sur le terrain.",
+      "Le choix des produits et leur dosage restent conditionnés par l’analyse de sol, la qualité de l’eau, la culture et un essai local.",
   },
 
   regions: {

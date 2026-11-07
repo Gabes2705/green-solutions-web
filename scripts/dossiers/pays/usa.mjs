@@ -129,7 +129,7 @@ export default {
     reading: {
       head: "Read with care",
       body:
-        "These ranges are indicative and rest on documented gains from our hydro-retainers.\n\nActual results depend on the soil, the climate and the crop. The figures give an order of magnitude only: they are in no case a guaranteed, contractual or absolute value.",
+        "These ranges are indicative and rest on documented gains from our hydro-retainers.\n\nActual results depend on the soil, the climate and the crop. The figures give an order of magnitude.",
     },
   },
 

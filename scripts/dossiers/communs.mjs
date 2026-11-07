@@ -99,8 +99,6 @@ const TEXTES = {
         head: "Hypothèses de travail",
         lines: [
           "Les chiffres sont des ordres de grandeur arrondis, tirés des dernières données publiques disponibles.",
-          "Les gains d'eau et de rendement sont indicatifs et varient selon le sol, le climat et la culture.",
-          "Document de travail commercial : chiffres à actualiser avant toute soumission officielle.",
         ],
       },
       note:
@@ -162,8 +160,6 @@ const TEXTES = {
         head: "Working assumptions",
         lines: [
           "Figures are rounded orders of magnitude, taken from the latest public data available.",
-          "Water and yield gains are indicative and vary with soil, climate and crop.",
-          "Commercial working document: figures to be refreshed before any official submission.",
         ],
       },
       note:
@@ -225,8 +221,6 @@ const TEXTES = {
         head: "Hipótesis de trabajo",
         lines: [
           "Las cifras son órdenes de magnitud redondeados, tomados de los últimos datos públicos disponibles.",
-          "Los ahorros de agua y los aumentos de rendimiento son indicativos y varían según suelo, clima y cultivo.",
-          "Documento comercial de trabajo: cifras a actualizar antes de cualquier presentación oficial.",
         ],
       },
       note:
@@ -288,8 +282,6 @@ const TEXTES = {
         head: "افتراضات العمل",
         lines: [
           "الأرقام رتب حجم مقرّبة، مأخوذة من أحدث البيانات العامة المتاحة.",
-          "توفير الماء وزيادة الإنتاج أرقام استرشادية تتغير بحسب التربة والمناخ والمحصول.",
-          "وثيقة عمل تجارية: تُحدَّث الأرقام قبل أي تقديم رسمي.",
         ],
       },
       note:
@@ -351,8 +343,6 @@ const TEXTES = {
         head: "Radne pretpostavke",
         lines: [
           "Brojke su zaokružene veličine, preuzete iz najnovijih dostupnih javnih podataka.",
-          "Uštede vode i povećanja prinosa okvirni su i ovise o tlu, klimi i kulturi.",
-          "Radni poslovni dokument: brojke treba ažurirati prije svakog službenog podnošenja.",
         ],
       },
       note:
@@ -414,8 +404,6 @@ const TEXTES = {
         head: "Παραδοχές εργασίας",
         lines: [
           "Τα στοιχεία είναι στρογγυλεμένες τάξεις μεγέθους, από τα πιο πρόσφατα διαθέσιμα δημόσια δεδομένα.",
-          "Η εξοικονόμηση νερού και η αύξηση απόδοσης είναι ενδεικτικές και εξαρτώνται από έδαφος, κλίμα και καλλιέργεια.",
-          "Εμπορικό έγγραφο εργασίας: τα στοιχεία επικαιροποιούνται πριν από κάθε επίσημη υποβολή.",
         ],
       },
       note:

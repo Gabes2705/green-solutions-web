@@ -22,6 +22,7 @@ export const DOSSIER_LANGS: Record<string, string> = {
   "croatie": "hr",
   "egypte": "ar",
   "espagne": "es",
+  "france": "fr",
   "gabon": "fr",
   "grece": "el",
   "guadeloupe": "fr",

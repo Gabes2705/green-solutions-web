@@ -33,6 +33,7 @@ const ISO = {
   egypte: "EG",
   jordanie: "JO",
   liban: "LB",
+  france: "FR",
   usa: "US",
   "arabie-saoudite": "SA",
   cameroun: "CM",
