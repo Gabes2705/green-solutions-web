@@ -355,7 +355,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Read with caution",
-        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude and are in no case a guaranteed, contractual or absolute value."
+        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude."
       }
     },
     "regions": {
@@ -715,7 +715,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -1421,7 +1421,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Leer con prudencia",
-        "body": "Estos rangos son indicativos y se apoyan en las mejoras documentadas de nuestros hidro-retenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Las cifras dan un orden de magnitud: en ningún caso constituyen un valor garantizado, contractual ni absoluto."
+        "body": "Estos rangos son indicativos y se apoyan en las mejoras documentadas de nuestros hidro-retenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Las cifras dan un orden de magnitud."
       }
     },
     "regions": {
@@ -2232,7 +2232,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -2578,7 +2578,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Leer con prudencia",
-        "body": "Estos rangos son indicativos y se apoyan en las ganancias documentadas de nuestros hidrorretenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Estas cifras dan un orden de magnitud: en ningún caso constituyen un valor garantizado, contractual ni absoluto."
+        "body": "Estos rangos son indicativos y se apoyan en las ganancias documentadas de nuestros hidrorretenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Estas cifras dan un orden de magnitud."
       }
     },
     "regions": {
@@ -2980,7 +2980,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -4050,7 +4050,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Leer con prudencia",
-        "body": "Estos rangos son indicativos y se apoyan en las ganancias documentadas de nuestros hidrorretenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Estas cifras dan un orden de magnitud: en ningún caso constituyen un valor garantizado, contractual ni absoluto."
+        "body": "Estos rangos son indicativos y se apoyan en las ganancias documentadas de nuestros hidrorretenedores.\n\nEl resultado real depende del suelo, del clima y del cultivo. Estas cifras dan un orden de magnitud."
       }
     },
     "regions": {
@@ -4410,7 +4410,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -5710,7 +5710,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : Ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -6353,7 +6353,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -6940,7 +6940,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Read with caution",
-        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude and are in no case a guaranteed, contractual or absolute value."
+        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude."
       }
     },
     "regions": {
@@ -7517,7 +7517,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "À lire avec prudence",
-        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur : ils ne constituent en aucun cas une valeur garantie, contractuelle ou absolue."
+        "body": "Ces fourchettes sont indicatives et fondées sur les gains documentés de nos hydro-rétenteurs.\n\nLe résultat réel dépend du sol, du climat et de la culture. Ces chiffres donnent un ordre de grandeur."
       }
     },
     "regions": {
@@ -7864,7 +7864,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Read with caution",
-        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude and are in no case a guaranteed, contractual or absolute value."
+        "body": "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude."
       }
     },
     "regions": {
@@ -8208,7 +8208,7 @@ export const DOSSIERS: Record<string, Dossier> = {
       ],
       "reading": {
         "head": "Read with care",
-        "body": "These ranges are indicative and rest on documented gains from our hydro-retainers.\n\nActual results depend on the soil, the climate and the crop. The figures give an order of magnitude only: they are in no case a guaranteed, contractual or absolute value."
+        "body": "These ranges are indicative and rest on documented gains from our hydro-retainers.\n\nActual results depend on the soil, the climate and the crop. The figures give an order of magnitude."
       }
     },
     "regions": {
