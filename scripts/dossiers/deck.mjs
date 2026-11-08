@@ -338,7 +338,8 @@ export class Deck {
         y: 2.35,
         w: cw - 0.4,
         h: 1.05,
-        fontSize: it.value.length > 9 ? 30 : 38,
+        // « ≈ 880 Mm³ » ou « < 100 mm » cassaient en deux lignes à 38 pt.
+        fontSize: it.value.length > 10 ? 26 : it.value.length > 7 ? 30 : 38,
         bold: true,
         color: this.pal.primary,
         fontFace: HEAD,
@@ -705,14 +706,14 @@ export class Deck {
       s.addText(
         col.lines.map((l, j) => ({
           text: l,
-          options: { bullet: true, breakLine: j < col.lines.length - 1, paraSpaceAfter: 10 },
+          options: { bullet: true, breakLine: j < col.lines.length - 1, paraSpaceAfter: col.fontSize ? 6 : 10 },
         })),
         {
           x,
           y: 2.5,
           w: cw,
           h: note ? 2.7 : 3.6,
-          fontSize: 13.5,
+          fontSize: col.fontSize ?? 13.5,
           color: this.pal.body,
           fontFace: BODY,
           isTextBox: true,

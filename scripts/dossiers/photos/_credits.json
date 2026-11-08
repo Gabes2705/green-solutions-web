@@ -423,5 +423,122 @@
       "licence": "CC BY-SA 2.0",
       "source": "commons"
     }
+  ],
+  "liban": [
+    {
+      "fichier": "0.jpg",
+      "titre": "Crops are harvested in fields at the International Center for Agricultural Research in the Dry Areas, or ICARDA, site in Terbol, Bekaa Valley. (J.jpg",
+      "auteur": "J. Owens / VOA",
+      "licence": "Public domain",
+      "ko": 102,
+      "url": "https://commons.wikimedia.org/wiki/File%3ACrops_are_harvested_in_fields_at_the_International_Center_for_Agricultural_Research_in_the_Dry_Areas%2C_or_ICARDA%2C_site_in_Terbol%2C_Bekaa_Valley._%28J.jpg"
+    },
+    {
+      "fichier": "1.jpg",
+      "titre": "Beqaa-vineyard.JPG",
+      "auteur": "Not home (Wikipédia en anglais)",
+      "licence": "Public domain",
+      "ko": 78,
+      "url": "https://commons.wikimedia.org/wiki/File%3ABeqaa-vineyard.JPG"
+    },
+    {
+      "fichier": "2.jpg",
+      "titre": "JVBLitaniRiverDam.jpg",
+      "auteur": "Jonathanvarunbenjamin",
+      "licence": "Public domain",
+      "ko": 35,
+      "url": "https://commons.wikimedia.org/wiki/File%3AJVBLitaniRiverDam.jpg"
+    },
+    {
+      "fichier": "3.jpg",
+      "titre": "Locally grown tomatoes with the valley in the background.JPG",
+      "auteur": "Surreallogic",
+      "licence": "Public domain",
+      "ko": 127,
+      "url": "https://commons.wikimedia.org/wiki/File%3ALocally_grown_tomatoes_with_the_valley_in_the_background.JPG"
+    },
+    {
+      "fichier": "4.jpg",
+      "titre": "South litani river.JPG",
+      "auteur": "Eternalsleeper (Wikipédia en anglais)",
+      "licence": "Public domain",
+      "ko": 92,
+      "url": "https://commons.wikimedia.org/wiki/File%3ASouth_litani_river.JPG"
+    },
+    {
+      "fichier": "5.jpg",
+      "titre": "Ali Shehadeh, a scientist at ICARDA, in shown in one of the greenhouses at the International Center for Agricultural Research in the Dry Areas, or ICARDA, site in Lebanon's Bekaa Valley.jpg",
+      "auteur": "J. Owens / VOA",
+      "licence": "Public domain",
+      "ko": 162,
+      "url": "https://commons.wikimedia.org/wiki/File%3AAli_Shehadeh%2C_a_scientist_at_ICARDA%2C_in_shown_in_one_of_the_greenhouses_at_the_International_Center_for_Agricultural_Research_in_the_Dry_Areas%2C_or_ICARDA%2C_site_in_Lebanon%27s_Bekaa_Valley.jpg"
+    },
+    {
+      "fichier": "6.jpg",
+      "titre": "ISS013-E-75031 - View of Lebanon - Litani valley - Lake Qaraoun - Saghbine - Khirbat Qanafar - Joub Jannine - Lala - Baalaoul - Qaraoun - Majdal Balhiss - Sohmor (cropped).jpg",
+      "auteur": "NASA, Johnson Space Center",
+      "licence": "Public domain",
+      "ko": 77,
+      "url": "https://commons.wikimedia.org/wiki/File%3AISS013-E-75031_-_View_of_Lebanon_-_Litani_valley_-_Lake_Qaraoun_-_Saghbine_-_Khirbat_Qanafar_-_Joub_Jannine_-_Lala_-_Baalaoul_-_Qaraoun_-_Majdal_Balhiss_-_Sohmor_%28cropped%29.jpg",
+      "modifications": "Recadrée"
+    }
+  ],
+  "france": [
+    {
+      "fichier": "0.jpg",
+      "titre": "Les Ormes (Vienne) Irrigation.JPG",
+      "auteur": "Havang(nl)",
+      "licence": "CC0",
+      "ko": 107,
+      "url": "https://commons.wikimedia.org/wiki/File:Les_Ormes_(Vienne)_Irrigation.JPG"
+    },
+    {
+      "fichier": "1.jpg",
+      "titre": "Pivot otech 003.JPG",
+      "auteur": "Tsogni",
+      "licence": "Public domain",
+      "ko": 259,
+      "url": "https://commons.wikimedia.org/wiki/File:Pivot_otech_003.JPG"
+    },
+    {
+      "fichier": "2.jpg",
+      "titre": "ISS007-E-13114 - View of France.jpg",
+      "auteur": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+      "licence": "Public domain",
+      "ko": 65,
+      "url": "https://commons.wikimedia.org/wiki/File:ISS007-E-13114_-_View_of_France.jpg"
+    },
+    {
+      "fichier": "3.jpg",
+      "titre": "Beauce France 1.jpg",
+      "auteur": "Urban",
+      "licence": "Public domain",
+      "ko": 221,
+      "url": "https://commons.wikimedia.org/wiki/File:Beauce_France_1.jpg"
+    },
+    {
+      "fichier": "4.jpg",
+      "titre": "Van Gogh - Die Ebene \"La Crau\" bei Arles mit Montmajour im Hintergrund.jpeg",
+      "auteur": "Vincent van Gogh",
+      "licence": "Public domain",
+      "ko": 225,
+      "url": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Die_Ebene_\"La_Crau\"_bei_Arles_mit_Montmajour_im_Hintergrund.jpeg"
+    },
+    {
+      "fichier": "5.jpg",
+      "titre": "DSC02591Pont de Gimaux (Bouches-du-Rhône, Fr) un étang, champs de riz.JPG",
+      "auteur": "Havang(nl)",
+      "licence": "CC0",
+      "ko": 114,
+      "url": "https://commons.wikimedia.org/wiki/File:DSC02591Pont_de_Gimaux_(Bouches-du-Rhône,_Fr)_un_étang,_champs_de_riz.JPG"
+    },
+    {
+      "fichier": "6.jpg",
+      "titre": "ISS002-E-6640 - View of France.jpg",
+      "auteur": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+      "licence": "Public domain",
+      "ko": 50,
+      "url": "https://commons.wikimedia.org/wiki/File:ISS002-E-6640_-_View_of_France.jpg"
+    }
   ]
 }

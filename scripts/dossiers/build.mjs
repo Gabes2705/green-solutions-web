@@ -150,8 +150,16 @@ export async function build(spec) {
   d.steps({ ...spec.deploiement, footer: foot });
   if (complet && spec.partenariat !== false) d.steps({ ...c.partenariat, footer: foot });
   d.columns({ ...spec.risques, footer: foot });
-  const sources = [...(spec.sources ?? []), ...sourcesStress(spec.locale), ...creditsPhotos(spec)];
-  d.columns({ ...c.sources(sources), footer: foot });
+  // Les crédits photo vont sous les hypothèses, à droite : à gauche, une longue
+  // liste de sources passait sous l'encadré du bas.
+  const sources = [...(spec.sources ?? []), ...sourcesStress(spec.locale)];
+  const page = c.sources(sources);
+  d.columns({
+    ...page,
+    left: { ...page.left, fontSize: sources.length > 4 ? 11.5 : undefined },
+    right: { ...page.right, lines: [...page.right.lines, ...creditsPhotos(spec)] },
+    footer: foot,
+  });
   await d.closing({
     ...spec.closing,
     photo: pic(spec.closing.photo ?? 0),
