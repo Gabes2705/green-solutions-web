@@ -128,7 +128,7 @@ export default {
     reading: {
       head: "Read with caution",
       body:
-        "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude and are in no case a guaranteed, contractual or absolute value.",
+        "These ranges are indicative and based on the savings documented for our hydro-retainers.\n\nThe actual result depends on the soil, the climate and the crop. They give an order of magnitude.",
     },
   },
 

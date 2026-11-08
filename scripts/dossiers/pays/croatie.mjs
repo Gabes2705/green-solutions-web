@@ -129,7 +129,7 @@ export default {
     reading: {
       head: "Čitati s oprezom",
       body:
-        "Ovi su rasponi okvirni i oslanjaju se na dokumentirane uštede naših hidroretentera.\n\nNa oborinskoj parceli mjerilo nije ušteda vode, nego zadržan prinos u sušnoj godini. Stvarni rezultat ovisi o tlu, klimi i kulturi: ove brojke daju red veličine i ni u kojem slučaju ne predstavljaju zajamčenu, ugovornu ni apsolutnu vrijednost.",
+        "Ovi su rasponi okvirni i oslanjaju se na dokumentirane uštede naših hidroretentera.\n\nNa oborinskoj parceli mjerilo nije ušteda vode, nego zadržan prinos u sušnoj godini. Stvarni rezultat ovisi o tlu, klimi i kulturi. Ove brojke daju red veličine.",
     },
   },
 
