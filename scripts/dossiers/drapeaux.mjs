@@ -38,6 +38,10 @@ const FICHIERS = {
   grece: "Flag of Greece.svg",
   "cote-divoire": "Flag of Côte d'Ivoire.svg",
   madagascar: "Flag of Madagascar.svg",
+  liban: "Flag of Lebanon.svg",
+  france: "Flag of France.svg",
+  ethiopie: "Flag of Ethiopia.svg",
+  djibouti: "Flag of Djibouti.svg",
 };
 
 // Sans argument, tous les drapeaux ; sinon seulement les pays nommés.

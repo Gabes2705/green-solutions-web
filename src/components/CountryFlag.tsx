@@ -384,6 +384,8 @@ const OFFICIELS = new Set([
   "koweit",
   "liban",
   "oman",
+  "ethiopie",
+  "djibouti",
 ]);
 
 export default function CountryFlag({ id }: { id: string }) {

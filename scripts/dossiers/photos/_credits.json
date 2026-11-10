@@ -423,5 +423,254 @@
       "licence": "CC BY-SA 2.0",
       "source": "commons"
     }
+  ],
+  "liban": [
+    {
+      "fichier": "0.jpg",
+      "titre": "Crops are harvested in fields at the International Center for Agricultural Research in the Dry Areas, or ICARDA, site in Terbol, Bekaa Valley. (J.jpg",
+      "auteur": "J. Owens / VOA",
+      "licence": "Public domain",
+      "ko": 102,
+      "url": "https://commons.wikimedia.org/wiki/File%3ACrops_are_harvested_in_fields_at_the_International_Center_for_Agricultural_Research_in_the_Dry_Areas%2C_or_ICARDA%2C_site_in_Terbol%2C_Bekaa_Valley._%28J.jpg"
+    },
+    {
+      "fichier": "1.jpg",
+      "titre": "Beqaa-vineyard.JPG",
+      "auteur": "Not home (Wikipédia en anglais)",
+      "licence": "Public domain",
+      "ko": 78,
+      "url": "https://commons.wikimedia.org/wiki/File%3ABeqaa-vineyard.JPG"
+    },
+    {
+      "fichier": "2.jpg",
+      "titre": "JVBLitaniRiverDam.jpg",
+      "auteur": "Jonathanvarunbenjamin",
+      "licence": "Public domain",
+      "ko": 35,
+      "url": "https://commons.wikimedia.org/wiki/File%3AJVBLitaniRiverDam.jpg"
+    },
+    {
+      "fichier": "3.jpg",
+      "titre": "Locally grown tomatoes with the valley in the background.JPG",
+      "auteur": "Surreallogic",
+      "licence": "Public domain",
+      "ko": 127,
+      "url": "https://commons.wikimedia.org/wiki/File%3ALocally_grown_tomatoes_with_the_valley_in_the_background.JPG"
+    },
+    {
+      "fichier": "4.jpg",
+      "titre": "South litani river.JPG",
+      "auteur": "Eternalsleeper (Wikipédia en anglais)",
+      "licence": "Public domain",
+      "ko": 92,
+      "url": "https://commons.wikimedia.org/wiki/File%3ASouth_litani_river.JPG"
+    },
+    {
+      "fichier": "5.jpg",
+      "titre": "Ali Shehadeh, a scientist at ICARDA, in shown in one of the greenhouses at the International Center for Agricultural Research in the Dry Areas, or ICARDA, site in Lebanon's Bekaa Valley.jpg",
+      "auteur": "J. Owens / VOA",
+      "licence": "Public domain",
+      "ko": 162,
+      "url": "https://commons.wikimedia.org/wiki/File%3AAli_Shehadeh%2C_a_scientist_at_ICARDA%2C_in_shown_in_one_of_the_greenhouses_at_the_International_Center_for_Agricultural_Research_in_the_Dry_Areas%2C_or_ICARDA%2C_site_in_Lebanon%27s_Bekaa_Valley.jpg"
+    },
+    {
+      "fichier": "6.jpg",
+      "titre": "ISS013-E-75031 - View of Lebanon - Litani valley - Lake Qaraoun - Saghbine - Khirbat Qanafar - Joub Jannine - Lala - Baalaoul - Qaraoun - Majdal Balhiss - Sohmor (cropped).jpg",
+      "auteur": "NASA, Johnson Space Center",
+      "licence": "Public domain",
+      "ko": 77,
+      "url": "https://commons.wikimedia.org/wiki/File%3AISS013-E-75031_-_View_of_Lebanon_-_Litani_valley_-_Lake_Qaraoun_-_Saghbine_-_Khirbat_Qanafar_-_Joub_Jannine_-_Lala_-_Baalaoul_-_Qaraoun_-_Majdal_Balhiss_-_Sohmor_%28cropped%29.jpg",
+      "modifications": "Recadrée"
+    }
+  ],
+  "france": [
+    {
+      "fichier": "0.jpg",
+      "titre": "Les Ormes (Vienne) Irrigation.JPG",
+      "auteur": "Havang(nl)",
+      "licence": "CC0",
+      "ko": 107,
+      "url": "https://commons.wikimedia.org/wiki/File:Les_Ormes_(Vienne)_Irrigation.JPG"
+    },
+    {
+      "fichier": "1.jpg",
+      "titre": "Pivot otech 003.JPG",
+      "auteur": "Tsogni",
+      "licence": "Public domain",
+      "ko": 259,
+      "url": "https://commons.wikimedia.org/wiki/File:Pivot_otech_003.JPG"
+    },
+    {
+      "fichier": "2.jpg",
+      "titre": "ISS007-E-13114 - View of France.jpg",
+      "auteur": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+      "licence": "Public domain",
+      "ko": 65,
+      "url": "https://commons.wikimedia.org/wiki/File:ISS007-E-13114_-_View_of_France.jpg"
+    },
+    {
+      "fichier": "3.jpg",
+      "titre": "Beauce France 1.jpg",
+      "auteur": "Urban",
+      "licence": "Public domain",
+      "ko": 221,
+      "url": "https://commons.wikimedia.org/wiki/File:Beauce_France_1.jpg"
+    },
+    {
+      "fichier": "4.jpg",
+      "titre": "Van Gogh - Die Ebene \"La Crau\" bei Arles mit Montmajour im Hintergrund.jpeg",
+      "auteur": "Vincent van Gogh",
+      "licence": "Public domain",
+      "ko": 225,
+      "url": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Die_Ebene_\"La_Crau\"_bei_Arles_mit_Montmajour_im_Hintergrund.jpeg"
+    },
+    {
+      "fichier": "5.jpg",
+      "titre": "DSC02591Pont de Gimaux (Bouches-du-Rhône, Fr) un étang, champs de riz.JPG",
+      "auteur": "Havang(nl)",
+      "licence": "CC0",
+      "ko": 114,
+      "url": "https://commons.wikimedia.org/wiki/File:DSC02591Pont_de_Gimaux_(Bouches-du-Rhône,_Fr)_un_étang,_champs_de_riz.JPG"
+    },
+    {
+      "fichier": "6.jpg",
+      "titre": "ISS002-E-6640 - View of France.jpg",
+      "auteur": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+      "licence": "Public domain",
+      "ko": 50,
+      "url": "https://commons.wikimedia.org/wiki/File:ISS002-E-6640_-_View_of_France.jpg"
+    }
+  ],
+  "ethiopie": [
+    {
+      "fichier": "0.jpg",
+      "titre": "Teff Village Oromia Ethiopia Oct19 R16 02202.jpg",
+      "auteur": "Timothy A. Gonsalves",
+      "licence": "CC BY-SA 4.0",
+      "ko": 296,
+      "url": "https://commons.wikimedia.org/wiki/File:Teff_Village_Oromia_Ethiopia_Oct19_R16_02202.jpg"
+    },
+    {
+      "fichier": "1.jpg",
+      "titre": "Cattle herd in riverbed Afar Ethiopia.jpg",
+      "auteur": "Sonjamariavienna",
+      "licence": "CC BY-SA 4.0",
+      "ko": 325,
+      "url": "https://commons.wikimedia.org/wiki/File:Cattle_herd_in_riverbed_Afar_Ethiopia.jpg"
+    },
+    {
+      "fichier": "2.jpg",
+      "titre": "Bewässerungslandwirtschaft in der Savanne von Subuli, Region Afar.jpg",
+      "auteur": "Menschen für Menschen Schweiz",
+      "licence": "CC BY-SA 4.0",
+      "ko": 198,
+      "url": "https://commons.wikimedia.org/wiki/File:Bew%C3%A4sserungslandwirtschaft_in_der_Savanne_von_Subuli,_Region_Afar.jpg"
+    },
+    {
+      "fichier": "3.jpg",
+      "titre": "On the Road to Harar, Ethiopia (2142134023).jpg",
+      "auteur": "A. Davey from Where I Live Now: Pacific Northwest",
+      "licence": "CC BY 2.0",
+      "ko": 207,
+      "url": "https://commons.wikimedia.org/wiki/File:On_the_Road_to_Harar,_Ethiopia_(2142134023).jpg"
+    },
+    {
+      "fichier": "4.jpg",
+      "titre": "Tef in Ethiopia 01.jpg",
+      "auteur": "Bernard Gagnon",
+      "licence": "CC BY-SA 3.0",
+      "ko": 272,
+      "url": "https://commons.wikimedia.org/wiki/File:Tef_in_Ethiopia_01.jpg"
+    },
+    {
+      "fichier": "5.jpg",
+      "titre": "Lake Tana, Ethiopia (51642940047).jpg",
+      "auteur": "Nina R from Africa",
+      "licence": "CC BY 2.0",
+      "ko": 273,
+      "url": "https://commons.wikimedia.org/wiki/File:Lake_Tana,_Ethiopia_(51642940047).jpg"
+    },
+    {
+      "fichier": "6.jpg",
+      "titre": "ILRI, Stevie Mann - Ploughing with cattle in southwestern Ethiopia.jpg",
+      "auteur": "Photo: ILRI/Stevie Mann",
+      "licence": "CC BY 2.0",
+      "ko": 129,
+      "url": "https://commons.wikimedia.org/wiki/File:ILRI,_Stevie_Mann_-_Ploughing_with_cattle_in_southwestern_Ethiopia.jpg"
+    },
+    {
+      "fichier": "7.jpg",
+      "titre": "Ethiopian farmer at work on his land.jpg",
+      "auteur": "Bjvisser",
+      "licence": "CC BY-SA 4.0",
+      "ko": 316,
+      "url": "https://commons.wikimedia.org/wiki/File:Ethiopian_farmer_at_work_on_his_land.jpg"
+    }
+  ],
+  "djibouti": [
+    {
+      "fichier": "0.jpg",
+      "titre": "Assal Lake, 2024.jpg",
+      "auteur": "Mheidegger",
+      "licence": "CC BY 4.0",
+      "ko": 160,
+      "url": "https://commons.wikimedia.org/wiki/File:Assal_Lake,_2024.jpg"
+    },
+    {
+      "fichier": "1.jpg",
+      "titre": "Lac Abbe-03.JPG",
+      "auteur": "Rolf Cosar",
+      "licence": "CC BY 3.0",
+      "ko": 126,
+      "url": "https://commons.wikimedia.org/wiki/File:Lac_Abbe-03.JPG"
+    },
+    {
+      "fichier": "2.jpg",
+      "titre": "A men picks fruit near Dikhil, Djibouti.JPG",
+      "auteur": "DoD photo by Staff Sgt. Joseph L. Swafford Jr., U.S. Air Force/Released",
+      "licence": "Public domain",
+      "ko": 533,
+      "url": "https://commons.wikimedia.org/wiki/File:A_men_picks_fruit_near_Dikhil,_Djibouti.JPG"
+    },
+    {
+      "fichier": "3.jpg",
+      "titre": "Goda Mountains - National Park of Forêt du Day (cropped).jpg",
+      "auteur": "Singlab",
+      "licence": "CC BY-SA 3.0",
+      "ko": 178,
+      "url": "https://commons.wikimedia.org/wiki/File:Goda_Mountains_-_National_Park_of_For%C3%AAt_du_Day_(cropped).jpg"
+    },
+    {
+      "fichier": "4.jpg",
+      "titre": "Gobaad.jpg",
+      "auteur": "Benlilkon93",
+      "licence": "CC BY-SA 4.0",
+      "ko": 474,
+      "url": "https://commons.wikimedia.org/wiki/File:Gobaad.jpg"
+    },
+    {
+      "fichier": "5.jpg",
+      "titre": "Arrei Mountains see from Ali Sabieh.JPG",
+      "auteur": "Skilla1st",
+      "licence": "CC BY-SA 4.0",
+      "ko": 193,
+      "url": "https://commons.wikimedia.org/wiki/File:Arrei_Mountains_see_from_Ali_Sabieh.JPG"
+    },
+    {
+      "fichier": "6.jpg",
+      "titre": "180504-N-FD185-7900 PORT OF DJIBOUTI, Djibouti (42035449301).jpg",
+      "auteur": "Commander, U.S. Naval Forces Europe-Africa/U.S. 6th Fleet",
+      "licence": "Public domain",
+      "ko": 171,
+      "url": "https://commons.wikimedia.org/wiki/File:180504-N-FD185-7900_PORT_OF_DJIBOUTI,_Djibouti_(42035449301).jpg"
+    },
+    {
+      "fichier": "7.jpg",
+      "titre": "Obock, Djibouti - panoramio.jpg",
+      "auteur": "vxr7475",
+      "licence": "CC BY 3.0",
+      "ko": 230,
+      "url": "https://commons.wikimedia.org/wiki/File:Obock,_Djibouti_-_panoramio.jpg"
+    }
   ]
 }

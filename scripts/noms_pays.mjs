@@ -40,6 +40,8 @@ const ISO = {
   oman: "OM",
   senegal: "SN",
   "soudan-sud": "SS",
+  ethiopie: "ET",
+  djibouti: "DJ",
   espagne: "ES",
   grece: "GR",
   chili: "CL",
