@@ -3445,6 +3445,380 @@ export const DOSSIERS: Record<string, Dossier> = {
       "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Švicarska"
     }
   },
+  "djibouti": {
+    "slug": "djibouti",
+    "locale": "fr-DJ",
+    "langue": "fr",
+    "pdf": "/documents/countries/djibouti.pdf",
+    "photos": 8,
+    "credits": [
+      {
+        "titre": "Assal Lake, 2024.jpg",
+        "auteur": "Mheidegger",
+        "licence": "CC BY 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Assal_Lake,_2024.jpg"
+      },
+      {
+        "titre": "Lac Abbe-03.JPG",
+        "auteur": "Rolf Cosar",
+        "licence": "CC BY 3.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Lac_Abbe-03.JPG"
+      },
+      {
+        "titre": "A men picks fruit near Dikhil, Djibouti.JPG",
+        "auteur": "DoD photo by Staff Sgt. Joseph L. Swafford Jr., U.S. Air Force/Released",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:A_men_picks_fruit_near_Dikhil,_Djibouti.JPG"
+      },
+      {
+        "titre": "Goda Mountains - National Park of Forêt du Day (cropped).jpg",
+        "auteur": "Singlab",
+        "licence": "CC BY-SA 3.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Goda_Mountains_-_National_Park_of_For%C3%AAt_du_Day_(cropped).jpg"
+      },
+      {
+        "titre": "Gobaad.jpg",
+        "auteur": "Benlilkon93",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Gobaad.jpg"
+      },
+      {
+        "titre": "Arrei Mountains see from Ali Sabieh.JPG",
+        "auteur": "Skilla1st",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Arrei_Mountains_see_from_Ali_Sabieh.JPG"
+      },
+      {
+        "titre": "180504-N-FD185-7900 PORT OF DJIBOUTI, Djibouti (42035449301).jpg",
+        "auteur": "Commander, U.S. Naval Forces Europe-Africa/U.S. 6th Fleet",
+        "licence": "Public domain",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:180504-N-FD185-7900_PORT_OF_DJIBOUTI,_Djibouti_(42035449301).jpg"
+      },
+      {
+        "titre": "Obock, Djibouti - panoramio.jpg",
+        "auteur": "vxr7475",
+        "licence": "CC BY 3.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Obock,_Djibouti_-_panoramio.jpg"
+      }
+    ],
+    "cover": {
+      "eyebrow": "DOSSIER DE MARCHÉ",
+      "title": "Djibouti",
+      "officiel": "RÉPUBLIQUE DE DJIBOUTI",
+      "lieu": "Djibouti",
+      "subtitle": "Jardins maraîchers, palmiers et vergers irrigués par des nappes qui se salinisent.\nCe que l'hydro-rétention change quand chaque mètre cube est pompé ou dessalé."
+    },
+    "chiffres": {
+      "kicker": "LE MARCHÉ EN BREF",
+      "title": "Un pays sans rivière, qui cultive des jardins",
+      "items": [
+        {
+          "value": "1 066 809",
+          "label": "Habitants au recensement de 2024, dont 72 % dans la région de Djibouti-ville"
+        },
+        {
+          "value": "264 m³",
+          "label": "D'eau douce renouvelable par habitant et par an (2022), sans aucun cours d'eau permanent"
+        },
+        {
+          "value": "228 mm",
+          "label": "De pluie par an à Djibouti-ville, pour 2 017 mm d'évapotranspiration de référence"
+        },
+        {
+          "value": "1 010 ha",
+          "label": "Équipés pour l'irrigation en 2023. La production locale couvre environ 10 % de la consommation alimentaire"
+        }
+      ],
+      "note": "Environ 9 896 t de produits végétaux ont été récoltées en 2019/2020 (INSTAD) : Maraîchage et vergers le long des oueds. L'élevage fait environ les trois quarts du PIB agricole."
+    },
+    "contrainte": {
+      "kicker": "LA CONTRAINTE",
+      "title": "Des nappes qui baissent et se salinisent",
+      "caption": "Le lac Abbé, région de Dikhil",
+      "bullets": [
+        "Il tombe 228 mm de pluie par an à Djibouti-ville et 142 mm à Dikhil, pour plus de 1 900 mm d'évapotranspiration de référence partout (ERA5, 1991-2020).",
+        "Les nappes fournissent l'eau de 99 % de la population rurale (FIDA). Le pays n'a aucun cours d'eau permanent.",
+        "La nappe de la capitale se salinise ; le déficit de Djibouti-ville dépasserait 5 millions de m³ par an.",
+        "À Djibouti-ville, la température moyenne annuelle est passée de 28,6 °C (1981-1990) à 29,8 °C (2015-2024).",
+        "L'usine de dessalement de Doraleh produit 22 500 m³ par jour depuis 2021. Garder l'eau d'irrigation dans la zone racinaire réduit la part qui s'évapore."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": {
+      "kicker": "OÙ PART L'EAU",
+      "title": "Les villes prennent l'essentiel de l'eau prélevée",
+      "type": "doughnut",
+      "series": [
+        {
+          "name": "Prélèvements d'eau douce",
+          "labels": [
+            "Ménages et villes",
+            "Agriculture"
+          ],
+          "values": [
+            84,
+            16
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Ce que cela implique",
+        "body": "La Banque mondiale estime les prélèvements à 19 millions de m³ par an, dont 3 millions pour l'agriculture.\n\nChaque mètre cube économisé dans les jardins reste disponible pour la région de Djibouti-ville, passée de 475 322 à 767 250 habitants entre 2009 et 2024."
+      }
+    },
+    "economie": {
+      "kicker": "ÉCONOMIE ET SÉCURITÉ ALIMENTAIRE",
+      "title": "Un port qui nourrit la région",
+      "items": [
+        {
+          "value": "1 623 M$",
+          "label": "D'importations agricoles en 2024 : Huiles, sucre, riz, farine de blé"
+        },
+        {
+          "value": "579 M$",
+          "label": "D'engrais reçus en 2022, presque tous réexportés vers l'Éthiopie"
+        },
+        {
+          "value": "96,7 %",
+          "label": "Du fret extérieur éthiopien traité par les ports de Djibouti en 2025/26"
+        },
+        {
+          "value": "22 500 m³",
+          "label": "Produits chaque jour par l'usine de Doraleh ; 45 000 m³ visés après la deuxième phase"
+        }
+      ],
+      "note": "Djibouti importe presque toute sa nourriture et sert de porte d'entrée à l'Éthiopie : Engrais, blé, sucre et huiles y transitent. Le bétail est la première exportation propre du pays : Moutons, chèvres, bovins et dromadaires partent vers la péninsule arabique depuis les terminaux de Damerjog et de Doraleh."
+    },
+    "productions": {
+      "kicker": "LES SIX RÉGIONS",
+      "title": "Moins de 300 mm de pluie dans chaque région",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Pluie (mm par an, moyenne 1991-2020)",
+          "labels": [
+            "Ali Sabieh",
+            "Obock",
+            "Tadjourah",
+            "Djibouti-ville",
+            "Arta",
+            "Dikhil"
+          ],
+          "values": [
+            284,
+            235,
+            229,
+            228,
+            198,
+            142
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Lecture",
+        "body": "Pluie au chef-lieu de chaque région, d'après la réanalyse climatique ERA5.\n\nL'évapotranspiration de référence dépasse partout 1 900 mm et atteint 2 398 mm à Dikhil : L'air demande sept à dix-sept fois plus d'eau qu'il n'en tombe."
+      }
+    },
+    "filieres": [
+      {
+        "kicker": "FILIÈRE PRIORITAIRE",
+        "title": "Maraîchage et palmiers sur eau de nappe",
+        "caption": null,
+        "bullets": [
+          "Les jardins le long des oueds produisent légumes, fruits et dattes, irrigués par des puits dont l'eau se salinise.",
+          "Avec 228 mm de pluie et plus de 2 000 mm d'évapotranspiration, l'eau de chaque arrosage s'évapore vite en surface.",
+          "Un essai publié en sol sableux et salin (ICBA, Dubaï) a mesuré 82 % d'eau en moins et 20 % de dattes en plus avec EVERGREEN®.",
+          "EVERGREEN® posé au pied des plants retient l'eau de chaque arrosage autour des racines.",
+          "ECOFERT® enrichit le sol en matière organique sans ajouter de sel à l'eau d'irrigation."
+        ],
+        "photo": 2
+      },
+      {
+        "kicker": "VILLES ET REBOISEMENT",
+        "title": "Espaces verts, plantations et forêt du Day",
+        "caption": null,
+        "bullets": [
+          "Les espaces verts et les plantations urbaines s'arrosent à l'eau dessalée ou épurée : Chaque litre économisé compte.",
+          "EVERGREEN® et ECOSORB® réduisent l'arrosage pour la même surface plantée.",
+          "Le reboisement de la forêt du Day et des abords des villes demande une bonne reprise des plants en saison chaude.",
+          "Paulownia ALTIFOLIA®, arbre à croissance rapide, peut y être planté avec un hydro-rétenteur : Le résultat se mesure par essai.",
+          "Djibouti peut aussi servir de plateforme de stockage et d'acheminement vers le marché éthiopien."
+        ],
+        "photo": 3
+      }
+    ],
+    "solutions": {
+      "kicker": "NOTRE RÉPONSE",
+      "title": "Retenir l'eau, nourrir sans saler",
+      "left": {
+        "head": "EVERGREEN® — retenir l'eau",
+        "lines": [
+          "Hydro-rétenteur à base de potassium, placé dans la zone racinaire à la plantation ou à la reprise.",
+          "Capte l'eau d'irrigation et la restitue progressivement, ce qui espace les arrosages pendant la saison chaude.",
+          "Capacité d'absorption de l'ordre de 300 fois son poids ; durée d'effet utile de 3 à 4 ans dans le sol.",
+          "Se dégrade de 20 à 25 % par an, sans accumulation ni risque de surdosage."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® — nourrir sans épuiser",
+        "lines": [
+          "Fertilisant en microdoses d'acides aminés, azote, phosphore et potassium, issu de ressources renouvelables.",
+          "Non chélatant : Il n'appauvrit pas le complexe argilo-humique et n'ajoute pas de salinité à l'eau d'irrigation.",
+          "Certifié SOHISCERT et EU Bio, utilisé dans 60 pays.",
+          "1 à 4 flacons de 140 ml par hectare, compatibles avec un pulvérisateur comme avec la fertirrigation."
+        ]
+      },
+      "note": "Les deux produits se vendent séparément mais ont été conçus pour se renforcer : L'hydro-rétenteur prolonge la disponibilité de l'eau, le fertilisant valorise cette eau sans ajouter à la charge saline du sol."
+    },
+    "economies": {
+      "kicker": "ORDRES DE GRANDEUR",
+      "title": "Eau agricole économisée chaque année, en jours de production de Doraleh",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Jours de production de l'usine de Doraleh",
+          "labels": [
+            "Scénario prudent",
+            "Scénario central",
+            "Scénario fort"
+          ],
+          "values": [
+            15,
+            31,
+            62
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Comment c'est calculé",
+        "body": "L'eau agricole vaut 3,0 millions de m³ par an pour 1 010 ha équipés. Le scénario central applique les essais pastèque et palmier dattier au maraîchage et aux palmiers, et 5 à 20 % aux vergers ; le prudent en retient la moitié, le fort le double.\n\nAu scénario central, 696 750 m³ sont économisés chaque année : 31 jours de production de l'usine de Doraleh, environ 14 % du déficit de la capitale."
+      }
+    },
+    "regions": {
+      "kicker": "TROIS TERRAINS PRIORITAIRES",
+      "title": "Où engager les premiers essais",
+      "items": [
+        {
+          "head": "Dikhil",
+          "metric": "142 mm de pluie par an",
+          "lines": [
+            "La région la plus chaude et la plus sèche : 2 398 mm d'évapotranspiration de référence.",
+            "Les plaines de Hanlé et du Gobaad et les rives du lac Abbé concentrent l'essentiel du potentiel agricole du pays.",
+            "Une étude de la JICA (2014) porte sur l'irrigation durable dans le sud, dont le bassin d'Afka Arraba."
+          ],
+          "photo": 4
+        },
+        {
+          "head": "Ali Sabieh",
+          "metric": "284 mm, la région la plus arrosée",
+          "lines": [
+            "Région montagneuse du sud, le long du chemin de fer vers l'Éthiopie.",
+            "Jardins et vergers autour d'Ali Sabieh, d'Ali Adde et de Holl-Holl.",
+            "Ils dépendent de puits et de petites retenues : Chaque arrosage gardé dans le sol compte."
+          ],
+          "photo": 5
+        },
+        {
+          "head": "Djibouti-ville et Arta",
+          "metric": "72 % de la population",
+          "lines": [
+            "Les jardins de l'oued Ambouli et les espaces verts urbains sont les principaux usagers agricoles de l'eau.",
+            "À Arta, sur les hauteurs, les périmètres maraîchers profitent du marché de la capitale.",
+            "L'usine de dessalement de Doraleh et l'arrivée de la conduite venue d'Éthiopie s'y trouvent."
+          ],
+          "photo": 6
+        }
+      ]
+    },
+    "deploiement": {
+      "kicker": "COMMENT NOUS PROCÉDONS",
+      "title": "Un déploiement par étapes, mesuré à chaque palier",
+      "items": [
+        {
+          "head": "Diagnostic",
+          "body": "Analyse du sol, de l'eau d'arrosage et de la culture. Aucun engagement à ce stade."
+        },
+        {
+          "head": "Parcelle témoin",
+          "body": "Un essai comparatif sur un bloc, avec parcelle témoin conduite à l'identique."
+        },
+        {
+          "head": "Mesure",
+          "body": "Relevés de consommation d'eau et de rendement sur une saison complète, saison chaude comprise."
+        },
+        {
+          "head": "Extension",
+          "body": "Généralisation progressive aux autres parcelles sur la base des résultats constatés."
+        }
+      ],
+      "note": "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Ce qui change d'un terrain à l'autre, c'est le volume de terre effectivement exploré par les racines."
+    },
+    "risques": {
+      "kicker": "CE QU'IL FAUT ANTICIPER",
+      "title": "Risques identifiés et réponses",
+      "left": {
+        "head": "Risques",
+        "lines": [
+          "Des surfaces cultivées réduites : 1 010 ha équipés pour l'irrigation dans tout le pays.",
+          "Une eau de nappe salée dans plusieurs zones : Le sol se charge en sel à chaque arrosage.",
+          "Une chaleur extrême l'été : Un essai doit couvrir la saison chaude pour être probant.",
+          "Enregistrement des fertilisants et amendements auprès du ministère de l'Agriculture avant toute vente."
+        ]
+      },
+      "right": {
+        "head": "Réponses",
+        "lines": [
+          "Commencer par les espaces verts, les projets d'irrigation financés par les bailleurs et les jardins des oueds.",
+          "Une formulation au potassium, jamais au sodium : Elle n'ajoute pas de salinité.",
+          "Programmer l'essai sur la saison chaude, avec une parcelle témoin conduite à l'identique.",
+          "Préparer tôt le dossier réglementaire : Analyses et certificats avant la négociation."
+        ]
+      },
+      "note": "Analyse acrylamide (laboratoire Polymex, ISO 9001, teneur inférieure à 3,0 µg/g) et screening REACH / SVHC (SGS) disponibles sur demande, ainsi que le certificat SOHISCERT valable jusqu'au 4 septembre 2027."
+    },
+    "sources": [
+      "INSTAD : Recensements de la population de 2009 et 2024 ; production agricole 2019/2020.",
+      "FAO (FAOSTAT, AQUASTAT), Banque mondiale (WDI) et FIDA.",
+      "ERA5 (Copernicus) : Climat 1991-2020 et tendances depuis 1981 ; UN Comtrade, cité par la DG Trésor.",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Dites-nous votre parcelle",
+      "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
   "egypte": {
     "slug": "egypte",
     "locale": "ar-EG",
@@ -4147,6 +4521,382 @@ export const DOSSIERS: Record<string, Dossier> = {
       "title": "Cuéntenos cómo es su finca",
       "body": "Cultivo, método de riego, tipo de suelo, volumen de agua que consume hoy. Volvemos con la combinación de tecnologías correspondiente, las dosis y los ensayos ya realizados en situaciones comparables.\n\nUna primera conversación no compromete a nada.",
       "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
+    }
+  },
+  "ethiopie": {
+    "slug": "ethiopie",
+    "locale": "en-ET",
+    "langue": "en",
+    "pdf": "/documents/countries/ethiopie.pdf",
+    "photos": 8,
+    "credits": [
+      {
+        "titre": "Teff Village Oromia Ethiopia Oct19 R16 02202.jpg",
+        "auteur": "Timothy A. Gonsalves",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Teff_Village_Oromia_Ethiopia_Oct19_R16_02202.jpg"
+      },
+      {
+        "titre": "Cattle herd in riverbed Afar Ethiopia.jpg",
+        "auteur": "Sonjamariavienna",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Cattle_herd_in_riverbed_Afar_Ethiopia.jpg"
+      },
+      {
+        "titre": "Bewässerungslandwirtschaft in der Savanne von Subuli, Region Afar.jpg",
+        "auteur": "Menschen für Menschen Schweiz",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Bew%C3%A4sserungslandwirtschaft_in_der_Savanne_von_Subuli,_Region_Afar.jpg"
+      },
+      {
+        "titre": "On the Road to Harar, Ethiopia (2142134023).jpg",
+        "auteur": "A. Davey from Where I Live Now: Pacific Northwest",
+        "licence": "CC BY 2.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:On_the_Road_to_Harar,_Ethiopia_(2142134023).jpg"
+      },
+      {
+        "titre": "Tef in Ethiopia 01.jpg",
+        "auteur": "Bernard Gagnon",
+        "licence": "CC BY-SA 3.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Tef_in_Ethiopia_01.jpg"
+      },
+      {
+        "titre": "Lake Tana, Ethiopia (51642940047).jpg",
+        "auteur": "Nina R from Africa",
+        "licence": "CC BY 2.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Lake_Tana,_Ethiopia_(51642940047).jpg"
+      },
+      {
+        "titre": "ILRI, Stevie Mann - Ploughing with cattle in southwestern Ethiopia.jpg",
+        "auteur": "Photo: ILRI/Stevie Mann",
+        "licence": "CC BY 2.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:ILRI,_Stevie_Mann_-_Ploughing_with_cattle_in_southwestern_Ethiopia.jpg"
+      },
+      {
+        "titre": "Ethiopian farmer at work on his land.jpg",
+        "auteur": "Bjvisser",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Ethiopian_farmer_at_work_on_his_land.jpg"
+      }
+    ],
+    "cover": {
+      "eyebrow": "MARKET DOSSIER",
+      "title": "Ethiopia",
+      "officiel": "FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA",
+      "lieu": "Addis Ababa",
+      "subtitle": "A rain-fed granary of 135 million people, where irrigation grows plot by plot.\nWhat hydro-retention changes when the rains come late or stop early."
+    },
+    "chiffres": {
+      "kicker": "THE MARKET IN BRIEF",
+      "title": "A farm economy that still runs on rain",
+      "items": [
+        {
+          "value": "135.5 M",
+          "label": "Inhabitants in 2025. Agriculture provides 33% of GDP and 60% of jobs"
+        },
+        {
+          "value": "9.7 km³",
+          "label": "Of water withdrawn each year for agriculture, 92% of all withdrawals"
+        },
+        {
+          "value": "858,160 ha",
+          "label": "Equipped for irrigation in 2023, for a potential of 5.3 million hectares"
+        },
+        {
+          "value": "547,262 t",
+          "label": "Of mineral nitrogen used in 2023, almost all of it imported through Djibouti"
+        }
+      ],
+      "note": "Smallholders harvested 32.8 million tonnes of grain in 2021/22, excluding Tigray, and Oromia and Amhara produce 88% of it. Irrigation is still small: 1,228,082 smallholders irrigate 165,111 ha in the main season, mainly maize, khat, onion and banana."
+    },
+    "contrainte": {
+      "kicker": "THE CONSTRAINT",
+      "title": "Rains that come late, stop early or fail",
+      "caption": "Herd in a dry riverbed, Afar region",
+      "bullets": [
+        "Rainfall ranges from 149 mm a year at Semera, in Afar, to 2,745 mm at Bonga, in the South West (ERA5, 1991-2020 mean).",
+        "In the centre and north, the long rains (kiremt) last from June to September and carry the main harvest: A late start or an early end cuts the yield of maize, sorghum and teff.",
+        "The lowlands are warming: At Semera, the mean temperature has risen by 0.33 °C per decade since 1981.",
+        "The 2020-2023 drought in the south and east killed about 6.85 million head of livestock (OCHA).",
+        "Irrigation grows plot by plot, from rivers, wells and ponds. Holding each watering in the root zone lets the same water serve a larger area."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "DROUGHT AND WATER STRESS",
+      "title": "Pressure is rising, but risk remains local",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Global index of drought number and duration",
+          "labels": [
+            "1980–1999",
+            "Since 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Two indicators, not a shortcut",
+        "body": "Worldwide, the number and duration of droughts have risen by 29% since 2000 compared with the two previous decades.\n\nWater stress measures something different: withdrawals as a share of renewable resources available after environmental needs. This global signal is therefore not a country forecast; it must be read alongside local rainfall, aquifers, seasons and uses."
+      }
+    },
+    "usages": {
+      "kicker": "WHERE THE WATER GOES",
+      "title": "Agriculture takes more than nine litres in ten",
+      "type": "doughnut",
+      "series": [
+        {
+          "name": "Water withdrawals",
+          "labels": [
+            "Agriculture",
+            "Municipal",
+            "Industry"
+          ],
+          "values": [
+            91.8,
+            7.7,
+            0.5
+          ]
+        }
+      ],
+      "reading": {
+        "head": "What this implies",
+        "body": "The World Bank puts agricultural withdrawals at 9.7 km³ a year, out of 10.5 km³ in all.\n\nIn the central scenario of our dossier, hydro-retention saves 1.46 km³ a year, 15% of agricultural water: Enough to irrigate about 129,000 more hectares at today's average use."
+      }
+    },
+    "economie": {
+      "kicker": "ECONOMY AND FOOD SECURITY",
+      "title": "Coffee pays for the imports",
+      "items": [
+        {
+          "value": "$2.65 bn",
+          "label": "Of coffee exports in 2024/25, a record"
+        },
+        {
+          "value": "$2.26 bn",
+          "label": "Of agricultural exports in 2023, including $1.22 bn of coffee"
+        },
+        {
+          "value": "$950 M",
+          "label": "Minimum spending on mineral fertilisers in 2022, then $630 M in 2023"
+        },
+        {
+          "value": "96.7%",
+          "label": "Of Ethiopia's external freight handled by the ports of Djibouti in 2025/26"
+        }
+      ],
+      "note": "Fertilisers, wheat, sugar and edible oils arrive through the Djibouti corridor. Horticulture earned $565 M in 2024/25, and a urea plant of 3 million tonnes a year was announced at Gode in 2025. Every cubic metre of water and every kilo of fertiliser used better reduces this dependence."
+    },
+    "productions": {
+      "kicker": "THE MAIN CROPS",
+      "title": "Cereals cover most of the harvested land",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Harvested area (million hectares, 2024)",
+          "labels": [
+            "Maize",
+            "Teff and other cereals",
+            "Wheat",
+            "Sorghum",
+            "Barley",
+            "Coffee"
+          ],
+          "values": [
+            3.4,
+            3.2,
+            2.1,
+            1.7,
+            1.1,
+            0.9
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Reading",
+        "body": "Maize, teff, wheat, sorghum and barley cover most of the harvested area (FAOSTAT). Teff is counted by FAOSTAT among other cereals.\n\nIrrigated plots follow another order: Maize, khat and coffee, then onion and potato. Maize and the onion, garlic and potato group give half of the water saved in our central scenario."
+      }
+    },
+    "filieres": [
+      {
+        "kicker": "PRIORITY SECTOR",
+        "title": "Irrigated maize, onion and potato",
+        "caption": null,
+        "bullets": [
+          "Maize: 189,237 irrigated hectares and 2,136 million m³ of water a year, of which 417 million m³ are saved in the central scenario.",
+          "Onion, garlic and potato: 104,970 irrigated hectares, and 308 million m³ saved a year.",
+          "Together they give half of the water saved in the central scenario.",
+          "Published trials of EVERGREEN® cover maize and potato, the two crops that carry the result.",
+          "EVERGREEN® placed in the furrow at sowing or planting holds each watering around the roots."
+        ],
+        "photo": 2
+      },
+      {
+        "kicker": "EXPORT SECTOR",
+        "title": "Coffee, khat and fruit: Perennial crops",
+        "caption": null,
+        "bullets": [
+          "Coffee exports reached a record $2.65 bn in 2024/25, and horticulture earned $565 M.",
+          "Khat, coffee and gesho: 207,160 irrigated hectares, and 234 million m³ saved a year in the central scenario.",
+          "Banana, mango, citrus and avocado: 65,400 irrigated hectares, and 74 million m³ saved a year.",
+          "For perennial crops, the retainer goes into the planting pit: Young trees establish before the dry season.",
+          "ECOFERT® is certified SOHISCERT and EU Organic, an asset for buyers who check how a crop is grown."
+        ],
+        "photo": 3
+      }
+    ],
+    "solutions": {
+      "kicker": "OUR RESPONSE",
+      "title": "Two technologies, two different constraints",
+      "left": {
+        "head": "EVERGREEN® — holding the water",
+        "lines": [
+          "A potassium-based hydro-retainer placed in the root zone at sowing, planting or replanting.",
+          "It captures rain or irrigation water and releases it back to the plant gradually, bridging the dry spells of the rainy season.",
+          "Absorbs on the order of 300 times its own weight; useful effect of 3 to 4 years in the soil.",
+          "Breaks down by 20 to 25% a year, with no build-up and no risk of overdosing."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® — feeding without depleting",
+        "lines": [
+          "A micro-dose fertiliser of amino acids, nitrogen, phosphorus and potassium, made from renewable resources.",
+          "Non-chelating: It does not strip the clay-humus complex and adds neither salinity nor nitrate load.",
+          "Certified SOHISCERT and EU Organic, in use in 60 countries: An asset for coffee and horticulture exporters.",
+          "1 to 4 bottles of 140 ml per hectare: A small volume to carry, where imported fertiliser is costly."
+        ]
+      },
+      "note": "The two products are sold separately but were designed to reinforce each other: The hydro-retainer extends how long water stays available, the fertiliser puts that water to work without degrading the soil."
+    },
+    "economies": {
+      "kicker": "ORDERS OF MAGNITUDE",
+      "title": "Water saved each year, three scenarios",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Water saved (km³ a year)",
+          "labels": [
+            "Cautious",
+            "Central",
+            "Strong"
+          ],
+          "values": [
+            0.73,
+            1.46,
+            2.92
+          ]
+        }
+      ],
+      "reading": {
+        "head": "How it is calculated",
+        "body": "The central scenario applies the savings measured in published trials to each irrigated crop group, then adds them up for the country. The cautious and strong scenarios take half and twice that saving.\n\nThe central scenario saves 1.46 km³ a year, 15% of agricultural water. At today's average use of 11,288 m³ per hectare, that is about 129,000 more irrigable hectares."
+      }
+    },
+    "regions": {
+      "kicker": "THREE PRIORITY AREAS",
+      "title": "Where to run the first trials",
+      "items": [
+        {
+          "head": "Oromia",
+          "metric": "73,762 irrigated hectares",
+          "lines": [
+            "The largest region, with 41.8 million inhabitants in 2024.",
+            "East and West Hararghe alone irrigate more than a fifth of smallholder areas, mostly khat and vegetables.",
+            "652 million m³ saved a year in the central scenario."
+          ],
+          "photo": 4
+        },
+        {
+          "head": "Amhara",
+          "metric": "45,966 irrigated hectares",
+          "lines": [
+            "23.6 million inhabitants in 2024. With Oromia, it produces 88% of the country's grain.",
+            "West Gojjam, East Gojjam and North Wollo are its main irrigated zones.",
+            "406 million m³ saved a year in the central scenario."
+          ],
+          "photo": 5
+        },
+        {
+          "head": "South (former SNNP)",
+          "metric": "28,682 irrigated hectares",
+          "lines": [
+            "22.4 million inhabitants in 2024, in the regions born from the former SNNP, Sidama included.",
+            "Gamo zone, around Arba Minch, irrigates banana groves and orchards: 18,566 ha, the second zone in the country.",
+            "253 million m³ saved a year in the central scenario."
+          ],
+          "photo": 6
+        }
+      ]
+    },
+    "deploiement": {
+      "kicker": "HOW WE WORK",
+      "title": "A staged rollout, measured at every step",
+      "items": [
+        {
+          "head": "Assessment",
+          "body": "Soil, irrigation method and crop are reviewed. No commitment at this stage."
+        },
+        {
+          "head": "Trial block",
+          "body": "One comparative trial block, against a control block managed identically."
+        },
+        {
+          "head": "Measurement",
+          "body": "Water use and yield recorded over a full season, dry spells included."
+        },
+        {
+          "head": "Extension",
+          "body": "Gradual rollout to the remaining blocks, on the basis of what was measured."
+        }
+      ],
+      "note": "The dosing rule is the same everywhere: 3 grams per litre of useful soil. What changes from one site to the next is the volume of soil the roots actually explore."
+    },
+    "risques": {
+      "kicker": "WHAT TO ANTICIPATE",
+      "title": "Identified risks and our answers",
+      "left": {
+        "head": "Risks",
+        "lines": [
+          "Very small plots: A smallholder irrigates less than a seventh of a hectare on average.",
+          "Rains vary widely from one year to the next: A trial must cover a full season to be convincing.",
+          "Inputs travel a long way, from the port of Djibouti to the farm.",
+          "Registration of fertilisers and soil conditioners with the Ministry of Agriculture before commercial sale."
+        ]
+      },
+      "right": {
+        "head": "Our answers",
+        "lines": [
+          "Work through cooperatives, unions and irrigation schemes, to reach many growers at once.",
+          "Run trials over a full season against a control block, so the gain is documented in figures.",
+          "Store and ship through Djibouti, the gateway that already handles 96.7% of Ethiopia's external freight.",
+          "Prepare the regulatory file early: Analyses and certificates before negotiation starts."
+        ]
+      },
+      "note": "Acrylamide analysis (Polymex laboratory, ISO 9001, content below 3.0 µg/g) and REACH / SVHC screening (SGS) are available on request, together with the SOHISCERT certificate valid until 4 September 2027."
+    },
+    "sources": [
+      "Ethiopian Statistics Service (ESS): Agricultural Sample Survey 2021/22 and population projection 2024.",
+      "FAOSTAT, AQUASTAT and World Bank (WDI); IWMI for the irrigation potential.",
+      "ERA5 (Copernicus): Climate 1991-2020 and trends since 1981; OCHA for the 2020-2023 drought; Ethiopian Coffee and Tea Authority.",
+      "UNCCD, Drought in Numbers 2022: number and duration of droughts, +29% since 2000 versus 1980–1999.",
+      "UN-Water / FAO AQUASTAT, SDG indicator 6.4.2: definition and thresholds of water stress."
+    ],
+    "closing": {
+      "title": "Tell us about your farm",
+      "body": "Crop, irrigation method, soil type, the volume of water you use today. We come back with the matching combination of technologies, the dosing, and the trials already run in comparable situations.\n\nA first conversation commits you to nothing.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   },
   "france": {

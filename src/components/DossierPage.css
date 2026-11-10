@@ -110,6 +110,18 @@
   text-decoration: none;
 }
 
+.dossier-resumes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5rem;
+}
+
+.dossier-resume {
+  margin-top: 0.5rem;
+  padding: 0.55em 1.1em;
+  font-size: 0.8rem;
+}
+
 /* ---- Corps ---- */
 
 .dossier-corps {

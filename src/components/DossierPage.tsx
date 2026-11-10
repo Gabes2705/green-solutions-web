@@ -360,6 +360,31 @@ const RETOUR: Record<string, string> = {
   hr: "← Natrag",
 };
 
+/* Les résumés de deux pages, dans les langues où ils existent.
+ * Fichiers : public/documents/countries/resumes/<pays>-<langue>.pdf */
+const RESUMES: Record<string, string[]> = {
+  espagne: ["es"],
+  france: ["fr"],
+  liban: ["fr", "en", "es", "ar"],
+  oman: ["en", "es", "ar"],
+  usa: ["en"],
+  ethiopie: ["en", "fr"],
+  djibouti: ["fr", "en"],
+};
+
+const RESUME_LIBELLE: Record<string, string> = {
+  fr: "Résumé en 2 pages",
+  en: "2-page summary",
+  es: "Resumen en 2 páginas",
+};
+
+const NOM_LANGUE: Record<string, string> = {
+  fr: "Français",
+  en: "English",
+  es: "Español",
+  ar: "العربية",
+};
+
 export default function DossierPage({ dossier }: { dossier: Dossier }) {
   const { cover } = dossier;
   const rtl = dossier.langue === "ar";
@@ -402,6 +427,21 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
             <a className="dossier-pdf btn-3d btn-3d-light" href={dossier.pdf}>
               {dossier.langue === "pt" ? "Baixar o estudo (PDF)" : dossier.langue === "es" ? "Descargar el dossier (PDF)" : "Télécharger le dossier (PDF)"}
             </a>
+          )}
+          {RESUMES[dossier.slug] && (
+            <div className="dossier-resumes">
+              {RESUMES[dossier.slug].map((langue) => (
+                <a
+                  key={langue}
+                  className="dossier-pdf dossier-resume btn-3d btn-3d-light"
+                  href={`/documents/countries/resumes/${dossier.slug}-${langue}.pdf`}
+                  hrefLang={langue}
+                >
+                  {RESUME_LIBELLE[dossier.langue] ?? RESUME_LIBELLE.fr} ·{" "}
+                  <span lang={langue}>{NOM_LANGUE[langue]}</span>
+                </a>
+              ))}
+            </div>
           )}
           {dossier.slug === "egypte" && (
             <div lang="fr" dir="ltr">
