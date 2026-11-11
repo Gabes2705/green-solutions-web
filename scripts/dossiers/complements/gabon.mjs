@@ -1,5 +1,10 @@
 // Les sept pages qui complètent le dossier Gabon (voir build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "gabon-fr" },
+  ],
+
   paysTitre: "le Gabon",
 
   economie: {

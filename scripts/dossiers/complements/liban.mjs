@@ -1,5 +1,13 @@
 // Les pages qui complètent le dossier Liban : Économie, filière prioritaire, sources.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "liban-fr" },
+    { langue: "en", fichier: "liban-en" },
+    { langue: "es", fichier: "liban-es" },
+    { langue: "ar", fichier: "liban-ar" },
+  ],
+
   paysTitre: "le Liban",
   partenariat: false,
 

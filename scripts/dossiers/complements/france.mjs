@@ -1,5 +1,10 @@
 // Les pages qui complètent le dossier France : Économie, filière prioritaire, sources.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "france-fr" },
+  ],
+
   paysTitre: "la France",
   partenariat: false,
 

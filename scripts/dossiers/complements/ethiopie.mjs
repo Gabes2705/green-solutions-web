@@ -1,5 +1,11 @@
 // The pages that complete the Ethiopia dossier: economy, two sectors, sources.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "en", fichier: "ethiopie-en" },
+    { langue: "fr", fichier: "ethiopie-fr" },
+  ],
+
   paysTitre: "Ethiopia",
   partenariat: false,
 

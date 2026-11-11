@@ -1,5 +1,10 @@
 // Las siete páginas que completan el dossier de España (ver build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "es", fichier: "espagne-es" },
+  ],
+
   paysTitre: "España",
 
   economie: {

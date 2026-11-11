@@ -3451,7 +3451,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "djibouti",
     "locale": "fr-DJ",
     "langue": "fr",
-    "pdf": "/documents/countries/djibouti.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/djibouti-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/djibouti-en.pdf"
+      }
+    ],
     "photos": 8,
     "credits": [
       {
@@ -4169,7 +4179,13 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "espagne",
     "locale": "es-ES",
     "langue": "es",
-    "pdf": "/documents/countries/espagne.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "es",
+        "href": "/documents/countries/dossiers/espagne-es.pdf"
+      }
+    ],
     "photos": 4,
     "credits": [
       {
@@ -4529,7 +4545,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "ethiopie",
     "locale": "en-ET",
     "langue": "en",
-    "pdf": "/documents/countries/ethiopie.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/ethiopie-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/ethiopie-fr.pdf"
+      }
+    ],
     "photos": 8,
     "credits": [
       {
@@ -4905,7 +4931,13 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "france",
     "locale": "fr-FR",
     "langue": "fr",
-    "pdf": "/documents/countries/france.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/france-fr.pdf"
+      }
+    ],
     "photos": 7,
     "credits": [
       {
@@ -5276,7 +5308,13 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "gabon",
     "locale": "fr-GA",
     "langue": "fr",
-    "pdf": "/documents/countries/gabon.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/gabon-fr.pdf"
+      }
+    ],
     "photos": 4,
     "credits": [
       {
@@ -6565,7 +6603,25 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "liban",
     "locale": "fr-LB",
     "langue": "fr",
-    "pdf": "/documents/countries/liban.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/liban-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/liban-en.pdf"
+      },
+      {
+        "langue": "es",
+        "href": "/documents/countries/dossiers/liban-es.pdf"
+      },
+      {
+        "langue": "ar",
+        "href": "/documents/countries/dossiers/liban-ar.pdf"
+      }
+    ],
     "photos": 7,
     "credits": [
       {
@@ -7801,7 +7857,21 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "oman",
     "locale": "en-OM",
     "langue": "en",
-    "pdf": "/documents/countries/oman.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/oman-en.pdf"
+      },
+      {
+        "langue": "es",
+        "href": "/documents/countries/dossiers/oman-es.pdf"
+      },
+      {
+        "langue": "ar",
+        "href": "/documents/countries/dossiers/oman-ar.pdf"
+      }
+    ],
     "photos": 9,
     "credits": [
       {
@@ -9096,7 +9166,13 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "usa",
     "locale": "en-US",
     "langue": "en",
-    "pdf": "/documents/countries/usa.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/usa-en.pdf"
+      }
+    ],
     "photos": 2,
     "credits": [
       {
