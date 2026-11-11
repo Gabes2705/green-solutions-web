@@ -41,6 +41,13 @@ export default {
     },
   ],
 
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. Les
+   * fichiers vivent dans public/documents/countries/dossiers/<fichier>.pdf. */
+  telechargements: [
+    { langue: "fr", fichier: "madagascar-fr" },
+    { langue: "en", fichier: "madagascar-en" },
+  ],
+
   sources: [
     "Programme alimentaire mondial, page pays Madagascar : population, insécurité alimentaire, chocs climatiques et actions de résilience.",
     "Banque mondiale, World Development Indicators, ER.H2O.FWST.ZS : stress hydrique à Madagascar, 2022.",

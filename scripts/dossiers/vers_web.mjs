@@ -146,11 +146,19 @@ for (const slug of slugs) {
 
   const { nombre, credits } = photosInstallees(slug);
 
+  /* Un dossier complet par langue, pour les pays qui en ont. Il remplace alors
+   * le PDF de présentation, qui n'est plus proposé pour ce pays. */
+  const telechargements = (plus.telechargements ?? []).map(({ langue, fichier }) => ({
+    langue,
+    href: `/documents/countries/dossiers/${fichier}.pdf`,
+  }));
+
   dossiers[slug] = {
     slug,
     locale: spec.locale,
     langue: spec.locale.slice(0, 2),
-    pdf: RETIRES.has(slug) ? null : `/documents/countries/${spec.fichier}.pdf`,
+    pdf: RETIRES.has(slug) || telechargements.length > 0 ? null : `/documents/countries/${spec.fichier}.pdf`,
+    ...(telechargements.length > 0 ? { telechargements } : {}),
     photos: nombre,
     credits,
     cover: {
@@ -248,8 +256,10 @@ export type Dossier = {
   slug: string;
   locale: string;
   langue: string;
-  /** Null quand le PDF a été retiré du site. */
+  /** Null quand le PDF a été retiré du site ou remplacé par des dossiers par langue. */
   pdf: string | null;
+  /** Un dossier complet par langue, quand le pays en propose. Absent sinon. */
+  telechargements?: { langue: string; href: string }[];
   /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
   photos: number;
   credits: { titre: string | null; auteur: string | null; licence: string | null; source: string; url?: string; licenceUrl?: string; modifications?: string }[] | null;

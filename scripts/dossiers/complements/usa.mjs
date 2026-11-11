@@ -1,5 +1,10 @@
 // The seven pages that complete the United States dossier (see build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "en", fichier: "usa-en" },
+  ],
+
   paysTitre: "the United States",
 
   economie: {

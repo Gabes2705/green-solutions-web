@@ -1,5 +1,12 @@
 // Short dossier (14 pages): economy, leading sector and the rest of the range.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "en", fichier: "oman-en" },
+    { langue: "es", fichier: "oman-es" },
+    { langue: "ar", fichier: "oman-ar" },
+  ],
+
   paysTitre: "Oman",
   partenariat: false,
 

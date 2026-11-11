@@ -1,5 +1,11 @@
 // Les pages qui complètent le dossier Djibouti : Économie, deux filières, sources.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "djibouti-fr" },
+    { langue: "en", fichier: "djibouti-en" },
+  ],
+
   paysTitre: "Djibouti",
   partenariat: false,
 
