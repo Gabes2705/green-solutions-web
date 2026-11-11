@@ -65,8 +65,10 @@ export type Dossier = {
   slug: string;
   locale: string;
   langue: string;
-  /** Null quand le PDF a été retiré du site. */
+  /** Null quand le PDF a été retiré du site ou remplacé par des dossiers par langue. */
   pdf: string | null;
+  /** Un dossier complet par langue, quand le pays en propose. Absent sinon. */
+  telechargements?: { langue: string; href: string }[];
   /** Nombre de photos installées. Zéro quand leur origine n'est pas établie. */
   photos: number;
   credits: { titre: string | null; auteur: string | null; licence: string | null; source: string; url?: string; licenceUrl?: string; modifications?: string }[] | null;
@@ -6933,7 +6935,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "madagascar",
     "locale": "fr-MG",
     "langue": "fr",
-    "pdf": "/documents/countries/madagascar.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/madagascar-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/madagascar-en.pdf"
+      }
+    ],
     "photos": 5,
     "credits": [
       {

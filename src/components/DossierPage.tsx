@@ -370,12 +370,27 @@ const RESUMES: Record<string, string[]> = {
   usa: ["en"],
   ethiopie: ["en", "fr"],
   djibouti: ["fr", "en"],
+  madagascar: ["fr", "en"],
 };
 
-const RESUME_LIBELLE: Record<string, string> = {
-  fr: "Résumé en 2 pages",
-  en: "2-page summary",
-  es: "Resumen en 2 páginas",
+/* Chaque libellé est écrit dans la langue du fichier qu'il télécharge, suivi du
+ * nom de cette langue : « Télécharger le résumé · Français », « Download the
+ * summary · English ». Le visiteur sait ce qu'il ouvre avant de cliquer. */
+const LIBELLE_RESUME: Record<string, string> = {
+  fr: "Télécharger le résumé",
+  en: "Download the summary",
+  es: "Descargar el resumen",
+  ar: "تحميل الملخص",
+};
+
+const LIBELLE_DOSSIER: Record<string, string> = {
+  fr: "Télécharger le dossier",
+  en: "Download the dossier",
+  es: "Descargar el dossier",
+  pt: "Baixar o estudo",
+  ar: "تحميل الملف",
+  el: "Λήψη του φακέλου",
+  hr: "Preuzmi dosje",
 };
 
 const NOM_LANGUE: Record<string, string> = {
@@ -424,9 +439,24 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
             <Paragraphes texte={cover.subtitle} className="dossier-hero-chapeau" />
           )}
           {dossier.pdf && (
-            <a className="dossier-pdf btn-3d btn-3d-light" href={dossier.pdf}>
-              {dossier.langue === "pt" ? "Baixar o estudo (PDF)" : dossier.langue === "es" ? "Descargar el dossier (PDF)" : "Télécharger le dossier (PDF)"}
+            <a className="dossier-pdf btn-3d btn-3d-light" href={dossier.pdf} lang={dossier.langue}>
+              {LIBELLE_DOSSIER[dossier.langue] ?? LIBELLE_DOSSIER.en} (PDF)
             </a>
+          )}
+          {dossier.telechargements && (
+            <div className="dossier-resumes">
+              {dossier.telechargements.map(({ langue, href }) => (
+                <a
+                  key={langue}
+                  className="dossier-pdf btn-3d btn-3d-light"
+                  href={href}
+                  hrefLang={langue}
+                  lang={langue}
+                >
+                  {LIBELLE_DOSSIER[langue] ?? LIBELLE_DOSSIER.en} · {NOM_LANGUE[langue] ?? langue} (PDF)
+                </a>
+              ))}
+            </div>
           )}
           {RESUMES[dossier.slug] && (
             <div className="dossier-resumes">
@@ -436,9 +466,9 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
                   className="dossier-pdf dossier-resume btn-3d btn-3d-light"
                   href={`/documents/countries/resumes/${dossier.slug}-${langue}.pdf`}
                   hrefLang={langue}
+                  lang={langue}
                 >
-                  {RESUME_LIBELLE[dossier.langue] ?? RESUME_LIBELLE.fr} ·{" "}
-                  <span lang={langue}>{NOM_LANGUE[langue]}</span>
+                  {LIBELLE_RESUME[langue] ?? LIBELLE_RESUME.en} · {NOM_LANGUE[langue] ?? langue}
                 </a>
               ))}
             </div>
