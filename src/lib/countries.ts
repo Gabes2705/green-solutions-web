@@ -50,6 +50,8 @@ export const COUNTRY_SLUGS = [
   "benin",
   "guadeloupe",
   "martinique",
+  "turquie",
+  "togo",
 ] as const;
 
 export type CountrySlug = (typeof COUNTRY_SLUGS)[number];
@@ -92,6 +94,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Bénin",
     guadeloupe: "Guadeloupe",
     martinique: "Martinique",
+    turquie: "Turquie",
+    togo: "Togo",
   },
   en: {
     "cote-divoire": "Côte d’Ivoire",
@@ -122,6 +126,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Benin",
     guadeloupe: "Guadeloupe",
     martinique: "Martinique",
+    turquie: "Türkiye",
+    togo: "Togo",
   },
   es: {
     "cote-divoire": "Côte d’Ivoire",
@@ -152,6 +158,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Benín",
     guadeloupe: "Guadalupe",
     martinique: "Martinica",
+    turquie: "Turquía",
+    togo: "Togo",
   },
   pt: {
     "cote-divoire": "Costa do Marfim",
@@ -182,6 +190,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Benin",
     guadeloupe: "Guadalupe",
     martinique: "Martinica",
+    turquie: "Turquia",
+    togo: "Togo",
   },
   ar: {
     "cote-divoire": "ساحل العاج",
@@ -212,6 +222,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "بنين",
     guadeloupe: "غوادلوب",
     martinique: "جزر المارتينيك",
+    turquie: "تركيا",
+    togo: "توغو",
   },
   zh: {
     "cote-divoire": "科特迪瓦",
@@ -242,6 +254,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "贝宁",
     guadeloupe: "瓜德罗普",
     martinique: "马提尼克",
+    turquie: "土耳其",
+    togo: "多哥",
   },
   id: {
     "cote-divoire": "Côte d’Ivoire",
@@ -272,6 +286,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Benin",
     guadeloupe: "Guadeloupe",
     martinique: "Martinik",
+    turquie: "Turki",
+    togo: "Togo",
   },
   de: {
     "cote-divoire": "Côte d’Ivoire",
@@ -302,6 +318,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Benin",
     guadeloupe: "Guadeloupe",
     martinique: "Martinique",
+    turquie: "Türkei",
+    togo: "Togo",
   },
   it: {
     "cote-divoire": "Costa d’Avorio",
@@ -332,6 +350,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Benin",
     guadeloupe: "Guadalupa",
     martinique: "Martinica",
+    turquie: "Turchia",
+    togo: "Togo",
   },
   el: {
     "cote-divoire": "Ακτή Ελεφαντοστού",
@@ -362,6 +382,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Μπενίν",
     guadeloupe: "Γουαδελούπη",
     martinique: "Μαρτινίκα",
+    turquie: "Τουρκία",
+    togo: "Τόγκο",
   },
   tr: {
     "cote-divoire": "Côte d’Ivoire",
@@ -392,6 +414,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Benin",
     guadeloupe: "Guadeloupe",
     martinique: "Martinik",
+    turquie: "Türkiye",
+    togo: "Togo",
   },
   pl: {
     "cote-divoire": "Côte d’Ivoire",
@@ -422,6 +446,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Benin",
     guadeloupe: "Gwadelupa",
     martinique: "Martynika",
+    turquie: "Turcja",
+    togo: "Togo",
   },
   hr: {
     "cote-divoire": "Obala Bjelokosti",
@@ -452,6 +478,8 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     benin: "Benin",
     guadeloupe: "Guadalupe",
     martinique: "Martinik",
+    turquie: "Turska",
+    togo: "Togo",
   },
 };
 

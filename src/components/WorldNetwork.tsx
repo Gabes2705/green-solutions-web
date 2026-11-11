@@ -60,6 +60,7 @@ const NODES = [
   { lat: 9.5, lng: 2.25, label: "Bénin" },
   { lat: 16.25, lng: -61.58, label: "Guadeloupe" },
   { lat: 14.67, lng: -61.0, label: "Martinique" },
+  { lat: 8.4, lng: 0.95, label: "Togo" },
 ];
 
 type Point = { x: number; y: number };
@@ -206,7 +207,7 @@ export default function WorldNetwork({
         viewBox="0 0 800 400"
         className="world-network-svg"
         role="img"
-        aria-label={ariaLabel || "Carte du réseau Green Solutions dans 47 pays"}
+        aria-label={ariaLabel || "Carte du réseau Green Solutions dans 48 pays"}
       >
         <defs>
           <linearGradient id="route-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
