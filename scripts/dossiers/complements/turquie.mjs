@@ -2,6 +2,7 @@
 export default {
   /* Un dossier complet par langue, qui remplace le PDF de présentation. */
   telechargements: [
+    { langue: "tr", fichier: "turquie-tr" },
     { langue: "en", fichier: "turquie-en" },
     { langue: "fr", fichier: "turquie-fr" },
   ],

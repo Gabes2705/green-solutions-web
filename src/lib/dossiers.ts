@@ -9568,6 +9568,10 @@ export const DOSSIERS: Record<string, Dossier> = {
     "pdf": null,
     "telechargements": [
       {
+        "langue": "tr",
+        "href": "/documents/countries/dossiers/turquie-tr.pdf"
+      },
+      {
         "langue": "en",
         "href": "/documents/countries/dossiers/turquie-en.pdf"
       },

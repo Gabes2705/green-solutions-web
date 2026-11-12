@@ -377,7 +377,7 @@ const RESUMES: Record<string, string[]> = {
   ethiopie: ["en", "fr"],
   djibouti: ["fr", "en"],
   madagascar: ["fr", "en"],
-  turquie: ["en", "fr"],
+  turquie: ["tr", "en", "fr"],
   togo: ["fr", "en"],
 };
 
@@ -389,6 +389,7 @@ const LIBELLE_RESUME: Record<string, string> = {
   en: "Download the summary",
   es: "Descargar el resumen",
   ar: "تحميل الملخص",
+  tr: "Özeti indir",
 };
 
 const LIBELLE_DOSSIER: Record<string, string> = {
@@ -399,6 +400,7 @@ const LIBELLE_DOSSIER: Record<string, string> = {
   ar: "تحميل الملف",
   el: "Λήψη του φακέλου",
   hr: "Preuzmi dosje",
+  tr: "Dosyayı indir",
 };
 
 const NOM_LANGUE: Record<string, string> = {
@@ -406,6 +408,7 @@ const NOM_LANGUE: Record<string, string> = {
   en: "English",
   es: "Español",
   ar: "العربية",
+  tr: "Türkçe",
 };
 
 export default function DossierPage({ dossier }: { dossier: Dossier }) {
