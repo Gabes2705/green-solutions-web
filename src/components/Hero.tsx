@@ -1,5 +1,6 @@
 "use client";
 
+import "./HeroArrivees.css";
 import Atmosphere from "./Atmosphere";
 import CoverDoors from "./CoverDoors";
 import FloatingVideo from "./FloatingVideo";
