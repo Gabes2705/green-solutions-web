@@ -44,3 +44,9 @@
     animation: none;
   }
 }
+
+/* Les boutons sous le titre ne bougent plus du tout, pas même le fondu d'entrée d'origine. */
+.stage .hero-cta,
+.stage .hero-cta-impact-ligne {
+  animation: none;
+}
