@@ -147,7 +147,7 @@ export const ca = {
       "Totes les nostres solucions disruptives es poden fer servir en qualsevol planta i conreu, sota qualsevol clima i en qualsevol tipus de sòl!",
     stats: [
       { num: "30", label: "socis" },
-      { num: "47", label: "països" },
+      { num: "48", label: "països" },
       { num: "5", label: "tecnologies de marca" },
     ],
     distinguish: [
@@ -583,9 +583,9 @@ export const ca = {
   },
   reseau: {
     eyebrow: "Treballen amb nosaltres",
-    title: "Una xarxa en 47 països",
+    title: "Una xarxa en 48 països",
     lede: "Productors, cooperatives, especialistes en tractament d'aigua, universitats i instituts de recerca, presents a cinc continents.",
-    mapAriaLabel: "Mapa de la xarxa Green Solutions en 47 països",
+    mapAriaLabel: "Mapa de la xarxa Green Solutions en 48 països",
   },
   countryStudies: {
     eyebrow: "Enfocament per país",
@@ -796,6 +796,6 @@ export const ca = {
     "Grècia", "Portugal", "Emirats Àrabs Units", "Mèxic", "Turquia", "Indonèsia", "Xina", "Egipte",
     "Algèria", "Argentina", "Xile", "Gabon", "Ghana", "Jordània", "Kuwait", "Croàcia", "Madagascar",
     "Benín", "Guadalupe", "Martinica",
-    "Líban", "Etiòpia", "Djibouti", "Perú",
+    "Líban", "Etiòpia", "Djibouti", "Perú", "Togo",
   ],
 };

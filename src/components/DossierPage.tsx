@@ -317,6 +317,11 @@ function Credits({ dossier }: { dossier: Dossier }) {
       commons: "Fotografije s Wikimedia Commonsa, ponovno korištene prema licencama.",
       conceptual: "Konceptualne ilustracije su označene i ne dokumentiraju stvarni pokus.",
     },
+    tr: {
+      titre: "Fotoğraf kaynakları",
+      commons: "Wikimedia Commons'tan alınan fotoğraflar, lisanslarına uygun olarak kullanılmıştır.",
+      conceptual: "Kavramsal çizimler bu şekilde belirtilmiştir ve gerçek bir alanı ya da denemeyi belgelemez.",
+    },
   } as const;
   const t = textes[dossier.langue as keyof typeof textes] ?? textes.fr;
   const aCommons = uniques.some((c) => c.source !== "conceptual");
@@ -358,6 +363,7 @@ const RETOUR: Record<string, string> = {
   ar: "← رجوع",
   el: "← Πίσω",
   hr: "← Natrag",
+  tr: "← Geri",
 };
 
 /* Les résumés de deux pages, dans les langues où ils existent.
@@ -371,6 +377,8 @@ const RESUMES: Record<string, string[]> = {
   ethiopie: ["en", "fr"],
   djibouti: ["fr", "en"],
   madagascar: ["fr", "en"],
+  turquie: ["tr", "en", "fr"],
+  togo: ["fr", "en"],
 };
 
 /* Chaque libellé est écrit dans la langue du fichier qu'il télécharge, suivi du
@@ -381,6 +389,7 @@ const LIBELLE_RESUME: Record<string, string> = {
   en: "Download the summary",
   es: "Descargar el resumen",
   ar: "تحميل الملخص",
+  tr: "Özeti indir",
 };
 
 const LIBELLE_DOSSIER: Record<string, string> = {
@@ -391,6 +400,7 @@ const LIBELLE_DOSSIER: Record<string, string> = {
   ar: "تحميل الملف",
   el: "Λήψη του φακέλου",
   hr: "Preuzmi dosje",
+  tr: "Dosyayı indir",
 };
 
 const NOM_LANGUE: Record<string, string> = {
@@ -398,6 +408,7 @@ const NOM_LANGUE: Record<string, string> = {
   en: "English",
   es: "Español",
   ar: "العربية",
+  tr: "Türkçe",
 };
 
 export default function DossierPage({ dossier }: { dossier: Dossier }) {
@@ -506,7 +517,7 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
 
         {dossier.sources && (
           <section className="dossier-section">
-            <h2 className="section-title">{dossier.langue === "pt" ? "Fontes" : dossier.langue === "es" ? "Fuentes" : "Sources"}</h2>
+            <h2 className="section-title">{dossier.langue === "pt" ? "Fontes" : dossier.langue === "es" ? "Fuentes" : dossier.langue === "tr" ? "Kaynaklar" : "Sources"}</h2>
             <ul className="dossier-sources">
               {dossier.sources.map((source, i) => (
                 <li key={i}>

@@ -9162,6 +9162,797 @@ export const DOSSIERS: Record<string, Dossier> = {
       "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Switzerland"
     }
   },
+  "togo": {
+    "slug": "togo",
+    "locale": "fr-TG",
+    "langue": "fr",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/togo-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/togo-en.pdf"
+      }
+    ],
+    "photos": 8,
+    "credits": [
+      {
+        "titre": "Paysage savane Togo.jpg",
+        "auteur": "AKOUETE Ata Franck",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Paysage_savane_Togo.jpg"
+      },
+      {
+        "titre": "Agriculture in inland valleys in Togo - panoramio (102).jpg",
+        "auteur": "Africa Rice Center",
+        "licence": "CC BY-SA 3.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Agriculture_in_inland_valleys_in_Togo_-_panoramio_(102).jpg"
+      },
+      {
+        "titre": "Champs de maïs à Agou Carrefour 01.jpg",
+        "auteur": "Theophile-kk",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Champs_de_maïs_à_Agou_Carrefour_01.jpg"
+      },
+      {
+        "titre": "Jardin fait au bord de la rivière kara 03.jpg",
+        "auteur": "Alfrednadjere",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Jardin_fait_au_bord_de_la_rivière_kara_03.jpg"
+      },
+      {
+        "titre": "Cacao dans la forêt classée d' Agou au Togo 34.jpg",
+        "auteur": "AMETOVENA Kodjo Elom Ezéchiel",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Cacao_dans_la_forêt_classée_d'_Agou_au_Togo_34.jpg"
+      },
+      {
+        "titre": "Paysage de la réserve de faune Fazao malfakassa 01.jpg",
+        "auteur": "Akouete",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Paysage_de_la_réserve_de_faune_Fazao_malfakassa_01.jpg"
+      },
+      {
+        "titre": "La Cuesta de Bombouaka (Région des savanes au Togo).jpg",
+        "auteur": "Akouete",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:La_Cuesta_de_Bombouaka_(Région_des_savanes_au_Togo).jpg"
+      },
+      {
+        "titre": "Cascade de Womé au togo 03.jpg",
+        "auteur": "Ubkoumbogny",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Cascade_de_Womé_au_togo_03.jpg"
+      }
+    ],
+    "cover": {
+      "eyebrow": "DOSSIER DE MARCHÉ",
+      "title": "Togo",
+      "officiel": "RÉPUBLIQUE TOGOLAISE",
+      "lieu": "Lomé",
+      "subtitle": "Maïs, soja, igname et cacao : Une agriculture qui vit de la pluie.\nCe que l'hydro-rétention change quand chaque pluie doit tenir jusqu'à la suivante."
+    },
+    "chiffres": {
+      "kicker": "LE MARCHÉ EN BREF",
+      "title": "Un pays agricole qui cultive sous la pluie",
+      "items": [
+        {
+          "value": "8,59 M",
+          "label": "Habitants en 2025 ; l'agriculture emploie 37,6 % de la population active (Banque mondiale)"
+        },
+        {
+          "value": "804 000 ha",
+          "label": "De maïs récoltés en 2024, la première culture, pour 1,01 million de tonnes (FAOSTAT)"
+        },
+        {
+          "value": "7 860 ha",
+          "label": "Équipés pour l'irrigation en 2024, pour 2,76 millions d'hectares de terres cultivées"
+        },
+        {
+          "value": "225 720 ha",
+          "label": "De cultures certifiées biologiques en 2025, surtout pour le soja (FAOSTAT)"
+        }
+      ],
+      "note": "Le soja couvre 281 684 ha. L'igname, le maïs et le manioc sont les trois premières cultures par la valeur de production : Ce sont d'abord des cultures vivrières."
+    },
+    "contrainte": {
+      "kicker": "LA CONTRAINTE",
+      "title": "De l'eau sur l'année, pas toujours entre deux pluies",
+      "caption": "Agriculture de bas-fond au Togo",
+      "bullets": [
+        "Il tombe 1 517 mm de pluie par an à Kpalimé, mais 738 mm à Dapaong, pour 2 010 mm d'évapotranspiration de référence (ERA5, 1991-2020).",
+        "Au nord, la pluie tombe en une seule saison, suivie de longs mois presque sans pluie.",
+        "Le stress hydrique national n'est que de 3,4 % : L'eau existe, mais elle est peu mobilisée pour les cultures.",
+        "L'agriculture prélève 34,1 % des 223 millions de m³ d'eau douce prélevés en 2022 ; 7 860 ha sont équipés pour l'irrigation.",
+        "À Dapaong, la température moyenne annuelle est passée de 27,6 °C (1981-1990) à 28,1 °C (2015-2024)."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": {
+      "kicker": "OÙ PART L'EAU",
+      "title": "Les villes prennent la plus grande part de l'eau prélevée",
+      "type": "doughnut",
+      "series": [
+        {
+          "name": "Prélèvements d'eau douce",
+          "labels": [
+            "Ménages et villes",
+            "Agriculture",
+            "Industrie"
+          ],
+          "values": [
+            63,
+            34,
+            3
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Ce que cela implique",
+        "body": "La Banque mondiale estime les prélèvements à 223 millions de m³ par an, dont 76 millions pour l'agriculture.\n\nLe potentiel d'irrigation reste large : La FAO estimait à 86 000 ha les terres aptes à une irrigation en maîtrise totale."
+      }
+    },
+    "economie": {
+      "kicker": "ÉCONOMIE ET SÉCURITÉ ALIMENTAIRE",
+      "title": "Des échanges équilibrés, une facture de riz",
+      "items": [
+        {
+          "value": "466 M$",
+          "label": "D'exportations agricoles en 2024 : Cacao, tourteau de soja, coton fibre"
+        },
+        {
+          "value": "467 M$",
+          "label": "D'importations agricoles en 2024 : Huile de palme, riz, sucre, blé"
+        },
+        {
+          "value": "74 M$",
+          "label": "De riz importé en 2024 : Riz décortiqué, brisures et riz usiné"
+        },
+        {
+          "value": "26 554 t",
+          "label": "D'azote minéral utilisé en 2023, entièrement importé"
+        }
+      ],
+      "note": "Le port de Lomé sert aussi de porte d'entrée aux pays voisins : Une partie des échanges, comme l'huile de palme, peut correspondre à des réexportations. La sous-alimentation touche 10,2 % de la population (Banque mondiale)."
+    },
+    "productions": {
+      "kicker": "LES CINQ RÉGIONS",
+      "title": "Deux fois moins de pluie au nord qu'à l'ouest",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Pluie (mm par an, moyenne 1991-2020)",
+          "labels": [
+            "Kpalimé",
+            "Sokodé",
+            "Kara",
+            "Atakpamé",
+            "Lomé",
+            "Dapaong"
+          ],
+          "values": [
+            1517,
+            1514,
+            1357,
+            1140,
+            1010,
+            738
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Lecture",
+        "body": "Pluie au chef-lieu de chaque région (deux villes pour les Plateaux), d'après la réanalyse climatique ERA5.\n\nÀ Dapaong, l'évapotranspiration de référence atteint 2 010 mm : L'air demande près de trois fois plus d'eau qu'il n'en tombe."
+      }
+    },
+    "filieres": [
+      {
+        "kicker": "FILIÈRE PRIORITAIRE",
+        "title": "Maïs et soja sous la pluie",
+        "caption": null,
+        "bullets": [
+          "Le maïs couvre 804 000 ha et le soja 281 684 ha (FAOSTAT, 2024) ; presque tout est cultivé sans irrigation.",
+          "Rendements moyens : 1,26 t/ha pour le maïs, 1,01 t/ha pour le soja.",
+          "EVERGREEN® posé au semis garde l'eau de chaque pluie près des racines.",
+          "Au scénario central : 1 074 t de maïs et 570 t de soja en plus pour 10 000 ha traités.",
+          "La filière soja, en grande partie biologique, peut utiliser ECOFERT®, certifié EU Bio."
+        ],
+        "photo": 2
+      },
+      {
+        "kicker": "IRRIGATION ET MARAÎCHAGE",
+        "title": "Riz de bas-fond et cultures maraîchères",
+        "caption": null,
+        "bullets": [
+          "7 860 ha sont équipés pour l'irrigation, surtout pour le riz et le maraîchage.",
+          "Le pays a importé 74 M$ de riz en 2024 : Chaque tonne produite sur place réduit cette facture.",
+          "Au scénario central, 11,7 millions de m³ d'eau seraient économisés chaque année, de quoi irriguer environ 1 214 ha de plus.",
+          "Pour les légumes, l'essai de référence (pastèque, Mexique) a mesuré 60,5 % d'eau en moins et 30 % de rendement en plus.",
+          "Paulownia ALTIFOLIA®, arbre à croissance rapide, peut accompagner le reboisement et l'agroforesterie : Le résultat se mesure par essai."
+        ],
+        "photo": 3
+      }
+    ],
+    "solutions": {
+      "kicker": "NOTRE RÉPONSE",
+      "title": "Retenir la pluie, nourrir sans épuiser",
+      "left": {
+        "head": "EVERGREEN® — retenir l'eau",
+        "lines": [
+          "Hydro-rétenteur à base de potassium, placé dans la zone racinaire au semis ou à la plantation.",
+          "Capte l'eau de chaque pluie et la restitue progressivement, ce qui aide la culture à passer les jours secs.",
+          "Capacité d'absorption de l'ordre de 300 fois son poids ; durée d'effet utile de 3 à 4 ans dans le sol.",
+          "Se dégrade de 20 à 25 % par an, sans accumulation ni risque de surdosage."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® — nourrir sans épuiser",
+        "lines": [
+          "Fertilisant en microdoses d'acides aminés, azote, phosphore et potassium, issu de ressources renouvelables.",
+          "Non chélatant : Il n'appauvrit pas le complexe argilo-humique.",
+          "Certifié SOHISCERT et EU Bio, utilisable dans les filières biologiques.",
+          "1 à 4 flacons de 140 ml par hectare, compatibles avec un pulvérisateur comme avec la fertirrigation."
+        ]
+      },
+      "note": "Les deux produits se vendent séparément mais ont été conçus pour se renforcer : L'hydro-rétenteur prolonge la disponibilité de l'eau, le fertilisant valorise cette eau."
+    },
+    "economies": {
+      "kicker": "ORDRES DE GRANDEUR",
+      "title": "Production en plus pour 10 000 ha traités (tonnes par an)",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Maïs",
+          "labels": [
+            "Prudent",
+            "Central",
+            "Fort"
+          ],
+          "values": [
+            537,
+            1074,
+            2148
+          ]
+        },
+        {
+          "name": "Soja",
+          "labels": [
+            "Prudent",
+            "Central",
+            "Fort"
+          ],
+          "values": [
+            285,
+            570,
+            1141
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Comment c'est calculé",
+        "body": "Rendement moyen 2024 : 1,26 t/ha pour le maïs, 1,01 t/ha pour le soja (FAOSTAT). Le scénario central applique la moitié du gain mesuré par les essais publiés (maïs +17,1 %, soja +11,3 %) ; le prudent un quart, le fort la totalité. Aucun essai n'a encore été conduit au Togo.\n\nEn irrigation, l'eau économisée au scénario central, 11,7 millions de m³ par an, suffirait à irriguer environ 1 214 ha de plus."
+      }
+    },
+    "regions": {
+      "kicker": "TROIS TERRAINS PRIORITAIRES",
+      "title": "Où engager les premiers essais",
+      "items": [
+        {
+          "head": "Plateaux",
+          "metric": "1 140 à 1 517 mm de pluie par an",
+          "lines": [
+            "Grand bassin de maïs, de soja et d'igname autour d'Atakpamé.",
+            "Café et cacao dans les monts du Kloto et de l'Agou, à l'ouest.",
+            "Le cacao est le premier produit agricole exporté : 88 M$ en 2024."
+          ],
+          "photo": 4
+        },
+        {
+          "head": "Centrale et Kara",
+          "metric": "92 à 329 mm de déficit par an",
+          "lines": [
+            "Igname, maïs, soja, sorgho et coton.",
+            "Une seule saison des pluies : La culture doit tenir jusqu'à la récolte.",
+            "Des collines souvent travaillées en terrasses."
+          ],
+          "photo": 5
+        },
+        {
+          "head": "Savanes",
+          "metric": "738 mm de pluie, 1 272 mm de déficit",
+          "lines": [
+            "La région la plus sèche ; 27,8 °C de moyenne annuelle à Dapaong.",
+            "Sorgho, mil, riz de bas-fonds, oignon, coton et élevage.",
+            "C'est là que garder l'eau de chaque pluie près des racines compte le plus."
+          ],
+          "photo": 6
+        }
+      ]
+    },
+    "deploiement": {
+      "kicker": "COMMENT NOUS PROCÉDONS",
+      "title": "Un déploiement par étapes, mesuré à chaque palier",
+      "items": [
+        {
+          "head": "Diagnostic",
+          "body": "Analyse du sol, de l'eau et de la culture. Aucun engagement à ce stade."
+        },
+        {
+          "head": "Parcelle témoin",
+          "body": "Un essai comparatif sur un bloc, avec parcelle témoin conduite à l'identique."
+        },
+        {
+          "head": "Mesure",
+          "body": "Relevés de rendement et d'humidité du sol sur une saison des pluies complète."
+        },
+        {
+          "head": "Extension",
+          "body": "Généralisation progressive aux autres parcelles sur la base des résultats constatés."
+        }
+      ],
+      "note": "La règle de dosage est la même partout : 3 grammes par litre de terre utile. Ce qui change d'un terrain à l'autre, c'est le volume de terre effectivement exploré par les racines."
+    },
+    "risques": {
+      "kicker": "CE QU'IL FAUT ANTICIPER",
+      "title": "Risques identifiés et réponses",
+      "left": {
+        "head": "Risques",
+        "lines": [
+          "Une saison des pluies irrégulière : Un essai doit couvrir une saison complète pour être probant.",
+          "Des surfaces irriguées réduites : 7 860 ha équipés dans tout le pays.",
+          "Homologation des engrais selon le règlement C/REG.13/12/12 de la CEDEAO avant toute vente.",
+          "Des exploitations familiales : La diffusion passe par les coopératives et les programmes publics."
+        ]
+      },
+      "right": {
+        "head": "Réponses",
+        "lines": [
+          "Programmer l'essai sur toute la saison des pluies, avec une parcelle témoin conduite à l'identique.",
+          "Commencer par les filières maïs et soja, les bas-fonds aménagés et le maraîchage.",
+          "Préparer tôt le dossier réglementaire : Analyses et certificats avant la négociation.",
+          "Travailler avec les coopératives et les organisations de producteurs ; ECOFERT® convient aux filières biologiques."
+        ]
+      },
+      "note": "Analyse acrylamide (laboratoire Polymex, ISO 9001, teneur inférieure à 3,0 µg/g) et screening REACH / SVHC (SGS) disponibles sur demande, ainsi que le certificat SOHISCERT valable jusqu'au 4 septembre 2027."
+    },
+    "sources": [
+      "Banque mondiale (WDI), FAOSTAT (cultures, commerce, engrais, terres) et FAO AQUASTAT.",
+      "ERA5 (Copernicus) et PVGIS : Climat 1991-2020 et tendances depuis 1981.",
+      "CEDEAO : Tarif extérieur commun et règlement C/REG.13/12/12 sur les engrais.",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Dites-nous votre parcelle",
+      "body": "Culture, mode d'arrosage, nature du sol, volume d'eau consommé aujourd'hui. Nous revenons avec la combinaison de technologies correspondante, les dosages, et les essais déjà conduits dans des situations comparables.\n\nUn premier échange n'engage à rien.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
+  "turquie": {
+    "slug": "turquie",
+    "locale": "tr-TR",
+    "langue": "tr",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "tr",
+        "href": "/documents/countries/dossiers/turquie-tr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/turquie-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/turquie-fr.pdf"
+      }
+    ],
+    "photos": 8,
+    "credits": [
+      {
+        "titre": "Olive orchard, Karaisalı 07.jpg",
+        "auteur": "Zeynel Cebeci",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Olive_orchard,_Karaisalı_07.jpg"
+      },
+      {
+        "titre": "Urfa-Harran Ovası 11 09 2011 Bewässerungskanal.jpg",
+        "auteur": "Volker Höhfeld",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Urfa-Harran_Ovası_11_09_2011_Bewässerungskanal.jpg"
+      },
+      {
+        "titre": "Urfa-Harran Ovası 11 09 2011 Erdnussfelder.jpg",
+        "auteur": "Volker Höhfeld",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Urfa-Harran_Ovası_11_09_2011_Erdnussfelder.jpg"
+      },
+      {
+        "titre": "Turkey (Izmir, Urla) New harvested artichockes for the festival1.jpg",
+        "auteur": "Güldem Üstün",
+        "licence": "CC BY 2.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Turkey_(Izmir,_Urla)_New_harvested_artichockes_for_the_festival1.jpg"
+      },
+      {
+        "titre": "Cappadocia Aerial View Landscape.jpg",
+        "auteur": "Benh LIEU SONG (Flickr)",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Cappadocia_Aerial_View_Landscape.jpg"
+      },
+      {
+        "titre": "Wheat field , Ceyhan - Adana 05.jpg",
+        "auteur": "Zeynel Cebeci",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Wheat_field_,_Ceyhan_-_Adana_05.jpg"
+      },
+      {
+        "titre": "The Euphrates River in Turkey (52033140271).jpg",
+        "auteur": "Carole Raddato from FRANKFURT, Germany",
+        "licence": "CC BY-SA 2.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:The_Euphrates_River_in_Turkey_(52033140271).jpg"
+      },
+      {
+        "titre": "The Euphrates River in Turkey, Rumkale (52030401462).jpg",
+        "auteur": "Carole Raddato from Frankfurt, Germany",
+        "licence": "CC BY-SA 2.0",
+        "source": "commons",
+        "url": "https://commons.wikimedia.org/wiki/File:The_Euphrates_River_in_Turkey,_Rumkale_(52030401462).jpg"
+      }
+    ],
+    "cover": {
+      "eyebrow": "PAZAR DOSYASI",
+      "title": "Türkiye",
+      "officiel": "TÜRKİYE CUMHURİYETİ",
+      "lieu": "Ankara",
+      "subtitle": "Ovalar, meyve bahçeleri ve büyük sulama projeleri: Çekilen suyun yüzde 87'si tarıma gidiyor.\nHer sulamada suyu kök bölgesinde tutmanın sağladıkları."
+    },
+    "chiffres": {
+      "kicker": "KISACA PAZAR",
+      "title": "Suyun büyük kısmını kullanan bir tarım ülkesi",
+      "items": [
+        {
+          "value": "85,9 milyon",
+          "label": "2025'te nüfus (Dünya Bankası)"
+        },
+        {
+          "value": "4,91 milyon ha",
+          "label": "2024'te fiilen sulanan alan; sulama için donatılmış alan 7,20 milyon ha (FAOSTAT)"
+        },
+        {
+          "value": "56,0 km³",
+          "label": "2022'de tarımın çektiği su, toplam çekimlerin %86,9'u (Dünya Bankası)"
+        },
+        {
+          "value": "30,7 milyar $",
+          "label": "2024'te tarım ürünleri ihracatı; ithalat 23,1 milyar $ (FAOSTAT)"
+        }
+      ],
+      "note": "Buğday 6,93 milyon hektarla ekim alanında ilk sıradadır ve neredeyse tamamen yağmura bağlıdır. DSİ'ye göre teknik ve ekonomik olarak sulanabilir alan 8,5 milyon hektardır."
+    },
+    "contrainte": {
+      "kicker": "KISIT",
+      "title": "Orta Anadolu'dan Güneydoğu'ya: Az yağış, yüksek buharlaşma",
+      "caption": "Harran Ovası'nda sulama kanalı, Şanlıurfa",
+      "bullets": [
+        "Konya'ya yılda 299 mm yağış düşer; referans evapotranspirasyon ise 1 328 mm'dir (ERA5, 1991-2020).",
+        "Şanlıurfa'da su açığı yılda 1 181 mm'ye ulaşır; Harran Ovası GAP kapsamında Fırat'tan sulanır.",
+        "Tarım, 2022'de çekilen 64,5 km³ tatlı suyun %86,9'unu kullandı (Dünya Bankası).",
+        "Konya'da yıllık ortalama sıcaklık 1981-1990'da 11,7 °C iken 2015-2024'te 13,3 °C oldu.",
+        "Su stresi %47,9'dur: Kullanılabilir yenilenebilir kaynakların neredeyse yarısı çekilmektedir."
+      ],
+      "photo": 1
+    },
+    "stress": {
+      "kicker": "KURAKLIK VE SU STRESİ",
+      "title": "Baskı artıyor, ancak risk yerel olarak okunur",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Kuraklıkların sayısı ve süresine ilişkin küresel endeks",
+          "labels": [
+            "1980–1999",
+            "2000'den bu yana"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "İki gösterge, bir kestirme değil",
+        "body": "Dünya genelinde kuraklıkların sayısı ve süresi, 2000'den bu yana önceki iki on yıla göre %29 arttı.\n\nSu stresi başka bir şeyi ölçer: Çevresel ihtiyaçlardan sonra kalan yenilenebilir kaynaklara oranla yapılan su çekimleri. Bu küresel sinyal bu nedenle ulusal bir tahmin değildir; yerel yağışlar, akiferler, mevsimler ve kullanımlarla birlikte okunmalıdır."
+      }
+    },
+    "usages": {
+      "kicker": "SU NEREYE GİDİYOR",
+      "title": "Çekilen suyun büyük kısmı tarıma gidiyor",
+      "type": "doughnut",
+      "series": [
+        {
+          "name": "Tatlı su çekimleri",
+          "labels": [
+            "Tarım",
+            "Evler ve şehirler",
+            "Sanayi"
+          ],
+          "values": [
+            87,
+            11,
+            2
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Bunun anlamı",
+        "body": "Dünya Bankası'na göre 2022'de toplam çekim 64,5 km³, tarımsal çekim 56,0 km³'tür.\n\nFiilen sulanan her hektar yılda ortalama 11 404 m³ su kullanır: Tarlada tasarruf edilen her metreküp, yeni bir alanın sulanmasına yarayabilir."
+      }
+    },
+    "economie": {
+      "kicker": "EKONOMİ VE TİCARET",
+      "title": "Büyük bir tarım ihracatçısı",
+      "items": [
+        {
+          "value": "30,7 milyar $",
+          "label": "2024'te tarım ürünleri ihracatı (FAOSTAT)"
+        },
+        {
+          "value": "1 503 M$",
+          "label": "Kabuksuz fındık ihracatı, ilk sırada (2024)"
+        },
+        {
+          "value": "1 766 M$",
+          "label": "Soya fasulyesi ithalatı, işleme sanayi için (2024)"
+        },
+        {
+          "value": "1,95 milyon t",
+          "label": "2023'te tarımda kullanılan mineral azot (FAOSTAT)"
+        }
+      ],
+      "note": "Türkiye işlenmiş ürün ihraç eder: Fındık, ayçiçek yağı, un, makarna, şekerleme, kuru üzüm. Soya, pamuk lifi, buğday ve ham ayçiçek yağı ithal eder; bunların bir kısmı işlenip yeniden ihraç edilir."
+    },
+    "productions": {
+      "kicker": "SEKİZ BÖLGE",
+      "title": "Yağış bölgeden bölgeye neredeyse üç kat değişiyor",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Yağış (yılda mm, 1991-2020 ortalaması)",
+          "labels": [
+            "Bursa",
+            "Samsun",
+            "Adana",
+            "Manisa",
+            "Erzurum",
+            "Edirne",
+            "Şanlıurfa",
+            "Konya"
+          ],
+          "values": [
+            861,
+            856,
+            718,
+            698,
+            624,
+            540,
+            491,
+            299
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Okuma",
+        "body": "Her bölgenin referans şehrindeki yağış, ERA5 iklim yeniden analizine göre.\n\nKonya ve Şanlıurfa'da hava, düşen yağıştan yılda 1 000 mm'den fazla su ister."
+      }
+    },
+    "filieres": [
+      {
+        "kicker": "ÖNCELİKLİ ZİNCİR",
+        "title": "Mısır, pamuk ve sulu tarla bitkileri",
+        "caption": null,
+        "bullets": [
+          "Mısır 2024'te 789 379 hektarda hasat edildi ve büyük ölçüde sulanır.",
+          "Konya'daki TİGEM denemesinde EVERGREEN® sulamayı 864 mm'den 528 mm'ye indirdi, verimi hektar başına 10 300 kg'dan 12 060 kg'a çıkardı.",
+          "Merkezi senaryoda mısır yılda 1 756 milyon m³ su tasarrufu sağlar.",
+          "Pamuk (466 927 ha) ve şeker pancarı (324 286 ha) da sulu tarımın büyük kullanıcılarıdır."
+        ],
+        "photo": 2
+      },
+      {
+        "kicker": "SEBZE VE MEYVE",
+        "title": "Sebzeler, meyve bahçeleri ve bağlar",
+        "caption": null,
+        "bullets": [
+          "Domates, üretim değerinde ilk sıradadır: Sulu ve yüksek verimli bir ürün.",
+          "Sebze ve kavunlar, merkezi senaryoda tasarrufun en büyük payını verir: Yılda 2 524 milyon m³.",
+          "Meyve bahçeleri ve bağlar 1,14 milyon hektar kaplar; dikimde EVERGREEN® suyu kök bölgesinde tutar.",
+          "ECOFERT® AB Organik sertifikalıdır: 173 260 hektarlık sertifikalı organik tarım alanına uygundur (FAOSTAT, 2024)."
+        ],
+        "photo": 3
+      }
+    ],
+    "solutions": {
+      "kicker": "ÇÖZÜMÜMÜZ",
+      "title": "Suyu tutmak, toprağı yormadan beslemek",
+      "left": {
+        "head": "EVERGREEN® — suyu tutmak",
+        "lines": [
+          "Potasyum bazlı su tutucu; dikimde ya da ekimde kök bölgesine yerleştirilir.",
+          "Sulama ya da yağmur suyunu yakalar ve kademeli olarak geri verir; sulamalar arasındaki süre uzar.",
+          "Ağırlığının yaklaşık 300 katı su emer; toprakta 3 ila 4 yıl etkili kalır.",
+          "Yılda %20 ila 25 oranında bozunur; birikme ya da aşırı dozaj riski yoktur."
+        ]
+      },
+      "right": {
+        "head": "ECOFERT® — toprağı yormadan beslemek",
+        "lines": [
+          "Amino asit, azot, fosfor ve potasyum içeren, yenilenebilir kaynaklı mikro dozlu gübre.",
+          "Şelat yapıcı değildir: Kil-humus kompleksini yoksullaştırmaz ve sulama suyuna tuz eklemez.",
+          "SOHISCERT ve AB Organik sertifikalı, 60 ülkede kullanılıyor.",
+          "Hektar başına 140 ml'lik 1 ila 4 şişe; pülverizatörle ya da gübreli sulamayla uygulanır."
+        ]
+      },
+      "note": "İki ürün ayrı ayrı satılır ama birbirini güçlendirecek şekilde tasarlanmıştır: Su tutucu suyun kullanılabilirliğini uzatır, gübre bu sudan en iyi şekilde yararlanır."
+    },
+    "economies": {
+      "kicker": "BÜYÜKLÜK SIRALARI",
+      "title": "Yılda tasarruf edilen tarımsal su (milyon m³)",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Milyon m³",
+          "labels": [
+            "İhtiyatlı senaryo",
+            "Merkezi senaryo",
+            "Yüksek senaryo"
+          ],
+          "values": [
+            4313,
+            8626,
+            17252
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Nasıl hesaplandı",
+        "body": "Tarımsal su yılda 56,0 km³, fiilen sulanan alan 4,91 milyon hektardır. Her bitki grubu, kendisi için yayımlanmış denemenin etkisini alır: Merkezi senaryoda yarısını, ihtiyatlı senaryoda dörtte birini, yüksek senaryoda tamamını. Denemesi olmayan gruplar için %5, %10 ve %20 varsayılır.\n\nMerkezi senaryoda yılda 8,63 milyar m³ tasarruf edilir: Aynı suyla yaklaşık 756 000 hektar daha sulanabilir."
+      }
+    },
+    "regions": {
+      "kicker": "ÖNCELİKLİ ÜÇ ALAN",
+      "title": "İlk denemeler nerede yapılmalı",
+      "items": [
+        {
+          "head": "Konya ve İç Anadolu",
+          "metric": "Yılda 299 mm yağış",
+          "lines": [
+            "Ülkenin tahıl ambarı; şeker pancarı ve mısır, yoğun kullanılan yeraltı sularıyla sulanır.",
+            "EVERGREEN® mısır denemesi 2025'te Konya'daki TİGEM işletmesinde yapıldı: Sulama %38,9 azaldı, verim %17,1 arttı.",
+            "Sıcaklık 1981'den bu yana on yılda 0,50 °C artıyor."
+          ],
+          "photo": 4
+        },
+        {
+          "head": "Çukurova (Adana)",
+          "metric": "Yılda 615 mm su açığı",
+          "lines": [
+            "Mısır, pamuk, narenciye, sebze ve ikinci ürün olarak soya.",
+            "Geniş bir sulu tarım ovası; Akdeniz kıyısındaki seralar da yakındadır.",
+            "Sebze ve kavunlar, merkezi senaryoda tasarruf edilen suyun en büyük payını verir: Yılda 2 524 milyon m³."
+          ],
+          "photo": 5
+        },
+        {
+          "head": "Harran Ovası (Şanlıurfa)",
+          "metric": "Yılda 1 181 mm su açığı",
+          "lines": [
+            "GAP kapsamında Fırat'tan sulanan ova: Pamuk, mısır, buğday, yer fıstığı.",
+            "İncelenen sekiz referans şehir arasında en büyük su açığı burada; sıcaklık on yılda 0,51 °C artıyor.",
+            "Kök bölgesinde tutulan her sulama suyu, kanal suyunun daha geniş bir alana yetmesini sağlar."
+          ],
+          "photo": 6
+        }
+      ]
+    },
+    "deploiement": {
+      "kicker": "NASIL ÇALIŞIYORUZ",
+      "title": "Her aşamada ölçülen, adım adım bir uygulama",
+      "items": [
+        {
+          "head": "Teşhis",
+          "body": "Toprak, sulama suyu ve bitki analizi. Bu aşamada hiçbir taahhüt yok."
+        },
+        {
+          "head": "Tanık parsel",
+          "body": "Aynı şekilde yönetilen tanık parselli, karşılaştırmalı bir deneme."
+        },
+        {
+          "head": "Ölçüm",
+          "body": "Sıcak mevsim dahil tam bir sezon boyunca su tüketimi ve verim ölçümleri."
+        },
+        {
+          "head": "Yaygınlaştırma",
+          "body": "Elde edilen sonuçlara göre diğer parsellere kademeli yaygınlaştırma."
+        }
+      ],
+      "note": "Dozaj kuralı her yerde aynıdır: Faydalı toprağın litresi başına 3 gram. Araziden araziye değişen, köklerin gerçekten kullandığı toprak hacmidir."
+    },
+    "risques": {
+      "kicker": "ÖNCEDEN BİLİNMESİ GEREKENLER",
+      "title": "Belirlenen riskler ve yanıtlar",
+      "left": {
+        "head": "Riskler",
+        "lines": [
+          "Toprak düzenleyiciler ve gübreler, satıştan önce Tarım ve Orman Bakanlığı'ndan (BÜGEM) ithalat izni ve tescil belgesi gerektirir.",
+          "Koşullar bölgeden bölgeye çok farklıdır: Bir denemenin sonucu tüm ülkeye genellenemez.",
+          "Türkiye'de şimdiye kadar tek bir deneme yapıldı: Konya'da mısır.",
+          "İhracata yönelik zincirlerde alıcıların kendi girdi kuralları vardır."
+        ]
+      },
+      "right": {
+        "head": "Yanıtlar",
+        "lines": [
+          "Tescil dosyasını erken hazırlamak: TSE analizi, etiket örneği, sertifikalar.",
+          "Her bölgede tanık parselli bir deneme yürütmek.",
+          "Konya denemesini sebze, pamuk ve meyve bahçelerinde tekrarlamak.",
+          "ECOFERT®'in AB Organik sertifikasını ihracat zincirlerine sunmak."
+        ]
+      },
+      "note": "Akrilamid analizi (Polymex laboratuvarı, ISO 9001, 3,0 µg/g'ın altında) ve REACH / SVHC taraması (SGS) talep üzerine sunulur; SOHISCERT sertifikası 4 Eylül 2027'ye kadar geçerlidir."
+    },
+    "sources": [
+      "Dünya Bankası (WDI), FAOSTAT (üretim, ticaret, gübre, arazi kullanımı) ve DSİ (sulanabilir alan, 2024).",
+      "ERA5 (Copernicus) ve PVGIS: 1991-2020 iklimi ve 1981'den bu yana eğilimler.",
+      "Türk Gümrük Tarifesi ve Tarım ve Orman Bakanlığı (BÜGEM): İthalat ve tescil kuralları.",
+      "UNCCD, Drought in Numbers 2022: Kuraklıkların sayısı ve süresi, 1980–1999'a göre 2000'den bu yana %29 arttı.",
+      "BM-Su / FAO AQUASTAT, SKA göstergesi 6.4.2: Su stresinin tanımı ve eşikleri."
+    ],
+    "closing": {
+      "title": "Bize parselinizi anlatın",
+      "body": "Ürün, sulama yöntemi, toprak yapısı, bugün kullanılan su miktarı. Size uygun teknoloji kombinasyonu, dozajlar ve benzer koşullarda yapılmış denemelerle geri döneriz.\n\nİlk görüşme hiçbir taahhüt gerektirmez.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, İsviçre"
+    }
+  },
   "usa": {
     "slug": "usa",
     "locale": "en-US",

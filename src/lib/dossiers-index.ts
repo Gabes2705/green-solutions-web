@@ -37,6 +37,8 @@ export const DOSSIER_LANGS: Record<string, string> = {
   "perou": "es",
   "senegal": "fr",
   "soudan-sud": "en",
+  "togo": "fr",
+  "turquie": "tr",
   "usa": "en"
 };
 

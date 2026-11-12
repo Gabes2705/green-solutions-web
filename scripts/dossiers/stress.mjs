@@ -62,6 +62,15 @@ const TEXTES = {
     body:
       "Globalno su broj i trajanje suša od 2000. porasli 29% u odnosu na prethodna dva desetljeća.\n\nVodni stres mjeri nešto drugo: zahvaćanje vode kao udio obnovljivih resursa nakon okolišnih potreba. Taj globalni signal nije prognoza za pojedinu državu; mora se čitati uz lokalne oborine, vodonosnike, sezone i načine uporabe.",
   },
+  tr: {
+    kicker: "KURAKLIK VE SU STRESİ",
+    title: "Baskı artıyor, ancak risk yerel olarak okunur",
+    serie: "Kuraklıkların sayısı ve süresine ilişkin küresel endeks",
+    labels: ["1980–1999", "2000'den bu yana"],
+    head: "İki gösterge, bir kestirme değil",
+    body:
+      "Dünya genelinde kuraklıkların sayısı ve süresi, 2000'den bu yana önceki iki on yıla göre %29 arttı.\n\nSu stresi başka bir şeyi ölçer: Çevresel ihtiyaçlardan sonra kalan yenilenebilir kaynaklara oranla yapılan su çekimleri. Bu küresel sinyal bu nedenle ulusal bir tahmin değildir; yerel yağışlar, akiferler, mevsimler ve kullanımlarla birlikte okunmalıdır.",
+  },
 };
 
 const SOURCES = {
@@ -88,6 +97,10 @@ const SOURCES = {
   hr: [
     "UNCCD, Drought in Numbers 2022: broj i trajanje suša, +29% od 2000. u odnosu na 1980.–1999.",
     "UN-Water / FAO AQUASTAT, pokazatelj SDG 6.4.2: definicija i pragovi vodnog stresa.",
+  ],
+  tr: [
+    "UNCCD, Drought in Numbers 2022: Kuraklıkların sayısı ve süresi, 1980–1999'a göre 2000'den bu yana %29 arttı.",
+    "BM-Su / FAO AQUASTAT, SKA göstergesi 6.4.2: Su stresinin tanımı ve eşikleri.",
   ],
 };
 

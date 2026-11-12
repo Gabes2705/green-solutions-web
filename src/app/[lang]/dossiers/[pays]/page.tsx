@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!dossier || dossier.langue !== lang) return {};
 
   const url = `${SITE_URL}/${lang}/dossiers/${pays}`;
-  const title = `${dossier.cover.title} — ${dossier.cover.eyebrow.toLowerCase()} | Green Solutions`;
+  const title = `${dossier.cover.title} — ${dossier.cover.eyebrow.toLocaleLowerCase(dossier.locale)} | Green Solutions`;
   // Le sous-titre de couverture tient sur deux lignes séparées par un saut :
   // une description de recherche est une phrase, pas une mise en page.
   const description =

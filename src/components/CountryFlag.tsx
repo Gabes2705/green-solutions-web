@@ -308,6 +308,17 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <rect x="12" y="10" width="18" height="10" fill="#E8112D" />
     </>
   ),
+  togo: () => (
+    <>
+      <rect width="30" height="20" fill="#006A4E" />
+      <rect y="4" width="30" height="4" fill="#FFCE00" />
+      <rect y="12" width="30" height="4" fill="#FFCE00" />
+      <rect width="12" height="12" fill="#D21034" />
+      <g transform="translate(6 6) scale(0.58)">
+        <Star fill="#fff" />
+      </g>
+    </>
+  ),
   "coree-du-sud": () => (
     <>
       <rect width="30" height="20" fill="#fff" />

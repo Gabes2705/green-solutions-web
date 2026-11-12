@@ -53,6 +53,8 @@ const ISO = {
   benin: "BJ",
   guadeloupe: "GP",
   martinique: "MQ",
+  turquie: "TR",
+  togo: "TG",
 };
 
 const LANGUES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"];
