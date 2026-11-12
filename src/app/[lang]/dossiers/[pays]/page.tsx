@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import DossierPage from "@/components/DossierPage";
@@ -14,6 +16,12 @@ import { SITE_URL } from "@/lib/site";
  * à Google treize traductions dont douze n'existent pas.
  */
 export const dynamicParams = false;
+
+/** Le dossier complet en HTML (scripts/dossiers/dossier_complet.py), lu au build ; null s'il n'existe pas. */
+function dossierComplet(pays: string): string | null {
+  const chemin = path.join(process.cwd(), "src", "content", "dossiers-complets", `${pays}.html`);
+  return fs.existsSync(chemin) ? fs.readFileSync(chemin, "utf8") : null;
+}
 
 export function generateStaticParams() {
   return DOSSIER_SLUGS.map((pays) => ({ lang: DOSSIERS[pays].langue, pays }));
@@ -97,7 +105,7 @@ export default async function Page({ params }: Params) {
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <DossierPage dossier={dossier} />
+      <DossierPage dossier={dossier} complet={dossierComplet(pays)} />
     </>
   );
 }

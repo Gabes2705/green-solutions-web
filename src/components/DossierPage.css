@@ -523,3 +523,227 @@
     gap: 1rem 2rem;
   }
 }
+
+/* ---- Dossier complet ----
+   Le dossier Word publié, converti par scripts/dossiers/dossier_complet.py :
+   la page montre tout le travail, pas un extrait. */
+
+.dossier-complet {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-block: 2.5rem 1rem;
+  line-height: 1.65;
+}
+
+.dossier-complet p,
+.dossier-complet li {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.dossier-complet h2 {
+  margin: 3.2rem 0 1rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--hairline);
+  font-size: clamp(1.45rem, 1.1rem + 1.2vw, 2rem);
+  line-height: 1.2;
+  color: var(--ink);
+  scroll-margin-top: 5rem;
+}
+
+.dossier-complet h3 {
+  margin: 2.2rem 0 0.7rem;
+  font-size: 1.2rem;
+  color: var(--leaf-deep);
+}
+
+.dossier-complet h4 {
+  margin: 1.6rem 0 0.5rem;
+  font-size: 1.02rem;
+  color: var(--leaf-deep);
+}
+
+.dossier-complet figure {
+  margin: 1.8rem auto;
+  text-align: center;
+}
+
+.dossier-complet figure img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Photos : l'ombre portée en haut à droite des dossiers Word. */
+.dossier-complet figure.dc-photo img {
+  border-radius: 4px;
+  box-shadow: 6px -6px 14px rgba(0, 0, 0, 0.28);
+}
+
+.dossier-complet figure.dc-graphique img {
+  background: #fff;
+  border-radius: 6px;
+  padding: 0.4rem;
+}
+
+.dossier-complet figcaption,
+.dossier-complet .dc-source {
+  margin-top: 0.55rem;
+  font-size: 0.86rem;
+  font-style: italic;
+  color: var(--muted);
+  text-align: center;
+}
+
+.dossier-complet .dc-source {
+  text-align: start;
+  margin-top: 0.3rem;
+}
+
+.dc-encadre {
+  margin: 1.6rem 0;
+  padding: 1.1rem 1.3rem;
+  background: rgba(75, 139, 88, 0.09);
+  border-inline-start: 4px solid var(--leaf-light);
+  border-radius: 0 10px 10px 0;
+}
+
+.dc-encadre p {
+  margin: 0.35rem 0;
+}
+
+.dc-tableau {
+  margin: 1.4rem 0 0.4rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dc-tableau table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.dc-tableau th,
+.dc-tableau td {
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+
+.dc-tableau th {
+  background: var(--leaf-deep);
+  color: #fff;
+  font-weight: 600;
+  text-align: start;
+}
+
+.dc-tableau th p,
+.dc-tableau td p {
+  margin: 0;
+  text-align: start;
+  hyphens: manual;
+}
+
+.dc-tableau tr:nth-child(even) td {
+  background: rgba(75, 139, 88, 0.05);
+}
+
+.dc-sommaire {
+  margin: 0 0 1rem;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+}
+
+.dc-sommaire-titre {
+  margin: 0 0 0.6rem;
+  font-weight: 700;
+  color: var(--leaf-deep);
+}
+
+.dc-sommaire ol {
+  margin: 0;
+  padding-inline-start: 0;
+  list-style: none;
+  columns: 2 18rem;
+  column-gap: 2rem;
+}
+
+.dc-sommaire li {
+  margin: 0.25rem 0;
+  break-inside: avoid;
+  text-align: start;
+}
+
+.dc-sommaire a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.dc-sommaire a:hover,
+.dc-sommaire a:focus-visible {
+  color: var(--leaf-deep);
+  border-bottom-color: currentColor;
+}
+
+.dossier-complet img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Cartes de chiffres clés du dossier. */
+.dc-tableau table.dc-chiffres {
+  border-collapse: separate;
+  border-spacing: 0.6rem;
+  margin-inline: -0.6rem;
+  width: calc(100% + 1.2rem);
+}
+
+.dc-tableau table.dc-chiffres td {
+  background: #fff;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  padding: 0.8rem 0.9rem;
+}
+
+.dc-tableau table.dc-chiffres td p:first-child {
+  font-family: var(--font-numeric);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--leaf-deep);
+  line-height: 1.15;
+}
+
+.dc-tableau table.dc-chiffres td p + p {
+  margin-top: 0.3rem;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+/* Sur téléphone, les cartes passent sur deux colonnes. */
+@media (max-width: 640px) {
+  .dc-tableau table.dc-chiffres,
+  .dc-tableau table.dc-chiffres tbody {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .dc-tableau table.dc-chiffres tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .dc-tableau table.dc-chiffres td {
+    display: block;
+  }
+
+  .dc-tableau table.dc-chiffres td p:first-child {
+    font-size: 1.2rem;
+  }
+}
