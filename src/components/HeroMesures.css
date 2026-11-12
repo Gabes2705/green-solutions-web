@@ -1,0 +1,201 @@
+/* ---- Couverture « champ mesuré » ----
+   Une vraie photo de champ sous un ciel clair, et trois relevés posés dessus.
+   Un seul moment animé : les relevés arrivent l'un après l'autre (le fil
+   monte, la carte se pose), puis flottent très doucement. */
+
+.hero-photo .hero-photo-img.hero-photo-champ {
+  /* Le ciel en haut pour le titre, le maïs en bas pour les relevés. */
+  object-position: 50% 62%;
+  transform-origin: 50% 70%;
+  animation-duration: 34s;
+}
+
+.hero-mesures {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  pointer-events: none;
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .hero-mesures {
+    display: block;
+  }
+}
+
+.hero-mesure {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -100%);
+  animation: hero-mesure-arrivee 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Points d'ancrage sur la photo (maïs, maïs, horizon). */
+.hero-mesure-a {
+  left: 12%;
+  top: 74%;
+  animation-delay: 0.6s;
+}
+
+.hero-mesure-b {
+  left: 87%;
+  top: 82%;
+  animation-delay: 1.1s;
+}
+
+.hero-mesure-c {
+  left: 80%;
+  top: 57%;
+  animation-delay: 1.6s;
+}
+
+/* Le voile blanc du bas, réglé pour l'ancienne image, grisait le maïs : il est allégé ici. */
+.hero-photo:has(.hero-photo-champ)::before {
+  background-image: radial-gradient(
+      58% 50% at 50% 40%,
+      rgba(255, 255, 255, 0.26) 0%,
+      rgba(255, 255, 255, 0.12) 45%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(to top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 30%);
+}
+
+@media (min-width: 641px) {
+  .hero-photo:has(.hero-photo-champ)::after {
+    opacity: 0;
+  }
+}
+
+.hero-mesure-carte {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 10.5rem;
+  max-width: 14rem;
+  padding: 0.6rem 0.85rem 0.65rem;
+  border: 1px solid rgba(31, 77, 43, 0.14);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.84);
+  -webkit-backdrop-filter: blur(10px) saturate(1.2);
+  backdrop-filter: blur(10px) saturate(1.2);
+  box-shadow: 0 10px 26px rgba(18, 44, 26, 0.16), 0 2px 6px rgba(18, 44, 26, 0.08);
+  text-align: start;
+  animation: hero-mesure-flotte 7s ease-in-out infinite alternate;
+}
+
+.hero-mesure-b .hero-mesure-carte {
+  animation-duration: 8.5s;
+  animation-delay: -2s;
+}
+
+.hero-mesure-c .hero-mesure-carte {
+  animation-duration: 9.5s;
+  animation-delay: -4s;
+}
+
+.hero-mesure-valeur {
+  font-family: var(--font-numeric);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  color: var(--leaf-deep);
+}
+
+.hero-mesure-label {
+  font-size: 0.82rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.hero-mesure-sous {
+  margin-top: 0.15rem;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: #4a5e50;
+}
+
+.hero-mesure-fil {
+  width: 1px;
+  height: 3.6rem;
+  background: linear-gradient(to bottom, rgba(31, 77, 43, 0.55), rgba(255, 255, 255, 0.85));
+  transform-origin: bottom;
+  animation: hero-mesure-fil 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: inherit;
+}
+
+.hero-mesure-point {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  margin-bottom: -5px;
+  border: 2px solid var(--leaf-deep);
+  border-radius: 50%;
+  background: #fff;
+}
+
+.hero-mesure-point::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  animation: hero-mesure-pouls 2.8s ease-out infinite;
+}
+
+@keyframes hero-mesure-arrivee {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translate(-50%, calc(-100% + 10px));
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(-50%, -100%);
+  }
+}
+
+@keyframes hero-mesure-fil {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes hero-mesure-flotte {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes hero-mesure-pouls {
+  from {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2.6);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-mesure,
+  .hero-mesure-carte,
+  .hero-mesure-fil,
+  .hero-mesure-point::after {
+    animation: none;
+  }
+}
