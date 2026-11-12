@@ -1,10 +1,10 @@
 "use client";
 
+import "./HeroArrivees.css";
 import Atmosphere from "./Atmosphere";
 import CoverDoors from "./CoverDoors";
 import FloatingVideo from "./FloatingVideo";
 import HeroBadge3D from "./HeroBadge3D";
-import HeroMesures from "./HeroMesures";
 import HeroParallax from "./HeroParallax";
 import Nav from "./Nav";
 import VideoDiagnostic from "./VideoDiagnostic";
@@ -51,19 +51,18 @@ export default function Hero() {
   return (
     <div className="stage">
       <div className="hero-photo">
-        {/* Champ de maïs sous un ciel clair : vraie photo (Wikimedia Commons, domaine public). */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          className="hero-photo-img hero-photo-champ"
-          src="/images/accueil/champ-mais-1920.webp"
-          srcSet="/images/accueil/champ-mais-760.webp 760w, /images/accueil/champ-mais-1200.webp 1200w, /images/accueil/champ-mais-1920.webp 1920w"
-          sizes="100vw"
-          alt=""
-          fetchPriority="high"
-          decoding="async"
+        <video
+          className="hero-photo-img"
+          src="/videos/hero-cover-macro.mp4"
+          poster="/images/hero-cover-clean.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
         />
+        <div className="water-glint" aria-hidden="true" />
       </div>
-      <HeroMesures />
       <Atmosphere />
 
       <Nav />
