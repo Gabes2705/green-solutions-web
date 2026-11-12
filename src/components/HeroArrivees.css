@@ -1,99 +1,47 @@
-/* ---- Arrivées de la couverture ----
-   Demande de Gabriel (2026-11-12) : garder la couverture telle quelle, mais
-   faire descendre le film du ciel en tourbillonnant, et faire arriver les
-   boutons comme des météorites pour qu'on les remarque.
+/* ---- Arrivée des boutons de la couverture ----
+   Demande de Gabriel (2026-11-12) : la couverture d'origine, ciel normal, et
+   seulement les boutons qui tombent du haut, l'un après l'autre, pour qu'on
+   les remarque. Ils se posent avec un petit rebond, puis une onde de lumière
+   s'élargit autour d'eux. Rien ne reste après l'animation (« backwards »). */
 
-   Les deux animations ne laissent rien derrière elles (remplissage
-   « backwards ») : une fois posé, le film n'a plus de transformation, ce qui
-   lui garde son affichage matériel (voir .film-anchor). */
-
-.stage .film-screen {
-  animation: film-tourbillon 2.6s ease-out 0.3s backwards;
+.stage .hero-cta a,
+.stage .hero-cta-impact {
+  animation: bouton-du-ciel 1.2s cubic-bezier(0.34, 1.3, 0.5, 1) backwards;
 }
 
-@keyframes film-tourbillon {
+.stage .hero-cta a:nth-child(1) {
+  animation-delay: 1s;
+}
+.stage .hero-cta a:nth-child(2) {
+  animation-delay: 1.3s;
+}
+.stage .hero-cta a:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.stage .hero-cta-impact {
+  animation-delay: 1.95s;
+}
+
+@keyframes bouton-du-ciel {
   0% {
     opacity: 0;
-    transform: translate3d(8vw, -115vh, 0) rotate(-640deg) scale(0.22);
-    /* La chute dure : on doit voir le film tourner en descendant. */
-    animation-timing-function: cubic-bezier(0.3, 0.2, 0.4, 1);
+    transform: translate3d(0, -75vh, 0) scale(0.85);
   }
   15% {
     opacity: 1;
   }
-  62% {
-    transform: translate3d(0, 3vh, 0) rotate(9deg) scale(1.03);
-  }
-  80% {
-    transform: translate3d(0, -1.2vh, 0) rotate(-3deg) scale(0.99);
-  }
-  92% {
-    transform: translate3d(0, 0.4vh, 0) rotate(1deg) scale(1);
+  70% {
+    transform: translate3d(0, 0, 0) scale(1.06);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.95);
   }
   100% {
     opacity: 1;
     transform: none;
-  }
-}
-
-/* Météorites : chaque bouton tombe d'en haut à droite avec une traînée chaude,
-   s'écrase en place, puis une onde lumineuse s'élargit autour de lui. */
-.stage .hero-cta a,
-.stage .hero-cta-impact {
-  animation: bouton-meteorite 1.15s cubic-bezier(0.3, 0.7, 0.2, 1) backwards;
-}
-
-.stage .hero-cta a:nth-child(1) {
-  animation-delay: 2.2s;
-}
-.stage .hero-cta a:nth-child(2) {
-  animation-delay: 2.5s;
-}
-.stage .hero-cta a:nth-child(3) {
-  animation-delay: 2.8s;
-}
-.stage .hero-cta-impact {
-  animation-delay: 3.15s;
-}
-
-@keyframes bouton-meteorite {
-  0% {
-    opacity: 0;
-    transform: translate3d(48vw, -72vh, 0) rotate(-24deg) scale(0.35);
-    filter: brightness(2.4) blur(2px);
-    box-shadow:
-      18px -24px 0 -6px rgba(255, 196, 92, 0.6),
-      38px -50px 0 -12px rgba(255, 150, 60, 0.38),
-      60px -80px 0 -18px rgba(255, 120, 40, 0.18);
-  }
-  12% {
-    opacity: 1;
-  }
-  68% {
-    transform: translate3d(0, 0, 0) rotate(0) scale(1.12);
-    filter: brightness(1.7) blur(0);
-    box-shadow:
-      8px -10px 0 -6px rgba(255, 196, 92, 0.45),
-      16px -22px 0 -12px rgba(255, 150, 60, 0.22),
-      0 0 0 0 rgba(255, 214, 120, 0.85);
-  }
-  84% {
-    transform: scale(0.95);
-    filter: brightness(1.15);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-    filter: none;
-    box-shadow:
-      0 0 0 0 rgba(255, 196, 92, 0),
-      0 0 0 0 rgba(255, 150, 60, 0),
-      0 0 0 22px rgba(255, 214, 120, 0);
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .stage .film-screen,
   .stage .hero-cta a,
   .stage .hero-cta-impact {
     animation: none;
