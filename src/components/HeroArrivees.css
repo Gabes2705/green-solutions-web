@@ -1,47 +1,9 @@
-/* ---- Arrivée des boutons de la couverture ----
-   Demande de Gabriel (2026-11-12) : la couverture d'origine, ciel normal, et
-   seulement les boutons qui tombent du haut, l'un après l'autre, pour qu'on
-   les remarque. Ils se posent avec un petit rebond, puis une onde de lumière
-   s'élargit autour d'eux. Rien ne reste après l'animation (« backwards »). */
+/* ---- Arrivée des boutons du menu du haut ----
+   Demande de Gabriel (2026-11-12) : couverture d'origine ; seuls les boutons
+   du menu du haut tombent du ciel l'un après l'autre et se posent avec un
+   petit rebond. Les boutons sous le titre ne bougent pas (essayé, refusé).
+   Rien ne reste après l'animation (« backwards »). */
 
-.stage .hero-cta a,
-.stage .hero-cta-impact {
-  animation: bouton-du-ciel 1.2s cubic-bezier(0.34, 1.3, 0.5, 1) backwards;
-}
-
-.stage .hero-cta a:nth-child(1) {
-  animation-delay: 1s;
-}
-.stage .hero-cta a:nth-child(2) {
-  animation-delay: 1.3s;
-}
-.stage .hero-cta a:nth-child(3) {
-  animation-delay: 1.6s;
-}
-.stage .hero-cta-impact {
-  animation-delay: 1.95s;
-}
-
-@keyframes bouton-du-ciel {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -75vh, 0) scale(0.85);
-  }
-  15% {
-    opacity: 1;
-  }
-  70% {
-    transform: translate3d(0, 0, 0) scale(1.06);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
-  }
-}
-
-/* Les boutons du menu du haut tombent aussi, juste avant ceux de la couverture. */
 .stage .topnav .nav-links a,
 .stage .topnav .nav-right > *,
 .stage .topnav .nav-burger {
@@ -76,8 +38,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .stage .hero-cta a,
-  .stage .hero-cta-impact,
   .stage .topnav .nav-links a,
   .stage .topnav .nav-right > *,
   .stage .topnav .nav-burger {
