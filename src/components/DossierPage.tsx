@@ -411,7 +411,11 @@ const NOM_LANGUE: Record<string, string> = {
   tr: "Türkçe",
 };
 
-export default function DossierPage({ dossier }: { dossier: Dossier }) {
+/**
+ * `complet` : le dossier Word publié, converti en HTML (scripts/dossiers/dossier_complet.py).
+ * Quand il existe, il remplace les blocs résumés : la page montre tout le travail.
+ */
+export default function DossierPage({ dossier, complet }: { dossier: Dossier; complet?: string | null }) {
   const { cover } = dossier;
   const rtl = dossier.langue === "ar";
   const photographe = distributeur(dossier);
@@ -498,6 +502,12 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
       </header>
 
       <div className="dossier-corps">
+        {complet ? (
+          // Contenu produit par nos scripts à partir de nos propres dossiers Word, pas une saisie extérieure.
+          // eslint-disable-next-line react/no-danger
+          <div className="dossier-complet" dangerouslySetInnerHTML={{ __html: complet }} />
+        ) : (
+        <>
         {dossier.chiffres && <BlocChiffres bloc={dossier.chiffres} />}
         {dossier.contrainte && (
           <BlocPuces bloc={dossier.contrainte} photographe={photographe} secours={1} />
@@ -528,6 +538,8 @@ export default function DossierPage({ dossier }: { dossier: Dossier }) {
               ))}
             </ul>
           </section>
+        )}
+        </>
         )}
 
         <section className="dossier-section dossier-cloture">
