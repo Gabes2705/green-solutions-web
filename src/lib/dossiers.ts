@@ -7299,7 +7299,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "maroc",
     "locale": "fr-MA",
     "langue": "fr",
-    "pdf": "/documents/countries/maroc.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/maroc-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/maroc-en.pdf"
+      }
+    ],
     "photos": 2,
     "credits": [
       {

@@ -28,6 +28,7 @@ PAYS = {
     "france": ("Green-Solutions_Dossier-France", "fr"),
     "gabon": ("Green-Solutions_Dossier-Gabon", "fr"),
     "liban": ("Green-Solutions_Dossier-Liban-FR", "fr"),
+    "maroc": ("Green-Solutions_Dossier-Maroc", "fr"),
     "madagascar": ("Green-Solutions_Dossier-Madagascar", "fr"),
     "oman": ("Green-Solutions_Dossier-Oman-EN", "en"),
     "togo": ("Green-Solutions_Dossier-Togo", "fr"),
