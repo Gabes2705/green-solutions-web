@@ -1,5 +1,11 @@
 // Les sept pages qui complètent le dossier Maroc (voir build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "maroc-fr" },
+    { langue: "en", fichier: "maroc-en" },
+  ],
+
   paysTitre: "le Maroc",
 
   economie: {
