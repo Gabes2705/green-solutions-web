@@ -1,5 +1,11 @@
 // Dossier court (14 pages) : économie, filière phare et reste de la gamme.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "cameroun-fr" },
+    { langue: "en", fichier: "cameroun-en" },
+  ],
+
   paysTitre: "le Cameroun",
   partenariat: false,
 

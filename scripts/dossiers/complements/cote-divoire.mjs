@@ -1,5 +1,11 @@
 // Les sept pages qui complètent le dossier Côte d'Ivoire (voir build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "cote-divoire-fr" },
+    { langue: "en", fichier: "cote-divoire-en" },
+  ],
+
   paysTitre: "la Côte d'Ivoire",
 
   economie: {

@@ -381,6 +381,10 @@ const RESUMES: Record<string, string[]> = {
   togo: ["fr", "en"],
   maroc: ["fr", "en"],
   gabon: ["fr"],
+  cameroun: ["fr", "en"],
+  "cote-divoire": ["fr", "en"],
+  senegal: ["fr", "en"],
+  algerie: ["fr", "en"],
 };
 
 /* Chaque libellé est écrit dans la langue du fichier qu'il télécharge, suivi du
