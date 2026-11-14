@@ -1,5 +1,11 @@
 // The seven pages that complete the South Africa dossier (see build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "en", fichier: "afrique-du-sud-en" },
+    { langue: "fr", fichier: "afrique-du-sud-fr" },
+  ],
+
   paysTitre: "South Africa",
 
   economie: {

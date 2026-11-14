@@ -1,5 +1,11 @@
 // Les sept pages qui complètent le dossier Égypte (voir build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. Pas de version arabe : l'anglais d'abord. */
+  telechargements: [
+    { langue: "en", fichier: "egypte-en" },
+    { langue: "fr", fichier: "egypte-fr" },
+  ],
+
   paysTitre: "مصر",
 
   economie: {

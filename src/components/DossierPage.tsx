@@ -385,6 +385,13 @@ const RESUMES: Record<string, string[]> = {
   "cote-divoire": ["fr", "en"],
   senegal: ["fr", "en"],
   algerie: ["fr", "en"],
+  egypte: ["en", "fr"],
+  "afrique-du-sud": ["en", "fr"],
+};
+
+/* Page en arabe, mais dossier complet en anglais : le dossier s'affiche dans sa langue, de gauche à droite. */
+const LANGUE_DU_COMPLET: Record<string, string> = {
+  egypte: "en",
 };
 
 /* Chaque libellé est écrit dans la langue du fichier qu'il télécharge, suivi du
@@ -511,7 +518,11 @@ export default function DossierPage({ dossier, complet }: { dossier: Dossier; co
         {complet ? (
           // Contenu produit par nos scripts à partir de nos propres dossiers Word, pas une saisie extérieure.
           // eslint-disable-next-line react/no-danger
-          <div className="dossier-complet" dangerouslySetInnerHTML={{ __html: complet }} />
+          <div
+            className="dossier-complet"
+            {...(LANGUE_DU_COMPLET[dossier.slug] ? { dir: "ltr", lang: LANGUE_DU_COMPLET[dossier.slug] } : {})}
+            dangerouslySetInnerHTML={{ __html: complet }}
+          />
         ) : (
         <>
         {dossier.chiffres && <BlocChiffres bloc={dossier.chiffres} />}
