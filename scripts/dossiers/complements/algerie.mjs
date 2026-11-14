@@ -1,5 +1,11 @@
 // Les sept pages qui complètent le dossier Algérie (voir build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "algerie-fr" },
+    { langue: "en", fichier: "algerie-en" },
+  ],
+
   paysTitre: "l'Algérie",
 
   economie: {

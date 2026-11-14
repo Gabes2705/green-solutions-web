@@ -460,7 +460,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "algerie",
     "locale": "fr-DZ",
     "langue": "fr",
-    "pdf": "/documents/countries/algerie.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/algerie-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/algerie-en.pdf"
+      }
+    ],
     "photos": 4,
     "credits": [
       {
@@ -1960,7 +1970,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "cameroun",
     "locale": "fr-CM",
     "langue": "fr",
-    "pdf": "/documents/countries/cameroun.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/cameroun-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/cameroun-en.pdf"
+      }
+    ],
     "photos": 9,
     "credits": [
       {
@@ -2683,7 +2703,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "cote-divoire",
     "locale": "fr-CI",
     "langue": "fr",
-    "pdf": "/documents/countries/cote-divoire.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/cote-divoire-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/cote-divoire-en.pdf"
+      }
+    ],
     "photos": 11,
     "credits": [
       {
@@ -8474,7 +8504,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "senegal",
     "locale": "fr-SN",
     "langue": "fr",
-    "pdf": "/documents/countries/senegal.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/senegal-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/senegal-en.pdf"
+      }
+    ],
     "photos": 6,
     "credits": [
       {

@@ -1,5 +1,11 @@
 // Dossier court (14 pages) : économie, filière phare et reste de la gamme.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "senegal-fr" },
+    { langue: "en", fichier: "senegal-en" },
+  ],
+
   paysTitre: "le Sénégal",
   partenariat: false,
 

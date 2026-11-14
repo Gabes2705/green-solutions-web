@@ -22,6 +22,10 @@ RACINE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file_
 
 # Pays → (fichier Word, langue de la page). Le Word est celui dont le PDF est publié dans cette langue.
 PAYS = {
+    "senegal": ("Green-Solutions_Dossier-Senegal", "fr"),
+    "cote-divoire": ("Green-Solutions_Dossier-Cote-dIvoire", "fr"),
+    "cameroun": ("Green-Solutions_Dossier-Cameroun", "fr"),
+    "algerie": ("Green-Solutions_Dossier-Algerie", "fr"),
     "djibouti": ("Green-Solutions_Dossier-Djibouti", "fr"),
     "espagne": ("Green-Solutions_Dossier-Espana", "es"),
     "ethiopie": ("Green-Solutions_Ethiopia-Dossier", "en"),
