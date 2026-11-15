@@ -1,5 +1,11 @@
 // Dossier court : économie, filière phare et reste de la gamme.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "benin-fr" },
+    { langue: "en", fichier: "benin-en" },
+  ],
+
   paysTitre: "le Bénin",
   partenariat: false,
 

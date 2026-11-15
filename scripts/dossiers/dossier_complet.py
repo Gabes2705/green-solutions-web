@@ -41,6 +41,13 @@ PAYS = {
     "egypte": ("Green-Solutions_Egypt-Dossier", "en"),
     "afrique-du-sud": ("Green-Solutions_South-Africa-Dossier", "en"),
     "bresil": ("Green-Solutions_Dossier-Bresil-PT", "pt"),
+    "jordanie": ("Green-Solutions_Jordan-Dossier", "en"),
+    "soudan-sud": ("Green-Solutions_South-Sudan-Dossier", "en"),
+    "benin": ("Green-Solutions_Dossier-Benin", "fr"),
+    "grece": ("Green-Solutions_Greece-Dossier", "en"),
+    "guadeloupe": ("Green-Solutions_Dossier-Guadeloupe", "fr"),
+    "martinique": ("Green-Solutions_Dossier-Martinique", "fr"),
+    "arabie-saoudite": ("Green-Solutions_Saudi-Arabia-Dossier", "en"),
 }
 SOMMAIRE = {"sommaire", "contents", "içindekiler", "índice", "indice", "sumário", "المحتويات", "table des matières"}
 TITRE_SOMMAIRE = {"fr": "Sommaire", "en": "Contents", "es": "Índice", "pt": "Sumário", "tr": "İçindekiler", "ar": "المحتويات"}

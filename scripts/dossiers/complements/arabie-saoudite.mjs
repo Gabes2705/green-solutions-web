@@ -1,5 +1,11 @@
 // Les sept pages qui complètent le dossier Arabie saoudite (voir build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "en", fichier: "arabie-saoudite-en" },
+    { langue: "fr", fichier: "arabie-saoudite-fr" },
+  ],
+
   economie: {
     kicker: "الاقتصاد والأمن الغذائي",
     title: "قدرة شرائية عالية وقاعدة غذائية ضيقة",

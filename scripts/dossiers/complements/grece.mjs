@@ -1,5 +1,11 @@
 // Σύντομος φάκελος (14 σελίδες): οικονομία, κύριος τομέας και η υπόλοιπη γκάμα.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. Pas de version grecque : l'anglais d'abord. */
+  telechargements: [
+    { langue: "en", fichier: "grece-en" },
+    { langue: "fr", fichier: "grece-fr" },
+  ],
+
   paysTitre: "την Ελλάδα",
   partenariat: false,
 
