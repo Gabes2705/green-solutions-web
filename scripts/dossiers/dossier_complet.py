@@ -40,9 +40,10 @@ PAYS = {
     "usa": ("Green-Solutions_Dossier-USA", "en"),
     "egypte": ("Green-Solutions_Egypt-Dossier", "en"),
     "afrique-du-sud": ("Green-Solutions_South-Africa-Dossier", "en"),
+    "bresil": ("Green-Solutions_Dossier-Bresil-PT", "pt"),
 }
-SOMMAIRE = {"sommaire", "contents", "içindekiler", "índice", "indice", "المحتويات", "table des matières"}
-TITRE_SOMMAIRE = {"fr": "Sommaire", "en": "Contents", "es": "Índice", "tr": "İçindekiler", "ar": "المحتويات"}
+SOMMAIRE = {"sommaire", "contents", "içindekiler", "índice", "indice", "sumário", "المحتويات", "table des matières"}
+TITRE_SOMMAIRE = {"fr": "Sommaire", "en": "Contents", "es": "Índice", "pt": "Sumário", "tr": "İçindekiler", "ar": "المحتويات"}
 LEGENDE = re.compile(r"^(Figure|Figura|Şekil|Fig\.|الشكل)\s*\d+")
 
 # Retouches propres à un pays : le PDF publié a été corrigé après coup, le Word non.

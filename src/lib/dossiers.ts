@@ -1764,7 +1764,21 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "bresil",
     "locale": "pt-BR",
     "langue": "pt",
-    "pdf": "/documents/countries/bresil.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "pt",
+        "href": "/documents/countries/dossiers/bresil-pt.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/bresil-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/bresil-en.pdf"
+      }
+    ],
     "photos": 2,
     "credits": [
       {

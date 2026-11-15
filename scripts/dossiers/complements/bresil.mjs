@@ -1,4 +1,10 @@
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "pt", fichier: "bresil-pt" },
+    { langue: "fr", fichier: "bresil-fr" },
+    { langue: "en", fichier: "bresil-en" },
+  ],
   "paysTitre": "Brasil",
   "filieres": [
     {

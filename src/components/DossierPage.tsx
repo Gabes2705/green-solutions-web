@@ -387,6 +387,7 @@ const RESUMES: Record<string, string[]> = {
   algerie: ["fr", "en"],
   egypte: ["en", "fr"],
   "afrique-du-sud": ["en", "fr"],
+  bresil: ["pt", "fr", "en"],
 };
 
 /* Page en arabe, mais dossier complet en anglais : le dossier s'affiche dans sa langue, de gauche à droite. */
@@ -401,6 +402,7 @@ const LIBELLE_RESUME: Record<string, string> = {
   fr: "Télécharger le résumé",
   en: "Download the summary",
   es: "Descargar el resumen",
+  pt: "Baixar o resumo",
   ar: "تحميل الملخص",
   tr: "Özeti indir",
 };
@@ -420,6 +422,7 @@ const NOM_LANGUE: Record<string, string> = {
   fr: "Français",
   en: "English",
   es: "Español",
+  pt: "Português",
   ar: "العربية",
   tr: "Türkçe",
 };
