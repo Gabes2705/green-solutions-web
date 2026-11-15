@@ -34,6 +34,7 @@ const PHOTOS_BY_SURNAME: [RegExp, string][] = [
   [/elashrry/i, "ahmed-elashrry"],
   [/curina/i, "alfredo-curina"],
   [/valena/i, "valena-ra"],
+  [/sylvestre/i, "micheline-sylvestre"],
   [/baloche/i, "daniel-baloche"],
   [/haddad/i, "yves-haddad"],
   [/\bjames\b/i, "david-james"],
