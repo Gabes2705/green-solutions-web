@@ -840,7 +840,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "arabie-saoudite",
     "locale": "ar-SA",
     "langue": "ar",
-    "pdf": "/documents/countries/arabie-saoudite.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/arabie-saoudite-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/arabie-saoudite-fr.pdf"
+      }
+    ],
     "photos": 5,
     "credits": [
       {
@@ -6126,6 +6136,16 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-GP",
     "langue": "fr",
     "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/guadeloupe-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/guadeloupe-en.pdf"
+      }
+    ],
     "photos": 4,
     "credits": [
       {
@@ -7750,6 +7770,16 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-MQ",
     "langue": "fr",
     "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/martinique-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/martinique-en.pdf"
+      }
+    ],
     "photos": 3,
     "credits": [
       {

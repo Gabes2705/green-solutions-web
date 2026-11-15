@@ -392,6 +392,9 @@ const RESUMES: Record<string, string[]> = {
   "soudan-sud": ["en", "fr"],
   benin: ["fr", "en"],
   grece: ["en", "fr"],
+  guadeloupe: ["fr", "en"],
+  martinique: ["fr", "en"],
+  "arabie-saoudite": ["en", "fr"],
 };
 
 /* Page en arabe, mais dossier complet en anglais : le dossier s'affiche dans sa langue, de gauche à droite. */
@@ -399,6 +402,7 @@ const LANGUE_DU_COMPLET: Record<string, string> = {
   egypte: "en",
   jordanie: "en",
   grece: "en",
+  "arabie-saoudite": "en",
 };
 
 /* Chaque libellé est écrit dans la langue du fichier qu'il télécharge, suivi du

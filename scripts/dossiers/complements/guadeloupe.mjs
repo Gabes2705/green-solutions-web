@@ -1,5 +1,11 @@
 // Dossier court : économie, filière phare et reste de la gamme.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "fr", fichier: "guadeloupe-fr" },
+    { langue: "en", fichier: "guadeloupe-en" },
+  ],
+
   paysTitre: "la Guadeloupe",
   partenariat: false,
 
