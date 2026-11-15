@@ -100,7 +100,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "afrique-du-sud",
     "locale": "en-ZA",
     "langue": "en",
-    "pdf": "/documents/countries/afrique-du-sud.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/afrique-du-sud-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/afrique-du-sud-fr.pdf"
+      }
+    ],
     "photos": 4,
     "credits": [
       {
@@ -1754,7 +1764,21 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "bresil",
     "locale": "pt-BR",
     "langue": "pt",
-    "pdf": "/documents/countries/bresil.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "pt",
+        "href": "/documents/countries/dossiers/bresil-pt.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/bresil-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/bresil-en.pdf"
+      }
+    ],
     "photos": 2,
     "credits": [
       {
@@ -3865,7 +3889,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "egypte",
     "locale": "ar-EG",
     "langue": "ar",
-    "pdf": "/documents/countries/egypte.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/egypte-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/egypte-fr.pdf"
+      }
+    ],
     "photos": 2,
     "credits": [
       {
