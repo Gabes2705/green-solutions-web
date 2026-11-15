@@ -1547,6 +1547,16 @@ export const DOSSIERS: Record<string, Dossier> = {
     "locale": "fr-BJ",
     "langue": "fr",
     "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/benin-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/benin-en.pdf"
+      }
+    ],
     "photos": 4,
     "credits": [
       {
@@ -5738,7 +5748,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "grece",
     "locale": "el-GR",
     "langue": "el",
-    "pdf": "/documents/countries/grece.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/grece-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/grece-fr.pdf"
+      }
+    ],
     "photos": 9,
     "credits": [
       {
@@ -6323,7 +6343,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "jordanie",
     "locale": "ar-JO",
     "langue": "ar",
-    "pdf": "/documents/countries/jordanie.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/jordanie-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/jordanie-fr.pdf"
+      }
+    ],
     "photos": 2,
     "credits": [
       {
@@ -8903,7 +8933,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "soudan-sud",
     "locale": "en-SS",
     "langue": "en",
-    "pdf": "/documents/countries/soudan-sud.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/soudan-sud-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/soudan-sud-fr.pdf"
+      }
+    ],
     "photos": 6,
     "credits": [
       {

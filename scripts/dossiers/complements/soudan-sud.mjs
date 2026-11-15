@@ -1,5 +1,11 @@
 // Short dossier (14 pages): economy, leading sector and the rest of the range.
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "en", fichier: "soudan-sud-en" },
+    { langue: "fr", fichier: "soudan-sud-fr" },
+  ],
+
   paysTitre: "South Sudan",
   partenariat: false,
 
