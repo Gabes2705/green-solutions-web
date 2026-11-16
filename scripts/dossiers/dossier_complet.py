@@ -48,6 +48,10 @@ PAYS = {
     "guadeloupe": ("Green-Solutions_Dossier-Guadeloupe", "fr"),
     "martinique": ("Green-Solutions_Dossier-Martinique", "fr"),
     "arabie-saoudite": ("Green-Solutions_Saudi-Arabia-Dossier", "en"),
+    "argentine": ("Green-Solutions_Dossier-Argentine-ES", "es"),
+    "chili": ("Green-Solutions_Dossier-Chili-ES", "es"),
+    "perou": ("Green-Solutions_Dossier-Perou-ES", "es"),
+    "croatie": ("Green-Solutions_Croatia-Dossier", "en"),
 }
 SOMMAIRE = {"sommaire", "contents", "içindekiler", "índice", "indice", "sumário", "المحتويات", "table des matières"}
 TITRE_SOMMAIRE = {"fr": "Sommaire", "en": "Contents", "es": "Índice", "pt": "Sumário", "tr": "İçindekiler", "ar": "المحتويات"}

@@ -1214,7 +1214,21 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "argentine",
     "locale": "es-AR",
     "langue": "es",
-    "pdf": "/documents/countries/argentine.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "es",
+        "href": "/documents/countries/dossiers/argentine-es.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/argentine-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/argentine-en.pdf"
+      }
+    ],
     "photos": 1,
     "credits": [
       {
@@ -2397,7 +2411,21 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "chili",
     "locale": "es-CL",
     "langue": "es",
-    "pdf": "/documents/countries/chili.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "es",
+        "href": "/documents/countries/dossiers/chili-es.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/chili-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/chili-en.pdf"
+      }
+    ],
     "photos": 3,
     "credits": [
       {
@@ -3159,7 +3187,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "croatie",
     "locale": "hr-HR",
     "langue": "hr",
-    "pdf": "/documents/countries/croatie.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/croatie-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/croatie-fr.pdf"
+      }
+    ],
     "photos": 5,
     "credits": [
       {
@@ -8376,7 +8414,21 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "perou",
     "locale": "es-PE",
     "langue": "es",
-    "pdf": "/documents/countries/perou.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "es",
+        "href": "/documents/countries/dossiers/perou-es.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/perou-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/perou-en.pdf"
+      }
+    ],
     "photos": 2,
     "credits": [
       {

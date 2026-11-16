@@ -1,4 +1,9 @@
 export default {
+  "telechargements": [
+    { "langue": "es", "fichier": "perou-es" },
+    { "langue": "fr", "fichier": "perou-fr" },
+    { "langue": "en", "fichier": "perou-en" }
+  ],
   "paysTitre": "Perú",
   "filieres": [
     {
