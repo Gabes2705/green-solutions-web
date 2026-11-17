@@ -703,6 +703,7 @@ export const ca = {
       { name: "Ahmed Elashrry", role: "Egipte i Jordània" },
       { name: "Alfrédo Curina", role: "Itàlia · Especialista en tabac" },
       { name: "Valena RA", role: "Ambaixadora oficial de Green Solutions als EUA" },
+      { name: "Micheline SYLVESTRE", role: "Distribuïdora autoritzada de Green Solutions a les Antilles i a Benín" },
       { name: "Daniel Baloche", role: "Estats Units" },
       { name: "Me Yves Haddad", role: "Advocat internacional" },
       { name: "David James", role: "Expert internacional en Paulownia · més de 20 anys d'experiència" },
