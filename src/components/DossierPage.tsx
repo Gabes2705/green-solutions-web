@@ -399,6 +399,7 @@ const RESUMES: Record<string, string[]> = {
   chili: ["es", "fr", "en"],
   perou: ["es", "fr", "en"],
   croatie: ["en", "fr"],
+  portugal: ["pt", "fr", "en"],
 };
 
 /* Page en arabe, mais dossier complet en anglais : le dossier s'affiche dans sa langue, de gauche à droite. */
@@ -432,6 +433,9 @@ const LIBELLE_DOSSIER: Record<string, string> = {
   hr: "Preuzmi dosje",
   tr: "Dosyayı indir",
 };
+
+/* Portugais du Portugal (page Portugal) : « descarregar » plutôt que « baixar », qui est brésilien. */
+const PT_PT = { dossier: "Descarregar o estudo", resume: "Descarregar o resumo" };
 
 const NOM_LANGUE: Record<string, string> = {
   fr: "Français",
@@ -499,7 +503,7 @@ export default function DossierPage({ dossier, complet }: { dossier: Dossier; co
                   hrefLang={langue}
                   lang={langue}
                 >
-                  {LIBELLE_DOSSIER[langue] ?? LIBELLE_DOSSIER.en} · {NOM_LANGUE[langue] ?? langue} (PDF)
+                  {(langue === "pt" && dossier.locale === "pt-PT" ? PT_PT.dossier : LIBELLE_DOSSIER[langue]) ?? LIBELLE_DOSSIER.en} · {NOM_LANGUE[langue] ?? langue} (PDF)
                 </a>
               ))}
             </div>
@@ -514,7 +518,7 @@ export default function DossierPage({ dossier, complet }: { dossier: Dossier; co
                   hrefLang={langue}
                   lang={langue}
                 >
-                  {LIBELLE_RESUME[langue] ?? LIBELLE_RESUME.en} · {NOM_LANGUE[langue] ?? langue}
+                  {(langue === "pt" && dossier.locale === "pt-PT" ? PT_PT.resume : LIBELLE_RESUME[langue]) ?? LIBELLE_RESUME.en} · {NOM_LANGUE[langue] ?? langue}
                 </a>
               ))}
             </div>
