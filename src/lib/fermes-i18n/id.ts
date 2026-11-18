@@ -276,7 +276,7 @@ const copy: FermesCopy = {
     titre: "Merancang pertanian ideal",
     ouverture: "Sebuah koperasi yang menerima petani hortikultura yang baru menetap. Koperasi ini membantu mereka menjual hasil panen segera dan memulai profesi barunya dengan lebih mudah.",
     texte:
-      "Pertanian ideal menanggapi wilayahnya. Ia memperhitungkan air yang tersedia, tanah, orang-orang yang bekerja di dalamnya, dan pelanggan yang akan dilayaninya. Ambisi kami bersama Christian Carnavalet adalah menghubungkan unsur-unsur ini sejak tahap perancangan proyek.",
+      "Usaha tani yang ideal disesuaikan dengan kondisi wilayahnya. Ia memperhitungkan air yang tersedia, tanah, orang-orang yang bekerja di dalamnya, dan pelanggan yang akan dilayaninya. Ambisi kami bersama Christian Carnavalet adalah menghubungkan unsur-unsur ini sejak tahap perancangan proyek.",
     etapes: [
       {
         titre: "Mulai dari lahan",

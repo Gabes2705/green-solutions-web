@@ -135,7 +135,7 @@ const copy: FermesCopy = {
         texte: [],
         puces: [
           "Uma sólida formação agronómica e uma longa prática profissional de mais de 50 anos.",
-          "A publicação de livros e conferências sobre agricultura biológica, biologia do solo e horticultura de pequena dimensão.",
+          "A publicação de livros e a realização de conferências sobre agricultura biológica, biologia do solo e horticultura de pequena dimensão.",
           "A gestão de uma cooperativa agrícola e de uma associação de agricultores biológicos.",
           "O conhecimento original e a continuidade da prática da horticultura tradicional designada «French Method», em todo o mundo, há um século.",
           "Relações privilegiadas com o meio profissional regional, os eleitos locais e as administrações da região Sul PACA.",
@@ -210,7 +210,7 @@ const copy: FermesCopy = {
     altFormation: "Pessoas reunidas à volta de uma mesa, ao ar livre, no jardim",
     altAerien: "Vista aérea do local do Instituto, com a marca «Institut»",
     legendeAerien: "Vista aérea do local, retirada do folheto de fevereiro de 2022.",
-    note: "As informações desta secção vêm do folheto do Instituto Moreau-Daverne, edição de junho de 2026. * Formandos que deram uma apreciação global de satisfação com a formação desde maio de 2021.",
+    note: "As informações desta secção vêm do folheto do Instituto Moreau-Daverne, edição de junho de 2026. * Formandos que, desde maio de 2021, deram uma apreciação global da sua satisfação com a formação.",
   },
   methode: {
     eyebrow: "O método",
@@ -227,7 +227,7 @@ const copy: FermesCopy = {
       {
         titre: "Preparar a cultura seguinte",
         texte:
-          "A sementeira e o calendário de plantação permitem antecipar as sucessões. Uma colheita liberta um lugar que novas plantas podem ocupar, consoante a época e as condições de cultivo.",
+          "O viveiro e o calendário de plantação permitem planear as culturas sucessivas. Uma colheita liberta um lugar que novas plantas podem ocupar, consoante a época e as condições de cultivo.",
       },
       {
         titre: "Construir a fertilidade",
@@ -286,7 +286,7 @@ const copy: FermesCopy = {
       {
         titre: "Desenhar uma exploração praticável",
         texte:
-          "A implantação dos canteiros, a sementeira, as circulações e os espaços de preparação das colheitas devem facilitar o trabalho diário. A gestão da água e os aportes orgânicos preparam-se a esta escala, em articulação com o calendário cultural.",
+          "A disposição dos canteiros, o viveiro, os caminhos e os espaços de preparação das colheitas devem facilitar o trabalho diário. A gestão da água e os aportes orgânicos preparam-se a esta escala, em articulação com o calendário cultural.",
       },
       {
         titre: "Formar e testar",

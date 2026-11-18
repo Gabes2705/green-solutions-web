@@ -101,7 +101,7 @@ const copy: FermesCopy = {
           "Die landwirtschaftliche Zusammenarbeit verstehen, indem man zeitweise einer Erzeugergenossenschaft angehört: «Les Petites Fermes d’Azur»",
         ],
         apres: [
-          "Das pädagogische Konzept des Instituts Moreau-Daverne stellt die Person in eine vollständige berufliche Praxis in kleinen Gemüsebaubetrieben mit Mischkulturen.",
+          "Das pädagogische Konzept des Instituts Moreau-Daverne ermöglicht den Teilnehmenden, vollständig in die berufliche Praxis kleiner Gemüsebaubetriebe mit Mischkulturen einzutauchen.",
         ],
       },
       {
@@ -146,7 +146,7 @@ const copy: FermesCopy = {
         titre: "Unsere Ausstattung",
         texte: [],
         puces: [
-          "Eine 2,2 ha große Parzelle in Cannes, nach AB durch Ecocert zertifiziert, die mehrere kooperierende Kleingärtner gemeinsam nutzen, mit Obstbäumen und essbaren Blüten, Tafeltrauben, Kleinobst, Gewächshäusern und Betriebsausrüstung.",
+          "Eine 2,2 ha große Parzelle in Cannes, nach AB durch Ecocert zertifiziert, die mehrere kooperierende Gemüsebauern gemeinsam nutzen, mit Obstbäumen und essbaren Blüten, Tafeltrauben, Kleinobst, Gewächshäusern und Betriebsausrüstung.",
           "Ein 5.000 m² großer Obstgarten in Cannes mit Hoch- und Halbstamm-Obstbäumen.",
           "Ein 220 m² großes Gebäude mit Unterrichtsräumen und professioneller Ausstattung für die Nachernte sowie sämtlichem Betriebs- und Veranstaltungsmaterial.",
           "Gesamtes manuelles und motorisiertes Betriebsmaterial, Tunnel, Arbeits- und Besprechungsräume, organische Betriebsmittel, Saatgut, Verkaufsmaterial …",

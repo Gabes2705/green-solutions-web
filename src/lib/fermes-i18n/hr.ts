@@ -52,7 +52,7 @@ const copy: FermesCopy = {
     bio1:
       "Agronom, krajobrazni savjetnik i poljoprivrednik, Christian Carnavalet je 1991. dobio naslov „Meilleur Ouvrier de France” u umjetnosti vrtova.",
     bio2:
-      "Predsjednik je agencije 3C Agro Conseil, specijalizirane za ekološku poljoprivredu, biologiju tla i organsku gnojidbu. Predsjednik je i Instituta Moreau-Daverne te zadruge „Les Petites Fermes d’Azur”. Također je povrćar, u obliku društva SAS „Les Fermiers Bio Associés”.",
+      "Predsjednik je agencije 3C Agro Conseil, specijalizirane za ekološku poljoprivredu, biologiju tla i organsku gnojidbu. Predsjednik je i Instituta Moreau-Daverne te zadruge „Les Petites Fermes d’Azur”. Također se bavi povrtlarstvom putem društva SAS „Les Fermiers Bio Associés”.",
     livresTitre: "Njegove knjige",
     livresTexte:
       "Christian Carnavalet objavio je nekoliko knjiga o ekološkoj poljoprivredi i povrćarstvu na maloj površini. Objavio je i „Biologie du sol et agriculture durable” 2015., a 2021. drugo, revidirano i prošireno izdanje.",
@@ -227,7 +227,7 @@ const copy: FermesCopy = {
       {
         titre: "Priprema sljedećeg usjeva",
         texte:
-          "Rasadnik i kalendar sadnje omogućuju planiranje sukcesija. Svaka žetva oslobađa prostor koji mogu zauzeti nove biljke, ovisno o sezoni i uvjetima uzgoja.",
+          "Rasadnik i kalendar sadnje omogućuju planiranje sukcesija. Svaka berba oslobađa prostor koji mogu zauzeti nove biljke, ovisno o sezoni i uvjetima uzgoja.",
       },
       {
         titre: "Izgradnja plodnosti",

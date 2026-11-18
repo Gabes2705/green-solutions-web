@@ -52,7 +52,7 @@ const copy: FermesCopy = {
     bio1:
       "Agronom, doradca krajobrazu i rolnik, Christian Carnavalet w 1991 roku otrzymał tytuł „Meilleur Ouvrier de France” w dziedzinie sztuki ogrodowej.",
     bio2:
-      "Przewodniczy agencji 3C Agro Conseil, specjalizującej się w rolnictwie ekologicznym, biologii gleby i nawożeniu organicznym. Przewodniczy także Institut Moreau-Daverne oraz spółdzielni „Les Petites Fermes d’Azur”. Jest również warzywnikiem, w formie spółki SAS „Les Fermiers Bio Associés”.",
+      "Przewodniczy agencji 3C Agro Conseil, specjalizującej się w rolnictwie ekologicznym, biologii gleby i nawożeniu organicznym. Przewodniczy także Institut Moreau-Daverne oraz spółdzielni „Les Petites Fermes d’Azur”. Prowadzi również uprawę warzyw za pośrednictwem spółki SAS „Les Fermiers Bio Associés”.",
     livresTitre: "Jego książki",
     livresTexte:
       "Christian Carnavalet opublikował kilka książek o rolnictwie ekologicznym i warzywnictwie na małej powierzchni. Wydał także „Biologie du sol et agriculture durable” w 2015 roku, a w 2021 roku drugie, poprawione i rozszerzone wydanie.",
@@ -276,7 +276,7 @@ const copy: FermesCopy = {
     titre: "Projektowanie idealnych gospodarstw",
     ouverture: "Spółdzielnia, która przyjmuje nowo osiadłych warzywników. Pozwala im od razu sprzedawać plony i łatwiej zaangażować się w nowy zawód.",
     texte:
-      "Idealne gospodarstwo odpowiada swojemu terytorium. Uwzględnia dostępną wodę, ziemię, osoby, które w nim pracują, i klientów, do których będzie sprzedawać. Naszą ambicją, wspólnie z Christianem Carnavaletem, jest połączenie tych elementów już na etapie projektowania.",
+      "Idealne gospodarstwo jest dostosowane do lokalnych warunków. Uwzględnia dostępną wodę, ziemię, osoby, które w nim pracują, i klientów, do których będzie sprzedawać. Naszą ambicją, wspólnie z Christianem Carnavaletem, jest połączenie tych elementów już na etapie projektowania.",
     etapes: [
       {
         titre: "Wyjście od terenu",
@@ -291,7 +291,7 @@ const copy: FermesCopy = {
       {
         titre: "Szkolenie i testowanie",
         texte:
-          "Pierwsza powierzchnia pozwala sprawdzić wybór upraw i sposoby stosowania produktów. Służy także przekazywaniu czynności, wykrywaniu trudności i korygowaniu organizacji, zanim rozszerzy się przedsięwzięcie.",
+          "Pierwsza powierzchnia pozwala sprawdzić wybór upraw i sposoby stosowania produktów. Służy także przekazywaniu umiejętności praktycznych, wykrywaniu trudności i korygowaniu organizacji, zanim rozszerzy się przedsięwzięcie.",
       },
       {
         titre: "Przygotowanie sprzedaży",
