@@ -8025,6 +8025,129 @@ export const DOSSIERS: Record<string, Dossier> = {
       "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
+  "mauritanie": {
+    "slug": "mauritanie",
+    "locale": "fr-MR",
+    "langue": "fr",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/mauritanie-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/mauritanie-en.pdf"
+      }
+    ],
+    "photos": 5,
+    "credits": [
+      {
+        "titre": "Oasis de Varesse (3).jpg",
+        "auteur": "Ji-Elle",
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Oasis de Mhaïreth (10).jpg",
+        "auteur": "Ji-Elle",
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Tichit date palms 2.jpg",
+        "auteur": "Wilson McMakin",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "The Tidjikja dates festival in Mauritania (1628).jpg",
+        "auteur": "Magharebia",
+        "licence": "CC BY 2.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Oasis de Tergit (02).jpg",
+        "auteur": "Ji-Elle",
+        "licence": "CC BY-SA 3.0",
+        "source": "commons"
+      }
+    ],
+    "cover": {
+      "eyebrow": "DOSSIER PAYS",
+      "title": "Mauritanie",
+      "officiel": "RÉPUBLIQUE ISLAMIQUE DE MAURITANIE",
+      "lieu": "Nouakchott",
+      "subtitle": "Eau, climat, engrais et cultures : Étude nationale et étude de chacune des treize wilayas.\nBénéfices potentiels de nos produits et échanges extérieurs."
+    },
+    "chiffres": {
+      "kicker": "LA MAURITANIE EN CHIFFRES",
+      "title": "Un pays où l'eau décide de tout",
+      "items": [
+        {
+          "value": "90,6 %",
+          "label": "des prélèvements d'eau vont à l'agriculture (Banque mondiale, 2022)"
+        },
+        {
+          "value": "45 010 ha",
+          "label": "équipés pour l'irrigation en 2024 (FAOSTAT)"
+        },
+        {
+          "value": "250 000 ha",
+          "label": "de potentiel irrigable, dont 136 500 ha dans la vallée du fleuve Sénégal (FAO)"
+        },
+        {
+          "value": "240 000 ha",
+          "label": "de sorgho récoltés en 2024, la première culture (FAOSTAT)"
+        }
+      ],
+      "note": "Les pluies tombent de juillet à septembre, surtout dans le sud ; le centre et le nord sont désertiques. Le riz irrigué de la vallée du fleuve Sénégal et les palmeraies des oasis concentrent l'agriculture irriguée."
+    },
+    "contrainte": null,
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": null,
+    "economie": null,
+    "productions": null,
+    "filieres": [],
+    "solutions": null,
+    "economies": null,
+    "regions": null,
+    "deploiement": null,
+    "risques": null,
+    "sources": [
+      "Banque mondiale (WDI) et FAO (FAOSTAT, AQUASTAT) : Population, eau, terres, cultures, engrais et commerce.",
+      "NASA POWER et PVGIS : Climat de chaque wilaya.",
+      "WITS (CNUCED TRAINS) et PwC : Droit de douane et TVA ; loi n° 2000-042 relative à la protection des végétaux.",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Un projet adapté à votre exploitation",
+      "body": "Indiquez la culture, le type de sol, le système d'irrigation et l'objectif du projet. Green Solutions propose un protocole comparatif et les indicateurs qui guideront la décision.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
   "oman": {
     "slug": "oman",
     "locale": "en-OM",
