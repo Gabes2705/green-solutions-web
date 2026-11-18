@@ -704,6 +704,7 @@ export const ca = {
       { name: "Alfrédo Curina", role: "Itàlia · Especialista en tabac" },
       { name: "Valena RA", role: "Ambaixadora oficial de Green Solutions als EUA" },
       { name: "Micheline SYLVESTRE", role: "Distribuïdora autoritzada de Green Solutions a les Antilles i a Benín" },
+      { name: "Mireille NTEPPE", role: "Experta en desenvolupament estratègic (medi ambient sostenible) per a l'Àfrica Occidental" },
       { name: "Daniel Baloche", role: "Estats Units" },
       { name: "Me Yves Haddad", role: "Advocat internacional" },
       { name: "David James", role: "Expert internacional en Paulownia · més de 20 anys d'experiència" },
