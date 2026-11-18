@@ -1,5 +1,11 @@
 // Las siete páginas que completan el dossier de Chile (ver build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "es", fichier: "chili-es" },
+    { langue: "fr", fichier: "chili-fr" },
+    { langue: "en", fichier: "chili-en" },
+  ],
   paysTitre: "Chile",
 
   economie: {

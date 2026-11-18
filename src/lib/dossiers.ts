@@ -1214,7 +1214,21 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "argentine",
     "locale": "es-AR",
     "langue": "es",
-    "pdf": "/documents/countries/argentine.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "es",
+        "href": "/documents/countries/dossiers/argentine-es.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/argentine-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/argentine-en.pdf"
+      }
+    ],
     "photos": 1,
     "credits": [
       {
@@ -2397,7 +2411,21 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "chili",
     "locale": "es-CL",
     "langue": "es",
-    "pdf": "/documents/countries/chili.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "es",
+        "href": "/documents/countries/dossiers/chili-es.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/chili-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/chili-en.pdf"
+      }
+    ],
     "photos": 3,
     "credits": [
       {
@@ -3159,7 +3187,17 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "croatie",
     "locale": "hr-HR",
     "langue": "hr",
-    "pdf": "/documents/countries/croatie.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/croatie-en.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/croatie-fr.pdf"
+      }
+    ],
     "photos": 5,
     "credits": [
       {
@@ -8376,7 +8414,21 @@ export const DOSSIERS: Record<string, Dossier> = {
     "slug": "perou",
     "locale": "es-PE",
     "langue": "es",
-    "pdf": "/documents/countries/perou.pdf",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "es",
+        "href": "/documents/countries/dossiers/perou-es.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/perou-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/perou-en.pdf"
+      }
+    ],
     "photos": 2,
     "credits": [
       {
@@ -8591,6 +8643,133 @@ export const DOSSIERS: Record<string, Dossier> = {
     "closing": {
       "title": "Hablemos de su predio",
       "body": "Cultivo, superficie, origen del agua, tipo de suelo y objetivo económico. Con esos datos podemos preparar una propuesta de ensayo y un presupuesto verificable.\n\nEl punto de partida es concreto: medir el agua utilizada por kilogramo comercializable y la rentabilidad del manejo.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
+  "portugal": {
+    "slug": "portugal",
+    "locale": "pt-PT",
+    "langue": "pt",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "pt",
+        "href": "/documents/countries/dossiers/portugal-pt.pdf"
+      },
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/portugal-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/portugal-en.pdf"
+      }
+    ],
+    "photos": 5,
+    "credits": [
+      {
+        "titre": "Terraced vineyards in the douro valley.jpg",
+        "auteur": "Rosino",
+        "licence": "CC BY-SA 2.0",
+        "source": "commons"
+      },
+      {
+        "titre": "2026-07-19 Pear orchards in Bombarral.jpg",
+        "auteur": "Alexkom000",
+        "licence": "CC BY 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Citrus Orchard, Vale de Paraíso, Albufeira, 19 January 2016 (1).JPG",
+        "auteur": "Kolforn",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Portugal - Algarve - Paderne - Almond grove (25552460570).jpg",
+        "auteur": "muffinn",
+        "licence": "CC BY 2.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Quinta Vale da Roca vineyard and Atlantic coast 1.jpg",
+        "auteur": "SenseiPablo",
+        "licence": "CC0",
+        "source": "commons"
+      }
+    ],
+    "cover": {
+      "eyebrow": "DOSSIÊ DO PAÍS",
+      "title": "Portugal",
+      "officiel": "REPÚBLICA PORTUGUESA",
+      "lieu": "Lisboa",
+      "subtitle": "Água, clima, fertilizantes e culturas: Estudo nacional e estudo de cada distrito, da Madeira e dos Açores.\nBenefícios potenciais dos nossos produtos e comércio externo."
+    },
+    "chiffres": {
+      "kicker": "PORTUGAL EM NÚMEROS",
+      "title": "Um país regado no verão",
+      "items": [
+        {
+          "value": "637.340 ha",
+          "label": "equipados para rega em 2024 (FAOSTAT)"
+        },
+        {
+          "value": "55,4%",
+          "label": "das captações de água vão para a agricultura (Banco Mundial, 2022)"
+        },
+        {
+          "value": "380.780 ha",
+          "label": "de olival colhidos em 2024, a primeira cultura (FAOSTAT)"
+        },
+        {
+          "value": "445 Mm³",
+          "label": "de água de rega poupada por ano no cenário central"
+        }
+      ],
+      "note": "O clima é mediterrânico: A chuva cai de outubro a abril, e o verão é seco. O Alentejo e o Algarve atravessam longas secas de verão, quando as culturas mais precisam de água."
+    },
+    "contrainte": null,
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": null,
+    "economie": null,
+    "productions": null,
+    "filieres": [],
+    "solutions": null,
+    "economies": null,
+    "regions": null,
+    "deploiement": null,
+    "risques": null,
+    "sources": [
+      "Banco Mundial (WDI) e FAO (FAOSTAT): População, água, terras, culturas, fertilizantes e comércio.",
+      "NASA POWER, ERA5 (Copernicus) e PVGIS: Clima por distrito.",
+      "EDIA, Anuário Agrícola de Alqueva 2024; Decreto-Lei n.º 30/2022; União Europeia (pauta aduaneira comum, Regulamento 2019/1009).",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Um projeto adequado à sua exploração",
+      "body": "Indique a cultura, o tipo de solo, o sistema de rega e o objetivo do projeto. A Green Solutions propõe um protocolo comparativo e os indicadores que orientarão a decisão.",
       "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },

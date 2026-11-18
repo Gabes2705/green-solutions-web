@@ -1,5 +1,10 @@
 // Sedam stranica koje dopunjuju dosje za Hrvatsku (vidi build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. Pas de version croate : l'anglais d'abord. */
+  telechargements: [
+    { langue: "en", fichier: "croatie-en" },
+    { langue: "fr", fichier: "croatie-fr" },
+  ],
   paysTitre: "Hrvatsku",
 
   economie: {

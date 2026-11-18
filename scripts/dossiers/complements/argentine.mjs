@@ -1,5 +1,11 @@
 // Las siete páginas que completan el dossier de Argentina (ver build.mjs).
 export default {
+  /* Un dossier complet par langue, qui remplace le PDF de présentation. */
+  telechargements: [
+    { langue: "es", fichier: "argentine-es" },
+    { langue: "fr", fichier: "argentine-fr" },
+    { langue: "en", fichier: "argentine-en" },
+  ],
   paysTitre: "Argentina",
 
   economie: {
