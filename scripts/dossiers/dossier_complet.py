@@ -53,6 +53,7 @@ PAYS = {
     "perou": ("Green-Solutions_Dossier-Perou-ES", "es"),
     "croatie": ("Green-Solutions_Croatia-Dossier", "en"),
     "portugal": ("Green-Solutions_Dossier-Portugal-PT", "pt"),
+    "mauritanie": ("Green-Solutions_Dossier-Mauritanie", "fr"),
 }
 SOMMAIRE = {"sommaire", "contents", "içindekiler", "índice", "indice", "sumário", "المحتويات", "table des matières"}
 TITRE_SOMMAIRE = {"fr": "Sommaire", "en": "Contents", "es": "Índice", "pt": "Sumário", "tr": "İçindekiler", "ar": "المحتويات"}

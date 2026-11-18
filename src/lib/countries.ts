@@ -53,6 +53,7 @@ export const COUNTRY_SLUGS = [
   "turquie",
   "togo",
   "portugal",
+  "mauritanie",
 ] as const;
 
 export type CountrySlug = (typeof COUNTRY_SLUGS)[number];
@@ -98,6 +99,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Turquie",
     togo: "Togo",
     portugal: "Portugal",
+    mauritanie: "Mauritanie",
   },
   en: {
     "cote-divoire": "Côte d’Ivoire",
@@ -131,6 +133,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Türkiye",
     togo: "Togo",
     portugal: "Portugal",
+    mauritanie: "Mauritania",
   },
   es: {
     "cote-divoire": "Côte d’Ivoire",
@@ -164,6 +167,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Turquía",
     togo: "Togo",
     portugal: "Portugal",
+    mauritanie: "Mauritania",
   },
   pt: {
     "cote-divoire": "Costa do Marfim",
@@ -197,6 +201,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Turquia",
     togo: "Togo",
     portugal: "Portugal",
+    mauritanie: "Mauritânia",
   },
   ar: {
     "cote-divoire": "ساحل العاج",
@@ -230,6 +235,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "تركيا",
     togo: "توغو",
     portugal: "البرتغال",
+    mauritanie: "موريتانيا",
   },
   zh: {
     "cote-divoire": "科特迪瓦",
@@ -263,6 +269,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "土耳其",
     togo: "多哥",
     portugal: "葡萄牙",
+    mauritanie: "毛里塔尼亚",
   },
   id: {
     "cote-divoire": "Côte d’Ivoire",
@@ -296,6 +303,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Turki",
     togo: "Togo",
     portugal: "Portugal",
+    mauritanie: "Mauritania",
   },
   de: {
     "cote-divoire": "Côte d’Ivoire",
@@ -329,6 +337,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Türkei",
     togo: "Togo",
     portugal: "Portugal",
+    mauritanie: "Mauretanien",
   },
   it: {
     "cote-divoire": "Costa d’Avorio",
@@ -362,6 +371,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Turchia",
     togo: "Togo",
     portugal: "Portogallo",
+    mauritanie: "Mauritania",
   },
   el: {
     "cote-divoire": "Ακτή Ελεφαντοστού",
@@ -395,6 +405,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Τουρκία",
     togo: "Τόγκο",
     portugal: "Πορτογαλία",
+    mauritanie: "Μαυριτανία",
   },
   tr: {
     "cote-divoire": "Côte d’Ivoire",
@@ -428,6 +439,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Türkiye",
     togo: "Togo",
     portugal: "Portekiz",
+    mauritanie: "Moritanya",
   },
   pl: {
     "cote-divoire": "Côte d’Ivoire",
@@ -461,6 +473,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Turcja",
     togo: "Togo",
     portugal: "Portugalia",
+    mauritanie: "Mauretania",
   },
   hr: {
     "cote-divoire": "Obala Bjelokosti",
@@ -494,6 +507,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     turquie: "Turska",
     togo: "Togo",
     portugal: "Portugal",
+    mauritanie: "Mauretanija",
   },
 };
 

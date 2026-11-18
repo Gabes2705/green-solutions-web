@@ -337,6 +337,15 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       </g>
     </>
   ),
+  mauritanie: () => (
+    <>
+      <rect width="30" height="20" fill="#00A95C" />
+      <rect width="30" height="3" fill="#D01C1F" />
+      <rect y="17" width="30" height="3" fill="#D01C1F" />
+      <path d="M9.6 8.2a5.4 5.4 0 0 0 10.8 0a5.4 4.6 0 0 1 -10.8 0z" fill="#FFD700" />
+      <path d="M15 4.6l0.62 1.9h2l-1.62 1.18 0.62 1.9-1.62-1.18-1.62 1.18 0.62-1.9-1.62-1.18h2z" fill="#FFD700" />
+    </>
+  ),
   portugal: () => (
     <>
       <rect width="30" height="20" fill="#DA291C" />
