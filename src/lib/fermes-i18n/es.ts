@@ -52,7 +52,7 @@ const copy: FermesCopy = {
     bio1:
       "Agrónomo, paisajista consultor y agricultor, Christian Carnavalet obtuvo en 1991 el título de « Meilleur Ouvrier de France » en Arte de los Jardines.",
     bio2:
-      "Preside la agencia 3C Agro Conseil, especializada en agricultura ecológica, biología del suelo y fertilización orgánica. También preside el Institut Moreau-Daverne y la cooperativa « Les Petites Fermes d’Azur ». Además es horticultor, bajo la forma de la SAS « Les Fermiers Bio Associés ».",
+      "Preside la agencia 3C Agro Conseil, especializada en agricultura ecológica, biología del suelo y fertilización orgánica. También preside el Institut Moreau-Daverne y la cooperativa « Les Petites Fermes d’Azur ». Además ejerce la horticultura a través de la sociedad SAS « Les Fermiers Bio Associés ».",
     livresTitre: "Sus libros",
     livresTexte:
       "Christian Carnavalet ha publicado varios libros sobre la agricultura ecológica y la horticultura en pequeña superficie. También publicó « Biologie du sol et agriculture durable » en 2015, y una segunda edición revisada y ampliada en 2021.",
@@ -135,7 +135,7 @@ const copy: FermesCopy = {
         texte: [],
         puces: [
           "Una sólida formación agronómica y una larga práctica profesional de más de 50 años.",
-          "La publicación de libros y conferencias sobre agricultura ecológica, biología del suelo y horticultura de pequeña superficie.",
+          "La publicación de libros y la impartición de conferencias sobre agricultura ecológica, biología del suelo y horticultura de pequeña superficie.",
           "La gestión de una cooperativa agrícola y de una asociación de agricultores ecológicos.",
           "El conocimiento original y la continuidad de la práctica de la horticultura tradicional llamada «French Method», en todo el mundo desde hace un siglo.",
           "Relaciones privilegiadas con el mundo profesional regional, los cargos electos locales y las administraciones de la región Sud PACA.",

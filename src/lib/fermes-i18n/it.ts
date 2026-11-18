@@ -276,7 +276,7 @@ const copy: FermesCopy = {
     titre: "Progettare fattorie ideali",
     ouverture: "Una cooperativa che accoglie gli orticoltori appena insediati. Permette loro di vendere subito i prodotti e di impegnarsi più facilmente nel loro nuovo mestiere.",
     texte:
-      "Una fattoria ideale risponde al suo territorio. Tiene conto dell'acqua disponibile, della terra, delle persone che vi lavorano e dei clienti ai quali venderà. La nostra ambizione, con Christian Carnavalet, è riunire questi elementi fin dalla progettazione del progetto.",
+      "Una fattoria ideale risponde al suo territorio. Tiene conto dell'acqua disponibile, della terra, delle persone che vi lavorano e dei clienti ai quali venderà. La nostra ambizione, con Christian Carnavalet, è riunire questi elementi fin dalle prime fasi di progettazione.",
     etapes: [
       {
         titre: "Partire dal terreno",
@@ -346,7 +346,7 @@ const copy: FermesCopy = {
     texte:
       "Ci indichi il Paese, la superficie prevista, le colture e le risorse idriche. Potremo organizzare un primo colloquio sulle condizioni concrete del suo progetto.",
     rdv: "Prenoti un appuntamento",
-    presenter: "Presenti il mio progetto di fattoria",
+    presenter: "Presentare il mio progetto di fattoria",
     note: "Oppure ci scriva direttamente a contact@green-solutions-group.com.",
   },
   pied: {

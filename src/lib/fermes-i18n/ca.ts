@@ -222,7 +222,7 @@ const copy: FermesCopy = {
       {
         titre: "Associar els cultius",
         texte:
-          "La disposició de les plantes té en compte la seva alçada, la seva velocitat de creixement i l’espai que ocupen. Les consociacions permeten conviure cultius els cicles dels quals es complementen, en lloc de reservar sistemàticament un bancal a una sola espècie.",
+          "La disposició de les plantes té en compte la seva alçada, la seva velocitat de creixement i l’espai que ocupen. Les consociacions permeten que convisquin cultius els cicles dels quals es complementen, en lloc de reservar sistemàticament un bancal a una sola espècie.",
       },
       {
         titre: "Preparar el cultiu següent",
@@ -346,7 +346,7 @@ const copy: FermesCopy = {
     texte:
       "Indiqui’ns el país, la superfície prevista, els cultius i els recursos hídrics. Podrem organitzar una primera trobada sobre les condicions concretes del seu projecte.",
     rdv: "Demani una cita",
-    presenter: "Presenti el meu projecte de granja",
+    presenter: "Presentar el meu projecte de granja",
     note: "O escriviu-nos directament a contact@green-solutions-group.com.",
   },
   pied: {

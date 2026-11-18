@@ -346,7 +346,7 @@ const copy: FermesCopy = {
     texte:
       "Bize ülkeyi, düşündüğünüz alanı, ürünleri ve su kaynaklarını anlatın. Projenizin somut koşulları hakkında ilk görüşmeyi düzenleyebiliriz.",
     rdv: "Randevu alın",
-    presenter: "Çiftlik projemi sunun",
+    presenter: "Çiftlik projemi sunmak",
     note: "Ya da doğrudan contact@green-solutions-group.com adresine yazın.",
   },
   pied: {

@@ -55,7 +55,7 @@ const copy: FermesCopy = {
       "He chairs the 3C Agro Conseil agency, which specialises in organic farming, soil biology and organic fertilisation. He also chairs the Institut Moreau-Daverne and the “Les Petites Fermes d’Azur” cooperative. He is also a market gardener, through the company “Les Fermiers Bio Associés”.",
     livresTitre: "His books",
     livresTexte:
-      "Christian Carnavalet has published several books on organic farming and small-scale market gardening. He has also published “Biologie du sol et agriculture durable” in 2015, then a revised and expanded second edition in 2021.",
+      "Christian Carnavalet has published several books on organic farming and small-scale market gardening. He also published “Biologie du sol et agriculture durable” in 2015, then a revised and expanded second edition in 2021.",
     couverture: "Cover of",
     livresDetails: [
       "3rd edition · France Agricole · 2024 · 620 p.",
@@ -237,7 +237,7 @@ const copy: FermesCopy = {
       {
         titre: "From small to larger areas",
         texte:
-          "On a small farm, work can remain largely manual. The reference document also describes an adaptation to larger areas, with spacings and an organisation compatible with mechanisation. Changing scale means rethinking circulation, harvesting and logistics, without losing the logic of companion planting.",
+          "On a small farm, work can remain largely manual. The reference document also describes an adaptation to larger areas, with spacing and a layout compatible with mechanisation. Changing scale means rethinking circulation, harvesting and logistics, without losing the logic of companion planting.",
       },
     ],
   },
@@ -255,7 +255,7 @@ const copy: FermesCopy = {
       {
         titre: "ECOFERT® and crop nutrition",
         texte:
-          "ECOFERT can be integrated into a nutrition programme built on the needs of the crop. Its use should be reasoned alongside the fertilisation practices already in place, rather than added automatically to every growing plan.",
+          "ECOFERT can be integrated into a nutrition programme built on the needs of the crop. Its use should be considered alongside the fertilisation practices already in place, rather than added automatically to every growing plan.",
       },
       {
         titre: "A place for EVERGREEN, depending on the project",
@@ -276,7 +276,7 @@ const copy: FermesCopy = {
     titre: "Designing ideal farms",
     ouverture: "A cooperative that welcomes newly established market gardeners. It lets them sell their produce straight away and take on their new trade more easily.",
     texte:
-      "An ideal farm responds to its territory. It takes into account the water available, the land, the people who work there and the customers it will sell to. Our ambition with Christian Carnavalet is to bring these elements together from the design stage of the project.",
+      "An ideal farm is suited to its local conditions. It takes into account the water available, the land, the people who work there and the customers it will sell to. Our ambition with Christian Carnavalet is to bring these elements together from the design stage of the project.",
     etapes: [
       {
         titre: "Start from the ground",
