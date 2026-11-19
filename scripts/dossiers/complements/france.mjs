@@ -3,6 +3,7 @@ export default {
   /* Un dossier complet par langue, qui remplace le PDF de présentation. */
   telechargements: [
     { langue: "fr", fichier: "france-fr" },
+    { langue: "en", fichier: "france-en" },
   ],
 
   paysTitre: "la France",

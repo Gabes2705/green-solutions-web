@@ -3,6 +3,7 @@ export default {
   /* Un dossier complet par langue, qui remplace le PDF de présentation. */
   telechargements: [
     { langue: "fr", fichier: "gabon-fr" },
+    { langue: "en", fichier: "gabon-en" },
   ],
 
   paysTitre: "le Gabon",

@@ -4306,6 +4306,10 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "langue": "es",
         "href": "/documents/countries/dossiers/espagne-es.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/espagne-en.pdf"
       }
     ],
     "photos": 4,
@@ -5058,6 +5062,10 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "langue": "fr",
         "href": "/documents/countries/dossiers/france-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/france-en.pdf"
       }
     ],
     "photos": 7,
@@ -5435,6 +5443,10 @@ export const DOSSIERS: Record<string, Dossier> = {
       {
         "langue": "fr",
         "href": "/documents/countries/dossiers/gabon-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/gabon-en.pdf"
       }
     ],
     "photos": 4,

@@ -369,8 +369,8 @@ const RETOUR: Record<string, string> = {
 /* Les résumés de deux pages, dans les langues où ils existent.
  * Fichiers : public/documents/countries/resumes/<pays>-<langue>.pdf */
 const RESUMES: Record<string, string[]> = {
-  espagne: ["es"],
-  france: ["fr"],
+  espagne: ["es", "en"],
+  france: ["fr", "en"],
   liban: ["fr", "en", "es", "ar"],
   oman: ["en", "es", "ar"],
   usa: ["en"],
@@ -380,7 +380,7 @@ const RESUMES: Record<string, string[]> = {
   turquie: ["tr", "en", "fr"],
   togo: ["fr", "en"],
   maroc: ["fr", "en"],
-  gabon: ["fr"],
+  gabon: ["fr", "en"],
   cameroun: ["fr", "en"],
   "cote-divoire": ["fr", "en"],
   senegal: ["fr", "en"],
