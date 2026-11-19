@@ -9,7 +9,9 @@ import { useLanguage } from "@/lib/LanguageContext";
 export default function CountryStudies() {
   const { c, language } = useLanguage();
   const cs = c.countryStudies;
-  const items = countryItems(language);
+  // Par ordre alphabétique dans la langue du site (pinyin en chinois).
+  const ordre = new Intl.Collator(language);
+  const items = countryItems(language).sort((a, b) => ordre.compare(a.country, b.country));
 
   return (
     <section id="etudes-pays" className="section section-alt">
