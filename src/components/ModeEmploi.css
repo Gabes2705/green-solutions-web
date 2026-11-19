@@ -1,0 +1,92 @@
+/* Mode d'emploi EVERGREEN® / ECOSORB® : la présentation des dossiers pays
+   (DossierPage.css), avec la mise en page « catalogue » du Word : photo à côté
+   du texte quand elle est haute, photos en rangée, de l'air sous chaque photo. */
+
+.me-hero {
+  min-height: 48vh;
+}
+
+.me-titre {
+  margin: 0;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.1;
+  color: #fff;
+  text-wrap: balance;
+}
+
+.me-corps h3.me-partie {
+  margin: 3rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--leaf-light);
+  font-size: clamp(1.35rem, 1.05rem + 1vw, 1.8rem);
+  line-height: 1.2;
+  color: var(--ink);
+  scroll-margin-top: 5rem;
+}
+
+.me-corps h4 {
+  margin: 1.8rem 0 0.6rem;
+  font-size: 1.08rem;
+  color: var(--leaf-deep);
+}
+
+.me-corps figure {
+  margin: 1.4rem auto 2rem;
+}
+
+.me-corps a {
+  color: var(--leaf-deep);
+  overflow-wrap: anywhere;
+}
+
+.me-cote {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 1.8rem;
+  align-items: start;
+}
+
+.me-cote figure {
+  margin-top: 0.4rem;
+}
+
+.me-rangee {
+  display: grid;
+  gap: 1.2rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.me-rangee-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.me-rangee-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.me-rangee figure {
+  margin: 0;
+}
+
+.me-rangee img {
+  width: 100%;
+}
+
+/* Les trois microgranulateurs : même cadre carré, comme dans le Word. */
+.me-rangee-3 img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.me-rangee-2 {
+  align-items: end;
+}
+
+@media (max-width: 720px) {
+  .me-cote {
+    grid-template-columns: 1fr;
+  }
+  .me-rangee-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
