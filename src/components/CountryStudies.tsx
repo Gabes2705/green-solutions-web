@@ -3,7 +3,7 @@
 import Reveal from "./Reveal";
 import CountryFlag from "./CountryFlag";
 import { countryItems } from "@/lib/countries";
-import { DOSSIER_LANGS, dossierHref } from "@/lib/dossiers-index";
+import { dossierHref } from "@/lib/dossiers-index";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function CountryStudies() {
@@ -56,13 +56,12 @@ export default function CountryStudies() {
           {items.map((item) => (
             <a
               key={item.slug}
-              // Dix-neuf pays ont désormais une vraie page, lisible par les
-              // moteurs de recherche ; les cinq autres n'existent qu'en PDF et
-              // gardent la visionneuse.
+              // Un pays qui a une page l'ouvre, dans la langue de son dossier,
+              // quelle que soit la langue du site : c'est là que sont les
+              // boutons de téléchargement. Les autres gardent la visionneuse.
               href={
-                DOSSIER_LANGS[item.slug] === language
-                  ? dossierHref(item.slug)!
-                  : `/${language}/etudes?file=${encodeURIComponent(item.href)}&name=${encodeURIComponent(item.country)}`
+                dossierHref(item.slug) ??
+                `/${language}/etudes?file=${encodeURIComponent(item.href)}&name=${encodeURIComponent(item.country)}`
               }
               className="country-item"
             >
