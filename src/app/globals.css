@@ -4189,7 +4189,10 @@ body li {
      on la remonte pour que le quatrième bouton la suive de près. */
   margin-top: -1em;
   margin-bottom: 1.8em;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7em 0.9em;
   animation: hero-in 0.85s cubic-bezier(0.2, 0.8, 0.2, 1) 0.78s both;
 }
 

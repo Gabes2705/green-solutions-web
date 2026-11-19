@@ -19,6 +19,7 @@ import TenirAvancer from "@/components/TenirAvancer";
 import GainAuChamp from "@/components/GainAuChamp";
 import TestsRapports from "@/components/TestsRapports";
 import CropExperience from "@/components/CropExperience";
+import ModeEmploi from "@/components/ModeEmploi";
 
 export const dynamicParams = true;
 
@@ -64,6 +65,7 @@ export default function Home() {
       <Resources />
       <Statement />
       <Contact />
+      <ModeEmploi />
       <Footer />
     </main>
   );

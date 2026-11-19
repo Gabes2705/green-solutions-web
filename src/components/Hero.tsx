@@ -48,6 +48,24 @@ export default function Hero() {
     ca: "Els nostres socis",
   }[language];
 
+  // Le mode d'emploi EVERGREEN® / ECOSORB®, dernière rubrique de l'accueil.
+  const modeEmploiLabel = {
+    fr: "Mode d'emploi EVERGREEN® et ECOSORB®",
+    en: "EVERGREEN® and ECOSORB® user guide",
+    es: "Modo de empleo EVERGREEN® y ECOSORB®",
+    pt: "Modo de utilização EVERGREEN® e ECOSORB®",
+    ar: "دليل استخدام EVERGREEN® وECOSORB®",
+    zh: "EVERGREEN® 和 ECOSORB® 使用说明",
+    id: "Petunjuk penggunaan EVERGREEN® dan ECOSORB®",
+    de: "Gebrauchsanleitung EVERGREEN® und ECOSORB®",
+    it: "Istruzioni per l'uso EVERGREEN® ed ECOSORB®",
+    el: "Οδηγίες χρήσης EVERGREEN® και ECOSORB®",
+    tr: "EVERGREEN® ve ECOSORB® kullanım kılavuzu",
+    pl: "Instrukcja stosowania EVERGREEN® i ECOSORB®",
+    hr: "Upute za uporabu EVERGREEN® i ECOSORB®",
+    ca: "Mode d'ús EVERGREEN® i ECOSORB®",
+  }[language];
+
   return (
     <div className="stage">
       <div className="hero-photo">
@@ -96,6 +114,9 @@ export default function Hero() {
         <div className="hero-cta-impact-ligne">
           <a href="#gain-au-champ" className="btn-3d btn-3d-light hero-cta-impact">
             {(TEXTES[language] ?? TEXTES.fr).bouton}
+          </a>
+          <a href="#mode-emploi" className="btn-3d btn-3d-light hero-cta-impact">
+            {modeEmploiLabel}
           </a>
         </div>
       </HeroParallax>
