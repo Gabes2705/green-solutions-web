@@ -18,6 +18,7 @@ export const DOSSIER_LANGS: Record<string, string> = {
   "bresil": "pt",
   "cameroun": "fr",
   "chili": "es",
+  "congo": "fr",
   "cote-divoire": "fr",
   "croatie": "hr",
   "djibouti": "fr",

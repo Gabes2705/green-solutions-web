@@ -55,6 +55,7 @@ export const COUNTRY_SLUGS = [
   "portugal",
   "mauritanie",
   "rdc",
+  "congo",
 ] as const;
 
 export type CountrySlug = (typeof COUNTRY_SLUGS)[number];
@@ -102,6 +103,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portugal",
     mauritanie: "Mauritanie",
     rdc: "République démocratique du Congo",
+    congo: "République du Congo",
   },
   en: {
     "cote-divoire": "Côte d’Ivoire",
@@ -137,6 +139,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portugal",
     mauritanie: "Mauritania",
     rdc: "Democratic Republic of the Congo",
+    congo: "Republic of the Congo",
   },
   es: {
     "cote-divoire": "Côte d’Ivoire",
@@ -172,6 +175,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portugal",
     mauritanie: "Mauritania",
     rdc: "República Democrática del Congo",
+    congo: "República del Congo",
   },
   pt: {
     "cote-divoire": "Costa do Marfim",
@@ -207,6 +211,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portugal",
     mauritanie: "Mauritânia",
     rdc: "República Democrática do Congo",
+    congo: "República do Congo",
   },
   ar: {
     "cote-divoire": "ساحل العاج",
@@ -242,6 +247,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "البرتغال",
     mauritanie: "موريتانيا",
     rdc: "جمهورية الكونغو الديمقراطية",
+    congo: "جمهورية الكونغو",
   },
   zh: {
     "cote-divoire": "科特迪瓦",
@@ -277,6 +283,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "葡萄牙",
     mauritanie: "毛里塔尼亚",
     rdc: "刚果民主共和国",
+    congo: "刚果共和国",
   },
   id: {
     "cote-divoire": "Côte d’Ivoire",
@@ -312,6 +319,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portugal",
     mauritanie: "Mauritania",
     rdc: "Republik Demokratik Kongo",
+    congo: "Republik Kongo",
   },
   de: {
     "cote-divoire": "Côte d’Ivoire",
@@ -347,6 +355,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portugal",
     mauritanie: "Mauretanien",
     rdc: "Demokratische Republik Kongo",
+    congo: "Republik Kongo",
   },
   it: {
     "cote-divoire": "Costa d’Avorio",
@@ -382,6 +391,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portogallo",
     mauritanie: "Mauritania",
     rdc: "Repubblica Democratica del Congo",
+    congo: "Repubblica del Congo",
   },
   el: {
     "cote-divoire": "Ακτή Ελεφαντοστού",
@@ -417,6 +427,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Πορτογαλία",
     mauritanie: "Μαυριτανία",
     rdc: "Λαϊκή Δημοκρατία του Κονγκό",
+    congo: "Δημοκρατία του Κονγκό",
   },
   tr: {
     "cote-divoire": "Côte d’Ivoire",
@@ -452,6 +463,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portekiz",
     mauritanie: "Moritanya",
     rdc: "Demokratik Kongo Cumhuriyeti",
+    congo: "Kongo Cumhuriyeti",
   },
   pl: {
     "cote-divoire": "Côte d’Ivoire",
@@ -487,6 +499,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portugalia",
     mauritanie: "Mauretania",
     rdc: "Demokratyczna Republika Konga",
+    congo: "Republika Konga",
   },
   hr: {
     "cote-divoire": "Obala Bjelokosti",
@@ -522,6 +535,7 @@ export const COUNTRY_NAMES: Record<string, NameTable> = {
     portugal: "Portugal",
     mauritanie: "Mauretanija",
     rdc: "Demokratska Republika Kongo",
+    congo: "Republika Kongo",
   },
 };
 
