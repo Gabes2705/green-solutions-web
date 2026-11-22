@@ -135,7 +135,7 @@ const baseContent = {
       tagline: "Toutes nos solutions disruptives sont utilisables pour toutes les plantes et cultures, sous tous les climats et tous types de sol !",
       stats: [
         { num: "30", label: "partenaires" },
-        { num: "50", label: "pays" },
+        { num: "51", label: "pays" },
         { num: "5", label: "technologies de marque" },
       ],
       distinguish: [
@@ -499,9 +499,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Ils travaillent avec nous",
-      title: "Un réseau dans 50 pays",
+      title: "Un réseau dans 51 pays",
       lede: "Producteurs, coopératives, spécialistes du traitement de l'eau, universités et instituts de recherche, présents sur cinq continents.",
-      mapAriaLabel: "Carte du réseau Green Solutions dans 50 pays",
+      mapAriaLabel: "Carte du réseau Green Solutions dans 51 pays",
     },
     countryStudies: {
       eyebrow: "Approche pays",
@@ -635,7 +635,7 @@ const baseContent = {
       "Émirats arabes unis", "Mexique", "Turquie", "Indonésie", "Chine", "Égypte",
       "Algérie", "Argentine", "Chili", "Gabon", "Ghana", "Jordanie", "Koweït", "Croatie", "Madagascar",
       "Bénin", "Guadeloupe", "Martinique",
-      "Liban", "Éthiopie", "Djibouti", "Pérou", "Togo", "Mauritanie", "Maurice",
+      "Liban", "Éthiopie", "Djibouti", "Pérou", "Togo", "Mauritanie", "Maurice", "République démocratique du Congo",
     ],
   },
   en: {
@@ -770,7 +770,7 @@ const baseContent = {
       tagline: "All our disruptive solutions can be used on every plant and crop, in every climate and soil type!",
       stats: [
         { num: "30", label: "partners" },
-        { num: "50", label: "countries" },
+        { num: "51", label: "countries" },
         { num: "5", label: "branded technologies" },
       ],
       distinguish: [
@@ -1134,9 +1134,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "They work with us",
-      title: "A network across 50 countries",
+      title: "A network across 51 countries",
       lede: "Producers, cooperatives, water-treatment specialists, universities and research institutes, present across five continents.",
-      mapAriaLabel: "Map of the Green Solutions network across 50 countries",
+      mapAriaLabel: "Map of the Green Solutions network across 51 countries",
     },
     countryStudies: {
       eyebrow: "Country approach",
@@ -1270,7 +1270,7 @@ const baseContent = {
       "United Arab Emirates", "Mexico", "Turkey", "Indonesia", "China", "Egypt",
       "Algeria", "Argentina", "Chile", "Gabon", "Ghana", "Jordan", "Kuwait", "Croatia", "Madagascar",
       "Benin", "Guadeloupe", "Martinique",
-      "Lebanon", "Ethiopia", "Djibouti", "Peru", "Togo", "Mauritania", "Mauritius",
+      "Lebanon", "Ethiopia", "Djibouti", "Peru", "Togo", "Mauritania", "Mauritius", "Democratic Republic of the Congo",
     ],
   },
   es: {
@@ -1405,7 +1405,7 @@ const baseContent = {
       tagline: "¡Todas nuestras soluciones disruptivas se pueden usar en cualquier planta o cultivo, en cualquier clima y cualquier tipo de suelo!",
       stats: [
         { num: "30", label: "socios" },
-        { num: "50", label: "países" },
+        { num: "51", label: "países" },
         { num: "5", label: "tecnologías de marca" },
       ],
       distinguish: [
@@ -1769,9 +1769,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Trabajan con nosotros",
-      title: "Una red en 50 países",
+      title: "Una red en 51 países",
       lede: "Productores, cooperativas, especialistas en tratamiento de agua, universidades e institutos de investigación, presentes en cinco continentes.",
-      mapAriaLabel: "Mapa de la red Green Solutions en 50 países",
+      mapAriaLabel: "Mapa de la red Green Solutions en 51 países",
     },
     countryStudies: {
       eyebrow: "Enfoque por país",
@@ -1905,7 +1905,7 @@ const baseContent = {
       "Emiratos Árabes Unidos", "México", "Turquía", "Indonesia", "China", "Egipto",
       "Argelia", "Argentina", "Chile", "Gabón", "Ghana", "Jordania", "Kuwait", "Croacia", "Madagascar",
       "Benín", "Guadalupe", "Martinica",
-      "Líbano", "Etiopía", "Yibuti", "Perú", "Togo", "Mauritania", "Mauricio",
+      "Líbano", "Etiopía", "Yibuti", "Perú", "Togo", "Mauritania", "Mauricio", "República Democrática del Congo",
     ],
   },
   pt: {
@@ -2040,7 +2040,7 @@ const baseContent = {
       tagline: "Todas as nossas soluções disruptivas podem ser usadas em qualquer planta ou cultura, em qualquer clima e qualquer tipo de solo!",
       stats: [
         { num: "30", label: "parceiros" },
-        { num: "50", label: "países" },
+        { num: "51", label: "países" },
         { num: "5", label: "tecnologias de marca" },
       ],
       distinguish: [
@@ -2404,9 +2404,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Trabalham connosco",
-      title: "Uma rede em 50 países",
+      title: "Uma rede em 51 países",
       lede: "Produtores, cooperativas, especialistas em tratamento de água, universidades e institutos de investigação, presentes em cinco continentes.",
-      mapAriaLabel: "Mapa da rede Green Solutions em 50 países",
+      mapAriaLabel: "Mapa da rede Green Solutions em 51 países",
     },
     countryStudies: {
       eyebrow: "Abordagem por país",
@@ -2540,7 +2540,7 @@ const baseContent = {
       "Emirados Árabes Unidos", "México", "Turquia", "Indonésia", "China", "Egito",
       "Argélia", "Argentina", "Chile", "Gabão", "Gana", "Jordânia", "Kuwait", "Croácia", "Madagáscar",
       "Benin", "Guadalupe", "Martinica",
-      "Líbano", "Etiópia", "Djibuti", "Peru", "Togo", "Mauritânia", "Maurícia",
+      "Líbano", "Etiópia", "Djibuti", "Peru", "Togo", "Mauritânia", "Maurícia", "República Democrática do Congo",
     ],
   },
   ar: {
@@ -2675,7 +2675,7 @@ const baseContent = {
       tagline: "جميع حلولنا الابتكارية يمكن استخدامها مع كل النباتات والمحاصيل، في كل المناخات وكل أنواع التربة!",
       stats: [
         { num: "30", label: "شريك" },
-        { num: "50", label: "دولة" },
+        { num: "51", label: "دولة" },
         { num: "5", label: "تقنيات حصرية" },
       ],
       distinguish: [
@@ -3039,9 +3039,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "يعملون معنا",
-      title: "شبكة في 50 دولة",
+      title: "شبكة في 51 دولة",
       lede: "منتجون وتعاونيات ومتخصصون في معالجة المياه وجامعات ومعاهد بحثية، حاضرون في خمس قارات.",
-      mapAriaLabel: "خريطة شبكة Green Solutions في 50 دولة",
+      mapAriaLabel: "خريطة شبكة Green Solutions في 51 دولة",
     },
     countryStudies: {
       eyebrow: "النهج القطري",
@@ -3175,7 +3175,7 @@ const baseContent = {
       "الإمارات العربية المتحدة", "المكسيك", "تركيا", "إندونيسيا", "الصين", "مصر",
       "الجزائر", "الأرجنتين", "تشيلي", "الغابون", "غانا", "الأردن", "الكويت", "كرواتيا", "مدغشقر",
       "بنين", "غوادلوب", "جزر المارتينيك",
-      "لبنان", "إثيوبيا", "جيبوتي", "بيرو", "توغو", "موريتانيا", "موريشيوس",
+      "لبنان", "إثيوبيا", "جيبوتي", "بيرو", "توغو", "موريتانيا", "موريشيوس", "جمهورية الكونغو الديمقراطية",
     ],
   },
   zh: {
@@ -3310,7 +3310,7 @@ const baseContent = {
       tagline: "我们所有的颠覆性解决方案适用于任何植物和作物、任何气候及任何类型的土壤！",
       stats: [
         { num: "30", label: "合作伙伴" },
-        { num: "50", label: "国家" },
+        { num: "51", label: "国家" },
         { num: "5", label: "品牌技术" },
       ],
       distinguish: [
@@ -3674,9 +3674,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "与我们合作的伙伴",
-      title: "覆盖50个国家的网络",
+      title: "覆盖51个国家的网络",
       lede: "生产者、合作社、水处理专家、高校及科研机构，遍布五大洲。",
-      mapAriaLabel: "Green Solutions覆盖50个国家的网络地图",
+      mapAriaLabel: "Green Solutions覆盖51个国家的网络地图",
     },
     countryStudies: {
       eyebrow: "国别方案",
@@ -3810,7 +3810,7 @@ const baseContent = {
       "阿拉伯联合酋长国", "墨西哥", "土耳其", "印度尼西亚", "中国", "埃及",
       "阿尔及利亚", "阿根廷", "智利", "加蓬", "加纳", "约旦", "科威特", "克罗地亚", "马达加斯加",
       "贝宁", "瓜德罗普", "马提尼克",
-      "黎巴嫩", "埃塞俄比亚", "吉布提", "秘鲁", "多哥", "毛里塔尼亚", "毛里求斯",
+      "黎巴嫩", "埃塞俄比亚", "吉布提", "秘鲁", "多哥", "毛里塔尼亚", "毛里求斯", "刚果民主共和国",
     ],
   },
   id: {
@@ -3945,7 +3945,7 @@ const baseContent = {
       tagline: "Semua solusi disruptif kami dapat digunakan untuk semua tanaman dan tanaman pangan, di semua iklim dan semua jenis tanah!",
       stats: [
         { num: "30", label: "mitra" },
-        { num: "50", label: "negara" },
+        { num: "51", label: "negara" },
         { num: "5", label: "teknologi bermerek" },
       ],
       distinguish: [
@@ -4309,9 +4309,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Mereka bekerja sama dengan kami",
-      title: "Jaringan di 50 Negara",
+      title: "Jaringan di 51 Negara",
       lede: "Produsen, koperasi, spesialis pengolahan air, universitas, dan lembaga penelitian, hadir di lima benua.",
-      mapAriaLabel: "Peta jaringan Green Solutions di 50 negara",
+      mapAriaLabel: "Peta jaringan Green Solutions di 51 negara",
     },
     countryStudies: {
       eyebrow: "Pendekatan per Negara",
@@ -4445,7 +4445,7 @@ const baseContent = {
       "Uni Emirat Arab", "Meksiko", "Turki", "Indonesia", "Tiongkok", "Mesir",
       "Aljazair", "Argentina", "Chili", "Gabon", "Ghana", "Yordania", "Kuwait", "Kroasia", "Madagaskar",
       "Benin", "Guadeloupe", "Martinik",
-      "Lebanon", "Etiopia", "Djibouti", "Peru", "Togo", "Mauritania", "Mauritius",
+      "Lebanon", "Etiopia", "Djibouti", "Peru", "Togo", "Mauritania", "Mauritius", "Republik Demokratik Kongo",
     ],
   },
   de: {
@@ -4580,7 +4580,7 @@ const baseContent = {
       tagline: "Alle unsere disruptiven Lösungen sind für jede Pflanze und Kultur, bei jedem Klima und jeder Bodenart einsetzbar!",
       stats: [
         { num: "30", label: "Partner" },
-        { num: "50", label: "Länder" },
+        { num: "51", label: "Länder" },
         { num: "5", label: "Markentechnologien" },
       ],
       distinguish: [
@@ -4944,9 +4944,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Sie arbeiten mit uns",
-      title: "Ein Netzwerk in 50 Ländern",
+      title: "Ein Netzwerk in 51 Ländern",
       lede: "Erzeuger, Genossenschaften, Wasseraufbereitungsspezialisten, Universitäten und Forschungsinstitute, vertreten auf fünf Kontinenten.",
-      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 50 Ländern",
+      mapAriaLabel: "Karte des Green-Solutions-Netzwerks in 51 Ländern",
     },
     countryStudies: {
       eyebrow: "Länderansatz",
@@ -5080,7 +5080,7 @@ const baseContent = {
       "Vereinigte Arabische Emirate", "Mexiko", "Türkei", "Indonesien", "China", "Ägypten",
       "Algerien", "Argentinien", "Chile", "Gabun", "Ghana", "Jordanien", "Kuwait", "Kroatien", "Madagaskar",
       "Benin", "Guadeloupe", "Martinique",
-      "Libanon", "Äthiopien", "Dschibuti", "Peru", "Togo", "Mauretanien", "Mauritius",
+      "Libanon", "Äthiopien", "Dschibuti", "Peru", "Togo", "Mauretanien", "Mauritius", "Demokratische Republik Kongo",
     ],
   },
   it: {
@@ -5215,7 +5215,7 @@ const baseContent = {
       tagline: "Tutte le nostre soluzioni dirompenti sono utilizzabili per ogni pianta e coltura, in ogni clima e su ogni tipo di suolo!",
       stats: [
         { num: "30", label: "partner" },
-        { num: "50", label: "paesi" },
+        { num: "51", label: "paesi" },
         { num: "5", label: "tecnologie di marca" },
       ],
       distinguish: [
@@ -5579,9 +5579,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Lavorano con noi",
-      title: "Una rete in 50 paesi",
+      title: "Una rete in 51 paesi",
       lede: "Produttori, cooperative, specialisti del trattamento dell'acqua, università e istituti di ricerca, presenti su cinque continenti.",
-      mapAriaLabel: "Mappa della rete Green Solutions in 50 paesi",
+      mapAriaLabel: "Mappa della rete Green Solutions in 51 paesi",
     },
     countryStudies: {
       eyebrow: "Approccio per paese",
@@ -5715,7 +5715,7 @@ const baseContent = {
       "Emirati Arabi Uniti", "Messico", "Turchia", "Indonesia", "Cina", "Egitto",
       "Algeria", "Argentina", "Cile", "Gabon", "Ghana", "Giordania", "Kuwait", "Croazia", "Madagascar",
       "Benin", "Guadalupa", "Martinica",
-      "Libano", "Etiopia", "Gibuti", "Perù", "Togo", "Mauritania", "Mauritius",
+      "Libano", "Etiopia", "Gibuti", "Perù", "Togo", "Mauritania", "Mauritius", "Repubblica Democratica del Congo",
     ],
   },
   el: {
@@ -5850,7 +5850,7 @@ const baseContent = {
       tagline: "Όλες οι ανατρεπτικές μας λύσεις είναι κατάλληλες για κάθε φυτό και καλλιέργεια, σε κάθε κλίμα και κάθε τύπο εδάφους!",
       stats: [
         { num: "30", label: "συνεργάτες" },
-        { num: "50", label: "χώρες" },
+        { num: "51", label: "χώρες" },
         { num: "5", label: "εμπορικές τεχνολογίες" },
       ],
       distinguish: [
@@ -6214,9 +6214,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Συνεργάζονται μαζί μας",
-      title: "Ένα δίκτυο σε 50 χώρες",
+      title: "Ένα δίκτυο σε 51 χώρες",
       lede: "Παραγωγοί, συνεταιρισμοί, ειδικοί επεξεργασίας νερού, πανεπιστήμια και ερευνητικά ιδρύματα, παρόντα σε πέντε ηπείρους.",
-      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 50 χώρες",
+      mapAriaLabel: "Χάρτης του δικτύου Green Solutions σε 51 χώρες",
     },
     countryStudies: {
       eyebrow: "Προσέγγιση ανά χώρα",
@@ -6350,7 +6350,7 @@ const baseContent = {
       "Ηνωμένα Αραβικά Εμιράτα", "Μεξικό", "Τουρκία", "Ινδονησία", "Κίνα", "Αίγυπτος",
       "Αλγερία", "Αργεντινή", "Χιλή", "Γκαμπόν", "Γκάνα", "Ιορδανία", "Κουβέιτ", "Κροατία", "Μαδαγασκάρη",
       "Μπενίν", "Γουαδελούπη", "Μαρτινίκα",
-      "Λίβανος", "Αιθιοπία", "Τζιμπουτί", "Περού", "Τόγκο", "Μαυριτανία", "Μαυρίκιος",
+      "Λίβανος", "Αιθιοπία", "Τζιμπουτί", "Περού", "Τόγκο", "Μαυριτανία", "Μαυρίκιος", "Λαϊκή Δημοκρατία του Κονγκό",
     ],
   },
   tr: {
@@ -6485,7 +6485,7 @@ const baseContent = {
       tagline: "Yıkıcı çözümlerimizin tümü her bitki ve ürün için, her iklimde ve her toprak türünde kullanılabilir!",
       stats: [
         { num: "30", label: "ortak" },
-        { num: "50", label: "ülke" },
+        { num: "51", label: "ülke" },
         { num: "5", label: "markalı teknoloji" },
       ],
       distinguish: [
@@ -6849,9 +6849,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Bizimle çalışıyorlar",
-      title: "50 ülkede bir ağ",
+      title: "51 ülkede bir ağ",
       lede: "Beş kıtada bulunan üreticiler, kooperatifler, su arıtma uzmanları, üniversiteler ve araştırma enstitüleri.",
-      mapAriaLabel: "Green Solutions ağının 50 ülkedeki haritası",
+      mapAriaLabel: "Green Solutions ağının 51 ülkedeki haritası",
     },
     countryStudies: {
       eyebrow: "Ülke yaklaşımı",
@@ -6985,7 +6985,7 @@ const baseContent = {
       "Birleşik Arap Emirlikleri", "Meksika", "Türkiye", "Endonezya", "Çin", "Mısır",
       "Cezayir", "Arjantin", "Şili", "Gabon", "Gana", "Ürdün", "Kuveyt", "Hırvatistan", "Madagaskar",
       "Benin", "Guadeloupe", "Martinik",
-      "Lübnan", "Etiyopya", "Cibuti", "Peru", "Togo", "Moritanya", "Mauritius",
+      "Lübnan", "Etiyopya", "Cibuti", "Peru", "Togo", "Moritanya", "Mauritius", "Demokratik Kongo Cumhuriyeti",
     ],
   },
   pl: {
@@ -7120,7 +7120,7 @@ const baseContent = {
       tagline: "Wszystkie nasze przełomowe rozwiązania nadają się do każdej rośliny i uprawy, w każdym klimacie i na każdym rodzaju gleby!",
       stats: [
         { num: "30", label: "partnerów" },
-        { num: "50", label: "krajów" },
+        { num: "51", label: "krajów" },
         { num: "5", label: "opatentowane technologie" },
       ],
       distinguish: [
@@ -7484,9 +7484,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Współpracują z nami",
-      title: "Sieć w 50 krajach",
+      title: "Sieć w 51 krajach",
       lede: "Producenci, spółdzielnie, specjaliści od uzdatniania wody, uniwersytety i instytuty badawcze, obecni na pięciu kontynentach.",
-      mapAriaLabel: "Mapa sieci Green Solutions w 50 krajach",
+      mapAriaLabel: "Mapa sieci Green Solutions w 51 krajach",
     },
     countryStudies: {
       eyebrow: "Podejście według kraju",
@@ -7620,7 +7620,7 @@ const baseContent = {
       "Zjednoczone Emiraty Arabskie", "Meksyk", "Turcja", "Indonezja", "Chiny", "Egipt",
       "Algieria", "Argentyna", "Chile", "Gabon", "Ghana", "Jordania", "Kuwejt", "Chorwacja", "Madagaskar",
       "Benin", "Gwadelupa", "Martynika",
-      "Liban", "Etiopia", "Dżibuti", "Peru", "Togo", "Mauretania", "Mauritius",
+      "Liban", "Etiopia", "Dżibuti", "Peru", "Togo", "Mauretania", "Mauritius", "Demokratyczna Republika Konga",
     ],
   },
   hr: {
@@ -7755,7 +7755,7 @@ const baseContent = {
       tagline: "Sva naša disruptivna rješenja primjenjiva su na sve biljke i kulture, u svim klimama i na svim tipovima tla!",
       stats: [
         { num: "30", label: "partnera" },
-        { num: "50", label: "država" },
+        { num: "51", label: "država" },
         { num: "5", label: "tehnologije pod markom" },
       ],
       distinguish: [
@@ -8119,9 +8119,9 @@ const baseContent = {
     },
     reseau: {
       eyebrow: "Oni rade s nama",
-      title: "Mreža u 50 država",
+      title: "Mreža u 51 državi",
       lede: "Proizvođači, zadruge, stručnjaci za obradu vode, sveučilišta i istraživački instituti, prisutni na pet kontinenata.",
-      mapAriaLabel: "Karta mreže Green Solutions u 50 država",
+      mapAriaLabel: "Karta mreže Green Solutions u 51 državi",
     },
     countryStudies: {
       eyebrow: "Pristup po državama",
@@ -8254,7 +8254,7 @@ const baseContent = {
       "Ujedinjeni Arapski Emirati", "Meksiko", "Turska", "Indonezija", "Kina", "Egipat",
       "Alžir", "Argentina", "Čile", "Gabon", "Gana", "Jordan", "Kuvajt", "Hrvatska", "Madagaskar",
       "Benin", "Guadalupe", "Martinik",
-      "Libanon", "Etiopija", "Džibuti", "Peru", "Togo", "Mauritanija", "Mauricijus",
+      "Libanon", "Etiopija", "Džibuti", "Peru", "Togo", "Mauritanija", "Mauricijus", "Demokratska Republika Kongo",
     ],
   },
 };
