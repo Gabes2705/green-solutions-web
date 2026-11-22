@@ -2771,6 +2771,129 @@ export const DOSSIERS: Record<string, Dossier> = {
       "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suiza"
     }
   },
+  "congo": {
+    "slug": "congo",
+    "locale": "fr-CG",
+    "langue": "fr",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/congo-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/congo-en.pdf"
+      }
+    ],
+    "photos": 5,
+    "credits": [
+      {
+        "titre": "Bel vue sur la zone agricole de Brazzaville.jpg",
+        "auteur": "BOKOBA veroly",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Zone agricole de Brazzaville.jpg",
+        "auteur": "BOKOBA veroly",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Lefini River (25583791068).jpg",
+        "auteur": "Forest Service, USDA",
+        "licence": "Public domain",
+        "source": "commons"
+      },
+      {
+        "titre": "Traditional riverside village on the Likouala-aux-Herbes River.jpg",
+        "auteur": "JosepMGracia",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Zone agricole maraîchageuse au bord du fleuve Congo Brazzaville.jpg",
+        "auteur": "BOKOBA veroly",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      }
+    ],
+    "cover": {
+      "eyebrow": "DOSSIER PAYS",
+      "title": "République du Congo",
+      "officiel": "RÉPUBLIQUE DU CONGO",
+      "lieu": "Brazzaville",
+      "subtitle": "Eau, climat, engrais et cultures : Étude nationale et étude de chacun des 15 départements.\nBénéfices potentiels de nos produits et échanges extérieurs."
+    },
+    "chiffres": {
+      "kicker": "LE CONGO EN CHIFFRES",
+      "title": "Une agriculture de pluie",
+      "items": [
+        {
+          "value": "2 000 ha",
+          "label": "équipés pour l'irrigation en 2024 (FAOSTAT)"
+        },
+        {
+          "value": "162 292 ha",
+          "label": "de manioc récoltés en 2024, la première culture (FAOSTAT)"
+        },
+        {
+          "value": "6,48 M",
+          "label": "d'habitants en 2025 (Banque mondiale)"
+        },
+        {
+          "value": "15",
+          "label": "départements étudiés un à un, chacun par son chef-lieu"
+        }
+      ],
+      "note": "Dans le sud, la saison sèche va de juin à septembre et il ne pleut presque pas en juillet et en août ; près de l'équateur, à Ouesso et à Impfondo, il pleut toute l'année. Presque toutes les récoltes dépendent de la pluie."
+    },
+    "contrainte": null,
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": null,
+    "economie": null,
+    "productions": null,
+    "filieres": [],
+    "solutions": null,
+    "economies": null,
+    "regions": null,
+    "deploiement": null,
+    "risques": null,
+    "sources": [
+      "Banque mondiale (WDI) et FAO (FAOSTAT, AQUASTAT) : Population, eau, terres, cultures, engrais et commerce.",
+      "NASA POWER et PVGIS : Climat de chacun des 15 départements.",
+      "WITS (CNUCED TRAINS) et PwC : Droit de douane et TVA ; décret n° 2022-370 du 29 juin 2022 (plan de résilience sur la crise alimentaire).",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Un projet adapté à votre exploitation",
+      "body": "Indiquez la culture, le type de sol, le système d'irrigation et l'objectif du projet. Green Solutions propose un protocole comparatif et les indicateurs qui guideront la décision.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
   "cote-divoire": {
     "slug": "cote-divoire",
     "locale": "fr-CI",

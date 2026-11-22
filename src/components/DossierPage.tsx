@@ -402,6 +402,7 @@ const RESUMES: Record<string, string[]> = {
   portugal: ["pt", "fr", "en"],
   mauritanie: ["fr", "en"],
   rdc: ["fr", "en"],
+  congo: ["fr", "en"],
 };
 
 /* Page en arabe, mais dossier complet en anglais : le dossier s'affiche dans sa langue, de gauche à droite. */
