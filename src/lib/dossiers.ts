@@ -8908,6 +8908,129 @@ export const DOSSIERS: Record<string, Dossier> = {
       "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
     }
   },
+  "rdc": {
+    "slug": "rdc",
+    "locale": "fr-CD",
+    "langue": "fr",
+    "pdf": null,
+    "telechargements": [
+      {
+        "langue": "fr",
+        "href": "/documents/countries/dossiers/rdc-fr.pdf"
+      },
+      {
+        "langue": "en",
+        "href": "/documents/countries/dossiers/rdc-en.pdf"
+      }
+    ],
+    "photos": 5,
+    "credits": [
+      {
+        "titre": "Wealth of the Masisi.jpg",
+        "auteur": "Julien Harneis",
+        "licence": "CC BY-SA 2.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Une famille congolaise cultivant les champs dans les environs de Kalemie (15363000350).jpg",
+        "auteur": "MONUSCO Photos",
+        "licence": "CC BY-SA 2.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Aerial view of the Congo River near Kisangani.jpg",
+        "auteur": "MONUSCO/Myriam Asmani",
+        "licence": "CC BY-SA 2.0",
+        "source": "commons"
+      },
+      {
+        "titre": "View from the rural town of Masi Manimba, DRC (7609936324).jpg",
+        "auteur": "DFID - UK Department for International Development",
+        "licence": "CC BY-SA 2.0",
+        "source": "commons"
+      },
+      {
+        "titre": "Rice field DRC.jpg",
+        "auteur": "Abdoulma",
+        "licence": "CC BY-SA 4.0",
+        "source": "commons"
+      }
+    ],
+    "cover": {
+      "eyebrow": "DOSSIER PAYS",
+      "title": "République démocratique du Congo",
+      "officiel": "RÉPUBLIQUE DÉMOCRATIQUE DU CONGO",
+      "lieu": "Kinshasa",
+      "subtitle": "Eau, climat, engrais et cultures : Étude nationale et étude de chacune des 26 provinces.\nBénéfices potentiels de nos produits et échanges extérieurs."
+    },
+    "chiffres": {
+      "kicker": "LA RDC EN CHIFFRES",
+      "title": "Une agriculture de pluie",
+      "items": [
+        {
+          "value": "11 000 ha",
+          "label": "équipés pour l'irrigation en 2024 (FAOSTAT)"
+        },
+        {
+          "value": "5,71 M ha",
+          "label": "de manioc récoltés en 2024, la première culture (FAOSTAT)"
+        },
+        {
+          "value": "112,8 M",
+          "label": "d'habitants en 2025 (Banque mondiale)"
+        },
+        {
+          "value": "26",
+          "label": "provinces étudiées une à une, chacune par son chef-lieu"
+        }
+      ],
+      "note": "Le centre du pays reçoit des pluies toute l'année ; au sud de l'équateur, la saison sèche s'allonge de trois mois à Kinshasa à cinq ou six mois au Katanga. Presque toutes les récoltes dépendent de la pluie."
+    },
+    "contrainte": null,
+    "stress": {
+      "kicker": "SÉCHERESSE ET STRESS HYDRIQUE",
+      "title": "La pression augmente, mais le risque se lit localement",
+      "type": "bar",
+      "series": [
+        {
+          "name": "Indice mondial du nombre et de la durée des sécheresses",
+          "labels": [
+            "1980–1999",
+            "Depuis 2000"
+          ],
+          "values": [
+            100,
+            129
+          ]
+        }
+      ],
+      "reading": {
+        "head": "Deux indicateurs, pas un raccourci",
+        "body": "À l’échelle mondiale, le nombre et la durée des sécheresses ont augmenté de 29 % depuis 2000 par rapport aux deux décennies précédentes.\n\nLe stress hydrique mesure autre chose : les prélèvements rapportés aux ressources renouvelables disponibles après les besoins environnementaux. Ce signal mondial n’est donc pas une prévision nationale ; il doit être confronté aux pluies, aux nappes, aux saisons et aux usages locaux."
+      }
+    },
+    "usages": null,
+    "economie": null,
+    "productions": null,
+    "filieres": [],
+    "solutions": null,
+    "economies": null,
+    "regions": null,
+    "deploiement": null,
+    "risques": null,
+    "sources": [
+      "Banque mondiale (WDI) et FAO (FAOSTAT, AQUASTAT) : Population, eau, terres, cultures, engrais et commerce.",
+      "NASA POWER et PVGIS : Climat de chacune des 26 provinces.",
+      "WITS (CNUCED TRAINS) et PwC : Droit de douane et TVA ; loi n° 11/022 du 24 décembre 2011 portant principes fondamentaux relatifs à l'agriculture.",
+      "UNCCD, Drought in Numbers 2022 : nombre et durée des sécheresses, +29 % depuis 2000 par rapport à 1980–1999.",
+      "ONU-Eau / FAO AQUASTAT, indicateur ODD 6.4.2 : définition et seuils du stress hydrique."
+    ],
+    "closing": {
+      "title": "Un projet adapté à votre exploitation",
+      "body": "Indiquez la culture, le type de sol, le système d'irrigation et l'objectif du projet. Green Solutions propose un protocole comparatif et les indicateurs qui guideront la décision.",
+      "contact": "contact@green-solutions-group.com · Green Solutions Groupe AIM SA, 46, route de la Condémine, 1475 Forel, Suisse"
+    }
+  },
   "senegal": {
     "slug": "senegal",
     "locale": "fr-SN",

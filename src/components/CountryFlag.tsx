@@ -346,6 +346,14 @@ const FLAGS: Record<string, (id: string) => ReactNode> = {
       <path d="M15 4.6l0.62 1.9h2l-1.62 1.18 0.62 1.9-1.62-1.18-1.62 1.18 0.62-1.9-1.62-1.18h2z" fill="#FFD700" />
     </>
   ),
+  rdc: () => (
+    <>
+      <rect width="30" height="20" fill="#007FFF" />
+      <path d="M-2 21.5L32 -1.5" stroke="#F7D618" strokeWidth="7.4" />
+      <path d="M-2 21.5L32 -1.5" stroke="#CE1021" strokeWidth="5.2" />
+      <path d="M6.00 1.80 L6.79 4.11 L9.23 4.15 L7.28 5.62 L8.00 7.95 L6.00 6.55 L4.00 7.95 L4.72 5.62 L2.77 4.15 L5.21 4.11z" fill="#F7D618" />
+    </>
+  ),
   portugal: () => (
     <>
       <rect width="30" height="20" fill="#DA291C" />

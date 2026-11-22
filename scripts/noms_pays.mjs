@@ -57,6 +57,7 @@ const ISO = {
   togo: "TG",
   portugal: "PT",
   mauritanie: "MR",
+  rdc: "CD",
 };
 
 const LANGUES = ["fr", "en", "es", "pt", "ar", "zh", "id", "de", "it", "el", "tr", "pl", "hr"];
